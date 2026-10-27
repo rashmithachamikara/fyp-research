@@ -1,6 +1,6 @@
 # Research Module and Team Criteria — Agent Handoff
 
-Updated: 27 October 2026
+Updated: 28 October 2026
 
 ## 1. Module and Project Context
 
@@ -20,15 +20,15 @@ Updated: 27 October 2026
 - The three contributions must form one coherent project rather than three unrelated mini-projects.
 - Questionnaires and data collection of that sort should be avoided for training or primary evaluation.
 - Deployment is not compulsory, but a usable prototype is preferred.
-- Publication is preferred.
+- Writing research papers and seeking publication are optional; neither is required for project success.
 - Public datasets and reproducible evaluation are strongly preferred.
 - No department-defined threshold for what counts as “advanced AI/ML” has been provided.
 - No stated department restriction currently prohibits pretrained models, transfer learning, generative AI, external APIs, or synthetic data. Pretrained models and transfer learning are assumed permissible but should be confirmed.
 - No formal ethics-review process is known to the team. This does not remove the obligation to manage privacy, licensing, fairness, safety, and misuse risks.
 
-### Important module detail to verify
+### Confirmed project structure
 
-The existing workspace brief states that each member is expected to undertake a distinct project under a shared focus and produce a separate paper, for a total of three papers. The current chat confirmed independent assessment but did not independently reconfirm the three-paper rule. A future agent should verify this when the official module documentation becomes available.
+The team will investigate one shared problem with three substantial, independently assessable research contributions. Members may share datasets, models, a pipeline and evaluation infrastructure. Three separate projects or papers are not required. Writing papers and publication are optional.
 
 ### Information not yet provided
 
@@ -135,7 +135,7 @@ Reject or heavily penalise topics that:
 - At least one independent or shifted test setting is available.
 - Clear baseline, ablation, error analysis, and statistical comparison plan.
 - A practical prototype demonstrates the research without being presented as the contribution.
-- A fallback result remains publishable even if the method does not improve raw accuracy.
+- A fallback result remains academically useful and defensible even if the method does not improve raw accuracy.
 
 ### Recommended default research posture
 
@@ -153,7 +153,11 @@ Apply hard gates first. Score only candidates that pass.
 
 Rate each category from 0 to 5 and calculate:
 
-`weighted score = (rating / 5) × weight`
+`weighted points = (rating / 5) × weight`
+
+`score / 100 = sum(weighted points) / sum(weights) × 100`
+
+The nine remaining weights total 98. Normalising to 100 preserves their relative importance.
 
 | Category | Weight | Meaning of a strong score |
 |---|---:|---|
@@ -162,12 +166,11 @@ Rate each category from 0 to 5 and calculate:
 | One-year feasibility and learning curve | 14 | Realistic scope, dependencies, skills, and contingency plan |
 | Technical AI/ML depth | 12 | Substantial model-level or evaluation research rather than routine model use |
 | Evaluation quality and reproducibility | 12 | Strong baselines, metrics, splits, ablations, and uncertainty analysis |
-| Three-member contribution structure | 12 | Three individually assessable research questions forming one coherent project |
+| Three-member contribution structure | 12 | Three substantial, independently assessable contributions to one shared problem, each supported by attributable experimental evidence |
 | Real-world significance | 9 | Important, specific, evidence-supported problem with clear stakeholders |
 | Compute and storage feasibility | 5 | Fits available or predictably obtainable resources |
 | Prototype feasibility | 3 | Research can be demonstrated through a bounded usable prototype |
-| Ethics and responsible use | 2 | Risks are limited and can be credibly managed |
-| **Total** | **100** | |
+| **Total relative weight** | **98** | Scores are normalised to 100 |
 
 ### Rating guide
 
@@ -208,19 +211,20 @@ Every proposed project should plan for:
 
 ## 10. Three-Person Research Structure
 
-The project must not be divided only as “model, backend, frontend.” Each person needs a research question, method, experiment set, and defensible result.
+The project must address one shared problem. Each member needs a clearly attributable research contribution, method or investigation, experiment set, and defensible result. Shared data, models, code and evaluation are acceptable; ablations and contribution-specific comparisons should make individual work assessable.
+
+The project must not be divided only as “model, backend, frontend.” Members do not need three standalone projects or publication-ready studies. Writing papers, including three separate papers, is optional.
 
 ## 12. Known Questions Still Requiring Team Input
 
 1. Exact module dates and deliverables.
-2. Whether three separate papers are formally required.
-3. Exact GPU model, VRAM, access frequency, and maximum job duration.
-4. Cloud/API budget.
-5. Whether the final preference is still computer-vision-first or has changed.
-6. Preferred modality: images only, video, satellite time series, text, audio, or multimodal.
-7. Risk appetite: incremental and safe versus higher-risk novelty.
-8. Comfortable mathematical depth.
-9. Preferred contribution dimensions: accuracy, robustness, efficiency, generalisation, interpretability, privacy, or limited-data learning.
-10. Preferred prototype type: web, mobile, desktop, or no preference.
-11. Supervisor availability and domain expertise after the topic is narrowed.
+2. Exact GPU model, VRAM, access frequency, and maximum job duration.
+3. Cloud/API budget.
+4. Whether the final preference is still computer-vision-first or has changed.
+5. Preferred modality: images only, video, satellite time series, text, audio, or multimodal.
+6. Risk appetite: incremental and safe versus higher-risk novelty.
+7. Comfortable mathematical depth.
+8. Preferred contribution dimensions: accuracy, robustness, efficiency, generalisation, interpretability, privacy, or limited-data learning.
+9. Preferred prototype type: web, mobile, desktop, or no preference.
+10. Supervisor availability and domain expertise after the topic is narrowed.
 
