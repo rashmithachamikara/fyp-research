@@ -6,6 +6,8 @@
 
 **Evidence and scoring reviewed:** 28 October 2026
 
+[Read the visual explanation](../road-damage-visual-note.html): worked box-overlap example, shared contributions and country-held-out evaluation.
+
 ## 1. Problem
 
 Road-image detectors lose accuracy across countries and camera conditions. Recent multi-source adaptation and domain-generalisation models already address this transfer problem; aggregate improvements may still hide small-crack misses and sensitivity to box annotation choices.

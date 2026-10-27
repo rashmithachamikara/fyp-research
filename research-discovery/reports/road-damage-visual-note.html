@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small road damage across countries — visual research note</title>
+<style>
+:root{--ink:#183047;--muted:#526577;--paper:#fff;--wash:#f4f6f7;--line:#d6e0e4;--blue:#126a95;--blue-wash:#eaf4fa;--amber:#a85b15;--amber-wash:#fff3e4;--green:#246e57;--green-wash:#edf6f0}
+*{box-sizing:border-box}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;background:var(--paper);padding:46px 44px 32px}
+header{padding-bottom:28px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+h1{font-size:clamp(29px,4.7vw,48px);line-height:1.12;letter-spacing:-.035em;max-width:850px;margin:12px 0 16px}
+.lead{font-size:20px;line-height:1.5;max-width:850px;margin:0 0 14px}.quiet{color:var(--muted)}.small{font-size:13px}
+button{font:inherit;padding:8px 14px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:5px;cursor:pointer}
+button:hover{background:var(--blue-wash)}a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}
+.topline{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap}.status{display:inline-block;padding:4px 10px;background:var(--amber-wash);color:#75420c;border-radius:4px;font-size:13px;font-weight:600}
+section{padding-top:34px}h2{font-size:25px;line-height:1.25;letter-spacing:-.02em;margin:0 0 15px}h3{font-size:18px;line-height:1.35;margin:0 0 10px}p{margin:0 0 12px}
+.num{font-size:13px;color:var(--blue);font-weight:700;display:block;margin-bottom:7px;letter-spacing:.04em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.panel{border:1px solid var(--line);border-radius:8px;padding:20px;min-width:0}.panel.blue{border-top:4px solid var(--blue)}.panel.amber{border-top:4px solid var(--amber)}.panel.green{border-top:4px solid var(--green)}
+figure{margin:12px 0 0}figure svg{width:100%;height:auto;display:block;border-radius:5px}.caption{font-size:13px;color:var(--muted);margin-top:8px}
+.notice{border-left:4px solid var(--amber);background:var(--amber-wash);padding:12px 16px;margin:16px 0;font-size:15px}
+.question{background:var(--blue-wash);padding:20px 22px;border-left:4px solid var(--blue);font-size:19px;line-height:1.55}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin:10px 0 16px}.legend span{display:flex;align-items:center;gap:7px}
+.swatch{display:inline-block;width:24px;height:12px;border:2px solid var(--blue)}.swatch.alt{border-color:var(--amber);border-style:dashed}
+.controls{padding:16px 0 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}.controls label{font-weight:600}.controls input{flex:1 1 180px;min-width:0;accent-color:var(--blue);height:30px}.controls output{font-weight:700;min-width:30px}
+.overlap{font-size:35px;font-weight:750;letter-spacing:-.03em;margin:6px 0 0;line-height:1.1}.overlap-label{font-size:12px;color:var(--muted)}
+.match{font-size:14px;font-weight:600;margin-top:10px}.formula{font-family:Consolas,monospace;font-size:14px;background:var(--wash);padding:10px 14px;margin-top:12px;overflow-wrap:anywhere}
+.shared{padding:16px;border:1px solid var(--blue);background:var(--blue-wash);text-align:center;font-weight:650;border-radius:6px;margin:15px 0 18px}
+.arrow{text-align:center;color:var(--muted);font-size:24px;line-height:1;margin:10px 0}.member{font-weight:800;color:var(--blue);font-size:24px}.amber .member{color:var(--amber)}.green .member{color:var(--green)}
+.label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--muted);margin:15px 0 4px}
+.split{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:14px;margin:18px 0}
+.splitbox{padding:16px;border:1px solid var(--line);border-radius:6px}.splitbox.test{border:2px solid var(--green);background:var(--green-wash)}
+.splitbox .label{margin-top:0}.splitbox strong{display:block;font-size:18px}.split .arrow{align-self:center}
+.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}th,td{text-align:left;padding:10px 9px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--wash);font-weight:650}td.center,th.center{text-align:center}
+.chip{display:inline-block;min-width:22px;text-align:center;font-weight:700;color:var(--blue)}.methods{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.methods span{font-size:13px;padding:3px 9px;border:1px solid var(--line);border-radius:4px}
+.takeaway{background:var(--green-wash);border-left:4px solid var(--green);padding:16px 20px;margin-top:18px}
+ol,ul{padding-left:21px;margin:10px 0}li{margin:7px 0}.score{font-size:28px;font-weight:750;line-height:1.2}.score small{font-size:15px;font-weight:500}
+footer{border-top:1px solid var(--line);margin-top:32px;padding-top:20px;font-size:13px;color:var(--muted)}footer ol{margin-bottom:16px}.reference{overflow-wrap:anywhere}
+@media(max-width:750px){main{padding:26px 20px}.grid3{grid-template-columns:1fr}.grid2{gap:14px}.split{grid-template-columns:1fr;gap:7px}.split .arrow{transform:rotate(90deg);margin:4px}.lead{font-size:18px}}
+@media(max-width:560px){main{padding:22px 16px}.grid2{grid-template-columns:1fr}.panel{padding:16px}.question{padding:16px;font-size:18px}.controls{gap:8px}.controls label{flex-basis:100%}h2{font-size:23px}}
+@media print{
+@page{size:A4;margin:15mm}
+body{background:#fff;font-size:10pt;line-height:1.45}main{max-width:none;padding:0}h1{font-size:28pt}h2{font-size:17pt}h3{font-size:12pt}.lead{font-size:12pt}.no-print{display:none}
+section{padding-top:18px}.panel{padding:12px}.grid2{grid-template-columns:1fr 1fr;gap:12px}.grid3{grid-template-columns:repeat(3,1fr);gap:10px}.panel,figure,.split,.tablewrap,.question,.takeaway{break-inside:avoid}h2,h3{break-after:avoid}.split{grid-template-columns:1fr auto 1fr auto 1fr}.split .arrow{transform:none}.caption,.small{font-size:9pt}.question{font-size:12pt}.controls{padding:8px 0}.controls input{display:none}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}footer{font-size:9pt}
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="topline"><span class="eyebrow">Visual research note · X03 · 28 October 2026</span><button type="button" class="no-print" id="print-note">Print note</button></div>
+  <h1>Finding small road damage in unfamiliar countries</h1>
+  <p class="lead">Investigate how one road-image detector handles unfamiliar appearance and controlled variation in the boxes used to label damage.</p>
+  <p>One shared problem. Three independently assessable research contributions.</p>
+  <span class="status">Candidate proposal · novelty still needs validation</span>
+</header>
+
+<section aria-labelledby="problem-title">
+  <span class="num">01 / THE PROBLEM</span>
+  <h2 id="problem-title">A detector learns from both images and annotations</h2>
+  <div class="grid2">
+    <article class="panel blue">
+      <h3>Appearance can change</h3>
+      <p>Camera viewpoint, road texture, lighting and damage size can differ between the training images and a new country.</p>
+      <figure>
+        <svg viewBox="0 0 420 185" role="img" aria-labelledby="appearance-title appearance-desc">
+          <title id="appearance-title">Schematic road images under different appearance conditions</title>
+          <desc id="appearance-desc">A high-contrast crack has an easy-to-see box. A lower-contrast smaller crack in another schematic patch is easier to miss. These are illustrative drawings, not RDD2022 photos or detector outputs.</desc>
+          <rect x="0" y="0" width="198" height="185" rx="5" fill="#52616b"/><rect x="222" y="0" width="198" height="185" rx="5" fill="#849098"/>
+          <path d="M8 35L190 30M4 100L195 107M225 45L413 52M230 130L418 121" stroke="#9aa6ac" stroke-width="1.5" opacity=".5"/>
+          <path d="M86 42L99 66L84 84L105 109L98 140" fill="none" stroke="#17262d" stroke-width="4"/>
+          <path d="M111 98L130 109L136 126" fill="none" stroke="#17262d" stroke-width="2.5"/>
+          <rect x="66" y="30" width="85" height="125" fill="none" stroke="#75e1e7" stroke-width="3"/>
+          <path d="M311 72L315 87L308 95L321 111" fill="none" stroke="#64747c" stroke-width="2"/>
+          <rect x="298" y="62" width="37" height="60" fill="none" stroke="#fff1ce" stroke-width="2.5" stroke-dasharray="6 5"/>
+        </svg>
+        <figcaption class="caption">Schematic only: the target is to retain small-damage recall as appearance changes. These drawings show no measured model performance.</figcaption>
+      </figure>
+    </article>
+    <article class="panel amber">
+      <h3>Boxes can describe damage differently</h3>
+      <p>A thin crack can be enclosed tightly, loosely, or with a slightly shifted box. That choice can affect training assignments and evaluation overlap.</p>
+      <figure>
+        <svg viewBox="0 0 420 185" role="img" aria-labelledby="boxes-title boxes-desc">
+          <title id="boxes-title">Different bounding boxes around the same schematic crack</title>
+          <desc id="boxes-desc">A blue tight box and a dashed orange larger box surround the same crack, illustrating possible annotation variation.</desc>
+          <rect width="420" height="185" rx="5" fill="#e4e9ec"/>
+          <path d="M72 99L109 92L147 100L176 88L211 96L249 91L287 101L337 93" fill="none" stroke="#324654" stroke-width="3"/>
+          <rect x="64" y="79" width="282" height="31" fill="#126a95" fill-opacity=".08" stroke="#126a95" stroke-width="2.5"/>
+          <rect x="47" y="58" width="319" height="73" fill="none" stroke="#a85b15" stroke-width="2.5" stroke-dasharray="8 5"/>
+        </svg>
+        <figcaption class="caption">Same crack, different boxes. The drawing illustrates a hypothesis to test, not verified errors in RDD2022.</figcaption>
+      </figure>
+    </article>
+  </div>
+  <div class="notice"><strong>Evidence boundary:</strong> cross-country generalisation is an established research problem. We have not established that RDD2022 contains noisy annotations. Box shifts and changes in size would be controlled experimental perturbations.</div>
+</section>
+
+<section aria-labelledby="overlap-title">
+  <span class="num">02 / WHY SMALL DAMAGE IS SENSITIVE</span>
+  <h2 id="overlap-title">The same box shift can have very different effects</h2>
+  <p>Move an alternative annotation by the same number of image pixels in both examples. If a prediction exactly matched the reference annotation, this is the overlap it would receive against the alternative.</p>
+  <div class="formula"><strong>IoU</strong> = intersection area ÷ union area. A value of 1 means identical boxes; 0 means no overlap.</div>
+  <div class="controls">
+    <label for="shift">Vertical annotation shift</label>
+    <input id="shift" type="range" min="0" max="12" step="1" value="3" aria-describedby="shift-help">
+    <output for="shift" id="shift-value">3</output><span>image pixels</span>
+  </div>
+  <p id="shift-help" class="small quiet">This is a geometric toy example. Box width stays 120 pixels; only the annotation's vertical position changes. Large shifts may stop enclosing the damage.</p>
+  <div class="legend"><span><i class="swatch" aria-hidden="true"></i>Reference annotation</span><span><i class="swatch alt" aria-hidden="true"></i>Alternative annotation</span></div>
+  <div class="grid2">
+    <article class="panel">
+      <h3>Thin region · 8 pixels high</h3>
+      <svg viewBox="0 0 360 128" width="100%" role="img" aria-labelledby="thin-title thin-desc">
+        <title id="thin-title">Eight-pixel-high boxes with adjustable vertical shift</title>
+        <desc id="thin-desc">The reference box stays fixed. The dashed alternative box moves vertically with the slider.</desc>
+        <rect width="360" height="128" rx="5" fill="#f0f3f5"/>
+        <path d="M95 68L119 66L146 69L173 66L196 69L207 67" stroke="#526577" stroke-width="1.5" fill="none"/>
+        <rect x="90" y="64" width="120" height="8" fill="#126a95" fill-opacity=".12" stroke="#126a95" stroke-width="2"/>
+        <rect id="thin-alt" x="90" y="67" width="120" height="8" fill="#a85b15" fill-opacity=".08" stroke="#a85b15" stroke-width="2" stroke-dasharray="6 4"/>
+      </svg>
+      <div class="overlap" id="thin-iou">0.45</div><div class="overlap-label">Intersection over Union</div>
+      <div id="thin-match" class="match">Below the illustrative 0.50 overlap cutoff</div>
+    </article>
+    <article class="panel">
+      <h3>Larger region · 40 pixels high</h3>
+      <svg viewBox="0 0 360 128" width="100%" role="img" aria-labelledby="large-title large-desc">
+        <title id="large-title">Forty-pixel-high boxes with the same adjustable vertical shift</title>
+        <desc id="large-desc">The same pixel shift leaves much more overlap for this larger reference region.</desc>
+        <rect width="360" height="128" rx="5" fill="#f0f3f5"/>
+        <ellipse cx="150" cy="68" rx="47" ry="12" fill="#b1bec5"/>
+        <rect x="90" y="48" width="120" height="40" fill="#126a95" fill-opacity=".12" stroke="#126a95" stroke-width="2"/>
+        <rect id="large-alt" x="90" y="51" width="120" height="40" fill="#a85b15" fill-opacity=".08" stroke="#a85b15" stroke-width="2" stroke-dasharray="6 4"/>
+      </svg>
+      <div class="overlap" id="large-iou">0.86</div><div class="overlap-label">Intersection over Union</div>
+      <div id="large-match" class="match">Meets the illustrative 0.50 overlap cutoff</div>
+    </article>
+  </div>
+  <p class="caption" id="overlap-summary" aria-live="polite">At a 3-pixel shift, the thin region has IoU 0.45; the larger region has IoU 0.86.</p>
+  <div class="takeaway"><strong>Research implication:</strong> test whether learning can be less sensitive to plausible box variation while preserving genuine localisation accuracy. Improving overlap by simply predicting larger boxes would not establish better damage detection.</div>
+</section>
+
+<section aria-labelledby="gap-title">
+  <span class="num">03 / THE RESEARCH QUESTION</span>
+  <h2 id="gap-title">Study a specific failure, rather than a new detector demo</h2>
+  <div class="question">Can annotation-tolerant assignment and small-damage training preserve recall in an unseen country, without using that country's labels or adapting to its images?</div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <h3>What existing work already covers</h3>
+      <p>Cross-scene adaptation, multi-source training and road-damage domain generalisation already have recent methods, including MSDA-RDD and MAMDG.<sup><a href="#ref-2">2</a>,<a href="#ref-3">3</a></sup></p>
+    </div>
+    <div>
+      <h3>What this candidate would investigate</h3>
+      <p>The additional value of box-tolerant learning, small-region consistency and source-only confidence calibration under a controlled country holdout.</p>
+    </div>
+  </div>
+  <p class="small quiet">The methodological distinction still needs checking against the nearest papers. Swapping architectures or choosing another country alone does not establish novelty.</p>
+</section>
+
+<section aria-labelledby="team-title">
+  <span class="num">04 / ONE PROBLEM, THREE CONTRIBUTIONS</span>
+  <h2 id="team-title">Everyone researches the same detector's reliability</h2>
+  <div class="shared">Shared road images + common detector + country-held-out evaluation</div>
+  <div class="arrow" aria-hidden="true">↓</div>
+  <div class="grid3">
+    <article class="panel blue">
+      <div class="member">A</div><h3>Learn from variable boxes</h3>
+      <p><strong>Question:</strong> can training be less brittle when a plausible annotation box changes?</p>
+      <div class="label">Method investigation</div><p>Box-tolerant target assignment or localisation loss.</p>
+      <div class="label">Individual comparison</div><p>Common baseline versus baseline + A; remove the tolerance term.</p>
+      <div class="label">Assessable result</div><p>Localisation accuracy and AP across controlled annotation perturbations.</p>
+    </article>
+    <article class="panel amber">
+      <div class="member">B</div><h3>Protect small damage</h3>
+      <p><strong>Question:</strong> can training recover small cracks without adding image pixels?</p>
+      <div class="label">Method investigation</div><p>Size-aware consistency learning across controlled image transformations.</p>
+      <div class="label">Individual comparison</div><p>Common baseline versus baseline + B; keep resolution and augmentation exposure matched.</p>
+      <div class="label">Assessable result</div><p>Small-damage recall and AP, with false positives reported.</p>
+    </article>
+    <article class="panel green">
+      <div class="member">C</div><h3>Make scores useful</h3>
+      <p><strong>Question:</strong> does a high returned detection score remain trustworthy across countries?</p>
+      <div class="label">Method investigation</div><p>Class/size-conditional confidence calibration using source-country validation.</p>
+      <div class="label">Individual comparison</div><p>Common baseline versus baseline + C; compare with global calibration.</p>
+      <div class="label">Assessable result</div><p>Calibration error and risk–coverage trade-offs for returned boxes.</p>
+    </article>
+  </div>
+  <div class="arrow" aria-hidden="true">↓</div>
+  <div class="shared">Interpret each contribution separately → then test their combination</div>
+  <p>A member can produce findings even if another method fails. C evaluates confidence on returned detections; missed-object recovery is part of B's evaluation. Shared data, models and code are allowed. Writing papers is optional.</p>
+</section>
+
+<section aria-labelledby="test-title">
+  <span class="num">05 / A FAIR EXPERIMENT</span>
+  <h2 id="test-title">Keep one country genuinely unseen</h2>
+  <p>Use labelled images from the RDD2022 training release to build local country holdouts. The official challenge test images have no public labels, so they cannot be the core local evaluation.<sup><a href="#ref-1">1</a></sup></p>
+  <div class="split" role="group" aria-label="Illustrative country holdout: Japan and India for training, United States for validation, Czech Republic for final testing">
+    <div class="splitbox"><div class="label">Fit the detector</div><strong>Japan + India</strong><span class="small">Model learning and training perturbations</span></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="splitbox"><div class="label">Select and calibrate</div><strong>United States</strong><span class="small">Settings, thresholds and confidence fitting</span></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="splitbox test"><div class="label">Locked final test</div><strong>Czech Republic</strong><span class="small">No target tuning or adaptation</span></div>
+  </div>
+  <p class="small quiet">This is one illustrative fold. Rotate the held-out country and choose validation data inside each fold. Remove duplicate images and group identifiable capture sequences before making partitions.</p>
+  <h3>Change one thing at a time</h3>
+  <div class="tablewrap">
+    <table>
+      <caption class="small quiet" style="text-align:left">Planned comparisons. No performance results are shown.</caption>
+      <thead><tr><th>Experiment</th><th class="center">A: box tolerance</th><th class="center">B: small-region learning</th><th class="center">C: calibration</th><th>What it isolates</th></tr></thead>
+      <tbody>
+        <tr><td>Common baseline</td><td class="center">—</td><td class="center">—</td><td class="center">—</td><td>Starting behaviour</td></tr>
+        <tr><td>Baseline + A</td><td class="center">✓</td><td class="center">—</td><td class="center">—</td><td>Annotation sensitivity</td></tr>
+        <tr><td>Baseline + B</td><td class="center">—</td><td class="center">✓</td><td class="center">—</td><td>Small-damage recall</td></tr>
+        <tr><td>Baseline + C</td><td class="center">—</td><td class="center">—</td><td class="center">✓</td><td>Detection-score reliability</td></tr>
+        <tr><td>Combined model</td><td class="center">✓</td><td class="center">✓</td><td class="center">✓</td><td>Whether the benefits work together</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid2" style="margin-top:20px">
+    <div><h3>Measure</h3><p><strong>Main:</strong> AP50:95, averaged across country holdouts.</p><p><strong>Also:</strong> small-damage AP/recall, false positives, localisation error, and confidence reliability.</p><p class="small quiet">AP50:95 averages detection precision over multiple overlap thresholds. It is separate from the toy IoU calculation above.</p></div>
+    <div><h3>Control</h3><p>Keep generic pretraining, image resolution, country balance, data exposure and optimiser settings matched.</p><p>Repeat training seeds and report country-specific results with grouped uncertainty intervals.</p><p class="small quiet">Four countries are too few to support precise claims about all countries. Physical route IDs may also be unavailable.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="decision-title">
+  <span class="num">06 / WHAT IS READY, AND WHAT REMAINS</span>
+  <h2 id="decision-title">A plausible proposal that still needs a feasibility pilot</h2>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Existing data and a bounded implementation</h3>
+      <p>RDD2022 provides road images, training boxes and four challenge classes: longitudinal crack, transverse crack, alligator crack and pothole.<sup><a href="#ref-1">1</a></sup></p>
+      <p>Start with a compact detector and selected country archives. Demonstrate the result in an offline image viewer with boxes and scores.</p>
+      <p class="small quiet"><strong>Planning estimates:</strong> occasional 8–12 GB GPU, 16 GB RAM and 10–25 GB storage. No training time, peak memory or benchmark performance has been measured.</p>
+    </div>
+    <div class="panel">
+      <h3>Current assessment</h3>
+      <p class="score">76.7 <small>/ 100 · provisional proposal score</small></p>
+      <p><strong>Novelty: 3/5.</strong> The required rating is 4/5; the precise added value remains unresolved.</p>
+      <ol><li>Inspect the nearest methods in detail.</li><li>Load a small labelled country sample and check its class mapping.</li><li>Time one compact baseline and establish the failure before expanding.</li></ol>
+    </div>
+  </div>
+  <div class="takeaway"><strong>A useful result can be negative:</strong> show that resolution, country selection or annotation choices explain more than a new loss; or show that calibration improves returned scores without improving missed-crack recall. The result must follow from fair comparisons.</div>
+</section>
+
+<footer>
+  <strong>Sources and scope</strong>
+  <ol>
+    <li id="ref-1" class="reference"><a href="https://github.com/sekilab/RoadDamageDetector">RDD2022 author repository</a> — dataset routes, class mapping, public training annotations and CC BY-SA 4.0 images. Source documentation checked 28 October 2026; image archives have not been decoded for this proposal.</li>
+    <li id="ref-2" class="reference"><a href="https://ieeexplore.ieee.org/abstract/document/11655917">MSDA-RDD: Multi-Source Domain Adaptation for Cross-Scene Road Damage Detection (2026)</a> — nearest-work evidence is based on the publisher abstract; full methods remain to be checked.</li>
+    <li id="ref-3" class="reference"><a href="https://www.sciencedirect.com/science/article/pii/S0262885626002805">Multi-Adversarial Metric-Constrained Domain Generalization for road damage detection (2026)</a> — indexed publisher sections reviewed; methodological overlap remains unresolved.</li>
+  </ol>
+  <p><a href="gaps/x03-road-damage.md">Full X03 gap brief, rubric and gate decisions</a> · <a href="research-candidates.md">Compare all research candidates</a></p>
+  <p>Road drawings are illustrative. The overlap calculator is exact geometry for the stated toy boxes. It contains no model results. Country, annotation and prototype benefits require empirical evaluation and supervisor review.</p>
+</footer>
+</main>
+<script>
+(function(){
+  "use strict";
+  const shift = document.getElementById("shift");
+  const value = document.getElementById("shift-value");
+  const summary = document.getElementById("overlap-summary");
+  function iou(height, delta){
+    const intersection = 120 * Math.max(0, height - delta);
+    return intersection / (2 * 120 * height - intersection);
+  }
+  function update(){
+    const delta = Math.max(0, Math.min(12, Number(shift.value)));
+    const thin = iou(8, delta), large = iou(40, delta);
+    value.value = String(delta);
+    value.textContent = String(delta);
+    document.getElementById("thin-alt").setAttribute("y", String(64 + delta));
+    document.getElementById("large-alt").setAttribute("y", String(48 + delta));
+    document.getElementById("thin-iou").textContent = thin.toFixed(2);
+    document.getElementById("large-iou").textContent = large.toFixed(2);
+    document.getElementById("thin-match").textContent = thin >= .5 ? "Meets the illustrative 0.50 overlap cutoff" : "Below the illustrative 0.50 overlap cutoff";
+    document.getElementById("large-match").textContent = large >= .5 ? "Meets the illustrative 0.50 overlap cutoff" : "Below the illustrative 0.50 overlap cutoff";
+    summary.textContent = "At a " + delta + "-pixel shift, the thin region has IoU " + thin.toFixed(2) + "; the larger region has IoU " + large.toFixed(2) + ". These are box-overlap values, not detector accuracy.";
+  }
+  shift.addEventListener("input", update);
+  document.getElementById("print-note").addEventListener("click", function(){ window.print(); });
+  update();
+})();
+</script>
+</body>
+</html>
