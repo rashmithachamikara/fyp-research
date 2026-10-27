@@ -1,0 +1,196 @@
+{
+  "checked_date": "2026-10-28",
+  "purpose": "Bounded metadata, tiny archive and annotation-schema checks; no model experiment",
+  "checks": [
+    {
+      "id": "car-parts-original",
+      "source_url": "https://zenodo.org/api/records/4656022",
+      "checked_date": "2026-10-28",
+      "http_status": 200,
+      "bytes_read": 4612,
+      "title": "Car Parts Dataset (with Missing Values)",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "key": "car_parts_dataset_with_missing_values.zip",
+          "size": 39656,
+          "checksum": "md5:7b104f4549c0b10ad22299304d5fee63",
+          "links": {
+            "self": "https://zenodo.org/api/records/4656022/files/car_parts_dataset_with_missing_values.zip/content"
+          }
+        }
+      ],
+      "archive_sha256": "80557703397c7dca6c007bd28930b0e213e529f428afd02e5af87804fdc38ee1",
+      "parsed_sample": {
+        "series_count": 2674,
+        "series_lengths": [
+          51
+        ],
+        "missing_marker_count": 6122,
+        "zero_count": 97398,
+        "metadata_lines": [
+          "@relation Car_Parts",
+          "@attribute series_name string",
+          "@attribute start_timestamp date",
+          "@frequency monthly",
+          "@missing true",
+          "@equallength true"
+        ]
+      },
+      "status": "checked"
+    },
+    {
+      "id": "car-parts-zero-filled",
+      "source_url": "https://zenodo.org/api/records/4656021",
+      "checked_date": "2026-10-28",
+      "http_status": 200,
+      "bytes_read": 4728,
+      "title": "Car Parts Dataset (without Missing Values)",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "key": "car_parts_dataset_without_missing_values.zip",
+          "size": 39609,
+          "checksum": "md5:59849a426b797fd5b89f7890fa35ae18",
+          "links": {
+            "self": "https://zenodo.org/api/records/4656021/files/car_parts_dataset_without_missing_values.zip/content"
+          }
+        }
+      ],
+      "status": "checked"
+    },
+    {
+      "id": "maestro-real",
+      "source_url": "https://zenodo.org/api/records/7244360",
+      "checked_date": "2026-10-28",
+      "http_status": 200,
+      "bytes_read": 5832,
+      "title": "MAESTRO Real - Multi-Annotator Estimated Strong Labels",
+      "license": {
+        "id": "other-nc"
+      },
+      "files": [
+        {
+          "key": "LICENSE.txt",
+          "size": 1560,
+          "checksum": "md5:d1111f68bf579834e148db1788ae4cf9",
+          "links": {
+            "self": "https://zenodo.org/api/records/7244360/files/LICENSE.txt/content"
+          }
+        },
+        {
+          "key": "README.md",
+          "size": 4865,
+          "checksum": "md5:a8f77695c5933dcfcaea5018bc43c154",
+          "links": {
+            "self": "https://zenodo.org/api/records/7244360/files/README.md/content"
+          }
+        },
+        {
+          "key": "development_annotation.zip",
+          "size": 877169,
+          "checksum": "md5:e6a3f84f8020725d559b38ccb494ef3d",
+          "links": {
+            "self": "https://zenodo.org/api/records/7244360/files/development_annotation.zip/content"
+          }
+        },
+        {
+          "key": "development_audio.zip",
+          "size": 2614126654,
+          "checksum": "md5:3de7cb4f92a115a6f5cc077a41ca07b3",
+          "links": {
+            "self": "https://zenodo.org/api/records/7244360/files/development_audio.zip/content"
+          }
+        }
+      ],
+      "status": "checked"
+    },
+    {
+      "id": "crema-audio-vote-schema",
+      "source_url": "https://raw.githubusercontent.com/CheyneyComputerScience/CREMA-D/master/finishedResponses.csv",
+      "checked_date": "2026-10-28",
+      "http_status": 200,
+      "bytes_read": 16384,
+      "header": [
+        "",
+        "localid",
+        "pos",
+        "ans",
+        "ttr",
+        "queryType",
+        "numTries",
+        "clipNum",
+        "questNum",
+        "subType",
+        "clipName",
+        "sessionNums",
+        "respEmo",
+        "respLevel",
+        "dispEmo",
+        "dispVal",
+        "dispLevel"
+      ],
+      "query_type_column_present": true,
+      "complete_rows_in_prefix": 172,
+      "raw_rows_saved": false,
+      "status": "checked"
+    },
+    {
+      "id": "maestro-license",
+      "checked_date": "2026-10-28",
+      "source_url": "https://zenodo.org/api/records/7244360/files/LICENSE.txt/content",
+      "status": "checked",
+      "bytes_read": 1560,
+      "text": "Copyright (c) 2022 Tampere University and its licensors\r\nAll rights reserved.\r\nPermission is hereby granted, without written agreement and without license or royalty\r\nfees, to use and copy the MAESTRO Real - Multi-Annotator Estimated Strong Labels (\u201cWork\u201d) described in this document. \r\nThis grant is only for experimental and non-commercial purposes, provided that the copyright notice \r\nin its entirety appear in all copies of this Work, and the original source of this Work, \r\n(Machine Listening Group at Tampere University),\r\nis acknowledged in any publication that reports research using this Work.\r\nAny commercial use of the Work or any part thereof is strictly prohibited.\r\nCommercial use include, but is not limited to:\r\n- selling or reproducing the Work\r\n- selling or distributing the results or content achieved by use of the Work\r\n- providing services by using the Work.\r\n\r\nIN NO EVENT SHALL TAMPERE UNIVERSITY OR ITS LICENSORS BE LIABLE TO ANY PARTY\r\nFOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE\r\nOF THIS WORK AND ITS DOCUMENTATION, EVEN IF TAMPERE UNIVERSITY OR ITS\r\nLICENSORS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\nTAMPERE UNIVERSITY AND ALL ITS LICENSORS SPECIFICALLY DISCLAIMS ANY\r\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\r\nFITNESS FOR A PARTICULAR PURPOSE. THE WORK PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND\r\nTHE TAMPERE UNIVERSITY HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT,\r\nUPDATES, ENHANCEMENTS, OR MODIFICATIONS."
+    },
+    {
+      "id": "maestro-readme",
+      "checked_date": "2026-10-28",
+      "source_url": "https://zenodo.org/api/records/7244360/files/README.md/content",
+      "status": "checked",
+      "bytes_read": 4865,
+      "text": "Title:  MAESTRO Real - Multiple Annotator Estimated STROng labels\n\n# MAESTRO Real\n\nMachine Listening Group, Tampere University <https://research.tuni.fi/machinelistening/>\n\nAuthors\n\n- Irene Martin Morato (<irene.martinmorato@tuni.fi>)\n- Manu Harju (<manu.harju@tuni.fi>)\n- Annamaria Mesaros (<annamaria.mesaros@tuni.fi>, <http://homepages.tuni.fi/annamaria.mesaros/>)\n\n## 1. Dataset\n\nMAESTRO real development contains 49 real-life audio files from 5 different acoustic scenes, each of them from 3 to 5 minutes long. \nThe other 26 files are kept for evaluation purposes on the DCASE task 4 B. The distribution of files per scene is the following: \ncafe restaurant 10 files, city center 10 files, residential_area 11 files, metro station 9 files and grocery store 9 files. \nThe total duration of the development dataset is 97 minutes and 4 seconds.\n\nThe audio files contain sounds from the following classes:\n\n- announcement\n- birds singing\n- breakes squeaking\n- car\n- cash register\n- children voices\n- coffee machine\n- cutlery/dishes\n- door opens/closes\n- footsteps\n- furniture dragging\n\n\nThe real life-recordings used in this study include a subset of the TUT Sound Events 2016 and a subset of TUT Sound Events 2017.\n\n### Annotation procedure\n\nFor annotation, each file was split into 10-second segments, with a hop of one second. Each segment was annotated using crowdsourcing, in a tagging scenario. \n\nFor each segment, the annotators were required to select from the given list of classes the sounds active (audible).  Each 10-s segment was annotated by five persons. \n\nFull details on the annotation procedure and the processing of the tags can be found in: \n\nIrene Martin\u00a0Morato, Manu Harju, and Annamaria Mesaros.\u00a0Crowdsourcing strong labels for sound event detection, in IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA 2021). New Paltz, NY, Oct 2021.\u00a0\n\nMore details regarding the dataset and the soft-labels can be found in:\n\nIrene Martin\u00a0Morato, Manu Harju, Paul Ahokas and Annamaria Mesaros.\u00a0Training sound event detection wiht soft labels from crowdsourced annotations, in IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2023). Rhodes Island, Greece, June 2023.\u00a0\n\n### Dataset content\n\nThe dataset contains:\u00a0\n\n- audio: the 49 real-life soundscapes, each 3 to 5 min long\n- soft labels: estimated strong labels from the crowdsourced data, values between 0 and 1 indicates the uncertainty of the annotators.\n\n\n### File structure\n\n```\ndataset root\n\u2502   README.md\t                this file\n\u2502\n\u2514\u2500\u2500\u2500development_audio\n\u2502    \u2514\u2500\u2500\u2500cafe_restaurant\n\u2502           \u2502   cafe_restaurant_00.wav\t\t\n\u2502           \u2502   cafe_restaurant_04.wav\n\u2502           \u2502   ...\n\u2502\n\u2514\u2500\u2500\u2500development_annotation         soft-label annotations \n\u2502    \u2514\u2500\u2500\u2500soft_labels_cafe_restaurant\n\u2502       \u2502   cafe_restaurant_00.txt           format: start_time [tab] end_time [tab] label [tab] soft_label_value\n\u2502       \u2502   cafe_restaurant_04.txt\n\u2502       \u2502   ...\t\n    \n```\n\n\n## 2. License\n\nLicense permits free academic usage. Any commercial use is strictly prohibited. For commercial use, contact dataset authors.\n\n\n    Copyright (c) 2020 Tampere University and its licensors\n    All rights reserved.\n    Permission is hereby granted, without written agreement and without license or royalty\n    fees, to use and copy the MAESTRO Real - Multi Annotator Estimated Strong Labels (\u201cWork\u201d) described in this document\n    and composed of audio and metadata. This grant is only for experimental and non-commercial\n    purposes, provided that the copyright notice in its entirety appear in all copies of this Work,\n    and the original source of this Work, (MAchine Listening Group at Tampere University),\n    is acknowledged in any publication that reports research using this Work.\n    Any commercial use of the Work or any part thereof is strictly prohibited.\n    Commercial use include, but is not limited to:\n    - selling or reproducing the Work\n    - selling or distributing the results or content achieved by use of the Work\n    - providing services by using the Work.\n    \n    IN NO EVENT SHALL TAMPERE UNIVERSITY OR ITS LICENSORS BE LIABLE TO ANY PARTY\n    FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE\n    OF THIS WORK AND ITS DOCUMENTATION, EVEN IF TAMPERE UNIVERSITY OR ITS\n    LICENSORS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n    \n    TAMPERE UNIVERSITY AND ALL ITS LICENSORS SPECIFICALLY DISCLAIMS ANY\n    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\n    FITNESS FOR A PARTICULAR PURPOSE. THE WORK PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND\n    THE TAMPERE UNIVERSITY HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT,\n    UPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n"
+    },
+    {
+      "id": "maestro-label-schema",
+      "source_url": "https://zenodo.org/api/records/7244360/files/development_annotation.zip/content",
+      "checked_date": "2026-10-28",
+      "http_status": 200,
+      "bytes_read": 877169,
+      "parsed_sample": {
+        "annotation_files": 49,
+        "files_with_numeric_rows": 49,
+        "label_names": [
+          "announcement",
+          "birds_singing",
+          "brakes_squeaking",
+          "car",
+          "cash register beeping",
+          "children voices",
+          "coffee machine",
+          "cutlery and dishes",
+          "door opens/closes",
+          "footsteps",
+          "furniture dragging",
+          "large_vehicle",
+          "metro approaching",
+          "metro leaving",
+          "people talking",
+          "shopping cart",
+          "wind_blowing"
+        ],
+        "segment_lengths_seconds": [
+          1.0
+        ],
+        "sum_annotation_endpoints_seconds": 11369.0,
+        "values_outside_unit_interval_beyond_roundoff": 1,
+        "audio_decoded": false
+      },
+      "status": "checked"
+    }
+  ]
+}

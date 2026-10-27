@@ -41,7 +41,8 @@
     "refined_duplications": "refined-duplication-records.json",
     "citation_and_debate_checks": "debate-impact-records.json",
     "evidence_ledger": "evidence-ledger.csv",
-    "dataset_checks": "source-checks/"
+    "dataset_checks": "source-checks/",
+    "additional_discovery": "expansion-records.json"
   },
   "screened_candidates": [
     {
@@ -673,16 +674,1135 @@
       "model_training_or_runtime_measured": false,
       "raw_weighted_score": 66.0,
       "weight_total": 98
+    },
+    "X01": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x01-document-layout.md",
+      "weighted_score": 72.9,
+      "raw_weighted_score": 71.4,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-low: a documented compound-perturbation limitation supports a precise question, but the method must be distinguished from 2026 layout training."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: source licence, grouping fields and download routes are documented; payload decoding remains pending."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: the page cap bounds scope, but detection training and three investigations are demanding for the team's experience."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned objectives, confidence fitting and sampling-policy experiments provide model-level work."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: document grouping, matched pixel budgets and size-specific errors provide objective comparisons; no runs yet."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: loss, confidence and training-policy contributions share a detector and have separate controls."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: omitted document regions affect extraction completeness; downstream user benefit is unmeasured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3,
+          "confidence_and_reason": "Low-medium: storage fits, but high-resolution extraction and GPU time have not been profiled."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: an annotated page viewer is bounded and matches backend skills."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Novelty beyond RoDLA and October 2026 layout methods remains unresolved.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X02": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x02-satellite-fusion.md",
+      "weighted_score": 66.5,
+      "raw_weighted_score": 65.2,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: an extremely close 2026 fusion study already covers much of the initial idea; the narrower calibration method needs full-text differentiation."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9,
+          "confidence_and_reason": "Low-medium: original label/split documentation exists, but payload access, subset size and release terms are not confirmed."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low: substantial geospatial loading, label and fusion work remain, despite a proposed patch cap."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: quality learning, modality-dependent fusion and uncertainty fitting are empirical model investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: ROI grouping and explicit regime comparisons are sound in design; access is a critical dependency."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: quality, fusion and calibration can be assessed on the same frozen features independently."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: cloud and sensor availability are consequential mapping constraints; no operational benefit demonstrated."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3,
+          "confidence_and_reason": "Low: selective-download feasibility and feature-cache size remain unknown."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a local patch viewer is straightforward once data loading is solved."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Original mediaTUM payload could not be inspected; selective downloading is unverified.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Closest fusion and incomplete-modality methods not fully differentiated.",
+        "G7": "The proposed addition may reduce to ordinary gating plus calibration.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "Subset access, preprocessing and workload remain unbounded.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Dataset-specific release terms need checking at the accessible original record.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G7",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X03": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x03-road-damage.md",
+      "weighted_score": 76.7,
+      "raw_weighted_score": 75.2,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: cross-country adaptation and generalisation are established; the annotation-tolerance distinction needs full methods checking."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: author releases, country sizes, labels and licence are documented; image decoding and duplicate analysis are pending."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: four small country archives and compact detectors bound the work; transfer-learning skills and runtime need a pilot."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: target assignment, consistency objectives and calibration support model-level experiments."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: labelled country holdouts and matched budgets are objective; capture metadata may be incomplete."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three distinct investigations share one detector and each has a standalone baseline comparison."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: cross-country road-image failures are documented; actual inspection cost and safety outcomes are not measured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: bounded archives fit storage and small models fit occasional modest GPU access; workload not timed."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: an image-box viewer matches the team's implementation strengths."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "The extra value beyond recent source-only domain-generalisation methods is not established.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X04": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x04-quantised-reranking.md",
+      "weighted_score": 79.2,
+      "raw_weighted_score": 77.6,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: a precise training/activation-quantisation opening is documented, but MarginMSE/QAT/routing combinations still need a sharper original method."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: author loading route, small corpora, judgments and release licences inspected; payload not downloaded."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: compact reranking and capped query lists fit the timeline; QAT and backend measurement are the main learning costs."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-high for design: curriculum, quantisation-aware objectives and learned routing are empirical research contributions."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 5,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high for design: fixed candidates, matched negatives, paired judgments and actual backend costs directly test the claim."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: pair curriculum, QAT objective and fallback policy can each be tested against the same baseline."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: documented relevance instability matters for search; downstream answer reliability is outside the claim."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: small corpora and CPU inference fit; training and routing-memory estimates need profiling."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a local search comparison is a bounded prototype."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Pass",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Section 2 defines a bounded question; Section 3 distinguishes the documented limitation from the inferred method opportunity.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X05": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x05-text-disagreement.md",
+      "weighted_score": 75.9,
+      "raw_weighted_score": 74.4,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: closely related soft-label and multilabel-aggregation studies exist; finite-vote/source-transfer novelty is provisional."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: original per-rater schema, grouping fields and official release licence support the target; raw reconstruction is pending."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: frozen features and small heads fit the schedule; statistical handling of sparse votes requires care."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: probabilistic heads, dependency learning and transfer calibration are substantive model investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: marginal metrics and grouped votes address key confounders; small vote counts and community sizes limit inference."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: vote modelling, label dependence and calibration have separate controls within one predictor."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium-low: relevance to annotation-aware NLP is clear; no end-user benefit is demonstrated by acted/text emotion benchmarks."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "Medium-high: cached features and small heads make the core CPU-feasible; costs are estimates."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a local probabilistic text demo is bounded."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Closest 2026 multilabel and uncertainty methods need a detailed finite-vote/transfer comparison.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X06": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x06-soft-sound-events.md",
+      "weighted_score": 71.8,
+      "raw_weighted_score": 70.4,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: soft labels, rare-event gains and missing-label methods already exist; the duration-specific addition is not established."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9,
+          "confidence_and_reason": "Medium: original annotation payload and permitted research use checked; documentation mismatch, one invalid value and tiny independent recording count weaken suitability."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: one compact CRNN and bounded audio release fit the timeline; audio learning and label-quality handling remain."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: objective, pooling and decision-learning experiments go beyond an audio-player application."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: soft metrics, one-second limits and recording grouping prevent obvious overclaims; some baseline implementation details remain unverified."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three investigations share one event model and each has a direct comparator."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium: event-monitoring failures are concrete; this benchmark cannot establish hazard detection benefits."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: few-GB audio and a compact backbone fit modest resources; timing and memory unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a local one-second timeline is straightforward."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Distinctiveness of duration-aware learning beyond existing soft-SED and masking methods is unresolved.",
+        "G7": "Need to show that the learning contribution exceeds routine class/duration reweighting.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6",
+        "G7"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X07": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x07-audio-emotion-annotations.md",
+      "weighted_score": 74.9,
+      "raw_weighted_score": 73.4,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: annotation-view mismatch is testable, but closest annotator and aggregation methods may cover the proposed modelling idea."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: paired rating views and grouping schema are documented and a response prefix was inspected; LFS waveform loading remains pending."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: frozen embeddings and small heads are bounded; correct target reconstruction and subjective-label analysis need care."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: count-aware training, constrained cross-view transfer and calibration are empirical contributions."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: actor/sentence grouping and matched annotation views directly test the claim; finite rater counts limit precision."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: target modelling, cross-view objective and calibration have separate comparisons within one predictor."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium-low: a concrete supervision error matters for SER research, but acted recordings limit natural-conversation relevance."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: author storage estimate fits and heads are small; audio decoding and feature cost unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: local audio and probability inspection is bounded."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Modality-specific novelty beyond recent annotator modelling and aggregation remains to be established.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X08": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x08-sensor-detector-selection.md",
+      "weighted_score": 74.7,
+      "raw_weighted_score": 73.2,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: context-aware selection is motivated by a documented limitation, but the availability-specific method needs a stronger distinction."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9,
+          "confidence_and_reason": "Medium: source CSV schema, labels and repository terms checked; only one testbed and few independent fault experiments."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: capped detector pool and CPU-first selector fit the schedule; modern selector reproduction needs a bounded configuration."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: proxy learning, trained selection and constrained ensembles are research rather than a monitoring dashboard."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: causal calibration and experiment grouping address common leakage; few independent events widen uncertainty."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: proxy validity, selector and ensemble learning can be assessed independently with a shared score cache."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: false alarms and missed faults are consequential; operational savings are not demonstrated."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "Medium-high: small CPU models and bounded normal/proxy data fit; no timing experiment performed."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: an offline multichannel alarm replay is bounded."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Need to distinguish the availability-aware selector from current context-aware selection and gating methods.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X09": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x09-activity-sampling.md",
+      "weighted_score": 77.8,
+      "raw_weighted_score": 76.2,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-low: explicit recent limitations support the question, but older adversarial sampling methods require sharper differentiation."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: original raw streams, subject IDs, transition indices, direct route and licence are documented."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: small temporal models and a capped generator are feasible; adversarial optimisation could be unstable."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned observation policy, temporal objective and uncertainty fitting provide substantive experiments."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: raw-sequence grouping and held-out masks address shortcuts; synthetic sampling limits external validity."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: policy, transition objective and calibration are distinct interventions on one classifier."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: observation loss affects activity systems, but this dataset does not validate real wearable benefits."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "Medium-high: small public data and compact temporal models support CPU development; runtime unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a historical activity/sampling replay is bounded."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Novelty beyond PRISM and established adversarial sampling-rate methods remains unverified.",
+        "G7": "Section 6 investigates learned interventions with baseline comparisons and ablations, rather than application assembly.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
+    },
+    "X10": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional candidate gap",
+      "report": "reports/gaps/x10-intermittent-demand.md",
+      "weighted_score": 80.2,
+      "raw_weighted_score": 78.6,
+      "weight_total": 98,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-low: paired-source semantics create a concrete study, but probabilistic pooling and zero-aware learning are established; model-level originality remains unresolved."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "High for access: original archive actually parsed and source licences checked; short histories and absent business covariates limit suitability."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium-high: tiny data and bounded CPU models fit the schedule; short-history calibration needs careful design."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned predictive distributions, calibration and pooling policy are substantive if they exceed a preprocessing fix."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 5,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high for design: identical observed targets, rolling origins and explicit zero/missing controls isolate the central issue."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: prediction, interval updating and learned sharing can be evaluated separately within one forecasting system."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: intermittent spare-part forecasting is consequential; data cannot establish actual stockout or inventory savings."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "High for data size, medium for models: parsing demonstrated and CPU fallback is small; training costs remain estimates."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a local historical replay with missingness and intervals is bounded."
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest-work evidence support a concrete failure mode; the new method's benefit is untested.",
+        "G2": "Learning, adaptation or systematic model evaluation is central to the question.",
+        "G3": "Section 4 defines trainable objectives, heads or policies; no paid inference API is required.",
+        "G4": "Section 5 records an original public release or author-documented loading route, existing labels and the access-check limit.",
+        "G5": "Evaluation uses existing annotations or observed values; no new participants, questionnaires or expert labels.",
+        "G6": "Distinct model-level gap beyond current intermittent-demand probability and combination work is unresolved.",
+        "G7": "A preprocessing correction alone is insufficient; the learned likelihood/sharing contributions need stronger justification.",
+        "G8": "Section 7 defines objective outcomes, grouping, controls and uncertainty treatment.",
+        "G9": "The bounded core and fallback in Section 5 are plausible within the team window; training costs remain estimates.",
+        "G10": "Three contributions share one problem and infrastructure but can each be assessed against the unchanged baseline.",
+        "G11": "Core design uses CPU work or an occasional modest GPU; no specialised sensor, paid service or continuous server GPU.",
+        "G12": "Section 5 records source terms and a bounded offline use; no deployment or high-stakes benefit is assumed.",
+        "G13": "Section 7 identifies an interpretable negative result if the proposed method does not outperform the baseline."
+      },
+      "unresolved_gates": [
+        "G6",
+        "G7"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false
     }
   },
   "scoring_policy": {
     "date": "2026-10-28",
     "user_request": "Score the previously unscored projects first.",
     "qualification_rule": "Existing gates and category rating thresholds retained; ethics/responsible use removed from weighted scoring at user request.",
-    "provisional_exception": "TS2-R and CV1-R scored for comparison before gate clearance at user request; unresolved gates still block qualification.",
+    "provisional_exception": "At user request, TS2-R, CV1-R and the ten additional candidates have comparative proposal scores before all qualification thresholds are met; unknown gates remain disqualifying.",
     "team_structure": "One shared problem with three independently assessable contributions; shared infrastructure allowed and papers optional.",
     "precision_note": "Decimal totals reflect weighted arithmetic, not measurement precision or statistical certainty.",
-    "scope": "Assessment of current proposals and existing evidence; not a new discovery search or model experiment.",
+    "scope": "Original three assessments retained; ten additional candidates searched and evaluated on 28 October. No model training or timing experiment.",
     "rubric_change": "Removed the 2-weight ethics/responsible-use scoring category; retained the other nine relative weights.",
     "normalisation": "sum((rating / 5) * weight) / 98 * 100; round only the final total to one decimal place."
   },
@@ -692,7 +1812,12 @@
     "doi": "https://doi.org/10.48550/arXiv.2609.00065",
     "record_checked_date": "2026-10-27",
     "record_version_seen": "v2",
-    "scores_determined_by": "Project criteria, not an external appraisal checklist or automated skill score."
+    "scores_determined_by": "Project criteria, not an external appraisal checklist or automated skill score.",
+    "skills_applied": [
+      "scientific-brainstorming",
+      "scientific-critical-thinking",
+      "fasttrack-topic-validator"
+    ]
   },
   "scoring_source_rechecks": [
     {
@@ -713,5 +1838,20 @@
       "url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2",
       "access": "Official page confirms public/private test labels, form download and research licence; payload not acquired."
     }
-  ]
+  ],
+  "additional_discovery": {
+    "date": "2026-10-28",
+    "new_candidates": 10,
+    "search_queries": 22,
+    "search_record_occurrences": 423,
+    "duplication_queries": 20,
+    "debate_maps": 4,
+    "citation_checks": 3,
+    "curated_source_records": 51,
+    "records": "expansion-records.json",
+    "bounded_data_checks": "source-checks/expansion-data-checks.json",
+    "fully_qualified_additional_candidates": 0,
+    "counts_are_not_novelty_evidence": true,
+    "model_training_or_benchmark_timing_run": false
+  }
 }

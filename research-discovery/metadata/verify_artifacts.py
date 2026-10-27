@@ -28,14 +28,14 @@ assert not any(p.suffix in {'.json', '.csv', '.py', '.zip'} for p in reports_roo
 
 broken = []
 missing_anchors = []
+summary = json.loads((root / 'discovery-summary.json').read_text(encoding='utf-8'))
+assessments = summary['candidate_assessments']
+expansion = json.loads((root / 'expansion-records.json').read_text(encoding='utf-8'))
 report_files = sorted(reports_root.rglob('*.md'))
-assert {path.relative_to(reports_root).as_posix() for path in report_files} == {
-    'areas.md',
-    'research-candidates.md',
-    'gaps/au2-r-audio-confidence.md',
-    'gaps/ts2-r-load-forecasting.md',
-    'gaps/cv1-r-defect-adaptation.md',
+expected_reports = {'areas.md', 'research-candidates.md'} | {
+    assessment['report'].removeprefix('reports/') for assessment in assessments.values()
 }
+assert {path.relative_to(reports_root).as_posix() for path in report_files} == expected_reports
 readable_files = report_files
 slug = lambda title: re.sub(r'[^\w\- ]', '', title.lower()).replace(' ', '-')
 for path in readable_files:
@@ -57,7 +57,7 @@ expected_sections = ['1. Problem', '2. Research gap and question', '3. Evidence 
                      '4. Proposed approach', '5. Data and resources', '6. Three-member contributions',
                      '7. Evaluation', '8. Score and next decision']
 gap_files = sorted((reports_root / 'gaps').glob('*.md'))
-assert len(gap_files) == 3
+assert len(gap_files) == len(assessments)
 for path in gap_files:
     assert re.findall(r'^## (.+)$', path.read_text(encoding='utf-8'), re.M) == expected_sections
 
@@ -71,11 +71,11 @@ for path in gap_files:
     gate_rows = [line for line in text.split('### Mandatory gates', 1)[1].splitlines()
                  if re.match(r'^\| \d+\.', line)]
     assert len(gate_rows) == 13, path.name
-    assert sum('| Unknown |' in row for row in gate_rows) == expected_unknown_gates[path.name]
+    if path.name in expected_unknown_gates:
+        assert sum('| Unknown |' in row for row in gate_rows) == expected_unknown_gates[path.name]
 
-summary = json.loads((root / 'discovery-summary.json').read_text(encoding='utf-8'))
-assessments = summary['candidate_assessments']
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'}
+new_ids = {f'X{i:02}' for i in range(1, 11)}
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -98,7 +98,10 @@ for candidate_id, assessment in assessments.items():
     assert assessment['weight_total'] == sum(weights)
     calculated = round(raw_points / sum(weights) * 100, 1)
     assert calculated == assessment['weighted_score']
-    assert f'{calculated:.1f}' in overview and f'{calculated:.1f}' in brief
+    overview_link = assessment['report'].removeprefix('reports/')
+    overview_rows = [line for line in overview.splitlines() if f']({overview_link})' in line]
+    assert len(overview_rows) == 1 and f'{calculated:.1f}' in overview_rows[0]
+    assert f'{calculated:.1f}' in brief
     gate_rows = [line for line in brief.split('### Mandatory gates', 1)[1].splitlines()
                  if re.match(r'^\| \d+\.', line)]
     actual_gates = {'G' + str(i + 1): line.split('|')[2].strip()
@@ -122,6 +125,41 @@ assert all(len(candidate['gate_decisions']) == 13 for candidate in summary['scre
 assert '# Research areas' in (reports_root / 'areas.md').read_text(encoding='utf-8')
 assert '# Research candidates' in (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 
+assert len(expansion['candidates']) == 10
+assert {candidate['id'] for candidate in expansion['candidates']} == new_ids
+assert len(expansion['searches']) == 22 and len(expansion['duplications']) == 20
+assert all(query['requested_limit'] == 20 and 0 < len(query['data']['results']) <= 20
+           for query in expansion['searches'])
+assert all(query['data'].get('nearest_neighbours') for query in expansion['duplications'])
+assert len(expansion['debate_maps']) == 4 and len(expansion['citation_checks']) == 3
+assert len(expansion['code_route_checks']) == 9
+for candidate in expansion['candidates']:
+    candidate_id = candidate['id']
+    evidence = [source for source in expansion['curated_sources']
+                if source['candidate_ids'] == candidate_id]
+    assert sum(source['stage'] == 'closest-work' for source in evidence) >= 3
+    assert any(source['stage'] == 'dataset-check' for source in evidence)
+    assert candidate['weighted_score'] == assessments[candidate_id]['weighted_score']
+    assert candidate['gate_decisions'] == assessments[candidate_id]['gate_decisions']
+    brief = (discovery_root / candidate['report']).read_text(encoding='utf-8')
+    team_section = brief.split('## 6. Three-member contributions', 1)[1].split('## 7. Evaluation', 1)[0]
+    members = re.findall(r'^\| [ABC]:.+$', team_section, re.M)
+    assert len(members) == 3 and all(' H: ' in row for row in members)
+    assert len(candidate['team_hypotheses']) == 3
+    for source in evidence:
+        assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+                   for row in rows), source['evidence_id']
+
+source_audit = json.loads((root / 'source-checks/expansion-data-checks.json').read_text(encoding='utf-8'))
+source_checks = {check['id']: check for check in source_audit['checks']}
+assert source_checks['car-parts-original']['parsed_sample']['series_count'] == 2674
+assert source_checks['car-parts-original']['parsed_sample']['missing_marker_count'] == 6122
+assert source_checks['car-parts-original']['parsed_sample']['zero_count'] == 97398
+assert source_checks['crema-audio-vote-schema']['query_type_column_present']
+assert source_checks['maestro-label-schema']['parsed_sample']['annotation_files'] == 49
+assert source_checks['maestro-label-schema']['parsed_sample']['segment_lengths_seconds'] == [1.0]
+assert not source_checks['maestro-label-schema']['parsed_sample']['audio_decoded']
+
 audit = json.loads((root / 'source-checks/tau-dcase25-split-audit.json').read_text(encoding='utf-8'))
 assert audit['parts']['split25.csv']['rows'] == 34900
 assert audit['parts']['split5.csv']['rows'] == 6980
@@ -139,11 +177,20 @@ report = {
     'semifinal_duplication_queries': len(dups),
     'refined_duplication_queries': len(refined),
     'ledger_rows': len(rows),
-    'curated_evidence_rows': sum(r['evidence_id'].startswith('E-') for r in rows),
+    'curated_evidence_rows': sum(r['evidence_id'].startswith('E-') or r['stage'] in
+                                 {'expansion-closest-work', 'expansion-dataset-check'} for r in rows),
+    'additional_candidates': len(expansion['candidates']),
+    'additional_discovery_queries': len(expansion['searches']),
+    'additional_search_record_occurrences': sum(len(query['data']['results']) for query in expansion['searches']),
+    'additional_duplication_queries': len(expansion['duplications']),
+    'additional_curated_source_rows': len(expansion['curated_sources']),
+    'additional_debate_maps': len(expansion['debate_maps']),
+    'additional_citation_checks': len(expansion['citation_checks']),
+    'code_routes_checked': len(expansion['code_route_checks']),
     'au2_r_weighted_score': score,
     'provisional_weighted_scores': {candidate_id: assessment['weighted_score']
                                     for candidate_id, assessment in assessments.items()
-                                    if assessment['unresolved_gates']},
+                                    if assessment['unresolved_gates'] or assessment['mode'].startswith('Provisional')},
     'fully_qualified_candidates': sum(assessment['qualified'] for assessment in assessments.values()),
     'local_markdown_links_broken': broken,
     'local_markdown_anchors_missing': missing_anchors,
@@ -158,7 +205,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'AU2-R misses the required novelty rating; TS2-R and CV1-R have unresolved hard gates.'
+    'qualification_note': 'No candidate meets every category threshold. All ten new scores are provisional; unresolved gates are retained.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))
