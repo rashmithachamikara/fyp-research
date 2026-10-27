@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-27",
+  "audio_downloaded": false,
+  "metadata_rows": 230350,
+  "classes": {
+    "airport": 23020,
+    "bus": 23040,
+    "metro": 23040,
+    "metro_station": 23040,
+    "park": 23040,
+    "public_square": 23030,
+    "shopping_mall": 23030,
+    "street_pedestrian": 23040,
+    "street_traffic": 23040,
+    "tram": 23030
+  },
+  "metadata_devices": {
+    "a": 144000,
+    "b": 10780,
+    "c": 10770,
+    "s1": 10800,
+    "s2": 10800,
+    "s3": 10800,
+    "s4": 10800,
+    "s5": 10800,
+    "s6": 10800
+  },
+  "train_rows": 139620,
+  "test_rows": 29680,
+  "train_devices": [
+    "a",
+    "b",
+    "c",
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "test_devices": [
+    "a",
+    "b",
+    "c",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "overlapping_locations": [],
+  "overlapping_filenames": [],
+  "scope": "Original TAU full fold, not the DCASE 2025 25-percent subset"
+}

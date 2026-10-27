@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-27",
+  "purpose": "Broad research-area orientation; not topic qualification",
+  "evidence_level": "Primary source documentation; no new dataset payload or model experiment",
+  "priority_basis": "Agent judgement about the team's documented constraints, not a novelty score",
+  "sources": [
+    {
+      "area": "industrial-vision",
+      "url": "https://github.com/amazon-science/spot-diff",
+      "scope": "Existing image/defect labels and dataset download documentation"
+    },
+    {
+      "area": "document-ai",
+      "url": "https://github.com/DS4SD/DocLayNet",
+      "scope": "Page layouts, annotated objects and predefined splits"
+    },
+    {
+      "area": "energy",
+      "url": "https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014",
+      "scope": "Client electricity histories; no observed missing data"
+    },
+    {
+      "area": "acoustics",
+      "url": "https://dcase.community/challenge2025/",
+      "scope": "Existing scene/event and machine-condition benchmarks"
+    },
+    {
+      "area": "agriculture",
+      "url": "https://github.com/spMohanty/PlantVillage-Dataset",
+      "scope": "Plant images and grouping metadata; not independent field validation"
+    },
+    {
+      "area": "remote-sensing",
+      "url": "https://github.com/phelber/eurosat",
+      "scope": "Satellite land-cover benchmark; other environmental claims require different data"
+    },
+    {
+      "area": "recommendation",
+      "url": "https://www.grouplens.org/datasets/movielens/",
+      "scope": "Stable research releases distinguished from changing latest sets"
+    },
+    {
+      "area": "machine-monitoring",
+      "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+      "scope": "Synthetic predictive-maintenance benchmark"
+    },
+    {
+      "area": "defensive-security",
+      "url": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+      "scope": "Lab-generated normal/attack traffic and feature tables"
+    }
+  ],
+  "dataset_boundaries": [
+    "**Agriculture:** PlantVillage is a useful starting point; it alone does not establish field performance. A transfer claim needs compatible independent data.",
+    "**Satellite imagery:** a small land-cover benchmark does not automatically support flood detection, change detection or geographic-generalisation claims.",
+    "**Machine monitoring:** AI4I is synthetic. It is useful for initial experiments, but cannot alone establish real-machine effectiveness.",
+    "**Recommendation:** use a fixed, stable dataset release for research. MovieLens labels its changing “latest” datasets as unsuitable for reporting research results.",
+    "**Network security:** UNSW-NB15 is laboratory-generated benchmark traffic; benchmark accuracy does not demonstrate operational protection."
+  ]
+}

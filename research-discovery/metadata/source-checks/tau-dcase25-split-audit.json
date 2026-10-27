@@ -1,0 +1,81 @@
+{
+  "checked_date": "2026-10-27",
+  "split_source": "https://github.com/CPJKU/dcase2024_task1_baseline/releases/download/files/",
+  "audio_downloaded": false,
+  "parts": {
+    "split5.csv": {
+      "rows": 6980,
+      "classes": {
+        "airport": 700,
+        "bus": 700,
+        "metro": 690,
+        "metro_station": 690,
+        "park": 710,
+        "public_square": 720,
+        "shopping_mall": 680,
+        "street_pedestrian": 700,
+        "street_traffic": 700,
+        "tram": 690
+      },
+      "devices": {
+        "a": 5080,
+        "b": 380,
+        "c": 380,
+        "s1": 380,
+        "s2": 380,
+        "s3": 380
+      }
+    },
+    "split25.csv": {
+      "rows": 34900,
+      "classes": {
+        "airport": 3490,
+        "bus": 3480,
+        "metro": 3470,
+        "metro_station": 3450,
+        "park": 3570,
+        "public_square": 3560,
+        "shopping_mall": 3440,
+        "street_pedestrian": 3470,
+        "street_traffic": 3530,
+        "tram": 3440
+      },
+      "devices": {
+        "a": 25520,
+        "b": 1900,
+        "c": 1920,
+        "s1": 1840,
+        "s2": 1850,
+        "s3": 1870
+      }
+    },
+    "test.csv": {
+      "rows": 29680,
+      "classes": {
+        "airport": 2960,
+        "bus": 2970,
+        "metro": 2970,
+        "metro_station": 2970,
+        "park": 2970,
+        "public_square": 2970,
+        "shopping_mall": 2970,
+        "street_pedestrian": 2970,
+        "street_traffic": 2970,
+        "tram": 2960
+      },
+      "devices": {
+        "a": 3300,
+        "b": 3290,
+        "c": 3290,
+        "s1": 3300,
+        "s2": 3300,
+        "s3": 3300,
+        "s4": 3300,
+        "s5": 3300,
+        "s6": 3300
+      }
+    }
+  },
+  "train25_test_location_overlap": [],
+  "train25_test_filename_overlap": []
+}

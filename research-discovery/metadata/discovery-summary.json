@@ -1,0 +1,717 @@
+{
+  "evidence_cutoff": "2026-10-27",
+  "track": "General empirical AI/ML; focused discovery, not systematic review",
+  "work_completed": {
+    "discovery_queries": 8,
+    "modalities": [
+      "computer vision",
+      "text",
+      "audio",
+      "time series"
+    ],
+    "results_per_query": 20,
+    "initial_candidates": 12,
+    "semifinalists": 6,
+    "duplication_queries_per_semifinalist": 2,
+    "refined_candidate_duplication_queries": 3,
+    "small_tau_metadata_documentation_and_splits_downloaded": true,
+    "image_audio_or_mission_corpus_downloaded": false,
+    "model_training_or_timing_run": false
+  },
+  "citation_record_observations": {
+    "adaptive_electricity_forecasting": {
+      "indexed_citations": 37,
+      "by_year": {
+        "2024": 4,
+        "2025": 18,
+        "2026": 15
+      }
+    },
+    "sparc_and_dcase_preprint_records": "Zero citations and no trajectory returned for the checked versions",
+    "interpretation": "Version-specific index observations; recent sources were not penalised for low counts"
+  },
+  "retrieval_limitations": [
+    "Some initial debate results were sparse or off-topic; broader retries returned relevant work alongside noise.",
+    "No sparse count or absent shared ancestor was used to establish originality.",
+    "Some decisive sources were available only as abstracts; unresolved assumptions remain explicit in the gap briefs."
+  ],
+  "references": {
+    "searches": "search-records.json",
+    "duplications": "duplication-records.json",
+    "refined_duplications": "refined-duplication-records.json",
+    "citation_and_debate_checks": "debate-impact-records.json",
+    "evidence_ledger": "evidence-ledger.csv",
+    "dataset_checks": "source-checks/"
+  },
+  "screened_candidates": [
+    {
+      "ID": "CV1",
+      "Modality and initial idea": "Vision: few-normal-image calibration under lighting shift and contaminated supports",
+      "Existing data/baseline lead": "MVTec AD 2 / AeBAD; PatchCore, SPARC",
+      "Failure to investigate": "Incoming conditions distort normal features; contaminated calibration can suppress defects",
+      "Outcome and evidence": "Broad claim rejected as occupied. [SPARC](https://arxiv.org/html/2608.18585v1); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.48550/arxiv.2608.18585) already studies this. Redesigned as CV1-R, still a reserve",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "F",
+        "G7": "U",
+        "G8": "P",
+        "G9": "U",
+        "G10": "U",
+        "G11": "P",
+        "G12": "P",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "CV2",
+      "Modality and initial idea": "Vision: lab-to-field or unseen-crop plant disease recognition",
+      "Existing data/baseline lead": "PlantVillage and field/crop datasets are leads; compact transfer model",
+      "Failure to investigate": "Background/crop shortcuts limit transfer",
+      "Outcome and evidence": "Excluded: no verified shared label ontology, dataset pairing or distinct new gap; [2026 unseen-crop work](https://doi.org/10.3390/electronics15081553); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.3390/electronics15081553) is a close lead requiring careful comparison",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "U",
+        "G6": "F",
+        "G7": "U",
+        "G8": "U",
+        "G9": "U",
+        "G10": "U",
+        "G11": "P",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "CV3",
+      "Modality and initial idea": "Vision: lower-memory few-shot industrial anomaly detection",
+      "Existing data/baseline lead": "VisA; PatchCore, AnomalyDINO",
+      "Failure to investigate": "Patch memories consume resources when reference data grows",
+      "Outcome and evidence": "Current formulation rejected: memory/few-shot optimisation alone is already well developed; [AnomalyDINO](https://arxiv.org/html/2405.14529v1); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.1109/wacv61041.2025.00136) and [PatchCore optimisation](https://arxiv.org/abs/2307.10792); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.48550/arxiv.2307.10792) are immediate neighbours",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "P",
+        "G5": "P",
+        "G6": "F",
+        "G7": "F",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "P",
+        "G12": "P",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "NLP1",
+      "Modality and initial idea": "Text: restore out-of-scope rejection after few-shot intent adaptation",
+      "Existing data/baseline lead": "CLINC/BANKING-style benchmarks; encoder plus distance scoring",
+      "Failure to investigate": "Adaptation changes confidence and known/unknown separation",
+      "Outcome and evidence": "Rejected as the primary claim: [October 2026 personalization paper](https://arxiv.org/html/2610.20652v1); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.48550/arxiv.2610.20652) already investigates this",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "F",
+        "G7": "F",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "P",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "NLP2",
+      "Modality and initial idea": "Text: compact answerability/abstention for document QA",
+      "Existing data/baseline lead": "Existing QA/evidence-labelled datasets are leads; extractive encoder/answerability head",
+      "Failure to investigate": "Retrieved text may be relevant but insufficient to answer",
+      "Outcome and evidence": "Excluded: generic abstention is occupied; dataset licence, ground truth and a distinctive claim were not verified. [Attribute or Abstain](https://arxiv.org/abs/2407.07799); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.48550/arxiv.2407.07799) is an immediate lead",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "U",
+        "G6": "F",
+        "G7": "U",
+        "G8": "U",
+        "G9": "U",
+        "G10": "U",
+        "G11": "U",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "NLP3",
+      "Modality and initial idea": "Text: label-efficient open-world class discovery and rejection",
+      "Existing data/baseline lead": "[BOLT](https://aclanthology.org/2026.findings-acl.667/); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.18653/v1/2026.findings-acl.667) is a benchmark lead; compact classifier",
+      "Failure to investigate": "New classes violate fixed-class assumptions",
+      "Outcome and evidence": "Excluded: a broad task, not a precise methodological gap; three connected bounded investigations were not established",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "F",
+        "G7": "U",
+        "G8": "U",
+        "G9": "U",
+        "G10": "U",
+        "G11": "U",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "AU1",
+      "Modality and initial idea": "Audio: source/target score calibration for first-shot machine monitoring",
+      "Existing data/baseline lead": "DCASE Task 2; embedding nearest-neighbour detector",
+      "Failure to investigate": "One threshold handles unequal source/target score distributions poorly",
+      "Outcome and evidence": "Rejected as generic novelty: [local-density normalisation](https://arxiv.org/html/2509.10951v1); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.1109/taslpro.2025.3629236) and [2026 calibration/model-selection work](https://arxiv.org/html/2607.04526v1); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.48550/arxiv.2607.04526) are too close",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "F",
+        "G7": "U",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "P",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "AU2",
+      "Modality and initial idea": "Audio: compact device-robust acoustic scene classifier",
+      "Existing data/baseline lead": "TAU development set; CP-Mobile-style baseline",
+      "Failure to investigate": "Recording-device mismatch and limited labels",
+      "Outcome and evidence": "Generic formulation rejected; compact device robustness is the established challenge. AU2-R adds a research question about confidence ordering, but its novelty rating is still too weak",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "P",
+        "G5": "P",
+        "G6": "F",
+        "G7": "F",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "P",
+        "G12": "P",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "AU3",
+      "Modality and initial idea": "Audio: codec/noise-robust audio-deepfake classifier",
+      "Existing data/baseline lead": "RADAR / AT-ADD are dataset leads; pretrained audio encoder with trained head",
+      "Failure to investigate": "Media transformations degrade recognition",
+      "Outcome and evidence": "Excluded: a broad, active benchmark problem without a specific contribution; dataset access/licence and compute were not checked",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "F",
+        "G7": "U",
+        "G8": "U",
+        "G9": "U",
+        "G10": "U",
+        "G11": "U",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "TS1",
+      "Modality and initial idea": "Time series: label-free event alarms under drift",
+      "Existing data/baseline lead": "ESA anomaly telemetry; simple detector and temporal model",
+      "Failure to investigate": "Threshold selection, alarm burden and nominal regime changes",
+      "Outcome and evidence": "Excluded in current form: novelty unresolved and full official pipeline conflicts with resource assumptions; a reduced study would need fresh scope/evidence",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "U",
+        "G5": "P",
+        "G6": "U",
+        "G7": "U",
+        "G8": "P",
+        "G9": "U",
+        "G10": "U",
+        "G11": "F",
+        "G12": "U",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "TS2",
+      "Modality and initial idea": "Time series: uncertainty-aware load forecasts with missing history",
+      "Existing data/baseline lead": "UCI electricity; quantile learner and conformal intervals",
+      "Failure to investigate": "Missing histories invalidate naive uncertainty handling",
+      "Outcome and evidence": "Broad novelty claim rejected; existing missing-data and conformal work is close. Revised as TS2-R, with the feedback schedule distinction still unverified",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "P",
+        "G5": "P",
+        "G6": "F",
+        "G7": "U",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "P",
+        "G12": "P",
+        "G13": "P"
+      }
+    },
+    {
+      "ID": "TS3",
+      "Modality and initial idea": "Time series: compare/fine-tune foundation models for household demand",
+      "Existing data/baseline lead": "UCI electricity; small forecasting model and pretrained-model leads",
+      "Failure to investigate": "Published rankings may not transfer to household settings",
+      "Outcome and evidence": "Current formulation rejected: model comparison alone lacks a defined contribution; [existing household benchmark](https://doi.org/10.1109/access.2025.3648056); [Zotero](https://literature.researchfasttrack.com/zotero?ids=10.1109/access.2025.3648056) is a close lead",
+      "gate_decisions": {
+        "G1": "P",
+        "G2": "P",
+        "G3": "P",
+        "G4": "P",
+        "G5": "P",
+        "G6": "F",
+        "G7": "F",
+        "G8": "P",
+        "G9": "P",
+        "G10": "U",
+        "G11": "U",
+        "G12": "P",
+        "G13": "P"
+      }
+    }
+  ],
+  "screening_status_meanings": {
+    "P": "Pass at research-design level",
+    "F": "Fails for the stated formulation",
+    "U": "Unknown; not established"
+  },
+  "screening_limitations": [
+    "Initial formulations, not entire research fields, were excluded.",
+    "Dataset names without an access check remain leads.",
+    "The full ESA pipeline was excluded on resource assumptions; this does not exclude every reduced telemetry study."
+  ],
+  "module_decisions_to_confirm": [
+    {
+      "Decision": "Official deadlines, proposal format and marking rubric",
+      "Why it matters": "The project schedule and deliverables must fit the module"
+    },
+    {
+      "Decision": "What qualifies as sufficiently advanced individual AI/ML research",
+      "Why it matters": "Confirm acceptance of the proposed learning, calibration and compression investigations"
+    },
+    {
+      "Decision": "Required demonstration or deployment",
+      "Why it matters": "Determines the prototype scope"
+    },
+    {
+      "Decision": "Pretrained-model and external-dataset permissions",
+      "Why it matters": "Determines which modelling approaches and data sources can be used"
+    },
+    {
+      "Decision": "Actual CPU/GPU/RAM access and budget",
+      "Why it matters": "Bounds experiment size and the fallback configuration"
+    },
+    {
+      "Decision": "Supervisor fit and availability",
+      "Why it matters": "Determines whether the chosen methods have suitable guidance"
+    }
+  ],
+  "provisional_project_timeline": [
+    {
+      "Period": "Month 1",
+      "Intended outcome": "Learn required methods, inspect data and reproduce baselines"
+    },
+    {
+      "Period": "Month 2",
+      "Intended outcome": "Settle individual research questions and freeze evaluation protocols"
+    },
+    {
+      "Period": "Months 3–5",
+      "Intended outcome": "Develop and evaluate independent research contributions"
+    },
+    {
+      "Period": "Months 6–7",
+      "Intended outcome": "Complete combined experiments, error analysis and required project documentation; paper writing is optional"
+    },
+    {
+      "Period": "Month 8, if available",
+      "Intended outcome": "Resolve contingencies and integrate the research prototype"
+    }
+  ],
+  "timeline_status": "Planning assumption only; replace with official module dates when known.",
+  "confirmed_project_structure": {
+    "confirmed_by": "User clarification",
+    "date": "2026-10-27",
+    "shared_problem_required": true,
+    "independently_assessable_research_contributions": 3,
+    "shared_datasets_models_pipeline_and_evaluation_allowed": true,
+    "separate_projects_required": false,
+    "three_papers_required": false,
+    "paper_writing_required": false,
+    "publication_required": false
+  },
+  "candidate_assessments": {
+    "AU2-R": {
+      "scored_date": "2026-10-28",
+      "mode": "Gate-cleared design score; novelty threshold unmet",
+      "report": "reports/gaps/au2-r-audio-confidence.md",
+      "weighted_score": 77.3,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-low: precise question, but novelty beyond existing calibration, distillation and quantisation is not yet strong"
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "High: source licence and metadata inspected; simulated devices and reused recordings limit external validity"
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: small core, but audio learning and runtime need a pilot"
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: training objectives, uncertainty fitting and QAT"
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 5,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "Medium-high for design: explicit grouping, metrics and controls; experiments not run"
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: assessable contributions to one shared problem; individual experiment boundaries still need refinement"
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium: concrete device mismatch, but no validated end-user impact"
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: bounded small-model design; no measured training cost"
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: local clip analysis fits backend skills"
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Pass",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "unresolved_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "raw_weighted_score": 75.8,
+      "weight_total": 98
+    },
+    "TS2-R": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison before gate clearance",
+      "report": "reports/gaps/ts2-r-load-forecasting.md",
+      "weighted_score": 72.7,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: section 3 identifies close incomplete-series and feedback methods; a distinct methodological addition is not established"
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "Medium-high: section 5 documents public UCI data, licence and loading route; synthetic outages limit representativeness and payload parsing is pending"
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: CPU-first forecasting and a reduced client panel bound execution; conformal methods and feedback replay require learning and a pilot"
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned prediction, residual weighting and calibration sharing support substantial experiments; originality is assessed separately"
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: section 7 specifies chronological replay, feedback availability, baselines and block resampling; outage realism and implementations remain untested"
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: section 6 defines attributable forecasting, feedback and sharing investigations within one system; individual comparisons need to be fixed before experiments"
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium: incomplete load forecasts are a documented problem, but controlled masks cannot establish actual outage or operational benefits"
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5.0,
+          "confidence_and_reason": "Medium: the small tabular dataset and 20–50-client CPU fallback provide ample scope control; RAM and wall time remain estimates"
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: local historical replay fits the team's backend skills and needs no live meter integration"
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "unresolved_gates": [
+        "G6",
+        "G7"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "raw_weighted_score": 71.2,
+      "weight_total": 98
+    },
+    "CV1-R": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison before gate clearance",
+      "report": "reports/gaps/cv1-r-defect-adaptation.md",
+      "weighted_score": 67.3,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium-low: SPARC documents the unfiltered-stream limitation and correction harm in section 3, but a distinct learned gate or correction method is not yet established"
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: section 5 documents real-shift benchmarks, public-label portions and licences; suitable image payload access and loading are not verified"
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low: frozen features bound the proposal, but patch-level adaptation, auxiliary-product training and resolution choices need a workload pilot"
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned support weighting, a defect-preserving objective and adaptation decisions offer model-level investigations; distinct novelty remains unresolved"
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: section 7 defines disjoint support/query batches, matched budgets, contamination controls and category uncertainty; capture grouping depends on accessible metadata"
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: section 6 connects all three to one detector, but support selection and the adaptation decision still overlap; attributable comparisons need clarification"
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: section 3 documents lighting/view failures and loss of defect signal in industrial inspection; benchmark improvements would not establish factory safety"
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low: cached small-encoder features and selected products are plausible, but high-resolution extraction, memory and archive sizes remain unmeasured"
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: local image input, heatmaps and an adaptation decision form a bounded demonstration"
+        }
+      ],
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G7",
+        "G9",
+        "G10"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Three-member structure"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "raw_weighted_score": 66.0,
+      "weight_total": 98
+    }
+  },
+  "scoring_policy": {
+    "date": "2026-10-28",
+    "user_request": "Score the previously unscored projects first.",
+    "qualification_rule": "Existing gates and category rating thresholds retained; ethics/responsible use removed from weighted scoring at user request.",
+    "provisional_exception": "TS2-R and CV1-R scored for comparison before gate clearance at user request; unresolved gates still block qualification.",
+    "team_structure": "One shared problem with three independently assessable contributions; shared infrastructure allowed and papers optional.",
+    "precision_note": "Decimal totals reflect weighted arithmetic, not measurement precision or statistical certainty.",
+    "scope": "Assessment of current proposals and existing evidence; not a new discovery search or model experiment.",
+    "rubric_change": "Removed the 2-weight ethics/responsible-use scoring category; retained the other nine relative weights.",
+    "normalisation": "sum((rating / 5) * weight) / 98 * 100; round only the final total to one decimal place."
+  },
+  "assessment_workflow_support": {
+    "skill": "scientific-critical-thinking",
+    "citation": "Kassis, T., Agarwal, V., He, Y., Patel, D., & Brueckner, A. M. (2026). Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents.",
+    "doi": "https://doi.org/10.48550/arXiv.2609.00065",
+    "record_checked_date": "2026-10-27",
+    "record_version_seen": "v2",
+    "scores_determined_by": "Project criteria, not an external appraisal checklist or automated skill score."
+  },
+  "scoring_source_rechecks": [
+    {
+      "date": "2026-10-27",
+      "candidate_id": "TS2-R",
+      "url": "https://openreview.net/forum?id=KMBU4wx79B",
+      "access": "Browser verification blocks full text; methodological distinction remains unresolved."
+    },
+    {
+      "date": "2026-10-27",
+      "candidate_id": "CV1-R",
+      "url": "https://arxiv.org/html/2608.18585v1",
+      "access": "Full HTML accessible; existing source retained without upgrading novelty."
+    },
+    {
+      "date": "2026-10-27",
+      "candidate_id": "CV1-R",
+      "url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad-2",
+      "access": "Official page confirms public/private test labels, form download and research licence; payload not acquired."
+    }
+  ]
+}

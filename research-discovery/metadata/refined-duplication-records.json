@@ -1,0 +1,1013 @@
+[
+  {
+    "id": "AU2-R",
+    "query": "acoustic scene classification paired device confidence ranking consistency quantization selective risk",
+    "date": "2026-10-27",
+    "data": {
+      "nearest_neighbours": [
+        {
+          "id": "W4415048600",
+          "doi": "10.55056/jec.1000",
+          "title": "Edge intelligence unleashed: a survey on deploying large language models in resource-constrained environments",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Edge Computing",
+            "issn": "2837-181X"
+          },
+          "authors": [
+            "Serhiy O. Semerikov",
+            "Тетяна Анатоліївна Вакалюк",
+            "Ольга Борисівна Каневська"
+          ],
+          "author_count": 5,
+          "cited_by_count": 20,
+          "counts_by_year": {
+            "2025": 1,
+            "2026": 19
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://acnsci.org/journal/index.php/jec/article/download/1000/932"
+          },
+          "url": "https://doi.org/10.55056/jec.1000",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7131645075",
+          "doi": "10.1038/s41746-026-02445-4",
+          "title": "A device-invariant multi-modal learning framework for respiratory disease classification",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "npj Digital Medicine",
+            "issn": "2398-6352"
+          },
+          "authors": [
+            "Mo Yang",
+            "Xuefei Liu",
+            "Wei Dong Du"
+          ],
+          "author_count": 11,
+          "cited_by_count": 4,
+          "counts_by_year": {
+            "2026": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.nature.com/articles/s41746-026-02445-4_reference.pdf"
+          },
+          "url": "https://doi.org/10.1038/s41746-026-02445-4",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7134931861",
+          "doi": "10.1109/tnse.2026.3671446",
+          "title": "A Survey on Semantic Communication for Vision: Categories, Frameworks, Enabling Techniques, and Applications",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Transactions on Network Science and Engineering",
+            "issn": "2327-4697"
+          },
+          "authors": [
+            "Runze Cheng",
+            "Yao Sun",
+            "Ahmad Taha"
+          ],
+          "author_count": 6,
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2026": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://eprints.gla.ac.uk/383023/1/383023.pdf"
+          },
+          "url": "https://doi.org/10.1109/tnse.2026.3671446",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W4405198577",
+          "doi": "10.1016/j.engappai.2024.109730",
+          "title": "Blind sonar image quality assessment via machine learning: Leveraging micro- and macro-scale texture and contour features in the wavelet domain",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Engineering Applications of Artificial Intelligence",
+            "issn": "0952-1976"
+          },
+          "authors": [
+            "Hamidreza Farhadi Tolie",
+            "Jinchang Ren",
+            "Rongjun Chen"
+          ],
+          "author_count": 5,
+          "cited_by_count": 23,
+          "counts_by_year": {
+            "2025": 16,
+            "2026": 7
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.engappai.2024.109730",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7117291023",
+          "doi": "10.1109/taslpro.2025.3648795",
+          "title": "Reframing Audio Data Annotation as Domain Adaptation Process: A Multi-Indicator Active Learning Framework",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Transactions on Audio Speech and Language Processing",
+            "issn": "2998-4173"
+          },
+          "authors": [
+            "Yizhou Tan",
+            "Haojun Ai",
+            "Shengchen Li"
+          ],
+          "author_count": 4,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://kclpure.kcl.ac.uk/ws/files/364028586/TASLPRO3648795-AcceptedManuscript.pdf"
+          },
+          "url": "https://doi.org/10.1109/taslpro.2025.3648795",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7170178680",
+          "doi": "10.1016/j.knosys.2026.116714",
+          "title": "AI-Based semantic video indexing: a unified survey from segmentation to retrieval",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Knowledge-Based Systems",
+            "issn": "0950-7051"
+          },
+          "authors": [
+            "Maria Modrogan",
+            "Ruxandra Țapu",
+            "Bogdan Mocanu"
+          ],
+          "author_count": 3,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0950705126014401/pdf"
+          },
+          "url": "https://doi.org/10.1016/j.knosys.2026.116714",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W4390812911",
+          "doi": "10.1109/taslp.2024.3353578",
+          "title": "Acoustic Scene Classification Across Cities and Devices via Feature Disentanglement",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+            "issn": "2329-9290"
+          },
+          "authors": [
+            "Yizhou Tan",
+            "Haojun Ai",
+            "Shengchen Li"
+          ],
+          "author_count": 4,
+          "cited_by_count": 29,
+          "counts_by_year": {
+            "2024": 3,
+            "2025": 16,
+            "2026": 10
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/taslp.2024.3353578",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4318831574",
+          "doi": "10.1109/tmm.2023.3241553",
+          "title": "RQNet: Residual Quaternion CNN for Performance Enhancement in Low Complexity and Device Robust Acoustic Scene Classification",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Transactions on Multimedia",
+            "issn": "1520-9210"
+          },
+          "authors": [
+            "Aswathy Madhu",
+            "K. Suresh"
+          ],
+          "author_count": 2,
+          "cited_by_count": 18,
+          "counts_by_year": {
+            "2023": 5,
+            "2024": 6,
+            "2025": 5,
+            "2026": 2
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/tmm.2023.3241553",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4376627204",
+          "doi": "10.1016/j.apacoust.2023.109411",
+          "title": "Frequency-based CNN and attention module for acoustic scene classification",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Applied Acoustics",
+            "issn": "0003-682X"
+          },
+          "authors": [
+            "Nisan Aryal",
+            "Sang-Woong Lee"
+          ],
+          "author_count": 2,
+          "cited_by_count": 18,
+          "counts_by_year": {
+            "2023": 5,
+            "2024": 1,
+            "2025": 9,
+            "2026": 3
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.apacoust.2023.109411",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4387448621",
+          "doi": "10.1109/taslp.2023.3323135",
+          "title": "Cooperative Scene-Event Modelling for Acoustic Scene Classification",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+            "issn": "2329-9290"
+          },
+          "authors": [
+            "Yuanbo Hou",
+            "Bo Kang",
+            "Andrew Mitchell"
+          ],
+          "author_count": 6,
+          "cited_by_count": 17,
+          "counts_by_year": {
+            "2024": 6,
+            "2025": 6,
+            "2026": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/6570655/6633080/10274856.pdf"
+          },
+          "url": "https://doi.org/10.1109/taslp.2023.3323135",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4390571032",
+          "doi": "10.1186/s13636-023-00323-5",
+          "title": "Deep semantic learning for acoustic scene classification",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "EURASIP Journal on Audio Speech and Music Processing",
+            "issn": "1687-4714"
+          },
+          "authors": [
+            "Yunfei Shao",
+            "Xinxin Ma",
+            "Yong Ma"
+          ],
+          "author_count": 4,
+          "cited_by_count": 13,
+          "counts_by_year": {
+            "2024": 4,
+            "2025": 6,
+            "2026": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://asmp-eurasipjournals.springeropen.com/counter/pdf/10.1186/s13636-023-00323-5"
+          },
+          "url": "https://doi.org/10.1186/s13636-023-00323-5",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4385783931",
+          "doi": "10.1007/s00034-023-02478-0",
+          "title": "Bi-level Acoustic Scene Classification Using Lightweight Deep Learning Model",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Circuits Systems and Signal Processing",
+            "issn": "0278-081X"
+          },
+          "authors": [
+            "Spoorthy Venkatesh",
+            "Shashidhar G. Koolagudi"
+          ],
+          "author_count": 2,
+          "cited_by_count": 9,
+          "counts_by_year": {
+            "2024": 3,
+            "2025": 4,
+            "2026": 2
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1007/s00034-023-02478-0",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        }
+      ],
+      "query_used": {
+        "openalex_lane": "acoustic scene classification paired device confidence ranking consistency quantization selective"
+      },
+      "semantic_additions": 6,
+      "semantic_note": "The nearest_neighbours list is today's ranked list followed by papers that only a meaning-based search of the full question found (marked retrieved_by: semantic). Read the whole list before judging duplication: a near-duplicate can sit anywhere in it.",
+      "note": "Leads, not a verdict on originality: the Duplication Test judgement belongs to the researcher after opening the closest papers. When presenting: hyperlink titles via url and, in SR mode, put existing_protocols and existing_reviews before the neighbour list. The Duplication Test is a FastTrack method developed by Prof David Stuckler."
+    }
+  },
+  {
+    "id": "CV1-R",
+    "query": "industrial anomaly detection unverified calibration stream selective adaptation defect preservation",
+    "date": "2026-10-27",
+    "data": {
+      "nearest_neighbours": [
+        {
+          "id": "W7147522859",
+          "doi": "10.48550/arxiv.2603.29289",
+          "title": "Downsides of Smartness Across Edge-Cloud Continuum in Modern Industry",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Akhil Gupta Chigullapally",
+            "Sharvan Vittala",
+            "Razin Farhan Hussian"
+          ],
+          "author_count": 4,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2603.29289"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2603.29289",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7147522859",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+        },
+        {
+          "id": "W7164033515",
+          "doi": "10.21203/rs.3.rs-9971201/v1",
+          "title": "Human-Centered Autonomous Drone Deployments: A Comprehensive Survey on Applications, Challenges, and Future Directions",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "Research Square",
+            "issn": null
+          },
+          "authors": [
+            "Mayowa Olapade",
+            "Huber Flores"
+          ],
+          "author_count": 2,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.researchsquare.com/article/rs-9971201/latest.pdf"
+          },
+          "url": "https://doi.org/10.21203/rs.3.rs-9971201/v1",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7164033515",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+        },
+        {
+          "id": "W7214053823",
+          "doi": "10.48550/arxiv.2609.22869",
+          "title": "The Moral Check: Strategic AI Governance for the Pacing Problem",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Zaid Amin",
+            "Rahma Santhi Zinaida",
+            "Nazlena Mohamad Ali"
+          ],
+          "author_count": 3,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2609.22869"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2609.22869",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7214053823",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "study_design": [
+            "Systematic Review"
+          ]
+        },
+        {
+          "id": "W7125906080",
+          "doi": "10.31721/2306-5451-2025-2-23",
+          "year": 2025,
+          "type": "paratext",
+          "venue": {
+            "name": "Jornal of Kryvyi Rih National University",
+            "issn": "2306-5451"
+          },
+          "author_count": 0,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://journal-knu.com.ua/en/journals/download/tom-23-2-2025"
+          },
+          "url": "https://doi.org/10.31721/2306-5451-2025-2-23",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W4384436171",
+          "doi": "10.1016/j.compind.2023.103990",
+          "title": "Industrial anomaly detection with domain shift: A real-world dataset and masked multi-scale reconstruction",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Computers in Industry",
+            "issn": "0166-3615"
+          },
+          "authors": [
+            "Zilong Zhang",
+            "Zhibin Zhao",
+            "Xingwu Zhang"
+          ],
+          "author_count": 5,
+          "cited_by_count": 133,
+          "counts_by_year": {
+            "2023": 4,
+            "2024": 30,
+            "2025": 56,
+            "2026": 43
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2304.02216"
+          },
+          "url": "https://doi.org/10.1016/j.compind.2023.103990",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4386101930",
+          "doi": "10.1016/j.knosys.2023.110929",
+          "title": "STEAMCODER: Spatial and Temporal Adaptive Dynamic Convolution Autoencoder for Anomaly Detection",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Knowledge-Based Systems",
+            "issn": "0950-7051"
+          },
+          "authors": [
+            "Peng Xu",
+            "Honglu Gan",
+            "Hua Fu"
+          ],
+          "author_count": 4,
+          "cited_by_count": 17,
+          "counts_by_year": {
+            "2023": 1,
+            "2024": 3,
+            "2025": 7,
+            "2026": 6
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.knosys.2023.110929",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7214387985",
+          "doi": "10.1007/s00170-026-19191-2",
+          "title": "Risk-controlled multi-view industrial anomaly detection: finite-sample false discovery rate guarantees on the Real-IAD benchmark",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "The International Journal of Advanced Manufacturing Technology",
+            "issn": "0268-3768"
+          },
+          "authors": [
+            "Yan Hong",
+            "Zongquan Sun"
+          ],
+          "author_count": 2,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1007/s00170-026-19191-2",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7213253680",
+          "doi": "10.1117/12.3122767",
+          "title": "Multiprototype representation and controllable anomaly generation for industrial anomaly detection",
+          "year": 2026,
+          "type": "conference-paper",
+          "authors": [
+            "Wenjie Shi",
+            "Jinping Tang"
+          ],
+          "author_count": 2,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1117/12.3122767",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7159068276",
+          "doi": "10.1109/tii.2026.3681299",
+          "title": "CAAD: A Cross-Modal Autoregressive Diffusion Approach for Anomaly Detection in Complex Industrial Processes",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Transactions on Industrial Informatics",
+            "issn": "1551-3203"
+          },
+          "authors": [
+            "Shixiang Li",
+            "Tianyu Chen",
+            "Haiteng Wang"
+          ],
+          "author_count": 6,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/tii.2026.3681299",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W4399708682",
+          "doi": "10.1016/j.cja.2024.06.007",
+          "title": "Few-shot anomaly detection with adaptive feature transformation and descriptor construction",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Chinese Journal of Aeronautics",
+            "issn": "1000-9361"
+          },
+          "authors": [
+            "Zhengnan HU",
+            "Xiangrui ZENG",
+            "Yiqun Li"
+          ],
+          "author_count": 7,
+          "cited_by_count": 9,
+          "counts_by_year": {
+            "2024": 2,
+            "2025": 2,
+            "2026": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.cja.2024.06.007",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        }
+      ],
+      "query_used": {
+        "openalex_lane": "industrial anomaly detection unverified calibration stream selective adaptation defect preservation"
+      },
+      "semantic_additions": 6,
+      "semantic_note": "The nearest_neighbours list is today's ranked list followed by papers that only a meaning-based search of the full question found (marked retrieved_by: semantic). Read the whole list before judging duplication: a near-duplicate can sit anywhere in it.",
+      "note": "Leads, not a verdict on originality: the Duplication Test judgement belongs to the researcher after opening the closest papers. When presenting: hyperlink titles via url and, in SR mode, put existing_protocols and existing_reviews before the neighbour list. The Duplication Test is a FastTrack method developed by Prof David Stuckler."
+    }
+  },
+  {
+    "id": "TS2-R",
+    "query": "conformal load forecasting missing observations delayed feedback calibration outage",
+    "date": "2026-10-27",
+    "data": {
+      "nearest_neighbours": [
+        {
+          "id": "W7151487234",
+          "doi": "10.1007/s10462-026-11545-2",
+          "title": "Generative AI and LLM applications in renewable energy and smart grids: a systematic review for the sustainable energy transition",
+          "year": 2026,
+          "type": "review",
+          "venue": {
+            "name": "Artificial Intelligence Review",
+            "issn": "0269-2821"
+          },
+          "authors": [
+            "Ümit Cali",
+            "Ugur Halden",
+            "Merlinda Andoni"
+          ],
+          "author_count": 15,
+          "cited_by_count": 9,
+          "counts_by_year": {
+            "2026": 9
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1007/s10462-026-11545-2",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ]
+        },
+        {
+          "id": "W7214676109",
+          "doi": "10.63125/w1dxbp77",
+          "title": "Predictive and Explainable Analytics for EHR Data Quality, Operational Risk, and Resource Allocation in U.S. Healthcare Systems",
+          "year": 2026,
+          "type": "article",
+          "authors": [
+            "Saba Ashfaq"
+          ],
+          "author_count": 1,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://ajhmsjournal.com/index.php/ajhms/article/download/15/15"
+          },
+          "url": "https://doi.org/10.63125/w1dxbp77",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7215031034",
+          "doi": "10.1016/j.jii.2026.101218",
+          "title": "Towards a reliability-aware virtual sensor framework for smart water infrastructure: An offline residual-based change-point analysis",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Industrial Information Integration",
+            "issn": "2452-414X"
+          },
+          "authors": [
+            "Vineeth Maruvada",
+            "Karamjit Kaur",
+            "Matt Selway"
+          ],
+          "author_count": 4,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2452414X26001603/pdf"
+          },
+          "url": "https://doi.org/10.1016/j.jii.2026.101218",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W4414013313",
+          "doi": "10.63125/12kp9w74",
+          "title": "ARTIFICIAL INTELLIGENCE-ENABLED DIGITAL TWINS FOR ENERGY EFFICIENCY IN SMART GRIDS",
+          "year": 2025,
+          "type": "article",
+          "authors": [
+            "Manam Ahmed",
+            "Md Rabbi Khan"
+          ],
+          "author_count": 2,
+          "cited_by_count": 13,
+          "counts_by_year": {
+            "2026": 13
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://rast-journal.org/index.php/RAST/article/download/38/39"
+          },
+          "url": "https://doi.org/10.63125/12kp9w74",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7221686681",
+          "doi": "10.36348/gajeb.2026.v08i05.060",
+          "title": "Predictive Maintenance Framework for Smart Electrical Distribution Infrastructure Using Artificial Intelligence and Data Analytics",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Global Academic Journal of Economics and Business",
+            "issn": "2706-9001"
+          },
+          "authors": [
+            "Fahad Khan"
+          ],
+          "author_count": 1,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.gajrc.com/media/articles/GAJEB_85_1742-1753.pdf"
+          },
+          "url": "https://doi.org/10.36348/gajeb.2026.v08i05.060",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7170189320",
+          "doi": "10.1016/j.rineng.2026.112150",
+          "title": "Hybrid AI architectures for solar–wind–battery systems: machine-learning control, fuzzy energy management, robust MPC, and automated source-switching hardware",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Results in Engineering",
+            "issn": "2590-1230"
+          },
+          "authors": [
+            "Eyime Echeng Eyime",
+            "Samuel Chukwujindu Nwokolo",
+            "Fadhil Khadoum Alhousni"
+          ],
+          "author_count": 5,
+          "cited_by_count": 2,
+          "counts_by_year": {
+            "2026": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2590123026031713/pdf"
+          },
+          "url": "https://doi.org/10.1016/j.rineng.2026.112150",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ]
+        },
+        {
+          "id": "W7223317478",
+          "doi": "10.1007/s00202-026-03807-7",
+          "title": "Conformal calibration under temporal dependence for multi-horizon net-load forecasting: a comparative evaluation",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Electrical Engineering",
+            "issn": "0003-9039"
+          },
+          "authors": [
+            "Youssef Sadik",
+            "Ali Nejmi",
+            "Lahoucine Oumiguil"
+          ],
+          "author_count": 5,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1007/s00202-026-03807-7",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7214199974",
+          "doi": "10.5281/zenodo.22930670",
+          "title": "ACL-Federated-Load-Twin: reference implementation for cost-optimal asymmetric conformal calibration for degraded federated load forecasting",
+          "year": 2026,
+          "type": "software",
+          "venue": {
+            "name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn": null
+          },
+          "authors": [
+            "Sarah Al–Shareeda"
+          ],
+          "author_count": 1,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.5281/zenodo.22930670",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7214199974",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7214605629",
+          "doi": "10.1186/s42162-026-00690-1",
+          "title": "Hierarchical reconciliation and per-bus adaptive conformal calibration for distribution-level residential load forecasting: a critical assessment of topology priors",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Energy Informatics",
+            "issn": "2520-8942"
+          },
+          "authors": [
+            "Huijun Hong",
+            "Shijin Xu",
+            "Yiru Yang"
+          ],
+          "author_count": 6,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1186/s42162-026-00690-1",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7167807272",
+          "doi": "10.2139/ssrn.7090665",
+          "title": "Grid-Aware Probabilistic Load Forecast Correction with Mondrian Conformal Calibration",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "SSRN Electronic Journal",
+            "issn": "1556-5068"
+          },
+          "authors": [
+            "Ugochukwu Orji",
+            "Çíçek Güven",
+            "Dan Stowell"
+          ],
+          "author_count": 3,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://doi.org/10.2139/ssrn.7090665"
+          },
+          "url": "https://doi.org/10.2139/ssrn.7090665",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7167807272",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7161957334",
+          "doi": "10.48550/arxiv.2605.20515",
+          "title": "Online Conformal Prediction with Corrupted Feedback",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Bowen Wang",
+            "Matteo Zecchin",
+            "Osvaldo Simeone"
+          ],
+          "author_count": 3,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2605.20515"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2605.20515",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7161957334",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "retrieved_by": "semantic"
+        },
+        {
+          "id": "W7223138473",
+          "doi": "10.5281/zenodo.23545381",
+          "title": "Distributionally Robust Conformal Calibration for Artificial Intelligence Reference-Evapotranspiration Forecasting Under Sensor Degradation: Coverage Gaps and Irrigation Advisory Reliability",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn": null
+          },
+          "authors": [
+            "Tharcisse Ndayishimiye",
+            "Marie-Goretti Nizigiyimana",
+            "Évariste Ntakarutimana"
+          ],
+          "author_count": 3,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.5281/zenodo.23545381",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7223138473",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "retrieved_by": "semantic"
+        }
+      ],
+      "query_used": {
+        "openalex_lane": "conformal load forecasting missing observations delayed feedback calibration outage"
+      },
+      "semantic_additions": 6,
+      "semantic_note": "The nearest_neighbours list is today's ranked list followed by papers that only a meaning-based search of the full question found (marked retrieved_by: semantic). Read the whole list before judging duplication: a near-duplicate can sit anywhere in it.",
+      "note": "Leads, not a verdict on originality: the Duplication Test judgement belongs to the researcher after opening the closest papers. When presenting: hyperlink titles via url and, in SR mode, put existing_protocols and existing_reviews before the neighbour list. The Duplication Test is a FastTrack method developed by Prof David Stuckler."
+    }
+  }
+]

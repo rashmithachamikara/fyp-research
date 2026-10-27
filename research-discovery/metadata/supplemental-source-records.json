@@ -1,0 +1,577 @@
+{
+  "retried_debate": [
+    {
+      "query": "anomaly detection domain shift",
+      "data": {
+        "query_used": "anomaly detection domain shift",
+        "recent_debate": [
+          {
+            "id": "W4384436171",
+            "doi": "10.1016/j.compind.2023.103990",
+            "title": "Industrial anomaly detection with domain shift: A real-world dataset and masked multi-scale reconstruction",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "Computers in Industry",
+              "issn": "0166-3615"
+            },
+            "authors": [
+              "Zilong Zhang",
+              "Zhibin Zhao",
+              "Xingwu Zhang"
+            ],
+            "author_count": 5,
+            "cited_by_count": 133,
+            "counts_by_year": {
+              "2023": 4,
+              "2024": 30,
+              "2025": 56,
+              "2026": 43
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2304.02216"
+            },
+            "url": "https://doi.org/10.1016/j.compind.2023.103990",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4324007053",
+            "doi": "10.14722/ndss.2023.24830",
+            "title": "Anomaly Detection in the Open World: Normality Shift Detection, Explanation, and Adaptation",
+            "year": 2023,
+            "type": "conference-paper",
+            "venue": {
+              "name": "Network and Distributed System Security Symposium",
+              "issn": null
+            },
+            "authors": [
+              "Dongqi Han",
+              "Zhiliang Wang",
+              "Wenqi Chen"
+            ],
+            "author_count": 12,
+            "cited_by_count": 76,
+            "counts_by_year": {
+              "2023": 2,
+              "2024": 26,
+              "2025": 34,
+              "2026": 14
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.14722/ndss.2023.24830"
+            },
+            "url": "https://doi.org/10.14722/ndss.2023.24830",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4388543448",
+            "doi": "10.2139/ssrn.4624206",
+            "title": "YOLO and Faster R-CNN object detection for smart Industry 4.0 and Industry 5.0: applications, challenges, and opportunities",
+            "year": 2023,
+            "type": "preprint",
+            "venue": {
+              "name": "SSRN Electronic Journal",
+              "issn": "1556-5068"
+            },
+            "authors": [
+              "Nitin Liladhar Rane"
+            ],
+            "author_count": 1,
+            "cited_by_count": 69,
+            "counts_by_year": {
+              "2023": 3,
+              "2024": 18,
+              "2025": 30,
+              "2026": 18
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.2139/ssrn.4624206",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W4388543448",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+          },
+          {
+            "id": "W4408998384",
+            "doi": "10.3390/electronics14071394",
+            "title": "IoT–Cloud Integration Security: A Survey of Challenges, Solutions, and Directions",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Electronics",
+              "issn": "2079-9292"
+            },
+            "authors": [
+              "Mohammed M. Almutairi",
+              "Frederick T. Sheldon"
+            ],
+            "author_count": 2,
+            "cited_by_count": 68,
+            "counts_by_year": {
+              "2025": 21,
+              "2026": 47
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.3390/electronics14071394",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4403680445",
+            "doi": "10.1016/j.knosys.2024.112650",
+            "title": "Multi-scale feature reconstruction network for industrial anomaly detection",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "Knowledge-Based Systems",
+              "issn": "0950-7051"
+            },
+            "authors": [
+              "Ehtesham Iqbal",
+              "Samee U. Khan",
+              "Sajid Javed"
+            ],
+            "author_count": 6,
+            "cited_by_count": 44,
+            "counts_by_year": {
+              "2025": 19,
+              "2026": 25
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1016/j.knosys.2024.112650",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4410090311",
+            "doi": "10.1016/j.inffus.2025.103256",
+            "title": "Federated weakly-supervised video anomaly detection with mixture of local-to-global experts",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Information Fusion",
+              "issn": "1566-2535"
+            },
+            "authors": [
+              "Yong R. Su",
+              "Jiahang Li",
+              "Simin An"
+            ],
+            "author_count": 5,
+            "cited_by_count": 33,
+            "counts_by_year": {
+              "2025": 15,
+              "2026": 18
+            },
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1016/j.inffus.2025.103256",
+            "sources": [
+              "openalex"
+            ]
+          }
+        ],
+        "common_ancestors": [
+          {
+            "id": "W2194775991",
+            "doi": "10.1109/cvpr.2016.90",
+            "title": "Deep Residual Learning for Image Recognition",
+            "year": 2016,
+            "author_count": 0,
+            "cited_by_count": 235023,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/cvpr.2016.90",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 6
+          },
+          {
+            "id": "W4312772600",
+            "doi": "10.1109/cvpr52688.2022.00951",
+            "title": "Anomaly Detection via Reverse Distillation from One-Class Embedding",
+            "year": 2022,
+            "author_count": 0,
+            "cited_by_count": 939,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/cvpr52688.2022.00951",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 4
+          },
+          {
+            "id": "W3169651898",
+            "doi": "10.1109/cvpr52688.2022.01392",
+            "title": "Towards Total Recall in Industrial Anomaly Detection",
+            "year": 2022,
+            "author_count": 0,
+            "cited_by_count": 1793,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/cvpr52688.2022.01392",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 4
+          },
+          {
+            "id": "W3183588514",
+            "doi": "10.1109/wacv51458.2022.00188",
+            "title": "CFLOW-AD: Real-Time Unsupervised Anomaly Detection with Localization via Conditional Normalizing Flows",
+            "year": 2022,
+            "author_count": 0,
+            "cited_by_count": 666,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/wacv51458.2022.00188",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 3
+          },
+          {
+            "id": "W2117539524",
+            "doi": "10.1007/s11263-015-0816-y",
+            "title": "ImageNet Large Scale Visual Recognition Challenge",
+            "year": 2015,
+            "author_count": 0,
+            "cited_by_count": 38980,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1007/s11263-015-0816-y",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 3
+          },
+          {
+            "id": "W2948982773",
+            "doi": "10.1109/cvpr.2019.00982",
+            "title": "MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection",
+            "year": 2019,
+            "author_count": 0,
+            "cited_by_count": 2191,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/cvpr.2019.00982",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 3
+          },
+          {
+            "id": "W4214694907",
+            "doi": "10.1109/iccv48922.2021.00822",
+            "title": "DRÆM – A discriminatively trained reconstruction embedding for surface anomaly detection",
+            "year": 2021,
+            "author_count": 0,
+            "cited_by_count": 1077,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1109/iccv48922.2021.00822",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 3
+          },
+          {
+            "id": "W3099658315",
+            "doi": "10.1007/978-3-030-68799-1_35",
+            "title": "PaDiM: A Patch Distribution Modeling Framework for Anomaly Detection and Localization",
+            "year": 2021,
+            "author_count": 0,
+            "cited_by_count": 1406,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1007/978-3-030-68799-1_35",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 3
+          }
+        ],
+        "records_in_window": 849,
+        "window": "2023-2026",
+        "note": "Estimates, not measurements. When presenting: hyperlink titles via url and show common_ancestors as the field's shared root; whether the debate is live or settled is read from what recent papers do with those ancestors, and that reading is the researcher's. Common-ancestor mapping is part of the Debate axis of the FastTrack Convergence Method."
+      }
+    },
+    {
+      "query": "conformal time series",
+      "data": {
+        "query_used": "conformal time series",
+        "recent_debate": [
+          {
+            "id": "W4382727574",
+            "doi": "10.5194/essd-15-2667-2023",
+            "title": "The HTAP_v3 emission mosaic: merging regional and global monthly emissions (2000–2018) to support air quality modelling and policies",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "Earth system science data",
+              "issn": "1866-3508"
+            },
+            "authors": [
+              "Monica Crippa",
+              "Diego Guizzardi",
+              "Tim M. Butler"
+            ],
+            "author_count": 33,
+            "cited_by_count": 190,
+            "counts_by_year": {
+              "2023": 19,
+              "2024": 68,
+              "2025": 56,
+              "2026": 47
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.5194/essd-15-2667-2023",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4375928767",
+            "doi": "10.1109/tpami.2023.3272339",
+            "title": "Conformal Prediction for Time Series",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+              "issn": "0162-8828"
+            },
+            "authors": [
+              "Chen Xu",
+              "Yao Xie"
+            ],
+            "author_count": 2,
+            "cited_by_count": 75,
+            "counts_by_year": {
+              "2023": 2,
+              "2024": 10,
+              "2025": 24,
+              "2026": 39
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2010.09107"
+            },
+            "url": "https://doi.org/10.1109/tpami.2023.3272339",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4384663983",
+            "doi": "10.1002/adma.202304070",
+            "title": "Mold‐Free Manufacturing of Highly Sensitive and Fast‐Response Pressure Sensors Through High‐Resolution 3D Printing and Conformal Oxidative Chemical Vapor Deposition Polymers",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "Advanced Materials",
+              "issn": "0935-9648"
+            },
+            "authors": [
+              "Jinwook Baek",
+              "Yujie Shan",
+              "Mitesh Mylvaganan"
+            ],
+            "author_count": 10,
+            "cited_by_count": 71,
+            "counts_by_year": {
+              "2024": 18,
+              "2025": 31,
+              "2026": 22
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/adma.202304070"
+            },
+            "url": "https://doi.org/10.1002/adma.202304070",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4306988888",
+            "doi": "10.1007/jhep02(2023)021",
+            "title": "Parity violation in the scalar trispectrum: no-go theorems and yes-go examples",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "Journal of High Energy Physics",
+              "issn": "1029-8479"
+            },
+            "authors": [
+              "Giovanni Cabass",
+              "Sadra Jazayeri",
+              "Enrico Pajer"
+            ],
+            "author_count": 4,
+            "cited_by_count": 64,
+            "counts_by_year": {
+              "2023": 16,
+              "2024": 20,
+              "2025": 16,
+              "2026": 12
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://link.springer.com/content/pdf/10.1007/JHEP02(2023)021.pdf"
+            },
+            "url": "https://doi.org/10.1007/jhep02(2023)021",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W4391771478",
+            "doi": "10.1021/acs.energyfuels.3c04078",
+            "title": "High-Energy-Density Quasi-Solid-State Supercapacitor with a MoS 2 @FeS 2 Core–Shell Heterostructure as an Advance Electrode Material",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "Energy & Fuels",
+              "issn": "0887-0624"
+            },
+            "authors": [
+              "Abhijeet Singh",
+              "Muzahir Iqbal",
+              "Kiran Shankar Hazra"
+            ],
+            "author_count": 4,
+            "cited_by_count": 61,
+            "counts_by_year": {
+              "2024": 17,
+              "2025": 19,
+              "2026": 25
+            },
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1021/acs.energyfuels.3c04078",
+            "sources": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "W7133239795",
+            "doi": "10.52202/075280-1000",
+            "title": "Conformal PID Control for Time Series Prediction",
+            "year": 2023,
+            "type": "conference-paper",
+            "venue": {
+              "name": "neural information processing systems",
+              "issn": "1049-5258"
+            },
+            "authors": [
+              "Anastasios N. Angelopoulos",
+              "Emmanuel J. Candès",
+              "Ryan J. Tibshirani"
+            ],
+            "author_count": 3,
+            "cited_by_count": 57,
+            "counts_by_year": {
+              "2024": 4,
+              "2025": 31,
+              "2026": 22
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2307.16895"
+            },
+            "url": "https://doi.org/10.52202/075280-1000",
+            "sources": [
+              "openalex"
+            ]
+          }
+        ],
+        "common_ancestors": [
+          {
+            "id": "W2035433892",
+            "doi": "10.1088/1126-6708/2003/05/013",
+            "title": "Non-gaussian features of primordial fluctuations in single field inflationary models",
+            "year": 2003,
+            "author_count": 0,
+            "cited_by_count": 2905,
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1088/1126-6708/2003/05/013",
+            "sources": [
+              "openalex"
+            ],
+            "shared_by": 2
+          }
+        ],
+        "records_in_window": 1583,
+        "window": "2023-2026",
+        "note": "Estimates, not measurements. When presenting: hyperlink titles via url and show common_ancestors as the field's shared root; whether the debate is live or settled is read from what recent papers do with those ancestors, and that reading is the researcher's. Common-ancestor mapping is part of the Debate axis of the FastTrack Convergence Method."
+      }
+    }
+  ],
+  "repositories": [
+    {
+      "id": "visa-readme",
+      "url": "https://github.com/amazon-science/spot-diff/blob/main/README.md",
+      "sha": "ac656d6626ae75a96d57311b811fb43f58a60400"
+    },
+    {
+      "id": "visa-licence",
+      "url": "https://github.com/amazon-science/spot-diff/blob/main/LICENSE-DATASET",
+      "sha": "4ea99c213c5c0c005ae4e80df8e52169d06896ec"
+    },
+    {
+      "id": "aebad-readme",
+      "url": "https://github.com/zhangzilongc/MMR/blob/master/README.md",
+      "sha": "702fd73a196d67c4519eb5c781647661c46bb091"
+    }
+  ],
+  "loader": {
+    "url": "https://github.com/CPJKU/dcase2025_task1_baseline/blob/main/dataset/dcase25.py",
+    "sha": "1bf301aea3eb96d44f7ad1ed2c8c06cca51abed9"
+  }
+}

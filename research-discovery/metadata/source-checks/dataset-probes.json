@@ -1,0 +1,217 @@
+{
+  "checked_date": "2026-10-27",
+  "checks": [
+    {
+      "url": "https://zenodo.org/api/records/6337421",
+      "record": "6337421",
+      "access_right": "open",
+      "license": {
+        "id": "other-nc"
+      },
+      "files": [
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.2.zip",
+          "bytes": 1791821989,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.2.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.9.zip",
+          "bytes": 1790044829,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.9.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.doc.zip",
+          "bytes": 16819,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.doc.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.meta.zip",
+          "bytes": 1538781,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.meta.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.16.zip",
+          "bytes": 435379083,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.16.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.15.zip",
+          "bytes": 1877789093,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.15.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.6.zip",
+          "bytes": 1836165296,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.6.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.8.zip",
+          "bytes": 1758317867,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.8.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.14.zip",
+          "bytes": 1854884822,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.14.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.3.zip",
+          "bytes": 1878561499,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.3.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.13.zip",
+          "bytes": 1844234922,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.13.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.12.zip",
+          "bytes": 1748795940,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.12.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.11.zip",
+          "bytes": 1754618148,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.11.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.10.zip",
+          "bytes": 1736836871,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.10.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.4.zip",
+          "bytes": 1887825128,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.4.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.1.zip",
+          "bytes": 1736050960,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.1.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.5.zip",
+          "bytes": 1832871840,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.5.zip/content"
+        },
+        {
+          "name": "TAU-urban-acoustic-scenes-2022-mobile-development.audio.7.zip",
+          "bytes": 1737838582,
+          "url": "https://zenodo.org/api/records/6337421/files/TAU-urban-acoustic-scenes-2022-mobile-development.audio.7.zip/content"
+        }
+      ],
+      "inspected_archives": [
+        {
+          "file": "TAU-urban-acoustic-scenes-2022-mobile-development.doc.zip",
+          "bytes_downloaded": 16819,
+          "members": [
+            "TAU-urban-acoustic-scenes-2022-mobile-development/README.md",
+            "TAU-urban-acoustic-scenes-2022-mobile-development/LICENSE",
+            "TAU-urban-acoustic-scenes-2022-mobile-development/README.html"
+          ]
+        },
+        {
+          "file": "TAU-urban-acoustic-scenes-2022-mobile-development.meta.zip",
+          "bytes_downloaded": 1538781,
+          "members": [
+            "TAU-urban-acoustic-scenes-2022-mobile-development/meta.csv",
+            "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_train.csv",
+            "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_test.csv",
+            "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_evaluate.csv"
+          ]
+        }
+      ],
+      "text_previews": [
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/README.md",
+          "first_lines": [
+            "Title:  TAU Urban Acoustic Scenes 2022 Mobile, Development dataset",
+            "",
+            "# TAU Urban Acoustic Scenes 2022 Mobile, Development dataset",
+            "",
+            "[Audio Research Group / Tampere University](https://webpages.tuni.fi/arg/)",
+            ""
+          ]
+        },
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/README.html",
+          "first_lines": [
+            "",
+            "<!DOCTYPE html>",
+            "<html>",
+            "<head>",
+            "    <title>TAU Urban Acoustic Scenes 2022 Mobile, Development dataset</title>",
+            "    <meta charset=\"UTF-8\">"
+          ]
+        },
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/meta.csv",
+          "first_lines": [
+            "filename\tscene_label\tidentifier\tsource_label",
+            "audio/airport-lisbon-1000-40000-0-a.wav\tairport\tlisbon-1000\ta",
+            "audio/airport-lisbon-1000-40000-1-a.wav\tairport\tlisbon-1000\ta",
+            "audio/airport-lisbon-1000-40000-2-a.wav\tairport\tlisbon-1000\ta",
+            "audio/airport-lisbon-1000-40000-3-a.wav\tairport\tlisbon-1000\ta",
+            "audio/airport-lisbon-1000-40000-4-a.wav\tairport\tlisbon-1000\ta"
+          ]
+        },
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_train.csv",
+          "first_lines": [
+            "filename\tscene_label",
+            "audio/airport-lisbon-1000-40000-0-a.wav\tairport",
+            "audio/airport-lisbon-1000-40000-1-a.wav\tairport",
+            "audio/airport-lisbon-1000-40000-2-a.wav\tairport",
+            "audio/airport-lisbon-1000-40000-3-a.wav\tairport",
+            "audio/airport-lisbon-1000-40000-4-a.wav\tairport"
+          ]
+        },
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_test.csv",
+          "first_lines": [
+            "filename",
+            "audio/airport-barcelona-203-6129-0-a.wav",
+            "audio/airport-barcelona-203-6129-1-a.wav",
+            "audio/airport-barcelona-203-6129-2-a.wav",
+            "audio/airport-barcelona-203-6129-3-a.wav",
+            "audio/airport-barcelona-203-6129-4-a.wav"
+          ]
+        },
+        {
+          "member": "TAU-urban-acoustic-scenes-2022-mobile-development/evaluation_setup/fold1_evaluate.csv",
+          "first_lines": [
+            "filename\tscene_label",
+            "audio/airport-barcelona-203-6129-0-a.wav\tairport",
+            "audio/airport-barcelona-203-6129-1-a.wav\tairport",
+            "audio/airport-barcelona-203-6129-2-a.wav\tairport",
+            "audio/airport-barcelona-203-6129-3-a.wav\tairport",
+            "audio/airport-barcelona-203-6129-4-a.wav\tairport"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://zenodo.org/api/records/12528696",
+      "record": "12528696",
+      "access_right": "open",
+      "license": null,
+      "files": [
+        {
+          "name": "ESA-Mission1.zip",
+          "bytes": 3776246054,
+          "url": "https://zenodo.org/api/records/12528696/files/ESA-Mission1.zip/content"
+        },
+        {
+          "name": "ESA-Mission2.zip",
+          "bytes": 4098539912,
+          "url": "https://zenodo.org/api/records/12528696/files/ESA-Mission2.zip/content"
+        },
+        {
+          "name": "ESA-Mission3.zip",
+          "bytes": 3734403447,
+          "url": "https://zenodo.org/api/records/12528696/files/ESA-Mission3.zip/content"
+        }
+      ]
+    }
+  ]
+}

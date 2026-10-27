@@ -1,0 +1,304 @@
+[
+  {
+    "id": "IMPACT-CV1",
+    "date": "2026-10-27",
+    "data": {
+      "id": "W7203894665",
+      "doi": "10.48550/arxiv.2608.18585",
+      "title": "SPARC: Subspace Position-Aware Robust Few-Shot Calibration for Distribution-Shifted Industrial Anomaly Detection",
+      "year": 2026,
+      "type": "preprint",
+      "venue": {
+        "name": "arXiv (Cornell University)",
+        "issn": "2331-8422"
+      },
+      "authors": [
+        "Seokhee Han",
+        "Seungjun Chu",
+        "Mateusz Nowak"
+      ],
+      "author_count": 4,
+      "cited_by_count": 0,
+      "oa": {
+        "is_oa": true,
+        "pdf_url": "https://arxiv.org/pdf/2608.18585"
+      },
+      "url": "https://doi.org/10.48550/arxiv.2608.18585",
+      "sources": [
+        "openalex"
+      ],
+      "openalex_url": "https://openalex.org/W7203894665",
+      "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+    }
+  },
+  {
+    "id": "IMPACT-AU2",
+    "date": "2026-10-27",
+    "data": {
+      "id": "W4415028414",
+      "doi": "10.48550/arxiv.2505.01747",
+      "title": "Low-Complexity Acoustic Scene Classification with Device Information in the DCASE 2025 Challenge",
+      "year": 2025,
+      "type": "preprint",
+      "venue": {
+        "name": "arXiv (Cornell University)",
+        "issn": "2331-8422"
+      },
+      "authors": [
+        "Florian T. Schmid",
+        "Paul Primus",
+        "Toni Heittola"
+      ],
+      "author_count": 6,
+      "cited_by_count": 0,
+      "oa": {
+        "is_oa": true,
+        "pdf_url": "https://arxiv.org/pdf/2505.01747"
+      },
+      "url": "https://doi.org/10.48550/arxiv.2505.01747",
+      "sources": [
+        "openalex"
+      ],
+      "openalex_url": "https://openalex.org/W4415028414",
+      "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+    }
+  },
+  {
+    "id": "IMPACT-TS2",
+    "date": "2026-10-27",
+    "data": {
+      "id": "W4316116193",
+      "doi": "10.1109/tpwrs.2023.3310280",
+      "title": "Adaptive Probabilistic Forecasting of Electricity (Net-)Load",
+      "year": 2023,
+      "type": "article",
+      "venue": {
+        "name": "IEEE Transactions on Power Systems",
+        "issn": "0885-8950"
+      },
+      "authors": [
+        "Joseph de Vilmarest",
+        "Jethro Browell",
+        "Matteo Fasiolo"
+      ],
+      "author_count": 5,
+      "cited_by_count": 37,
+      "counts_by_year": {
+        "2024": 4,
+        "2025": 18,
+        "2026": 15
+      },
+      "oa": {
+        "is_oa": true,
+        "pdf_url": null
+      },
+      "url": "https://doi.org/10.1109/tpwrs.2023.3310280",
+      "sources": [
+        "openalex"
+      ]
+    }
+  },
+  {
+    "id": "DEBATE-CV1",
+    "date": "2026-10-27",
+    "data": {
+      "query_used": "industrial visual anomaly detection distribution shift few shot calibration",
+      "recent_debate": [
+        {
+          "id": "W7214913654",
+          "doi": "10.28979/jarnas.1957308",
+          "title": "Risk-Calibrated Few-Shot Industrial Anomaly Detection with Human-in-the-Loop Inspection",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Advanced Research in Natural and Applied Sciences",
+            "issn": "2459-1580"
+          },
+          "authors": [
+            "İsmail Hakkı Kinalioğlu"
+          ],
+          "author_count": 1,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://dergipark.org.tr/en/download/article-file/6043235"
+          },
+          "url": "https://doi.org/10.28979/jarnas.1957308",
+          "sources": [
+            "openalex"
+          ]
+        }
+      ],
+      "common_ancestors": [],
+      "records_in_window": 1,
+      "window": "2023-2026",
+      "note": "Estimates, not measurements. When presenting: hyperlink titles via url and show common_ancestors as the field's shared root; whether the debate is live or settled is read from what recent papers do with those ancestors, and that reading is the researcher's. Common-ancestor mapping is part of the Debate axis of the FastTrack Convergence Method.",
+      "retrieval_caveat": "Near-zero matches usually mean the query over-specified and matched nothing: a retrieval artefact, not evidence of an open gap. Simplify to 3-6 core concepts and rerun before reading this as originality."
+    }
+  },
+  {
+    "id": "DEBATE-AU2",
+    "date": "2026-10-27",
+    "data": {
+      "query_used": "low complexity acoustic scene classification device mismatch",
+      "recent_debate": [
+        {
+          "id": "W4408354146",
+          "doi": "10.1109/icassp49660.2025.10890296",
+          "title": "Data-Efficient Low-Complexity Acoustic Scene Classification via Distilling and Progressive Pruning",
+          "year": 2025,
+          "type": "conference-paper",
+          "venue": {
+            "name": "IEEE International Conference on Acoustics Speech and Signal Processing",
+            "issn": "1520-6149"
+          },
+          "authors": [
+            "Bing Han",
+            "Wen Cai Huang",
+            "Zhengyang Chen"
+          ],
+          "author_count": 10,
+          "cited_by_count": 5,
+          "counts_by_year": {
+            "2025": 2,
+            "2026": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2410.20775"
+          },
+          "url": "https://doi.org/10.1109/icassp49660.2025.10890296",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W4415028414",
+          "doi": "10.48550/arxiv.2505.01747",
+          "title": "Low-Complexity Acoustic Scene Classification with Device Information in the DCASE 2025 Challenge",
+          "year": 2025,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Florian T. Schmid",
+            "Paul Primus",
+            "Toni Heittola"
+          ],
+          "author_count": 6,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2505.01747"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2505.01747",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W4415028414",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+        },
+        {
+          "id": "W4397028454",
+          "doi": "10.48550/arxiv.2405.10018",
+          "title": "Data-Efficient Low-Complexity Acoustic Scene Classification in the DCASE 2024 Challenge",
+          "year": 2024,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Florian T. Schmid",
+            "Paul Primus",
+            "Toni Heittola"
+          ],
+          "author_count": 7,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2405.10018"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2405.10018",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W4397028454",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now."
+        }
+      ],
+      "common_ancestors": [],
+      "records_in_window": 5,
+      "window": "2023-2026",
+      "note": "Estimates, not measurements. When presenting: hyperlink titles via url and show common_ancestors as the field's shared root; whether the debate is live or settled is read from what recent papers do with those ancestors, and that reading is the researcher's. Common-ancestor mapping is part of the Debate axis of the FastTrack Convergence Method."
+    }
+  },
+  {
+    "id": "DEBATE-TS2",
+    "date": "2026-10-27",
+    "data": {
+      "query_used": "conformal prediction incomplete time series forecasting",
+      "recent_debate": [
+        {
+          "id": "W4413902256",
+          "doi": "10.3389/fcvm.2025.1651324",
+          "title": "Cognitive alignment in cardiovascular AI: designing predictive models that think with, not just for, clinicians",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Frontiers in Cardiovascular Medicine",
+            "issn": "2297-055X"
+          },
+          "authors": [
+            "Jeena Joseph",
+            "K. Kartheeban"
+          ],
+          "author_count": 2,
+          "cited_by_count": 2,
+          "counts_by_year": {
+            "2026": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1651324/pdf"
+          },
+          "url": "https://doi.org/10.3389/fcvm.2025.1651324",
+          "sources": [
+            "openalex"
+          ]
+        },
+        {
+          "id": "W7213962904",
+          "title": "Daily Discharge Forecasting Based on Multiscale Hydrological Features and CatBoost",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn": null
+          },
+          "authors": [
+            "ZHANG Dawen",
+            "GAO Yudan"
+          ],
+          "author_count": 2,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://openalex.org/W7213962904",
+          "sources": [
+            "openalex"
+          ]
+        }
+      ],
+      "common_ancestors": [],
+      "records_in_window": 2,
+      "window": "2023-2026",
+      "note": "Estimates, not measurements. When presenting: hyperlink titles via url and show common_ancestors as the field's shared root; whether the debate is live or settled is read from what recent papers do with those ancestors, and that reading is the researcher's. Common-ancestor mapping is part of the Debate axis of the FastTrack Convergence Method.",
+      "retrieval_caveat": "Near-zero matches usually mean the query over-specified and matched nothing: a retrieval artefact, not evidence of an open gap. Simplify to 3-6 core concepts and rerun before reading this as originality."
+    }
+  }
+]
