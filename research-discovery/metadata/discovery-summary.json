@@ -3052,6 +3052,1154 @@
           "confidence_and_reason": "Medium-high: historical map replay fits team engineering skills."
         }
       ]
+    },
+    "X22": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x22-sar-missing-annotations.md",
+      "weighted_score": 69.8,
+      "raw_weighted_score": 68.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "Dataset imagery/API terms remain to verify for the exact intended subset.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: An original-source dataset route exists, but labels, access or evaluation support remain incomplete."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Medium-low: Scene extraction and multiple detector runs may exceed the initial resource estimate."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X23": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x23-nearshore-mask-errors.md",
+      "weighted_score": 70.8,
+      "raw_weighted_score": 69.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "Dataset imagery/API terms remain to verify for the exact intended subset.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: An original-source dataset route exists, but labels, access or evaluation support remain incomplete."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X24": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x24-sar-weather-reliability.md",
+      "weighted_score": 70.8,
+      "raw_weighted_score": 69.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "Dataset imagery/API terms remain to verify for the exact intended subset.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: An original-source dataset route exists, but labels, access or evaluation support remain incomplete."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X25": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x25-ship-reid-size-uncertainty.md",
+      "weighted_score": 76.7,
+      "raw_weighted_score": 75.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "HOSS is downloadable and licensed; its identity-labelled crops support the bounded benchmark claim. Size fields/pixels remain to inspect.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "The cached-feature or compact-model route is a plausible 6–8 month design, not a demonstrated completion/runtime guarantee.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "The bounded public-data route uses a verified CC BY 4.0 release; source attribution and label interpretation remain required.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "Medium-high: HOSS archive and CC BY 4.0 terms inspected; metadata details and model loading remain untested."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: Cached features/compact models fit a bounded design; execution remains estimated."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X26": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x26-ship-reid-online-fragmentation.md",
+      "weighted_score": 77.8,
+      "raw_weighted_score": 76.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "HOSS is downloadable and licensed; identity-labelled crops and sequence indices support controlled online-order experiments.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "The cached-feature or compact-model route is a plausible 6–8 month design, not a demonstrated completion/runtime guarantee.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "The bounded public-data route uses a verified CC BY 4.0 release; source attribution and label interpretation remain required.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "Medium-high: HOSS archive and CC BY 4.0 terms inspected; metadata details and model loading remain untested."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: Cached features/compact models fit a bounded design; execution remains estimated."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5.0,
+          "confidence_and_reason": "Medium-high: Cached-feature/CPU experiments are plausible; no runtime or peak memory measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X27": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x27-wake-visibility.md",
+      "weighted_score": 69.8,
+      "raw_weighted_score": 68.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "The bounded public-data route uses a verified CC BY 4.0 release; source attribution and label interpretation remain required.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: An original-source dataset route exists, but labels, access or evaluation support remain incomplete."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Medium-low: Scene extraction and multiple detector runs may exceed the initial resource estimate."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X28": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x28-sar-length-label-errors.md",
+      "weighted_score": 65.3,
+      "raw_weighted_score": 64.0,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Independent outcome/reception/event references are not secured; only a narrower controlled endpoint is currently definable.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "The bounded public-data route uses a verified CC BY 4.0 release; source attribution and label interpretation remain required.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: Required independent labels or historical observations have not been secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: Evaluation for the stronger real-world claim needs independent references; controlled tests support less."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X29": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x29-fishing-classification-shift.md",
+      "weighted_score": 73.7,
+      "raw_weighted_score": 72.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Section 7 defines objective bounded endpoints, grouped splits and baseline/ablation controls; data limitations constrain claims.",
+        "G9": "The cached-feature or compact-model route is a plausible 6–8 month design, not a demonstrated completion/runtime guarantee.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "The bounded public-data route uses a verified CC BY 4.0 release; source attribution and label interpretation remain required.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium-low: An original-source dataset route exists, but labels, access or evaluation support remain incomplete."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: Cached features/compact models fit a bounded design; execution remains estimated."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Explicit grouped evaluation, controls and uncertainty are defined, conditional on the documented data checks."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X30": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x30-sparse-vessel-colocation.md",
+      "weighted_score": 62.4,
+      "raw_weighted_score": 61.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Independent outcome/reception/event references are not secured; only a narrower controlled endpoint is currently definable.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "Dataset imagery/API terms remain to verify for the exact intended subset.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: Required independent labels or historical observations have not been secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: The present satellite claim requires paired data not yet available."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: Evaluation for the stronger real-world claim needs independent references; controlled tests support less."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: Bounded subsets and occasional GPU use appear manageable; storage/time estimates are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
+    },
+    "X31": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional candidate opportunity; gap verification required",
+      "report": "reports/gaps/x31-ais-reception-drift.md",
+      "weighted_score": 66.3,
+      "raw_weighted_score": 65.0,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the closest sources identify a concrete observation or identity failure; benefit is not yet demonstrated.",
+        "G2": "The research question concerns learned prediction, representation or adaptation.",
+        "G3": "Sections 4 and 6 specify models/objectives to train or adapt, not an external API-only application.",
+        "G4": "Section 5 identifies missing access, label, alignment or independent-reference requirements; adjacent public data do not resolve them.",
+        "G5": "The bounded proposal uses existing observations/labels. No new fieldwork, interviews or expert annotation is required; absent existing labels block selection.",
+        "G6": "The distinction beyond close prior methods remains an inferred opportunity, not a verified novel gap.",
+        "G7": "Trainable methodological interventions and ablations go beyond assembling a vessel dashboard.",
+        "G8": "Independent outcome/reception/event references are not secured; only a narrower controlled endpoint is currently definable.",
+        "G9": "Data prerequisites must be resolved before completion in 6–8 months can be supported.",
+        "G10": "Each member has a question, trained intervention, baseline/ablation and attributable result; all can use unchanged common features/models.",
+        "G11": "Core design excludes raw global ingestion, new hardware and continuous high-end or multi-GPU pretraining; estimates appear in section 5.",
+        "G12": "Dataset imagery/API terms remain to verify for the exact intended subset.",
+        "G13": "Section 7 defines useful findings if the intervention loses or the stronger claim is not identifiable."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: Specific failure is testable, but overlap with the cited neighbours remains unresolved; no certified novelty."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: Required independent labels or historical observations have not been secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Completion depends on resolving data or methodological prerequisites early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Losses, trainable fusion/state models or calibration are substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: Evaluation for the stronger real-world claim needs independent references; controlled tests support less."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Three related model investigations can each use an unchanged common baseline; data dependencies remain explicit."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: A specific observation/identity error affects maritime research; operational benefits remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5.0,
+          "confidence_and_reason": "Medium-high: Cached-feature/CPU experiments are plausible; no runtime or peak memory measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
+        }
+      ]
     }
   },
   "scoring_policy": {
@@ -3143,5 +4291,26 @@
     "qualified": 0,
     "data_access_requests_sent": false,
     "model_training_run": false
+  },
+  "maritime_discovery": {
+    "checked_on": "2026-10-28",
+    "records_file": "maritime-expansion-records.json",
+    "candidate_ids": [
+      "X22",
+      "X23",
+      "X24",
+      "X25",
+      "X26",
+      "X27",
+      "X28",
+      "X29",
+      "X30",
+      "X31"
+    ],
+    "qualified_count": 0,
+    "search_queries": 20,
+    "result_occurrences": 329,
+    "duplication_queries": 20,
+    "note": "Ten alternative source-grounded opportunities; novelty unresolved. HOSS archive inspected; no models run."
   }
 }

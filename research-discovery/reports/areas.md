@@ -21,6 +21,7 @@ The aim is one shared problem with three independently assessable research contr
 | Waste-material segmentation | Clutter, rare materials, limited mask labels | [ZeroWaste](https://ai.bu.edu/zerowaste/) | Explore next |
 | Elephant movement and human–elephant conflict | Seasonal passage, recorded conflict, corridor/fence permeability and acoustic reliability | Existing Sri Lankan outcomes mostly request/licence-dependent; [LUCIS supplement](https://github.com/batlahiya/Supplementary-data-and-figures-for-the-LUCIS) has verified model/planning outputs | Conditional on data access |
 | Satellite–AIS vessel association | Sparse reports, competing vessel identities, calibrated matching and rejection | [GR-PTA author subset](https://github.com/Du-Jinjin/GR-PTA); independent labels, scale and rights need verification | Conditional on paired data |
+| Satellite maritime observation and vessel identity | SAR annotation gaps, nearshore failures, optical/SAR ReID, wake reliability and AIS reception drift | [HOSS: 82.9 MB, CC BY 4.0](https://doi.org/10.5281/zenodo.15860212); [UEIKAP: manifests checked](https://doi.org/10.5281/zenodo.18391027) | Explore HOSS first; other claims have data prerequisites |
 | Recommender systems | Cold start, sparse feedback, popularity bias | [Stable MovieLens releases](https://www.grouplens.org/datasets/movielens/) | Explore next |
 | Defensive cybersecurity ML | Cross-capture transfer, rare attacks, reliable detection | [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset) | Optional |
 
@@ -28,4 +29,6 @@ Dataset links are starting resources, not completed access audits. Field images 
 
 The 28 October passes add candidates in document layout, radar–optical land cover, road damage, quantised search, text disagreement, soft sound events, audio annotation views, sensor-detector selection, activity transitions and intermittent demand. Five further vision candidates cover plant-lesion crops, transparent-object boundaries, wildlife crop reliability, building-change alignment and rare-material pseudo-labels. Five elephant-related opportunities (X16–X20) were also assessed using the supplied review and selected original sources. Their local outcome-data access is unresolved. These are candidate research opportunities; the linked briefs distinguish established findings from proposed gaps.
 
-[View all 24 research candidates and scores](research-candidates.md).
+Ten further maritime candidates (X22–X31) investigate specific failure modes beyond generic dark-vessel detection. HOSS visual re-identification is the clearest bounded data route; encounter duration and intentional-disabling claims require different reference evidence. These are proposed questions, not verified novelty.
+
+[View all 34 research candidates and scores](research-candidates.md).

@@ -34,6 +34,7 @@ expansion = json.loads((root / 'expansion-records.json').read_text(encoding='utf
 cv_expansion = json.loads((root / 'cv-expansion-records.json').read_text(encoding='utf-8'))
 elephant_expansion = json.loads((root / 'elephant-expansion-records.json').read_text(encoding='utf-8'))
 satellite_ais = json.loads((root / 'satellite-ais-records.json').read_text(encoding='utf-8'))
+maritime = json.loads((root / 'maritime-expansion-records.json').read_text(encoding='utf-8'))
 report_files = sorted(reports_root.rglob('*.md'))
 expected_reports = {'areas.md', 'research-candidates.md'} | {
     assessment['report'].removeprefix('reports/') for assessment in assessments.values()
@@ -80,7 +81,8 @@ for path in gap_files:
 new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21'}
+maritime_ids = {f'X{i:02}' for i in range(22, 32)}
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21'} | maritime_ids
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -259,6 +261,33 @@ vessel_csv = next(check for check in ais_audit['checks']
 assert vessel_csv['samples'][0]['row_count'] == 3172
 assert vessel_csv['samples'][0]['columns'] == ['detect_id', 'length_m', 'presence']
 
+assert {candidate['id'] for candidate in maritime['candidates']} == maritime_ids
+assert len(maritime['searches']) == 20 and len(maritime['duplications']) == 20
+assert sum(len(query['data']['results']) for query in maritime['searches']) == 329
+assert len({query['id'] for query in maritime['searches'] + maritime['duplications']}) == 40
+assert len(maritime['screened_out_formulations']) == 5
+for candidate in maritime['candidates']:
+    candidate_id = candidate['id']
+    assessment = assessments[candidate_id]
+    assert candidate['weighted_score'] == assessment['weighted_score']
+    assert candidate['gate_decisions'] == assessment['gate_decisions']
+    assert not candidate['qualified'] and assessment['ratings'][0]['rating'] == 3
+    assert candidate['unresolved_gates'] == assessment['unresolved_gates']
+    assert 'G6' in assessment['unresolved_gates']
+    assert len(candidate['sources']) >= 3 and candidate['dataSources']
+    assert len(candidate['members']) == 3
+    assert all(' H: ' in member[1] for member in candidate['members'])
+    brief = (discovery_root / candidate['report']).read_text(encoding='utf-8')
+    assert 'Rival explanation' in brief and 'Unmeasured resource estimate' in brief
+    assert 'Useful findings without outperforming the strongest baseline' in brief
+for source in maritime['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+maritime_data = json.loads((root / maritime['data_check_file']).read_text(encoding='utf-8'))
+assert not maritime_data['models_run']
+assert {check['id'] for check in maritime_data['checks']} == {15860212, 18391027}
+assert all(check['metadata']['license']['id'] == 'cc-by-4.0' for check in maritime_data['checks'])
+
 source_audit = json.loads((root / 'source-checks/expansion-data-checks.json').read_text(encoding='utf-8'))
 source_checks = {check['id']: check for check in source_audit['checks']}
 assert source_checks['car-parts-original']['parsed_sample']['series_count'] == 2674
@@ -305,6 +334,11 @@ report = {
     'further_cv_code_routes_checked': len(cv_expansion['code_route_checks']) + len(cv_expansion['additional_code_route_checks']),
     'further_cv_bounded_data_checks': len(cv_expansion['bounded_data_checks']),
     'total_evaluated_candidates': len(assessments),
+    'further_maritime_candidates': len(maritime['candidates']),
+    'further_maritime_discovery_queries': len(maritime['searches']),
+    'further_maritime_search_occurrences': 329,
+    'further_maritime_duplication_queries': len(maritime['duplications']),
+    'further_maritime_curated_evidence_rows': len(maritime['curated_sources']),
     'elephant_conditional_opportunities': len(elephant_expansion['candidates']),
     'elephant_discovery_queries': len(elephant_expansion['searches']),
     'elephant_discovery_occurrences': sum(len(query['data']['results']) for query in elephant_expansion['searches']),
@@ -335,7 +369,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All twenty-one added-candidate scores are provisional; X16-X20 depend on unsecured local outcomes and X21 on suitable paired identity data and rights.'
+    'qualification_note': 'No candidate meets every category threshold. All thirty-one added-candidate scores are provisional. X22-X31 are further maritime opportunities with unresolved novelty; the other critical data/evaluation dependencies are preserved in their gate assessments.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))
