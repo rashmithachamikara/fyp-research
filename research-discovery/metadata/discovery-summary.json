@@ -2935,6 +2935,123 @@
           "confidence_and_reason": "Medium-high: offline audio visualisation fits the team."
         }
       ]
+    },
+    "X21": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional redesign/defer after gap verification; no novel gap established",
+      "report": "reports/gaps/x21-satellite-ais-association.md",
+      "weighted_score": 64.5,
+      "raw_weighted_score": 63.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Unknown",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Original matching studies document asynchronous reports, ambiguous correspondences and rejection difficulties.",
+        "G2": "Learned position distributions, confidence and selective models are central to the question.",
+        "G3": "Sections 4 and 6 define trainable models and empirical adaptations.",
+        "G4": "Enough paired histories and independent identity labels for distinct train/calibration/test events are not verified.",
+        "G5": "Design relies on existing author-validated labels; no new expert annotation, recruitment or fieldwork is assumed.",
+        "G6": "The five broad claims do not establish novelty; a narrower final-identity calibration distinction still needs decisive comparison.",
+        "G7": "The proposed components have close precedents; an advance beyond implementing and combining them has not been established.",
+        "G8": "Section 7 defines identity, rejection and uncertainty outcomes with leakage-safe controls, conditional on suitable data.",
+        "G9": "Adequate existing paired data and a reproducible strong baseline must be established first.",
+        "G10": "Position modelling, decision calibration and selective association share one question and baseline.",
+        "G11": "Fixed detections and compact models avoid satellite hardware or continuous large-GPU training.",
+        "G12": "Author-subset licence and image/AIS reuse terms are not established; public visibility is insufficient permission.",
+        "G13": "Calibration failures, threshold equivalence and split sensitivity yield useful bounded findings."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G7",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Medium: direct and adjacent prior work covers the broad claims; the exact remaining calibration question is unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: author data leads exist; sufficient independent identity labels and reuse rights remain unverified."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: fixed detections bound the workload, but paired data and SAR interpretation threaten completion."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned distributions, decision calibration and selective matching are substantive empirical ML."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: event-disjoint controls and selective metrics are appropriate; adequate independent sample size is unresolved."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three research interventions can each use unchanged common baseline inputs."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: reliable identity reconciliation matters for maritime datasets; operational benefit is untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: compact models and fixed detections plausibly fit modest resources; no timings measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: historical map replay fits team engineering skills."
+        }
+      ]
     }
   },
   "scoring_policy": {

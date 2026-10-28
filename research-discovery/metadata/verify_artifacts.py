@@ -33,6 +33,7 @@ assessments = summary['candidate_assessments']
 expansion = json.loads((root / 'expansion-records.json').read_text(encoding='utf-8'))
 cv_expansion = json.loads((root / 'cv-expansion-records.json').read_text(encoding='utf-8'))
 elephant_expansion = json.loads((root / 'elephant-expansion-records.json').read_text(encoding='utf-8'))
+satellite_ais = json.loads((root / 'satellite-ais-records.json').read_text(encoding='utf-8'))
 report_files = sorted(reports_root.rglob('*.md'))
 expected_reports = {'areas.md', 'research-candidates.md'} | {
     assessment['report'].removeprefix('reports/') for assessment in assessments.values()
@@ -79,7 +80,7 @@ for path in gap_files:
 new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21'}
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -223,6 +224,41 @@ assert len(elephant_data['checks']) == 3 and not elephant_data['models_run']
 review_extract = json.loads((root / elephant_expansion['source_review']['extraction']).read_text(encoding='utf-8'))
 assert len(review_extract['pages']) == 63
 
+assert satellite_ais['candidate_assessment'] == assessments['X21']
+assert len(satellite_ais['searches']) == 7 and len(satellite_ais['duplications']) == 3
+assert sum(len(query['data']['results']) for query in satellite_ais['searches']) == 140
+assert len(satellite_ais['gap_directions']) == 5 and len(satellite_ais['team_hypotheses']) == 3
+assert set(assessments['X21']['unresolved_gates']) == {'G4', 'G6', 'G7', 'G9', 'G12'}
+assert assessments['X21']['ratings'][0]['rating'] == 2
+assert assessments['X21']['weighted_score'] == 64.5
+gap_validation = json.loads((root / satellite_ais['gap_validation_file']).read_text(encoding='utf-8'))
+assert gap_validation['revised_assessment'] == assessments['X21']
+assert gap_validation['previous_assessment']['weighted_score'] == 67.8
+assert len(gap_validation['searches']) == 10 and len(gap_validation['duplications']) == 5
+assert sum(len(query['data']['results']) for query in gap_validation['searches']) == 186
+assert {gap['gap'] for gap in gap_validation['gap_verdicts']} == {'G1', 'G2', 'G3', 'G4', 'G5'}
+assert not any(gap['novel_gap_verified'] for gap in gap_validation['gap_verdicts'])
+assert len(gap_validation['curated_sources']) == 13
+for source in gap_validation['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+for gap in gap_validation['gap_verdicts']:
+    assert all(any(row['evidence_id'] == evidence_id for row in rows)
+               for evidence_id in gap['evidence_ids'])
+for source in satellite_ais['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+ais_audit = json.loads((root / satellite_ais['data_check_file']).read_text(encoding='utf-8'))
+assert not ais_audit['models_run']
+roi_audit = next(check for check in ais_audit['checks']
+                 if check.get('type') == 'author-repository-metadata-format-check')
+assert roi_audit['bytes_read'] == 10596 and len(roi_audit['parsed_rows']) == 9
+assert len({row[1] for row in roi_audit['parsed_rows'][1:]}) == 5
+vessel_csv = next(check for check in ais_audit['checks']
+                  if check.get('url', '').endswith('/44031663'))
+assert vessel_csv['samples'][0]['row_count'] == 3172
+assert vessel_csv['samples'][0]['columns'] == ['detect_id', 'length_m', 'presence']
+
 source_audit = json.loads((root / 'source-checks/expansion-data-checks.json').read_text(encoding='utf-8'))
 source_checks = {check['id']: check for check in source_audit['checks']}
 assert source_checks['car-parts-original']['parsed_sample']['series_count'] == 2674
@@ -275,6 +311,12 @@ report = {
     'elephant_duplication_queries': len(elephant_expansion['duplications']),
     'elephant_curated_sources': len(elephant_expansion['curated_sources']),
     'elephant_local_outcome_data_access_secured': False,
+    'satellite_ais_gaps_verified': len(gap_validation['gap_verdicts']),
+    'satellite_ais_novel_gaps_established': sum(gap['novel_gap_verified'] for gap in gap_validation['gap_verdicts']),
+    'satellite_ais_validation_searches': len(gap_validation['searches']),
+    'satellite_ais_validation_occurrences': sum(len(query['data']['results']) for query in gap_validation['searches']),
+    'satellite_ais_validation_duplication_queries': len(gap_validation['duplications']),
+    'satellite_ais_additional_method_records': len(gap_validation['curated_sources']),
     'au2_r_weighted_score': score,
     'provisional_weighted_scores': {candidate_id: assessment['weighted_score']
                                     for candidate_id, assessment in assessments.items()
@@ -293,7 +335,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All twenty added-candidate scores are provisional; X16–X20 also depend on unsecured local outcome data and permissions.'
+    'qualification_note': 'No candidate meets every category threshold. All twenty-one added-candidate scores are provisional; X16-X20 depend on unsecured local outcomes and X21 on suitable paired identity data and rights.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))
