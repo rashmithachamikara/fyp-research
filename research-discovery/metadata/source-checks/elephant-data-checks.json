@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "file": "Overlays.rar",
+      "url": "https://raw.githubusercontent.com/batlahiya/Supplementary-data-and-figures-for-the-LUCIS/main/DATA/Overlays.rar",
+      "bytes": 1142384,
+      "sha256": "1c288565fd685465935db261d6d7ca64ff0811fb5152b5eeffbe7811083753e9",
+      "list_exit": 0,
+      "members": [
+        "Overlays/agrieleph.tif",
+        "Overlays/agrihum.tif",
+        "Overlays/settlementelephants.tif",
+        "Overlays/triple.tif",
+        "Overlays"
+      ],
+      "error": ""
+    },
+    {
+      "file": "Concept3.gpkg",
+      "url": "https://raw.githubusercontent.com/batlahiya/Supplementary-data-and-figures-for-the-LUCIS/main/DATA/Concept3.gpkg",
+      "bytes": 6033408,
+      "sha256": "691c4666c01bf656fcf81450e8e7f9b9497f7e017b9ec1299909054e849b2a79",
+      "layers": [
+        {
+          "name": "smoothed",
+          "type": "features",
+          "rows": 1,
+          "fields": [
+            "fid",
+            "geom",
+            "fid_2",
+            "area"
+          ]
+        },
+        {
+          "name": "Concept3",
+          "type": "features",
+          "rows": 5,
+          "fields": [
+            "fid",
+            "geometry"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "InsideAgriSettlements.gpkg",
+      "url": "https://raw.githubusercontent.com/batlahiya/Supplementary-data-and-figures-for-the-LUCIS/main/DATA/InsideAgriSettlements.gpkg",
+      "bytes": 1748992,
+      "sha256": "686dacbed710ae9ab7dd637785408afcfcf10c69409d1e241d12f2ad3739c19b",
+      "layers": [
+        {
+          "name": "InsideAgriSets",
+          "type": "features",
+          "rows": 5,
+          "fields": [
+            "fid",
+            "geom",
+            "id"
+          ]
+        },
+        {
+          "name": "buffer",
+          "type": "features",
+          "rows": 2,
+          "fields": [
+            "fid",
+            "geom",
+            "fid_2",
+            "area"
+          ]
+        },
+        {
+          "name": "BuferClipped",
+          "type": "features",
+          "rows": 2,
+          "fields": [
+            "fid",
+            "geom",
+            "fid_2",
+            "area"
+          ]
+        }
+      ]
+    }
+  ],
+  "locations_printed": false,
+  "models_run": false
+}

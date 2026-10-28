@@ -31,6 +31,8 @@ missing_anchors = []
 summary = json.loads((root / 'discovery-summary.json').read_text(encoding='utf-8'))
 assessments = summary['candidate_assessments']
 expansion = json.loads((root / 'expansion-records.json').read_text(encoding='utf-8'))
+cv_expansion = json.loads((root / 'cv-expansion-records.json').read_text(encoding='utf-8'))
+elephant_expansion = json.loads((root / 'elephant-expansion-records.json').read_text(encoding='utf-8'))
 report_files = sorted(reports_root.rglob('*.md'))
 expected_reports = {'areas.md', 'research-candidates.md'} | {
     assessment['report'].removeprefix('reports/') for assessment in assessments.values()
@@ -75,7 +77,9 @@ for path in gap_files:
         assert sum('| Unknown |' in row for row in gate_rows) == expected_unknown_gates[path.name]
 
 new_ids = {f'X{i:02}' for i in range(1, 11)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids
+cv_ids = {f'X{i:02}' for i in range(11, 16)}
+elephant_ids = {f'X{i:02}' for i in range(16, 21)}
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -150,6 +154,75 @@ for candidate in expansion['candidates']:
         assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
                    for row in rows), source['evidence_id']
 
+assert {candidate['id'] for candidate in cv_expansion['candidates']} == cv_ids
+assert len(cv_expansion['searches']) == 15 and len(cv_expansion['duplications']) == 10
+assert all(query['requested_limit'] == 20 and 0 < len(query['data']['results']) <= 20
+           for query in cv_expansion['searches'])
+assert len({query['id'] for query in cv_expansion['searches']}) == 15
+assert all(query['data'].get('nearest_neighbours') for query in cv_expansion['duplications'])
+assert len(cv_expansion['debate_maps']) == 2 and len(cv_expansion['citation_checks']) == 2
+for candidate in cv_expansion['candidates']:
+    candidate_id = candidate['id']
+    assert candidate['weighted_score'] == assessments[candidate_id]['weighted_score']
+    assert candidate['gate_decisions'] == assessments[candidate_id]['gate_decisions']
+    assert candidate['rating_details'] == assessments[candidate_id]['ratings']
+    assert not candidate['qualified'] and not candidate['model_training_or_runtime_measured']
+    assert 3 <= len(candidate['literature']) <= 5
+    assert len(candidate['team_hypotheses']) == 3 and all(candidate['team_hypotheses'])
+    evidence = [source for source in cv_expansion['curated_sources']
+                if source['candidate_ids'] == candidate_id]
+    assert sum(source['stage'] == 'closest-work' for source in evidence) >= 3
+    assert any(source['stage'] == 'dataset-check' for source in evidence)
+    for source in evidence:
+        assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+                   for row in rows), source['evidence_id']
+    brief = (discovery_root / candidate['report']).read_text(encoding='utf-8')
+    team_section = brief.split('## 6. Three-member contributions', 1)[1].split('## 7. Evaluation', 1)[0]
+    members = re.findall(r'^\| [ABC]:.+$', team_section, re.M)
+    assert len(members) == 3 and all(' H: ' in row for row in members)
+cv_data_checks = {check['id']: check for check in cv_expansion['bounded_data_checks']}
+assert cv_data_checks['CV26-CCT20-META']['downloaded_bytes'] == 2997071
+assert len(cv_data_checks['CV26-CCT20-META']['parsed_files']) == 5
+assert not cv_data_checks['CV26-CCT20-META']['images_downloaded']
+assert cv_data_checks['CV26-LEVIR-COORDS']['entries'] == 637
+assert '| Research topic | Core gap to investigate | Research area |' in overview
+assert '| Dataset |' not in overview
+
+assert {candidate['id'] for candidate in elephant_expansion['candidates']} == elephant_ids
+assert len(elephant_expansion['searches']) == 8 and len(elephant_expansion['duplications']) == 10
+assert sum(len(query['data']['results']) for query in elephant_expansion['searches']) == 116
+assert all(query['requested_limit'] == 20 and 0 < len(query['data']['results']) <= 20
+           for query in elephant_expansion['searches'])
+assert all(query['data'].get('nearest_neighbours') for query in elephant_expansion['duplications'])
+for candidate in elephant_expansion['candidates']:
+    candidate_id = candidate['id']
+    assert candidate['weighted_score'] == assessments[candidate_id]['weighted_score']
+    assert candidate['gate_decisions'] == assessments[candidate_id]['gate_decisions']
+    assert candidate['rating_details'] == assessments[candidate_id]['ratings']
+    assert not candidate['qualified'] and not candidate['model_training_or_runtime_measured']
+    assert candidate['gate_decisions']['G4'] == 'Unknown'
+    assert set(candidate['unresolved_gates']) == {'G4', 'G6', 'G9', 'G12'}
+    assert len(candidate['literature']) >= 3
+    assert len(candidate['team_hypotheses']) == 3 and all(candidate['team_hypotheses'])
+    sources = [source for source in elephant_expansion['curated_sources']
+               if source['candidate_ids'] == candidate_id]
+    assert sum(source['stage'] == 'closest-work' for source in sources) >= 3
+    assert any(source['stage'] == 'dataset-check' for source in sources)
+    for source in sources:
+        assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+                   for row in rows), source['evidence_id']
+    brief = (discovery_root / candidate['report']).read_text(encoding='utf-8')
+    assert 'Conditional opportunity' in brief and 'Four mandatory gates remain Unknown' in brief
+    team_section = brief.split('## 6. Three-member contributions', 1)[1].split('## 7. Evaluation', 1)[0]
+    assert len(re.findall(r'^\| [ABC]:.+ H: .+$', team_section, re.M)) == 3
+elephant_data = json.loads((root / elephant_expansion['data_check_file']).read_text(encoding='utf-8'))
+overlay_check = next(check for check in elephant_data['checks'] if check['file'] == 'Overlays.rar')
+assert overlay_check['bytes'] == 1142384 and overlay_check['list_exit'] == 0
+assert sum(name.endswith('.tif') for name in overlay_check['members']) == 4
+assert len(elephant_data['checks']) == 3 and not elephant_data['models_run']
+review_extract = json.loads((root / elephant_expansion['source_review']['extraction']).read_text(encoding='utf-8'))
+assert len(review_extract['pages']) == 63
+
 source_audit = json.loads((root / 'source-checks/expansion-data-checks.json').read_text(encoding='utf-8'))
 source_checks = {check['id']: check for check in source_audit['checks']}
 assert source_checks['car-parts-original']['parsed_sample']['series_count'] == 2674
@@ -178,7 +251,8 @@ report = {
     'refined_duplication_queries': len(refined),
     'ledger_rows': len(rows),
     'curated_evidence_rows': sum(r['evidence_id'].startswith('E-') or r['stage'] in
-                                 {'expansion-closest-work', 'expansion-dataset-check'} for r in rows),
+                                 {'expansion-closest-work', 'expansion-dataset-check',
+                                  'closest-work', 'dataset-check', 'baseline-check'} for r in rows),
     'additional_candidates': len(expansion['candidates']),
     'additional_discovery_queries': len(expansion['searches']),
     'additional_search_record_occurrences': sum(len(query['data']['results']) for query in expansion['searches']),
@@ -187,6 +261,20 @@ report = {
     'additional_debate_maps': len(expansion['debate_maps']),
     'additional_citation_checks': len(expansion['citation_checks']),
     'code_routes_checked': len(expansion['code_route_checks']),
+    'further_cv_candidates': len(cv_expansion['candidates']),
+    'further_cv_discovery_queries': len(cv_expansion['searches']),
+    'further_cv_search_record_occurrences': sum(len(query['data']['results']) for query in cv_expansion['searches']),
+    'further_cv_duplication_queries': len(cv_expansion['duplications']),
+    'further_cv_curated_sources': len(cv_expansion['curated_sources']),
+    'further_cv_code_routes_checked': len(cv_expansion['code_route_checks']) + len(cv_expansion['additional_code_route_checks']),
+    'further_cv_bounded_data_checks': len(cv_expansion['bounded_data_checks']),
+    'total_evaluated_candidates': len(assessments),
+    'elephant_conditional_opportunities': len(elephant_expansion['candidates']),
+    'elephant_discovery_queries': len(elephant_expansion['searches']),
+    'elephant_discovery_occurrences': sum(len(query['data']['results']) for query in elephant_expansion['searches']),
+    'elephant_duplication_queries': len(elephant_expansion['duplications']),
+    'elephant_curated_sources': len(elephant_expansion['curated_sources']),
+    'elephant_local_outcome_data_access_secured': False,
     'au2_r_weighted_score': score,
     'provisional_weighted_scores': {candidate_id: assessment['weighted_score']
                                     for candidate_id, assessment in assessments.items()
@@ -205,7 +293,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All ten new scores are provisional; unresolved gates are retained.'
+    'qualification_note': 'No candidate meets every category threshold. All twenty added-candidate scores are provisional; X16–X20 also depend on unsecured local outcome data and permissions.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))

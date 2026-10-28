@@ -1,5 +1,5 @@
 {
-  "evidence_cutoff": "2026-10-27",
+  "evidence_cutoff": "2026-10-28",
   "track": "General empirical AI/ML; focused discovery, not systematic review",
   "work_completed": {
     "discovery_queries": 8,
@@ -42,7 +42,9 @@
     "citation_and_debate_checks": "debate-impact-records.json",
     "evidence_ledger": "evidence-ledger.csv",
     "dataset_checks": "source-checks/",
-    "additional_discovery": "expansion-records.json"
+    "additional_discovery": "expansion-records.json",
+    "further_cv_discovery": "cv-expansion-records.json",
+    "elephant_discovery": "elephant-expansion-records.json"
   },
   "screened_candidates": [
     {
@@ -1793,6 +1795,1146 @@
       ],
       "qualified": false,
       "model_training_or_runtime_measured": false
+    },
+    "X11": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional computer vision gap",
+      "report": "reports/gaps/x11-plant-lesion-crops.md",
+      "weighted_score": 73.9,
+      "raw_weighted_score": 72.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the source comparisons document a specific visual-model failure; downstream benefits remain untested.",
+        "G2": "Training or systematically adapting visual models is essential to the research question.",
+        "G3": "Sections 4 and 6 specify trainable objectives, modules or predictors using existing data.",
+        "G4": "Section 5 records an original public release, existing labels and a documented loading route, with access-check limits.",
+        "G5": "All central outcomes use existing masks, boxes or category labels; no new participant or expert annotations.",
+        "G6": "A distinct contribution beyond published train-only cropping, learned proposal and boundary methods still needs verification.",
+        "G7": "The three interventions are evaluated through model-level baselines and ablations, not only a prototype.",
+        "G8": "Section 7 specifies objective metrics, leakage controls, comparison baselines and uncertainty analysis.",
+        "G9": "The bounded configuration and reduced-method fallback are plausible in 6–8 months; this is an estimated design-level pass.",
+        "G10": "Three related investigations each have an unchanged-baseline comparison and independently assessable outcome.",
+        "G11": "The core uses existing RGB imagery and an occasional modest GPU; no new sensors or continuous high-end compute.",
+        "G12": "Original non-commercial/academic or permissive data terms support bounded offline research; source attribution and image-specific conditions remain applicable.",
+        "G13": "Section 7 defines an informative negative result and alternatives to outperforming the strongest baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: a precise oracle limitation is documented, but train-only crops and learned proposals are already suggested; an original method distinction remains unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium: public masks, terms and compact archive are documented; source provenance and actual decoding remain to be audited."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: manageable data size, but crop selection and end-to-end accounting add substantial learning and integration work."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: consistency learning, learned allocation and boundary objectives support model-level research."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: full-image evaluation and equal-pixel controls isolate privileged crops and resolution; provenance grouping needs a pilot."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: each method runs on the same unmodified baseline and has its own metric and ablation."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: small lesion localisation is relevant to crop-image analysis; agronomic benefit is outside the labels."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: compact models and limited crops plausibly fit a modest GPU; training unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: mask/crop overlays fit existing web-development skills."
+        }
+      ]
+    },
+    "X12": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional computer vision gap",
+      "report": "reports/gaps/x12-transparent-boundaries.md",
+      "weighted_score": 68,
+      "raw_weighted_score": 66.6,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the source comparisons document a specific visual-model failure; downstream benefits remain untested.",
+        "G2": "Training or systematically adapting visual models is essential to the research question.",
+        "G3": "Sections 4 and 6 specify trainable objectives, modules or predictors using existing data.",
+        "G4": "Section 5 records an original public release, existing labels and a documented loading route, with access-check limits.",
+        "G5": "All central outcomes use existing masks, boxes or category labels; no new participant or expert annotations.",
+        "G6": "The extra value beyond TransCues, UncertSAM and other uncertainty-aware segmentation methods remains unverified.",
+        "G7": "The three interventions are evaluated through model-level baselines and ablations, not only a prototype.",
+        "G8": "Section 7 specifies objective metrics, leakage controls, comparison baselines and uncertainty analysis.",
+        "G9": "The bounded configuration and reduced-method fallback are plausible in 6–8 months; this is an estimated design-level pass.",
+        "G10": "Three related investigations each have an unchanged-baseline comparison and independently assessable outcome.",
+        "G11": "The core uses existing RGB imagery and an occasional modest GPU; no new sensors or continuous high-end compute.",
+        "G12": "The precise dataset-image terms, particularly for the v2 derivative and redistribution, are not explicit in the inspected original pages.",
+        "G13": "Section 7 defines an informative negative result and alternatives to outperforming the strongest baseline."
+      },
+      "unresolved_gates": [
+        "G6",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low: both transparent cues and uncertainty have close prior work; the boundary/interior reliability distinction needs tighter checking."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9,
+          "confidence_and_reason": "Medium-low: official masks and split routes exist, but image-specific terms, v2 label mapping and archive access remain unchecked."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: legacy model environments and several reliability objectives increase the learning burden."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: separated objectives, learned quality and reliability gating are empirical model investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: image-level uncertainty and matched controls are suitable; scene metadata and final label mapping need checking."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: A changes masks, B predicts fixed-mask quality and C tests cue fusion independently."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium: transparent surfaces challenge visual perception, but downstream user benefit is not measured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3,
+          "confidence_and_reason": "Medium-low: compact RGB route is plausible; nearest work includes much larger hardware and runtime has not been measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: offline image/mask viewer is straightforward."
+        }
+      ]
+    },
+    "X13": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional computer vision gap",
+      "report": "reports/gaps/x13-wildlife-crop-reliability.md",
+      "weighted_score": 76.7,
+      "raw_weighted_score": 75.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the source comparisons document a specific visual-model failure; downstream benefits remain untested.",
+        "G2": "Training or systematically adapting visual models is essential to the research question.",
+        "G3": "Sections 4 and 6 specify trainable objectives, modules or predictors using existing data.",
+        "G4": "Section 5 records an original public release, existing labels and a documented loading route, with access-check limits.",
+        "G5": "All central outcomes use existing masks, boxes or category labels; no new participant or expert annotations.",
+        "G6": "The added value beyond crop/whole-image fusion, multi-crop attention and recent camera-trap generalisation work is unverified.",
+        "G7": "The three interventions are evaluated through model-level baselines and ablations, not only a prototype.",
+        "G8": "Section 7 specifies objective metrics, leakage controls, comparison baselines and uncertainty analysis.",
+        "G9": "The bounded configuration and reduced-method fallback are plausible in 6–8 months; this is an estimated design-level pass.",
+        "G10": "Three related investigations each have an unchanged-baseline comparison and independently assessable outcome.",
+        "G11": "The core uses existing RGB imagery and an occasional modest GPU; no new sensors or continuous high-end compute.",
+        "G12": "Original non-commercial/academic or permissive data terms support bounded offline research; source attribution and image-specific conditions remain applicable.",
+        "G13": "Section 7 defines an informative negative result and alternatives to outperforming the strongest baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: crop benefits and context methods are established; reliability-aware fusion and miss-aware learning need closer duplication checking."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: original images/terms and small benchmark route documented; annotation fields locally parsed, but images and complete box coverage unverified."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: compact source detector and cached classifier heads bound the work; manageable with a staged pilot."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned gating, representation objectives and detector sampling give assessable ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: existing location/sequence metadata supports objective splits; pretraining provenance and burst overlaps need audit."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: each method has its own unchanged-baseline comparison; the gate and context head can run with the common detector."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: source papers document wildlife-image review and location-transfer problems; ecological outcomes remain outside scope."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: small heads and a compact detector plausibly fit occasional modest GPU access; full timings pending."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: crop and confidence viewer fits backend/web skills."
+        }
+      ]
+    },
+    "X14": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional computer vision gap",
+      "report": "reports/gaps/x14-building-change-alignment.md",
+      "weighted_score": 73.9,
+      "raw_weighted_score": 72.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the source comparisons document a specific visual-model failure; downstream benefits remain untested.",
+        "G2": "Training or systematically adapting visual models is essential to the research question.",
+        "G3": "Sections 4 and 6 specify trainable objectives, modules or predictors using existing data.",
+        "G4": "Section 5 records an original public release, existing labels and a documented loading route, with access-check limits.",
+        "G5": "All central outcomes use existing masks, boxes or category labels; no new participant or expert annotations.",
+        "G6": "The added value beyond CASP and other registration-aware change detectors needs fuller comparison.",
+        "G7": "The three interventions are evaluated through model-level baselines and ablations, not only a prototype.",
+        "G8": "Section 7 specifies objective metrics, leakage controls, comparison baselines and uncertainty analysis.",
+        "G9": "The bounded configuration and reduced-method fallback are plausible in 6–8 months; this is an estimated design-level pass.",
+        "G10": "Three related investigations each have an unchanged-baseline comparison and independently assessable outcome.",
+        "G11": "The core uses existing RGB imagery and an occasional modest GPU; no new sensors or continuous high-end compute.",
+        "G12": "Original non-commercial/academic or permissive data terms support bounded offline research; source attribution and image-specific conditions remain applicable.",
+        "G13": "Section 7 defines an informative negative result and alternatives to outperforming the strongest baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: CASP and related alignment methods are close; the change-preservation trade-off needs a more complete methods comparison."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium-high: original masks, academic terms and 637 coordinate entries are available; image downloads and geographic overlap still need checking."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: paired networks, coordinate-safe perturbations and incomplete recent code add learning and reproduction risks."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: bounded alignment, change-preserving objectives and quality learning support substantive ML research."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: spatial grouping, no-change controls and recall/false-positive trade-offs can discriminate rival explanations."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: alignment, change retention and fixed-mask quality each have independent baseline experiments."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: avoiding false changes matters for image-based mapping; planning outcomes are not observed."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: compact paired models are plausible on modest GPUs; aligned fallback bounds the risk."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: a before/after viewer is straightforward."
+        }
+      ]
+    },
+    "X15": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional comparison of additional computer vision gap",
+      "report": "reports/gaps/x15-rare-waste-pseudolabels.md",
+      "weighted_score": 75.7,
+      "raw_weighted_score": 74.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Pass",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Pass",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the source comparisons document a specific visual-model failure; downstream benefits remain untested.",
+        "G2": "Training or systematically adapting visual models is essential to the research question.",
+        "G3": "Sections 4 and 6 specify trainable objectives, modules or predictors using existing data.",
+        "G4": "Section 5 records an original public release, existing labels and a documented loading route, with access-check limits.",
+        "G5": "All central outcomes use existing masks, boxes or category labels; no new participant or expert annotations.",
+        "G6": "A precise distinction from NUNI-Waste, newer UniMatch variants and class-conditional pseudo-label methods has not been established.",
+        "G7": "The three interventions are evaluated through model-level baselines and ablations, not only a prototype.",
+        "G8": "Section 7 specifies objective metrics, leakage controls, comparison baselines and uncertainty analysis.",
+        "G9": "The bounded configuration and reduced-method fallback are plausible in 6–8 months; this is an estimated design-level pass.",
+        "G10": "Three related investigations each have an unchanged-baseline comparison and independently assessable outcome.",
+        "G11": "The core uses existing RGB imagery and an occasional modest GPU; no new sensors or continuous high-end compute.",
+        "G12": "Original non-commercial/academic or permissive data terms support bounded offline research; source attribution and image-specific conditions remain applicable.",
+        "G13": "Section 7 defines an informative negative result and alternatives to outperforming the strongest baseline."
+      },
+      "unresolved_gates": [
+        "G6"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: NUNI-Waste already covers imbalance/consistency and generic class-conditional SSL is crowded; distinct pseudo-label quality value remains unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12,
+          "confidence_and_reason": "Medium: original masks, unlabelled data, archive sizes and non-commercial terms are documented; decoding and sequence provenance remain unchecked."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: two bounded label budgets and an established pipeline are plausible; teacher/student debugging is still a learning risk."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: robust objectives, spatial consistency and learned selection support model-level comparisons."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: label-budget controls, rare-class metrics and acceptance diagnostics separate several confounders; grouping metadata needs auditing."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: each intervention has a common-baseline experiment and interpretable result even if another fails."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: source studies document cluttered recycling imagery and rare-material errors; actual recycling benefits are not observed."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3,
+          "confidence_and_reason": "Medium-low: repeated semi-supervised runs multiply GPU use and archive footprint; reduced-data fallback is needed."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: masks and pseudo-label overlays are easy to demonstrate offline."
+        }
+      ]
+    },
+    "X16": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional conditional opportunity; Sri Lankan outcome data unsecured",
+      "report": "reports/gaps/x16-elephant-seasonal-passage.md",
+      "weighted_score": 64.9,
+      "raw_weighted_score": 63.6,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the Sri Lankan source studies establish a concrete problem; proposed benefits remain untested.",
+        "G2": "Learning or adapting a predictive model is central, not an optional app feature.",
+        "G3": "Sections 4 and 6 define trainable models/objectives; no paid inference service is required.",
+        "G4": "A suitable licensed Sri Lankan event-level outcome dataset has not been secured; public predictor layers do not replace outcome labels.",
+        "G5": "The bounded design uses existing observations/annotations, without new questionnaires, fieldwork or expert labelling; access is assessed separately.",
+        "G6": "The specific methodological distinction needs checking beyond the cited local studies and broader ecological ML work.",
+        "G7": "Model-level investigations and ablations go beyond integrating a detector or producing a map.",
+        "G8": "Section 7 specifies an objective conditional evaluation, baseline controls and grouped uncertainty; it is not evidence those outcomes are currently available.",
+        "G9": "Completion in 6–8 months depends on obtaining adequate existing data early; no partnership or access guarantee exists.",
+        "G10": "Three related contributions can each run against a common unchanged baseline; no separate papers required.",
+        "G11": "The bounded design uses CPU/cached features or an occasional modest GPU; new collars, cameras, microphones and field infrastructure are not required.",
+        "G12": "Outcome-data reuse terms, precision restrictions and permitted sharing remain unresolved.",
+        "G13": "Section 7 defines useful negative results and limits when a proposed model is not better."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: an explicit forecast question is plausible, but seasonal movement and dynamic habitat modelling are established."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: the relevant local camera outcomes and effort logs are request-only and unacquired."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: access, number of independent seasons and ecological learning needs remain unresolved."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: temporal learning, missingness and calibration are model-level investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: forward/site holdouts are appropriate if enough independent observations exist."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three methods each work against the same unchanged baseline."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: local passage is directly relevant to understanding farm-edge elephant use; warning benefit is unmeasured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: CPU-first models and bounded image features fit the team if data are supplied."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: historical replay is straightforward."
+        }
+      ]
+    },
+    "X17": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional conditional opportunity; Sri Lankan outcome data unsecured",
+      "report": "reports/gaps/x17-elephant-conflict-reporting.md",
+      "weighted_score": 70.6,
+      "raw_weighted_score": 69.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the Sri Lankan source studies establish a concrete problem; proposed benefits remain untested.",
+        "G2": "Learning or adapting a predictive model is central, not an optional app feature.",
+        "G3": "Sections 4 and 6 define trainable models/objectives; no paid inference service is required.",
+        "G4": "A suitable licensed Sri Lankan event-level outcome dataset has not been secured; public predictor layers do not replace outcome labels.",
+        "G5": "The bounded design uses existing observations/annotations, without new questionnaires, fieldwork or expert labelling; access is assessed separately.",
+        "G6": "The specific methodological distinction needs checking beyond the cited local studies and broader ecological ML work.",
+        "G7": "Model-level investigations and ablations go beyond integrating a detector or producing a map.",
+        "G8": "Section 7 specifies an objective conditional evaluation, baseline controls and grouped uncertainty; it is not evidence those outcomes are currently available.",
+        "G9": "Completion in 6–8 months depends on obtaining adequate existing data early; no partnership or access guarantee exists.",
+        "G10": "Three related contributions can each run against a common unchanged baseline; no separate papers required.",
+        "G11": "The bounded design uses CPU/cached features or an occasional modest GPU; new collars, cameras, microphones and field infrastructure are not required.",
+        "G12": "Outcome-data reuse terms, precision restrictions and permitted sharing remain unresolved.",
+        "G13": "Section 7 defines useful negative results and limits when a proposed model is not better."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: forecast validation is a concrete need, but reporting-aware ecological risk modelling has substantial prior work."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: relevant records exist in studies; a complete licensed monthly dataset is not verified in the public supplement."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: CPU scope is manageable, but access and ascertainment identifiability threaten completion."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: temporal, observation and uncertainty models support substantial empirical ML."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: forward/spatial splits and sensitivity analysis are appropriate; effective sample size is unknown."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: each contribution tests a common baseline independently."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 5,
+          "weighted_points": 9,
+          "confidence_and_reason": "Medium-high: the recorded harm is directly relevant to people and elephants in Sri Lanka; model utility is unproven."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "Medium-high: tabular/count models can run on ordinary hardware."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: historical forecast dashboard fits team skills."
+        }
+      ]
+    },
+    "X18": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional conditional opportunity; Sri Lankan outcome data unsecured",
+      "report": "reports/gaps/x18-elephant-corridor-validation.md",
+      "weighted_score": 62.4,
+      "raw_weighted_score": 61.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the Sri Lankan source studies establish a concrete problem; proposed benefits remain untested.",
+        "G2": "Learning or adapting a predictive model is central, not an optional app feature.",
+        "G3": "Sections 4 and 6 define trainable models/objectives; no paid inference service is required.",
+        "G4": "A suitable licensed Sri Lankan event-level outcome dataset has not been secured; public predictor layers do not replace outcome labels.",
+        "G5": "The bounded design uses existing observations/annotations, without new questionnaires, fieldwork or expert labelling; access is assessed separately.",
+        "G6": "The specific methodological distinction needs checking beyond the cited local studies and broader ecological ML work.",
+        "G7": "Model-level investigations and ablations go beyond integrating a detector or producing a map.",
+        "G8": "Section 7 specifies an objective conditional evaluation, baseline controls and grouped uncertainty; it is not evidence those outcomes are currently available.",
+        "G9": "Completion in 6–8 months depends on obtaining adequate existing data early; no partnership or access guarantee exists.",
+        "G10": "Three related contributions can each run against a common unchanged baseline; no separate papers required.",
+        "G11": "The bounded design uses CPU/cached features or an occasional modest GPU; new collars, cameras, microphones and field infrastructure are not required.",
+        "G12": "Outcome-data reuse terms, precision restrictions and permitted sharing remain unresolved.",
+        "G13": "Section 7 defines useful negative results and limits when a proposed model is not better."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: the suitability/movement distinction is important but resistance learning and validation are established research areas."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: public model maps exist; independent Sri Lankan movement outcomes are not secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: data, resistance modelling and ecological interpretation create substantial dependency and learning risks."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learned resistance, uncertainty propagation and rank learning support ML research."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: independent observations could support strong tests, but the correct endpoint and effective sample size remain unresolved."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: each contribution can use a common fixed resistance baseline and its own experiment."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: corridor evidence is relevant to Sri Lankan coexistence research; outcomes remain indirect."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: bounded GIS and tabular learning fit ordinary compute, subject to raster resolution."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: comparison map is feasible once the research data are usable."
+        }
+      ]
+    },
+    "X19": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional conditional opportunity; Sri Lankan outcome data unsecured",
+      "report": "reports/gaps/x19-elephant-fence-permeability.md",
+      "weighted_score": 63.5,
+      "raw_weighted_score": 62.2,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the Sri Lankan source studies establish a concrete problem; proposed benefits remain untested.",
+        "G2": "Learning or adapting a predictive model is central, not an optional app feature.",
+        "G3": "Sections 4 and 6 define trainable models/objectives; no paid inference service is required.",
+        "G4": "Complete event/exposure records, identity/state fields and image rights were not located; summaries are not a forecasting corpus.",
+        "G5": "The bounded design uses existing observations/annotations, without new questionnaires, fieldwork or expert labelling; access is assessed separately.",
+        "G6": "The specific methodological distinction needs checking beyond the cited local studies and broader ecological ML work.",
+        "G7": "Model-level investigations and ablations go beyond integrating a detector or producing a map.",
+        "G8": "Section 7 specifies an objective conditional evaluation, baseline controls and grouped uncertainty; it is not evidence those outcomes are currently available.",
+        "G9": "Completion in 6–8 months depends on obtaining adequate existing data early; no partnership or access guarantee exists.",
+        "G10": "Three related contributions can each run against a common unchanged baseline; no separate papers required.",
+        "G11": "The bounded design uses CPU/cached features or an occasional modest GPU; new collars, cameras, microphones and field infrastructure are not required.",
+        "G12": "Outcome-data reuse terms, precision restrictions and permitted sharing remain unresolved.",
+        "G13": "Section 7 defines useful negative results and limits when a proposed model is not better."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: behaviour is documented; a distinct predictive method remains unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: event/exposure data and photo terms are unsecured; summary counts are insufficient."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: access, denominators and sparse independent sites are critical dependencies."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: hierarchical behaviour and time-varying models provide substantive ML investigations."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: objective tests exist, but operational negatives and independent sites may be insufficient."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: distinct methods each use the common baseline; B also yields a conditional-event result."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: permeability matters to coexistence research; intervention benefit is untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 5,
+          "weighted_points": 5,
+          "confidence_and_reason": "Medium-high: event/tabular models fit CPU resources."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: historical replay is feasible if usable data are supplied."
+        }
+      ]
+    },
+    "X20": {
+      "scored_date": "2026-10-28",
+      "mode": "Provisional conditional opportunity; Sri Lankan outcome data unsecured",
+      "report": "reports/gaps/x20-elephant-acoustic-reliability.md",
+      "weighted_score": 67.8,
+      "raw_weighted_score": 66.4,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 and the Sri Lankan source studies establish a concrete problem; proposed benefits remain untested.",
+        "G2": "Learning or adapting a predictive model is central, not an optional app feature.",
+        "G3": "Sections 4 and 6 define trainable models/objectives; no paid inference service is required.",
+        "G4": "No free licensed local corpus with adequate labels and representative negative exposure is secured.",
+        "G5": "The bounded design uses existing observations/annotations, without new questionnaires, fieldwork or expert labelling; access is assessed separately.",
+        "G6": "The specific methodological distinction needs checking beyond the cited local studies and broader ecological ML work.",
+        "G7": "Model-level investigations and ablations go beyond integrating a detector or producing a map.",
+        "G8": "Section 7 specifies an objective conditional evaluation, baseline controls and grouped uncertainty; it is not evidence those outcomes are currently available.",
+        "G9": "Completion in 6–8 months depends on obtaining adequate existing data early; no partnership or access guarantee exists.",
+        "G10": "Three related contributions can each run against a common unchanged baseline; no separate papers required.",
+        "G11": "The bounded design uses CPU/cached features or an occasional modest GPU; new collars, cameras, microphones and field infrastructure are not required.",
+        "G12": "LDC agreement or author permission is required; reuse and location-sharing terms remain unresolved.",
+        "G13": "Section 7 defines useful negative results and limits when a proposed model is not better."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: event detection/transfer have close work; the new reliability question needs narrowing."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: local audio is licensed/request-only and suitable negative exposure is unverified."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: compact modelling is manageable if data are secured; field-representative evaluation may remain impossible."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: nuisance learning, causal sequence modelling and calibration are substantive ML."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: session splits and event outcomes are suitable; exposure design controls allowable claims."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three independent experiments share common features and baseline recordings."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-high: acoustics relates to coexistence monitoring, but call detection is indirect evidence of conflict."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium: caching and compact models plausibly fit occasional modest GPUs."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium-high: offline audio visualisation fits the team."
+        }
+      ]
     }
   },
   "scoring_policy": {
@@ -1802,7 +2944,7 @@
     "provisional_exception": "At user request, TS2-R, CV1-R and the ten additional candidates have comparative proposal scores before all qualification thresholds are met; unknown gates remain disqualifying.",
     "team_structure": "One shared problem with three independently assessable contributions; shared infrastructure allowed and papers optional.",
     "precision_note": "Decimal totals reflect weighted arithmetic, not measurement precision or statistical certainty.",
-    "scope": "Original three assessments retained; ten additional candidates searched and evaluated on 28 October. No model training or timing experiment.",
+    "scope": "Original three assessments retained; twenty additional candidate opportunities assessed on 28 October, including five conditional Sri Lankan elephant opportunities. No model training or timing experiment.",
     "rubric_change": "Removed the 2-weight ethics/responsible-use scoring category; retained the other nine relative weights.",
     "normalisation": "sum((rating / 5) * weight) / 98 * 100; round only the final total to one decimal place."
   },
@@ -1853,5 +2995,36 @@
     "fully_qualified_additional_candidates": 0,
     "counts_are_not_novelty_evidence": true,
     "model_training_or_benchmark_timing_run": false
+  },
+  "original_evidence_cutoff": "2026-10-27",
+  "further_cv_discovery": {
+    "date": "2026-10-28",
+    "new_candidates": 5,
+    "search_queries": 15,
+    "search_record_occurrences": 270,
+    "duplication_queries": 10,
+    "debate_maps": 2,
+    "citation_checks": 2,
+    "curated_source_records": 37,
+    "records": "cv-expansion-records.json",
+    "bounded_data_checks": [
+      "CCT20 annotation archive",
+      "LEVIR-CD coordinate JSON"
+    ],
+    "fully_qualified_candidates": 0,
+    "model_training_or_benchmark_timing_run": false
+  },
+  "elephant_discovery": {
+    "date": "2026-10-28",
+    "new_conditional_opportunities": 5,
+    "search_queries": 8,
+    "search_occurrences": 116,
+    "duplication_queries": 10,
+    "curated_sources": 26,
+    "records": "elephant-expansion-records.json",
+    "data_checks": "source-checks/elephant-data-checks.json",
+    "qualified": 0,
+    "data_access_requests_sent": false,
+    "model_training_run": false
   }
 }
