@@ -3,10 +3,10 @@
 # Knowing when to decide: Sinhala deepfake speech detection as audio arrives
 
 **ID:** X33 · **Area:** Audio ML — streaming deepfake detection  
-**Status:** Provisional opportunity; not qualified · **Checked:** 29 October 2026  
+**Status:** Provisional; needs redesign; not qualified · **Checked:** 29 October 2026
 **Provisional score:** 62.0/100 · **No model has been trained or timed.**
 
-**Quick explanation:** A detector hears a little speech, then chooses whether to decide or wait for more. We would test whether it can make fewer rushed mistakes on Sinhala speech while staying small enough for an ordinary phone.
+**Quick explanation:** A detector hears a little speech, then chooses whether to decide or wait for more. The problem is real, but learning this choice already exists. We have not yet shown a new Sinhala-specific failure or contribution.
 
 ## 1. Problem
 
@@ -24,13 +24,17 @@ The target is generated or voice-converted speech. Detecting it does not establi
 
 Here, **streaming** means processing speech as it arrives. A **generator** is a tool that creates synthetic speech. A **codec** compresses audio for transmission.
 
-**Possible contribution:** Train a small waiting policy that uses the detector's past scores to decide whether more speech is needed.
+**Earlier proposed contribution, now withdrawn as a novelty claim:** Train a small waiting policy using past scores and elapsed time. ALERT already learns a wait-or-decide rule using confidence, class information and time. EARLIEST also learns when to stop. These are necessary comparisons, not ideas we can claim as new.
 
 **Hypothesis:** This policy can warn sooner at comparable error rates and decision coverage, meaning the share of recordings it actually decides.
 
 **Alternative explanation:** A simple confidence threshold or fixed waiting time works just as well. Any apparent gain might come from leaving more difficult recordings undecided.
 
-**Novelty is unverified.** Short-input detection, small models, limited-language adaptation and streaming confidence rules already exist. Using Sinhala or combining those features does not by itself establish a new contribution. We need a specific failure of existing methods and evidence that the proposed change addresses it.
+**Novelty check result:** The general detection problem is supported, but X33 is not yet a verified new research gap. Short-input detection, small models, limited-language adaptation and learned stopping already exist. Using Sinhala or combining those features is insufficient on its own.
+
+What remains unknown is whether those methods make a particular early-decision mistake on Sinhala after fair source and recording-quality controls. That failure must first be measured. A targeted change that addresses it could become a contribution; no such change has been verified here.
+
+A carefully documented Sinhala dataset and comparison could still be useful. Generating the dataset alone does not establish model novelty, and its originality and assessment value need separate review.
 
 This is different from [X32](x32-sinhala-partial-audio-deepfakes.md), which asks where words were replaced inside a recording.
 
@@ -43,16 +47,23 @@ This is different from [X32](x32-sinhala-partial-audio-deepfakes.md), which asks
 | [Detection at the First Greeting, ICASSP 2026](https://arxiv.org/html/2601.19573v1) · [Cite](https://literature.researchfasttrack.com/cite?id=10.1109/icassp55912.2026.11463587) | Lightweight detection from 0.5–2-second clips under communication degradation. | Short input and low model cost are already studied. Fixed clips do not settle how to decide repeatedly as speech arrives. Methods inspected. |
 | [How Fast, How Sure, and Where It Breaks, 2026 preprint](https://doi.org/10.21203/rs.3.rs-10257178/v1) · [Cite](https://literature.researchfasttrack.com/cite?id=10.21203/rs.3.rs-10257178/v1) | Uses a frozen detector, growing audio prefixes, confidence adjustment and early decisions under telephone codecs. Confidence transfer can fail across channels. | The closest overlap. Our learned waiting policy must add value beyond its confidence-threshold rule. Full manuscript sections 3–5 read through a ResearchGate copy; direct publisher access failed. Results were not reproduced. |
 | [RTCFake, ACL Findings 2026](https://arxiv.org/html/2604.23742v1) · [Cite](https://literature.researchfasttrack.com/cite?id=10.18653/v1/2026.findings-acl.285) | Studies speech detection after communication-platform processing and proposes training for better platform transfer. | Channel robustness also has direct prior work. Selected full-text methods and results inspected. |
+| [ALERT, 2025 preprint](https://arxiv.org/html/2502.06584v1) · [Cite](https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2502.06584) | Learns when to wait or decide using classifier confidence, predicted class and time. Compares learned rules with hand-written rules. | Closely matches the proposed waiting layer, although tested on general time series rather than Sinhala deepfakes. Full-text sections 5.2–5.4 and 6 inspected. |
+| [RawSpectrogram, IEEE Access 2023](https://doi.org/10.1109/ACCESS.2023.3321919) · [Cite](https://literature.researchfasttrack.com/cite?id=10.1109/access.2023.3321919) | Makes speech anti-spoofing models work with incoming chunks while reducing repeated computation. | Efficient streaming speech detection is established. The full manuscript's model and evaluation sections were inspected through a ResearchGate copy. This does not establish phone performance or Sinhala transfer. |
+| [RealComm, October 2026 preprint](https://arxiv.org/pdf/2610.27459) · [Cite](https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2610.27459) | Shows large detection errors after real call transmission and tests adaptation. In its comparison, Teffic-Audio call EER falls from 37.94% to 22.37% with combined training changes; lower is better. | Supports a real channel-related problem, not a new Sinhala gap. English/Mandarin, same seven generators across splits, and whole-recording evaluation. Full PDF methods, results and scope inspected; results not reproduced. |
 
-The possible gap is the **added value of a learned waiting policy with little Sinhala data**, not the first streaming or telephone-robust detector. The search does not establish that no similar policy exists.
+[EARLIEST, KDD 2019](https://web.cs.wpi.edu/~xkong/publications/papers/kdd19.pdf), already jointly learns classification and stopping through a small controller. Its author PDF, sections 3.3.2–3.3.4, and implementation were inspected. It is general early classification, not a Sinhala deepfake study. [Cite](https://literature.researchfasttrack.com/cite?id=10.1145/3292500.3330974)
+
+**Finding:** Real audio degradation is documented. The exact Sinhala early-decision failure has not been demonstrated. A new waiting algorithm is not established by the current plan.
+
+**Search scope:** Seven additional scholarly searches returned 130 result occurrences; three duplication searches followed general stopping methods, streaming deepfakes and Sinhala detection. Some results were unrelated. Earlier references were followed back to 2018–2019. No absent search hit was treated as proof of novelty. Preprints and unreplicated results are labelled above; further few-shot and changing-data comparisons are retained in metadata.
 
 ## 4. Proposed approach
 
-1. Reproduce an existing detector and the simple streaming threshold rule.
+1. Reproduce an existing detector, the published streaming threshold rule and a learned stopping baseline such as ALERT or EARLIEST.
 2. Feed the model only the audio available at each moment. It must never hear later speech before making an earlier decision.
-3. Train the waiting policy using past scores and elapsed time.
-4. Compare it with fixed waiting times and tuned confidence thresholds.
-5. Train a smaller detector and check whether early decisions survive the size reduction.
+3. Measure their errors on a source-safe Sinhala test set, including unfamiliar generators and separate compression changes.
+4. Identify a specific failure before proposing an additional training change. Applying an existing waiting policy is a comparison, not the new method.
+5. Train a smaller detector and check whether early decisions survive the size reduction; this also needs comparison with existing compression methods.
 
 **Prototype:** Replay existing audio in small chunks and display “possible synthetic speech,” “human speech so far” or “not enough evidence.” An early human decision cannot certify the rest of a conversation.
 
@@ -67,7 +78,7 @@ Begin with controlled single-speaker recordings that are wholly human or wholly 
 | [ASVspoof 2019](https://datashare.ed.ac.uk/handle/10283/3336) | English benchmark used by the closest streaming study and [AASIST author implementation](https://github.com/clovaai/aasist). AASIST provides code and pretrained models. | Proposed baseline/fallback only. The dataset page timed out in this check; verify download, licence and source records before use. English results cannot establish Sinhala performance. |
 | [RTCFake challenge release](https://huggingface.co/datasets/JunXueTech/RTCFake) | English/Chinese, approximately 400 hours; CC BY-NC 4.0. Access requires team registration and some evaluation data are withheld. | No Sinhala. Access was not requested; it is an optional later test, not a secured dependency. |
 
-**Data blocker:** A reusable Sinhala real/fake dataset with several speakers and generation tools is still missing. Human audio alone is insufficient. A permitted route for creating derivatives from existing data could help, but tool licences, speaker reuse terms and module rules must first be verified. No new recordings are assumed.
+**Dataset route to verify:** A ready-made Sinhala real/fake dataset is optional. We can use existing reusable human speech and create synthetic examples with several permitted generation tools. The exact tools, Sinhala output quality, reuse terms and source/speaker records are not yet verified. Split speakers and source recordings before generation, retain all derived versions in the same split, and keep a generator family for testing. New recordings are not assumed. Completing this route would resolve a data concern; it would not by itself establish the research gap.
 
 **Estimated resources:** A selected 5–10-hour dataset, 16–32 GB RAM and roughly 30–100 GB working storage for audio, models and experiments. A modest GPU should be sufficient for small-model experiments; a larger teacher is optional. These are planning estimates, not measurements.
 
@@ -87,9 +98,9 @@ Train a small adaptation layer at several fixed data budgets. Compare no adaptat
 
 **Question and expectation:** Can a learned waiting policy reduce delay while keeping errors and the share of decided recordings comparable?
 
-Train a small policy using past scores. Compare fixed-duration decisions and the closest study's threshold rule. Remove score history to test whether it helps.
+First compare ALERT or EARLIEST with fixed-duration decisions and the published streaming threshold rule. Any extra policy change must address a measured failure beyond those methods. Remove score history to test whether it helps.
 
-**Separate result:** The relationship between warning delay, errors and undecided recordings. This is the central proposed gap.
+**Separate result:** The relationship between warning delay, errors and undecided recordings. This is the central comparison; learning when to wait is already established.
 
 ### Member C: preserve early decisions in a small model
 
@@ -106,7 +117,7 @@ All members use the same shared data and unchanged starting model. Each can obta
 - **Primary measure:** Mean time to a correct synthetic-speech warning, compared at matched fake-detection rates and decision coverage. Show delay only alongside the missed and undecided cases below. Choose thresholds on validation data with a target of at most 1% of genuine clips receiving any false alert; this is a planning target, not an achieved guarantee. Report the actual false-alert rate on every test condition.
 - **Count all outcomes:** Report missed fakes, wrong human decisions, false alerts and undecided clips alongside delay. Show a curve across waiting times. Fast decisions on only easy examples do not establish an improvement.
 - **Keep data separate:** Split by speaker and original recording before making compressed versions. Keep linked source/donor examples together. Hold out a generation-tool family and separately a codec setting. Use the same test recordings for every method.
-- **Fair baselines:** Simple audio features with a classifier; AASIST or AASIST-L; a strong pretrained speech detector; ordinary Sinhala fine-tuning; fixed waiting times; and the published streaming threshold rule. Audit input padding because repeating short audio can change results.
+- **Fair baselines:** Simple audio features with a classifier; AASIST or AASIST-L; a strong pretrained speech detector; ordinary Sinhala fine-tuning; fixed waiting times; the published streaming threshold rule; and ALERT or EARLIEST. Audit input padding because repeating short audio can change results.
 - **Removal tests:** Remove adaptation, score history and early-prefix imitation separately. Keep training examples and tuning effort comparable.
 - **Uncertainty and errors:** Use three training seeds and 95% confidence intervals grouped by speaker/source. Analyse short speech, unfamiliar generators, compression and noise. Overlapping checks are not independent recordings.
 - **Full timing:** Count waiting for audio, feature extraction, prediction and policy processing. For example, 1 second of audio plus 50 ms of processing means at least 1.05 seconds to decide. Measure peak memory and whether repeated updates keep up on the phone.
@@ -115,7 +126,7 @@ All members use the same shared data and unchanged starting model. Each can obta
 
 ## 8. Score and next decision
 
-**Verdict: adjust before proceeding. Provisional score: 62.0/100; not qualified.** Five gates remain Unknown. This is a separate assessment from X32; the equal total reflects similar unresolved data and novelty risks.
+**Verdict: adjust before proceeding; redesign before selection. Provisional score: 62.0/100; not qualified.** The deeper check confirms a real general problem, but withdraws the generic learned-waiting idea as the novelty claim. The score remains low; five gates remain Unknown. X32 is a separate candidate.
 
 ### Weighted rubric
 
@@ -123,7 +134,7 @@ The nine existing weights total 98 and are normalised to 100. Ratings describe t
 
 | Category | Weight | Rating / 5 | Weighted points | Confidence and reason |
 |---|---|---|---|---|
-| Research gap and defensible novelty | 16 | 2 | 6.4 | Low: A close streaming study already exists; the added value of learning when to wait is unverified. |
+| Research gap and defensible novelty | 16 | 2 | 6.4 | High confidence in overlap: ALERT and EARLIEST already learn stopping; a distinct Sinhala contribution is unverified. |
 | Public dataset quality/accessibility | 15 | 2 | 6.0 | Low: Suitable reusable Sinhala human and generated speech has not been secured. |
 | Feasibility and learning curve | 14 | 3 | 8.4 | Low-medium: A bounded study is plausible once data and the first baseline work. |
 | Technical AI/ML depth | 12 | 4 | 9.6 | Medium: The plan trains adaptation, a waiting policy and a compact model. |
@@ -140,12 +151,12 @@ Unknown gates must be resolved before selection. Pass describes the bounded plan
 
 | Gate | Decision | Evidence |
 |---|---|---|
-| 1. Specific real problem | Pass | Studies in section 3 show that short input and telephone processing affect detection and confidence. |
+| 1. Specific real problem | Pass | RealComm and the streaming studies document channel-related detection failures; Sinhala-specific early-decision failure remains unmeasured. |
 | 2. ML essential | Pass | The question concerns a learned detector and when it has enough evidence to decide. |
 | 3. Train/adapt models | Pass | All three contributions train or adapt models rather than only call an API. |
 | 4. Existing data accessible | Unknown | No suitable reusable Sinhala real/fake dataset with speaker and generator records has been secured. |
 | 5. No unavailable human evaluation | Pass | The bounded study uses existing labels. New callers, recordings and expert labelling are excluded. |
-| 6. Precise research gap | Unknown | Streaming, short-input and limited-language detection already exist; the extra contribution needs checking. |
+| 6. Precise research gap | Unknown | Learned stopping already exists in ALERT and EARLIEST. No specific Sinhala baseline failure or distinct repair has been demonstrated. |
 | 7. Beyond application assembly | Pass | Training and comparison experiments are central; the app only demonstrates the result. |
 | 8. Objective evaluation | Unknown | Metrics are defined, but suitable Sinhala data, source groups and clip lengths are not verified. |
 | 9. 6–8 month feasibility | Unknown | Data access and baseline reproduction must be resolved before the schedule is credible. |
@@ -154,9 +165,9 @@ Unknown gates must be resolved before selection. Pass describes the bounded plan
 | 12. Manageable data reuse | Unknown | Rights for the actual Sinhala fake audio and any generated derivatives remain unresolved. |
 | 13. Useful negative findings | Pass | Standard methods may suffice; waiting may not help; compression may damage early detection. |
 
-**Next decision:** Review the proposed waiting-policy contribution and existing-data route with the supervisor before committing to this topic.
+**Next decision:** Review this overlap audit with the supervisor to decide whether a Sinhala dataset-and-comparison study is assessable or a more specific model contribution is needed. Do not present the current waiting-policy idea as verified novelty.
 
 [Scoring criteria](../../../research-module-and-team-criteria.md#8-evaluation-rubric) · [Searches and source checks](../../metadata/source-checks/sinhala-streaming-gap-validation.json)
 
-[Import these 5 papers into Zotero or EndNote](https://literature.researchfasttrack.com/zotero?ids=10.1109/icac69156.2025.11361479,10.21437/spsc.2025-8,10.1109/icassp55912.2026.11463587,10.21203/rs.3.rs-10257178/v1,10.18653/v1/2026.findings-acl.285).
+[Import these 9 papers into Zotero or EndNote](https://literature.researchfasttrack.com/zotero?ids=10.1109/icac69156.2025.11361479,10.21437/spsc.2025-8,10.1109/icassp55912.2026.11463587,10.21203/rs.3.rs-10257178/v1,10.18653/v1/2026.findings-acl.285,10.48550/arxiv.2502.06584,10.1109/access.2023.3321919,10.48550/arxiv.2610.27459,10.1145/3292500.3330974).
 

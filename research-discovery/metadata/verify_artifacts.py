@@ -341,8 +341,20 @@ x33_brief = (discovery_root / assessments['X33']['report']).read_text(encoding='
 assert len(re.findall(r'^### Member [ABC]:', x33_brief, re.M)) == 3
 assert 'Quick explanation:' in x33_brief and 'No model has been trained or timed.' in x33_brief
 import_link = re.search(r'Import these (\d+) papers into Zotero or EndNote\]\(https://literature.researchfasttrack.com/zotero\?ids=([^)]+)\)', x33_brief)
-assert import_link and int(import_link[1]) == len(set(import_link[2].split(','))) == 5
+assert import_link and int(import_link[1]) == len(set(import_link[2].split(','))) == 9
 for source in sinhala_streaming['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+
+streaming_novelty = sinhala_streaming['novelty_recheck']
+assert len(streaming_novelty['searches']) == 7
+assert len(streaming_novelty['duplications']) == 3
+assert sum(len(q['data']['results']) for q in streaming_novelty['searches']) == 130
+assert streaming_novelty['general_problem_real']
+assert not streaming_novelty['sinhala_specific_failure_demonstrated']
+assert not streaming_novelty['novel_method_established']
+assert 'now withdrawn as a novelty claim' in x33_brief
+for source in streaming_novelty['curated_sources']:
     assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
                for row in rows), source['evidence_id']
 
@@ -384,6 +396,10 @@ report = {
     'sinhala_streaming_gap_duplications': len(sinhala_streaming['duplications']),
     'sinhala_streaming_gap_curated_sources': len(sinhala_streaming['curated_sources']),
     'sinhala_streaming_gap_qualified': assessments['X33']['qualified'],
+    'sinhala_streaming_novelty_searches': len(streaming_novelty['searches']),
+    'sinhala_streaming_novelty_search_occurrences': streaming_novelty['search_result_occurrences'],
+    'sinhala_streaming_novelty_duplications': len(streaming_novelty['duplications']),
+    'sinhala_streaming_novel_method_established': streaming_novelty['novel_method_established'],
     'further_maritime_candidates': len(maritime['candidates']),
     'further_maritime_discovery_queries': len(maritime['searches']),
     'further_maritime_search_occurrences': 329,

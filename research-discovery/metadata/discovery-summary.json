@@ -4320,7 +4320,7 @@
     },
     "X33": {
       "scored_date": "2026-10-29",
-      "mode": "Provisional streaming candidate; data and novelty unresolved",
+      "mode": "Provisional redesign candidate; generic learned-waiting novelty claim withdrawn",
       "report": "reports/gaps/x33-sinhala-streaming-deepfake-detection.md",
       "weight_total": 98,
       "gate_decisions": {
@@ -4339,12 +4339,12 @@
         "G13": "Pass"
       },
       "gate_evidence": {
-        "G1": "Studies in section 3 show that short input and telephone processing affect detection and confidence.",
+        "G1": "RealComm and the streaming studies document channel-related detection failures; Sinhala-specific early-decision failure remains unmeasured.",
         "G2": "The question concerns a learned detector and when it has enough evidence to decide.",
         "G3": "All three contributions train or adapt models rather than only call an API.",
         "G4": "No suitable reusable Sinhala real/fake dataset with speaker and generator records has been secured.",
         "G5": "The bounded study uses existing labels. New callers, recordings and expert labelling are excluded.",
-        "G6": "Streaming, short-input and limited-language detection already exist; the extra contribution needs checking.",
+        "G6": "Learned stopping already exists in ALERT and EARLIEST. No specific Sinhala baseline failure or distinct repair has been demonstrated.",
         "G7": "Training and comparison experiments are central; the app only demonstrates the result.",
         "G8": "Metrics are defined, but suitable Sinhala data, source groups and clip lengths are not verified.",
         "G9": "Data access and baseline reproduction must be resolved before the schedule is credible.",
@@ -4373,7 +4373,7 @@
           "weight": 16,
           "rating": 2,
           "weighted_points": 6.4,
-          "confidence_and_reason": "Low: A close streaming study already exists; the added value of learning when to wait is unverified."
+          "confidence_and_reason": "High confidence in overlap: ALERT and EARLIEST already learn stopping; a distinct Sinhala contribution is unverified."
         },
         {
           "category": "Public dataset quality/accessibility",
@@ -4566,7 +4566,16 @@
     "result_occurrences": 40,
     "duplications": 1,
     "curated_sources": 11,
-    "verdict": "Adjust before proceeding; 62.0/100 provisional, not qualified.",
-    "audio_downloaded_or_model_run": false
+    "verdict": "Adjust before proceeding; redesign before selection. General problem supported, precise Sinhala research gap unverified; 62.0/100 provisional, not qualified.",
+    "audio_downloaded_or_model_run": false,
+    "novelty_recheck": {
+      "searches": 7,
+      "result_occurrences": 130,
+      "duplications": 3,
+      "curated_sources": 11,
+      "general_problem_real": true,
+      "novel_method_established": false,
+      "sinhala_specific_failure_demonstrated": false
+    }
   }
 }
