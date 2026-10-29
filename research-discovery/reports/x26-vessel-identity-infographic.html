@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="X26 research overview: maintaining consistent vessel identities across optical and SAR images, with published evidence and three proposed research contributions.">
+<title>X26 · Keeping one identity for the same vessel</title>
+<style>
+:root{--ink:#183047;--muted:#526577;--paper:#fff;--wash:#f4f6f7;--line:#d6e0e4;--blue:#126a95;--blue-wash:#eaf4fa;--amber:#a85b15;--amber-wash:#fff3e4;--green:#246e57;--green-wash:#edf6f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.55 "Segoe UI",Arial,sans-serif}main{max-width:1100px;margin:auto;padding:40px 44px 30px;background:var(--paper)}
+a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.skip{position:absolute;left:16px;top:-80px;padding:10px;background:white;z-index:2}.skip:focus{top:12px}
+.topline,.section-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.eyebrow,.kicker{font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}button{font:inherit;font-size:13px;color:var(--ink);background:white;border:1px solid var(--line);border-radius:5px;padding:8px 12px;cursor:pointer}button:hover{background:var(--blue-wash)}
+header{padding-bottom:30px;border-bottom:1px solid var(--line)}h1{font-size:clamp(34px,5.5vw,61px);line-height:1.06;letter-spacing:-.045em;max-width:850px;margin:22px 0 18px}h1 span{color:var(--blue)}.lead{font-size:20px;max-width:810px;margin:0 0 18px}.status,.evidence-label{display:inline-block;font-size:12px;font-weight:700;padding:5px 9px;border-radius:3px;background:var(--amber-wash);color:#75420c}.evidence-label{background:var(--green-wash);color:var(--green)}
+section{padding-top:30px}h2{font-size:27px;letter-spacing:-.025em;line-height:1.2;margin:6px 0 17px}h3{font-size:19px;line-height:1.3;margin:0 0 8px}p{margin:0 0 12px}.small,figcaption{font-size:13px;color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.panel{min-width:0;background:var(--wash);padding:21px;border-radius:8px}.panel p:last-child{margin-bottom:0}.error-tag{color:var(--amber);font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.06em}
+figure{margin:16px 0 0}svg{display:block;width:100%;height:auto}svg text{font-family:"Segoe UI",Arial,sans-serif;fill:var(--ink)}.error-figure svg{max-height:228px}figcaption{margin-top:9px}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.optical{color:var(--blue)}.radar{color:var(--ink)}
+.source-key{font-size:13px;font-weight:600;white-space:nowrap}.evidence{padding:24px 26px;background:var(--green-wash);border-radius:8px}.evidence h2{margin-bottom:8px}.chart{margin-top:18px}.chart-row{margin-top:14px}.row-label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px}.row-label strong{white-space:nowrap;font-variant-numeric:tabular-nums}.bar-svg{height:26px;width:100%;margin-top:3px}.bar-track{fill:#dce9e2}.bar-reference{fill:var(--green)}.bar-model{fill:var(--blue)}.whisker{stroke:var(--ink);stroke-width:1.5;vector-effect:non-scaling-stroke;fill:none}.axis{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);border-top:1px solid #a9bfb2;padding-top:5px;margin-top:4px;font-variant-numeric:tabular-nums}.axis-title{text-align:center;font-size:12px;color:var(--muted);margin-top:4px}.chart-note{font-size:14px;margin:13px 0 0}.chart-note strong{color:var(--green)}
+.question{font-size:21px;line-height:1.45;margin:0 0 18px;max-width:880px}.pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;padding-top:5px}.stage{position:relative;min-width:0;padding:18px 15px;background:var(--blue-wash);border-radius:6px}.stage:not(:last-child):after{content:"→";position:absolute;right:-20px;top:36px;color:var(--blue);font-size:22px}.step{font-size:12px;font-weight:750;color:var(--blue);margin-bottom:9px}.stage strong{font-size:17px;display:block;line-height:1.25}.stage p{font-size:13px;color:var(--muted);margin:7px 0 0}.loop{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;color:var(--blue);padding:12px 8px 0}.loop svg{width:76px;height:26px;flex:none}.loop path{stroke:var(--blue);stroke-width:1.7;stroke-dasharray:4 3;fill:none}.proposed-note{margin-top:12px;font-size:13px;color:var(--muted)}
+.team-intro{margin-bottom:16px}.member{display:flex;align-items:center;gap:10px;margin-bottom:14px}.member-id{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:var(--blue);color:white;font-size:19px;font-weight:750;flex:none}.member h3{margin:0}.contribution{border-top:3px solid var(--blue);background:var(--wash)}.contribution p{font-size:14px}.label{font-size:11px;font-weight:750;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:3px}.independence{font-size:14px;color:var(--muted);margin-top:13px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:15px 0}.metric{border-left:3px solid var(--blue);padding:4px 12px}.metric strong{font-size:15px;display:block}.metric span{font-size:13px;color:var(--muted)}.checks{padding:17px 20px;background:var(--amber-wash);border-left:4px solid var(--amber);font-size:14px;margin-top:15px}.checks p:last-child{margin-bottom:0}.checks strong{color:#75420c}.scope{font-size:14px;margin:15px 0 0}
+footer{margin-top:28px;border-top:1px solid var(--line);padding-top:17px;font-size:12px;color:var(--muted)}.footer-nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;font-size:14px;font-weight:650}.refs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:5px 22px}.refs li{overflow-wrap:anywhere}.date{margin-top:12px;font-size:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:800px){main{padding:30px 26px}.grid3{grid-template-columns:1fr}.contribution{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}.member{grid-column:1/-1;margin-bottom:0}.contribution p{margin:0}.metrics{grid-template-columns:1fr 1fr}.pipeline{gap:18px}.stage{padding:15px 11px}.stage:not(:last-child):after{right:-17px}.stage strong{font-size:15px}}
+@media(max-width:600px){main{padding:24px 17px}.grid2{grid-template-columns:1fr;gap:13px}h1{font-size:39px}.lead{font-size:18px}h2{font-size:24px}.panel{padding:17px}.evidence{padding:20px 17px}.pipeline{grid-template-columns:1fr;gap:22px}.stage{display:grid;grid-template-columns:30px 1fr;gap:0 8px;padding:13px 16px}.stage .step{grid-row:1/3;margin:0;align-self:center}.stage strong{font-size:17px}.stage p{margin-top:4px}.stage:not(:last-child):after{content:"↓";right:auto;left:calc(50% - 7px);top:auto;bottom:-24px}.question{font-size:19px}.loop{justify-content:flex-start}.loop svg{width:45px}.contribution{display:block}.member{margin-bottom:12px}.contribution p{margin-top:10px}.row-label{font-size:14px}.refs{grid-template-columns:1fr}.metrics{gap:13px 6px}.metric{padding-left:9px}.metric strong{font-size:14px}.axis{font-size:11px}.source-key{white-space:normal}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4;margin:13mm}body{background:white;font-size:10pt;line-height:1.35}main{max-width:none;padding:0}.no-print,.skip{display:none}header{padding-bottom:16px}h1{font-size:32pt;margin:12px 0}h2{font-size:18pt;margin-bottom:11px}h3{font-size:12pt}.lead{font-size:12pt}section{padding-top:20px}.grid2{grid-template-columns:1fr 1fr;gap:12px}.grid3{grid-template-columns:repeat(3,1fr);gap:10px}.panel{padding:12px}.error-figure svg{max-height:165px}.evidence{padding:15px 18px}.pipeline{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.stage{display:block;padding:12px}.stage strong{font-size:11pt}.stage p{font-size:9pt}.stage:not(:last-child):after{content:"→";top:24px;right:-15px;bottom:auto;left:auto}.contribution{display:block}.contribution p{font-size:9pt;margin-top:8px}.member h3{font-size:11pt}.member-id{width:27px;height:27px;font-size:13pt}.question{font-size:13pt}.metrics{grid-template-columns:repeat(4,1fr)}.metric strong{font-size:10pt}.metric span,.small,figcaption,.proposed-note,.independence,.loop{font-size:9pt}.checks,.scope,.chart-note{font-size:9pt}.row-label{font-size:10pt}.refs{grid-template-columns:1fr 1fr;font-size:8pt}footer{font-size:8pt;margin-top:17px}.footer-nav{font-size:10pt}header,.error-panel,.evidence,.pipeline-wrap,.contribution,.metrics,.checks,footer{break-inside:avoid}h2,h3,.kicker{break-after:avoid}.team-section{break-before:page}.date{font-size:8pt}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+<style media="print">
+body{font-size:9pt;line-height:1.3}header{padding-bottom:12px}h1{font-size:29pt}.lead{font-size:11pt}h2{font-size:16pt;margin-bottom:9px}section{padding-top:14px}.panel{padding:10px}.evidence{padding:13px 16px}.chart-row{margin-top:10px}.bar-svg{height:21px}.error-figure svg{max-height:155px}.question{font-size:12pt;margin-bottom:12px}.stage{padding:10px}.stage strong{font-size:10pt}.stage p{font-size:8pt}.step{margin-bottom:6px}.loop{padding-top:8px}.proposed-note{margin-top:8px}.contribution p{font-size:8pt;line-height:1.3;margin-top:7px}.member{margin-bottom:9px}.member h3{font-size:10pt}.member-id{width:24px;height:24px}.team-section{break-before:auto}.team-intro{margin-bottom:10px}.independence{margin-top:9px}.metrics{margin:10px 0;gap:8px}.metric strong{font-size:9pt}.metric span,.small,figcaption,.proposed-note,.independence,.loop{font-size:8pt}.checks{padding:11px 13px;margin-top:10px;font-size:8pt}.checks p{margin-bottom:8px}.scope{font-size:8pt;margin-top:10px}footer{margin-top:13px;padding-top:10px}.footer-nav{margin-bottom:8px}.refs{font-size:7.5pt;gap:3px 16px}.date{font-size:7.5pt;margin-top:8px}section[aria-labelledby="approach-title"]{break-before:page;padding-top:0}
+section{padding-top:10px}.contribution{padding:8px}.contribution .label{display:inline;font-size:7pt;letter-spacing:0;margin:0}.contribution .label:after{content:": "}.contribution p{line-height:1.2;margin-top:6px}.member{margin-bottom:6px}.pipeline .stage p{display:none}.stage{padding:9px}.stage .step{margin-bottom:4px}.loop{padding-top:6px}.team-intro{margin-bottom:8px}.metrics{margin:8px 0}footer{margin-top:9px;padding-top:8px}.footer-nav{font-size:9pt;margin-bottom:6px}.date{margin-top:6px}
+</style>
+</head>
+<body>
+<a href="#overview" class="skip">Skip to infographic</a>
+<svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+  <symbol id="ship-a" viewBox="0 0 100 45"><path d="M5 28H93L78 40H21Z" fill="currentColor"/><path d="M25 27V15H70V27M43 15V7H63V15" fill="none" stroke="currentColor" stroke-width="4"/><path d="M22 21H72M49 5V1" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="ship-b" viewBox="0 0 100 45"><path d="M7 29H93L79 40H18Z" fill="currentColor"/><path d="M17 27V10H38V27M41 22H76V28" fill="none" stroke="currentColor" stroke-width="4"/><path d="M21 6V1M50 19V7H75V19" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+</defs></svg>
+<main id="overview">
+<header>
+  <div class="topline"><span class="eyebrow">X26 · Visual research overview</span><button class="no-print" type="button" onclick="window.print()">Print / save PDF</button></div>
+  <h1>Keeping <span>one identity</span><br>for the same vessel.</h1>
+  <p class="lead">Optical images look like photographs. SAR images use radar. The same ship can look very different between them, breaking its observation history into separate identities.</p>
+  <span class="status">Research candidate · novelty unverified · no proposed-method results</span>
+</header>
+
+<section aria-labelledby="errors-title">
+  <span class="kicker">01 / The competing errors</span>
+  <h2 id="errors-title">Keep one ship together. Keep different ships apart.</h2>
+  <div class="grid2">
+    <article class="panel error-panel">
+      <span class="error-tag">Fragmentation</span><h3>One vessel → three identities</h3>
+      <figure class="error-figure">
+        <svg viewBox="0 0 420 220" role="img" aria-labelledby="fragment-title fragment-desc">
+          <title id="fragment-title">One vessel wrongly assigned three separate identities</title>
+          <desc id="fragment-desc">Three illustrative observations of ship A, labelled optical, SAR and optical, are incorrectly assigned IDs 01, 02 and 03. These are schematic drawings, not satellite images or model results.</desc>
+          <rect x="4" y="6" width="124" height="102" rx="6" fill="#eaf4fa"/><rect x="148" y="6" width="124" height="102" rx="6" fill="#e0e6e9"/><rect x="292" y="6" width="124" height="102" rx="6" fill="#eaf4fa"/>
+          <use href="#ship-a" x="17" y="27" width="100" height="45" class="optical"/><use href="#ship-a" x="161" y="27" width="100" height="45" class="radar"/><use href="#ship-a" x="305" y="27" width="100" height="45" class="optical"/>
+          <path d="M162 30L245 74M168 22L256 68M159 46L217 79" stroke="#526577" stroke-width="2" opacity=".3"/>
+          <text x="66" y="94" text-anchor="middle" font-size="17">Optical · A</text><text x="210" y="94" text-anchor="middle" font-size="17">SAR · A</text><text x="354" y="94" text-anchor="middle" font-size="17">Optical · A</text>
+          <path d="M66 117V146M210 117V146M354 117V146" stroke="#a85b15" stroke-width="2"/><path d="M61 140L66 146L71 140M205 140L210 146L215 140M349 140L354 146L359 140" fill="none" stroke="#a85b15" stroke-width="2"/>
+          <rect x="12" y="155" width="108" height="48" rx="24" fill="#fff3e4" stroke="#a85b15" stroke-width="2" stroke-dasharray="5 4"/><rect x="156" y="155" width="108" height="48" rx="24" fill="#fff3e4" stroke="#a85b15" stroke-width="2" stroke-dasharray="5 4"/><rect x="300" y="155" width="108" height="48" rx="24" fill="#fff3e4" stroke="#a85b15" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="66" y="186" text-anchor="middle" font-size="20" font-weight="700">ID 01</text><text x="210" y="186" text-anchor="middle" font-size="20" font-weight="700">ID 02</text><text x="354" y="186" text-anchor="middle" font-size="20" font-weight="700">ID 03</text>
+        </svg>
+        <figcaption>Illustrative: a sensor change creates a false “new vessel.”</figcaption>
+      </figure>
+    </article>
+    <article class="panel error-panel">
+      <span class="error-tag">False merge</span><h3>Two vessels → one identity</h3>
+      <figure class="error-figure">
+        <svg viewBox="0 0 420 220" role="img" aria-labelledby="merge-title merge-desc">
+          <title id="merge-title">Two different vessels wrongly combined into one identity</title>
+          <desc id="merge-desc">Different ship silhouettes A and B are both assigned to ID 01. This illustrates a false merge, not measured model behaviour.</desc>
+          <rect x="31" y="6" width="150" height="102" rx="6" fill="#eaf4fa"/><rect x="239" y="6" width="150" height="102" rx="6" fill="#eaf4fa"/>
+          <use href="#ship-a" x="56" y="27" width="100" height="45" class="optical"/><use href="#ship-b" x="264" y="27" width="100" height="45" class="optical"/>
+          <text x="106" y="94" text-anchor="middle" font-size="17">Vessel A</text><text x="314" y="94" text-anchor="middle" font-size="17">Vessel B</text>
+          <path d="M106 117V130H210V147M314 117V130H210M205 141L210 147L215 141" fill="none" stroke="#a85b15" stroke-width="2"/>
+          <rect x="145" y="155" width="130" height="48" fill="#fff3e4" stroke="#a85b15" stroke-width="2"/>
+          <text x="210" y="186" text-anchor="middle" font-size="20" font-weight="700">ID 01</text>
+        </svg>
+        <figcaption>Illustrative: an aggressive merge mixes separate histories.</figcaption>
+      </figure>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="evidence-title">
+  <div class="evidence">
+    <div class="section-top"><span class="kicker">02 / Published evidence</span><a class="source-key" href="https://openreview.net/pdf?id=hZwvQwTfU8">HOSS-Bench · Table 3 ↗</a></div>
+    <h2 id="evidence-title">85 vessels became many more groups.</h2>
+    <p class="small">Reported online-clustering results, starting with an empty gallery.</p>
+    <figure class="chart" aria-describedby="chart-caption">
+      <div class="chart-row"><div class="row-label"><span>Reference identities</span><strong>85</strong></div><svg class="bar-svg" viewBox="0 0 250 20" preserveAspectRatio="none" aria-hidden="true"><rect class="bar-track" width="250" height="12" y="4"/><rect class="bar-reference" width="85" height="12" y="4"/></svg></div>
+      <div class="chart-row"><div class="row-label"><span>TransOSS groups</span><strong>214.0 ± 1.5</strong></div><svg class="bar-svg" viewBox="0 0 250 20" preserveAspectRatio="none" aria-hidden="true"><rect class="bar-track" width="250" height="12" y="4"/><rect class="bar-model" width="214" height="12" y="4"/><path class="whisker" d="M212.5 10H215.5M212.5 2V18M215.5 2V18"/></svg></div>
+      <div class="chart-row"><div class="row-label"><span>DINOv3 groups</span><strong>182.1 ± 2.0</strong></div><svg class="bar-svg" viewBox="0 0 250 20" preserveAspectRatio="none" aria-hidden="true"><rect class="bar-track" width="250" height="12" y="4"/><rect class="bar-model" width="182.1" height="12" y="4"/><path class="whisker" d="M180.1 10H184.1M180.1 2V18M184.1 2V18"/></svg></div>
+      <div class="axis" aria-hidden="true"><span>0</span><span>50</span><span>100</span><span>150</span><span>200</span><span>250</span></div><div class="axis-title">Number of identities / discovered groups · zero-based scale</div>
+      <figcaption id="chart-caption">Model values and whiskers: mean ± standard deviation over 10 random seeds. Reference: 85 identities. These are published baselines, not results from this project.</figcaption>
+    </figure>
+    <p class="chart-note"><strong>Fewer groups alone is not success.</strong> Correct grouping must improve without mixing different vessels.</p>
+  </div>
+</section>
+
+<section aria-labelledby="approach-title">
+  <div class="section-top"><span class="kicker">03 / Proposed investigation</span><span class="status">Hypothesis · untested</span></div>
+  <h2 id="approach-title">Learn what to remember, join and revise.</h2>
+  <p class="question">Can learned, bounded-memory association reduce fragmentation while controlling false merges and decision delay?</p>
+  <div class="pipeline-wrap">
+    <div class="pipeline" role="list" aria-label="Proposed processing stages">
+      <div class="stage" role="listitem"><div class="step">01</div><strong>Vessel image</strong><p>An optical or SAR crop arrives.</p></div>
+      <div class="stage" role="listitem"><div class="step">02</div><strong>Learned features</strong><p>Encode visual identity evidence.</p></div>
+      <div class="stage" role="listitem"><div class="step">03</div><strong>Vessel memory</strong><p>Retain useful appearances.</p></div>
+      <div class="stage" role="listitem"><div class="step">04</div><strong>Join / create / defer</strong><p>Associate, start a group, or wait.</p></div>
+    </div>
+    <div class="loop"><svg viewBox="0 0 76 26" aria-hidden="true"><path d="M73 2V16H4V3M0 8L4 3L8 8"/></svg><span>Revision loop: later evidence may justify a merge or split.</span></div>
+  </div>
+  <p class="proposed-note">Compare memory and update rules using the same visual features. Test whether simple threshold tuning already explains any improvement.</p>
+</section>
+
+<section class="team-section" aria-labelledby="team-title">
+  <span class="kicker">04 / One problem, three research contributions</span>
+  <h2 id="team-title">Shared data. Separately assessable findings.</h2>
+  <p class="team-intro">Each member trains or adapts a method against the unchanged common baseline.</p>
+  <div class="grid3">
+    <article class="panel contribution"><div class="member"><span class="member-id">A</span><h3>Memory representation</h3></div><p><span class="label">Question</span>Which optical/SAR examples should a vessel memory retain?</p><p><span class="label">Learned method</span>Example selection or prototype updates.</p><p><span class="label">Comparison</span>One representative versus selected multiple representatives.</p><p><span class="label">Outcome</span>Fragmentation at a matched false-merge rate.</p></article>
+    <article class="panel contribution"><div class="member"><span class="member-id">B</span><h3>Grouping correction</h3></div><p><span class="label">Question</span>When does new evidence justify revising an earlier grouping?</p><p><span class="label">Learned method</span>Merge/split evidence scoring.</p><p><span class="label">Comparison</span>Reversible versus irreversible updates.</p><p><span class="label">Outcome</span>Errors corrected versus errors introduced.</p></article>
+    <article class="panel contribution"><div class="member"><span class="member-id">C</span><h3>Decision reliability</h3></div><p><span class="label">Question</span>When should the system join, create or defer?</p><p><span class="label">Learned method</span>Evidence-aware acceptance and calibration.</p><p><span class="label">Comparison</span>Fixed threshold versus learned acceptance.</p><p><span class="label">Outcome</span>False associations, coverage and decision delay.</p></article>
+  </div>
+  <p class="independence">Each intervention can produce findings if another fails. Test their combination afterwards. Papers are optional.</p>
+</section>
+
+<section aria-labelledby="evaluation-title">
+  <span class="kicker">05 / What would count as progress?</span>
+  <h2 id="evaluation-title">Measure the trade-off, not just the group count.</h2>
+  <div class="metrics"><div class="metric"><strong>Fragmentation</strong><span>How often one vessel is split.</span></div><div class="metric"><strong>False merges</strong><span>How often distinct vessels mix.</span></div><div class="metric"><strong>Coverage</strong><span>How many observations receive a decision.</span></div><div class="metric"><strong>Decision delay</strong><span>How many observations pass before deciding.</span></div></div>
+  <p class="small">Use held-out identities, duplicate-safe splits and varied arrival orders. Report grouping quality with B-cubed F1 and ARI. Keep uncertainty from observation order separate from evidence across vessels.</p>
+  <div class="checks"><p><strong>Before choosing this topic:</strong> verify the distinction from existing prototype and split/merge methods; reconcile 88 reported query tracks with 176 filename ID labels in the inspected HOSS release; audit checkpoint training identities and reproduce the comparison.</p><p>HOSS-Bench further trained its DINOv3 baseline. Generic cached features would be a different baseline. Controlled image orders do not demonstrate chronological voyage tracking.</p></div>
+  <p class="scope"><strong>Claim boundary:</strong> consistent visual identity does not establish a vessel’s registration, intentional AIS shutdown or illegal activity. No proposed-method performance has been measured.</p>
+</section>
+
+<footer>
+  <nav class="footer-nav" aria-label="Research documents"><a href="gaps/x26-ship-reid-online-fragmentation.md">Read the full X26 brief →</a><a href="research-candidates.md">All research candidates →</a></nav>
+  <ol class="refs" aria-label="Sources">
+    <li>[1] <a href="https://openreview.net/pdf?id=hZwvQwTfU8">HOSS-Bench: Table 3 and experimental setup</a></li>
+    <li>[2] <a href="https://arxiv.org/html/2506.22027v1#S3">HOSS / TransOSS: dataset and method</a> · <a href="https://zenodo.org/records/15860212">Dataset release</a></li>
+    <li>[3] <a href="https://arxiv.org/html/2603.12588v1">SDF-Net: existing cross-modal prototypes</a></li>
+    <li>[4] <a href="https://arxiv.org/html/2412.08231v1">DMIC: existing identity-splitting research</a></li>
+    <li>[5] <a href="https://doi.org/10.1007/s12530-021-09408-y">Evolving and split/merge clustering precedents</a></li>
+    <li>[6] <a href="https://github.com/Alioth2000/Hoss-ReID/blob/main/datasets/hoss.py">Identity-label loader</a> · <a href="../metadata/source-checks/maritime-expansion-data-checks.json">Recorded archive inspection</a></li>
+  </ol>
+  <p class="date">Prepared 29 October 2026 · Evidence reviewed 28 October 2026 · Illustrations are schematic. Research opportunities remain provisional.</p>
+</footer>
+</main>
+</body>
+</html>

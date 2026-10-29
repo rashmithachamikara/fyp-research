@@ -4,6 +4,8 @@
 
 **ID:** X25 · **Area:** Computer vision — optical/SAR vessel re-identification · **Status:** Provisional opportunity; not qualified
 
+[View the HTML infographic](../x25-vessel-size-infographic.html).
+
 **Evidence reviewed:** 28 October 2026. This is a source-grounded candidate question, not a certified novel gap. No model was trained or runtime measured.
 
 ## 1. Problem

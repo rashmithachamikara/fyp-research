@@ -4,6 +4,8 @@
 
 **ID:** X26 · **Area:** Computer vision — online vessel identity clustering · **Status:** Provisional opportunity; not qualified
 
+[View the HTML infographic](../x26-vessel-identity-infographic.html).
+
 **Evidence reviewed:** 28 October 2026. This is a source-grounded candidate question, not a certified novel gap. No model was trained or runtime measured.
 
 ## 1. Problem

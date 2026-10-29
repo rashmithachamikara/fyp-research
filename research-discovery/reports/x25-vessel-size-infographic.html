@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="X25 research overview: recognising vessels across optical and SAR images when crop-derived size information is unreliable.">
+<title>X25 · Same vessel, uncertain size</title>
+<style>
+:root{--ink:#183047;--muted:#526577;--paper:#fff;--wash:#f4f6f7;--line:#d6e0e4;--blue:#126a95;--blue-wash:#eaf4fa;--amber:#a85b15;--amber-wash:#fff3e4;--green:#246e57;--green-wash:#edf6f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.55 "Segoe UI",Arial,sans-serif}main{max-width:1100px;margin:auto;padding:40px 44px 30px;background:var(--paper)}a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.skip{position:absolute;left:16px;top:-80px;padding:10px;background:white;z-index:2}.skip:focus{top:12px}
+.topline,.section-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.eyebrow,.kicker{font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}button{font:inherit;font-size:13px;color:var(--ink);background:white;border:1px solid var(--line);border-radius:5px;padding:8px 12px;cursor:pointer}button:hover{background:var(--blue-wash)}header{padding-bottom:30px;border-bottom:1px solid var(--line)}h1{font-size:clamp(36px,6vw,66px);line-height:1.06;letter-spacing:-.045em;max-width:850px;margin:22px 0 18px}h1 span{color:var(--blue)}.lead{font-size:20px;max-width:810px;margin:0 0 18px}.status{display:inline-block;font-size:12px;font-weight:700;padding:5px 9px;border-radius:3px;background:var(--amber-wash);color:#75420c}
+section{padding-top:30px}h2{font-size:27px;letter-spacing:-.025em;line-height:1.2;margin:6px 0 17px}h3{font-size:19px;line-height:1.3;margin:0 0 8px}p{margin:0 0 12px}.small,figcaption{font-size:13px;color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.panel{min-width:0;background:var(--wash);padding:21px;border-radius:8px}.panel p:last-child{margin-bottom:0}figure{margin:16px 0 0}svg{display:block;width:100%;height:auto}svg text{font-family:"Segoe UI",Arial,sans-serif;fill:var(--ink)}figcaption{margin-top:9px}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.ship{color:var(--blue)}.ship.radar{color:var(--ink)}
+.crop-panel{background:var(--blue-wash)}.crop-panel.loose{background:var(--amber-wash)}.crop-figure{margin-top:10px}.crop-figure svg{max-height:220px}.tag{color:var(--blue);font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.06em}.loose .tag{color:var(--amber)}.size-value{font-size:35px;font-weight:750;line-height:1.15;letter-spacing:-.03em;margin-top:12px;font-variant-numeric:tabular-nums}.size-value small{display:block;font-size:14px;letter-spacing:0;font-weight:500;color:var(--muted);margin-top:4px}.formula{font-size:14px;margin-top:10px;font-variant-numeric:tabular-nums}.toy-note{font-size:13px;color:var(--muted);margin:12px 0 0}.invariant{font-size:15px;padding:13px 17px;border-left:4px solid var(--blue);background:var(--wash);margin-top:15px}
+.evidence{padding:24px 26px;background:var(--green-wash);border-radius:8px}.evidence h2{margin-bottom:12px}.evidence p{font-size:15px}.evidence strong{color:var(--green)}.confusers{margin-top:16px;background:var(--paper);padding:16px;border-radius:6px}.confuser-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:570px;margin:auto}.candidate{min-width:0;text-align:center}.candidate svg{max-width:180px;margin:0 auto 6px}.candidate strong{font-size:14px;color:var(--ink)}.confusers figcaption{text-align:center}.source-key{font-size:13px;font-weight:600}
+.question{font-size:21px;line-height:1.45;margin:0 0 18px;max-width:900px}.fusion-flow{display:grid;grid-template-columns:minmax(0,1.1fr) 30px minmax(0,1fr) 30px minmax(0,1fr);align-items:center;gap:12px}.inputs{display:grid;gap:12px}.flow-box{padding:19px 16px;background:var(--blue-wash);border-radius:6px;min-width:0}.flow-box strong{display:block;font-size:17px;line-height:1.3}.flow-box p{font-size:13px;color:var(--muted);margin:7px 0 0}.flow-box.fusion{background:var(--wash);border:2px solid var(--blue);padding:21px 16px}.flow-box.fusion strong{color:var(--blue)}.flow-arrow{font-size:28px;text-align:center;color:var(--blue)}.flow-label{font-size:11px;font-weight:750;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:7px}.proposed-note{margin-top:13px;font-size:13px;color:var(--muted)}
+.team-intro{margin-bottom:16px}.member{display:flex;align-items:center;gap:10px;margin-bottom:14px}.member-id{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:var(--blue);color:white;font-size:19px;font-weight:750;flex:none}.member h3{margin:0}.contribution{border-top:3px solid var(--blue)}.contribution p{font-size:14px}.label{font-size:11px;font-weight:750;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:3px}.independence{font-size:14px;color:var(--muted);margin-top:13px}
+.comparison{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.control{padding:14px;background:var(--blue-wash);border-radius:5px;min-width:0}.control strong{font-size:15px;display:block}.control span{font-size:13px;color:var(--muted)}.checks{padding:17px 20px;background:var(--amber-wash);border-left:4px solid var(--amber);font-size:14px;margin-top:15px}.checks strong{color:#75420c}.checks p:last-child{margin-bottom:0}.scope{font-size:14px;margin-top:15px}
+footer{margin-top:28px;border-top:1px solid var(--line);padding-top:17px;font-size:12px;color:var(--muted)}.footer-nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;font-size:14px;font-weight:650}.refs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:5px 22px}.refs li{overflow-wrap:anywhere}.date{margin-top:12px;font-size:12px}
+@media(max-width:800px){main{padding:30px 26px}.grid3{grid-template-columns:1fr}.contribution{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}.member{grid-column:1/-1;margin-bottom:0}.contribution p{margin:0}.fusion-flow{gap:8px;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr)}.flow-box{padding:15px 11px}.flow-box.fusion{padding:18px 12px}.flow-box strong{font-size:15px}.flow-arrow{font-size:23px}}
+@media(max-width:600px){main{padding:24px 17px}.grid2{grid-template-columns:1fr;gap:13px}h1{font-size:44px}.lead{font-size:18px}h2{font-size:24px}.panel{padding:17px}.evidence{padding:20px 17px}.size-value{font-size:31px}.confusers{padding:13px}.confuser-pair{gap:12px}.candidate strong{font-size:13px}.fusion-flow{grid-template-columns:1fr;gap:8px}.inputs{grid-template-columns:1fr 1fr;gap:10px}.flow-box{padding:15px}.flow-box strong{font-size:16px}.flow-box.fusion{padding:17px}.flow-arrow{transform:rotate(90deg);line-height:1.2}.flow-box p{font-size:13px}.flow-label{font-size:10px}.question{font-size:19px}.contribution{display:block}.member{margin-bottom:12px}.contribution p{margin-top:10px}.comparison{grid-template-columns:1fr;gap:8px}.control{padding:12px 14px}.refs{grid-template-columns:1fr}.invariant{font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4;margin:13mm}body{background:white;font-size:9pt;line-height:1.3}main{max-width:none;padding:0}.no-print,.skip{display:none}header{padding-bottom:12px}h1{font-size:31pt;margin:12px 0}.lead{font-size:11pt}h2{font-size:16pt;margin-bottom:9px}h3{font-size:11pt}section{padding-top:13px}.grid2{grid-template-columns:1fr 1fr;gap:12px}.grid3{grid-template-columns:repeat(3,1fr);gap:10px}.panel{padding:12px}.crop-figure{margin-top:5px}.crop-figure svg{max-height:155px}.size-value{font-size:22pt;margin-top:7px}.size-value small{font-size:9pt}.formula{font-size:9pt;margin-top:6px}.toy-note,.small,figcaption,.proposed-note,.independence{font-size:8pt}.invariant{font-size:9pt;margin-top:10px;padding:9px 12px}.evidence{padding:14px 17px}.evidence p{font-size:9pt}.confusers{margin-top:10px;padding:10px}.confuser-pair{max-width:360px}.candidate svg{max-width:130px}.candidate strong{font-size:9pt}.question{font-size:12pt;margin-bottom:12px}.fusion-flow{grid-template-columns:minmax(0,1.1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);gap:8px}.inputs{display:grid;grid-template-columns:1fr;gap:8px}.flow-box,.flow-box.fusion{padding:11px}.flow-box strong{font-size:10pt}.flow-box p{font-size:8pt;margin-top:4px}.flow-label{font-size:7pt;margin-bottom:4px}.flow-arrow{font-size:22px;transform:none}.team-intro{margin-bottom:9px}.member{margin-bottom:7px}.member-id{width:24px;height:24px;font-size:13pt}.member h3{font-size:10pt}.contribution{display:block;padding:9px}.contribution p{font-size:8pt;line-height:1.2;margin-top:6px}.contribution .label{display:inline;font-size:7pt;letter-spacing:0;margin:0}.contribution .label:after{content:": "}.comparison{grid-template-columns:repeat(3,1fr);gap:9px;margin:10px 0}.control{padding:10px}.control strong{font-size:9pt}.control span{font-size:8pt}.checks{padding:10px 13px;font-size:8pt;margin-top:10px}.scope{font-size:8pt;margin-top:10px}footer{margin-top:12px;padding-top:9px}.footer-nav{font-size:9pt;margin-bottom:6px}.refs{grid-template-columns:1fr 1fr;font-size:7.5pt;gap:3px 16px}.date{font-size:7.5pt;margin-top:7px}.source-key{font-size:8pt}header,.crop-panel,.evidence,.fusion-flow,.contribution,.comparison,.checks,footer{break-inside:avoid}h2,h3,.kicker{break-after:avoid}section[aria-labelledby="approach-title"]{break-before:page;padding-top:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media print{section{padding-top:10px}.flow-box p{display:none}.flow-box,.flow-box.fusion{padding:9px}.inputs{gap:6px}.flow-label{margin-bottom:2px}.proposed-note{margin-top:9px}.team-intro{margin-bottom:7px}.contribution{padding:8px}.contribution p{margin-top:5px}.comparison{margin:8px 0}.control{padding:8px}.scope{margin-top:7px}.independence{margin-top:8px}footer{margin-top:9px;padding-top:7px}.footer-nav{margin-bottom:5px}.date{margin-top:5px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#overview">Skip to infographic</a>
+<svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+  <symbol id="ship-a" viewBox="0 0 100 45"><path d="M5 28H93L78 40H21Z" fill="currentColor"/><path d="M25 27V15H70V27M43 15V7H63V15" fill="none" stroke="currentColor" stroke-width="4"/><path d="M22 21H72M49 5V1" stroke="currentColor" stroke-width="3"/></symbol>
+  <symbol id="ship-b" viewBox="0 0 100 45"><path d="M5 28H93L78 40H21Z" fill="currentColor"/><path d="M17 27V10H38V27M41 22H76V28" fill="none" stroke="currentColor" stroke-width="4"/><path d="M21 6V1M50 19V7H75V19" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+</defs></svg>
+<main id="overview">
+<header>
+  <div class="topline"><span class="eyebrow">X25 · Visual research overview</span><button class="no-print" type="button" onclick="window.print()">Print / save PDF</button></div>
+  <h1>Same vessel.<br><span>Uncertain size.</span></h1>
+  <p class="lead">Match a ship across optical photographs and SAR radar images. Size can help, but a crop includes surrounding water. Its dimensions are only an approximation of the vessel.</p>
+  <span class="status">Research candidate · novelty unverified · no proposed-method results</span>
+</header>
+
+<section aria-labelledby="problem-title">
+  <span class="kicker">01 / Why size can mislead</span>
+  <h2 id="problem-title">A bigger crop does not mean a bigger ship.</h2>
+  <div class="grid2">
+    <article class="panel crop-panel">
+      <span class="tag">Optical · tighter crop</span>
+      <figure class="crop-figure">
+        <svg viewBox="0 0 420 205" role="img" aria-labelledby="tight-title tight-desc">
+          <title id="tight-title">A tighter optical crop around a schematic vessel</title>
+          <desc id="tight-desc">The same illustrative ship is surrounded by a smaller crop rectangle. An assumed crop width of 80 pixels at 0.75 metres per pixel gives a 60-metre crop extent. This is a toy calculation, not a measured vessel length.</desc>
+          <rect x="5" y="7" width="410" height="188" rx="5" fill="#dcebf2"/>
+          <path d="M15 49H84M311 49H403M15 119H72M333 119H403M18 166H92M310 166H403" stroke="#bfd4df" stroke-width="2"/>
+          <use href="#ship-a" x="107" y="52" width="206" height="93" class="ship"/>
+          <rect x="109" y="37" width="202" height="121" fill="none" stroke="#126a95" stroke-width="3"/>
+          <path d="M109 169V184M311 169V184M109 177H311M115 173L109 177L115 181M305 173L311 177L305 181" stroke="#126a95" stroke-width="2" fill="none"/>
+          <text x="210" y="26" text-anchor="middle" font-size="18">Same vessel · A</text>
+        </svg>
+      </figure>
+      <div class="size-value">60 m<small>Illustrative crop extent</small></div>
+      <p class="formula">80 pixels × 0.75 metres/pixel</p>
+    </article>
+    <article class="panel crop-panel loose">
+      <span class="tag">SAR · looser crop</span>
+      <figure class="crop-figure">
+        <svg viewBox="0 0 420 205" role="img" aria-labelledby="loose-title loose-desc">
+          <title id="loose-title">A looser SAR crop around the same schematic vessel</title>
+          <desc id="loose-desc">More surrounding water is enclosed. An assumed width of 90 pixels at one metre per pixel gives a 90-metre crop extent. The real ship has not changed. Drawings are not to scale and show no model output.</desc>
+          <rect x="5" y="7" width="410" height="188" rx="5" fill="#e0e6e9"/>
+          <path d="M21 45L96 74M325 36L399 65M16 138L85 164M334 131L401 159M100 43L282 150" stroke="#bec9cf" stroke-width="2"/>
+          <use href="#ship-a" x="107" y="52" width="206" height="93" class="ship radar"/>
+          <path d="M125 76L299 132M133 62L289 114M125 104L235 141" stroke="#526577" stroke-width="2" opacity=".3"/>
+          <rect x="58" y="32" width="304" height="126" fill="none" stroke="#a85b15" stroke-width="3" stroke-dasharray="8 5"/>
+          <path d="M58 169V184M362 169V184M58 177H362M64 173L58 177L64 181M356 173L362 177L356 181" stroke="#a85b15" stroke-width="2" fill="none"/>
+          <text x="210" y="26" text-anchor="middle" font-size="18">Same vessel · A</text>
+        </svg>
+      </figure>
+      <div class="size-value">90 m<small>Illustrative crop extent</small></div>
+      <p class="formula">90 pixels × 1 metre/pixel</p>
+    </article>
+  </div>
+  <p class="toy-note">Toy example only, not to scale. GSD (ground sampling distance) converts image pixels into metres. Neither calculation establishes true hull length; no actual HOSS measurement is shown.</p>
+  <p class="invariant"><strong>The research hypothesis:</strong> a matching model could reject the correct ship if it over-trusts inconsistent crop-derived size.</p>
+</section>
+
+<section aria-labelledby="evidence-title">
+  <div class="evidence">
+    <div class="section-top"><span class="kicker">02 / Published starting point</span><a class="source-key" href="https://arxiv.org/html/2506.22027v1#S4.SS2">TransOSS · auxiliary information ↗</a></div>
+    <h2 id="evidence-title">Size is already used. Its reliability is the question.</h2>
+    <p>TransOSS combines visual features with approximate size from crop dimensions and GSD. The paper acknowledges that crops are not exact ship boundaries. <strong>Whether this causes important matching errors remains to be tested.</strong></p>
+    <figure class="confusers">
+      <div class="confuser-pair">
+        <div class="candidate"><svg viewBox="0 0 160 78" role="img" aria-labelledby="a-title a-desc"><title id="a-title">Illustrative vessel A</title><desc id="a-desc">A ship with a central superstructure. Its silhouette has the same length as the different ship beside it.</desc><use href="#ship-a" x="10" y="3" width="140" height="63" class="ship"/><path d="M19 72H140" stroke="#526577" stroke-width="1.5"/></svg><strong>Vessel A · central deckhouse</strong></div>
+        <div class="candidate"><svg viewBox="0 0 160 78" role="img" aria-labelledby="b-title b-desc"><title id="b-title">Illustrative vessel B of similar size</title><desc id="b-desc">A different ship with an offset superstructure. Similar size does not establish shared identity.</desc><use href="#ship-b" x="10" y="3" width="140" height="63" class="ship"/><path d="M19 72H140" stroke="#526577" stroke-width="1.5"/></svg><strong>Vessel B · offset deckhouse</strong></div>
+      </div>
+      <figcaption>Illustrative confusers: similar dimensions, different identities. Visual discrimination still matters.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section aria-labelledby="approach-title">
+  <div class="section-top"><span class="kicker">03 / Proposed investigation</span><span class="status">Hypothesis · untested</span></div>
+  <h2 id="approach-title">Learn how much size deserves to influence a match.</h2>
+  <p class="question">Can uncertainty-aware size fusion preserve correct optical–SAR matches under crop error, while still separating similarly sized vessels?</p>
+  <div class="fusion-flow" role="group" aria-label="Two sources of evidence feed a learned fusion model, which ranks gallery matches">
+    <div class="inputs"><div class="flow-box"><span class="flow-label">Input A</span><strong>Visual features</strong><p>Shape and appearance evidence.</p></div><div class="flow-box"><span class="flow-label">Input B</span><strong>Approximate size</strong><p>With estimated reliability.</p></div></div>
+    <div class="flow-arrow" aria-hidden="true">→</div>
+    <div class="flow-box fusion"><span class="flow-label">Trainable fusion</span><strong>Learn the weight of size</strong><p>Reduce its influence when unreliable.</p></div>
+    <div class="flow-arrow" aria-hidden="true">→</div>
+    <div class="flow-box"><span class="flow-label">Output</span><strong>Ranked gallery matches</strong><p>With confidence or an unresolved decision.</p></div>
+  </div>
+  <p class="proposed-note">Existing visual features may already be sufficient. The experiment must separate a useful reliability model from gains caused by an easier gallery.</p>
+</section>
+
+<section aria-labelledby="team-title">
+  <span class="kicker">04 / One problem, three research contributions</span>
+  <h2 id="team-title">Three ways to investigate matching reliability.</h2>
+  <p class="team-intro">Use shared vessel crops, common visual features and independently testable interventions.</p>
+  <div class="grid3">
+    <article class="panel contribution"><div class="member"><span class="member-id">A</span><h3>Uncertain size fusion</h3></div><p><span class="label">Question</span>When should the model trust approximate size?</p><p><span class="label">Learned method</span>A reliability-weighted size embedding.</p><p><span class="label">Comparison</span>Fixed-size fusion versus uncertainty-aware fusion.</p><p><span class="label">Outcome</span>Correct-match rate as size errors increase.</p></article>
+    <article class="panel contribution"><div class="member"><span class="member-id">B</span><h3>Same-size discrimination</h3></div><p><span class="label">Question</span>Can visual learning distinguish similar-sized ships?</p><p><span class="label">Learned method</span>Metric learning with same-size hard negatives.</p><p><span class="label">Comparison</span>Ordinary versus size-matched negative sampling.</p><p><span class="label">Outcome</span>Retrieval quality among same-size confusers.</p></article>
+    <article class="panel contribution"><div class="member"><span class="member-id">C</span><h3>Match confidence</h3></div><p><span class="label">Question</span>Does confidence reflect crop/scale reliability?</p><p><span class="label">Learned method</span>A quality-aware confidence model.</p><p><span class="label">Comparison</span>Global versus reliability-aware calibration.</p><p><span class="label">Outcome</span>Wrong-match risk versus decision coverage.</p></article>
+  </div>
+  <p class="independence">Each member compares against an unchanged common baseline, even if another method fails. Combine interventions afterwards. Papers are optional.</p>
+</section>
+
+<section aria-labelledby="evaluation-title">
+  <span class="kicker">05 / A fair test</span>
+  <h2 id="evaluation-title">Keep the visual model and gallery fixed.</h2>
+  <div class="comparison" aria-label="Three required baseline configurations"><div class="control"><strong>Visual only</strong><span>Does size help at all?</span></div><div class="control"><strong>Visual + fixed size</strong><span>Conventional size fusion.</span></div><div class="control"><strong>Visual + uncertain size</strong><span>The proposed intervention.</span></div></div>
+  <p class="small">Measure rank-1 accuracy (the top match is correct), mAP (ranking quality), and wrong-match risk versus coverage. Hold out complete identities; keep duplicate crops together. Test both optical→SAR and SAR→optical, clean inputs, controlled crop padding and similar-sized galleries. Keep GSD consistent when resizing.</p>
+  <div class="checks"><p><strong>Before choosing this topic:</strong> inspect usable size/GSD fields, reconcile dataset identity labels, check checkpoint training overlap and compare close methods such as MOS and SDF-Net. HOSS archive access is verified; size-feature loading and model performance are not.</p><p>Novelty remains unresolved. A useful negative result could show that visual-only features suffice or that ordinary size fusion is already robust.</p></div>
+  <p class="scope"><strong>Claim boundary:</strong> this evaluates visual vessel identity. It does not establish registration, intentional AIS shutdown or illegality. Crop changes are controlled tests, not proof of naturally occurring size errors.</p>
+</section>
+
+<footer>
+  <nav class="footer-nav" aria-label="Research documents"><a href="gaps/x25-ship-reid-size-uncertainty.md">Read the full X25 brief →</a><a href="research-candidates.md">All research candidates →</a></nav>
+  <ol class="refs" aria-label="Sources">
+    <li>[1] <a href="https://arxiv.org/html/2506.22027v1#S4.SS2">TransOSS: approximate size embeddings</a></li>
+    <li>[2] <a href="https://zenodo.org/records/15860212">HOSS dataset</a> · <a href="https://github.com/Alioth2000/Hoss-ReID">Author code and model route</a></li>
+    <li>[3] <a href="https://arxiv.org/html/2512.03404v1">MOS: existing optical–SAR alignment</a></li>
+    <li>[4] <a href="https://arxiv.org/html/2603.12588v1">SDF-Net: existing structure/identity learning</a></li>
+    <li>[5] <a href="../metadata/source-checks/maritime-expansion-data-checks.json">Recorded dataset inspection and limitations</a></li>
+  </ol>
+  <p class="date">Prepared 29 October 2026 · Evidence reviewed 28 October 2026 · Schematic illustrations and hypothetical calculations; no proposed-method results.</p>
+</footer>
+</main>
+</body>
+</html>
