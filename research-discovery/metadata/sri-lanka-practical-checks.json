@@ -1,0 +1,882 @@
+{
+  "date": "2026-10-30",
+  "model_training_run": false,
+  "checks": [
+    {
+      "id": "feedback_csv",
+      "url": "https://huggingface.co/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset/resolve/main/sentence-level-annotation.csv",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset/4f054545a281a9bf44b3b4c18aa54c9e225cedc2/sentence-level-annotation.csv?%2Fdatasets%2FNLPC-UOM%2FSinhala-English-Code-Mixed-Code-Switched-Dataset%2Fresolve%2Fmain%2Fsentence-level-annotation.csv=&etag=%227d13c729d0573cd978ababe80725c9b20cc0ebe3%22",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes_read": 1689305,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "4d62c1e034c4bacd3fac96faebf4fb83e9f82b975010f7bc8730dd34287c58db",
+      "row_count": 13518,
+      "columns": [
+        "",
+        "Sentence",
+        "Hate_speech",
+        "Sentiment",
+        "Humor",
+        "Billing or price",
+        "Customer service",
+        "Data",
+        "Network",
+        "Package",
+        "Service or product",
+        "None"
+      ],
+      "sentiment_counts": {
+        "Negative": 3641,
+        "Neutral": 8597,
+        "Positive": 1156,
+        "Conflict": 124
+      },
+      "humour_counts": {
+        "Non-humorous": 12213,
+        "Humorous": 1305
+      }
+    },
+    {
+      "id": "flood_metadata",
+      "url": "https://raw.githubusercontent.com/cloudtostreet/Sen1Floods11/master/Sen1Floods11_Metadata.geojson",
+      "final_url": "https://raw.githubusercontent.com/cloudtostreet/Sen1Floods11/master/Sen1Floods11_Metadata.geojson",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes_read": 14092,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "29790ad85135d03ebc73af1e582907901e43c3aa411b6f571a8a32ac7f1db536",
+      "event_count": 12,
+      "sri_lanka_properties": [
+        {
+          "coincident_size": 14.0,
+          "location": "Sri-Lanka",
+          "orbit": "DESCENDING",
+          "rel_orbit_num": 19.0,
+          "s1_date": "2017/05/30",
+          "s2_date": "2017/05/28",
+          "ID": 10,
+          "ISO_CC": "LKA",
+          "VH_thresh": -21.69,
+          "train_chip": 190,
+          "val_chip": 42
+        }
+      ]
+    },
+    {
+      "id": "ocr_tree",
+      "url": "https://huggingface.co/api/datasets/avishadilhara/sinhala-ocr-lk-acts-1010/tree/main?recursive=true",
+      "final_url": "https://huggingface.co/api/datasets/avishadilhara/sinhala-ocr-lk-acts-1010/tree/main?recursive=true",
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 1559,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "65613ed85b1126c6560f71f7aa7d6ce46fb6cf6433cf5971235309566d55e93c",
+      "files": [
+        {
+          "path": "data",
+          "size": 0
+        },
+        {
+          "path": ".gitattributes",
+          "size": 2461
+        },
+        {
+          "path": "README.md",
+          "size": 3429
+        },
+        {
+          "path": "data/eval-00000-of-00001.parquet",
+          "size": 88139650
+        },
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "size": 171197465
+        },
+        {
+          "path": "data/train-00000-of-00002.parquet",
+          "size": 304253669
+        },
+        {
+          "path": "data/train-00001-of-00002.parquet",
+          "size": 308626433
+        }
+      ]
+    },
+    {
+      "id": "dengue_data_route",
+      "url": "https://bit.ly/3VJTIrA",
+      "status": "Access failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "feedback_label_audit",
+      "url": "https://huggingface.co/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset/resolve/main/sentence-level-annotation.csv",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset/4f054545a281a9bf44b3b4c18aa54c9e225cedc2/sentence-level-annotation.csv?%2Fdatasets%2FNLPC-UOM%2FSinhala-English-Code-Mixed-Code-Switched-Dataset%2Fresolve%2Fmain%2Fsentence-level-annotation.csv=&etag=%227d13c729d0573cd978ababe80725c9b20cc0ebe3%22",
+      "bytes_read": 1689305,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "4d62c1e034c4bacd3fac96faebf4fb83e9f82b975010f7bc8730dd34287c58db",
+      "normalisation": "casefold and whitespace only",
+      "row_count": 13518,
+      "unique_text_count": 13443,
+      "duplicate_extra_rows": 75,
+      "conflicting_sentiment_groups": 7,
+      "conflict_label_unique_texts": 124,
+      "blank_text_rows": 0,
+      "label_validation_complete": false
+    },
+    {
+      "id": "dengue_csv",
+      "url": "https://thiyangt.r-universe.dev/denguedatahub/data/srilanka_weekly_data/csv",
+      "final_url": "https://thiyangt.r-universe.dev/denguedatahub/data/srilanka_weekly_data/csv",
+      "bytes_read": 1040889,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "b48bfe5d8d081af05d2d9d53ac80a74415206d41bb7466874985b298fdcf931a",
+      "rows": 26311,
+      "columns": [
+        "year",
+        "week",
+        "start.date",
+        "end.date",
+        "district",
+        "cases"
+      ],
+      "districts": [
+        "Ampara",
+        "Anuradhapura",
+        "Badulla",
+        "Batticaloa",
+        "Colombo",
+        "Galle",
+        "Gampaha",
+        "Hambanthota",
+        "Jaffna",
+        "Kalmune",
+        "Kalutara",
+        "Kandy",
+        "Kegalle",
+        "Kilinochchi",
+        "Kurunegala",
+        "Mannar",
+        "Matale",
+        "Matara",
+        "Monaragala",
+        "Mullaitivu",
+        "NuwaraEliya",
+        "Polonnaruwa",
+        "Puttalam",
+        "Ratnapura",
+        "Trincomalee",
+        "Vavuniya"
+      ],
+      "years": [
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "missing_case_rows": 0
+    },
+    {
+      "id": "dengue_package",
+      "url": "https://raw.githubusercontent.com/thiyangt/denguedatahub/master/DESCRIPTION",
+      "final_url": "https://raw.githubusercontent.com/thiyangt/denguedatahub/master/DESCRIPTION",
+      "bytes_read": 909,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "ce3ce2265cb19f1d07a9b57d77dc941bcdf236557cc13b689e5290d580bc004c",
+      "package_description": "Package: denguedatahub\nTitle: A Tidy Format Datasets of Dengue by Country \nVersion: 4.1.1\nAuthors@R: \n    person(\"Thiyanga S.\", \"Talagala\", , \"ttalagala@sjp.ac.lk\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-0656-9789\"))\nDescription: Provides a weekly, monthly, yearly summary of dengue cases by state/ province/ country.\nLicense: GPL-3\nURL: https://thiyangt.github.io/denguedatahubweb/\nBugReports: https://github.com/thiyangt/denguedatahub/issues\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.3.3\nImports: \n    dplyr,\n    tibble,\n    tidyr,\n    rvest,\n    stringr,\n    lifecycle,\n    magrittr,\n    here,\n    utils,\n    purrr,\n    xml2,\n    tabulapdf,\n    rlang (>= 0.4.11)\nLazyData: true\nSuggests: \n    roxygen2,\n    tsibble\nSystemRequirements: Java (>= 7.0):\n    openjdk-11-jdk (deb),\n    java-11-openjdk.x86_64 (rpm),\n    openjdk@11 (brew)\nDepends: \n    R (>= 4.1.0)\n"
+    },
+    {
+      "id": "flood_catalog",
+      "url": "https://storage.googleapis.com/sen1floods11/v1.1/catalog.json",
+      "status": "Access failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "ocr_sample",
+      "url": "https://datasets-server.huggingface.co/first-rows?dataset=avishadilhara%2Fsinhala-ocr-lk-acts-1010&config=default&split=test",
+      "final_url": "https://datasets-server.huggingface.co/first-rows?dataset=avishadilhara%2Fsinhala-ocr-lk-acts-1010&config=default&split=test",
+      "bytes_read": 215234,
+      "status": "Downloaded and parsed bounded source",
+      "sha256": "9bba35060b104f7350dae2152d5c8d90533223e1bda65779c6ac4f8cd26284e0",
+      "features": [
+        {
+          "feature_idx": 0,
+          "name": "image",
+          "type": {
+            "_type": "Image"
+          }
+        },
+        {
+          "feature_idx": 1,
+          "name": "text",
+          "type": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        },
+        {
+          "feature_idx": 2,
+          "name": "year",
+          "type": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        },
+        {
+          "feature_idx": 3,
+          "name": "doc_id",
+          "type": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        },
+        {
+          "feature_idx": 4,
+          "name": "page_num",
+          "type": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        },
+        {
+          "feature_idx": 5,
+          "name": "filename",
+          "type": {
+            "dtype": "string",
+            "_type": "Value"
+          }
+        }
+      ],
+      "preview_rows_returned": 45,
+      "images_visually_inspected": false
+    }
+  ],
+  "scope": "Three practical Sri Lankan opportunities with bounded literature and data checks; not a complete novelty audit.",
+  "origin": "AI-assisted, literature-inspired proposals, requested by the user",
+  "track": "General empirical research",
+  "constraints": "Existing data only, three connected assessable contributions, 6–8 months, modest compute, no paid-service dependency.",
+  "human_domain_expert_consulted": false,
+  "independent_review_performed": false,
+  "decision_owner": "Team and supervisor",
+  "status": "Support located for practical tasks; narrower research opportunities remain provisional.",
+  "tooling": "Primary-source web searches and bounded downloads; FastTrack connector unavailable. No model benchmark run.",
+  "candidates": [
+    {
+      "id": "X43",
+      "slug": "sinhala-ocr-careful-correction",
+      "title": "Reading Sinhala documents without introducing new mistakes",
+      "area": "Computer vision and NLP — Sinhala document reading",
+      "priority": 1,
+      "quick": "Improve text read from a scanned Sinhala page, while avoiding unnecessary changes to correct words and numbers.",
+      "problem": "Libraries, publishers and public offices may need searchable copies of printed Sinhala documents. OCR means reading text from an image. A second model can try to repair OCR mistakes, but it might also change text that was already correct.",
+      "example": "A date or section number is read correctly, but an automatic “correction” changes it. This is an example of the risk, not an observed result from our own experiment.",
+      "question": "Can a small correction model fix remaining Sinhala OCR errors while making fewer unnecessary edits, especially to numbers?",
+      "known": "Recent Sinhala page-level OCR already performs strongly on legislative documents. Simply fine-tuning another OCR model, or adding a language-model corrector, is not a new contribution.",
+      "proposed": "Investigate the trade-off between fixing errors and damaging correct text. Train a model to propose corrections, and a separate small model to estimate whether a proposed change helps. Compare this with simple rules and existing constrained editing. Whether this is a new Sinhala OCR contribution remains unverified.",
+      "hypothesis": "A correction rule trained on actual OCR mistakes will make fewer harmful changes than unrestricted text rewriting. It may instead turn out that leaving the strong OCR output unchanged is best.",
+      "approach": "Choose one fixed OCR engine first. On training pages only, align its output with the released correct text to create correction examples. Train a small corrector and an edit-selection head. Keep the original output available so that a proposed edit can be rejected. Do not assume the model’s confidence is reliable.",
+      "data": "The public sinhala-ocr-lk-acts-1010 release contains 1,010 legislative pages with reference text. Its card states CC BY 4.0 and about 872 MB. A bounded preview returned 45 rows and confirmed image, text, year, doc_id and page_num fields. The file listing contains four Parquet files. Images were not downloaded for visual inspection and no OCR baseline was run.",
+      "resources": "Estimate: cached OCR output, small correction models and an occasional modest GPU. Start with 100 training pages to measure time and memory. A larger OCR model is a comparison, not a requirement for every experiment.",
+      "fallback": "Keep the OCR engine frozen and train only the correction/selection models. If the starting engine makes too few useful errors, report that correction is unnecessary on this dataset instead of manufacturing an improvement.",
+      "team": [
+        [
+          "A: Better correction examples",
+          "Does learning actual OCR confusions beat generic text rewriting? H: real error patterns help.",
+          "Train a compact corrector; compare dictionary rules and equal-sized synthetic-error training; remove real-error examples.",
+          "Character errors fixed versus new errors introduced."
+        ],
+        [
+          "B: Choosing when to edit",
+          "Can a model predict whether an edit helps? H: a trained edit selector beats a fixed confidence threshold.",
+          "Train against reference text; compare no selection, edit-distance limits and confidence thresholds; remove image/OCR features.",
+          "Useful corrections at matched numbers of harmful edits."
+        ],
+        [
+          "C: A smaller corrector",
+          "Can compression preserve careful copying and number accuracy? H: copy-aware training helps the smaller model.",
+          "Compare a compact student, ordinary teacher imitation and copy-weighted training; remove copy/number weighting.",
+          "Error rate, exact numeric-token matches, memory and measured processing time."
+        ]
+      ],
+      "metric": "Character error rate: the share of characters that are inserted, deleted or read wrongly. Also count harmful edits that turn correct text into wrong text, and exact matches for digit-containing tokens. Do not claim to protect all personal names without name labels.",
+      "split": "Keep pages from the same legislative document together using doc_id. Publish a document-grouped split and report the released split separately for comparison. Keep test documents out of the error examples and tuning process.",
+      "baselines": "Unchanged Tesseract/Surya output, simple dictionary or edit-distance correction, a small ordinary text corrector, and a strong Sinhala-adapted OCR model such as the published LightOnOCR baseline. Check exact checkpoint/code licences before reuse.",
+      "uncertainty": "Repeat trainable methods with three seeds. Use document-level confidence intervals, not independent characters. Analyse old/new pages, numbers and initially correct words. A useful result is that a simple edit limit or no correction performs best.",
+      "limitation": "The verified dataset contains legislative pages. It cannot establish reliable handwriting recognition, arbitrary phone-photo reading or automatic form processing.",
+      "next": "Run one fixed OCR baseline on a small document-grouped subset. Check that enough correctable errors remain, then review the precise editing contribution with the supervisor.",
+      "ratings": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "Low-medium: careful editing is established generally; the added Sinhala OCR question needs a deeper comparison.",
+        "Medium: real Sinhala images, references and document identifiers have a verified public route; full quality audit remains.",
+        "Medium: frozen OCR and small correctors offer a bounded 6–8 month plan; no timing measured.",
+        "Medium: correction, edit selection and compact-model training are empirical ML work.",
+        "Medium: reference text supports character errors and harmful-edit counts without new raters.",
+        "Medium: three investigations can use the same unchanged OCR output independently.",
+        "Medium: searchable Sinhala documents are a direct local use; savings have not been measured.",
+        "Medium: cached outputs reduce repeated GPU work; resource figures are estimates.",
+        "Medium: a page, original text and highlighted edits make a simple prototype."
+      ],
+      "gates": {
+        "4": [
+          "Pass",
+          "The official release and a bounded preview expose images, reference text and document-group fields."
+        ],
+        "6": [
+          "Unknown",
+          "OCR post-processing and confidence-constrained editing already exist; the specific added contribution is not established."
+        ],
+        "8": [
+          "Pass",
+          "Existing reference text and document IDs support the specified objective comparisons."
+        ],
+        "9": [
+          "Unknown",
+          "A small OCR/correction run must establish workload and whether useful errors remain."
+        ],
+        "12": [
+          "Unknown",
+          "Dataset CC BY 4.0 is documented; exact baseline checkpoint and code reuse terms still need checking."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Sinhala legislative OCR dataset",
+          "url": "https://huggingface.co/datasets/avishadilhara/sinhala-ocr-lk-acts-1010",
+          "claim": "The official card lists a real-page dataset, licence and source-document fields. File listing and a row preview were checked.",
+          "reading_limit": "Dataset card, manifest and bounded preview; no image inspection."
+        },
+        {
+          "title": "Cross-Temporal Sinhala OCR",
+          "url": "https://arxiv.org/html/2606.29378",
+          "claim": "The paper already adapts page-level OCR and limits its claims to legislative documents. Another generic Sinhala OCR fine-tune would overlap.",
+          "reading_limit": "Dataset, experiments and limitations sections inspected; no reproduction."
+        },
+        {
+          "title": "Confident but Wrong",
+          "url": "https://arxiv.org/html/2609.29680",
+          "claim": "This studies translation post-editing, not OCR. It already diagnoses harmful edits and unreliable confidence, so confidence-based editing itself is not new.",
+          "reading_limit": "Abstract and methods outline inspected; adjacent-task comparison."
+        },
+        {
+          "title": "Existing Sinhala OCR post-processing",
+          "url": "https://www.theekshana.lk/project/optical-character-recognition-for-sinhala/",
+          "claim": "UCSC/Theekshana already describes a Sinhala OCR post-processing engine. Do not claim to introduce Sinhala post-processing.",
+          "reading_limit": "Original project description checked."
+        }
+      ],
+      "report": "reports/gaps/x43-sinhala-ocr-careful-correction.md",
+      "weighted_score": 76.7,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "qualified": false
+    },
+    {
+      "id": "X44",
+      "slug": "sinhala-feedback-rare-mixed-opinions",
+      "title": "A small Sinhala–English feedback model that does not miss mixed opinions",
+      "area": "NLP — customer feedback in mixed languages",
+      "priority": 2,
+      "quick": "Recognise comments that contain both praise and a complaint, even after making the model smaller.",
+      "problem": "Sri Lankan customers often mix Sinhala and English in comments. A comment can praise the price but complain about service. A model dominated by neutral examples may miss these less common mixed opinions. That is a testable risk, not yet a demonstrated baseline failure.",
+      "example": "“The package is cheap, but the connection keeps dropping.” This invented example contains both a positive and a negative opinion. It should not be treated as proof that a real customer is satisfied.",
+      "question": "Can a compact Sinhala–English model retain recognition of the rare “Conflict” sentiment class without creating too many false alarms?",
+      "known": "Sinhala–English sentiment classification, script-aware prompting and multi-task adapters already exist. A generic sentiment analyser or another adapter comparison is not enough.",
+      "proposed": "Test whether training and compression disproportionately lose the rare mixed-opinion class. Compare ordinary class balancing with training that preserves the larger model’s minority-class behaviour, then test whether confidence identifies unreliable outputs. This narrower gap is still provisional.",
+      "hypothesis": "Minority-aware training will retain more mixed opinions in a smaller model at a similar false-positive rate. The alternative is that ordinary weighting or a simple classifier already works as well.",
+      "approach": "Use the released sentiment labels and begin with a simple text classifier. Train one multilingual teacher and a smaller student. Keep all four classes, including Conflict. Quarantine duplicate groups with inconsistent labels instead of silently changing their labels. Use confidence to leave uncertain cases undecided.",
+      "data": "The NLPC-UOM dataset card says 10,000 comments and MIT. The downloaded sentence CSV actually contains 13,518 rows: 8,597 Neutral, 3,641 Negative, 1,156 Positive and 124 Conflict. A case/whitespace check found 75 extra duplicate rows and seven groups with inconsistent sentiment labels. These are file checks, not a completed annotation audit. The card/file mismatch needs documenting before experiments.",
+      "resources": "Estimate: the CSV is about 1.69 MB. CPU feature baselines and cached multilingual embeddings are practical; limited adapter/student training may use an occasional GPU. No paid language-model service is needed.",
+      "fallback": "Start with frozen multilingual features and a trained classifier. Keep the original four classes. If 124 mixed-opinion examples cannot support a stable result, report that uncertainty rather than claiming a reliable business tool.",
+      "team": [
+        [
+          "A: Rare-class learning",
+          "Do balanced training methods recover mixed opinions? H: calibrated class weighting improves rare-class recall.",
+          "Compare ordinary loss, class weighting and focal loss; remove the weighting.",
+          "Conflict precision/recall alongside performance on all four classes."
+        ],
+        [
+          "B: Compact model",
+          "Does ordinary compression erase rare-class behaviour? H: minority-aware teacher imitation retains it.",
+          "Compare a large model, an ordinary student and a minority-aware student with identical training text; remove minority weighting.",
+          "Rare-class retention versus model size and measured speed."
+        ],
+        [
+          "C: Reliable decisions",
+          "Can uncertain mixed-language comments be flagged? H: a trained confidence head beats raw probabilities.",
+          "Use the unchanged baseline outputs; compare temperature scaling and a small error predictor; remove script/mixing features.",
+          "Errors and class coverage among automatically decided comments."
+        ]
+      ],
+      "metric": "Four-class macro-F1, which gives each class equal importance, plus Conflict-class precision and recall. Report false Conflict alerts as well as missed mixed opinions; overall accuracy alone can hide the rare class.",
+      "split": "Group duplicate and near-duplicate comments before splitting. Quarantine the seven inconsistent duplicate groups and report a sensitivity check. Use repeated grouped, class-stratified splits; keep a fixed final test set untouched. No date/source fields were verified, so do not claim time or cross-platform transfer.",
+      "baselines": "Character/word TF-IDF with logistic regression or SVM, frozen multilingual features, an adapted XLM-R baseline, the published script-aware method where reproducible, ordinary student training and simple class weighting.",
+      "uncertainty": "Use three training seeds and group-level confidence intervals. Show test counts for the rare class and wide intervals honestly. Analyse script, text length, humour labels and mixed opinions. A useful result is that a simple classifier matches the larger model or compression harms the rare class.",
+      "limitation": "These released social-media comments are not private support tickets or all Sri Lankan businesses. The labels support whole-comment sentiment, not a separate sentiment label for every product feature.",
+      "next": "Reproduce a duplicate-grouped baseline and check the 124 rare labels before investing in a new compact-model method. Discuss the result with the supervisor.",
+      "ratings": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "Low-medium: rare-class retention under compression is narrower than existing sentiment work; novelty remains unchecked.",
+        "Medium: a small labelled CSV was parsed; rare labels, duplicate conflicts and the card mismatch reduce suitability.",
+        "Medium: simple baselines and small students fit the team better than building a new language model.",
+        "Medium: balanced training, compression and error prediction involve model-level experiments.",
+        "Medium: labels allow objective tests, with explicit limits from rare-class counts.",
+        "Medium: learning, compression and confidence provide connected but separable experiments.",
+        "Medium: mixed-language feedback is locally relevant; business impact is not demonstrated.",
+        "Medium: small data and CPU baselines are manageable; GPU costs are unmeasured.",
+        "Medium: paste a comment and display the prediction or uncertainty, using held-out examples."
+      ],
+      "gates": {
+        "4": [
+          "Pass",
+          "The sentence CSV was downloaded and parsed; four sentiment labels and class counts were checked."
+        ],
+        "6": [
+          "Unknown",
+          "Script-aware classification and calibration have prior work; the rare-class compression distinction needs deeper checking."
+        ],
+        "8": [
+          "Pass",
+          "Existing four-class labels support grouped comparisons; ambiguous duplicate groups can be quarantined without new labelling."
+        ],
+        "9": [
+          "Unknown",
+          "A baseline must show whether the small rare class gives stable, independently assessable findings."
+        ],
+        "12": [
+          "Unknown",
+          "The dataset card states MIT, but underlying comment reuse and exact model licences still need confirmation."
+        ]
+      },
+      "sources": [
+        {
+          "title": "NLPC-UOM mixed-language dataset",
+          "url": "https://huggingface.co/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset",
+          "claim": "Public sentiment annotations and a licence statement exist. The sentence CSV was independently parsed; its counts differ from the card.",
+          "reading_limit": "Card and full small sentence CSV checked; words CSV not downloaded."
+        },
+        {
+          "title": "AdapterFusion multi-task classification",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197623014239",
+          "claim": "Multi-task adapters already combine sentiment and humour in Sinhala–English. Adding humour is not by itself a new contribution.",
+          "reading_limit": "Publisher abstract and available methods/results excerpts inspected."
+        },
+        {
+          "title": "Script-aware prompt learning",
+          "url": "https://link.springer.com/article/10.1007/s11280-024-01302-2",
+          "claim": "The study already evaluates Sinhala–English scripts and code-mixing. Script awareness is a baseline, not a new gap.",
+          "reading_limit": "Primary full-text page: abstract and experimental description inspected."
+        },
+        {
+          "title": "Jev Sinhala evaluation repository",
+          "url": "https://github.com/Azri-Muhsin/jev-sinhala-review",
+          "claim": "An author repository already describes Sinhala classification calibration and script sensitivity. Its model and test protocol require closer comparison.",
+          "reading_limit": "Author README checked; peer-review status and experiments not independently verified."
+        }
+      ],
+      "report": "reports/gaps/x44-sinhala-feedback-rare-mixed-opinions.md",
+      "weighted_score": 73.7,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "qualified": false
+    },
+    {
+      "id": "X45",
+      "slug": "sri-lanka-dengue-weather-reliability",
+      "title": "Dengue forecasts that know when weather data is unhelpful",
+      "area": "Time series — reported dengue cases in Sri Lanka",
+      "priority": 3,
+      "quick": "Forecast reported cases using past counts, and add weather information only when it helps rather than making the forecast worse.",
+      "problem": "A district forecast may use rainfall and temperature to predict reported dengue cases. Missing or poorly matched weather data can make a more complicated model worse. Local planners could benefit from a forecast range that reflects this uncertainty, but benchmark work alone cannot establish public-health benefit.",
+      "example": "If rainfall data are absent for several weeks, the model should not treat a filled-in average as a real observation. It can fall back to past case patterns and show a wider forecast range.",
+      "question": "For one- to four-week forecasts of reported dengue counts, can a small model learn when to use weather and when to rely on case history, while keeping its prediction ranges useful?",
+      "known": "Sri Lankan dengue forecasting already has many models. A 2026 district study found that a temporal model beat its graph model and documented missing climate data for Jaffna. Another general forecast dashboard is not the contribution.",
+      "proposed": "Investigate weather usefulness under genuine and clearly labelled simulated missingness. Compare a learned choice between count-only and weather-aware forecasts with always using weather, simple data filling and fixed fallback rules. Whether this adds beyond existing forecasting methods is unresolved.",
+      "hypothesis": "Learning when weather helps will reduce forecast errors under missing inputs. Alternatively, a count-only model or a fixed missing-data rule may remain better and simpler.",
+      "approach": "Start with weekly reported counts. Join existing historical gridded weather only after checking region mapping and dates. Train count-only and weather-aware models, plus a small selection model using past information. Calibrate a prediction range on past errors; a range should widen when evidence is weak.",
+      "data": "The maintainer’s denguedatahub CSV was downloaded and parsed: 26,311 rows, years 2006–2026, and 26 reporting-area names, including Ampara and Kalmune. These are not 26 administrative districts. The file has week/date fields and reported case counts. No blank case fields were found, but missing weeks, revisions and source extraction accuracy are not yet audited. The package declares GPL-3; original surveillance-data reuse terms need confirmation.",
+      "resources": "Estimate: CPU models and a small sequence model should be sufficient. NASA POWER provides an existing historical-weather route, but no complete weather join was downloaded or validated. No hospital partnership, individual patient records or clinical labelling is needed.",
+      "fallback": "Keep a useful count-only forecast as the starting result. If compatible weather or its timing cannot be established, limit claims to retrospective forecasting and do not present this as an operational early-warning system.",
+      "team": [
+        [
+          "A: Choosing weather inputs",
+          "When should weather be ignored? H: a learned choice beats always filling and using it.",
+          "Compare count-only, always-weather, fixed fallback and learned selection; remove missingness indicators.",
+          "Forecast error under real gaps and separately labelled artificial outages."
+        ],
+        [
+          "B: Sharing across areas",
+          "Does sharing patterns help smaller reporting areas? H: limited shared training improves weak-data forecasts.",
+          "Compare separate-area models and a pooled small model; remove area-specific adjustments.",
+          "Error by reporting area and case volume, against the unchanged starting model."
+        ],
+        [
+          "C: Useful forecast ranges",
+          "Can ranges stay reliable around unusual rises? H: rolling calibration improves coverage.",
+          "Compare fixed residual ranges and a learned residual-scale model; remove weather-quality inputs.",
+          "Range coverage, width and interval score by horizon and period."
+        ]
+      ],
+      "metric": "Mean absolute error in reported weekly cases, plus interval score, which penalises both missed outcomes and needlessly wide ranges. Show observed coverage for each stated forecast range.",
+      "split": "Use rolling chronological evaluation. Keep all areas on the same calendar cut-offs; never randomly split weeks. Harmonise reporting areas before joining data. Use only weather and reported cases available by the forecast date; if release histories are unavailable, label the test retrospective and add explicit delay sensitivity tests.",
+      "baselines": "Seasonal naive, a count regression/SARIMAX model, boosted trees and a small LSTM or temporal network. The recent graph-model study is an important comparison; a larger graph model is not automatically stronger.",
+      "uncertainty": "Repeat trained models with three seeds and bootstrap whole time blocks. Report periods before, during and after major reporting disruption separately. Analyse small/large reporting areas, weather gaps and outbreak peaks. Useful findings include weather not helping or simple fallback rules matching the learned selector.",
+      "limitation": "The outcome is reported cases, not all infections, individual illness, mosquito abundance or hospital demand. Filling missing weather cannot recover missing disease reports. Do not turn this benchmark into clinical advice.",
+      "next": "Audit reporting-area/date consistency and one small weather join, then review whether the learned selector has a distinct contribution beyond simple baselines with the supervisor.",
+      "ratings": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "Low-medium: a concrete weather-reliability question follows documented limitations; generic forecasting is crowded.",
+        "Medium: weekly counts were parsed, but reporting units, release timing and the weather join need audit.",
+        "Medium: CPU-first models and aggregate public counts give a realistic bounded starting point.",
+        "Medium: input selection, shared learning and range modelling involve training.",
+        "Medium: chronological metrics are clear; operational claims remain unsupported without release histories.",
+        "Medium: selection, shared learning and prediction ranges have separate comparisons.",
+        "Medium: reported dengue trends are directly relevant locally; improved health outcomes are not demonstrated.",
+        "Medium: small tabular series should fit ordinary hardware; no runtime measured.",
+        "Medium: replay historical forecasts with ranges and missing-input indicators."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Case-count CSV access is demonstrated, but the weather join and reporting-area mapping are not verified."
+        ],
+        "6": [
+          "Unknown",
+          "The specific learned weather-selection contribution has not passed a complete duplication search."
+        ],
+        "8": [
+          "Unknown",
+          "Publication timing, revisions, missing weeks and climate alignment need an audit before operational forecasting claims."
+        ],
+        "9": [
+          "Unknown",
+          "A count baseline and bounded weather join are needed to confirm the workload."
+        ],
+        "12": [
+          "Unknown",
+          "The package licence is known; original surveillance-data terms and weather/model reuse require checking."
+        ]
+      },
+      "sources": [
+        {
+          "title": "denguedatahub maintainer repository",
+          "url": "https://github.com/thiyangt/denguedatahub",
+          "claim": "The maintainer packages Sri Lankan weekly surveillance counts. A public CSV and the package licence were checked directly.",
+          "reading_limit": "README, package DESCRIPTION and bounded full CSV parsed."
+        },
+        {
+          "title": "When Spatial Message Passing Fails to Help",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1155/acis/2627876",
+          "claim": "This Sri Lankan study documents a temporal baseline beating the tested graph model and a Jaffna climate-data limitation.",
+          "reading_limit": "Primary full-text methods, limitations and conclusion inspected; no reproduction."
+        },
+        {
+          "title": "NASA POWER daily data",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+          "claim": "Official documentation gives a route to historical weather, not a verified region-week join or a historical forecast-issue archive.",
+          "reading_limit": "Official API documentation checked; no complete weather join."
+        },
+        {
+          "title": "Sri Lanka dengue dashboard source",
+          "url": "https://github.com/amalirajapaksha/denguedashboard_SriLanka",
+          "claim": "The author explains that Ampara and Kalmunai reporting areas need reconciliation when making administrative-district maps.",
+          "reading_limit": "Author README checked; demonstrates a mapping issue, not forecasting novelty."
+        }
+      ],
+      "report": "reports/gaps/x45-sri-lanka-dengue-weather-reliability.md",
+      "weighted_score": 73.7,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "qualified": false
+    }
+  ],
+  "rejected_or_parked": [
+    {
+      "direction": "Generic flood segmentation, country transfer or confidence-weighted pseudo-label learning",
+      "decision": "Not added as another gap in this pass",
+      "reasons": [
+        "Existing X42 already discusses segmentation reliability. Recent studies directly cover cross-country transfer and confidence-weighted adaptation.",
+        "Original Sen1Floods11 repository has an unresolved missing-LICENSE issue. Open access alone is not a verified reuse licence.",
+        "Metadata identifies a Sri Lankan event, not broad validation across Sri Lankan floods. Water/NoWater labels do not establish water depth or flood forecasting."
+      ],
+      "sources": [
+        "https://github.com/cloudtostreet/Sen1Floods11/issues/18",
+        "https://doi.org/10.1109/JURSE60372.2025.11075977",
+        "https://eartharxiv.org/repository/view/15258/",
+        "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025JH001145"
+      ]
+    },
+    {
+      "direction": "Sri Lankan food-price forecasting using World Bank filled price estimates",
+      "decision": "Parked until observed price targets and revision histories are verified",
+      "reasons": [
+        "The official dataset combines measurements with machine-learning estimates and revisions. Predicting these estimates is not automatically forecasting actual shop prices.",
+        "A current reconstructed time series can contain information unavailable at the historical forecast date."
+      ],
+      "sources": [
+        "https://microdata.worldbank.org/index.php/catalog/6169"
+      ]
+    },
+    {
+      "direction": "More elephant, generic Sinhala deepfake, or private operational-log projects",
+      "decision": "Not duplicated in this pass",
+      "reasons": [
+        "Existing candidates already cover these; unresolved data access was not solved by the current search."
+      ]
+    }
+  ],
+  "next_step": "Reproduce one small baseline for the preferred topic, then compare the precise contribution with nearest methods and discuss it with the supervisor.",
+  "searches": [
+    {
+      "id": "SL30-Q01",
+      "date": "2026-10-30",
+      "query": "Sinhala OCR benchmark dataset printed documents degraded images public dataset research",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q02",
+      "date": "2026-10-30",
+      "query": "Sri Lanka dengue forecasting open dataset weekly district data machine learning limitations",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q03",
+      "date": "2026-10-30",
+      "query": "Sen1Floods11 Sri Lanka dataset flood labels generalization",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q04",
+      "date": "2026-10-30",
+      "query": "Sinhala English code mixed sentiment dataset public research benchmark",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q05",
+      "date": "2026-10-30",
+      "query": "Sri Lanka food prices dataset WFP HDX monthly 2026 market licence",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q06",
+      "date": "2026-10-30",
+      "query": "AksharaOCR Sinhala dataset huggingface real image 2026 OCR mixed",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q07",
+      "date": "2026-10-30",
+      "query": "Sri Lanka dengue climate dataset Pasarkar Zenodo weekly data",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q08",
+      "date": "2026-10-30",
+      "query": "Sen1Floods11 official github Sri-Lanka csv splits license",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q09",
+      "date": "2026-10-30",
+      "query": "Sinhala OCR post correction proper nouns numbers hallucinations confidence 2025 2026",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q10",
+      "date": "2026-10-30",
+      "query": "Sri Lanka dengue forecasting missing climate data imputation probabilistic intervals district 2025 2026",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q11",
+      "date": "2026-10-30",
+      "query": "Sinhala English sentiment humour conflict multitask negative transfer 2024 2025 2026",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q12",
+      "date": "2026-10-30",
+      "query": "Sen1Floods11 weak labels domain generalization Sri Lanka flood events vegetation 2025 2026",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q13",
+      "date": "2026-10-30",
+      "query": "\"AdapterFusion-based multi-task learning\" code mixed negative transfer humour sentiment",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q14",
+      "date": "2026-10-30",
+      "query": "\"Sinhala\" \"sentiment\" \"calibration\" uncertainty",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q15",
+      "date": "2026-10-30",
+      "query": "\"Sinhala\" \"OCR\" \"post-correction\"",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q16",
+      "date": "2026-10-30",
+      "query": "\"disease-climate\" \"Pasarkar\" data github dengue",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q17",
+      "date": "2026-10-30",
+      "query": "\"Pasarkar\" \"disease\" \"climate\" github",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q18",
+      "date": "2026-10-30",
+      "query": "\"denguedatahub\" github srilanka_weekly_data",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q19",
+      "date": "2026-10-30",
+      "query": "\"Sen1Floods11\" \"CC BY\" license",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q20",
+      "date": "2026-10-30",
+      "query": "\"OCR\" \"post-correction\" \"overcorrection\" 2025 2026",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q21",
+      "date": "2026-10-30",
+      "query": "Sinhala OCR post correction confidence preserve numbers names 2025 2026 selective editing",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q22",
+      "date": "2026-10-30",
+      "query": "\"code mixed\" \"conflict\" \"quantization\" sentiment",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q23",
+      "date": "2026-10-30",
+      "query": "dengue forecast weather missing adaptive feature selection uncertainty Sri Lanka",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    },
+    {
+      "id": "SL30-Q24",
+      "date": "2026-10-30",
+      "query": "SAR flood weak labels confidence weighting cross event generalization noisy label learning",
+      "method": "Web search; primary-source results used for claims",
+      "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
+    }
+  ]
+}

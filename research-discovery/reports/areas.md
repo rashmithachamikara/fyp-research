@@ -1,6 +1,6 @@
 # Research areas
 
-Evidence reviewed: **27–28 October 2026**. Based on the [team and module criteria](../../research-module-and-team-criteria.md).
+Evidence reviewed: **27–30 October 2026**. Based on the [team and module criteria](../../research-module-and-team-criteria.md).
 
 These are starting areas, not validated research gaps. Priorities reflect team fit and available benchmark leads.
 
@@ -8,6 +8,9 @@ The aim is one shared problem with three independently assessable research contr
 
 | Research area | Directions worth exploring | Starting data | Priority |
 |---|---|---|---|
+| **Sinhala document reading** | Correct OCR mistakes without changing correct text or numbers | [Real legislative pages](https://huggingface.co/datasets/avishadilhara/sinhala-ocr-lk-acts-1010); manifest and row schema checked | Practical Sri Lankan lead; see X43 |
+| **Mixed-language customer feedback** | Retain rare mixed opinions in a small model | [NLPC-UOM comments](https://huggingface.co/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset); CSV parsed; rare labels need care | Practical Sri Lankan lead; see X44 |
+| **Reported dengue forecasting** | Use weather only when helpful; show forecast ranges | [Maintainer data package](https://github.com/thiyangt/denguedatahub); case CSV parsed; weather join unverified | Practical Sri Lankan lead; see X45 |
 | **Industrial visual inspection** | Small defects, limited labels, changing imaging conditions | [VisA](https://github.com/amazon-science/spot-diff) | Start here |
 | **Document AI** | Layout understanding, unfamiliar formats, efficient extraction | [DocLayNet](https://github.com/DS4SD/DocLayNet) | Start here |
 | **Energy and demand forecasting** | Missing readings, changing patterns, prediction intervals | [UCI electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014) | Start here |
@@ -31,4 +34,6 @@ The 28 October passes add candidates in document layout, radar–optical land co
 
 Ten further maritime candidates (X22–X31) investigate specific failure modes beyond generic dark-vessel detection. HOSS visual re-identification is the clearest bounded data route; encounter duration and intentional-disabling claims require different reference evidence. These are proposed questions, not verified novelty.
 
-[View all 34 research candidates and scores](research-candidates.md).
+[View all research candidates and scores](research-candidates.md).
+
+The three local directions added on 30 October use existing Sinhala documents, mixed-language comments and reported dengue counts. They have separate gap briefs, simple examples and the same project scoring rules. They are practical starting points, not certified novel topics.

@@ -82,7 +82,7 @@ new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
 maritime_ids = {f'X{i:02}' for i in range(22, 32)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids | {f'X{i:02}' for i in range(34, 43)}
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids | {f'X{i:02}' for i in range(34, 46)}
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -376,6 +376,25 @@ assert assessments['X38']['gate_decisions']['G5'] == 'Fail'
 assert 'adaptive-attacker' in (discovery_root / assessments['X35']['report']).read_text(encoding='utf-8')
 assert 'not the frozen-versus-LoRA' in (discovery_root / assessments['X42']['report']).read_text(encoding='utf-8')
 
+local_practical = json.loads((root / 'sri-lanka-practical-checks.json').read_text(encoding='utf-8'))
+assert {c['id'] for c in local_practical['candidates']} == {'X43', 'X44', 'X45'}
+assert len(local_practical['searches']) == 24
+assert not local_practical['model_training_run']
+bounded = {c['id']: c for c in local_practical['checks']}
+assert bounded['feedback_csv']['row_count'] == 13518
+assert bounded['feedback_csv']['sentiment_counts']['Conflict'] == 124
+assert bounded['feedback_label_audit']['conflicting_sentiment_groups'] == 7
+assert bounded['dengue_csv']['rows'] == 26311
+assert len(bounded['dengue_csv']['districts']) == 26
+assert bounded['ocr_sample']['preview_rows_returned'] == 45
+for candidate in local_practical['candidates']:
+    cid = candidate['id']
+    assert candidate['weighted_score'] == assessments[cid]['weighted_score']
+    assert candidate['gate_decisions'] == assessments[cid]['gate_decisions']
+    assert not candidate['qualified'] and len(candidate['team']) == 3
+    for index, source in enumerate(candidate['sources'], 1):
+        assert any(r['evidence_id'] == f"SL30-{cid}-{index:02}" and r['source_url'] == source['url'] for r in rows)
+
 report = {
     'checked_date': '2026-10-30',
     'checks_passed': True,
@@ -405,6 +424,8 @@ report = {
     'further_cv_bounded_data_checks': len(cv_expansion['bounded_data_checks']),
     'total_evaluated_candidates': len(assessments),
     'pdf_import_candidates': len(pdf_import['candidates']),
+    'sri_lanka_practical_candidates': len(local_practical['candidates']),
+    'sri_lanka_practical_model_training_run': False,
     'pdf_import_full_validation_completed': False,
     'sinhala_partial_gap_searches': len(sinhala_partial['searches']),
     'sinhala_partial_gap_search_occurrences': sinhala_partial['search_result_occurrences'],
@@ -455,7 +476,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All forty-two added-candidate scores are provisional. X34-X42 are imported proposals, not fully validated gaps; X34 and X38 fail the no-new-human-data gate as written. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
+    'qualification_note': 'No candidate meets every category threshold. All forty-five added-candidate scores are provisional. X43-X45 are practical Sri Lankan leads with bounded data checks and unresolved novelty; no model baseline was run. X34-X42 are imported proposals, not fully validated gaps; X34 and X38 fail the no-new-human-data gate as written. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))

@@ -5511,6 +5511,349 @@
       ],
       "raw_weighted_score": 50.4,
       "weighted_score": 51.4
+    },
+    "X43": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional Sri Lanka practical opportunity; bounded source and data checks, no baseline run",
+      "report": "reports/gaps/x43-sinhala-ocr-careful-correction.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "A specific local task and evidence-backed limitation are described in sections 1–3.",
+        "G2": "The question tests learned predictions and model errors, not only an application.",
+        "G3": "All three investigations train or systematically adapt models.",
+        "G4": "The official release and a bounded preview expose images, reference text and document-group fields.",
+        "G5": "Evaluation uses existing reference labels or aggregate counts; no new raters or recordings.",
+        "G6": "OCR post-processing and confidence-constrained editing already exist; the specific added contribution is not established.",
+        "G7": "The research is tested through comparisons and removal tests; the interface is supporting work.",
+        "G8": "Existing reference text and document IDs support the specified objective comparisons.",
+        "G9": "A small OCR/correction run must establish workload and whether useful errors remain.",
+        "G10": "Three connected questions have separate comparisons and results using a shared unchanged baseline.",
+        "G11": "The bounded plan uses CPU baselines and occasional modest GPU access, with no special hardware.",
+        "G12": "Dataset CC BY 4.0 is documented; exact baseline checkpoint and code reuse terms still need checking.",
+        "G13": "Simple baselines winning or a proposed method failing still answers the stated questions."
+      },
+      "unresolved_gates": [
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: careful editing is established generally; the added Sinhala OCR question needs a deeper comparison."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 4,
+          "weighted_points": 12.0,
+          "confidence_and_reason": "Medium: real Sinhala images, references and document identifiers have a verified public route; full quality audit remains."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: frozen OCR and small correctors offer a bounded 6–8 month plan; no timing measured."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: correction, edit selection and compact-model training are empirical ML work."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: reference text supports character errors and harmful-edit counts without new raters."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three investigations can use the same unchanged OCR output independently."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: searchable Sinhala documents are a direct local use; savings have not been measured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: cached outputs reduce repeated GPU work; resource figures are estimates."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a page, original text and highlighted edits make a simple prototype."
+        }
+      ],
+      "raw_weighted_score": 75.2,
+      "weighted_score": 76.7
+    },
+    "X44": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional Sri Lanka practical opportunity; bounded source and data checks, no baseline run",
+      "report": "reports/gaps/x44-sinhala-feedback-rare-mixed-opinions.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Pass",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Pass",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "A specific local task and evidence-backed limitation are described in sections 1–3.",
+        "G2": "The question tests learned predictions and model errors, not only an application.",
+        "G3": "All three investigations train or systematically adapt models.",
+        "G4": "The sentence CSV was downloaded and parsed; four sentiment labels and class counts were checked.",
+        "G5": "Evaluation uses existing reference labels or aggregate counts; no new raters or recordings.",
+        "G6": "Script-aware classification and calibration have prior work; the rare-class compression distinction needs deeper checking.",
+        "G7": "The research is tested through comparisons and removal tests; the interface is supporting work.",
+        "G8": "Existing four-class labels support grouped comparisons; ambiguous duplicate groups can be quarantined without new labelling.",
+        "G9": "A baseline must show whether the small rare class gives stable, independently assessable findings.",
+        "G10": "Three connected questions have separate comparisons and results using a shared unchanged baseline.",
+        "G11": "The bounded plan uses CPU baselines and occasional modest GPU access, with no special hardware.",
+        "G12": "The dataset card states MIT, but underlying comment reuse and exact model licences still need confirmation.",
+        "G13": "Simple baselines winning or a proposed method failing still answers the stated questions."
+      },
+      "unresolved_gates": [
+        "G6",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: rare-class retention under compression is narrower than existing sentiment work; novelty remains unchecked."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium: a small labelled CSV was parsed; rare labels, duplicate conflicts and the card mismatch reduce suitability."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: simple baselines and small students fit the team better than building a new language model."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: balanced training, compression and error prediction involve model-level experiments."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: labels allow objective tests, with explicit limits from rare-class counts."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: learning, compression and confidence provide connected but separable experiments."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: mixed-language feedback is locally relevant; business impact is not demonstrated."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: small data and CPU baselines are manageable; GPU costs are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: paste a comment and display the prediction or uncertainty, using held-out examples."
+        }
+      ],
+      "raw_weighted_score": 72.2,
+      "weighted_score": 73.7
+    },
+    "X45": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional Sri Lanka practical opportunity; bounded source and data checks, no baseline run",
+      "report": "reports/gaps/x45-sri-lanka-dengue-weather-reliability.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "A specific local task and evidence-backed limitation are described in sections 1–3.",
+        "G2": "The question tests learned predictions and model errors, not only an application.",
+        "G3": "All three investigations train or systematically adapt models.",
+        "G4": "Case-count CSV access is demonstrated, but the weather join and reporting-area mapping are not verified.",
+        "G5": "Evaluation uses existing reference labels or aggregate counts; no new raters or recordings.",
+        "G6": "The specific learned weather-selection contribution has not passed a complete duplication search.",
+        "G7": "The research is tested through comparisons and removal tests; the interface is supporting work.",
+        "G8": "Publication timing, revisions, missing weeks and climate alignment need an audit before operational forecasting claims.",
+        "G9": "A count baseline and bounded weather join are needed to confirm the workload.",
+        "G10": "Three connected questions have separate comparisons and results using a shared unchanged baseline.",
+        "G11": "The bounded plan uses CPU baselines and occasional modest GPU access, with no special hardware.",
+        "G12": "The package licence is known; original surveillance-data terms and weather/model reuse require checking.",
+        "G13": "Simple baselines winning or a proposed method failing still answers the stated questions."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: a concrete weather-reliability question follows documented limitations; generic forecasting is crowded."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium: weekly counts were parsed, but reporting units, release timing and the weather join need audit."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: CPU-first models and aggregate public counts give a realistic bounded starting point."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: input selection, shared learning and range modelling involve training."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: chronological metrics are clear; operational claims remain unsupported without release histories."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: selection, shared learning and prediction ranges have separate comparisons."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: reported dengue trends are directly relevant locally; improved health outcomes are not demonstrated."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: small tabular series should fit ordinary hardware; no runtime measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: replay historical forecasts with ranges and missing-input indicators."
+        }
+      ],
+      "raw_weighted_score": 72.2,
+      "weighted_score": 73.7
     }
   },
   "scoring_policy": {
@@ -5672,5 +6015,16 @@
     ],
     "qualified_count": 0,
     "full_validation_completed": false
+  },
+  "sri_lanka_practical_discovery": {
+    "date": "2026-10-30",
+    "record": "sri-lanka-practical-checks.json",
+    "candidate_ids": [
+      "X43",
+      "X44",
+      "X45"
+    ],
+    "qualified_count": 0,
+    "model_training_run": false
   }
 }
