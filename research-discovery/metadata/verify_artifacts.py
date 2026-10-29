@@ -82,7 +82,7 @@ new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
 maritime_ids = {f'X{i:02}' for i in range(22, 32)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21'} | maritime_ids
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -306,8 +306,48 @@ assert not audit['train25_test_location_overlap']
 assert not audit['train25_test_filename_overlap']
 assert audit['audio_downloaded'] is False
 
+sinhala_partial = json.loads((root / 'source-checks/sinhala-partial-gap-validation.json').read_text(encoding='utf-8'))
+assert sinhala_partial['candidate_id'] == 'X32'
+assert sinhala_partial['assessment'] == assessments['X32']
+assert len(sinhala_partial['searches']) == 8
+assert len(sinhala_partial['duplications']) == 4
+assert sum(len(query['data']['results']) for query in sinhala_partial['searches']) == 137
+assert all(query['requested_limit'] == 20 and query['status'] == 'fulfilled'
+           for query in sinhala_partial['searches'])
+assert assessments['X32']['weighted_score'] == 62.0
+assert set(assessments['X32']['unresolved_gates']) == {'G4', 'G6', 'G8', 'G9', 'G12'}
+assert not assessments['X32']['qualified']
+assert len(sinhala_partial['parked_formulations']) == 5
+x32_brief = (discovery_root / assessments['X32']['report']).read_text(encoding='utf-8')
+assert len(re.findall(r'^### Member [ABC]:', x32_brief, re.M)) == 3
+assert 'Quick explanation:' in x32_brief
+assert 'No model has been trained or timed.' in x32_brief
+import_link = re.search(r'Import these (\d+) papers into Zotero or EndNote\]\(https://literature.researchfasttrack.com/zotero\?ids=([^)]+)\)', x32_brief)
+assert import_link and int(import_link[1]) == len(set(import_link[2].split(','))) == 9
+for source in sinhala_partial['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+
+sinhala_streaming = json.loads((root / 'source-checks/sinhala-streaming-gap-validation.json').read_text(encoding='utf-8'))
+assert sinhala_streaming['candidate_id'] == 'X33'
+assert sinhala_streaming['assessment'] == assessments['X33']
+assert len(sinhala_streaming['searches']) == 2
+assert len(sinhala_streaming['duplications']) == 1
+assert sum(len(query['data']['results']) for query in sinhala_streaming['searches']) == 40
+assert assessments['X33']['weighted_score'] == 62.0
+assert set(assessments['X33']['unresolved_gates']) == {'G4', 'G6', 'G8', 'G9', 'G12'}
+assert not assessments['X33']['qualified']
+x33_brief = (discovery_root / assessments['X33']['report']).read_text(encoding='utf-8')
+assert len(re.findall(r'^### Member [ABC]:', x33_brief, re.M)) == 3
+assert 'Quick explanation:' in x33_brief and 'No model has been trained or timed.' in x33_brief
+import_link = re.search(r'Import these (\d+) papers into Zotero or EndNote\]\(https://literature.researchfasttrack.com/zotero\?ids=([^)]+)\)', x33_brief)
+assert import_link and int(import_link[1]) == len(set(import_link[2].split(','))) == 5
+for source in sinhala_streaming['curated_sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
+               for row in rows), source['evidence_id']
+
 report = {
-    'checked_date': '2026-10-28',
+    'checked_date': '2026-10-29',
     'checks_passed': True,
     'discovery_queries': len(searches),
     'discovery_result_occurrences': sum(len(s['data']['results']) for s in searches),
@@ -334,6 +374,16 @@ report = {
     'further_cv_code_routes_checked': len(cv_expansion['code_route_checks']) + len(cv_expansion['additional_code_route_checks']),
     'further_cv_bounded_data_checks': len(cv_expansion['bounded_data_checks']),
     'total_evaluated_candidates': len(assessments),
+    'sinhala_partial_gap_searches': len(sinhala_partial['searches']),
+    'sinhala_partial_gap_search_occurrences': sinhala_partial['search_result_occurrences'],
+    'sinhala_partial_gap_duplications': len(sinhala_partial['duplications']),
+    'sinhala_partial_gap_curated_sources': len(sinhala_partial['curated_sources']),
+    'sinhala_partial_gap_qualified': assessments['X32']['qualified'],
+    'sinhala_streaming_gap_searches': len(sinhala_streaming['searches']),
+    'sinhala_streaming_gap_search_occurrences': sinhala_streaming['search_result_occurrences'],
+    'sinhala_streaming_gap_duplications': len(sinhala_streaming['duplications']),
+    'sinhala_streaming_gap_curated_sources': len(sinhala_streaming['curated_sources']),
+    'sinhala_streaming_gap_qualified': assessments['X33']['qualified'],
     'further_maritime_candidates': len(maritime['candidates']),
     'further_maritime_discovery_queries': len(maritime['searches']),
     'further_maritime_search_occurrences': 329,
@@ -369,7 +419,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All thirty-one added-candidate scores are provisional. X22-X31 are further maritime opportunities with unresolved novelty; the other critical data/evaluation dependencies are preserved in their gate assessments.'
+    'qualification_note': 'No candidate meets every category threshold. All thirty-three added-candidate scores are provisional. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))

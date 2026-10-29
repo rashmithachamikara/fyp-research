@@ -1,0 +1,2001 @@
+{
+  "candidate_id": "X33",
+  "date": "2026-10-29",
+  "report": "reports/gaps/x33-sinhala-streaming-deepfake-detection.md",
+  "track": "General empirical research",
+  "assessment": {
+    "scored_date": "2026-10-29",
+    "mode": "Provisional streaming candidate; data and novelty unresolved",
+    "report": "reports/gaps/x33-sinhala-streaming-deepfake-detection.md",
+    "weight_total": 98,
+    "gate_decisions": {
+      "G1": "Pass",
+      "G2": "Pass",
+      "G3": "Pass",
+      "G4": "Unknown",
+      "G5": "Pass",
+      "G6": "Unknown",
+      "G7": "Pass",
+      "G8": "Unknown",
+      "G9": "Unknown",
+      "G10": "Pass",
+      "G11": "Pass",
+      "G12": "Unknown",
+      "G13": "Pass"
+    },
+    "gate_evidence": {
+      "G1": "Studies in section 3 show that short input and telephone processing affect detection and confidence.",
+      "G2": "The question concerns a learned detector and when it has enough evidence to decide.",
+      "G3": "All three contributions train or adapt models rather than only call an API.",
+      "G4": "No suitable reusable Sinhala real/fake dataset with speaker and generator records has been secured.",
+      "G5": "The bounded study uses existing labels. New callers, recordings and expert labelling are excluded.",
+      "G6": "Streaming, short-input and limited-language detection already exist; the extra contribution needs checking.",
+      "G7": "Training and comparison experiments are central; the app only demonstrates the result.",
+      "G8": "Metrics are defined, but suitable Sinhala data, source groups and clip lengths are not verified.",
+      "G9": "Data access and baseline reproduction must be resolved before the schedule is credible.",
+      "G10": "Section 6 gives separate questions, methods, comparisons and results for one shared problem.",
+      "G11": "The core uses selected audio and compact models; large-model training is optional.",
+      "G12": "Rights for the actual Sinhala fake audio and any generated derivatives remain unresolved.",
+      "G13": "Standard methods may suffice; waiting may not help; compression may damage early detection."
+    },
+    "unresolved_gates": [
+      "G4",
+      "G6",
+      "G8",
+      "G9",
+      "G12"
+    ],
+    "below_required_category_ratings": [
+      "Research gap and defensible novelty",
+      "Public dataset quality/accessibility",
+      "Feasibility and learning curve"
+    ],
+    "qualified": false,
+    "model_training_or_runtime_measured": false,
+    "ratings": [
+      {
+        "category": "Research gap and defensible novelty",
+        "weight": 16,
+        "rating": 2,
+        "weighted_points": 6.4,
+        "confidence_and_reason": "Low: A close streaming study already exists; the added value of learning when to wait is unverified."
+      },
+      {
+        "category": "Public dataset quality/accessibility",
+        "weight": 15,
+        "rating": 2,
+        "weighted_points": 6,
+        "confidence_and_reason": "Low: Suitable reusable Sinhala human and generated speech has not been secured."
+      },
+      {
+        "category": "Feasibility and learning curve",
+        "weight": 14,
+        "rating": 3,
+        "weighted_points": 8.4,
+        "confidence_and_reason": "Low-medium: A bounded study is plausible once data and the first baseline work."
+      },
+      {
+        "category": "Technical AI/ML depth",
+        "weight": 12,
+        "rating": 4,
+        "weighted_points": 9.6,
+        "confidence_and_reason": "Medium: The plan trains adaptation, a waiting policy and a compact model."
+      },
+      {
+        "category": "Evaluation/reproducibility",
+        "weight": 12,
+        "rating": 3,
+        "weighted_points": 7.2,
+        "confidence_and_reason": "Medium-low: Comparisons are defined, but suitable Sinhala test data and phone timings are missing."
+      },
+      {
+        "category": "Three-member structure",
+        "weight": 12,
+        "rating": 4,
+        "weighted_points": 9.6,
+        "confidence_and_reason": "Medium: Each member can test a separate idea against the same unchanged starting model."
+      },
+      {
+        "category": "Real-world significance",
+        "weight": 9,
+        "rating": 4,
+        "weighted_points": 7.2,
+        "confidence_and_reason": "Medium: Quick, reliable speech checks matter; protection during actual calls remains untested."
+      },
+      {
+        "category": "Compute/storage",
+        "weight": 5,
+        "rating": 4,
+        "weighted_points": 4,
+        "confidence_and_reason": "Medium-low: Small selected datasets and compact models should fit; resource use is not measured."
+      },
+      {
+        "category": "Prototype",
+        "weight": 3,
+        "rating": 4,
+        "weighted_points": 2.4,
+        "confidence_and_reason": "Medium: Existing audio can be replayed in small chunks without access to private calls."
+      }
+    ],
+    "raw_weighted_score": 60.8,
+    "weighted_score": 62
+  },
+  "scope": "Controlled single-speaker human/generated clips replayed as prefixes; no partial-edit localisation or real-call protection claim.",
+  "searches": [
+    {
+      "id": "X33-S1",
+      "date": "2026-10-29",
+      "query": "streaming audio deepfake detection sequential early stopping codec",
+      "requested_limit": 20,
+      "data": {
+        "total_estimate": 20,
+        "page": 1,
+        "results": [
+          {
+            "id": "W7163051619",
+            "doi": "10.56726/irjmets99394",
+            "title": "Explainable Deepfake Audio Detection Through Multi-Agent Forensic Consensus",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "International Research Journal of Modernization in Engineering Technology and Science",
+              "issn": "2582-5208"
+            },
+            "author_count": 0,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.56726/irjmets99394"
+            },
+            "url": "https://doi.org/10.56726/irjmets99394",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.56726/irjmets99394"
+          },
+          {
+            "id": "W7162133731",
+            "doi": "10.17148/ijarcce.2026.155229",
+            "title": "AI-Powered Detection of Deepfake Audio in Hindi and Kannada Using Speech Analysis",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "IJARCCE",
+              "issn": "2278-1021"
+            },
+            "authors": [
+              "Mrs. Harshitha S Mrs. Harshitha S",
+              "Chaitanya C Gowda",
+              "D Yashwanth"
+            ],
+            "author_count": 5,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.17148/ijarcce.2026.155229"
+            },
+            "url": "https://doi.org/10.17148/ijarcce.2026.155229",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.17148/ijarcce.2026.155229"
+          },
+          {
+            "id": "W7155636932",
+            "doi": "10.5281/zenodo.19757402",
+            "title": "Deepfake Voice Detection Using CNN And LSTM",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn": null
+            },
+            "authors": [
+              "Baby Saral G",
+              "Vibin Dev Anand",
+              "Hariharan A"
+            ],
+            "author_count": 4,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.5281/zenodo.19757402",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7155636932",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.5281/zenodo.19757402"
+          },
+          {
+            "id": "W7166845181",
+            "doi": "10.18653/v1/2026.findings-acl.1245",
+            "title": "A Unified Feature Mixture Framework for Joint Speech and Singing Deepfake Detection",
+            "year": 2026,
+            "type": "conference-paper",
+            "venue": {
+              "name": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
+              "issn": null
+            },
+            "authors": [
+              "Aastha Sharma",
+              "Guangjing Wang"
+            ],
+            "author_count": 2,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://aclanthology.org/2026.findings-acl.1245.pdf"
+            },
+            "url": "https://doi.org/10.18653/v1/2026.findings-acl.1245",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.18653/v1/2026.findings-acl.1245"
+          },
+          {
+            "id": "W7130649563",
+            "doi": "10.1016/j.eswa.2026.131761",
+            "title": "Robust deepfake detection in compressed videos with scalable network strategies",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Expert Systems with Applications",
+              "issn": "0957-4174"
+            },
+            "authors": [
+              "Gianpaolo Perelli",
+              "Marco Micheletto",
+              "Sara Concas"
+            ],
+            "author_count": 5,
+            "cited_by_count": 2,
+            "counts_by_year": {
+              "2026": 2
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1016/j.eswa.2026.131761",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.eswa.2026.131761"
+          },
+          {
+            "id": "W7140192104",
+            "doi": "10.56975/ijrar.v13i1.328080",
+            "title": "DEEPFAKE DETECTION USING CONVOLUTIONAL NEURAL NETWORKS: A SECURE MEDIA AUTHENTICATION SYSTEM",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "INTERNATIONAL JOURNAL OF RESEARCH AND ANALYTICAL REVIEWS",
+              "issn": "2348-1269"
+            },
+            "authors": [
+              "Chinna Siva Krishna Thota",
+              "Sarika Dasari"
+            ],
+            "author_count": 2,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "http://www.ijrar.org/download1.php?file=IJRAR26A2068.pdf"
+            },
+            "url": "https://doi.org/10.56975/ijrar.v13i1.328080",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.56975/ijrar.v13i1.328080"
+          },
+          {
+            "id": "W7215374296",
+            "title": "Fake-Mamba: Real-Time Speech Deepfake Detection Using Bidirectional Mamba as Self-Attention's Alternative",
+            "year": 2025,
+            "type": "conference-paper",
+            "venue": {
+              "name": "UEF eRepo (University of Eastern Finland)",
+              "issn": null
+            },
+            "authors": [
+              "Xi Xuan",
+              "Zimo Zhu",
+              "Wenxin Zhang"
+            ],
+            "author_count": 5,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://erepo.uef.fi/bitstreams/e70a6384-ea62-450f-af5a-8ae816f018cf/download"
+            },
+            "url": "https://openalex.org/W7215374296",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=W7215374296"
+          },
+          {
+            "id": "W7212315833",
+            "doi": "10.1371/journal.pone.0358049",
+            "title": "Dual-domain self-supervised feature alignment via spectral–spatial representation learning for deepfake anomaly detection",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "PLoS ONE",
+              "issn": "1932-6203"
+            },
+            "authors": [
+              "Yi He"
+            ],
+            "author_count": 1,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0358049&type=printable"
+            },
+            "url": "https://doi.org/10.1371/journal.pone.0358049",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1371/journal.pone.0358049"
+          },
+          {
+            "id": "W7223556078",
+            "doi": "10.1007/s44163-026-02586-1",
+            "title": "Explainable fake voice detection in AI-generated audio using frequency-aware transformers",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Discover Artificial Intelligence",
+              "issn": "2731-0809"
+            },
+            "authors": [
+              "Julius Olaniyan",
+              "Samson Akinpelu",
+              "Deborah Olaniyan"
+            ],
+            "author_count": 5,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44163-026-02586-1.pdf"
+            },
+            "url": "https://doi.org/10.1007/s44163-026-02586-1",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1007/s44163-026-02586-1"
+          },
+          {
+            "id": "W4408351887",
+            "doi": "10.1109/icassp49660.2025.10890825",
+            "title": "Apollo: Band-sequence Modeling for High-Quality Audio Restoration",
+            "year": 2025,
+            "type": "conference-paper",
+            "venue": {
+              "name": "IEEE International Conference on Acoustics Speech and Signal Processing",
+              "issn": "1520-6149"
+            },
+            "authors": [
+              "Kai Li",
+              "Yi Luo"
+            ],
+            "author_count": 2,
+            "cited_by_count": 5,
+            "counts_by_year": {
+              "2025": 3,
+              "2026": 2
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2409.08514"
+            },
+            "url": "https://doi.org/10.1109/icassp49660.2025.10890825",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/icassp49660.2025.10890825"
+          },
+          {
+            "id": "W4405521770",
+            "doi": "10.1109/tifs.2024.3520001",
+            "title": "Robust AI-Synthesized Speech Detection Using Feature Decomposition Learning and Synthesizer Feature Augmentation",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "IEEE Transactions on Information Forensics and Security",
+              "issn": "1556-6013"
+            },
+            "authors": [
+              "Kuiyuan Zhang",
+              "Zhongyun Hua",
+              "Yushu Zhang"
+            ],
+            "author_count": 5,
+            "cited_by_count": 17,
+            "counts_by_year": {
+              "2025": 7,
+              "2026": 10
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2411.09167"
+            },
+            "url": "https://doi.org/10.1109/tifs.2024.3520001",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/tifs.2024.3520001"
+          },
+          {
+            "id": "W4412125849",
+            "doi": "10.5120/ijca2025925228",
+            "title": "Detection of Synthetic or Cloned Voices Using Deep Learning and Acoustic Feature Analysis",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "International Journal of Computer Applications",
+              "issn": "0975-8887"
+            },
+            "authors": [
+              "Kaushik Sinha",
+              "Debalina Sinha Jana"
+            ],
+            "author_count": 2,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.5120/ijca2025925228"
+            },
+            "url": "https://doi.org/10.5120/ijca2025925228",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.5120/ijca2025925228"
+          },
+          {
+            "id": "W7118123430",
+            "doi": "10.31449/inf.v49i36.12281",
+            "title": "Detection of Synthetic Speech Using Spectral-Cepstral Features and BiLSTM Networks Furkat",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Informatica",
+              "issn": "0350-5596"
+            },
+            "authors": [
+              "Furkat Rakhmatov",
+              "Fakhriddin Abdirazakov",
+              "Ачилов Баходир Сайдуллаевич"
+            ],
+            "author_count": 6,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.informatica.si/index.php/informatica/article/download/12281/6080"
+            },
+            "url": "https://doi.org/10.31449/inf.v49i36.12281",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.31449/inf.v49i36.12281"
+          },
+          {
+            "id": "W4417221208",
+            "doi": "10.3389/fpubh.2025.1614017",
+            "title": "Analyzing road traffic crashes through multidisciplinary video data approaches",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Frontiers in Public Health",
+              "issn": "2296-2565"
+            },
+            "authors": [
+              "Haiqing Zhang",
+              "Yongqiang Shang"
+            ],
+            "author_count": 2,
+            "cited_by_count": 2,
+            "counts_by_year": {
+              "2026": 2
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1614017/pdf"
+            },
+            "url": "https://doi.org/10.3389/fpubh.2025.1614017",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3389/fpubh.2025.1614017"
+          },
+          {
+            "id": "W7202363254",
+            "doi": "10.21203/rs.3.rs-10257178/v1",
+            "title": "How Fast, How Sure, and Where It Breaks: A Streaming Sequential-Decision Layer for Voice-Deepfake Detection under Real Telephony Codecs",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "Research Square",
+              "issn": null
+            },
+            "authors": [
+              "Ilja Semjonovs"
+            ],
+            "author_count": 1,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.researchsquare.com/article/rs-10257178/latest.pdf"
+            },
+            "url": "https://doi.org/10.21203/rs.3.rs-10257178/v1",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7202363254",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.21203/rs.3.rs-10257178/v1"
+          },
+          {
+            "id": "W7221965757",
+            "doi": "10.48550/arxiv.2610.20310",
+            "title": "MUSEBENCH: A Benchmark for AI-Generated Music Detection and Artifact Analysis",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Yi Chen Liu",
+              "Syed Irfan Ali Meerza",
+              "Jiawei Yu"
+            ],
+            "author_count": 6,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2610.20310"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2610.20310",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7221965757",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2610.20310"
+          },
+          {
+            "id": "W7161131593",
+            "doi": "10.48550/arxiv.2605.13248",
+            "title": "Compact Latent Manifold Translation: A Parameter-Efficient Foundation Model for Cross-Modal and Cross-Frequency Physiological Signal Synthesis",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Bo Cui",
+              "Xiaowen Song",
+              "Yaowen Zhang"
+            ],
+            "author_count": 7,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2605.13248"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2605.13248",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7161131593",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2605.13248"
+          },
+          {
+            "id": "W7172539384",
+            "doi": "10.48550/arxiv.2608.03253",
+            "title": "CLASVS: Continuous-Latent Autoregression for Melody-Preserving Lyric Editing in Singing Voice Synthesis",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Yizhong Geng",
+              "Tian-Hao Zhang",
+              "Chunfeng Wang"
+            ],
+            "author_count": 10,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2608.03253"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2608.03253",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7172539384",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2608.03253"
+          },
+          {
+            "id": "W4407092802",
+            "doi": "10.48550/arxiv.2501.18648",
+            "title": "Multimodal Large Language Models for Image, Text, and Speech Data Augmentation: A Survey",
+            "year": 2025,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Ranjan Sapkota",
+              "Shaina Raza",
+              "Maged Shoman"
+            ],
+            "author_count": 5,
+            "cited_by_count": 3,
+            "counts_by_year": {
+              "2025": 2,
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2501.18648"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2501.18648",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W4407092802",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2501.18648"
+          },
+          {
+            "id": "W7166822534",
+            "doi": "10.18653/v1/2026.acl-long.0",
+            "title": "Front Matter",
+            "year": 2026,
+            "type": "paratext",
+            "venue": {
+              "name": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+              "issn": null
+            },
+            "authors": [
+              "Maria Liakata",
+              "Viviane P. Moreira",
+              "Jiajun Zhang"
+            ],
+            "author_count": 4,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://aclanthology.org/2026.acl-long.0.pdf"
+            },
+            "url": "https://doi.org/10.18653/v1/2026.acl-long.0",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.18653/v1/2026.acl-long.0"
+          }
+        ],
+        "source": "openalex",
+        "query_used": {
+          "openalex_lane": "streaming audio deepfake detection sequential early stopping codec"
+        }
+      }
+    },
+    {
+      "id": "X33-S2",
+      "date": "2026-10-29",
+      "query": "low resource audio deepfake detection on device short duration",
+      "requested_limit": 20,
+      "data": {
+        "total_estimate": 438,
+        "page": 1,
+        "results": [
+          {
+            "id": "W4389897623",
+            "doi": "10.1109/access.2023.3344653",
+            "title": "A Survey on the Detection and Impacts of Deepfakes in Visual, Audio, and Textual Formats",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "IEEE Access",
+              "issn": "2169-3536"
+            },
+            "authors": [
+              "Rami Mubarak",
+              "Tariq Alsboui",
+              "Omar Alshaikh"
+            ],
+            "author_count": 6,
+            "cited_by_count": 132,
+            "counts_by_year": {
+              "2024": 26,
+              "2025": 70,
+              "2026": 36
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10365143.pdf"
+            },
+            "url": "https://doi.org/10.1109/access.2023.3344653",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/access.2023.3344653"
+          },
+          {
+            "id": "W4388740187",
+            "doi": "10.1109/access.2023.3333866",
+            "title": "Audio Deepfake Approaches",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "IEEE Access",
+              "issn": "2169-3536"
+            },
+            "authors": [
+              "Ousama A. Shaaban",
+              "Remzi Yıldırım",
+              "Abubaker A. Alguttar"
+            ],
+            "author_count": 3,
+            "cited_by_count": 69,
+            "counts_by_year": {
+              "2024": 16,
+              "2025": 31,
+              "2026": 22
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10320354.pdf"
+            },
+            "url": "https://doi.org/10.1109/access.2023.3333866",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/access.2023.3333866"
+          },
+          {
+            "id": "W4408799803",
+            "doi": "10.3390/s25071989",
+            "title": "Audio Deepfake Detection: What Has Been Achieved and What Lies Ahead",
+            "year": 2025,
+            "type": "review",
+            "venue": {
+              "name": "Sensors",
+              "issn": "1424-8220"
+            },
+            "authors": [
+              "Bowen Zhang",
+              "Hui Cui",
+              "Van Nguyen"
+            ],
+            "author_count": 4,
+            "cited_by_count": 70,
+            "counts_by_year": {
+              "2025": 18,
+              "2026": 52
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.3390/s25071989",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s25071989"
+          },
+          {
+            "id": "W4406803348",
+            "doi": "10.1145/3714458",
+            "title": "A Survey on Speech Deepfake Detection",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "ACM Computing Surveys",
+              "issn": "0360-0300"
+            },
+            "authors": [
+              "Menglu Li",
+              "Yasaman Ahmadiadli",
+              "Xiao-Ping Steven Zhang"
+            ],
+            "author_count": 3,
+            "cited_by_count": 72,
+            "counts_by_year": {
+              "2024": 4,
+              "2025": 35,
+              "2026": 33
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2404.13914"
+            },
+            "url": "https://doi.org/10.1145/3714458",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1145/3714458"
+          },
+          {
+            "id": "W4391404116",
+            "doi": "10.3390/electronics13030585",
+            "title": "A Contemporary Survey on Deepfake Detection: Datasets, Algorithms, and Challenges",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "Electronics",
+              "issn": "2079-9292"
+            },
+            "authors": [
+              "Liang Yu Gong",
+              "Xue Jun Li"
+            ],
+            "author_count": 2,
+            "cited_by_count": 74,
+            "counts_by_year": {
+              "2024": 8,
+              "2025": 39,
+              "2026": 27
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.mdpi.com/2079-9292/13/3/585/pdf?version=1706700729"
+            },
+            "url": "https://doi.org/10.3390/electronics13030585",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/electronics13030585"
+          },
+          {
+            "id": "W4406813985",
+            "doi": "10.1016/j.heliyon.2025.e42273",
+            "title": "Exploring autonomous methods for deepfake detection: A detailed survey on techniques and evaluation",
+            "year": 2025,
+            "type": "review",
+            "venue": {
+              "name": "Heliyon",
+              "issn": "2405-8440"
+            },
+            "authors": [
+              "Reshma Sunil",
+              "Parita Mer",
+              "Anjali Diwan"
+            ],
+            "author_count": 5,
+            "cited_by_count": 51,
+            "counts_by_year": {
+              "2025": 18,
+              "2026": 33
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1016/j.heliyon.2025.e42273",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.heliyon.2025.e42273"
+          },
+          {
+            "id": "W7155069854",
+            "doi": "10.1109/icassp55912.2026.11463587",
+            "title": "Audio Deepfake Detection at the First Greeting: \"Hi!\"",
+            "year": 2026,
+            "type": "conference-paper",
+            "venue": {
+              "name": "IEEE International Conference on Acoustics Speech and Signal Processing",
+              "issn": "1520-6149"
+            },
+            "authors": [
+              "Haohan Shi",
+              "Xiyu Shi",
+              "Safak Dogan"
+            ],
+            "author_count": 5,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2601.19573"
+            },
+            "url": "https://doi.org/10.1109/icassp55912.2026.11463587",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/icassp55912.2026.11463587"
+          },
+          {
+            "id": "W4415481061",
+            "doi": "10.1007/s10791-025-09746-4",
+            "title": "Dynamic knowledge condensation with audio-selective transformer for audio deepfake detection",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Discover Computing",
+              "issn": "2948-2992"
+            },
+            "authors": [
+              "Taiba Majid Wani",
+              "Irene Amerini"
+            ],
+            "author_count": 2,
+            "cited_by_count": 1,
+            "counts_by_year": {
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10791-025-09746-4.pdf"
+            },
+            "url": "https://doi.org/10.1007/s10791-025-09746-4",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1007/s10791-025-09746-4"
+          },
+          {
+            "id": "W4405784216",
+            "doi": "10.58496/mjcs/2024/025",
+            "title": "Deepfake Detection in Video and Audio Clips: A Comprehensive Survey and Analysis",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "Mesopotamian Journal of CyberSecurity",
+              "issn": "2958-6542"
+            },
+            "authors": [
+              "Wurood A. Jbara",
+              "Noor Al-Huda K. Hussein",
+              "Jamila H. Soud"
+            ],
+            "author_count": 3,
+            "cited_by_count": 14,
+            "counts_by_year": {
+              "2025": 8,
+              "2026": 6
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://mesopotamian.press/journals/index.php/CyberSecurity/article/download/675/532"
+            },
+            "url": "https://doi.org/10.58496/mjcs/2024/025",
+            "sources": [
+              "openalex"
+            ],
+            "study_design": [
+              "Systematic Review"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.58496/mjcs/2024/025"
+          },
+          {
+            "id": "W4406167452",
+            "doi": "10.3390/app15020558",
+            "title": "Authenticity at Risk: Key Factors in the Generation and Detection of Audio Deepfakes",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Applied Sciences",
+              "issn": "2076-3417"
+            },
+            "authors": [
+              "Alba Martínez-Serrano",
+              "Claudia Montero-Ramírez",
+              "Carmen Peláez-Moreno"
+            ],
+            "author_count": 3,
+            "cited_by_count": 3,
+            "counts_by_year": {
+              "2025": 2,
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.mdpi.com/2076-3417/15/2/558/pdf?version=1736403100"
+            },
+            "url": "https://doi.org/10.3390/app15020558",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/app15020558"
+          },
+          {
+            "id": "W4415586450",
+            "doi": "10.62762/jiap.2025.431672",
+            "title": "A Comprehensive Survey of DeepFake Generation and Detection Techniques in Audio-Visual Media",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "ICCK Journal of Image Analysis and Processing",
+              "issn": "3068-6679"
+            },
+            "authors": [
+              "Iqra Noor Khan",
+              "Kashif Khan",
+              "Arshad Ahmad"
+            ],
+            "author_count": 3,
+            "cited_by_count": 4,
+            "counts_by_year": {
+              "2026": 4
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.icck.org/filebob/uploads/storage/JIAP_pdcGPKvIeuFYL1lFi.pdf"
+            },
+            "url": "https://doi.org/10.62762/jiap.2025.431672",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.62762/jiap.2025.431672"
+          },
+          {
+            "id": "W4415666229",
+            "doi": "10.1186/s13635-025-00217-3",
+            "title": "ASTDT: an Interpretable Adaptive Spectro-Temporal Diffusion Transformer for audio deepfake detection",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "EURASIP Journal on Information Security",
+              "issn": "1687-4161"
+            },
+            "authors": [
+              "Taiba Majid Wani",
+              "Syed Asif Ahmad Qadri",
+              "Arselan Ashraf"
+            ],
+            "author_count": 4,
+            "cited_by_count": 1,
+            "counts_by_year": {
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://jis-eurasipjournals.springeropen.com/counter/pdf/10.1186/s13635-025-00217-3"
+            },
+            "url": "https://doi.org/10.1186/s13635-025-00217-3",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1186/s13635-025-00217-3"
+          },
+          {
+            "id": "W4417358207",
+            "doi": "10.3390/s25247608",
+            "title": "Audio Deepfake Detection via a Fuzzy Dual-Path Time-Frequency Attention Network",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Sensors",
+              "issn": "1424-8220"
+            },
+            "authors": [
+              "Jinzi Li",
+              "Hexu Wang",
+              "Fei Xie"
+            ],
+            "author_count": 7,
+            "cited_by_count": 4,
+            "counts_by_year": {
+              "2026": 4
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.mdpi.com/1424-8220/25/24/7608/pdf?version=1765808313"
+            },
+            "url": "https://doi.org/10.3390/s25247608",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s25247608"
+          },
+          {
+            "id": "W4406316742",
+            "doi": "10.1016/j.csl.2026.101994",
+            "title": "Unmasking deepfakes: Leveraging augmentations and features variability for deepfake speech detection",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Computer Speech & Language",
+              "issn": "0885-2308"
+            },
+            "authors": [
+              "Inbal Rimon",
+              "Oren Gal",
+              "Haim Henri Permuter"
+            ],
+            "author_count": 3,
+            "cited_by_count": 3,
+            "counts_by_year": {
+              "2025": 1,
+              "2026": 2
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0885230826000574/pdf"
+            },
+            "url": "https://doi.org/10.1016/j.csl.2026.101994",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.csl.2026.101994"
+          },
+          {
+            "id": "W7214485839",
+            "doi": "10.25195/ijci.v52i2.780",
+            "title": "Robust Audio Deepfake Detection Across Controlled and Real-World Datasets Using CNN–Transformers",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Iraqi Journal for Computers and Informatics",
+              "issn": "2313-190X"
+            },
+            "authors": [
+              "Rafal Akeel",
+              "Belal Al-Khateeb"
+            ],
+            "author_count": 2,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://ijci.uoitc.edu.iq/index.php/ijci/article/download/780/339"
+            },
+            "url": "https://doi.org/10.25195/ijci.v52i2.780",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.25195/ijci.v52i2.780"
+          },
+          {
+            "id": "W7204593862",
+            "doi": "10.9781/0m4b5v36",
+            "title": "AV-DeepFake-Net: Attention-Guided and Uncertainty-Aware Network for Audiovisual DeepFake Detection",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "International Journal of Interactive Multimedia and Artificial Intelligence",
+              "issn": "1989-1660"
+            },
+            "authors": [
+              "Nasir Saleem",
+              "Adeel Hussain",
+              "Sami Bourouis"
+            ],
+            "author_count": 7,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.ijimai.org/index.php/ijimai/article/download/6431/3863"
+            },
+            "url": "https://doi.org/10.9781/0m4b5v36",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.9781/0m4b5v36"
+          },
+          {
+            "id": "W7164854686",
+            "doi": "10.32604/cmc.2026.080593",
+            "title": "Fine-Tune Transfer Learning Model for Deepfake Audio Detection Using Hybrid Features and Data Augmentation",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Computers, materials & continua/Computers, materials & continua (Print)",
+              "issn": "1546-2218"
+            },
+            "authors": [
+              "Rashid Jahangir",
+              "Nazik Mohammad Alturki",
+              "Muhammad Zubair Khan"
+            ],
+            "author_count": 3,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://www.techscience.com/cmc/online/detail/27190/pdf"
+            },
+            "url": "https://doi.org/10.32604/cmc.2026.080593",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.32604/cmc.2026.080593"
+          },
+          {
+            "id": "W4408749894",
+            "doi": "10.14722/ndss.2025.241117",
+            "title": "Characterizing the Impact of Audio Deepfakes in the Presence of Cochlear Implant",
+            "year": 2025,
+            "type": "conference-paper",
+            "venue": {
+              "name": "Network and Distributed System Security Symposium",
+              "issn": null
+            },
+            "authors": [
+              "Magdalena Pasternak",
+              "Kevin Warren",
+              "Daniel Olszewski"
+            ],
+            "author_count": 6,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.14722/ndss.2025.241117"
+            },
+            "url": "https://doi.org/10.14722/ndss.2025.241117",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.14722/ndss.2025.241117"
+          },
+          {
+            "id": "W7204153744",
+            "doi": "10.48550/arxiv.2608.23437",
+            "title": "AT-ADD: A Benchmark and Challenge for Robust and All-Type Audio Deepfake Detection",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Yuankun Xie",
+              "Haonan Cheng",
+              "Jiayi Zhou"
+            ],
+            "author_count": 15,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2608.23437"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2608.23437",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7204153744",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2608.23437"
+          },
+          {
+            "id": "W7154562205",
+            "doi": "10.48550/arxiv.2604.13400",
+            "title": "Classical Machine Learning Baselines for Deepfake Audio Detection on the Fake-or-Real Dataset",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Faheem Ahmad",
+              "Ajan Ahmed",
+              "Masudul Imtiaz"
+            ],
+            "author_count": 3,
+            "cited_by_count": 1,
+            "counts_by_year": {
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2604.13400"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2604.13400",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7154562205",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2604.13400"
+          }
+        ],
+        "source": "openalex",
+        "query_used": {
+          "openalex_lane": "low resource audio deepfake detection device short duration"
+        }
+      }
+    }
+  ],
+  "duplications": [
+    {
+      "id": "X33-D1",
+      "date": "2026-10-29",
+      "question": "causal streaming audio deepfake detection sequential stopping false alarm decision delay codec unseen generators low resource language",
+      "requested_limit": 10,
+      "data": {
+        "nearest_neighbours": [
+          {
+            "id": "W4413222984",
+            "doi": "10.3390/jcp5030055",
+            "title": "Leveraging Large Language Models for Scalable and Explainable Cybersecurity Log Analysis",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "Journal of Cybersecurity and Privacy",
+              "issn": "2624-800X"
+            },
+            "authors": [
+              "Giulia Palma",
+              "Gaia Cecchi",
+              "Mario Caronna"
+            ],
+            "author_count": 4,
+            "cited_by_count": 17,
+            "counts_by_year": {
+              "2025": 2,
+              "2026": 15
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.3390/jcp5030055",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jcp5030055"
+          },
+          {
+            "id": "W7163051619",
+            "doi": "10.56726/irjmets99394",
+            "title": "Explainable Deepfake Audio Detection Through Multi-Agent Forensic Consensus",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "International Research Journal of Modernization in Engineering Technology and Science",
+              "issn": "2582-5208"
+            },
+            "author_count": 0,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.56726/irjmets99394"
+            },
+            "url": "https://doi.org/10.56726/irjmets99394",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.56726/irjmets99394"
+          },
+          {
+            "id": "W7153977956",
+            "doi": "10.56975/ijnrd.v11i4.323054",
+            "title": "AUDIO DEEPFAKE DETECTION USING HYBRID CNN-BiLSTM WITH FEATURE FUSION OF MFCC AND MEL SPECTROGRAM",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "International Journal of Novel Research and Development",
+              "issn": "2456-4184"
+            },
+            "authors": [
+              "Subathra R",
+              "Thiru Selvam T",
+              "Prem Kumar R"
+            ],
+            "author_count": 4,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://ijnrd.org/papers/IJNRD2604176.pdf"
+            },
+            "url": "https://doi.org/10.56975/ijnrd.v11i4.323054",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.56975/ijnrd.v11i4.323054"
+          },
+          {
+            "id": "W7131371562",
+            "doi": "10.69987/jacs.2026.60203",
+            "title": "Adaptive Feature Selection and Ensemble Learning Framework for Multi-Domain Anomaly Detection in Real-Time Transactional Systems",
+            "year": 2026,
+            "type": "article",
+            "venue": {
+              "name": "Journal of Advanced Computing Systems",
+              "issn": "3066-3962"
+            },
+            "authors": [
+              "Zhaoyang Luo"
+            ],
+            "author_count": 1,
+            "cited_by_count": 1,
+            "counts_by_year": {
+              "2026": 1
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://scipublication.com/index.php/JACS/article/download/295/267"
+            },
+            "url": "https://doi.org/10.69987/jacs.2026.60203",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.69987/jacs.2026.60203"
+          },
+          {
+            "id": "W7214746472",
+            "doi": "10.65725/rchub/9788118014652",
+            "title": "The 6th International Conference on “Recent Advances in Computing and Communication” (ICRACC’26)",
+            "year": 2026,
+            "type": "book",
+            "authors": [
+              "Ms.S.Rajameenakshi",
+              "Ms.S.Sudha",
+              "Dr.S.Jayasri"
+            ],
+            "author_count": 3,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://doi.org/10.65725/rchub/9788118014652"
+            },
+            "url": "https://doi.org/10.65725/rchub/9788118014652",
+            "sources": [
+              "openalex"
+            ],
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.65725/rchub/9788118014652"
+          },
+          {
+            "id": "W4313984387",
+            "doi": "10.3389/fdata.2022.1001063",
+            "title": "Audio deepfakes: A survey",
+            "year": 2023,
+            "type": "review",
+            "venue": {
+              "name": "Frontiers in Big Data",
+              "issn": "2624-909X"
+            },
+            "authors": [
+              "Zahra Khanjani",
+              "Gabrielle Watson",
+              "Vandana Pursnani Janeja"
+            ],
+            "author_count": 3,
+            "cited_by_count": 120,
+            "counts_by_year": {
+              "2023": 5,
+              "2024": 31,
+              "2025": 49,
+              "2026": 35
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.3389/fdata.2022.1001063",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3389/fdata.2022.1001063"
+          },
+          {
+            "id": "W4403791925",
+            "doi": "10.1145/3664647.3681345",
+            "title": "Audio Deepfake Detection with Self-Supervised XLS-R and SLS Classifier",
+            "year": 2024,
+            "type": "conference-paper",
+            "venue": {
+              "name": "ACM International Conference on Multimedia (ACM MM)",
+              "issn": null
+            },
+            "authors": [
+              "Qishan Zhang",
+              "Shuangbing Wen",
+              "Tao Hu"
+            ],
+            "author_count": 3,
+            "cited_by_count": 61,
+            "counts_by_year": {
+              "2024": 3,
+              "2025": 29,
+              "2026": 29
+            },
+            "oa": {
+              "is_oa": false,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1145/3664647.3681345",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1145/3664647.3681345"
+          },
+          {
+            "id": "W4366828058",
+            "doi": "10.1111/exsy.13322",
+            "title": "Review of audio deepfake detection techniques: Issues and prospects",
+            "year": 2023,
+            "type": "article",
+            "venue": {
+              "name": "Expert Systems",
+              "issn": "0266-4720"
+            },
+            "authors": [
+              "Abhishek Dixit",
+              "Nirmal Kaur",
+              "Staffy Kingra"
+            ],
+            "author_count": 3,
+            "cited_by_count": 56,
+            "counts_by_year": {
+              "2023": 3,
+              "2024": 14,
+              "2025": 23,
+              "2026": 16
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/exsy.13322"
+            },
+            "url": "https://doi.org/10.1111/exsy.13322",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1111/exsy.13322"
+          },
+          {
+            "id": "W4406138340",
+            "doi": "10.1109/taslpro.2025.3525966",
+            "title": "The Codecfake Dataset and Countermeasures for the Universally Detection of Deepfake Audio",
+            "year": 2025,
+            "type": "article",
+            "venue": {
+              "name": "IEEE Transactions on Audio Speech and Language Processing",
+              "issn": "2998-4173"
+            },
+            "authors": [
+              "Yuankun Xie",
+              "Yi Lu",
+              "Ruibo Fu"
+            ],
+            "author_count": 12,
+            "cited_by_count": 43,
+            "counts_by_year": {
+              "2024": 3,
+              "2025": 19,
+              "2026": 21
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2405.04880"
+            },
+            "url": "https://doi.org/10.1109/taslpro.2025.3525966",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/taslpro.2025.3525966"
+          },
+          {
+            "id": "W4402116004",
+            "doi": "10.21437/interspeech.2024-2093",
+            "title": "CodecFake: Enhancing Anti-Spoofing Models Against Deepfake Audios from Codec-Based Speech Synthesis Systems",
+            "year": 2024,
+            "type": "conference-paper",
+            "venue": {
+              "name": "Interspeech (USB)",
+              "issn": "2308-457X"
+            },
+            "authors": [
+              "Haibin Wu",
+              "Yuan Tseng",
+              "Hung-yi Lee"
+            ],
+            "author_count": 3,
+            "cited_by_count": 24,
+            "counts_by_year": {
+              "2024": 3,
+              "2025": 11,
+              "2026": 10
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2406.07237"
+            },
+            "url": "https://doi.org/10.21437/interspeech.2024-2093",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.21437/interspeech.2024-2093"
+          },
+          {
+            "id": "W4402290834",
+            "doi": "10.1016/j.cviu.2024.104143",
+            "title": "Continuous fake media detection: Adapting deepfake detectors to new generative techniques",
+            "year": 2024,
+            "type": "article",
+            "venue": {
+              "name": "Computer Vision and Image Understanding",
+              "issn": "1077-3142"
+            },
+            "authors": [
+              "Francesco Tassone",
+              "Luca Maiano",
+              "Irene Amerini"
+            ],
+            "author_count": 3,
+            "cited_by_count": 20,
+            "counts_by_year": {
+              "2024": 2,
+              "2025": 7,
+              "2026": 11
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.1016/j.cviu.2024.104143",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.cviu.2024.104143"
+          },
+          {
+            "id": "W4402112473",
+            "doi": "10.21437/interspeech.2024-1703",
+            "title": "FakeSound: Deepfake General Audio Detection",
+            "year": 2024,
+            "type": "conference-paper",
+            "venue": {
+              "name": "Interspeech (USB)",
+              "issn": "2308-457X"
+            },
+            "authors": [
+              "Zeyu Xie",
+              "Baihan Li",
+              "Xuenan Xu"
+            ],
+            "author_count": 6,
+            "cited_by_count": 15,
+            "counts_by_year": {
+              "2024": 1,
+              "2025": 7,
+              "2026": 7
+            },
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2406.08052"
+            },
+            "url": "https://doi.org/10.21437/interspeech.2024-1703",
+            "sources": [
+              "openalex"
+            ],
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.21437/interspeech.2024-1703"
+          },
+          {
+            "id": "W7166811147",
+            "doi": "10.5281/zenodo.21108623",
+            "title": "Reproducibility archive for: How Fast, How Sure, and Where It Breaks: A Streaming Sequential-Decision Layer for Voice-Deepfake Detection under Real Telephony Codecs",
+            "year": 2026,
+            "type": "software",
+            "venue": {
+              "name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn": null
+            },
+            "authors": [
+              "Ilja Semjonovs"
+            ],
+            "author_count": 1,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": null
+            },
+            "url": "https://doi.org/10.5281/zenodo.21108623",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7166811147",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.5281/zenodo.21108623"
+          },
+          {
+            "id": "W7215099595",
+            "doi": "10.48550/arxiv.2609.39651",
+            "title": "Neural Audio Codec for Robust Audio Deepfake Detection",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Jungwoo Kim",
+              "Joonyong Park",
+              "Junyoung Koh"
+            ],
+            "author_count": 4,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2609.39651"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2609.39651",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7215099595",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2609.39651"
+          },
+          {
+            "id": "W7214719284",
+            "doi": "10.48550/arxiv.2609.33375",
+            "title": "What Survives the Codec Shift: Pooled No-Vocals Residuals for Speech Deepfake Detection",
+            "year": 2026,
+            "type": "preprint",
+            "venue": {
+              "name": "arXiv (Cornell University)",
+              "issn": "2331-8422"
+            },
+            "authors": [
+              "Jiajun Xu",
+              "Menglu Li",
+              "Xiao-Ping Zhang"
+            ],
+            "author_count": 3,
+            "cited_by_count": 0,
+            "oa": {
+              "is_oa": true,
+              "pdf_url": "https://arxiv.org/pdf/2609.33375"
+            },
+            "url": "https://doi.org/10.48550/arxiv.2609.33375",
+            "sources": [
+              "openalex"
+            ],
+            "openalex_url": "https://openalex.org/W7214719284",
+            "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+            "retrieved_by": "semantic",
+            "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2609.33375"
+          }
+        ],
+        "query_used": {
+          "openalex_lane": "causal streaming audio deepfake detection sequential stopping false alarm decision"
+        },
+        "semantic_additions": 10,
+        "semantic_note": "The nearest_neighbours list is today's ranked list followed by papers that only a meaning-based search of the full question found (marked retrieved_by: semantic). Read the whole list before judging duplication: a near-duplicate can sit anywhere in it."
+      }
+    }
+  ],
+  "search_result_occurrences": 40,
+  "curated_sources": [
+    {
+      "evidence_id": "X33-E01",
+      "candidate_ids": "X33",
+      "stage": "closest-work",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "Sinhala AI-generated voice framework",
+      "source_url": "https://doi.org/10.1109/ICAC69156.2025.11361479",
+      "source_type": "conference-paper",
+      "supported_claim": "Generic Sinhala human/synthetic classification is directly studied; the supplied paper does not report a trained streaming waiting policy.",
+      "evidence_location": "Supplied six-page PDF, sections III–V",
+      "access_status": "Full supplied paper read in earlier turn; source provenance in X32 records",
+      "confidence": "High for described protocol",
+      "unresolved_questions": "Dataset release/licence and streaming evaluation not verified."
+    },
+    {
+      "evidence_id": "X33-E02",
+      "candidate_ids": "X33",
+      "stage": "closest-work",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "Are audio DeepFake detection models polyglots?",
+      "source_url": "https://www.isca-archive.org/spsc_2025/marek25_spsc.pdf",
+      "source_type": "conference-paper",
+      "supported_claim": "Limited target-language adaptation is established; eight tested languages exclude Sinhala.",
+      "evidence_location": "Adaptation experiments, tables 1 and 3–5",
+      "access_status": "Primary full PDF read in earlier turns",
+      "confidence": "High for overlap",
+      "unresolved_questions": "Does not establish Sinhala streaming or phone performance."
+    },
+    {
+      "evidence_id": "X33-E03",
+      "candidate_ids": "X33",
+      "stage": "closest-work",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "Audio Deepfake Detection at the First Greeting: Hi!",
+      "source_url": "https://arxiv.org/html/2601.19573v1",
+      "source_type": "conference-paper preprint",
+      "supported_claim": "Short-MGAA studies 0.5–2.0-second degraded clips and model-cost trade-offs; fixed short clips differ from repeated decisions.",
+      "evidence_location": "Sections 2 and 3; ICASSP DOI 10.1109/ICASSP55912.2026.11463587",
+      "access_status": "Primary methods/results read in preceding assessment; reopened 2026-10-29",
+      "confidence": "High for overlap",
+      "unresolved_questions": "Desktop complexity results are not measured continuous mobile-call performance."
+    },
+    {
+      "evidence_id": "X33-E04",
+      "candidate_ids": "X33",
+      "stage": "closest-work",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "How Fast, How Sure, and Where It Breaks",
+      "source_url": "https://doi.org/10.21203/rs.3.rs-10257178/v1",
+      "source_type": "preprint",
+      "supported_claim": "Frozen AASIST/RawNet2 with growing prefixes, per-duration calibration and threshold stopping directly overlaps; padding and channel mismatch affect apparent gains.",
+      "evidence_location": "Manuscript sections 3.2–3.5, 4.3–4.4 and 5.1–5.4",
+      "access_status": "Research Square/DOI direct fetch failed; manuscript methods/results read on ResearchGate copy",
+      "confidence": "Medium-high for textual overlap; results not reproduced",
+      "unresolved_questions": "Learned policy is only an inferred opportunity. Preprint is not peer-reviewed confirmation; modern generators, Sinhala and phone execution not established."
+    },
+    {
+      "evidence_id": "X33-E05",
+      "candidate_ids": "X33",
+      "stage": "source-access",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "ResearchGate-hosted full manuscript for How Fast, How Sure",
+      "source_url": "https://www.researchgate.net/publication/412252731_How_Fast_How_Sure_and_Where_It_Breaks_A_Streaming_Sequential-Decision_Layer_for_Voice-Deepfake_Detection_under_Real_Telephony_Codecs",
+      "source_type": "primary manuscript copy",
+      "supported_claim": "Full-text copy provides the decision rule and explicit limitations: processed ASVspoof speech rather than real calls, no novel-generator robustness claim.",
+      "evidence_location": "Sections 3–5; posted date shown within manuscript is August 14 2026, page metadata says July",
+      "access_status": "Full manuscript text available and inspected; publisher fetch blocked",
+      "confidence": "Medium-high",
+      "unresolved_questions": "No independent replication; hosting metadata dates differ from manuscript posting date."
+    },
+    {
+      "evidence_id": "X33-E06",
+      "candidate_ids": "X33",
+      "stage": "closest-work",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "RTCFake: Speech Deepfake Detection in Real-Time Communication",
+      "source_url": "https://arxiv.org/html/2604.23742v1",
+      "source_type": "conference-paper preprint",
+      "supported_claim": "Communication-platform processing and phoneme-level consistency for platform transfer are direct prior work.",
+      "evidence_location": "Dataset/method and sections 5.3–5.4; published DOI 10.18653/v1/2026.findings-acl.285",
+      "access_status": "Primary selected full-text sections inspected in earlier assessment",
+      "confidence": "High for overlap",
+      "unresolved_questions": "Does not prove causal Sinhala phone detection or supply a Sinhala benchmark."
+    },
+    {
+      "evidence_id": "X33-E07",
+      "candidate_ids": "X33",
+      "stage": "dataset-check",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "SLR52 official Sinhala data",
+      "source_url": "https://openslr.org/52/",
+      "source_type": "official dataset documentation",
+      "supported_claim": "About 185K human Sinhala utterances, user/text TSV, CC BY-SA 4.0, public archive routes.",
+      "evidence_location": "Summary, licence, downloads and resource description",
+      "access_status": "Original page reopened; no audio downloaded",
+      "confidence": "High for source documentation",
+      "unresolved_questions": "No fake labels or phone-conversation representation; exact derivative/generator permissions unresolved."
+    },
+    {
+      "evidence_id": "X33-E08",
+      "candidate_ids": "X33",
+      "stage": "dataset-check",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "RTCFake current challenge release",
+      "source_url": "https://huggingface.co/datasets/JunXueTech/RTCFake",
+      "source_type": "official dataset card",
+      "supported_claim": "English/Chinese, approximately 400h challenge subset, CC BY-NC4, team-registration gate, withheld evaluation portions; 21.9GB shown.",
+      "evidence_location": "Access notice, dataset version and evaluation release statements",
+      "access_status": "Public card read; no request/terms acceptance or download",
+      "confidence": "High for current visible card",
+      "unresolved_questions": "Not a Sinhala dependency; cannot assume full paper corpus or all evaluation files available."
+    },
+    {
+      "evidence_id": "X33-E09",
+      "candidate_ids": "X33",
+      "stage": "baseline-check",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "AASIST official model code",
+      "source_url": "https://github.com/clovaai/aasist",
+      "source_type": "author repository",
+      "supported_claim": "Public official implementation with MIT code, models and benchmark instructions.",
+      "evidence_location": "README and repository structure",
+      "access_status": "Original repository page read; weights/code not executed",
+      "confidence": "High for route existence",
+      "unresolved_questions": "Separate data/model terms must be checked; complete streaming inference timing and numerical reproduction unmeasured."
+    },
+    {
+      "evidence_id": "X33-E10",
+      "candidate_ids": "X33",
+      "stage": "dataset-check",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "ASVspoof 2019 source repository",
+      "source_url": "https://datashare.ed.ac.uk/handle/10283/3336",
+      "source_type": "official dataset route",
+      "supported_claim": "Dataset route cited by AASIST and PartialSpoof; current direct fetch timed out.",
+      "evidence_location": "Official Edinburgh handle; earlier PartialSpoof README underlying ODC-By notice",
+      "access_status": "Direct page timed out this pass; no download or fresh licence verification",
+      "confidence": "Medium for route; access not demonstrated",
+      "unresolved_questions": "Verify files, labels, source groups, duration distribution and terms before treating fallback as ready."
+    },
+    {
+      "evidence_id": "X33-E11",
+      "candidate_ids": "X33",
+      "stage": "platform-check",
+      "query_id": "X33-SOURCE",
+      "query": "Original-source follow-up for annotated streaming research question",
+      "search_date": "2026-10-29",
+      "source_title": "Android sharing audio input",
+      "source_url": "https://developer.android.com/media/platform/sharing-audio-input",
+      "source_type": "official platform documentation",
+      "supported_claim": "Voice-call capture route documented for privileged pre-installed app and CAPTURE_AUDIO_OUTPUT; generic installed-app both-side access is not assumed.",
+      "evidence_location": "Voice call plus ordinary app section",
+      "access_status": "Official page inspected in earlier work and reopened this pass",
+      "confidence": "High for documented route",
+      "unresolved_questions": "File replay avoids dependence on call access; no iOS audit or call capture performed."
+    }
+  ],
+  "related_validation": [
+    "sinhala-audio-topic-validation.json",
+    "sinhala-partial-gap-validation.json"
+  ],
+  "parked_formulations": [
+    {
+      "idea": "First streaming deepfake detector with confidence and telephony codecs",
+      "decision": "Reject broad novelty claim",
+      "reason": "How Fast, How Sure directly precedes it."
+    },
+    {
+      "idea": "First lightweight ultra-short detector",
+      "decision": "Reject broad novelty claim",
+      "reason": "S-MGAA already targets short degraded speech and efficiency."
+    },
+    {
+      "idea": "Sinhala alone establishes novelty",
+      "decision": "Reject novelty argument",
+      "reason": "Direct Sinhala detection precedent exists; language extension needs an added research contribution."
+    },
+    {
+      "idea": "Learned waiting policy under little Sinhala data",
+      "decision": "Conditional inferred opportunity",
+      "reason": "Must compare existing sequential rules and learning-based early classifiers; no novelty certification."
+    },
+    {
+      "idea": "Live phone-call protection",
+      "decision": "Exclude from core claim",
+      "reason": "No verified live-call access or representative long Sinhala call data; early human labels cannot certify future speech."
+    }
+  ],
+  "limits": [
+    "Queries returned mixed-relevance leads; no count or sparse search establishes originality.",
+    "New searches/duplication were run in the preceding annotated-question assessment and reused here; no searches were invented for this authoring step.",
+    "Direct Research Square PDF/DOI and Zenodo archive fetches failed; ResearchGate manuscript copy used for closest-method reading.",
+    "SLR52 human speech alone cannot supply a deepfake test set; Sinhala fake data and reuse rights remain unverified.",
+    "No audio, model weights, training or phone measurements obtained; resource estimates are planning only.",
+    "Any partial-edit extension needs timestamps and a separate protocol; X32 remains a distinct candidate."
+  ],
+  "verdict": "Adjust before proceeding; 62.0/100 provisional, not qualified.",
+  "handoff": "Supervisor discussion of distinct waiting-policy contribution and a permitted existing-data route."
+}

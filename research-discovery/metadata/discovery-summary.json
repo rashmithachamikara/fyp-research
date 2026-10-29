@@ -1,5 +1,5 @@
 {
-  "evidence_cutoff": "2026-10-28",
+  "evidence_cutoff": "2026-10-29",
   "track": "General empirical AI/ML; focused discovery, not systematic review",
   "work_completed": {
     "discovery_queries": 8,
@@ -4200,6 +4200,240 @@
           "confidence_and_reason": "Medium: An offline evidence/error viewer is feasible; the prototype is not the research contribution."
         }
       ]
+    },
+    "X32": {
+      "scored_date": "2026-10-29",
+      "mode": "Provisional conditional opportunity; data and novelty not verified",
+      "report": "reports/gaps/x32-sinhala-partial-audio-deepfakes.md",
+      "weighted_score": 62,
+      "raw_weighted_score": 60.8,
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Partial-edit studies show that whole-recording labels can hide short generated replacements; see sections 1 and 3.",
+        "G2": "The shared question tests learned detection of short speech segments.",
+        "G3": "Members train small detection heads, learning objectives or a compressed model; no paid API is required.",
+        "G4": "SLR52 supplies human speech, not labelled partial deepfakes. No suitable existing Sinhala edited-speech release was verified.",
+        "G5": "The bounded study uses existing labels and permitted controlled derivatives. It stops if new recordings or expert labels become necessary.",
+        "G6": "Multilingual transfer, unseen generators, editing controls and compression have close prior work; the added contribution needs validation.",
+        "G7": "Sections 4 and 6 specify learning and error-trade-off experiments; the viewer is only a demonstration.",
+        "G8": "Metrics can be defined, but Sinhala edit timestamps and speaker/source/generator records are not secured.",
+        "G9": "Completion depends on early access to suitable data and a working baseline.",
+        "G10": "Each member has a question, trained method, comparison, ablation and separate result using the same starting model.",
+        "G11": "The core plan uses selected data, frozen features and small heads; full large-model training is optional.",
+        "G12": "Reuse terms for the actual Sinhala fake data and any generated derivatives remain unresolved.",
+        "G13": "Failure to transfer, editing false alarms and the accuracy-versus-size trade-off remain useful results."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: Similar questions are already studied; a distinct Sinhala contribution is not established."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: No reusable Sinhala set with labelled AI-edited segments was verified."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low-medium: A small study could fit, but the data and first baseline must be secured early."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: The plan trains detection heads, tests learning objectives and studies model compression."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: The test plan is clear, but Sinhala labels and source-safe splits are missing."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Each member has a separate experiment using the same unchanged starting model."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: A short altered phrase can matter; benefits on real calls remain untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium-low: Selected data and frozen features should fit; training and phone costs are estimates."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: A file-based viewer can highlight suspected edits without live call access."
+        }
+      ]
+    },
+    "X33": {
+      "scored_date": "2026-10-29",
+      "mode": "Provisional streaming candidate; data and novelty unresolved",
+      "report": "reports/gaps/x33-sinhala-streaming-deepfake-detection.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Studies in section 3 show that short input and telephone processing affect detection and confidence.",
+        "G2": "The question concerns a learned detector and when it has enough evidence to decide.",
+        "G3": "All three contributions train or adapt models rather than only call an API.",
+        "G4": "No suitable reusable Sinhala real/fake dataset with speaker and generator records has been secured.",
+        "G5": "The bounded study uses existing labels. New callers, recordings and expert labelling are excluded.",
+        "G6": "Streaming, short-input and limited-language detection already exist; the extra contribution needs checking.",
+        "G7": "Training and comparison experiments are central; the app only demonstrates the result.",
+        "G8": "Metrics are defined, but suitable Sinhala data, source groups and clip lengths are not verified.",
+        "G9": "Data access and baseline reproduction must be resolved before the schedule is credible.",
+        "G10": "Section 6 gives separate questions, methods, comparisons and results for one shared problem.",
+        "G11": "The core uses selected audio and compact models; large-model training is optional.",
+        "G12": "Rights for the actual Sinhala fake audio and any generated derivatives remain unresolved.",
+        "G13": "Standard methods may suffice; waiting may not help; compression may damage early detection."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: A close streaming study already exists; the added value of learning when to wait is unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6,
+          "confidence_and_reason": "Low: Suitable reusable Sinhala human and generated speech has not been secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low-medium: A bounded study is plausible once data and the first baseline work."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: The plan trains adaptation, a waiting policy and a compact model."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: Comparisons are defined, but suitable Sinhala test data and phone timings are missing."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: Each member can test a separate idea against the same unchanged starting model."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: Quick, reliable speech checks matter; protection during actual calls remains untested."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4,
+          "confidence_and_reason": "Medium-low: Small selected datasets and compact models should fit; resource use is not measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: Existing audio can be replayed in small chunks without access to private calls."
+        }
+      ],
+      "raw_weighted_score": 60.8,
+      "weighted_score": 62
     }
   },
   "scoring_policy": {
@@ -4312,5 +4546,27 @@
     "result_occurrences": 329,
     "duplication_queries": 20,
     "note": "Ten alternative source-grounded opportunities; novelty unresolved. HOSS archive inspected; no models run."
+  },
+  "sinhala_partial_gap_validation": {
+    "date": "2026-10-29",
+    "candidate_id": "X32",
+    "metadata": "source-checks/sinhala-partial-gap-validation.json",
+    "searches": 8,
+    "result_occurrences": 137,
+    "duplications": 4,
+    "curated_sources": 18,
+    "verdict": "Adjust before proceeding; 62.0/100 provisional, not qualified; novelty and data remain unresolved.",
+    "audio_downloaded_or_model_run": false
+  },
+  "sinhala_streaming_gap_validation": {
+    "date": "2026-10-29",
+    "candidate_id": "X33",
+    "metadata": "source-checks/sinhala-streaming-gap-validation.json",
+    "searches": 2,
+    "result_occurrences": 40,
+    "duplications": 1,
+    "curated_sources": 11,
+    "verdict": "Adjust before proceeding; 62.0/100 provisional, not qualified.",
+    "audio_downloaded_or_model_run": false
   }
 }
