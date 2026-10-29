@@ -82,7 +82,7 @@ new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
 maritime_ids = {f'X{i:02}' for i in range(22, 32)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids | {f'X{i:02}' for i in range(34, 43)}
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -358,8 +358,26 @@ for source in streaming_novelty['curated_sources']:
     assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['source_url']
                for row in rows), source['evidence_id']
 
+pdf_import = json.loads((root / 'pdf-shortlist-import.json').read_text(encoding='utf-8'))
+assert {c['id'] for c in pdf_import['candidates']} == {f'X{i:02}' for i in range(34, 43)}
+assert [c['rank'] for c in pdf_import['candidates']] == list(range(1, 10))
+assert pdf_import['qualified_count'] == 0 and not pdf_import['model_training_or_runtime_measured']
+for candidate in pdf_import['candidates']:
+    cid = candidate['id']
+    assert candidate['weighted_score'] == assessments[cid]['weighted_score']
+    assert candidate['gate_decisions'] == assessments[cid]['gate_decisions']
+    assert len(candidate['team']) == 3 and len(candidate['sources']) >= 2
+    assert not candidate['source_pdf_claims_independently_certified']
+    assert any(r['evidence_id'] == f"PDF30-{cid}-ORIGIN" for r in rows)
+    for index, source in enumerate(candidate['sources'], 1):
+        assert any(r['evidence_id'] == f"PDF30-{cid}-{index:02}" and r['source_url'] == source['url'] for r in rows)
+assert assessments['X34']['gate_decisions']['G5'] == 'Fail'
+assert assessments['X38']['gate_decisions']['G5'] == 'Fail'
+assert 'adaptive-attacker' in (discovery_root / assessments['X35']['report']).read_text(encoding='utf-8')
+assert 'not the frozen-versus-LoRA' in (discovery_root / assessments['X42']['report']).read_text(encoding='utf-8')
+
 report = {
-    'checked_date': '2026-10-29',
+    'checked_date': '2026-10-30',
     'checks_passed': True,
     'discovery_queries': len(searches),
     'discovery_result_occurrences': sum(len(s['data']['results']) for s in searches),
@@ -386,6 +404,8 @@ report = {
     'further_cv_code_routes_checked': len(cv_expansion['code_route_checks']) + len(cv_expansion['additional_code_route_checks']),
     'further_cv_bounded_data_checks': len(cv_expansion['bounded_data_checks']),
     'total_evaluated_candidates': len(assessments),
+    'pdf_import_candidates': len(pdf_import['candidates']),
+    'pdf_import_full_validation_completed': False,
     'sinhala_partial_gap_searches': len(sinhala_partial['searches']),
     'sinhala_partial_gap_search_occurrences': sinhala_partial['search_result_occurrences'],
     'sinhala_partial_gap_duplications': len(sinhala_partial['duplications']),
@@ -435,7 +455,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All thirty-three added-candidate scores are provisional. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
+    'qualification_note': 'No candidate meets every category threshold. All forty-two added-candidate scores are provisional. X34-X42 are imported proposals, not fully validated gaps; X34 and X38 fail the no-new-human-data gate as written. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))

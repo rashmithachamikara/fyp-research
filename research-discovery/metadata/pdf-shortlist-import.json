@@ -1,0 +1,1138 @@
+{
+  "date": "2026-10-30",
+  "source_pdf": "C:\\Users\\rashm\\Downloads\\FYP_Topic_Shortlist.pdf",
+  "source_pdf_sha256": "fd26f6fde042e7baea915ff6c392f3b16ad8c55c956dfdca3895dd225f05f688",
+  "source_pdf_date": "2026-10-29",
+  "source_pages": 8,
+  "scope": "Import nine ranked candidates, preserve original ranks/verdicts separately, perform bounded source checks and provisional screening. Not a full novelty or dataset audit.",
+  "track": "General empirical research; retained from user instructions",
+  "tooling": "Direct primary-source web checks. FastTrack literature connector not available in this session; no new FastTrack search counts claimed.",
+  "resource_policy": "No paid services, guaranteed 500 GPU-hours, new recordings or human raters assumed. Modest compute and existing labels only.",
+  "model_training_or_runtime_measured": false,
+  "qualified_count": 0,
+  "candidates": [
+    {
+      "id": "X34",
+      "slug": "sinhala-llm-judge-reliability",
+      "rank": 1,
+      "pages": "2–3",
+      "source_verdict": "GO",
+      "title": "Can an AI judge reliably score Sinhala answers?",
+      "area": "NLP — Sinhala answer evaluation",
+      "status": "Reject as written; needs existing human ratings",
+      "core": "Check whether AI scores agree with human ratings of Sinhala answers, then adapt a smaller judge.",
+      "problem": "A team may use an AI model to mark Sinhala answers because human marking is expensive. A fluent but wrong answer could receive a high score, while a correct answer with different wording could receive a low one. This matters for evaluating Sinhala assistants; it does not establish that automated exam marking is safe.",
+      "question": "On an existing human-rated Sinhala answer set, which judge errors come from language, answer length or presentation order, and can a small adapted judge reduce them?",
+      "gap": "The supplied PDF proposes a Sinhala human-versus-model comparison. That is a plausible investigation, but a new language alone is not enough to establish novelty. A reusable human-rated Sinhala test set has not been verified.",
+      "hypothesis": "Training a small judge on existing human scores will reduce ranking errors on unseen prompts. An alternative is that the apparent gain comes from memorising answer style or from disagreement in the human ratings.",
+      "approach": "Start with one answer type, such as short factual explanations. Compare unchanged judges under matched prompts, then train a small ranking head or adapter. Keep answer order and length controlled. Do not use the model being tested to define the correct evaluation labels.",
+      "data": "The PDF proposes 300–500 new instructions, answers from several models and three native-speaker ratings per answer. Those new ratings conflict with the no-primary-data requirement. Existing Sinhala benchmarks are leads, but their task labels are not automatically human quality ratings for generated answers.",
+      "resource": "Estimate only: cached outputs and a small ranking head can run on CPU; adapting a small open model may need an occasional GPU. Paid GPT/Gemini/Claude calls and an 8B-model training budget are not secured.",
+      "fallback": "Use a verified, already human-rated Sinhala subset if one exists. Without it, park the idea. Replacing human ratings with another AI judge would change the question and would not solve the validation problem.",
+      "team": [
+        [
+          "A: Stable judgments",
+          "Does answer order or length change the score? H: matched prompt training reduces this bias.",
+          "Train an order-invariant ranking head; compare a fixed judge and a head without order augmentation.",
+          "Paired ranking errors and order-flip rate on unseen prompts."
+        ],
+        [
+          "B: Language transfer",
+          "Does Sinhala adaptation improve agreement beyond multilingual training? H: existing Sinhala labels help on new topics.",
+          "Adapt the same base judge; compare no adaptation and equal-budget multilingual adaptation.",
+          "Human agreement by topic and script, with a Sinhala-data removal test."
+        ],
+        [
+          "C: Compact judge",
+          "Can a smaller judge retain the larger judge’s useful decisions? H: training on human labels plus teacher scores helps.",
+          "Compare a simple classifier, teacher-only distillation and mixed-label training.",
+          "Agreement versus memory and measured latency; separately count confident mistakes."
+        ]
+      ],
+      "metric": "Pairwise ranking agreement with existing human labels, alongside raw agreement, weighted kappa and rank correlation. State exactly what each agreement statistic compares; cross-language consistency is not automatically human agreement.",
+      "split": "Group by original prompt and source; keep all answer variants together. Hold out topics and answer-generating models where the existing labels allow.",
+      "baselines": "A simple feature-based ranking model, a fixed multilingual judge and a strong openly available instruction model with a fixed evaluation prompt. Model licences and exact checkpoints still need checking.",
+      "errors": "Analyse order, answer length, topic, script and human disagreement. Bootstrap by prompt and repeat training with three seeds. A useful result could show that the small judge is unreliable or that simple prompt controls explain most gains.",
+      "next": "Discuss with the supervisor whether a suitable existing human-rated Sinhala dataset can be secured. Otherwise reject the current design.",
+      "ratings": [
+        3,
+        1,
+        2,
+        4,
+        2,
+        3,
+        4,
+        3,
+        4
+      ],
+      "reasons": [
+        "Low: Sinhala-specific novelty is plausible but has not passed a duplication audit.",
+        "High confidence in the barrier: the proposed labels require new human raters.",
+        "Low: labels and free model access are unresolved.",
+        "Medium: ranking adaptation and compact-model training involve model research.",
+        "Low: the independent human reference set is missing.",
+        "Medium-low: three questions are defined but all depend on the same missing labels.",
+        "Medium: more reliable Sinhala model evaluation would be useful.",
+        "Low-medium: small models are plausible; API and GPU budgets are unconfirmed.",
+        "Medium: a side-by-side answer scoring demo is straightforward once labels exist."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "No reusable Sinhala answer-quality labels were verified."
+        ],
+        "5": [
+          "Fail",
+          "The supplied design recruits native-speaker raters; current criteria exclude new human evaluation."
+        ],
+        "6": [
+          "Unknown",
+          "Multilingual judging already exists; a distinct Sinhala failure is not demonstrated."
+        ],
+        "8": [
+          "Unknown",
+          "Independent human reference scores are not available for the proposed test."
+        ],
+        "9": [
+          "Unknown",
+          "The rating-data dependency must be removed before a 6–8 month schedule is credible."
+        ],
+        "10": [
+          "Unknown",
+          "The three investigations share an unsecured human-rating prerequisite."
+        ]
+      },
+      "sources": [
+        {
+          "title": "How Reliable is Multilingual LLM-as-a-Judge?",
+          "url": "https://aclanthology.org/2025.findings-emnlp.587/",
+          "claim": "The study reports inconsistent judgments across languages, especially low-resource languages. This does not by itself demonstrate Sinhala judge-versus-human accuracy.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "SINHALA-GLUE lead supplied in the PDF",
+          "url": "https://aclanthology.org/2025.acl-long.422/",
+          "claim": "A source-supplied benchmark lead to inspect for task fit; it is not verified here as a human-rated generated-answer set.",
+          "location": "PDF references",
+          "access": "Lead from supplied PDF; target methods/data not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x34-sinhala-llm-judge-reliability.md",
+      "weighted_score": 53.5,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Fail",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X35",
+      "slug": "mcp-detector-adaptive-robustness",
+      "rank": 2,
+      "pages": "3–4",
+      "source_verdict": "GO",
+      "title": "Do small MCP attack detectors survive unfamiliar attacks?",
+      "area": "Security ML — MCP tool screening",
+      "status": "Refine; broad adaptive-attack novelty claim overlaps prior work",
+      "core": "Test small tool-poisoning detectors on new servers and attack families; adaptive evaluation already exists.",
+      "problem": "MCP lets an AI assistant discover tools from descriptions. A poisoned description can try to redirect the assistant. A detector may score well because it recognises the wording of a training collection rather than the underlying attack.",
+      "question": "Under a fixed offline attack budget, do compact detectors still recognise poisoned tool descriptions from unseen servers and attack families, and which low-cost adaptation helps?",
+      "gap": "The PDF says adaptive testing of lightweight trained detectors is missing. That broad claim is not defensible as stated: SchemaGuard explicitly includes an adaptive-attacker split. A narrower difference in threat model, data separation or resource budget must be established from its full methods first.",
+      "hypothesis": "Training on structurally varied examples will improve recall at a fixed benign blocking rate. An alternative is that existing structure-aware detectors already solve the chosen test or that gains come from duplicate templates.",
+      "approach": "Use inert, labelled tool descriptions in an offline harness. Train a small detector; compare text-only and field-aware inputs. Evaluate on held-out servers and bounded adaptive variants. No production services, credentials or live tool execution are needed.",
+      "data": "MCPTox and the detector paper are dataset leads. The actual downloadable corpus, licence, benign tool provenance and template groups still need inspection. Public visibility of a tool registry is not a reuse licence. Keep copies of source versions and remove duplicates before splitting.",
+      "resource": "Estimate only: TF-IDF classifiers are CPU-friendly and a compact encoder should allow modest GPU adaptation. Start with hundreds of examples and a fixed attack budget. No model or attack run was performed during import.",
+      "fallback": "Run a reproducible held-out-server comparison using an already licensed corpus. If the full SchemaGuard study covers the same threat model and controls, drop this gap or identify a materially different failure before proceeding.",
+      "team": [
+        [
+          "A: Generalisation",
+          "Do field-aware representations survive new servers? H: structural inputs transfer better than flat text.",
+          "Train both on identical data; compare TF-IDF/SVC and a compact text encoder; remove field markers.",
+          "Attack recall at matched benign blocking rates on held-out servers."
+        ],
+        [
+          "B: Robust training",
+          "Does adversarial training help against a separate attack procedure? H: gains extend beyond the training templates.",
+          "Compare ordinary training and fixed-budget adversarial training; remove structural variation.",
+          "Recall on held-out attack families and adaptive variants, with attack validity counted separately."
+        ],
+        [
+          "C: Reliable blocking",
+          "Can a calibrated reject-or-review rule avoid blocking harmless tools? H: calibration helps on shifted data.",
+          "Fit a small confidence head on the unchanged base detector; compare thresholding and uncalibrated scores.",
+          "False blocks, retained attack recall and review workload at matched coverage."
+        ]
+      ],
+      "metric": "Attack recall at a validation-chosen benign blocking rate, with the full precision/recall curve and actual test false-positive rate. Do not optimise the operating point on attacks in the test set.",
+      "split": "Separate servers, source repositories and attack templates before augmentation. Reserve a separate attack generator or procedure for the final adaptive test.",
+      "baselines": "Keyword/YARA-style rules, TF-IDF with SVC, the published BERT-style detector and SchemaGuard if code/data permit. Baseline implementation and licence availability remain unresolved.",
+      "errors": "Report attacks that fail to remain valid as well as successful evasions. Bootstrap by server/template, use three training seeds and report runtime. Useful findings include simple features being sufficient or adaptive gains disappearing after deduplication.",
+      "next": "Compare the proposed split and attack budget with SchemaGuard’s full methods before choosing this scope.",
+      "ratings": [
+        2,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "High confidence in overlap: SchemaGuard already reports an adaptive-attacker split.",
+        "Low-medium: public corpus leads exist; licences and grouping are not inspected.",
+        "Medium-low: compact methods are manageable after data access is resolved.",
+        "Medium: detector learning and robust adaptation have substantial ML content.",
+        "Medium-low: metrics are clear but attack validity and deduplication need work.",
+        "Medium: representation, training and reliability can be tested against one shared base.",
+        "Medium: screening poisoned tool descriptions has a clear defensive use.",
+        "Medium: CPU baselines and compact encoders are plausible; unmeasured.",
+        "Medium: an offline tool-description screening demo is bounded."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Corpus files, reuse terms and independent benign examples have not been inspected."
+        ],
+        "6": [
+          "Unknown",
+          "SchemaGuard already tests adaptive attackers; the added contribution is not established."
+        ],
+        "8": [
+          "Unknown",
+          "Attack-validity labels and leakage-safe source/template groups are not verified."
+        ],
+        "9": [
+          "Unknown",
+          "A baseline reproduction and full nearest-neighbour comparison are still needed."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Machine Learning-Based Detection of MCP Attacks",
+          "url": "https://arxiv.org/abs/2604.10534",
+          "claim": "The abstract reports perfect binary F1 for several models on its tested data; that is not evidence of broad robustness.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "SchemaGuard",
+          "url": "https://www.techscience.com/cmc/online/detail/28645",
+          "claim": "The publisher abstract describes a compact structure-aware model and explicitly lists an adaptive-attacker evaluation split. The PDF’s broad missing-adaptive-evaluation claim needs narrowing.",
+          "location": "Publisher abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "MCPTox dataset lead",
+          "url": "https://arxiv.org/abs/2508.14925",
+          "claim": "Dataset lead from the supplied PDF; corpus licence and download contents remain unchecked.",
+          "location": "PDF references",
+          "access": "Lead from supplied PDF; target methods/data not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x35-mcp-detector-adaptive-robustness.md",
+      "weighted_score": 65.1,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X36",
+      "slug": "load-forecast-issued-weather",
+      "rank": 3,
+      "pages": "4–5",
+      "source_verdict": "GO with reframing",
+      "title": "Load forecasts using the weather forecast available at the time",
+      "area": "Time series — electricity demand and uncertainty",
+      "status": "Investigate; archive alignment and novelty unresolved",
+      "core": "Test demand forecasts and prediction intervals with real archived weather forecasts, not future observed weather.",
+      "problem": "Tomorrow’s electricity demand depends on tomorrow’s weather. At forecast time, the actual future temperature is unknown. Testing a model with the weather that later occurred can make its forecast look more useful than it would have been.",
+      "question": "When future weather inputs are replaced by archived forecasts issued before the electricity forecast, which compact adaptation best preserves demand accuracy and interval coverage?",
+      "gap": "The PDF proposes real issued-weather experiments rather than simulated errors, plus interval recalibration. Recent work already benchmarks forecasting under uncertain covariates. The precise extra contribution, including archived forecasts and uncertainty methods, still needs a full duplication search. This differs from TS2-R, which concerns meter outages.",
+      "hypothesis": "A learned correction using past weather forecast errors will improve interval sharpness at similar coverage. Alternatives are that a simple seasonal model is sufficient or that a foundation model gains nothing from weather inputs.",
+      "approach": "Start with one ERCOT load zone and a fixed day-ahead issue time. Compare no weather, observed future weather as a clearly labelled upper-bound diagnostic, simulated weather error and actual archived forecasts. Train a small correction or adapter, then calibrate intervals using past residuals only.",
+      "data": "ERCOT lists hourly load archives. Open-Meteo documents fixed 1–7-day lead-time offsets; most models start in January 2024, while GFS temperature extends to March 2021. This establishes plausible source routes, not a completed joined dataset. Check actual issue/availability times, time zones, daylight-saving changes, spatial matching and free-use terms.",
+      "resource": "Estimate only: one zone over overlapping archive years should fit ordinary storage and CPU baselines. Use one small pretrained forecasting model with occasional GPU adaptation if needed. No guaranteed 500 GPU-hours or paid API access is assumed.",
+      "fallback": "Use a shorter overlapping archive period and a simpler learned forecaster. If only observed weather or artificial forecast noise is available, do not claim realistic issued-weather evaluation.",
+      "team": [
+        [
+          "A: Weather-error adaptation",
+          "Can past forecast errors improve day-ahead inputs? H: a trained correction beats raw issued weather.",
+          "Compare raw weather, rolling bias correction and a learned correction; remove lead-time features.",
+          "Demand error attributable to weather correction under chronological evaluation."
+        ],
+        [
+          "B: Forecast adaptation",
+          "Does weather-aware small-model adaptation help? H: a covariate adapter improves on an unchanged model.",
+          "Compare seasonal/boosted-tree baselines, unchanged foundation model and equal-budget adaptation; remove weather inputs.",
+          "MAE by horizon and season at a matched training budget."
+        ],
+        [
+          "C: Reliable intervals",
+          "Can rolling calibration stay useful in unusual weather? H: past-weather-conditioned calibration improves interval scores.",
+          "Compare fixed residual intervals, rolling conformal calibration and learned residual scaling; remove conditioning.",
+          "Interval score, coverage and width, including extreme-weather periods."
+        ]
+      ],
+      "metric": "Mean absolute error for day-ahead load, with weighted interval score as the uncertainty endpoint. Report nominal versus observed coverage and interval width; wide intervals alone are not a success.",
+      "split": "Rolling chronological train/validation/test windows. Every weather input and residual used for calibration must have been available at the forecast issue time; never randomly split hours.",
+      "baselines": "Weekly seasonal naive, gradient-boosted trees, a conventional neural forecaster and Chronos-2 or another covariate-capable foundation model. Confirm the exact checkpoint, input support, licence and small-run memory first.",
+      "errors": "Analyse forecast lead time, heat/cold episodes, season and load level. Bootstrap by week rather than independent hours and repeat trainable models with three seeds. A useful negative finding could show that archived weather removes an apparent foundation-model advantage.",
+      "next": "Validate one small load–weather join with exact issue times, then compare the full methods of the nearest forecasting benchmark with the supervisor.",
+      "ratings": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "Low-medium: a concrete issued-weather contrast exists, but nearby covariate research may overlap.",
+        "Medium: both source routes are documented; the usable join and terms are not checked.",
+        "Medium: one zone and small models offer a realistic bounded route, subject to archive validation.",
+        "Medium: correction, adaptation and learned interval scaling involve training.",
+        "Medium: chronological comparisons and interval metrics directly test the proposed claim.",
+        "Medium: three connected investigations can use the same unchanged starting forecast.",
+        "Medium: weather errors matter for demand planning; this is a benchmark study.",
+        "Medium: bounded tabular data and CPU-first baselines should fit; no timing measured.",
+        "Medium: a historical forecast replay can demonstrate the research."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Source routes exist, but overlapping files and issue-time metadata were not sampled."
+        ],
+        "6": [
+          "Unknown",
+          "Real-weather and interval additions need comparison with recent covariate benchmarks."
+        ],
+        "9": [
+          "Unknown",
+          "The proposed 6–8 month scope depends on a successful bounded archive join."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Benchmarking Time Series Foundation Models for Load Forecasting Under Covariate Uncertainty",
+          "url": "https://arxiv.org/abs/2610.07232",
+          "claim": "The abstract reports that forecasting performance changes with the quality of future covariates; real issued-weather and interval details require methods review.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "Open-Meteo Previous Model Runs API",
+          "url": "https://open-meteo.com/en/docs/previous-runs-api",
+          "claim": "The documentation describes fixed lead-time offsets and model-specific archive start dates. Exact issue-time alignment remains to be checked.",
+          "location": "Documentation introduction",
+          "access": "Official documentation checked; API sample not downloaded"
+        },
+        {
+          "title": "ERCOT Hourly Load Data Archives",
+          "url": "https://www.ercot.com/gridinfo/load/load_hist",
+          "claim": "The official hourly-load archive is an access lead; files have not been joined to weather data.",
+          "location": "Archive page",
+          "access": "Official source page checked; data files not sampled"
+        }
+      ],
+      "report": "reports/gaps/x36-load-forecast-issued-weather.md",
+      "weighted_score": 73.7,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X37",
+      "slug": "alphaearth-cross-region-landslides",
+      "rank": 4,
+      "pages": "5",
+      "source_verdict": "GO with reframing",
+      "title": "Will landslide-risk models transfer to another region?",
+      "area": "Geospatial ML — landslide susceptibility",
+      "status": "Investigate; dated inventories and transfer gap unresolved",
+      "core": "Test AlphaEarth features across regions while using only imagery from before the landslide period.",
+      "problem": "A model may recognise where landslides already happened instead of estimating where future landslides are more likely. It may also learn one region’s terrain or reporting patterns and fail elsewhere. Planning requires a careful distinction between future susceptibility and post-event scar mapping.",
+      "question": "With strictly pre-event AlphaEarth features, how much landslide-susceptibility performance transfers across regions, and can small-model adaptation improve it without target test labels?",
+      "gap": "The cited AlphaEarth study already evaluates three regions. That does not establish that it trains in one and tests in another. The proposed gap concerns region-to-region transfer with time-safe features, not merely using AlphaEarth or adding Sri Lanka. Cross-region training details and newer neighbours remain unchecked.",
+      "hypothesis": "A small feature-alignment model will improve held-out-region prediction over direct transfer. Alternatives are that terrain-only predictors transfer better or that any apparent gain disappears after removing post-event information.",
+      "approach": "Define one future observation period per inventory. Use only annual features whose entire calendar year ends before that period starts. Compare conventional terrain features with AlphaEarth features, then test a small adaptation method and probability calibration.",
+      "data": "Google’s official catalogue lists 10 m, 64-dimensional annual embeddings for 2017–2024, with CC BY 4.0 terms and an Earth Engine loading route. Do not inherit the PDF’s 2025 coverage claim. Hong Kong ENTLI has an official inventory page and separate terms, but date completeness and a second compatible region are not verified. Sri Lankan NBRO data are not secured.",
+      "resource": "Estimate only: export a bounded area, cache embeddings and train random forests or small neural heads. Access to Earth Engine must be registered. Export quotas, raster volume and inventory preparation could dominate the work; avoid global downloads.",
+      "fallback": "Start with time-separated, spatially blocked Hong Kong data if dates permit. That tests local transfer only. Do not retain a cross-country claim without a second usable inventory.",
+      "team": [
+        [
+          "A: Leakage and representation",
+          "Does using pre-event features change the ranking of methods? H: same-year features inflate apparent predictive skill.",
+          "Compare terrain-only and embedding heads under matched samples; remove same-year imagery from the diagnostic comparison.",
+          "Transfer PR-AUC and the size of the time-leakage effect."
+        ],
+        [
+          "B: Region adaptation",
+          "Does small-model adaptation help an unseen region? H: source-trained alignment improves direct transfer.",
+          "Compare direct transfer, simple feature normalisation and learned alignment; remove alignment losses.",
+          "Held-out-region PR-AUC without target test labels."
+        ],
+        [
+          "C: Probability reliability",
+          "Do predicted probabilities remain meaningful elsewhere? H: source-only calibration can identify unreliable areas.",
+          "Compare raw scores, logistic calibration and a small uncertainty head; remove spatial/context features.",
+          "Brier score and risk–coverage curves, alongside discrimination."
+        ]
+      ],
+      "metric": "PR-AUC under a fixed and documented background-sampling scheme, with ROC-AUC, recall, Brier score and calibration plots. Inventory absence is not proof that a location is safe.",
+      "split": "Hold out whole regions and future periods; use spatial blocks within training regions. Keep neighbouring pixels and all representations of one event together. Explain background sampling and inventory reporting bias.",
+      "baselines": "Logistic regression and random forest on terrain factors, an AlphaEarth feature classifier and the cited deep-learning formulation if reproducible. Match labels and training budgets.",
+      "errors": "Analyse terrain, region, event date and distance to known slides. Bootstrap by spatial block/event and repeat trained heads with three seeds. Useful findings include weaker transfer after time-safe evaluation or no advantage over terrain factors.",
+      "next": "Secure two dated, reusable inventories and inspect the cited study’s cross-region protocol before presenting this as a new transfer gap.",
+      "ratings": [
+        3,
+        2,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "reasons": [
+        "Low-medium: time-safe transfer is testable; a multi-region predecessor already exists.",
+        "Low: embeddings are documented, but two compatible dated inventories are not secured.",
+        "Low-medium: compact heads are manageable; geospatial preparation is a dependency.",
+        "Medium: representation, adaptation and calibration include model-level work.",
+        "Medium-low: proposed splits are appropriate but outcome timing and negatives are unverified.",
+        "Medium: leakage, transfer learning and probability reliability give attributable results.",
+        "Medium: landslide susceptibility is consequential; no operational warning benefit is demonstrated.",
+        "Medium: bounded cached features should fit; export and storage remain unmeasured.",
+        "Medium: a research map viewer can show probabilities and limitations."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Two dated compatible inventories with usable observation periods are not secured."
+        ],
+        "6": [
+          "Unknown",
+          "The predecessor already covers three regions; the distinct transfer contribution needs methods review."
+        ],
+        "8": [
+          "Unknown",
+          "Pre-event timing, inventory completeness and background sampling are not verified."
+        ],
+        "9": [
+          "Unknown",
+          "Inventory preparation and export feasibility must be tested."
+        ]
+      },
+      "sources": [
+        {
+          "title": "AlphaEarth for Landslide Susceptibility Mapping",
+          "url": "https://arxiv.org/abs/2601.07268",
+          "claim": "The abstract evaluates AlphaEarth features across Taiwan, Hong Kong and Italy. Its abstract alone does not establish a train-one-region/test-another protocol.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "Google Satellite Embedding V1",
+          "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL",
+          "claim": "Official catalogue: annual 64-dimensional 10 m features, coverage 2017–2024, CC BY 4.0 and an Earth Engine loading route.",
+          "location": "Description, availability and terms",
+          "access": "Official catalogue checked; raster samples not downloaded"
+        },
+        {
+          "title": "Hong Kong Enhanced Natural Terrain Landslide Inventory",
+          "url": "https://data.gov.hk/en-data/dataset/hk-cedd-csu-cedd-entli",
+          "claim": "An official inventory and dictionary route exist; event dates, completeness and reuse terms need inspection.",
+          "location": "Dataset page",
+          "access": "Official source page checked; inventory not downloaded"
+        }
+      ],
+      "report": "reports/gaps/x37-alphaearth-cross-region-landslides.md",
+      "weighted_score": 65.3,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X38",
+      "slug": "sinhala-english-code-switched-asr",
+      "rank": 5,
+      "pages": "5–6",
+      "source_verdict": "GO with reframing",
+      "title": "Transcribing Sinhala speech that includes English words",
+      "area": "Speech ML — Sinhala–English transcription",
+      "status": "Reject as written; natural mixed-speech test labels missing",
+      "core": "Test whether synthetic mixed-language training improves real Sinhala–English transcription without new recordings.",
+      "problem": "A person may speak Sinhala but use an English product name or technical phrase. A transcription model can miss the English words or change the surrounding Sinhala. Ordinary Sinhala-only test results do not show whether it handles these switches.",
+      "question": "Can permitted synthetic Sinhala–English training examples improve transcription on an existing, independently transcribed natural mixed-speech test set?",
+      "gap": "Synthetic code-switching and ASR adaptation already exist. The PDF correctly treats routine LoRA fine-tuning as an ablation, not novelty. A distinct Sinhala failure and a reusable natural mixed-speech test set have not been verified.",
+      "hypothesis": "Training on well-placed language switches will reduce errors around switches on real speech. An alternative is that gains are limited to synthetic voices or reflect repeated source sentences.",
+      "approach": "First verify a natural labelled test set. Generate permitted training variants from existing text or speech with known transcripts, then adapt a small ASR model. Audit whether the chosen synthesis model actually pronounces both languages before producing a large dataset.",
+      "data": "OpenSLR SLR52 officially provides about 185K Sinhala utterances under CC BY-SA 4.0 and links transcripts and audio archives. This does not establish natural Sinhala–English test coverage. CS-FLEURS provides several synthetic/read code-switched settings, but Sinhala subset availability and its naturalness need inspection. The PDF’s proposed new natural recordings and transcription violate the current no-primary-data constraint.",
+      "resource": "Estimate only: select a small existing audio subset and adapt a compact recogniser with occasional GPU use. The licence and pronunciation quality of the proposed SinhalaVITS checkpoint are not verified. Do not assume a large paid speech API budget.",
+      "fallback": "Use an already released, licensed Sinhala–English test set if found. Testing only synthetic speech supports a synthetic benchmark claim, not improved real call transcription. Otherwise park the current scope.",
+      "team": [
+        [
+          "A: Synthetic training quality",
+          "Which switch placement transfers best? H: phrase-level switches beat arbitrary word replacement.",
+          "Train identical ASR adapters on equal-sized data variants; remove switch-aware generation.",
+          "Natural-test WER near switch points versus an unchanged recogniser."
+        ],
+        [
+          "B: Adaptation balance",
+          "Can adaptation improve English words without damaging Sinhala? H: mixed rehearsal helps.",
+          "Compare ordinary adaptation, Sinhala rehearsal and mixed rehearsal; remove rehearsal.",
+          "English-word recall and Sinhala WER on held-out speakers."
+        ],
+        [
+          "C: Confidence and compactness",
+          "Can a small confidence model identify unreliable mixed phrases? H: switch-aware confidence improves error ranking.",
+          "Train on unchanged ASR outputs; compare raw decoder confidence and a head without switch features.",
+          "Error-detection precision/recall and WER at matched retained coverage, with measured latency."
+        ]
+      ],
+      "metric": "Word error rate (WER), with separate Sinhala/English errors and error rate near switch points. Fix script, number and spelling normalisation rules before testing and publish both raw and normalised results.",
+      "split": "Hold out speakers, recordings and source text before generating variants. Keep generated descendants with their originals. The final real-speech test set must be independent of synthesis and training.",
+      "baselines": "An unchanged multilingual Whisper model, an ordinary Sinhala-adapted recogniser and matched-budget mixed-language adaptation; a conventional small CTC recogniser is the simpler comparison if usable code permits.",
+      "errors": "Analyse switch type, accent, noise and English word frequency. Bootstrap by speaker and repeat adaptation with three seeds. A useful negative result could show no synthetic-to-natural transfer or Sinhala regression.",
+      "next": "Resolve existing natural Sinhala–English test data with the supervisor; do not select a real-speech claim based only on synthetic labels.",
+      "ratings": [
+        2,
+        2,
+        2,
+        4,
+        2,
+        3,
+        4,
+        3,
+        4
+      ],
+      "reasons": [
+        "Low: code-switch synthesis and ordinary ASR adaptation already have close prior work.",
+        "Low: Sinhala speech exists, but the required independent natural mixed-language labels do not.",
+        "Low: removing new recording and labelling needs a different data route.",
+        "Medium: adaptation and confidence learning provide ML research.",
+        "Low: the real-speech reference test is not secured.",
+        "Medium-low: all three studies depend on the same missing mixed-speech labels.",
+        "Medium: mixed-language transcription has a clear practical use.",
+        "Low-medium: bounded adaptation is plausible; model size and GPU time are unmeasured.",
+        "Medium: a replay-and-transcript demo is straightforward once data exist."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "No suitable independently transcribed natural Sinhala–English test set was verified."
+        ],
+        "5": [
+          "Fail",
+          "The supplied natural test-set plan requires new recordings/transcription; current criteria exclude primary collection."
+        ],
+        "6": [
+          "Unknown",
+          "A distinct Sinhala failure beyond established code-switch synthesis is unverified."
+        ],
+        "8": [
+          "Unknown",
+          "Natural speech labels, speaker groups and switch annotations are not secured."
+        ],
+        "9": [
+          "Unknown",
+          "A no-new-recordings data route must be established."
+        ],
+        "10": [
+          "Unknown",
+          "Each investigation needs the same unavailable natural test reference."
+        ]
+      },
+      "sources": [
+        {
+          "title": "OpenSLR SLR52",
+          "url": "https://openslr.org/52/",
+          "claim": "Official source lists about 185K Sinhala utterances, transcripts, audio archives and CC BY-SA 4.0. Mixed-language test suitability is not established.",
+          "location": "Dataset summary, licence and downloads",
+          "access": "Official dataset page checked; media not downloaded"
+        },
+        {
+          "title": "CS-FLEURS",
+          "url": "https://arxiv.org/abs/2509.14161",
+          "claim": "The abstract describes multilingual code-switched read and synthetic speech. A natural conversational Sinhala test subset is not verified.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x38-sinhala-english-code-switched-asr.md",
+      "weighted_score": 53.3,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Fail",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X39",
+      "slug": "sinhala-llm-safety-scripts",
+      "rank": 6,
+      "pages": "6",
+      "source_verdict": "GO with reframing",
+      "title": "Does a Sinhala AI assistant behave differently across scripts?",
+      "area": "NLP — Sinhala model reliability and safety",
+      "status": "Refine; independent labels and script novelty unresolved",
+      "core": "Compare equivalent Sinhala, Romanised and mixed-script prompts while separating refusal from incomprehensible output.",
+      "problem": "The same Sinhala request can be typed in Sinhala letters, Latin letters or a mixture. An assistant may respond differently because of script and language understanding. A meaningless answer is not evidence that it safely understood and refused the request.",
+      "question": "On existing labelled Sinhala prompts, do equivalent script forms change meaningful refusal and harmless-answer quality, and can small-model adaptation reduce that difference?",
+      "gap": "Multilingual safety testing and orthography effects already have direct prior work. The PDF’s claim that nobody has tested all three Sinhala forms has not been verified. The useful question must go beyond a script comparison and establish that the evaluation can distinguish comprehension failures from genuine refusal.",
+      "hypothesis": "Training with paired script forms will reduce inconsistent behaviour without increasing refusals on harmless questions. An alternative is that the apparent safety improvement comes from poorer language understanding or a biased automatic judge.",
+      "approach": "Use existing permitted prompts and labels. Generate script variants only where meaning can be established using existing references. Train a small adapter and compare it with no adaptation and an existing steering method. Keep harmless prompts in the experiment to detect over-refusal.",
+      "data": "The cited multilingual-vulnerability paper and IndicJR are leads for existing prompts and labels. Their exact Sinhala coverage, licences and script-paired reference labels were not inspected. Automatic transliteration does not guarantee equivalent meaning. This design excludes new human raters; if existing labels cannot establish meaning and response quality, the study must pause or change scope.",
+      "resource": "Estimate only: use one small openly licensed model and a bounded prompt collection. Cache outputs and fit a modest adapter. API access, model licence, harmful-content handling requirements and evaluation costs still need checking with the supervisor.",
+      "fallback": "Restrict to already validated paired prompts and report only the supported behaviours. Without independent labels, do not call an automated judge’s score a measured safety guarantee.",
+      "team": [
+        [
+          "A: Script consistency",
+          "Does paired-script training reduce changes in behaviour? H: equivalent-form training improves consistency.",
+          "Adapt one model; compare ordinary training and an adapter without script pairing.",
+          "Meaningful refusal consistency and harmless-answer quality on held-out prompt families."
+        ],
+        [
+          "B: Training versus steering",
+          "Which correction preserves ordinary usefulness? H: a small adapter improves the trade-off over a steering-only baseline.",
+          "Compare equal-data adaptation, steering and unchanged weights; remove harmless-data rehearsal.",
+          "Harmful-answer rate versus over-refusal on existing independently labelled tests."
+        ],
+        [
+          "C: Decision reliability",
+          "Can a small evaluator flag incomprehensible outputs? H: a separate quality head reduces false safety conclusions.",
+          "Compare keyword refusal scoring, a fixed judge and an evaluator trained only on existing labels; remove quality features.",
+          "Evaluator agreement and error-detection coverage against independent reference labels."
+        ]
+      ],
+      "metric": "Meaningful harmful-response rate on an independently labelled test set, together with harmless over-refusal and comprehension quality. Report each script separately; a keyword refusal count alone cannot answer the question.",
+      "split": "Group all script variants, translations and paraphrases of a source prompt together. Hold out prompt families and evaluate both harmful and harmless prompts without using test labels for adaptation.",
+      "baselines": "Keyword refusal scoring as a diagnostic, unchanged open model, existing steering and matched-data adapter training. IndicJR is a necessary protocol comparison, not proof that the Sinhala case is empty.",
+      "errors": "Bootstrap by original prompt and use three training seeds. Analyse script, prompt family, coherence and automatic-judge disagreement. Useful negative findings include a supposed safety gain being explained by loss of comprehension.",
+      "next": "Inspect existing Sinhala labels and the closest script-sensitivity methods with the supervisor before claiming a new Sinhala safety gap.",
+      "ratings": [
+        2,
+        2,
+        3,
+        4,
+        2,
+        4,
+        4,
+        3,
+        4
+      ],
+      "reasons": [
+        "Low: multilingual safety and script effects are already studied.",
+        "Low: independently validated Sinhala script-pair labels are not verified.",
+        "Low-medium: small-model work is plausible but evaluation access is unresolved.",
+        "Medium: adapter training and evaluator learning supply ML depth.",
+        "Low: meaning equivalence and response quality lack an independent reference set.",
+        "Medium: consistency, corrective learning and evaluator reliability can be separately tested.",
+        "Medium: script-dependent reliability matters to Sinhala users.",
+        "Low-medium: bounded prompts help, but multiple model passes and training are unmeasured.",
+        "Medium: a controlled script-comparison viewer is feasible."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Existing Sinhala script-pair data and independent response labels are unverified."
+        ],
+        "6": [
+          "Unknown",
+          "IndicJR already studies orthography effects; the Sinhala-specific added contribution is not established."
+        ],
+        "8": [
+          "Unknown",
+          "Meaning equivalence, comprehension and refusal cannot yet be independently scored."
+        ],
+        "9": [
+          "Unknown",
+          "A bounded model run and suitable label set are prerequisites."
+        ]
+      },
+      "sources": [
+        {
+          "title": "A Framework to Assess Multilingual Vulnerabilities of LLMs",
+          "url": "https://arxiv.org/abs/2503.13081",
+          "claim": "The abstract warns that apparent low-resource vulnerabilities can include incoherent responses; refusal and comprehension need separate assessment.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "IndicJR",
+          "url": "https://arxiv.org/abs/2602.16832",
+          "claim": "The abstract explicitly studies romanised/mixed inputs and orthography effects. Sinhala-specific data coverage and methods need checking.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x39-sinhala-llm-safety-scripts.md",
+      "weighted_score": 58.6,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X40",
+      "slug": "quantised-code-model-security",
+      "rank": 7,
+      "pages": "6",
+      "source_verdict": "GO with reframing",
+      "title": "Does shrinking a code model change the security of its code?",
+      "area": "Software ML — quantisation and secure code",
+      "status": "Refine; execution-based difference and training scope unresolved",
+      "core": "Check low-precision code models with security tests and see whether a small secure-coding adaptation survives compression.",
+      "problem": "Quantisation stores a model’s numbers using fewer bits so it needs less memory. Code may still pass ordinary tests while mishandling a security-sensitive case or naming a package that does not exist. Developers need evidence about these trade-offs, not an assumption that smaller means unsafe.",
+      "question": "At matched model and decoding settings, does 3–4-bit quantisation change security-test outcomes, and does a small secure-coding adaptation preserve its benefit after quantisation?",
+      "gap": "Quantize with Confidence? already compares six quantisation methods and reports stable security attributes. The PDF proposes execution-based security tests and adaptation retention as narrower contrasts. Whether those are genuinely absent from prior methods has not been checked. Do not claim quantisation causes vulnerabilities before testing.",
+      "hypothesis": "Some security behaviours are more sensitive to quantisation than ordinary correctness, and adaptation may reduce this difference. An alternative is that security remains stable and differences are mostly sampling noise.",
+      "approach": "Start with one small code-model family and Python only. Compare full precision with two quantisers at fixed decoding settings. Train a small secure-coding adapter on separate existing examples, then quantise it. Treat package-existence errors as a related secondary outcome, not a substitute for security tests.",
+      "data": "CWEval and BaxBench are source-supplied test-suite leads; their licences, test isolation and exact supported model tasks are not inspected. Version and deduplicate training and test tasks. Package checks need a fixed registry snapshot: existence does not establish that a package is safe or appropriate.",
+      "resource": "Estimate only: inference with a small model is plausible on modest hardware, but repeated code tests and adapter training may be expensive. A full-precision comparison must fit the available device. Generated code should be evaluated in an isolated, resource-limited test environment without credentials or network access.",
+      "fallback": "Use a smaller model, fewer quantisers and one verified test suite. If model training cannot be included, the original inference-only design needs module approval or a different scope; a comparison app alone does not meet the modelling requirement.",
+      "team": [
+        [
+          "A: Quantisation effects",
+          "Does quantisation change security beyond correctness? H: paired security failures vary by quantiser.",
+          "Compare full precision and matched quantised checkpoints; keep prompts and decoding fixed.",
+          "Paired changes in secure pass rate and functional pass rate."
+        ],
+        [
+          "B: Secure adaptation retention",
+          "Does learned secure behaviour survive quantisation? H: mixed secure/ordinary training preserves both.",
+          "Train a small adapter; compare ordinary adaptation and a model without secure examples.",
+          "Secure pass rate after quantisation and ordinary correctness retention."
+        ],
+        [
+          "C: Error prediction",
+          "Can a small predictor flag quantisation-sensitive outputs? H: learned confidence helps at fixed review coverage.",
+          "Train a lightweight risk head on separate generated examples; compare raw confidence and a head without package/test features.",
+          "Security-error detection at matched retained coverage; include latency and memory."
+        ]
+      ],
+      "metric": "Secure functional pass rate under fixed decoding and test budgets, accompanied by ordinary pass@1. Report paired task-level changes; a static scanner score is a separate diagnostic.",
+      "split": "Deduplicate by task/template and keep training solutions separate from held-out security tests. Fix model revision, quantiser version, decoding seeds and package-registry date.",
+      "baselines": "Full-precision unchanged model, two post-training quantisation methods, static analysis and the nearest quantisation study’s protocol. Security-trained adaptation is compared with equal-budget ordinary adaptation.",
+      "errors": "Use paired bootstrap intervals by task and multiple decoding/training seeds. Analyse vulnerability family, task difficulty and package errors separately. Useful findings include stable security, scanner/test disagreement or secure adaptation failing after compression.",
+      "next": "Inspect the full quantisation paper and one executable benchmark before agreeing the added training question with the supervisor.",
+      "ratings": [
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4
+      ],
+      "reasons": [
+        "Low: quantisation and security already have a direct recent empirical predecessor.",
+        "Low-medium: public benchmark leads exist; access terms and test content remain unchecked.",
+        "Medium-low: Python and a small model bound the work, but secure execution adds effort.",
+        "Medium: the retained design includes adapter and risk-head training; inference alone would not suffice.",
+        "Medium: paired execution tests address the proposed difference directly, if verified.",
+        "Medium: sensitivity, adaptation retention and error prediction support distinct results.",
+        "Medium: code security on limited hardware is a clear concern.",
+        "Low-medium: full-precision baselines and repeated sandbox tests are unmeasured.",
+        "Medium: a fixed-task comparison view can demonstrate results."
+      ],
+      "gates": {
+        "3": [
+          "Unknown",
+          "The supplied design is inference-only; the added trainable extension needs a feasible data/model plan."
+        ],
+        "4": [
+          "Unknown",
+          "Benchmark files, training data, licences and executable test routes have not been inspected."
+        ],
+        "6": [
+          "Unknown",
+          "Execution-test and adaptation-retention differences require a full nearest-neighbour check."
+        ],
+        "9": [
+          "Unknown",
+          "Full-precision baseline memory and secure test execution need a bounded feasibility check."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Quantize with Confidence?",
+          "url": "https://arxiv.org/abs/2607.14181",
+          "claim": "The abstract reports six quantisation methods and stable security attributes. This is direct prior work; it does not establish the proposed execution-test gap.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "Earlier quantisation study lead",
+          "url": "https://arxiv.org/abs/2507.09665",
+          "claim": "Additional predecessor supplied in the PDF; precise overlap is not reviewed here.",
+          "location": "PDF references",
+          "access": "Lead from supplied PDF; target methods/data not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x40-quantised-code-model-security.md",
+      "weighted_score": 66.5,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Unknown",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X41",
+      "slug": "aerial-scene-vocabulary-filtering",
+      "rank": 8,
+      "pages": "6",
+      "source_verdict": "GO with reframing",
+      "title": "Choosing useful object names before searching aerial images",
+      "area": "Computer vision — open-vocabulary aerial detection",
+      "status": "Investigate; learned filtering gap and dataset route unresolved",
+      "core": "Learn a per-image shortlist of possible object classes without using the correct test labels to choose it.",
+      "problem": "An open-vocabulary detector looks for objects described by words. Searching an aerial image for many similar class names can create false detections. Using the known correct classes makes the task easier, but those answers are not available for a new image.",
+      "question": "Can a learned image-based class shortlist reduce false detections at a fixed vocabulary budget without hiding rare or unfamiliar aerial objects?",
+      "gap": "The cited evaluation reports serious aerial transfer problems and compares vocabulary settings. The proposed investigation is a learned, deployable vocabulary selector rather than an oracle that already knows the labels. Scene filtering and few-shot adaptation are not automatically new; SCORE, DisDop and RS-MPOD from the PDF need methods comparisons.",
+      "hypothesis": "A small scene-aware selector will reduce semantic confusion while retaining rare-class recall. An alternative is that it improves precision only by excluding difficult objects from consideration.",
+      "approach": "Freeze one detector initially and train a small class-ranking head using training images only. Pass the same number of candidate names to each detector. Then test a limited few-shot adaptation on separate training examples. Include a full-vocabulary run so the selector cannot hide its missed classes.",
+      "data": "The cited paper names LAE-80C. Its downloadable images, licence, annotation mapping and train/test groups have not been inspected. A second aerial benchmark is a fallback lead only after class mapping and reuse terms are verified. True classes in test images may be used for scoring, never for selecting the allowed vocabulary.",
+      "resource": "Estimate only: cached image features and a small selector should limit training, but detector inference at high aerial resolution may be costly. Start with one model and a bounded image subset; measure peak memory before adding methods.",
+      "fallback": "Use a fixed training-derived class prior or coarse scene classifier at the same vocabulary budget. If rare-class recall collapses or close methods already cover the idea, abandon the proposed selector contribution.",
+      "team": [
+        [
+          "A: Learned class shortlist",
+          "Can scene features select classes without an oracle? H: a trained selector beats a fixed frequency prior.",
+          "Compare full vocabulary, random/frequency shortlists and a learned head; remove scene features.",
+          "Detection AP and rare-class recall at the same vocabulary budget."
+        ],
+        [
+          "B: Confusion-aware decisions",
+          "Can calibration reduce similar-name false positives? H: learned confusion correction helps beyond filtering.",
+          "Train on unchanged detector outputs; compare raw scores and classwise thresholds; remove confusion features.",
+          "False-positive reduction at matched object recall, including classes omitted by the selector."
+        ],
+        [
+          "C: Few-shot recovery",
+          "Can small adaptation recover rare classes missed by filtering? H: a limited adapter helps on held-out scenes.",
+          "Compare no adaptation and equal-budget few-shot adaptation; remove rare-class reweighting.",
+          "AP by label budget and rare class, with vocabulary settings held fixed."
+        ]
+      ],
+      "metric": "Bounding-box AP over the full target class set, with rare-class recall and false detections per image. Also report class-shortlist recall so omitted classes remain visible in the results.",
+      "split": "Hold out scenes, geographic areas and overlapping source tiles where metadata permit. Keep few-shot examples in training only; explicitly separate known-class and genuinely unseen-class claims.",
+      "baselines": "A conventional closed-set detector as a reference, OWLv2 or Grounding DINO with full vocabulary, fixed class priors and the nearest scene-filtering approaches. An oracle vocabulary is an upper-bound diagnostic only.",
+      "errors": "Analyse rare objects, similar class names, object size and unseen scenes. Bootstrap by scene and use three training seeds. Useful findings include no improvement over a fixed prior or a precision gain purchased by lost recall.",
+      "next": "Inspect LAE-80C access and the nearest filtering methods before asking the supervisor to approve a specific selector experiment.",
+      "ratings": [
+        3,
+        2,
+        3,
+        4,
+        3,
+        4,
+        4,
+        3,
+        4
+      ],
+      "reasons": [
+        "Low-medium: a clear non-oracle contrast exists, but recent filtering methods may overlap.",
+        "Low: dataset download, rights and grouping are not inspected.",
+        "Medium-low: a small selector is manageable; detector reproduction needs checking.",
+        "Medium: selection, calibration and few-shot adaptation involve learned methods.",
+        "Medium-low: fair full-class metrics are specified but grouping metadata are unverified.",
+        "Medium: selector, correction and few-shot recovery can each use unchanged base outputs.",
+        "Medium: reducing aerial semantic confusion is useful; no deployment improvement is established.",
+        "Low-medium: cached features help, but high-resolution detector cost is unmeasured.",
+        "Medium: showing selected classes and missed objects gives a bounded demonstration."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "LAE-80C images, labels, licence and scene grouping have not been inspected."
+        ],
+        "6": [
+          "Unknown",
+          "SCORE, DisDop and RS-MPOD require comparison; future work does not prove novelty."
+        ],
+        "8": [
+          "Unknown",
+          "Geographic groups and full target-class scoring require dataset inspection."
+        ],
+        "9": [
+          "Unknown",
+          "A small detector/selector reproduction must establish runtime and data preparation effort."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Do Open-Vocabulary Detectors Transfer to Aerial Imagery?",
+          "url": "https://arxiv.org/abs/2601.22164",
+          "claim": "The abstract reports strong semantic confusion and vocabulary-sensitive performance on aerial images. Oracle vocabulary results do not demonstrate an achievable learned-selector gain.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        },
+        {
+          "title": "Nearest methods and data leads in supplied shortlist",
+          "url": "file:///C:/Users/rashm/Downloads/FYP_Topic_Shortlist.pdf",
+          "claim": "The PDF names SCORE, DisDop, RS-MPOD and LAE-80C; these leads need exact records, methods and release terms.",
+          "location": "Page 6",
+          "access": "Supplied PDF read; named method/data releases not independently inspected"
+        }
+      ],
+      "report": "reports/gaps/x41-aerial-scene-vocabulary-filtering.md",
+      "weighted_score": 64.3,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    },
+    {
+      "id": "X42",
+      "slug": "geospatial-segmentation-abstention",
+      "rank": 9,
+      "pages": "6",
+      "source_verdict": "Weakest; topic to avoid",
+      "title": "Knowing when a satellite segmentation model should abstain",
+      "area": "Computer vision — geospatial segmentation reliability",
+      "status": "Defer; major overlap and a citation mismatch",
+      "core": "Test reliable abstention after adapting a geospatial model; existing work already covers much of this question.",
+      "problem": "A segmentation model marks pixels such as flooded ground or a landslide scar. In an unfamiliar region, confident errors can be hard to recognise. Abstaining means explicitly leaving some predictions undecided; it does not make the remaining map automatically safe.",
+      "question": "After model adaptation, can a small reliability model identify errors in a new region better than standard uncertainty scores at the same retained mapping coverage?",
+      "gap": "The supplied PDF already places this among topics to avoid. SHRUG-FM describes uncertainty, out-of-distribution detection and selective prediction for flood and landslide segmentation, which strongly overlaps the broad idea. Also, arXiv:2606.14081 is a Clay-CNN landslide segmentation study, not the frozen-versus-LoRA calibration study described in the PDF. A distinct remaining contribution is not established.",
+      "hypothesis": "A reliability head trained on source-region errors could improve error ranking after adaptation. Alternatives are that standard uncertainty already suffices or that calibration fails under geographic shift.",
+      "approach": "If reopened, choose one task, such as post-event landslide segmentation. Compare a conventional model, a frozen foundation encoder with a learned decoder and a small adapter. Evaluate standard uncertainty before proposing another head. Do not expand simultaneously to floods, fires and landslides.",
+      "data": "Landslide4Sense is named by the Clay-CNN paper, but its actual files, reuse terms and event/geographic group metadata have not been inspected in this import. Suitable masks and groups are prerequisites. X02 also concerns satellite confidence, but this candidate concerns pixel-level hazard segmentation rather than land-cover classification.",
+      "resource": "Estimate only: one task and cropped images may fit occasional GPU access. Multiple full-fine-tuning runs could exceed available memory and time. Full-model adaptation is an optional comparison only after a measured pilot.",
+      "fallback": "Keep the idea parked unless full-method comparison exposes a specific unanswered failure. A narrow repeat of frozen versus adapter versus full fine-tuning is not automatically enough novelty for the project.",
+      "team": [
+        [
+          "A: Adaptation and confidence",
+          "Does adaptation change error confidence? H: the best mask model need not have the best error ranking.",
+          "Compare frozen decoder training and limited adaptation with unchanged data; remove adaptation.",
+          "Mask F1/IoU and error-ranking quality in held-out regions."
+        ],
+        [
+          "B: Error prediction",
+          "Does a small reliability head add value beyond standard scores? H: learned error prediction improves selective risk.",
+          "Compare entropy, ensemble uncertainty and a trained head; remove context features.",
+          "Risk–coverage curves against the same segmentation outputs."
+        ],
+        [
+          "C: Calibration under shift",
+          "Does calibration survive a new event or region? H: spatially grouped calibration transfers better than random pixels.",
+          "Compare no calibration, temperature scaling and learned scaling; remove spatial grouping.",
+          "Calibration error and retained-region error, at matched coverage."
+        ]
+      ],
+      "metric": "Area under the risk–coverage curve with full-coverage segmentation F1/IoU and class-specific recall. Report how many positive hazard pixels are rejected; abstention can hide the difficult cases.",
+      "split": "Hold out whole geographic areas/events. Separate training, calibration and testing by source tile/event; nearby overlapping crops cannot appear on both sides.",
+      "baselines": "A conventional U-Net, a foundation-model decoder/adapter baseline, entropy and ensemble uncertainty, and SHRUG-FM where its code permits. Exact code and calibration-method availability remain unchecked.",
+      "errors": "Bootstrap by event/region and repeat training with three seeds. Analyse small affected areas, boundaries and region shift. Useful negative findings include standard entropy matching the trained head or adaptation improving masks while harming confidence.",
+      "next": "Keep this candidate deferred and discuss it with the supervisor only if a full nearest-neighbour comparison reveals a specific unanswered question.",
+      "ratings": [
+        1,
+        2,
+        2,
+        4,
+        3,
+        3,
+        4,
+        2,
+        4
+      ],
+      "reasons": [
+        "Medium-high: SHRUG-FM strongly overlaps the broad proposal; the other citation is misdescribed.",
+        "Low: masks, licences and geographic groups are not inspected.",
+        "Low: a demanding training comparison remains without a precise contribution.",
+        "Medium: segmentation adaptation and error-model training have ML depth.",
+        "Medium-low: metrics are suitable, but data grouping and baseline code remain unresolved.",
+        "Low-medium: three questions can be framed, but substantial novelty for the shared scope is weak.",
+        "Medium: reliable hazard maps matter; this is not an operational warning study.",
+        "Low: repeated segmentation/full-model adaptation may exceed modest resources.",
+        "Medium: an uncertainty-overlay viewer is feasible once models work."
+      ],
+      "gates": {
+        "4": [
+          "Unknown",
+          "Reusable masks and geographic/event splits have not been inspected."
+        ],
+        "6": [
+          "Unknown",
+          "SHRUG-FM covers much of the proposal; no distinct remaining gap is established."
+        ],
+        "8": [
+          "Unknown",
+          "Region/event labels and calibration/test separation are not verified."
+        ],
+        "9": [
+          "Unknown",
+          "The scope and training budget remain unresolved."
+        ],
+        "10": [
+          "Unknown",
+          "The three questions may overlap too much once existing reliability work is reproduced."
+        ],
+        "11": [
+          "Unknown",
+          "Repeated full-model adaptation has not been shown to fit available hardware."
+        ]
+      },
+      "sources": [
+        {
+          "title": "SHRUG-FM: Reliability-Aware Foundation Models for Earth Observation",
+          "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-9940.html",
+          "claim": "This conference abstract explicitly covers uncertainty, rejection and selective prediction for flood and landslide segmentation. It is strong overlap evidence, not a full methods review.",
+          "location": "Conference abstract",
+          "access": "Primary conference abstract checked; full methods/code not reviewed"
+        },
+        {
+          "title": "Clay-CNN Hybrids",
+          "url": "https://arxiv.org/abs/2606.14081",
+          "claim": "The actual abstract concerns Clay-assisted landslide segmentation and LoRA, not the calibration comparison attributed to this identifier in the supplied PDF.",
+          "location": "Abstract",
+          "access": "Primary abstract checked; methods not reviewed"
+        }
+      ],
+      "report": "reports/gaps/x42-geospatial-segmentation-abstention.md",
+      "weighted_score": 51.4,
+      "qualified": false,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Unknown",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "source_pdf_claims_independently_certified": false
+    }
+  ],
+  "corrections": [
+    "X35: SchemaGuard explicitly reports an adaptive-attacker split, contradicting the broad missing-adaptive-evaluation claim.",
+    "X37: official embedding catalogue checked here lists calendar years 2017–2024, not 2017–2025.",
+    "X38: OpenSLR SLR52 licence verified at the official page as CC BY-SA 4.0; natural code-switched test coverage not verified.",
+    "X42: arXiv:2606.14081 is Clay-CNN Hybrids, not the claimed frozen-versus-LoRA calibration study."
+  ],
+  "not_imported_as_new_candidates": [
+    "Excluded alternatives in the PDF are not newly proposed ranked candidates: generic open-vocabulary segmentation, lab-to-field plant disease, clinical Sinhala/Tamil NLP, satellite rainfall nowcasting, generic Sinhala deepfake detection and road/SWOT group-allocation notes.",
+    "Existing road-damage and Sinhala-deepfake candidates are retained; the supplied PDF is not an instruction to delete them."
+  ],
+  "remaining_work": "For any selected idea: full nearest-neighbour methods review, exact dataset/model licence and schema checks, then one bounded baseline reproduction and supervisor review."
+}

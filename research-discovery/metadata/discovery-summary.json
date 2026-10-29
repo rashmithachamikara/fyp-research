@@ -1,5 +1,5 @@
 {
-  "evidence_cutoff": "2026-10-29",
+  "evidence_cutoff": "2026-10-30",
   "track": "General empirical AI/ML; focused discovery, not systematic review",
   "work_completed": {
     "discovery_queries": 8,
@@ -4434,6 +4434,1083 @@
       ],
       "raw_weighted_score": 60.8,
       "weighted_score": 62
+    },
+    "X34": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x34-sinhala-llm-judge-reliability.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Fail",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "No reusable Sinhala answer-quality labels were verified.",
+        "G5": "The supplied design recruits native-speaker raters; current criteria exclude new human evaluation.",
+        "G6": "Multilingual judging already exists; a distinct Sinhala failure is not demonstrated.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Independent human reference scores are not available for the proposed test.",
+        "G9": "The rating-data dependency must be removed before a 6–8 month schedule is credible.",
+        "G10": "The three investigations share an unsecured human-rating prerequisite.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G10",
+        "G12"
+      ],
+      "failed_gates": [
+        "G5"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Evaluation/reproducibility",
+        "Three-member structure"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low: Sinhala-specific novelty is plausible but has not passed a duplication audit."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 1,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "High confidence in the barrier: the proposed labels require new human raters."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: labels and free model access are unresolved."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: ranking adaptation and compact-model training involve model research."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 2,
+          "weighted_points": 4.8,
+          "confidence_and_reason": "Low: the independent human reference set is missing."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: three questions are defined but all depend on the same missing labels."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: more reliable Sinhala model evaluation would be useful."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low-medium: small models are plausible; API and GPU budgets are unconfirmed."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a side-by-side answer scoring demo is straightforward once labels exist."
+        }
+      ],
+      "raw_weighted_score": 52.4,
+      "weighted_score": 53.5
+    },
+    "X35": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x35-mcp-detector-adaptive-robustness.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "Corpus files, reuse terms and independent benign examples have not been inspected.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "SchemaGuard already tests adaptive attackers; the added contribution is not established.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Attack-validity labels and leakage-safe source/template groups are not verified.",
+        "G9": "A baseline reproduction and full nearest-neighbour comparison are still needed.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "High confidence in overlap: SchemaGuard already reports an adaptive-attacker split."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Low-medium: public corpus leads exist; licences and grouping are not inspected."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: compact methods are manageable after data access is resolved."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: detector learning and robust adaptation have substantial ML content."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: metrics are clear but attack validity and deduplication need work."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: representation, training and reliability can be tested against one shared base."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: screening poisoned tool descriptions has a clear defensive use."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: CPU baselines and compact encoders are plausible; unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: an offline tool-description screening demo is bounded."
+        }
+      ],
+      "raw_weighted_score": 63.8,
+      "weighted_score": 65.1
+    },
+    "X36": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x36-load-forecast-issued-weather.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "Source routes exist, but overlapping files and issue-time metadata were not sampled.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "Real-weather and interval additions need comparison with recent covariate benchmarks.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Correct forecast issue-time alignment and leakage-safe joins have not yet been demonstrated.",
+        "G9": "The proposed 6–8 month scope depends on a successful bounded archive join.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: a concrete issued-weather contrast exists, but nearby covariate research may overlap."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Medium: both source routes are documented; the usable join and terms are not checked."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 4,
+          "weighted_points": 11.2,
+          "confidence_and_reason": "Medium: one zone and small models offer a realistic bounded route, subject to archive validation."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: correction, adaptation and learned interval scaling involve training."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: chronological comparisons and interval metrics directly test the proposed claim."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: three connected investigations can use the same unchanged starting forecast."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: weather errors matter for demand planning; this is a benchmark study."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: bounded tabular data and CPU-first baselines should fit; no timing measured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a historical forecast replay can demonstrate the research."
+        }
+      ],
+      "raw_weighted_score": 72.2,
+      "weighted_score": 73.7
+    },
+    "X37": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x37-alphaearth-cross-region-landslides.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "Two dated compatible inventories with usable observation periods are not secured.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "The predecessor already covers three regions; the distinct transfer contribution needs methods review.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Pre-event timing, inventory completeness and background sampling are not verified.",
+        "G9": "Inventory preparation and export feasibility must be tested.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: time-safe transfer is testable; a multi-region predecessor already exists."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: embeddings are documented, but two compatible dated inventories are not secured."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low-medium: compact heads are manageable; geospatial preparation is a dependency."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: representation, adaptation and calibration include model-level work."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: proposed splits are appropriate but outcome timing and negatives are unverified."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: leakage, transfer learning and probability reliability give attributable results."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: landslide susceptibility is consequential; no operational warning benefit is demonstrated."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: bounded cached features should fit; export and storage remain unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a research map viewer can show probabilities and limitations."
+        }
+      ],
+      "raw_weighted_score": 64.0,
+      "weighted_score": 65.3
+    },
+    "X38": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x38-sinhala-english-code-switched-asr.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Fail",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "No suitable independently transcribed natural Sinhala–English test set was verified.",
+        "G5": "The supplied natural test-set plan requires new recordings/transcription; current criteria exclude primary collection.",
+        "G6": "A distinct Sinhala failure beyond established code-switch synthesis is unverified.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Natural speech labels, speaker groups and switch annotations are not secured.",
+        "G9": "A no-new-recordings data route must be established.",
+        "G10": "Each investigation needs the same unavailable natural test reference.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G10",
+        "G12"
+      ],
+      "failed_gates": [
+        "G5"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Evaluation/reproducibility",
+        "Three-member structure"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: code-switch synthesis and ordinary ASR adaptation already have close prior work."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: Sinhala speech exists, but the required independent natural mixed-language labels do not."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: removing new recording and labelling needs a different data route."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: adaptation and confidence learning provide ML research."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 2,
+          "weighted_points": 4.8,
+          "confidence_and_reason": "Low: the real-speech reference test is not secured."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: all three studies depend on the same missing mixed-speech labels."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: mixed-language transcription has a clear practical use."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low-medium: bounded adaptation is plausible; model size and GPU time are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a replay-and-transcript demo is straightforward once data exist."
+        }
+      ],
+      "raw_weighted_score": 52.2,
+      "weighted_score": 53.3
+    },
+    "X39": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x39-sinhala-llm-safety-scripts.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "Existing Sinhala script-pair data and independent response labels are unverified.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "IndicJR already studies orthography effects; the Sinhala-specific added contribution is not established.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Meaning equivalence, comprehension and refusal cannot yet be independently scored.",
+        "G9": "A bounded model run and suitable label set are prerequisites.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Evaluation/reproducibility"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: multilingual safety and script effects are already studied."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: independently validated Sinhala script-pair labels are not verified."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Low-medium: small-model work is plausible but evaluation access is unresolved."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: adapter training and evaluator learning supply ML depth."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 2,
+          "weighted_points": 4.8,
+          "confidence_and_reason": "Low: meaning equivalence and response quality lack an independent reference set."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: consistency, corrective learning and evaluator reliability can be separately tested."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: script-dependent reliability matters to Sinhala users."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low-medium: bounded prompts help, but multiple model passes and training are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a controlled script-comparison viewer is feasible."
+        }
+      ],
+      "raw_weighted_score": 57.4,
+      "weighted_score": 58.6
+    },
+    "X40": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x40-quantised-code-model-security.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Unknown",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The supplied design is inference-only; the added trainable extension needs a feasible data/model plan.",
+        "G4": "Benchmark files, training data, licences and executable test routes have not been inspected.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "Execution-test and adaptation-retention differences require a full nearest-neighbour check.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Executable security tests and independent task groups have not been inspected.",
+        "G9": "Full-precision baseline memory and secure test execution need a bounded feasibility check.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G3",
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: quantisation and security already have a direct recent empirical predecessor."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 3,
+          "weighted_points": 9.0,
+          "confidence_and_reason": "Low-medium: public benchmark leads exist; access terms and test content remain unchecked."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: Python and a small model bound the work, but secure execution adds effort."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: the retained design includes adapter and risk-head training; inference alone would not suffice."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: paired execution tests address the proposed difference directly, if verified."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: sensitivity, adaptation retention and error prediction support distinct results."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: code security on limited hardware is a clear concern."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low-medium: full-precision baselines and repeated sandbox tests are unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: a fixed-task comparison view can demonstrate results."
+        }
+      ],
+      "raw_weighted_score": 65.2,
+      "weighted_score": 66.5
+    },
+    "X41": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x41-aerial-scene-vocabulary-filtering.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Pass",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "LAE-80C images, labels, licence and scene grouping have not been inspected.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "SCORE, DisDop and RS-MPOD require comparison; future work does not prove novelty.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Geographic groups and full target-class scoring require dataset inspection.",
+        "G9": "A small detector/selector reproduction must establish runtime and data preparation effort.",
+        "G10": "Three connected research questions have separate comparisons and attributable results.",
+        "G11": "The retained scope starts with small models or cached features and no dedicated hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 3,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Low-medium: a clear non-oracle contrast exists, but recent filtering methods may overlap."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: dataset download, rights and grouping are not inspected."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 3,
+          "weighted_points": 8.4,
+          "confidence_and_reason": "Medium-low: a small selector is manageable; detector reproduction needs checking."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: selection, calibration and few-shot adaptation involve learned methods."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: fair full-class metrics are specified but grouping metadata are unverified."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: selector, correction and few-shot recovery can each use unchanged base outputs."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: reducing aerial semantic confusion is useful; no deployment improvement is established."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 3,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low-medium: cached features help, but high-resolution detector cost is unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: showing selected classes and missed objects gives a bounded demonstration."
+        }
+      ],
+      "raw_weighted_score": 63.0,
+      "weighted_score": 64.3
+    },
+    "X42": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional imported proposal screen; not a completed novelty validation",
+      "report": "reports/gaps/x42-geospatial-segmentation-abstention.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Pass",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Unknown",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Section 1 defines a concrete failure and affected users; its local magnitude is not measured.",
+        "G2": "The shared question concerns learned predictions rather than only an interface.",
+        "G3": "The bounded design includes training or systematic model adaptation.",
+        "G4": "Reusable masks and geographic/event splits have not been inspected.",
+        "G5": "The retained plan uses existing labels and excludes new participants or expert labelling.",
+        "G6": "SHRUG-FM covers much of the proposal; no distinct remaining gap is established.",
+        "G7": "The proposal specifies learning experiments, comparisons and removal tests.",
+        "G8": "Region/event labels and calibration/test separation are not verified.",
+        "G9": "The scope and training budget remain unresolved.",
+        "G10": "The three questions may overlap too much once existing reliability work is reproduced.",
+        "G11": "Repeated full-model adaptation has not been shown to fit available hardware.",
+        "G12": "The exact combination of data, model and derivative-output reuse terms is not verified.",
+        "G13": "Section 7 identifies useful findings even if the proposed method does not improve performance."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G6",
+        "G8",
+        "G9",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "failed_gates": [],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Three-member structure",
+        "Compute/storage"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 1,
+          "weighted_points": 3.2,
+          "confidence_and_reason": "Medium-high: SHRUG-FM strongly overlaps the broad proposal; the other citation is misdescribed."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 2,
+          "weighted_points": 6.0,
+          "confidence_and_reason": "Low: masks, licences and geographic groups are not inspected."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: a demanding training comparison remains without a precise contribution."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: segmentation adaptation and error-model training have ML depth."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium-low: metrics are suitable, but data grouping and baseline code remain unresolved."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Low-medium: three questions can be framed, but substantial novelty for the shared scope is weak."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 4,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Medium: reliable hazard maps matter; this is not an operational warning study."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 2,
+          "weighted_points": 2.0,
+          "confidence_and_reason": "Low: repeated segmentation/full-model adaptation may exceed modest resources."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: an uncertainty-overlay viewer is feasible once models work."
+        }
+      ],
+      "raw_weighted_score": 50.4,
+      "weighted_score": 51.4
     }
   },
   "scoring_policy": {
@@ -4445,7 +5522,8 @@
     "precision_note": "Decimal totals reflect weighted arithmetic, not measurement precision or statistical certainty.",
     "scope": "Original three assessments retained; twenty additional candidate opportunities assessed on 28 October, including five conditional Sri Lankan elephant opportunities. No model training or timing experiment.",
     "rubric_change": "Removed the 2-weight ethics/responsible-use scoring category; retained the other nine relative weights.",
-    "normalisation": "sum((rating / 5) * weight) / 98 * 100; round only the final total to one decimal place."
+    "normalisation": "sum((rating / 5) * weight) / 98 * 100; round only the final total to one decimal place.",
+    "pdf_import_scope": "Nine user-supplied ranked ideas imported on 30 October 2026; provisional comparison scores only. Failed and unknown gates remain disqualifying. Earlier assessments unchanged."
   },
   "assessment_workflow_support": {
     "skill": "scientific-critical-thinking",
@@ -4577,5 +5655,22 @@
       "novel_method_established": false,
       "sinhala_specific_failure_demonstrated": false
     }
+  },
+  "pdf_shortlist_import": {
+    "date": "2026-10-30",
+    "record": "pdf-shortlist-import.json",
+    "candidate_ids": [
+      "X34",
+      "X35",
+      "X36",
+      "X37",
+      "X38",
+      "X39",
+      "X40",
+      "X41",
+      "X42"
+    ],
+    "qualified_count": 0,
+    "full_validation_completed": false
   }
 }
