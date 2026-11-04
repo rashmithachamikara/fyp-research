@@ -44,7 +44,8 @@
     "dataset_checks": "source-checks/",
     "additional_discovery": "expansion-records.json",
     "further_cv_discovery": "cv-expansion-records.json",
-    "elephant_discovery": "elephant-expansion-records.json"
+    "elephant_discovery": "elephant-expansion-records.json",
+    "ancient_sri_lankan_coins": "ancient-sri-lankan-coin-checks.json"
   },
   "screened_candidates": [
     {
@@ -5514,7 +5515,7 @@
     },
     "X43": {
       "scored_date": "2026-10-30",
-      "mode": "Provisional Sri Lanka practical opportunity; bounded source and data checks, no baseline run",
+      "mode": "Provisional parked candidate; current formulation overlaps established OCR correction and needs redesign",
       "report": "reports/gaps/x43-sinhala-ocr-careful-correction.md",
       "weight_total": 98,
       "gate_decisions": {
@@ -5523,7 +5524,7 @@
         "G3": "Pass",
         "G4": "Pass",
         "G5": "Pass",
-        "G6": "Unknown",
+        "G6": "Fail",
         "G7": "Pass",
         "G8": "Pass",
         "G9": "Unknown",
@@ -5538,7 +5539,7 @@
         "G3": "All three investigations train or systematically adapt models.",
         "G4": "The official release and a bounded preview expose images, reference text and document-group fields.",
         "G5": "Evaluation uses existing reference labels or aggregate counts; no new raters or recordings.",
-        "G6": "OCR post-processing and confidence-constrained editing already exist; the specific added contribution is not established.",
+        "G6": "The current formulation repeats established correction, error detection and copying approaches without a demonstrated unanswered failure. This rejects the current wording, not all Sinhala OCR research.",
         "G7": "The research is tested through comparisons and removal tests; the interface is supporting work.",
         "G8": "Existing reference text and document IDs support the specified objective comparisons.",
         "G9": "A small OCR/correction run must establish workload and whether useful errors remain.",
@@ -5548,7 +5549,6 @@
         "G13": "Simple baselines winning or a proposed method failing still answers the stated questions."
       },
       "unresolved_gates": [
-        "G6",
         "G9",
         "G12"
       ],
@@ -5561,9 +5561,9 @@
         {
           "category": "Research gap and defensible novelty",
           "weight": 16,
-          "rating": 3,
-          "weighted_points": 9.6,
-          "confidence_and_reason": "Low-medium: careful editing is established generally; the added Sinhala OCR question needs a deeper comparison."
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Medium-high confidence in overlap: existing OCR work learns error patterns, copies correct characters and detects errors before correction; no distinct remaining failure is demonstrated."
         },
         {
           "category": "Public dataset quality/accessibility",
@@ -5622,8 +5622,11 @@
           "confidence_and_reason": "Medium: a page, original text and highlighted edits make a simple prototype."
         }
       ],
-      "raw_weighted_score": 75.2,
-      "weighted_score": 76.7
+      "raw_weighted_score": 72.0,
+      "weighted_score": 73.5,
+      "failed_gates": [
+        "G6"
+      ]
     },
     "X44": {
       "scored_date": "2026-10-30",
@@ -5854,6 +5857,126 @@
       ],
       "raw_weighted_score": 72.2,
       "weighted_score": 73.7
+    },
+    "X46": {
+      "scored_date": "2026-10-30",
+      "mode": "Provisional ancient Sri Lankan coin opportunity; local dataset and novelty unverified",
+      "report": "reports/gaps/x46-ancient-sri-lankan-coin-classification.md",
+      "weight_total": 98,
+      "gate_decisions": {
+        "G1": "Pass",
+        "G2": "Pass",
+        "G3": "Pass",
+        "G4": "Unknown",
+        "G5": "Unknown",
+        "G6": "Unknown",
+        "G7": "Pass",
+        "G8": "Unknown",
+        "G9": "Unknown",
+        "G10": "Unknown",
+        "G11": "Pass",
+        "G12": "Unknown",
+        "G13": "Pass"
+      },
+      "gate_evidence": {
+        "G1": "Bounded catalogue-type attribution with incomplete visual evidence.",
+        "G2": "The proposed questions concern learned recognition and decision errors.",
+        "G3": "Adaptation, fusion and acceptance heads can be trained.",
+        "G4": "No adequate existing local training/test corpus verified.",
+        "G5": "Existing exact-type labels may be too ambiguous without expert adjudication.",
+        "G6": "Narrow hypotheses proposed; novelty and baseline failure unverified.",
+        "G7": "The conditional plan includes model comparisons and ablations.",
+        "G8": "Specimen IDs, label coverage and held-out type counts require a data audit.",
+        "G9": "Data dependencies and baseline stability unresolved.",
+        "G10": "Proposed divisions need sufficient paired specimens and distinct empirical findings.",
+        "G11": "Compact encoders and cached features avoid a high-end compute dependency.",
+        "G12": "Source-specific terms exist; a permitted reproducible corpus has not been established.",
+        "G13": "Transfer failure, fixed-fusion parity and rare-type rejection are useful bounded results."
+      },
+      "unresolved_gates": [
+        "G4",
+        "G5",
+        "G6",
+        "G8",
+        "G9",
+        "G10",
+        "G12"
+      ],
+      "below_required_category_ratings": [
+        "Research gap and defensible novelty",
+        "Public dataset quality/accessibility",
+        "Feasibility and learning curve",
+        "Three-member structure"
+      ],
+      "qualified": false,
+      "model_training_or_runtime_measured": false,
+      "ratings": [
+        {
+          "category": "Research gap and defensible novelty",
+          "weight": 16,
+          "rating": 2,
+          "weighted_points": 6.4,
+          "confidence_and_reason": "Low: strong overlap in matching and fusion; a distinct residual failure is unverified."
+        },
+        {
+          "category": "Public dataset quality/accessibility",
+          "weight": 15,
+          "rating": 1,
+          "weighted_points": 3.0,
+          "confidence_and_reason": "Low: local pages exist, but no adequate labelled local corpus has passed an audit."
+        },
+        {
+          "category": "Feasibility and learning curve",
+          "weight": 14,
+          "rating": 2,
+          "weighted_points": 5.6,
+          "confidence_and_reason": "Low: corpus assembly and label ambiguity threaten the 6–8 month window."
+        },
+        {
+          "category": "Technical AI/ML depth",
+          "weight": 12,
+          "rating": 4,
+          "weighted_points": 9.6,
+          "confidence_and_reason": "Medium: adaptation, learned fusion and acceptance modelling support empirical ML."
+        },
+        {
+          "category": "Evaluation/reproducibility",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Low-medium: objective protocol proposed; specimen identity and source coverage unresolved."
+        },
+        {
+          "category": "Three-member structure",
+          "weight": 12,
+          "rating": 3,
+          "weighted_points": 7.2,
+          "confidence_and_reason": "Low-medium: connected investigations exist, but sufficient data and distinct contributions are unverified."
+        },
+        {
+          "category": "Real-world significance",
+          "weight": 9,
+          "rating": 3,
+          "weighted_points": 5.4,
+          "confidence_and_reason": "Medium: heritage cataloguing is relevant; local workflow demand and benefit are unmeasured."
+        },
+        {
+          "category": "Compute/storage",
+          "weight": 5,
+          "rating": 4,
+          "weighted_points": 4.0,
+          "confidence_and_reason": "Medium: bounded compact-model route appears practical; runtime unmeasured."
+        },
+        {
+          "category": "Prototype",
+          "weight": 3,
+          "rating": 4,
+          "weighted_points": 2.4,
+          "confidence_and_reason": "Medium: image/reference shortlist and undecided output are straightforward to demonstrate."
+        }
+      ],
+      "raw_weighted_score": 50.8,
+      "weighted_score": 51.8
     }
   },
   "scoring_policy": {
@@ -6025,6 +6148,21 @@
       "X45"
     ],
     "qualified_count": 0,
+    "model_training_run": false,
+    "parked_candidates": [
+      "X43"
+    ]
+  },
+  "ancient_sri_lankan_coin_discovery": {
+    "date": "2026-10-30",
+    "record": "ancient-sri-lankan-coin-checks.json",
+    "candidate_ids": [
+      "X46"
+    ],
+    "qualified_count": 0,
+    "novel_gap_established": false,
+    "local_training_dataset_verified": false,
+    "dataset_archives_downloaded": false,
     "model_training_run": false
   }
 }

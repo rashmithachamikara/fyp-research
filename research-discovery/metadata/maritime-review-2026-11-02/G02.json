@@ -1,0 +1,182 @@
+{
+  "request": {
+    "id": "G02",
+    "tool": "check_gap_saturation",
+    "arguments": {
+      "gap_statement": "small boat detection validation",
+      "window_years": 10
+    }
+  },
+  "result": [
+    {
+      "counts_by_year": {
+        "2016": 1,
+        "2017": 3,
+        "2018": 3,
+        "2019": 1,
+        "2020": 1,
+        "2022": 1,
+        "2023": 2,
+        "2024": 3,
+        "2025": 3,
+        "2026": 3
+      },
+      "total_estimate": 21,
+      "closest_recent": [
+        {
+          "id": "W7166854461",
+          "doi": "10.3390/rs18132113",
+          "title": "Portable Side-Scan Sonar System for Acoustic Remote Sensing of Ultra-Shallow Seafloor: Design and Field Validation",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Artur Grz\u0105dziel",
+            "Filip Grz\u0105dziel"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "Ultra-shallow and confined water environments are challenging to survey with conventional towed side-scan sonar (SSS) due to limited access and positioning uncertainties. This study introduces a portable, battery-powered acoustic survey system that integrates a pole-mounted dual-frequency side-scan sonar (600/1600 kHz) with RTK GNSS (Real-Time Kinematic Global Navigation Satellite System), deployable from a small inflatable boat. The system was validated in two settings: an inland lake and a marina. Field trials demonstrated reliable acquisition of high-resolution sonar imagery and effective detection of both natural and anthropogenic seabed features, including small and low-reflectivity objects. The high-frequency channel (1600 kHz) produced superior image quality and interpretability compared to the lower frequency. While there are limitations associated with fixed sonar mounting and limited altitude control, the system offers high mobility, rapid deployment, and operational safety. This approach represents a practical, cost-effective solution for high-resolution acoustic remote sensing in ultra-shallow water settings where traditional survey methods are ineffective or impractical.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.3390/rs18132113",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs18132113"
+        },
+        {
+          "id": "W7162871593",
+          "doi": "10.1016/j.dsp.2026.106258",
+          "title": "Integrating dynamic convolution and channel attention into YOLOv8 for enhanced maritime vision",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Digital Signal Processing",
+            "issn": "1051-2004"
+          },
+          "authors": [
+            "Jos\u00e9 Luis Mela",
+            "Carlos Garc\u00eda S\u00e1nchez"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "Object detection in maritime environments is particularly challenging due to dynamic conditions, variable object scales, and the computational constraints of edge devices. This work proposes a modified YOLOv8-based architecture optimized for small object detection. Our approach integrates Dynamic Convolution (DyConv), Efficient Channel Attention (ECA) in C2f modules, an additional P2/4-scale detection head, multiscale fusion with spatial and channel attention, and an enhanced SPPF module. Additionally, the Slicing Aided Hyper Inference (SAHI) technique is incorporated to boost detection sensitivity during inference. Experiments on the Datasense@CRAS dataset show consistent gains: YOLOv8n (ours) improves mAP50 and mAP50:95 by +1.19% and +2.09%, while YOLOv8l (ours) achieves +1.88% and +3.60%, respectively. In particular, small object categories such as Small boat and Sail boat achieve improvements of up to +7.6% and +10.5% in mAP50 and mAP50:95. The integration of SAHI more than doubled the number of objects detected in complex scenarios. Finally, the feasibility of implementation on edge devices such as NVIDIA Jetson AGX Orin is validated, where our YOLOv8l (ours) model in FP16 offers the best balance between accuracy, real-time performance, and energy efficiency. Compared to other lightweight detectors, our model demonstrates superior accuracy while maintaining a similar computational cost and strong cross-domain generalization. These results confirm the effectiveness of the proposed architecture for maritime applications, which addresses challenges such as variable lighting, occlusions, and onboard processing constraints in USVs and autonomous platforms.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.dsp.2026.106258",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.dsp.2026.106258"
+        },
+        {
+          "id": "W7119506357",
+          "doi": "10.3897/biss.10.183408",
+          "title": "SPACEWHALE: Using Satellite Imagery to Survey Whales in Remote Areas and Thus to Enhance Conservation Efforts",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Biodiversity Information Science and Standards",
+            "issn": "2535-0897"
+          },
+          "authors": [
+            "Julika Vo\u00df",
+            "Caroline H\u00f6schle",
+            "Recep Can"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "There is an ambitious global goal to protect 30% of the ocean by 2030. However, currently, only 8.1% of the ocean is protected and over 80% of the ocean is still unexplored. We thus urgently need to collect data for evidence-based decision-making to help tackle the global climate and biodiversity crises and to support coastal communities. But mapping these areas and key indicator species like whales using ship-based and aerial surveys tend to be limited in scale/scope, time-consuming, expensive and pose safety risks to surveyors, while acoustic monitoring is difficult to convert into counts of individuals for most species. To overcome these challenges, BioConsult SH and HiDef Aerial Surveying Ltd developed the service, SPACEWHALE. Bridging technological innovation with marine conservation, SPACEWHALE monitors whales and other wildlife species from space using satellite imagery and AI. We determine where whales are, provide a minimum count and investigate when they are in certain areas\u2014quickly and over wide cross-border areas\u2014yet at comparable costs to traditional survey methods. The \u201cSPACEWHALE\u201d service uses very high-resolution satellite imagery (e.g., resolution of 0.3 m per pixel). At this resolution, we can distinguish between several large whale species as well as between juveniles and adults. In addition, we can detect a diverse range of large cetaceans down to a body length of 9 meters and smaller. By taking a snapshot of the ocean area of interest, we can capture very large and remote areas almost instantaneously. Due to licensing restrictions, we are not permitted to share satellite imagery itself, but we summarise our findings in a report that contains easily processable data, such as the locations of the whales, for further analysis. We developed a semi-automatic process to evaluate satellite images combining state-of-the-art artificial intelligence with marine mammal expertise. Artificial intelligence as applied in SPACEWHALE means that data are collected and processed in a standardized way: satellite imagery is first analysed by a convolutional neural network-based object detection algorithm. Our algorithm is highly effective: a study in collaboration with Stony Brook University in New York and HiDef Aerial Surveying Ltd from the UK showed that the algorithm correctly classified 100% of images containing whales and 94% of images containing only water (Borowicz et al. 2019). Once the automated process is complete, a large team of expert reviewers validates the outputs to ensure that misclassifications such as boats, rocks, waves or sea foam are minimized, implementing a human-in-the-loop framework for comparable and quality-checked data. Applying this semi-automatic approach in diverse ecosystems, we have already successfully monitored fin whales and other species in the Bay of Biscay and in the Pelagos Sanctuary, blue whales and other marine megafauna off Mexico, humpback whales in Hawaiian waters, and southern right whales off Argentina and New Zealand. The methodology has been validated through comparison with conventional aerial and ship-based surveys demonstrating a strong agreement (H\u00f6schle et al. 2022). Satellite snapshots can be taken over previously unexplored areas, providing baseline data for environmental impact assessments for offshore wind farm operators and contributing to the identification of Important Marine Mammal Areas and Marine Protected Areas. The service can be applied at different spatial and temporal scales, from local and regional to ocean basins and over time with repeated surveys, enabling long-term monitoring, generating robust, standardized data for marine spatial planning and complementing international efforts (e. g. Marine Strategy Framework Directive, Convention on Biological Diversity targets, United Nations Ocean Decade). We are at a step where satellite-based data informs applied conservation by providing useful guidance to find solutions that balance species conservation with human use of the seas. It has the potential to elevate conservation efforts to appropriate spatial scales for wide ranging species.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://biss.pensoft.net/article/183408/download/pdf/"
+          },
+          "url": "https://doi.org/10.3897/biss.10.183408",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3897/biss.10.183408"
+        },
+        {
+          "id": "W4410395857",
+          "doi": "10.1016/j.rse.2025.114791",
+          "title": "Mapping recreational marine traffic from Sentinel-2 imagery using YOLO object detection models",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing of Environment",
+            "issn": "0034-4257"
+          },
+          "authors": [
+            "Janne M\u00e4yr\u00e4",
+            "Elina Virtanen",
+            "Ari-Pekka Jokinen"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Identifying where maritime activities take place, and quantifying their potential impact on marine biodiversity, is important for the sustainable management of marine areas, spatial planning and marine conservation. Detection and monitoring of small vessels, such as pleasure crafts, has been challenging due to limited data availability with adequate temporal and spatial resolution. Here, we develop an analysis framework to detect and quantify small vessels, using openly available Sentinel-2 optical imagery, and the YOLO-family object detection models. We also show how existing spatial datasets can be used to improve the quality of the model output. We chose five distinct marine areas along the Finnish coast in the northern Baltic Sea and manually annotated 8,768 vessels for training and validating object detection models. The top-performing model, based on F1-score, achieved a test set F1-score of 0.863 and an mAP50 of 0.888. This model was then used to quantify pleasure crafts in the southern part of Finland from May to September 2022, using all available Sentinel-2 images with sufficient image quality. Detected recreational traffic was primarily concentrated on boating lanes and close to marinas, with weekend traffic averaging approximately twice the volume of weekday traffic. The developed approach can be used to identify areas with high boat traffic, thus supporting sustainable spatial planning, ecological impact avoidance, and serving as an indicator of recreational popularity of marine areas. Additionally, it provides a basis for assessing the potential impacts of pleasure crafts on marine biodiversity. By leveraging openly available satellite images with frequent revisits, the approach offers broad geographical coverage and high spatial accuracy, making it scalable for estimating boat traffic across large areas, even globally.",
+          "cited_by_count": 15,
+          "counts_by_year": {
+            "2026": 12,
+            "2025": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.rse.2025.114791",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.rse.2025.114791"
+        },
+        {
+          "id": "W4407092621",
+          "doi": "10.3354/meps14813",
+          "title": "Origins of natural and anthropogenic sounds in a coastal, seasonally ice-covered, Antarctic marine soundscape",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Marine Ecology Progress Series",
+            "issn": "0171-8630"
+          },
+          "authors": [
+            "John van den Hoff",
+            "J Delarue",
+            "Victoria E. Warren"
+          ],
+          "author_count": 8,
+          "abstract_snippet": "Baseline characterisation of the acoustic underwater environment is integral to understanding changes in the soundscape of a location. We used passive acoustic monitoring to investigate the soundscape of a seasonally ice-covered, shallow marine environment close to a permanently occupied research station in Prydz Bay, East Antarctica, from July (winter ice cover) 2021 through to February (summer open water) 2022. We applied a suite of automated detectors to detect sounds, with manual analysis of a subset of recordings to validate automated detections and characterise detector performance. From July until late November, the landfast ice cover had a dampening effect on mean daily ambient underwater sound pressure levels. The anthropophony of the ice-covered environment included contributions from aircraft landings and the movements of over-ice vehicles. The biophony was most influenced by the sounds of Weddell, crabeater and leopard seals and Antarctic minke whales. Mean daily sound levels increased immediately as the ice cover decreased and the sea surface became exposed to the effects of wind. The soundscape of the open-water/drifting pack-ice environment then altered to include noise from ship and small boat activities and vocalisations of killer whales and leopard and Ross seals. The results demonstrate a study site with high seasonality in natural sound sources and an unprecedented contribution of noise from human activities during the period of ice cover. There is likely a year-round contribution of anthropogenic noise to the Antarctic coastal marine environment close to research stations that are often co-located with regional hot-spots in faunal occurrences.",
+          "cited_by_count": 5,
+          "counts_by_year": {
+            "2026": 2,
+            "2025": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.int-res.com/articles/meps_oa/m757p017.pdf"
+          },
+          "url": "https://doi.org/10.3354/meps14813",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3354/meps14813"
+        }
+      ],
+      "window": "2016-2026",
+      "query_used": "small boat detection validation",
+      "note": "Counts are estimates. When presenting: show the per-year curve plainly and hyperlink closest_recent titles; the worksheet feasibility thresholds are applied by the researcher, not this tool. A thin count can be a vocabulary artefact rather than an open gap: before reading it as originality, rerun using the vocabulary the nearest-neighbour papers themselves use. This curve is part of the FastTrack Feasibility Test: enough recent original studies to review, in a field still moving.",
+      "broad_match_estimate": 15238,
+      "instrument_disagreement": "The strict concept count found 21 papers, but a broad search of the same terms matches ~15238 in this window. The counts above almost certainly undercount the field. Before reading this as an open gap, rerun check_gap_saturation using the vocabulary the closest papers themselves use.",
+      "zotero_all_url": "https://literature.researchfasttrack.com/zotero?ids=10.3390/rs18132113,10.1016/j.dsp.2026.106258,10.3897/biss.10.183408,10.1016/j.rse.2025.114791,10.3354/meps14813",
+      "zotero_note": "After each paper you list, add its cite_url as a short [Cite] link. It opens the reference in APA, Vancouver and Harvard, ready to copy, with a save-to-Zotero link. zotero_all_url imports all 5 papers in this result; end the list with this line, both parts linked to zotero_all_url: **[Import all 5 into Zotero](zotero_all_url)** \u00b7 or [download for EndNote](zotero_all_url). If you list only some of them or combine several calls, build the link from the papers you actually list instead (DOIs or OpenAlex IDs, comma-separated, after zotero?ids=) and use its true count. Keep a [Cite] link after every paper as well, including papers cited in annotated bullets or prose. If the researcher asks you to drop these links, leave them out for the rest of the conversation."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {"id":"P01","tool":"get_paper","arguments":{"id":"10.3390/jmse13030390"}},
+  {"id":"P02","tool":"get_paper","arguments":{"id":"10.1109/tits.2025.3530678"}},
+  {"id":"P03","tool":"get_paper","arguments":{"id":"10.3389/fmars.2026.1929278"}},
+  {"id":"P04","tool":"get_paper","arguments":{"id":"10.7717/peerj-cs.3765"}},
+  {"id":"P05","tool":"get_paper","arguments":{"id":"10.7780/kjrs.2025.41.6.21"}},
+  {"id":"P06","tool":"get_paper","arguments":{"id":"10.3390/electronics14183648"}},
+  {"id":"S06","tool":"search_papers","arguments":{"query":"maritime small boat detection false alarm external validation systematic review","limit":20}},
+  {"id":"S07","tool":"search_papers","arguments":{"query":"maritime small vessel detection physical size pixel size evaluation review","limit":20}},
+  {"id":"D03","tool":"run_duplication_test","arguments":{"question":"Systematic review small vessel detection independent ground truth external validation false alarm reporting physical boat length pixel size","mode":"sr","limit":15}},
+  {"id":"S08","tool":"search_papers","arguments":{"query":"small boat detection validation ground truth rubber inflatable","limit":20}},
+  {"id":"G02","tool":"check_gap_saturation","arguments":{"gap_statement":"small boat detection validation","window_years":10}}
+]

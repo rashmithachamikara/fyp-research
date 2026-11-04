@@ -1,0 +1,14 @@
+[
+  {"id":"P07","tool":"get_paper","arguments":{"id":"10.1109/jstars.2024.3437187"}},
+  {"id":"P08","tool":"get_paper","arguments":{"id":"10.3390/rs18173000"}},
+  {"id":"P09","tool":"get_paper","arguments":{"id":"10.3390/rs13081487"}},
+  {"id":"P10","tool":"get_paper","arguments":{"id":"10.3390/rs15082008"}},
+  {"id":"P11","tool":"get_paper","arguments":{"id":"10.24963/ijcai.2022/728"}},
+  {"id":"P12","tool":"get_paper","arguments":{"id":"10.52202/068431-2726"}},
+  {"id":"P13","tool":"get_paper","arguments":{"id":"10.3390/rs16071198"}},
+  {"id":"P14","tool":"get_paper","arguments":{"id":"10.1038/s41586-023-06825-8"}},
+  {"id":"P15","tool":"get_paper","arguments":{"id":"10.5194/isprs-archives-xlix-b1-2026-621-2026"}},
+  {"id":"P16","tool":"get_paper","arguments":{"id":"10.3390/s24175623"}},
+  {"id":"P17","tool":"get_paper","arguments":{"id":"10.3390/rs17142471"}},
+  {"id":"D04","tool":"run_duplication_test","arguments":{"question":"Systematic review satellite detection physically small boats size stratified sensitivity false alarms independent reference standard coastal waters","mode":"sr","limit":15}}
+]

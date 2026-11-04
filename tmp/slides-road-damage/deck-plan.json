@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Small road-damage detection",
+    "seconds": 10,
+    "speaker": "Member A"
+  },
+  {
+    "title": "The problem: country shift and silent misses",
+    "seconds": 40,
+    "speaker": "Member A"
+  },
+  {
+    "title": "The gap is in the controlled comparisons",
+    "seconds": 70,
+    "speaker": "Member A"
+  },
+  {
+    "title": "Four folds, with development kept source-only",
+    "seconds": 40,
+    "speaker": "Member A"
+  },
+  {
+    "title": "RDD2022: 25,846 labelled images",
+    "seconds": 25,
+    "speaker": "Member A"
+  },
+  {
+    "title": "A: scale assignment similarity by the short side",
+    "seconds": 45,
+    "speaker": "Member A"
+  },
+  {
+    "title": "A: test normalisation against a fair rival",
+    "seconds": 40,
+    "speaker": "Member A"
+  },
+  {
+    "title": "B: anchor consistency on small and thin boxes",
+    "seconds": 50,
+    "speaker": "Member B"
+  },
+  {
+    "title": "B: separate object choice from extra training",
+    "seconds": 40,
+    "speaker": "Member B"
+  },
+  {
+    "title": "C: predict where the detector missed damage",
+    "seconds": 55,
+    "speaker": "Member C"
+  },
+  {
+    "title": "C: ask whether internal features add information",
+    "seconds": 45,
+    "speaker": "Member C"
+  },
+  {
+    "title": "Evaluate each claim on the same held-out countries",
+    "seconds": 35,
+    "speaker": "Member B"
+  },
+  {
+    "title": "Three individual studies, one 34-week plan",
+    "seconds": 35,
+    "speaker": "Member B"
+  },
+  {
+    "title": "Feasibility depends on the week-6 GPU pilot",
+    "seconds": 35,
+    "speaker": "Member C"
+  },
+  {
+    "title": "Expected contribution: three testable answers",
+    "seconds": 35,
+    "speaker": "Member C"
+  }
+]

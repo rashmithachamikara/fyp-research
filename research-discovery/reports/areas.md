@@ -8,9 +8,10 @@ The aim is one shared problem with three independently assessable research contr
 
 | Research area | Directions worth exploring | Starting data | Priority |
 |---|---|---|---|
-| **Sinhala document reading** | Correct OCR mistakes without changing correct text or numbers | [Real legislative pages](https://huggingface.co/datasets/avishadilhara/sinhala-ocr-lk-acts-1010); manifest and row schema checked | Practical Sri Lankan lead; see X43 |
+| **Sinhala document reading** | Correct OCR mistakes without changing correct text or numbers | [Real legislative pages](https://huggingface.co/datasets/avishadilhara/sinhala-ocr-lk-acts-1010); manifest and row schema checked | X43 parked: current correction gap overlaps prior work |
 | **Mixed-language customer feedback** | Retain rare mixed opinions in a small model | [NLPC-UOM comments](https://huggingface.co/datasets/NLPC-UOM/Sinhala-English-Code-Mixed-Code-Switched-Dataset); CSV parsed; rare labels need care | Practical Sri Lankan lead; see X44 |
 | **Reported dengue forecasting** | Use weather only when helpful; show forecast ranges | [Maintainer data package](https://github.com/thiyangt/denguedatahub); case CSV parsed; weather join unverified | Practical Sri Lankan lead; see X45 |
+| **Ancient coin recognition** | Limited examples, missing/unreadable sides and reliable type decisions | [Lakdiva existing collection](https://coins.lakdiva.org.lk/); local corpus size, labels and reuse route unverified | Conditional; X46 requires an existing-data audit |
 | **Industrial visual inspection** | Small defects, limited labels, changing imaging conditions | [VisA](https://github.com/amazon-science/spot-diff) | Start here |
 | **Document AI** | Layout understanding, unfamiliar formats, efficient extraction | [DocLayNet](https://github.com/DS4SD/DocLayNet) | Start here |
 | **Energy and demand forecasting** | Missing readings, changing patterns, prediction intervals | [UCI electricity](https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014) | Start here |
@@ -36,4 +37,4 @@ Ten further maritime candidates (X22–X31) investigate specific failure modes b
 
 [View all research candidates and scores](research-candidates.md).
 
-The three local directions added on 30 October use existing Sinhala documents, mixed-language comments and reported dengue counts. They have separate gap briefs, simple examples and the same project scoring rules. They are practical starting points, not certified novel topics.
+The three local directions added on 30 October use existing Sinhala documents, mixed-language comments and reported dengue counts. They have separate gap briefs, simple examples and the same project scoring rules. X43 is now parked because its current correction proposal overlaps prior work. X44 and X45 remain provisional; neither is a certified novel topic.

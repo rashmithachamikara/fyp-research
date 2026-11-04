@@ -1,0 +1,379 @@
+{
+  "checked_on": "2026-10-30",
+  "candidate_id": "X46",
+  "track": "General empirical FYP / prototype, confirmed by user",
+  "scope": "Bounded literature and source-page checks; not a systematic review or a complete novelty audit",
+  "report": "reports/gaps/x46-ancient-sri-lankan-coin-classification.md",
+  "models_run": false,
+  "dataset_archives_downloaded": false,
+  "image_pixels_inspected": false,
+  "local_training_dataset_verified": false,
+  "novel_gap_established": false,
+  "limitations": [
+    "Raw search result sets were not archived; no result-count or completeness claim is made.",
+    "Most decisive work was assessed from primary abstracts or selected methods excerpts, not full-paper reproduction.",
+    "Some search results were irrelevant; absent indexed Sri Lankan work is not evidence that none exists.",
+    "No citation trajectory, numismatic label audit or baseline failure was measured.",
+    "No new photography, expert annotations, access requests or messages were undertaken."
+  ],
+  "query_families": {
+    "local_work_and_data": [
+      "\"Sri Lanka\" ancient coin classification deep learning",
+      "\"Sri Lankan\" coins dataset classification",
+      "\"ancient\" \"Sri Lankan\" \"coin\" classification",
+      "\"Sri Lanka\" \"coin classification\" ancient",
+      "\"Sri Lankan\" \"ancient coins\" machine learning classification",
+      "\"Sri Lanka\" \"ancient coins\" CNN dataset",
+      "\"Sri Lankan ancient coin\" dataset OR recognition OR classification",
+      "\"ancient coin classification\" \"Sri\"",
+      "\"Sri Lanka\" ancient coin dataset kaggle machine learning",
+      "\"ancient\" \"Sri Lanka\" coins dataset site:data.mendeley.com",
+      "\"ancient\" \"Sri Lankan\" coins site:kaggle.com/datasets",
+      "\"ancient\" \"Sri Lanka\" coins dataset site:zenodo.org",
+      "\"ancient\" \"Sri Lanka\" coin classification machine learning site:dl.lib.uom.lk"
+    ],
+    "nearest_work": [
+      "ancient coin classification few shot open set obverse reverse dataset",
+      "\"ancient coin\" \"open set\" classification",
+      "\"ancient coin\" \"few-shot\" classification",
+      "\"ancient coin\" classification dataset 2025 2026 degradation uncertainty",
+      "\"ancient coin\" \"domain\" classification generalization",
+      "\"ancient coin\" \"uncertainty\" classification",
+      "\"ancient coin\" \"quality\" \"fusion\"",
+      "\"ancient coin\" \"open-set\"",
+      "\"A Siamese Transformer Network\" ancient coin github dataset",
+      "\"ancient coin\" \"rejection\" classification",
+      "\"ancient coin\" \"quality-aware\"",
+      "\"ancient coins\" \"calibration\" deep learning",
+      "ancient coin classification degradation robustness occlusion 2025 2026",
+      "ancient coin classification missing obverse reverse fusion attention quality",
+      "ancient coin classification selective prediction unknown rejection deep learning"
+    ]
+  },
+  "gap_verdicts": [
+    {
+      "id": "G1",
+      "label": "Few-example cross-coinage adaptation",
+      "status": "Conditional; strong overlap",
+      "novel_gap_verified": false,
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "dependency": "Existing labelled local types and enough independent specimens to evaluate transfer."
+    },
+    {
+      "id": "G2",
+      "label": "Incomplete-side fusion",
+      "status": "Preferred pilot if paired data passes audit; novelty unverified",
+      "novel_gap_verified": false,
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "dependency": "Paired physical-coin identities and a distinction beyond established fusion and dropout."
+    },
+    {
+      "id": "G3",
+      "label": "Unknown-type versus difficult-known-type rejection",
+      "status": "Conditional companion; generic rejection already exists",
+      "novel_gap_verified": false,
+      "source_ids": [
+        "S4"
+      ],
+      "dependency": "Separate validation/test unknown types and sufficient difficult known-type specimens."
+    },
+    {
+      "id": "G4",
+      "label": "Cross-collection recognition",
+      "status": "Conditional; major local data dependency",
+      "novel_gap_verified": false,
+      "source_ids": [
+        "S5"
+      ],
+      "dependency": "Compatible labels across independent existing collections and specimen deduplication."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "evidence_id": "COIN30-X46-S1",
+      "title": "A Siamese Transformer Network for Zero-Shot Ancient Coin Classification",
+      "url": "https://research-repository.st-andrews.ac.uk/handle/10023/27673",
+      "type": "article",
+      "claim": "Pairwise unseen-issue matching and double-sided modelling already exist.",
+      "checked": "Institutional abstract and indexed primary methods excerpts",
+      "unresolved": "No full reproduction; data access and code route not verified."
+    },
+    {
+      "id": "S2",
+      "evidence_id": "COIN30-X46-S2",
+      "title": "Two sides of the same coin: Improved ancient coin classification using Graph Transduction Games",
+      "url": "https://www.unive.it/pag/fileadmin/user_upload/centri/ECLT/documenti/publications/aslan2020_PRL.pdf",
+      "type": "article",
+      "claim": "Semi-supervised classification already combines both coin sides under limited labels.",
+      "checked": "Author-hosted manuscript: abstract and method description",
+      "unresolved": "Experiments not reproduced."
+    },
+    {
+      "id": "S3",
+      "evidence_id": "COIN30-X46-S3",
+      "title": "Deep ancient Roman Republican coin classification via feature fusion and attention",
+      "url": "https://doi.org/10.1016/j.patcog.2021.107871",
+      "type": "article",
+      "claim": "Motif recognition, fusion and attention are established coin-recognition approaches.",
+      "checked": "Publisher abstract and contributions",
+      "unresolved": "No full methods or dataset audit."
+    },
+    {
+      "id": "S4",
+      "evidence_id": "COIN30-X46-S4",
+      "title": "A CNN-assisted decision support system for ancient world coin classification",
+      "url": "https://doi.org/10.31891/csit-2024-1-12",
+      "type": "article",
+      "claim": "Coin classification with other-coin negatives has prior work.",
+      "checked": "Publisher abstract",
+      "unresolved": "Does not establish rigorous unseen-type rejection or calibration."
+    },
+    {
+      "id": "S5",
+      "evidence_id": "COIN30-X46-S5",
+      "title": "Comparative Evaluation of Deep Transfer Learning Models for Ancient Coin Classification",
+      "url": "https://doi.org/10.3390/app16168271",
+      "type": "article",
+      "claim": "Indexed publisher text reports physical-coin-grouped splits and limits claims to one collection.",
+      "checked": "Publisher search excerpts only; direct page fetch failed",
+      "unresolved": "Full methods and collection access need verification."
+    },
+    {
+      "id": "S6",
+      "evidence_id": "COIN30-X46-S6",
+      "title": "Do Transformers Understand Ancient Roman Coin Motifs Better than CNNs?",
+      "url": "https://arxiv.org/abs/2601.09433",
+      "type": "preprint",
+      "claim": "Transformer motif recognition learned from images and unstructured text has prior work.",
+      "checked": "Author preprint abstract",
+      "unresolved": "Peer-review status not established."
+    },
+    {
+      "id": "S7",
+      "evidence_id": "COIN30-X46-S7",
+      "title": "Reading Legends on Ancient Coins: An Object Detection Approach for Character Recognition on a Novel Roman Republican Dataset",
+      "url": "https://arxiv.org/abs/2607.25455",
+      "type": "preprint",
+      "claim": "Roman coin character detection exists; related work also describes legend/image fusion.",
+      "checked": "Author preprint abstract and HTML introduction, related work and dataset sections",
+      "unresolved": "Dataset not downloaded; local-script transfer unverified."
+    },
+    {
+      "id": "D1",
+      "evidence_id": "COIN30-X46-D1",
+      "title": "SerendibCoins: Exploring The Sri Lankan Coins Dataset",
+      "url": "https://arxiv.org/html/2505.18634v1",
+      "type": "preprint",
+      "claim": "Methods describe current rupee denominations in old/new design versions, not ancient coins.",
+      "checked": "Primary HTML dataset creation section",
+      "unresolved": "Dataset archive not downloaded."
+    },
+    {
+      "id": "D2",
+      "evidence_id": "COIN30-X46-D2",
+      "title": "Lakdiva Coin Collection",
+      "url": "https://coins.lakdiva.org.lk/",
+      "type": "collection",
+      "claim": "Ancient images exist alongside other periods; page states conditional nonprofit reuse and attribution terms.",
+      "checked": "Homepage including reuse notice",
+      "unresolved": "No blanket CC claim; ancient specimen counts, ML reuse and redistribution route not audited."
+    },
+    {
+      "id": "D3",
+      "evidence_id": "COIN30-X46-D3",
+      "title": "LakdivaCoins Collection index",
+      "url": "https://coins.lakdiva.org.lk/main.html",
+      "type": "collection",
+      "claim": "The index separates ancient and medieval material.",
+      "checked": "Ancient and medieval index sections",
+      "unresolved": "Categories are not an audited training taxonomy."
+    },
+    {
+      "id": "D4",
+      "evidence_id": "COIN30-X46-D4",
+      "title": "Lanka - Elephant and Svastika, OBRW H7",
+      "url": "https://coins.lakdiva.org.lk/ancient/ele%2Bsva/OBRW_H7_ele%2Bsva_struck.html",
+      "type": "specimen record",
+      "claim": "A specimen page includes two sides, measurements and attribution discussion.",
+      "checked": "Full short specimen-page text",
+      "unresolved": "No pixels or independent attribution verification."
+    },
+    {
+      "id": "D5",
+      "evidence_id": "COIN30-X46-D5",
+      "title": "Lanka - Punch Mark coins",
+      "url": "https://coins.lakdiva.org.lk/punch/",
+      "type": "collection",
+      "claim": "Specimen descriptions include incomplete or alternative attributions; exact labels need care.",
+      "checked": "Specimen-page text",
+      "unresolved": "No ground-truth adjudication or pixel audit."
+    },
+    {
+      "id": "D6",
+      "evidence_id": "COIN30-X46-D6",
+      "title": "Numismatic Department of Archaeology Sri Lanka search portal",
+      "url": "https://archaeology.gov.lk/coins/query/",
+      "type": "institutional collection",
+      "claim": "A public numismatic search interface exists.",
+      "checked": "Landing page; advanced search timed out on two fetches",
+      "unresolved": "Counts, export, specimen labels and image rights unverified."
+    },
+    {
+      "id": "D7",
+      "evidence_id": "COIN30-X46-D7",
+      "title": "Ancient Coins (Numismatics), Department of Archaeology Sri Lanka",
+      "url": "https://archaeology.gov.lk/index.php/ancient-coins",
+      "type": "institutional page",
+      "claim": "The institution distinguishes coins of local and foreign origins.",
+      "checked": "Institutional page text",
+      "unresolved": "Not an ML dataset or objective workflow study."
+    },
+    {
+      "id": "D8",
+      "evidence_id": "COIN30-X46-D8",
+      "title": "Ancient Bangal Numismatic",
+      "url": "https://data.mendeley.com/datasets/hpcxjy2z4v/1",
+      "type": "dataset",
+      "claim": "Maintainer describes 2704 images, 52 classes, annotations and CC BY 4.0; unsuitable material was screened out.",
+      "checked": "Dataset description, reproduction steps and licence",
+      "unresolved": "Bengal rather than Sri Lanka; archive, specimen counts, labels and pairing not inspected."
+    },
+    {
+      "id": "D9",
+      "evidence_id": "COIN30-X46-D9",
+      "title": "Corpus Nummorum - Object Detection Coin Dataset",
+      "url": "https://zenodo.org/records/13748799",
+      "type": "dataset",
+      "claim": "Maintainer describes NLP-derived motif membership, repeated class-folder copies, identifiers and source metadata.",
+      "checked": "Dataset record and file listing",
+      "unresolved": "No archive download or licence confirmation; memberships are not spatial boxes or local type labels."
+    }
+  ],
+  "candidate_assessment": {
+    "scored_date": "2026-10-30",
+    "mode": "Provisional ancient Sri Lankan coin opportunity; local dataset and novelty unverified",
+    "report": "reports/gaps/x46-ancient-sri-lankan-coin-classification.md",
+    "weight_total": 98,
+    "gate_decisions": {
+      "G1": "Pass",
+      "G2": "Pass",
+      "G3": "Pass",
+      "G4": "Unknown",
+      "G5": "Unknown",
+      "G6": "Unknown",
+      "G7": "Pass",
+      "G8": "Unknown",
+      "G9": "Unknown",
+      "G10": "Unknown",
+      "G11": "Pass",
+      "G12": "Unknown",
+      "G13": "Pass"
+    },
+    "gate_evidence": {
+      "G1": "Bounded catalogue-type attribution with incomplete visual evidence.",
+      "G2": "The proposed questions concern learned recognition and decision errors.",
+      "G3": "Adaptation, fusion and acceptance heads can be trained.",
+      "G4": "No adequate existing local training/test corpus verified.",
+      "G5": "Existing exact-type labels may be too ambiguous without expert adjudication.",
+      "G6": "Narrow hypotheses proposed; novelty and baseline failure unverified.",
+      "G7": "The conditional plan includes model comparisons and ablations.",
+      "G8": "Specimen IDs, label coverage and held-out type counts require a data audit.",
+      "G9": "Data dependencies and baseline stability unresolved.",
+      "G10": "Proposed divisions need sufficient paired specimens and distinct empirical findings.",
+      "G11": "Compact encoders and cached features avoid a high-end compute dependency.",
+      "G12": "Source-specific terms exist; a permitted reproducible corpus has not been established.",
+      "G13": "Transfer failure, fixed-fusion parity and rare-type rejection are useful bounded results."
+    },
+    "unresolved_gates": [
+      "G4",
+      "G5",
+      "G6",
+      "G8",
+      "G9",
+      "G10",
+      "G12"
+    ],
+    "below_required_category_ratings": [
+      "Research gap and defensible novelty",
+      "Public dataset quality/accessibility",
+      "Feasibility and learning curve",
+      "Three-member structure"
+    ],
+    "qualified": false,
+    "model_training_or_runtime_measured": false,
+    "ratings": [
+      {
+        "category": "Research gap and defensible novelty",
+        "weight": 16,
+        "rating": 2,
+        "weighted_points": 6.4,
+        "confidence_and_reason": "Low: strong overlap in matching and fusion; a distinct residual failure is unverified."
+      },
+      {
+        "category": "Public dataset quality/accessibility",
+        "weight": 15,
+        "rating": 1,
+        "weighted_points": 3.0,
+        "confidence_and_reason": "Low: local pages exist, but no adequate labelled local corpus has passed an audit."
+      },
+      {
+        "category": "Feasibility and learning curve",
+        "weight": 14,
+        "rating": 2,
+        "weighted_points": 5.6,
+        "confidence_and_reason": "Low: corpus assembly and label ambiguity threaten the 6–8 month window."
+      },
+      {
+        "category": "Technical AI/ML depth",
+        "weight": 12,
+        "rating": 4,
+        "weighted_points": 9.6,
+        "confidence_and_reason": "Medium: adaptation, learned fusion and acceptance modelling support empirical ML."
+      },
+      {
+        "category": "Evaluation/reproducibility",
+        "weight": 12,
+        "rating": 3,
+        "weighted_points": 7.2,
+        "confidence_and_reason": "Low-medium: objective protocol proposed; specimen identity and source coverage unresolved."
+      },
+      {
+        "category": "Three-member structure",
+        "weight": 12,
+        "rating": 3,
+        "weighted_points": 7.2,
+        "confidence_and_reason": "Low-medium: connected investigations exist, but sufficient data and distinct contributions are unverified."
+      },
+      {
+        "category": "Real-world significance",
+        "weight": 9,
+        "rating": 3,
+        "weighted_points": 5.4,
+        "confidence_and_reason": "Medium: heritage cataloguing is relevant; local workflow demand and benefit are unmeasured."
+      },
+      {
+        "category": "Compute/storage",
+        "weight": 5,
+        "rating": 4,
+        "weighted_points": 4.0,
+        "confidence_and_reason": "Medium: bounded compact-model route appears practical; runtime unmeasured."
+      },
+      {
+        "category": "Prototype",
+        "weight": 3,
+        "rating": 4,
+        "weighted_points": 2.4,
+        "confidence_and_reason": "Medium: image/reference shortlist and undecided output are straightforward to demonstrate."
+      }
+    ],
+    "raw_weighted_score": 50.8,
+    "weighted_score": 51.8
+  }
+}

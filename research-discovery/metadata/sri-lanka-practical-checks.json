@@ -273,7 +273,7 @@
   "human_domain_expert_consulted": false,
   "independent_review_performed": false,
   "decision_owner": "Team and supervisor",
-  "status": "Support located for practical tasks; narrower research opportunities remain provisional.",
+  "status": "X43 parked after closer OCR-method overlap check. X44 and X45 remain provisional, not newly validated by this recheck.",
   "tooling": "Primary-source web searches and bounded downloads; FastTrack connector unavailable. No model benchmark run.",
   "candidates": [
     {
@@ -281,18 +281,18 @@
       "slug": "sinhala-ocr-careful-correction",
       "title": "Reading Sinhala documents without introducing new mistakes",
       "area": "Computer vision and NLP — Sinhala document reading",
-      "priority": 1,
+      "priority": null,
       "quick": "Improve text read from a scanned Sinhala page, while avoiding unnecessary changes to correct words and numbers.",
       "problem": "Libraries, publishers and public offices may need searchable copies of printed Sinhala documents. OCR means reading text from an image. A second model can try to repair OCR mistakes, but it might also change text that was already correct.",
       "example": "A date or section number is read correctly, but an automatic “correction” changes it. This is an example of the risk, not an observed result from our own experiment.",
       "question": "Can a small correction model fix remaining Sinhala OCR errors while making fewer unnecessary edits, especially to numbers?",
-      "known": "Recent Sinhala page-level OCR already performs strongly on legislative documents. Simply fine-tuning another OCR model, or adding a language-model corrector, is not a new contribution.",
-      "proposed": "Investigate the trade-off between fixing errors and damaging correct text. Train a model to propose corrections, and a separate small model to estimate whether a proposed change helps. Compare this with simple rules and existing constrained editing. Whether this is a new Sinhala OCR contribution remains unverified.",
+      "known": "Sinhala post-processing, learned OCR error patterns, character copying and detect-then-correct pipelines already exist.",
+      "proposed": "Current novelty claim withdrawn. A specific remaining Sinhala failure must first be demonstrated against established correction methods; the present formulation does not establish one.",
       "hypothesis": "A correction rule trained on actual OCR mistakes will make fewer harmful changes than unrestricted text rewriting. It may instead turn out that leaving the strong OCR output unchanged is best.",
-      "approach": "Choose one fixed OCR engine first. On training pages only, align its output with the released correct text to create correction examples. Train a small corrector and an edit-selection head. Keep the original output available so that a proposed edit can be rejected. Do not assume the model’s confidence is reliable.",
+      "approach": "Baseline audit only if reopening the topic: compare existing copy-based and detect-then-correct methods, simple rules and unchanged OCR before proposing another model.",
       "data": "The public sinhala-ocr-lk-acts-1010 release contains 1,010 legislative pages with reference text. Its card states CC BY 4.0 and about 872 MB. A bounded preview returned 45 rows and confirmed image, text, year, doc_id and page_num fields. The file listing contains four Parquet files. Images were not downloaded for visual inspection and no OCR baseline was run.",
       "resources": "Estimate: cached OCR output, small correction models and an occasional modest GPU. Start with 100 training pages to measure time and memory. A larger OCR model is a comparison, not a requirement for every experiment.",
-      "fallback": "Keep the OCR engine frozen and train only the correction/selection models. If the starting engine makes too few useful errors, report that correction is unnecessary on this dataset instead of manufacturing an improvement.",
+      "fallback": "Keep the topic parked if existing correction methods suffice or too few meaningful errors remain.",
       "team": [
         [
           "A: Better correction examples",
@@ -318,9 +318,9 @@
       "baselines": "Unchanged Tesseract/Surya output, simple dictionary or edit-distance correction, a small ordinary text corrector, and a strong Sinhala-adapted OCR model such as the published LightOnOCR baseline. Check exact checkpoint/code licences before reuse.",
       "uncertainty": "Repeat trainable methods with three seeds. Use document-level confidence intervals, not independent characters. Analyse old/new pages, numbers and initially correct words. A useful result is that a simple edit limit or no correction performs best.",
       "limitation": "The verified dataset contains legislative pages. It cannot establish reliable handwriting recognition, arbitrary phone-photo reading or automatic form processing.",
-      "next": "Run one fixed OCR baseline on a small document-grouped subset. Check that enough correctable errors remain, then review the precise editing contribution with the supervisor.",
+      "next": "Keep X43 parked; reopen with the supervisor only after demonstrating a specific unresolved baseline failure and added contribution.",
       "ratings": [
-        3,
+        2,
         4,
         4,
         4,
@@ -331,7 +331,7 @@
         4
       ],
       "reasons": [
-        "Low-medium: careful editing is established generally; the added Sinhala OCR question needs a deeper comparison.",
+        "Medium-high confidence in overlap: existing OCR work learns error patterns, copies correct characters and detects errors before correction; no distinct remaining failure is demonstrated.",
         "Medium: real Sinhala images, references and document identifiers have a verified public route; full quality audit remains.",
         "Medium: frozen OCR and small correctors offer a bounded 6–8 month plan; no timing measured.",
         "Medium: correction, edit selection and compact-model training are empirical ML work.",
@@ -387,17 +387,29 @@
           "url": "https://www.theekshana.lk/project/optical-character-recognition-for-sinhala/",
           "claim": "UCSC/Theekshana already describes a Sinhala OCR post-processing engine. Do not claim to introduce Sinhala post-processing.",
           "reading_limit": "Original project description checked."
+        },
+        {
+          "title": "OCR Post Correction for Endangered Language Texts (2020)",
+          "url": "https://aclanthology.org/2020.emnlp-main.478.pdf",
+          "claim": "Existing low-resource OCR correction learns recognition-error patterns and chooses between copying existing characters and generating replacements; this overlaps X43.",
+          "reading_limit": "ACL record and indexed primary-text excerpts from sections 5.2–5.3 checked; no reproduction."
+        },
+        {
+          "title": "Post-OCR text correction for Bulgarian historical documents (2025)",
+          "url": "https://strathprints.strath.ac.uk/92317/1/Beshirov-etal-IJDL-2025-Post-OCR-text-correction-for-Bulgarian-historical-documents.pdf",
+          "claim": "Figure 1 separates error detection from correction, and the methods include character copying. The overall careful-correction workflow is established.",
+          "reading_limit": "Indexed primary-text excerpts including Figure 1 and methods checked; full PDF retrieval timed out."
         }
       ],
       "report": "reports/gaps/x43-sinhala-ocr-careful-correction.md",
-      "weighted_score": 76.7,
+      "weighted_score": 73.5,
       "gate_decisions": {
         "G1": "Pass",
         "G2": "Pass",
         "G3": "Pass",
         "G4": "Pass",
         "G5": "Pass",
-        "G6": "Unknown",
+        "G6": "Fail",
         "G7": "Pass",
         "G8": "Pass",
         "G9": "Unknown",
@@ -406,7 +418,9 @@
         "G12": "Unknown",
         "G13": "Pass"
       },
-      "qualified": false
+      "qualified": false,
+      "original_priority": 1,
+      "recommendation_status": "Parked; current formulation needs redesign; earlier first-choice recommendation withdrawn"
     },
     {
       "id": "X44",
@@ -878,5 +892,38 @@
       "method": "Web search; primary-source results used for claims",
       "limits": "Returned leads were selectively inspected; no exhaustive database search or novelty certification."
     }
-  ]
+  ],
+  "x43_novelty_recheck": {
+    "date": "2026-10-30",
+    "trigger": "User asked whether OCR correction already exists; user then requested Markdown update.",
+    "completed_queries": [
+      "\"OCR\" \"selective correction\"",
+      "\"OCR\" \"correction\" \"copy mechanism\""
+    ],
+    "search_limitations": "An earlier four-query request stalled and was stopped; no results from it support this decision. New evidence is from the completed searches and stated primary-source reading limits.",
+    "sources": [
+      {
+        "title": "OCR Post Correction for Endangered Language Texts (2020)",
+        "url": "https://aclanthology.org/2020.emnlp-main.478.pdf",
+        "claim": "Existing low-resource OCR correction learns recognition-error patterns and chooses between copying existing characters and generating replacements; this overlaps X43.",
+        "reading_limit": "ACL record and indexed primary-text excerpts from sections 5.2–5.3 checked; no reproduction."
+      },
+      {
+        "title": "Post-OCR text correction for Bulgarian historical documents (2025)",
+        "url": "https://strathprints.strath.ac.uk/92317/1/Beshirov-etal-IJDL-2025-Post-OCR-text-correction-for-Bulgarian-historical-documents.pdf",
+        "claim": "Figure 1 separates error detection from correction, and the methods include character copying. The overall careful-correction workflow is established.",
+        "reading_limit": "Indexed primary-text excerpts including Figure 1 and methods checked; full PDF retrieval timed out."
+      }
+    ],
+    "current_formulation_gap_gate": "Fail",
+    "novelty_rating_before": 3,
+    "novelty_rating_after": 2,
+    "score_before": 76.7,
+    "score_after": 73.5,
+    "all_sinhala_ocr_problems_solved": false,
+    "specific_remaining_failure_demonstrated": false,
+    "model_experiment_run": false,
+    "decision": "Park the current formulation pending a demonstrated unanswered failure and redesign.",
+    "pdf_status": "PDF not regenerated in this Markdown update; the brief labels its earlier 76.7 score and recommendation superseded."
+  }
 }

@@ -82,7 +82,7 @@ new_ids = {f'X{i:02}' for i in range(1, 11)}
 cv_ids = {f'X{i:02}' for i in range(11, 16)}
 elephant_ids = {f'X{i:02}' for i in range(16, 21)}
 maritime_ids = {f'X{i:02}' for i in range(22, 32)}
-assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids | {f'X{i:02}' for i in range(34, 46)}
+assert set(assessments) == {'AU2-R', 'TS2-R', 'CV1-R'} | new_ids | cv_ids | elephant_ids | {'X21', 'X32', 'X33'} | maritime_ids | {f'X{i:02}' for i in range(34, 47)}
 weights = [16, 15, 14, 12, 12, 12, 9, 5, 3]
 overview = (reports_root / 'research-candidates.md').read_text(encoding='utf-8')
 for candidate_id, assessment in assessments.items():
@@ -395,6 +395,22 @@ for candidate in local_practical['candidates']:
     for index, source in enumerate(candidate['sources'], 1):
         assert any(r['evidence_id'] == f"SL30-{cid}-{index:02}" and r['source_url'] == source['url'] for r in rows)
 
+assert assessments['X43']['weighted_score'] == 73.5
+assert assessments['X43']['gate_decisions']['G6'] == 'Fail'
+assert assessments['X43']['ratings'][0]['rating'] == 2
+assert local_practical['x43_novelty_recheck']['decision'].startswith('Park')
+
+coin_checks = json.loads((root / 'ancient-sri-lankan-coin-checks.json').read_text(encoding='utf-8'))
+assert coin_checks['candidate_assessment'] == assessments['X46']
+assert not coin_checks['models_run'] and not coin_checks['local_training_dataset_verified']
+assert not coin_checks['novel_gap_established']
+assert len(coin_checks['gap_verdicts']) == 4
+assert not any(gap['novel_gap_verified'] for gap in coin_checks['gap_verdicts'])
+assert len(assessments['X46']['unresolved_gates']) == 7
+for source in coin_checks['sources']:
+    assert any(row['evidence_id'] == source['evidence_id'] and row['source_url'] == source['url']
+               for row in rows), source['evidence_id']
+
 report = {
     'checked_date': '2026-10-30',
     'checks_passed': True,
@@ -426,6 +442,10 @@ report = {
     'pdf_import_candidates': len(pdf_import['candidates']),
     'sri_lanka_practical_candidates': len(local_practical['candidates']),
     'sri_lanka_practical_model_training_run': False,
+    'ancient_coin_candidate': 'X46',
+    'ancient_coin_candidate_gaps': len(coin_checks['gap_verdicts']),
+    'ancient_coin_curated_sources': len(coin_checks['sources']),
+    'ancient_coin_local_training_dataset_verified': False,
     'pdf_import_full_validation_completed': False,
     'sinhala_partial_gap_searches': len(sinhala_partial['searches']),
     'sinhala_partial_gap_search_occurrences': sinhala_partial['search_result_occurrences'],
@@ -476,7 +496,7 @@ report = {
     'screened_candidates_preserved_in_metadata': len(summary['screened_candidates']),
     'reports_and_metadata_separated': True,
     'model_training_run': False,
-    'qualification_note': 'No candidate meets every category threshold. All forty-five added-candidate scores are provisional. X43-X45 are practical Sri Lankan leads with bounded data checks and unresolved novelty; no model baseline was run. X34-X42 are imported proposals, not fully validated gaps; X34 and X38 fail the no-new-human-data gate as written. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
+    'qualification_note': 'No candidate meets every category threshold. All forty-six added-candidate scores are provisional. X46 remains conditional: an adequate ancient Sri Lankan corpus and a distinct methodological contribution are unverified. X43 is parked after closer OCR-correction overlap checks: novelty 2/5 and gate 6 Fail. X44-X45 remain provisional Sri Lankan leads; no model baseline was run. X34-X42 are imported proposals, not fully validated gaps; X34 and X38 fail the no-new-human-data gate as written. X22-X31 are maritime opportunities with unresolved novelty. X32 and X33 are distinct Sinhala audio opportunities with data, novelty, evaluation, feasibility and reuse gates unresolved. Other critical dependencies remain in their gate assessments.'
 }
 (root / 'verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, indent=2))

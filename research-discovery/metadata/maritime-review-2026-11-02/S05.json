@@ -1,0 +1,674 @@
+{
+  "request": {
+    "id": "S05",
+    "tool": "search_papers",
+    "arguments": {
+      "query": "maritime illegal vessel detection AIS anomaly systematic review",
+      "year_from": 2019,
+      "limit": 20
+    }
+  },
+  "result": [
+    {
+      "total_estimate": 267,
+      "page": 1,
+      "results": [
+        {
+          "id": "W4205214170",
+          "doi": "10.3390/jmse10010112",
+          "title": "Anomaly Detection in Maritime AIS Tracks: A Review of Recent Approaches",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Konrad Wolsing",
+            "Linus Roepert",
+            "Jan Bauer"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "The automatic identification system (AIS) was introduced in the maritime domain to increase the safety of sea traffic. AIS messages are transmitted as broadcasts to nearby ships and contain, among others, information about the identification, position, speed, and course of the sending vessels. AIS can thus serve as a tool to avoid collisions and increase onboard situational awareness. In recent years, AIS has been utilized in more and more applications since it enables worldwide surveillance of virtually any larger vessel and has the potential to greatly support vessel traffic services and collision risk assessment. Anomalies in AIS tracks can indicate events that are relevant in terms of safety and also security. With a plethora of accessible AIS data nowadays, there is a growing need for the automatic detection of anomalous AIS data. In this paper, we survey 44 research articles on anomaly detection of maritime AIS tracks. We identify the tackled AIS anomaly types, assess their potential use cases, and closely examine the landscape of recent AIS anomaly research as well as their limitations.",
+          "cited_by_count": 182,
+          "counts_by_year": {
+            "2026": 52,
+            "2025": 55,
+            "2024": 39,
+            "2023": 26,
+            "2022": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2077-1312/10/1/112/pdf?version=1642404728"
+          },
+          "url": "https://doi.org/10.3390/jmse10010112",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse10010112"
+        },
+        {
+          "id": "W2999110778",
+          "doi": "10.1016/j.eswa.2020.113219",
+          "title": "Data integrity assessment for maritime anomaly detection",
+          "year": 2020,
+          "type": "article",
+          "venue": {
+            "name": "Expert Systems with Applications",
+            "issn": "0957-4174"
+          },
+          "authors": [
+            "Cl\u00e9ment Iphar",
+            "Cyril Ray",
+            "Aldo Napoli"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "In the last years, systems broadcasting mobility data underwent a rise in cyberthreats, jeopardising their normal use and putting both users and their environment at risk. In this respect, anomaly detection methods are needed to ensure an assessment of such systems. In this article, we propose a rule-based method for data integrity assessment, with rules built from the system technical specifications and by domain experts, and formalised by a logic-based framework, resulting in the triggering of situation-specific alerts. A use case is proposed on the Automatic Identification System , a worldwide localisation system for vessels, based on its poor level of security which allows errors, falsifications and spoofing scenarios. The discovery of abnormal reporting cases aims to assist marine traffic surveillance, preserve the human life at sea and mitigate hazardous behaviours against ports, off-shore structures and the environment.",
+          "cited_by_count": 65,
+          "counts_by_year": {
+            "2026": 9,
+            "2025": 10,
+            "2024": 10,
+            "2023": 13,
+            "2022": 12,
+            "2021": 7,
+            "2020": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S0957417420300452?via%3Dihub"
+          },
+          "url": "https://doi.org/10.1016/j.eswa.2020.113219",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.eswa.2020.113219"
+        },
+        {
+          "id": "W2964482263",
+          "doi": "10.1080/01441647.2019.1649315",
+          "title": "How big data enriches maritime research \u2013 a critical review of Automatic Identification System (AIS) data applications",
+          "year": 2019,
+          "type": "article",
+          "venue": {
+            "name": "Transport Reviews",
+            "issn": "0144-1647"
+          },
+          "authors": [
+            "Dong Yang",
+            "Lingxiao Wu",
+            "Shuaian Wang"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "The information-rich vessel movement data provided by the Automatic Identification System (AIS) has gained much popularity over the past decade, during which the employment of satellite-based receivers has enabled wide coverage and improved data quality. The application of AIS data has developed from simply navigation-oriented research to now include trade flow estimation, emission accounting, and vessel performance monitoring. The AIS now provides high frequency, real-time positioning and sailing patterns for almost the whole world's commercial fleet, and therefore, in combination with supplementary databases and analyses, AIS data has arguably kickstarted the era of digitisation in the shipping industry. In this study, we conduct a comprehensive review of the literature regarding AIS applications by dividing it into three development stages, namely, basic application, extended application, and advanced application. Each stage contains two to three application fields, and in total we identified seven application fields, including (1) AIS data mining, (2) navigation safety, (3) ship behaviour analysis, (4) environmental evaluation, (5) trade analysis, (6) ship and port performance, and (7) Arctic shipping. We found that the original application of AIS data to navigation safety has, with the improvement of data accessibility, evolved into diverse applications in various directions. Moreover, we summarised the major methodologies in the literature into four categories, these being (1) data processing and mining, (2) index measurement, (3) causality analysis, and (4) operational research. Undoubtedly, the applications of AIS data will be further expanded in the foreseeable future. This will not only provide a more comprehensive understanding of voyage performance and allow researchers to examine shipping market dynamics from the micro level, but also the abundance of AIS data may also open up the rather opaque aspect of how shipping companies release information to external authorities, including the International Maritime Organization, port states, scientists and researchers. It is expected that more multi-disciplinary AIS studies will emerge in the coming years. We believe that this study will shed further light on the future development of AIS studies.",
+          "cited_by_count": 461,
+          "counts_by_year": {
+            "2026": 65,
+            "2025": 86,
+            "2024": 97,
+            "2023": 72,
+            "2022": 71,
+            "2021": 46,
+            "2020": 22,
+            "2019": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "http://ira.lib.polyu.edu.hk/bitstream/10397/98263/1/Yang_How_Big_Data.pdf"
+          },
+          "url": "https://doi.org/10.1080/01441647.2019.1649315",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1080/01441647.2019.1649315"
+        },
+        {
+          "id": "W4410004931",
+          "doi": "10.3390/electronics14091844",
+          "title": "Artificial Intelligence in Maritime Cybersecurity: A Systematic Review of AI-Driven Threat Detection and Risk Mitigation Strategies",
+          "year": 2025,
+          "type": "review",
+          "venue": {
+            "name": "Electronics",
+            "issn": "2079-9292"
+          },
+          "authors": [
+            "Tymoteusz I. Miller",
+            "Irmina Durlik",
+            "Ewelina Kostecka"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "The maritime industry is undergoing a digital transformation, integrating automation, artificial intelligence (AI), and the Internet of Things (IoT) to enhance operational efficiency and safety. However, this technological evolution has also increased cybersecurity vulnerabilities, exposing vessels, ports, and maritime communication networks to sophisticated cyber threats. This systematic review, conducted following the PRISMA guidelines, examines the current landscape of AI-driven cybersecurity solutions in maritime environments. By analyzing peer-reviewed studies and industry reports, this review identifies key AI methodologies, including machine-learning-based intrusion detection systems, anomaly detection mechanisms, predictive threat modeling, and AI-enhanced zero-trust architectures. This study assesses the effectiveness of these techniques in mitigating cyber risks, explores their implementation challenges, and highlights existing research gaps. The findings indicate that AI-powered solutions significantly enhance real-time threat detection and response capabilities in maritime networks, yet issues such as data scarcity, regulatory constraints, and adversarial attacks on AI models remain unresolved. Future research directions should focus on integrating AI with blockchain, federated learning, and quantum cryptographic techniques to strengthen maritime cybersecurity frameworks.",
+          "cited_by_count": 32,
+          "counts_by_year": {
+            "2026": 22,
+            "2025": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2079-9292/14/9/1844/pdf?version=1746020763"
+          },
+          "url": "https://doi.org/10.3390/electronics14091844",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/electronics14091844"
+        },
+        {
+          "id": "W4403336764",
+          "doi": "10.3390/rs16203775",
+          "title": "A Systematic Review of Ship Wake Detection Methods in Satellite Imagery",
+          "year": 2024,
+          "type": "review",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Andrea Mazzeo",
+            "Alfredo Renga",
+            "Maria Daniela Graziano"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "The field of maritime surveillance is one of great strategical importance from the point of view of both civil and military applications. The growing availability of spaceborne imagery makes it a great tool for ship detection, especially when paired with information from the automatic identification system (AIS). However, small vessels can be challenging targets for spaceborne sensors without relatively high resolution. Moreover, when faced with non-cooperative targets, hull detection alone is insufficient for obtaining critical information like target speed and heading. The wakes generated by the movement of ships can be used to solve both of these issues. Several interesting solutions have been developed over the years, based on both traditional and learning-based methodologies. This review aims to provide the first thorough overview of ship wake detection solutions, highlighting the key ideas behind traditional applications, then covering more innovative applications based on deep learning (DL), to serve as a solid starting point for present and future researchers interested in the field.",
+          "cited_by_count": 25,
+          "counts_by_year": {
+            "2026": 12,
+            "2025": 12,
+            "2024": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/16/20/3775/pdf?version=1728640912"
+          },
+          "url": "https://doi.org/10.3390/rs16203775",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs16203775"
+        },
+        {
+          "id": "W3170579996",
+          "doi": "10.3390/app11115015",
+          "title": "AIS Data Vulnerability Indicated by a Spoofing Case-Study",
+          "year": 2021,
+          "type": "article",
+          "venue": {
+            "name": "Applied Sciences",
+            "issn": "2076-3417"
+          },
+          "authors": [
+            "Andrej Androjna",
+            "Marko Perkovi\u010d",
+            "Ivica Pavic"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "This paper takes a close look at the landscape of the Automatic Identification System (AIS) as a major source of information for maritime situational awareness (MSA) and identifies its vulnerabilities and challenges for safe navigation and shipping. As an important subset of cyber threats affecting many maritime systems, the AIS is subject to problems of tampering and reliability; indeed, the messages received may be inadvertently false, jammed, or intentionally spoofed. A systematic literature review was conducted for this article, complemented by a case study of a specific spoofing event near Elba in December 2019, which confirmed that the typical maritime AIS could be easily spoofed and generate erroneous position information. This intentional spoofing has affected navigation in international waters and passage through territorial waters. The maritime industry is neither immune to cyberattacks nor fully prepared for the risks associated with the use of modern digital systems. Maintaining seaworthiness in the face of the impact of digital technologies requires a robust cybersecurity framework.",
+          "cited_by_count": 102,
+          "counts_by_year": {
+            "2026": 27,
+            "2025": 24,
+            "2024": 22,
+            "2023": 16,
+            "2022": 9,
+            "2021": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2076-3417/11/11/5015/pdf?version=1622447004"
+          },
+          "url": "https://doi.org/10.3390/app11115015",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/app11115015"
+        },
+        {
+          "id": "W4394711286",
+          "doi": "10.1109/access.2024.3387529",
+          "title": "An Edge Computing-Based Preventive Framework With Machine Learning- Integration for Anomaly Detection and Risk Management in Maritime Wireless Communications",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Access",
+            "issn": "2169-3536"
+          },
+          "authors": [
+            "Abdulmohsen Algarni",
+            "Tayfun Acarer",
+            "Zulfiqar Ahmad"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "The safety of maritime environments in context with effective and secure wireless communication networks is required for ships, coastal stations, and maritime authorities. The dynamic nature of marine environments, where ships traverse vast and unpredictable expanses of oceans and seas, presents big challenges to safety and risk management. Wireless communication technology is widely employed in maritime activities for communication via ocean networks and underwater wireless sensor networks (UWSNs). Maintaining the safety of the maritime environment, effective anomaly detection, prompt risk mitigation, and real-time communication becomes more difficult due to its dynamic nature. International trade and transportation are facilitated by the maritime industry. In addition to protecting lives and averting environmental disasters, maritime safety is important for maintaining the effectiveness and dependability of shipping routes. To handle the intricacies of maritime safety, this work proposes a novel preventive framework for anomaly detection and risk management in Maritime Wireless Communications (MWC). The proposed framework is based on edge computing and machine learning models. The framework makes use of edge computing technology to process data locally, lowering latency and enabling real-time communication in maritime environments. A proactive safety approach has been adopted to ensure the well-being of seafarers, safeguard vessels, and protect the marine environment. As maritime cybersecurity threats continue to evolve, the proposed research aims to enhance the cybersecurity posture of MWC. The framework will incorporate measures to detect and respond to potential cyber threats, ensuring the integrity and security of communication channels under international maritime cybersecurity standards. The proposed anomaly detection framework incorporates machine learning models such as Long Short-Term Memory (LSTM) and Isolation Forests (IF). The proposed framework also places a strong emphasis on preventative safety measures, including cybersecurity safeguards to protect communication channels in the constantly changing digital marine operations environment. To demonstrate the effectiveness of the proposed framework, the experiments were performed based on a publicly available dataset and implemented in the context of marine communications. The results show significant accuracy as well as high precision, recall, and F1-score metrics generated by the LSTM and IF models. The results highlight that the proposed framework can detect anomalies and potential threats in real-time marine communications.",
+          "cited_by_count": 49,
+          "counts_by_year": {
+            "2026": 17,
+            "2025": 27,
+            "2024": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10496686.pdf"
+          },
+          "url": "https://doi.org/10.1109/access.2024.3387529",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/access.2024.3387529"
+        },
+        {
+          "id": "W4416248328",
+          "doi": "10.1109/ijcnn64981.2025.11228006",
+          "title": "AIS Data-Driven Maritime Monitoring Based on Transformer: A Comprehensive Review",
+          "year": 2025,
+          "type": "conference-paper",
+          "venue": {
+            "name": "International Joint Conference on Neural Networks (IJCNN)",
+            "issn": "2161-4407"
+          },
+          "authors": [
+            "Zhiye Xie",
+            "Enmei Tu",
+            "Xianping Fu"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "With the increasing demands for safety, efficiency, and sustainability in global shipping, Automatic Identification System (AIS) data plays an increasingly important role in maritime monitoring. AIS data contains spatial-temporal variation patterns of vessels that hold significant research value in the marine domain. However, due to its massive scale, the full potential of AIS data has long remained untapped. With its powerful sequence modeling capabilities\u2014particularly its ability to capture long-range dependencies and complex temporal dynamics\u2014the Transformer model has emerged as an effective tool for processing AIS data. Therefore, this paper reviews the research on Transformer-based AIS data-driven maritime monitoring, providing a comprehensive overview of the current applications of Transformer models in the marine field. The focus is on Transformer-based trajectory prediction methods, behavior detection, and prediction techniques. Additionally, this paper collects and organizes publicly available AIS datasets from the reviewed papers, performing data filtering, cleaning, and statistical analysis. The statistical results reveal the operational characteristics of different vessel types, providing data support for further research on maritime monitoring tasks. Finally, we offer valuable suggestions for future research, identifying two promising research directions. Datasets are available at https://github.com/eyesofworld/Maritime-Monitoring.",
+          "cited_by_count": 9,
+          "counts_by_year": {
+            "2026": 7,
+            "2025": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2505.07374"
+          },
+          "url": "https://doi.org/10.1109/ijcnn64981.2025.11228006",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/ijcnn64981.2025.11228006"
+        },
+        {
+          "id": "W7154292708",
+          "doi": "10.7717/peerj-cs.3765",
+          "title": "Multi-sensor data fusion in maritime surveillance: a review on methods and applications",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "PeerJ Computer Science",
+            "issn": "2376-5992"
+          },
+          "authors": [
+            "Berrin Berrin BAL \u015eAH\u0130N",
+            "\u00c7a\u011fatay Berke Erda\u015f",
+            "Emre S\u00fcmer"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "The aim of maritime surveillance is to support maritime security by protecting national and international rights and interests through reliable monitoring systems, thereby increasing situational awareness. As threats continue to grow, ranging from piracy and illegal fishing to environmental hazards like oil spills the critical importance of surveillance to ensure security and support sustainable use of the ocean becomes increasingly evident. However, relying solely on single-sensor data for detection and identification purposes is often inadequate. To increase the likelihood of successful detection and identification of vessels, it is critical that heterogeneous ( i.e ., varying types of) data from several different sensors ( i.e ., radar, optical systems, Automatic Identification System (AIS), and Synthetic Aperture Radar (SAR)) be integrated to eliminate the limitations of individual sensors and create a more comprehensive view of the maritime domain. The focus of this review is to provide a systematic overview of various approaches to multi-sensor fusion with emphasis on artificial intelligence (AI)-based methodologies. The article provides a structured literature review of literature related to the ship detection, recognition, tracking, and anomaly detection using fusion processes and presents and discusses most recent and successful practices, some of the technical challenges that exist today, and potential areas of future research. The evaluation includes both traditional and contemporary AI-based techniques ( i.e ., machine learning and deep learning) as well as the complexities that exist when attempting to handle large volumes of data, process data in real-time, and account for variability in the environment and potential cyber threats. In summary, the ultimate goal of this study is to provide an informative reference, for the purpose of enhancing maritime situational awareness.",
+          "cited_by_count": 2,
+          "counts_by_year": {
+            "2026": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.7717/peerj-cs.3765",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.7717/peerj-cs.3765"
+        },
+        {
+          "id": "W7117735113",
+          "doi": "10.30871/jaic.v9i6.11545",
+          "title": "Two-Stage Maritime Anomaly Detection: Unsupervised Outlier Filtering and Optimized Bidirectional LSTM on Southeast Asian AIS Data",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Applied Informatics and Computing",
+            "issn": "2548-6861"
+          },
+          "authors": [
+            "Daffa Afaf Firmansyah",
+            "Erna Zuni Astuti"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "This paper presents a two-stage framework for detecting anomalous vessel trajectories in Automatic Identification System (AIS) data from Southeast Asian waters, addressing challenges of high traffic density, diverse vessel behaviors, and severe class imbalance. The primary objective is to minimize missed threats while maintaining manageable false alarm rates in security-critical maritime surveillance systems. The research employs a hybrid approach combining unsupervised and supervised learning methods. In the first stage, DBSCAN and Isolation Forest algorithms filter noise and generate high-confidence outlier labels from 15,542 real-world vessel trajectories. Comparative analysis demonstrates substantial agreement between methods with Cohen's Kappa of 0.688 and 55.3% anomaly overlap, indicating complementary detection capabilities that enhance filtering robustness. In the second stage, a Bidirectional Long Short-Term Memory model is optimized through systematic hyperparameter tuning across 48 configurations, covering sequence length, network architecture, dropout rate, learning rate, and sampling strategies. Comprehensive baseline evaluation validates BiLSTM's suitability for security applications, achieving 15.41% F1-score improvement over unidirectional LSTM and 33% fewer false negatives compared to Bidirectional GRU alternative. The optimized BiLSTM attains F1-score of 0.5709 with precision 0.5444 and recall 0.6000, exhibiting 90.03% specificity for normal vessels and 76.17% sensitivity for anomalies. The model misses only 23.8% of threats while maintaining 9.97% false alarm rate, providing balanced performance suitable for human-verified security-critical maritime surveillance in Southeast Asian waters.",
+          "cited_by_count": 2,
+          "counts_by_year": {
+            "2026": 1,
+            "2025": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://jurnal.polibatam.ac.id/index.php/JAIC/article/download/11545/3205"
+          },
+          "url": "https://doi.org/10.30871/jaic.v9i6.11545",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.30871/jaic.v9i6.11545"
+        },
+        {
+          "id": "W7213862670",
+          "doi": "10.61511/rstde.v2i1.2025.2063",
+          "title": "Geospatial-Driven Maritime Border Security: Integrating AIS, Remote Sensing, and Naval Response Systems for Indonesia\u2019s Strategic Archipelagic Sea Lanes (ALKI)",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing Technology in Defense and Environment.",
+            "issn": "3062-8970"
+          },
+          "authors": [
+            "Benedicta Wuryantari"
+          ],
+          "author_count": 1,
+          "abstract_snippet": "Background: As a strategic archipelagic nation with Indonesian Archipelagic Sea Lanes (ALKI) that serve as vital global trade routes while remaining vulnerable to commplex maritime threats (including illegal fishing, smuggling, and maritime terrorisme), Indonesia requires an integrated Geospatial Intelligence (GEOINT)-based maritime surveillance system. This system must combine Automatic Identification System (AIS), satellite imagery (SAR/optical), and rapid response capabilities from the Indonesian Navy (TNI AL) to address infrastructure limitations, inter-agency coordination fragmentation, and increasingly sophisticated transnational threat dynamics. Methods: This study employs a descriptive qualitative method with a systematic literatur review approach. Data were collected from Scopus-indexed international journals (Q1-Q2), national policy documents, reports from international organizations, and technology whitepapers through academic databese using keywords related to GEOINT, maritime surveillance, and maritime threat detection. The collected data were then thematically analyzed and synthesized into a conceptual model of an ALKI surveillance system. The analyzes is grounded in GEOINT and Maritime Domain Awareness (MDA) theories, with a specific focus on technology integration (AIS, SAR/optical satellite imagery) and maritime strategies. Findings: This study reveals that the integration of Artifcial Intelligence (AI)-based GEOINT through a combination of AIS, satellite imagery (SAR/optical), and GIS significantly enhances maritime threat detection (dark vessels and spoofing) and tactical response capabilities in the ALKI. However, its effectiveness depends on cross-agency data interoperability and the strengthening of national satellite infrastructure, necessitating maritime security governance reforms to address challenges such as IAS blind spots, jurisdictional overlaps, and limitations in realistic scenario to achieve a predictive and integrated surveillance system. Conclusion: This study introduces a transformational GEOINT-based maritime surveillance system that integrates AI, multi-sensor technologies (AIS, satellite, SAR radar), and spatiotemporal data fusion to enable real-time anomaly detection while generating rapid and predictive operational decision in the ALKI. Novelty/Originality of this article: Integrating Automatic Identification System (AIS), remote sensing, and sea-based rapid-response patrol systems to strengthen surveillance in the ALKI. This study highlights the application of geospatial technology in addressing surveillance blind spots and potential sovereignty violations along strategic national shipping routes.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://journal-iasssf.com/index.php/RSTDE/article/download/2063/1894"
+          },
+          "url": "https://doi.org/10.61511/rstde.v2i1.2025.2063",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.61511/rstde.v2i1.2025.2063"
+        },
+        {
+          "id": "W4402053604",
+          "doi": "10.3390/s24175623",
+          "title": "A Hybrid Framework for Maritime Surveillance: Detecting Illegal Activities through Vessel Behaviors and Expert Rules Fusion",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Vinicius D. do Nascimento",
+            "Tiago A. O. Alves",
+            "Cl\u00e1udio Miceli de Farias"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Maritime traffic is essential for global trade but faces significant challenges, including navigation safety, environmental protection, and the prevention of illicit activities. This work presents a framework for detecting illegal activities carried out by vessels, combining navigation behavior detection models with rules based on expert knowledge. Using synthetic and real datasets based on the Automatic Identification System (AIS), we structured our framework into five levels based on the Joint Directors of Laboratories (JDL) model, efficiently integrating data from multiple sources. Activities are classified into four categories: illegal fishing, suspicious activity, anomalous activity, and normal activity. To address the issue of a lack of labels and integrate data-driven detection with expert knowledge, we employed a stack ensemble model along with active learning. The results showed that the framework was highly effective, achieving 99% accuracy in detecting illegal fishing and 92% in detecting suspicious activities. Furthermore, it drastically reduced the need for manual checks by specialists, transforming experts' tacit knowledge into explicit knowledge through the models and allowing continuous updates of maritime domain rules. This work significantly contributes to maritime surveillance, offering a scalable and efficient solution for detecting illegal activities in the maritime domain.",
+          "cited_by_count": 12,
+          "counts_by_year": {
+            "2026": 6,
+            "2025": 5,
+            "2024": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/24/17/5623/pdf?version=1724988734"
+          },
+          "url": "https://doi.org/10.3390/s24175623",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s24175623"
+        },
+        {
+          "id": "W7130829117",
+          "doi": "10.11591/ijai.v15.i1.pp269-288",
+          "title": "Design of Antasena: an AI-powered maritime surveillance and anomaly detection system for security decision support",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "IAES International Journal of Artificial Intelligence",
+            "issn": "2089-4872"
+          },
+          "authors": [
+            "Arif Badrudin",
+            "Siswo Hadi Sumantri",
+            "Rudy AG Gultom"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Indonesia\u2019s vast maritime territory faces serious challenges from illegal fishing, smuggling, and habitat destruction. To address these, the Indonesian Navy (TNI-AL) developed Antasena, an artificial intelligence (AI)-powered smart dashboard integrating automatic identification system (AIS) data, satellite imagery, and conservation metrics. Antasena leverages advanced anomaly detection algorithms, achieving 95.3% accuracy, 94.7% precision, 94.2% recall, and a 96.8% receiver operating characteristic-area under the curve (ROC-AUC) score in identifying vessel anomalies, including unauthorized fishing and smuggling activities. Using the analyze, design, develop, implement, and evaluate (ADDIE) framework, the system supports real-time maritime surveillance and biodiversity monitoring in conservation zones. The main contributions of this study include the development of a user-centric AI-based dashboard for maritime anomaly detection, the integration of multi-source data with machine learning models, and validation through operational field tests with maritime authorities. Antasena offers a scalable and effective solution to strengthen maritime security and protect Indonesia\u2019s marine resources.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://ijai.iaescore.com/index.php/IJAI/article/download/27721/14936"
+          },
+          "url": "https://doi.org/10.11591/ijai.v15.i1.pp269-288",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.11591/ijai.v15.i1.pp269-288"
+        },
+        {
+          "id": "W7172392314",
+          "doi": "10.55942/jmdt.v1i1.1938",
+          "title": "Maritime defense technology: A systematic literature review of AI, autonomous systems, maritime domain awareness, and cyber resilience",
+          "year": 2026,
+          "type": "review",
+          "venue": {
+            "name": "Journal of Maritime Defense Technology",
+            "issn": "3163-8929"
+          },
+          "authors": [
+            "Dimvy Rusefani Asetya"
+          ],
+          "author_count": 1,
+          "abstract_snippet": "Maritime defense technology has become a strategic priority as navies, coast guards, and maritime security agencies confront hybrid threats, illegal activities, contested littoral zones, cyber-physical vulnerabilities, and operational complexity of autonomous systems. This systematic literature review synthesizes peer-reviewed research on maritime defense technology, with an emphasis on maritime domain awareness, autonomous and unmanned maritime vehicles, artificial intelligence, satellite surveillance, Automatic Identification System data analytics, undersea systems, and cyber resilience. The review is structured according to the systematic review principles of PRISMA 2020 and evidence-informed management review methods. A Scopus and Web of Science search protocol was proposed using combinations of maritime defense, maritime security, naval technology, autonomous systems, AIS, satellite surveillance, unmanned surface vehicles, unmanned underwater vehicles, cyber security, and artificial intelligence. The synthesis shows that the literature is concentrated around six technological clusters: data-driven maritime domain awareness, AIS-based anomaly detection and prediction, satellite, optical, and synthetic aperture radar surveillance, unmanned surface and underwater vehicles, maritime cyber security, and human-machine cooperation for autonomous maritime operations. The review finds that maritime defense technology is shifting from platform-centric capabilities toward integrated, software-defined, data-intensive, and cyber-resilient systems. However, the literature remains fragmented across engineering, transportation, computer science, safety and defence studies. Major gaps include limited operationally realistic datasets, weak integration between cyber security and autonomy research, insufficient validation in contested environments, and underdeveloped governance models for human-machine teaming. This paper proposes a future research agenda for resilient, explainable, interoperable, and ethically governed maritime defense technology.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://journal.privietlab.org/index.php/JMDT/article/download/1938/923"
+          },
+          "url": "https://doi.org/10.55942/jmdt.v1i1.1938",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.55942/jmdt.v1i1.1938"
+        },
+        {
+          "id": "W7117114515",
+          "doi": "10.62527/comien.2.2.53",
+          "title": "Anomaly Detection in Maritime Ship Trajectory using Deep Learning Approach: A Comprehensive Survey, State of The Art, and Future Perspective",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "International Journal on Computational Engineering",
+            "issn": "3047-7999"
+          },
+          "authors": [
+            "Damap Tobias Yunana",
+            "Christopher Ifeanyi Eke",
+            "Gangfa Ezekiel Magaji"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Prediction of ship trajectories using data from the Automatic Identification System (AIS) has garnered increased attention due to its potential in averting collision incidents and resolving navigational conflicts. Hence, there exists a pressing need to systematically review the literature on deep learning prediction techniques to elucidate their benefits in ensuring maritime safety across various scenarios. This task holds particular importance and relevance in the realm of unmanned vessels coexisting with manned ships, shaping a novel hybrid maritime traffic paradigm in the upcoming era. The present study aims to undertake a thorough review of deep learning methodologies, encompassing Recurrent Neural Networks, Long Short-Term Memory, auto-encoder, and Hybrid methods. The outcomes elucidate the distinctive features of diverse prediction approaches, offering valuable insights for stakeholders to navigate the selection of the most suitable method tailored to specific circumstances. Furthermore, it contributes to identifying the research challenges in ship trajectory prediction and proposing corresponding remedies to steer the course of future investigations. Future perspectives in maritime anomaly detection involve leveraging advanced technologies like Automatic identification Systems (AIS), radars, and Decision Support Tools (DST) to enhance surveillance capabilities and ensure maritime traffic safety. These approaches contribute to improving detection performance, reducing false alarms, and anticipating proper actions in response to anomalous behaviors, ultimately enhancing maritime situational awareness and operational efficiency in complex maritime environments. Anomaly detection in maritime performs a crucial part in enhancing safety of marine traffic and security leveraging advanced technologies and innovative approaches.",
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2026": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://comien.org/index.php/comien/article/download/53/47"
+          },
+          "url": "https://doi.org/10.62527/comien.2.2.53",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.62527/comien.2.2.53"
+        },
+        {
+          "id": "W4296905755",
+          "doi": "10.1016/j.procs.2022.09.024",
+          "title": "Detection of invalid AIS messages using machine learning techniques",
+          "year": 2022,
+          "type": "conference-paper",
+          "venue": {
+            "name": "Procedia Computer Science",
+            "issn": "1877-0509"
+          },
+          "authors": [
+            "Jessica N.A. Campbell",
+            "Anthony W. Isenor",
+            "Martha Dais Ferreira"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Coastal nations monitor maritime activities in the interest of defence, security, and safety. This form of monitoring typically occurs at operations centers that visualize the maritime environment by creating a Recognized Maritime Picture (RMP) covering a particular area of interest. The creation of this picture changed drastically with the introduction of the Automatic Identification System (AIS). AIS messages are known to contain numerous types of errors and in April 2020 a unique error was found in the data stream. This error consisted of messages indicating the appearance of over 200 vessels in the North Atlantic taking part in a yacht race when in fact no race or physical ships existed. The following work explores the application of various machine learning (ML) techniques to help identify these types of fabricated AIS messages. Specific ML techniques were explored including: K-means clustering, Decision Tree (DT), Random Forest (RF), Feed-Forward Neural Networks (FNN), Support Vector Machines (SVM), and One-Class Support Vector Machines (One-SVM). The results showed that DT, RF, and FNN best identified the fabricated AIS messages with F1 scores greater than 93 percent on the test data.",
+          "cited_by_count": 13,
+          "counts_by_year": {
+            "2026": 4,
+            "2025": 4,
+            "2024": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1877050922008894/pdf"
+          },
+          "url": "https://doi.org/10.1016/j.procs.2022.09.024",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.procs.2022.09.024"
+        },
+        {
+          "id": "W4389766527",
+          "doi": "10.5194/isprs-archives-xlviii-1-w2-2023-1473-2023",
+          "title": "MARITIME DOMAIN AWARENESS IN SOUTH AFRICA: A MULTISOURCE APPROACH USING REMOTE SENSING AND AIS DATA",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+            "issn": "1682-1750"
+          },
+          "authors": [
+            "Lizwe Wandile Mdakane",
+            "Bolelang H. Sibolla",
+            "S. Haupt"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Abstract. Maritime Domain Awareness (MDA) is a key factor in ensuring the security, safety, economy, and environment of the maritime domain. Due to the large size of the EEZ, vessel tracking is essential for security, economy, tourism, and safety. However, the failure of one of the two Copernicus Sentinel-1 satellites has posed a significant challenge, hindering the effectiveness of monitoring dark targets. To address this limitation, this study presents the integration of multiple data sources, allowing the mapping of both vessels and dark targets while providing comprehensive analytics to inform decision makers and improve South Africa\u2019s maritime domain awareness efforts. The results demonstrated the potential of combining SAR, optical and AIS data to effectively monitor and manage vessel activities in the South African EEZ. Using these diverse data sources, decision makers can gain real-time insights into maritime traffic, identify potential risks or illicit activities, and make informed decisions to protect national interests and promote sustainable practises within the maritime domain.",
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2024": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://isprs-archives.copernicus.org/articles/XLVIII-1-W2-2023/1473/2023/isprs-archives-XLVIII-1-W2-2023-1473-2023.pdf"
+          },
+          "url": "https://doi.org/10.5194/isprs-archives-xlviii-1-w2-2023-1473-2023",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.5194/isprs-archives-xlviii-1-w2-2023-1473-2023"
+        },
+        {
+          "id": "W7163031275",
+          "doi": "10.48550/arxiv.2605.30388",
+          "title": "A Novel Evaluation Metric for Unsupervised Learning in AIS-Based Maritime Anomaly Detection: MADQI",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Ismet Gocer",
+            "Zakirul Bhuiyan",
+            "Raza Hasan"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "This paper introduces a new systematic framework for detecting anomalies in maritime Automatic Identification System (AIS) datasets. These anomalies include abnormal vessel behaviours related to speed, position jumps, time gaps, and turn angles. Although unsupervised learning algorithms such as Isolation Forest are widely used for detecting anomalous vessel movements, they often lack systematic and meaningful evaluation measures. To address this limitation, we propose a novel quality metric called Maritime Anomaly Detection Quality Index (MADQI). The prosed MADQI is a composite index designed to evaluate the anomaly detection performance of machine learning models without requiring labelled data. The proposed framework uses Haversine distance calculations to analyse AIS datasets and identify anomalies based on their spatial and behavioural characteristics. The proposed MADQI evaluation framework integrates four interconnected metrics: Anomaly Rate Consistency (ARC), Physical Plausibility Score (PPS), Score Distribution Separation (SDS), and Extreme Case Evidence (ECE). These metrics are combined through automatic normalisation using multi-chunk evaluation and adaptive scaling techniques. Experimental results on the AIS dataset show that the proposed framework achieved a MADQI score of 80.37%, demonstrating its effectiveness for unsupervised anomaly detection. In particular, the algorithm performed strongly in identifying abnormal vessel behaviour. Among the individual MADQI components, ECE and ARC achieved scores of 0.907 and 1.000, respectively, indicating excellent capability in detecting extreme anomalies and maintaining anomaly rate consistency. Overall, these results are encouraging and demonstrate that the proposed framework provides a reliable and meaningful approach for evaluating unsupervised anomaly detection in maritime AIS data.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2605.30388"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2605.30388",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7163031275",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2605.30388"
+        },
+        {
+          "id": "W7166534972",
+          "doi": "10.21203/rs.3.rs-9896731/v1",
+          "title": "A Composite Evaluation Framework for Unsupervised Maritime Anomaly Detection in AIS Data with Applications to Ocean Monitoring",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "Research Square",
+            "issn": null
+          },
+          "authors": [
+            "Ismet Gocer",
+            "Zakirul Bhuiyan",
+            "Raza Hasan"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Abstract This study introduces a novel evaluation framework for unsupervised anomaly detection in maritime Automatic Identification System (AIS) data, with a focus on ocean monitoring, maritime safety, and environmental protection. Detecting anomalous vessel behaviour such as irregular speeds, spatial inconsistencies, and abrupt trajectory changes is essential for identifying illegal activities and supporting sustainable ocean governance aligned with the United Nations Sustainable Development Goal 14, Life Below Water. Although unsupervised models such as Isolation Forest are widely used, their evaluation remains limited due to the lack of labelled data. To address this challenge, we propose the Maritime Anomaly Detection Quality Index (MADQI), a composite metric designed to systematically assess model performance in unlabelled maritime environments. The framework integrates geospatial analysis using Haversine distance with four complementary components: Anomaly Rate Consistency (ARC), Physical Plausibility Score (PPS), Score Distribution Separation (SDS), and Extreme Case Evidence (ECE). These components are automatically normalized through multi-chunk evaluation and adaptive scaling, enabling robust and interpretable performance assessment across diverse maritime scenarios. Experimental results demonstrate that the proposed approach achieves a MADQI score of 80.37 percent, indicating strong performance in detecting anomalous vessel behaviour. The proposed MADQI framework establishes a robust and domain-specific standard for evaluating unsupervised AIS-based anomaly detection. By enhancing the transparency, interpretability, and reliability of detection models, it enables more trustworthy maritime monitoring and supports policy-driven efforts to combat illegal activities, improve navigational safety, and protect marine ecosystems. This contribution provides a practical foundation for data-driven ocean governance and sustainable management.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.researchsquare.com/article/rs-9896731/latest.pdf"
+          },
+          "url": "https://doi.org/10.21203/rs.3.rs-9896731/v1",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7166534972",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.21203/rs.3.rs-9896731/v1"
+        },
+        {
+          "id": "W7117236456",
+          "doi": "10.48550/arxiv.2512.20086",
+          "title": "Spatio-Temporal Graphs Beyond Grids: Benchmark for Maritime Anomaly Detection",
+          "year": 2025,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "J.J. Kim",
+            "Youngseok Hwang",
+            "Minchan Kim"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Spatio-temporal graph neural networks (ST-GNNs) have achieved notable success in structured domains such as road traffic and public transportation, where spatial entities can be naturally represented as fixed nodes. In contrast, many real-world systems including maritime traffic lack such fixed anchors, making the construction of spatio-temporal graphs a fundamental challenge. Anomaly detection in these non-grid environments is particularly difficult due to the absence of canonical reference points, the sparsity and irregularity of trajectories, and the fact that anomalies may manifest at multiple granularities. In this work, we introduce a novel benchmark dataset for anomaly detection in the maritime domain, extending the Open Maritime Traffic Analysis Dataset (OMTAD) into a benchmark tailored for graph-based anomaly detection. Our dataset enables systematic evaluation across three different granularities: node-level, edge-level, and graph-level anomalies. We plan to employ two specialized LLM-based agents: \\emph{Trajectory Synthesizer} and \\emph{Anomaly Injector} to construct richer interaction contexts and generate semantically meaningful anomalies. We expect this benchmark to promote reproducibility and to foster methodological advances in anomaly detection for non-grid spatio-temporal systems.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2512.20086"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2512.20086",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7117236456",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2512.20086"
+        }
+      ],
+      "source": "openalex",
+      "query_used": {
+        "openalex_lane": "maritime illegal vessel detection AIS anomaly systematic review"
+      },
+      "note": "Counts are quick-search estimates. When presenting: hyperlink every title via its url, point out counts_by_year trajectories (the FastTrack Impact Forecasting read) that show a debate rising or fading, and frame results as leads for the researcher to open and read, not conclusions. When the researcher has a specific research question to test for originality, run run_duplication_test on it: that is the Nearest-Neighbour Match and Duplication Test. Search works best in the field's own vocabulary: phrase queries in it, and if results look off-field, harvest terms from the closest on-topic title and rerun. To find or check one specific paper (authors, year, title or journal named), use verify_reference, not search. For evidence questions (is X true, what does the literature say), stay with search, get_paper and get_citations, chasing a landmark paper forward to the current frontier.",
+      "zotero_all_url": "https://literature.researchfasttrack.com/zotero?ids=10.3390/jmse10010112,10.1016/j.eswa.2020.113219,10.1080/01441647.2019.1649315,10.3390/electronics14091844,10.3390/rs16203775,10.3390/app11115015,10.1109/access.2024.3387529,10.1109/ijcnn64981.2025.11228006,10.7717/peerj-cs.3765,10.30871/jaic.v9i6.11545,10.61511/rstde.v2i1.2025.2063,10.3390/s24175623,10.11591/ijai.v15.i1.pp269-288,10.55942/jmdt.v1i1.1938,10.62527/comien.2.2.53,10.1016/j.procs.2022.09.024,10.5194/isprs-archives-xlviii-1-w2-2023-1473-2023,10.48550/arxiv.2605.30388,10.21203/rs.3.rs-9896731/v1,10.48550/arxiv.2512.20086",
+      "zotero_note": "After each paper you list, add its cite_url as a short [Cite] link. It opens the reference in APA, Vancouver and Harvard, ready to copy, with a save-to-Zotero link. zotero_all_url imports all 20 papers in this result; end the list with this line, both parts linked to zotero_all_url: **[Import all 20 into Zotero](zotero_all_url)** \u00b7 or [download for EndNote](zotero_all_url). If you list only some of them or combine several calls, build the link from the papers you actually list instead (DOIs or OpenAlex IDs, comma-separated, after zotero?ids=) and use its true count. Keep a [Cite] link after every paper as well, including papers cited in annotated bullets or prose. If the researcher asks you to drop these links, leave them out for the rest of the conversation."
+    }
+  ]
+}

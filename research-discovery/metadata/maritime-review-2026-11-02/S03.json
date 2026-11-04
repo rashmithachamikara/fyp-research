@@ -1,0 +1,650 @@
+{
+  "request": {
+    "id": "S03",
+    "tool": "search_papers",
+    "arguments": {
+      "query": "maritime small vessel detection optical infrared benchmark domain generalization",
+      "year_from": 2020,
+      "limit": 20
+    }
+  },
+  "result": [
+    {
+      "total_estimate": 219,
+      "page": 1,
+      "results": [
+        {
+          "id": "W4401900828",
+          "doi": "10.1016/j.apor.2024.104194",
+          "title": "An efficient model for small object detection in the maritime environment",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Applied Ocean Research",
+            "issn": "0141-1187"
+          },
+          "authors": [
+            "Zeyuan Shao",
+            "Yong Yin",
+            "Hongguang Lyu"
+          ],
+          "author_count": 7,
+          "cited_by_count": 56,
+          "counts_by_year": {
+            "2026": 28,
+            "2025": 19,
+            "2024": 9
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://discovery.ucl.ac.uk/id/eprint/10199771/1/An%20Efficient%20Model%20for%20Small%20Object%20Detection%20in%20the%20Maritime%20Environment.pdf"
+          },
+          "url": "https://doi.org/10.1016/j.apor.2024.104194",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.apor.2024.104194"
+        },
+        {
+          "id": "W4220681577",
+          "doi": "10.3390/jmse10030377",
+          "title": "Object Detection and Classification Based on YOLO-V5 with Improved Maritime Dataset",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Jun-Hwa Kim",
+            "Nam\u2010Ho Kim",
+            "Yong Woon Park"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "SMD (Singapore Maritime Dataset) is a public dataset with annotated videos, and it is almost unique in the training of deep neural networks (DNN) for the recognition of maritime objects. However, there are noisy labels and imprecisely located bounding boxes in the ground truth of the SMD. In this paper, for the benchmark of DNN algorithms, we correct the annotations of the SMD dataset and present an improved version, which we coined SMD-Plus. We also propose augmentation techniques designed especially for the SMD-Plus. More specifically, an online transformation of training images via Copy & Paste is applied to solve the class-imbalance problem in the training dataset. Furthermore, the mix-up technique is adopted in addition to the basic augmentation techniques for YOLO-V5. Experimental results show that the detection and classification performance of the modified YOLO-V5 with the SMD-Plus has improved in comparison to the original YOLO-V5. The ground truth of the SMD-Plus and our experimental results are available for download.",
+          "cited_by_count": 253,
+          "counts_by_year": {
+            "2026": 23,
+            "2025": 61,
+            "2024": 76,
+            "2023": 78,
+            "2022": 15
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2077-1312/10/3/377/pdf?version=1646631149"
+          },
+          "url": "https://doi.org/10.3390/jmse10030377",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse10030377"
+        },
+        {
+          "id": "W4407574876",
+          "doi": "10.1109/tits.2025.3530678",
+          "title": "A Guide to Image- and Video-Based Small Object Detection Using Deep Learning: Case Study of Maritime Surveillance",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Transactions on Intelligent Transportation Systems",
+            "issn": "1524-9050"
+          },
+          "authors": [
+            "Aref Miri Rekavandi",
+            "Lian Xu",
+            "Farid Boussa\u00efd"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Detecting small objects in optical images and videos is a significant challenge in numerous intelligent transportation and autonomous systems. State-of-the-art generic object detection methods fail to accurately localize and identify such small objects (e.g., pedestrians, small vehicles, obstacles). Because small objects occupy only a small area in the input image (e.g.,$32 \\times 32$pixels or less), the information extracted from such a small area is not always rich enough to support decision-making. Multidisciplinary strategies are being developed by researchers working at the interface of deep learning and computer vision to enhance the performance of Small Object Detection (SOD). In this paper, we provide a comprehensive review of over 160 research papers published between 2017 and 2022 in order to survey this growing subject. This paper summarizes the existing literature and provides a taxonomy that illustrates the broad picture of current research. We further explore methods to boost the performance of small object detection in maritime settings, where enhanced performance is crucial for ensuring safety and managing traffic. Detecting small objects in the maritime environment requires additional considerations and the current survey aims to review the advanced techniques addressing those aspects. In addition, the popular SOD datasets for generic and maritime applications are discussed, and also well-known evaluation metrics for the state-of-the-art methods on some of the datasets are provided. The link to these datasets appears inhttps://github.com/arekavandi/Datasets_SOD.",
+          "cited_by_count": 88,
+          "counts_by_year": {
+            "2026": 51,
+            "2025": 29,
+            "2024": 5,
+            "2023": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2207.12926"
+          },
+          "url": "https://doi.org/10.1109/tits.2025.3530678",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/tits.2025.3530678"
+        },
+        {
+          "id": "W7124917256",
+          "doi": "10.1007/s11370-025-00689-9",
+          "title": "A survey on maritime perception datasets and technologies for autonomous surface vessels",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Intelligent Service Robotics",
+            "issn": "1861-2776"
+          },
+          "authors": [
+            "Sol Han",
+            "Dongwook Lee",
+            "Jonghwi Kim"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Abstract In recent years, maritime autonomous surface vessels (ASVs) have garnered increasing attention due to advancements in sensor technologies and deep learning. A key challenge in developing safe maritime vessel navigation is the ability to perceive the dynamic maritime environment, which involves tasks such as obstacle detection, recognition of navigational elements, and situational awareness. This paper reviews a range of studies on maritime datasets and perception algorithms, many of which present their own datasets alongside perception models. The datasets are organized based on sensor configurations and task objectives, as well as the algorithms used for tasks such as object detection, semantic segmentation, target tracking, multimodal sensor fusion, and simultaneous localization and mapping (SLAM). This survey provides a comprehensive overview of recent advancements in maritime perception from a robotics perspective and offers valuable insights to guide future research toward the development of safe and reliable autonomous ship navigation systems.",
+          "cited_by_count": 11,
+          "counts_by_year": {
+            "2026": 11
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11370-025-00689-9.pdf"
+          },
+          "url": "https://doi.org/10.1007/s11370-025-00689-9",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1007/s11370-025-00689-9"
+        },
+        {
+          "id": "W4388713799",
+          "doi": "10.1016/j.engappai.2023.107513",
+          "title": "Deep learning-based object detection in maritime unmanned aerial vehicle imagery: Review and experimental comparisons",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Engineering Applications of Artificial Intelligence",
+            "issn": "0952-1976"
+          },
+          "authors": [
+            "Chenjie Zhao",
+            "Ryan Wen Liu",
+            "Jingxiang Qu"
+          ],
+          "author_count": 4,
+          "cited_by_count": 124,
+          "counts_by_year": {
+            "2026": 39,
+            "2025": 56,
+            "2024": 29
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2311.07955"
+          },
+          "url": "https://doi.org/10.1016/j.engappai.2023.107513",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.engappai.2023.107513"
+        },
+        {
+          "id": "W4413080887",
+          "doi": "10.3390/rs17142471",
+          "title": "A Cost-Sensitive Small Vessel Detection Method for Maritime Remote Sensing Imagery",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Zhuhua Hu",
+            "Wei Wu",
+            "Ziqi Yang"
+          ],
+          "author_count": 9,
+          "abstract_snippet": "Vessel detection technology based on marine remote sensing imagery is of great importance. However, it often faces challenges, such as small vessel targets, cloud occlusion, insufficient data volume, and severely imbalanced class distribution in datasets. These issues result in conventional models failing to meet the accuracy requirements for practical applications. In this paper, we first construct a novel remote sensing vessel image dataset that includes various complex scenarios and enhance the data volume and diversity through data augmentation techniques. Secondly, we address the class imbalance between foreground (small vessels) and background in remote sensing imagery from two perspectives: the sensitivity of IoU metrics to small object localization errors and the innovative design of a cost-sensitive loss function. Specifically, at the dataset level, we select vessel targets appearing in the original dataset as templates and randomly copy\u2013paste several instances onto arbitrary positions. This enriches the diversity of target samples per image and mitigates the impact of data imbalance on the detection task. At the algorithm level, we introduce the Normalized Wasserstein Distance (NWD) to compute the similarity between bounding boxes. This enhances the importance of small target information during training and strengthens the model\u2019s cost-sensitive learning capabilities. Ablation studies reveal that detection performance is optimal when the weight assigned to the NWD metric in the model\u2019s loss function matches the overall proportion of small objects in the dataset. Comparative experiments show that the proposed NWD-YOLO achieves Precision, Recall, and AP50 scores of 0.967, 0.958, and 0.971, respectively, meeting the accuracy requirements of real-world applications.",
+          "cited_by_count": 3,
+          "counts_by_year": {
+            "2026": 2,
+            "2025": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/17/14/2471/pdf?version=1752739616"
+          },
+          "url": "https://doi.org/10.3390/rs17142471",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs17142471"
+        },
+        {
+          "id": "W4386067653",
+          "doi": "10.3390/jmse11091638",
+          "title": "A Benchmark for Maritime Object Detection with Centernet on an Improved Dataset, ABOships-PLUS",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Bogdan Iancu",
+            "Jesper Winsten",
+            "Valentin Soloviev"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Object detection from waterborne imagery is an essential aspect in maritime traffic management, navigation safety and coastal security. Building efficient autonomous systems, which can take decisions in critical situations, requires an integration of complex object detectors in real time. Object detectors trained on generic datasets often give unsatisfactory results in complex scenarios like the maritime environment, since only a fraction of their images contain maritime vessels. Publicly available domain-specific datasets are scarce, and they are limited in the number of images and annotations. Compared to object detection in applications such as autonomous vehicles, maritime vessel detection is considerably reduced in computer vision research. This creates a deficit in exhaustive benchmarking studies for maritime detection datasets. To bridge this gap, we relabel the ABOships dataset and benchmark a state-of-the-art center-based detector, Centernet, on the newly relabeled dataset, ABOships-PLUS. We explore its performance under different feature extractors, and investigate the effect of object size and inter-class variation on detection accuracy. The reported benchmarking illustrates that the ABOships-PLUS dataset is adequate to use in supervised domain adaptation. The experimental results show that Centernet with DLA (Deep Layer Aggregation) as a feature extractor achieved the highest accuracy in detecting maritime objects overall (with mean average precision 74.4%).",
+          "cited_by_count": 12,
+          "counts_by_year": {
+            "2026": 3,
+            "2025": 4,
+            "2024": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2077-1312/11/9/1638/pdf?version=1692708674"
+          },
+          "url": "https://doi.org/10.3390/jmse11091638",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse11091638"
+        },
+        {
+          "id": "W4413264481",
+          "doi": "10.36287/setsci.22.15.001",
+          "title": "Advanced Maritime Vessel Detection in Satellite Imagery Using Masati-V2",
+          "year": 2025,
+          "type": "conference-paper",
+          "venue": {
+            "name": "International Symposium on AI-Driven Engineering Systems (ISADES)",
+            "issn": null
+          },
+          "authors": [
+            "Keerthi Reddy Gudibandi",
+            "Sreeram Venkata Sai Suchitha",
+            "Chamarthi Sreenivasulu"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Maritime vessel detection in satellite images address real time issues such as maritime security, illegal fishing and environmental monitoring, which require efficient tracking of vessels in large scale. Maritime vessel detection is challenged by limited annotated satellite datasets, varying sea conditions, and the presence of small or overlapping vessels. YOLOv10 is best for maritime vessel detection in satellite images due to its high accuracy, speed and efficiency in handling complex environments. It is able to detect small vessels against vast and cluttered backgrounds. YOLOv10 addresses these challenges through architectural features, which able to detect small objects like ships. It is scalable for tasks like illegal fishing detection and coastal security using satellite images. Using Masati-V2 dataset we have trained algorithms like YOLOv10s and YOLOv10m which are family of YOLOv10.Evaluation is performed using performance metrics which include precision and recall. According to our research, YOLOv10m model gives the best prediction for maritime vessel detection in satellite imagery. Future research will concentrate on enhancing classification models to identify various vessel types, including smaller or overlapping ones, under diverse environmental conditions and also need to explore real-time vessel tracking using temporal data and predictive analytics can be explored to monitor vessels continuously across multiple satellite images for improved situational awareness.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "http://www.set-science.com//manage/uploads/ISADES2025_0099/SETSCI_ISADES2025_0099_009.pdf"
+          },
+          "url": "https://doi.org/10.36287/setsci.22.15.001",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.36287/setsci.22.15.001"
+        },
+        {
+          "id": "W7139028709",
+          "doi": "10.1038/s41598-026-67769-3",
+          "title": "Maritime ship target detection based on visible and infrared modal image fusion",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Scientific Reports",
+            "issn": "2045-2322"
+          },
+          "authors": [
+            "Runbang Liu",
+            "Zhiyu Zhu",
+            "Huilin Ge"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Abstract The deep learning based maritime ship target detection is a key technology in fields such as ship navigation, water surface security, and military early warning. In view of the inherent limitations of maritime vessel object detection in single modality, a novel YOLO for maritime vessel object detection according to the visible and infrared modality images fusion (VIMF-YOLO) is built. The VIMF-YOLO is improved from YOLO v8 and which can effectively extract and aggregate the features of different modal ship target images. Additionally, it employs dual-modal fusion module (DMFM) to adaptively weight and fuse the different modalities features of vessel images in visible and infrared, thereby fully leveraging the complementary superiority of these modalities. To better acquire channel and positional information of different modal features, efficient multi-scale attention (EMA) is introduced into DMFM and VIMF-YOLO networks to improve the representation ability of different modal features. In addition, a paired image dataset for visible and infrared maritime ship images is built, and a large number detection test experiments for VIMF-YOLO is conducted on this basis. The experimental results prove that, matched with current SOTA ship target detection algorithms, the dual-modal fusion detection algorithm VIMF-YOLO exhibits superior detection accuracy.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.nature.com/articles/s41598-026-67769-3_reference.pdf"
+          },
+          "url": "https://doi.org/10.1038/s41598-026-67769-3",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1038/s41598-026-67769-3"
+        },
+        {
+          "id": "W4409702137",
+          "doi": "10.1049/ipr2.70085",
+          "title": "A High\u2010Accuracy YOLOv8\u2010ResAttNet Framework for Maritime Vessel Detection Using Residual Attention",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "IET Image Processing",
+            "issn": "1751-9659"
+          },
+          "authors": [
+            "Peixue Liu",
+            "Mingze Sun",
+            "Xinyue Han"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "ABSTRACT Against the backdrop of constantly upgrading maritime security requirements and dynamic marine environments, satellite based ship detection has become a key technology for national maritime surveillance, resource management, and environmental protection. However, existing methods often struggle to address ongoing challenges, including insufficient sensitivity to small vessels and susceptibility to errors or missed detections in complex ocean backgrounds caused by wave reflections, cloud cover, and lighting changes. To address these limitations, this study proposes YOLOv8 ResAttNet, an enhanced model that integrates residual learning and attention mechanisms into the YOLOv8 framework. The core innovation lies in a custom designed backbone network that combines multi\u2010scale feature aggregation with an improved ICBAM attention module to achieve precise localization of ship targets while suppressing irrelevant background noise. This architecture dynamically recalibrates feature channel weights through residual attention blocks, enhancing the model's ability to distinguish subtle ship features (such as hull contours and superstructures) in different maritime scenarios. Extensive experiments on high\u2010resolution HRSID datasets have demonstrated the superiority of this model: the average accuracy (mAP50) of YOLOv8 ResAttNet is 95.2%, which is 4.9% higher than the original YOLOv8 and over 4% higher than state\u2010of\u2010the\u2010art models such as YOLO SENet and YOLO11. These improvements highlight its robustness in handling scale changes and complex background interference. The research results emphasize the effectiveness of combining residual connectivity with attention driven feature refinement for maritime target detection, especially in small target scenes. This work not only advances the technological frontier of remote sensing image analysis, but also provides a scalable framework for real\u2010world applications such as illegal fishing monitoring, maritime traffic management, and disaster response. Future research directions include extending the model to multimodal satellite data fusion, optimizing the computational efficiency of edge device deployment, and further bridging the gap between theoretical innovation and maritime surveillance systems.",
+          "cited_by_count": 3,
+          "counts_by_year": {
+            "2026": 3
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ipr2.70085"
+          },
+          "url": "https://doi.org/10.1049/ipr2.70085",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1049/ipr2.70085"
+        },
+        {
+          "id": "W4413876344",
+          "doi": "10.1002/rob.70048",
+          "title": "Prioritized Real\u2010Time UAV\u2010Based Vessel Detection for Efficient Maritime Search",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Field Robotics",
+            "issn": "1556-4959"
+          },
+          "authors": [
+            "Lyes Saad Saoud",
+            "Zikai Jia",
+            "Siyuan Yang"
+          ],
+          "author_count": 7,
+          "abstract_snippet": "ABSTRACT Real\u2010time vessel detection in maritime environments is crucial for diverse applications requiring speed and accuracy. Static camera views often introduce blind spots, compromising detection efficiency. This paper proposes a novel, real\u2010time UAV\u2010based system that uses a dynamic camera control strategy to address this limitation. This strategy leverages pre\u2010defined search patterns, historical data (if available), and real\u2010time sensor information (e.g., radar or LiDAR) to dynamically adjust the UAV's camera gimbal angles. This ensures comprehensive search area coverage while minimizing the risk of undetected vessels. Beyond dynamic camera control, our system incorporates a unique feature\u2010based prioritization scheme for real\u2010time target vessel identification. This scheme analyzes features extracted from captured images, including object size and shape. Additionally, movement analysis helps distinguish stationary objects from potential vessels. The combined approach of dynamic camera control and feature\u2010based prioritization offers significant advantages. Firstly, it enhances search efficiency by systematically scanning the area and prioritizing promising candidates based on dynamic camera adjustments and feature analysis. Secondly, it improves detection accuracy by employing feature similarity (cosine similarity with a reference vessel stored in the system using a ResNet50 module) to reduce false positives and expedite target identification, especially in scenarios with multiple vessels. A comprehensive evaluation process has been conducted to validate the effectiveness of our proposed system in diverse simulated and real\u2010world environments encompassing various conditions (weather, traffic density, background clutter). The results from this evaluation are highly promising and suggest the system's strong potential for real\u2010time vessel detection in maritime environments.",
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2025": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rob.70048"
+          },
+          "url": "https://doi.org/10.1002/rob.70048",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1002/rob.70048"
+        },
+        {
+          "id": "W7203468485",
+          "doi": "10.56028/aetr.17.1.363.2026",
+          "title": "Research Status and Prospects of Infrared Intelligent Algorithms for Detection, Recognition, and Tracking of Maritime Targets",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Advances in Engineering Technology Research",
+            "issn": "2790-1688"
+          },
+          "authors": [
+            "Di Gao",
+            "Hanjiang Song",
+            "Zhongwei Chen"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Infrared imaging technology plays an indispensable role in maritime surveillance, early warning, and defense systems due to its advantages such as all-weather operation and strong anti-interference capability. This paper systematically reviews the research status of the three core tasks in maritime infrared target analysis: detection, recognition, and tracking. First, it elaborates on and analyzes representative works of detection and recognition algorithms based on traditional image processing and deep learning (such as the improved YOLO series, Faster R-CNN, and their variants), as well as tracking algorithms based on filtering, feature matching, and deep learning. Subsequently, it delves into the core challenges currently facing the technology, including issues related to small samples and scarce data, insufficient robustness in complex backgrounds, the trade-off between real-time performance and accuracy, and difficulties in multi-modal data fusion. Finally, considering the technology development trends, it prospects the future development directions from aspects such as multi-modal deep fusion, few-shot and weakly supervised learning, lightweight model design, and dynamic scene adaptive optimization. This paper aims to offer a comprehensive technical reference and insights into future development for researchers in related fields.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://madison-proceedings.com/index.php/aetr/article/download/5337/5338"
+          },
+          "url": "https://doi.org/10.56028/aetr.17.1.363.2026",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.56028/aetr.17.1.363.2026"
+        },
+        {
+          "id": "W4319021918",
+          "doi": "10.3390/app13031912",
+          "title": "A Transfer Learning and Optimized CNN Based Maritime Vessel Classification System",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Applied Sciences",
+            "issn": "2076-3417"
+          },
+          "authors": [
+            "Mostafa Hamdy Salem",
+            "Yujian Li",
+            "Zhaoying Liu"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Deep learning has been used to improve intelligent transportation systems (ITS) by classifying ship targets in interior waterways. Researchers have created numerous classification methods, but they have low accuracy and misclassify other ship targets. As a result, more research into ship classification is required to avoid inland waterway collisions. We present a new convolutional neural network classification method for inland waterways that can classify the five major ship types: cargo, military, carrier, cruise, and tanker. This method can also be used for other ship classes. The proposed method consists of four phases for the boosting of classification accuracy for Intelligent Transport Systems (ITS) based on convolutional neural networks (CNNs); efficient augmentation method, the hyper-parameter optimization (HPO) technique for optimum CNN model parameter selection, transfer learning, and ensemble learning are suggested. All experiments used Kaggle\u2019s public Game of Deep Learning Ship dataset. In addition, the proposed ship classification achieved 98.38% detection rates and 97.43% F1 scores. Our suggested classification technique was also evaluated on the MARVEL dataset. This dataset includes 10,000 image samples for each class and 26 types of ships for generalization. The suggested method also delivered an excellent performance compared to other algorithms, with performance metrics with an accuracy of 97.04%, a precision of 96.1%, a recall of 95.92%, a specificity of 96.55%, and a 96.31% F1 score.",
+          "cited_by_count": 28,
+          "counts_by_year": {
+            "2026": 2,
+            "2025": 7,
+            "2024": 14,
+            "2023": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2076-3417/13/3/1912/pdf?version=1675265998"
+          },
+          "url": "https://doi.org/10.3390/app13031912",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/app13031912"
+        },
+        {
+          "id": "W7140178087",
+          "doi": "10.3390/s26072017",
+          "title": "SeaLSOD-YOLO: A Lightweight Framework for Maritime Small Object Detection Using YOLOv11",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Jinjia Ruan",
+            "Jin He",
+            "Yao Tong"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Maritime small object detection is critical for UAV-based sea surveillance but remains challenging due to the small size of targets and interference from sea reflections and waves. This paper proposes SeaLSOD-YOLO, a lightweight detection algorithm based on YOLOv11, designed to improve small object detection accuracy while maintaining real-time performance. The method incorporates four key modules: Shallow Multi-scale Output Reconstruction, which fuses shallow and mid-level features to preserve fine-grained details; SPPF-FD, which combines spatial pyramid pooling with frequency-domain adaptive convolution to enhance sensitivity to high-frequency textures and suppress sea-surface interference; attention-based feature fusion, which emphasizes small object features through channel and spatial attention; and dynamic multi-scale sampling, which optimizes feature representation across different scales. Experiments on the SeaDroneSee dataset demonstrate that, compared with YOLOv11s, the proposed method improves precision from 75.6% to 81.9%, recall from 62.6% to 73.5%, and mAP@0.5 from 67.9% to 77.0%. The mAP@0.5:0.95 also increases from 41.1% to 44.9%. The model achieves an inference speed of 256 FPS. Although the parameter size increases from 18.2 MB to 30.8 MB, the method maintains a favorable balance between detection accuracy and computational efficiency. Comparative evaluation further shows superior performance in detecting small maritime objects such as buoys and lifeboats. These results indicate that SeaLSOD-YOLO effectively balances accuracy, efficiency, and real-time capability in complex maritime environments. Future work will focus on further optimization of attention mechanisms and upsampling strategies to enhance the detection of extremely small targets.",
+          "cited_by_count": 4,
+          "counts_by_year": {
+            "2026": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/26/7/2017/pdf?version=1774345657"
+          },
+          "url": "https://doi.org/10.3390/s26072017",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s26072017"
+        },
+        {
+          "id": "W4413947713",
+          "doi": "10.3390/rs17173070",
+          "title": "MFAFNet: A Multi-Feature Attention Fusion Network for Infrared Small Target Detection",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Zehao Zhao",
+            "Weining Chen",
+            "Seng Dong"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Infrared small target detection is a critical task in remote sensing applications, such as aerial reconnaissance, maritime surveillance, and early-warning systems. However, due to the inherent characteristics of remote sensing imagery, such as complex backgrounds, low contrast, and limited spatial resolution-detecting small-scale, dim infrared targets remains highly challenging. To address these issues, we propose MFAFNet, a novel Multi-Feature Attention Fusion Network tailored for infrared remote sensing scenarios. The network comprises three key modules: a Feature Interactive Fusion Module (FIFM), a Patch Attention Block (PAB), and an Asymmetric Contextual Fusion Module (ACFM). FIFM enhances target saliency by integrating the original infrared image with two locally enhanced feature maps capturing different receptive field scales. PAB exploits global contextual relationships by computing inter-pixel correlations across multi-scale patches, thus improving detection robustness in cluttered remote scenes. ACFM further refines feature representation by combining shallow spatial details with deep semantic cues, alleviating semantic gaps across feature hierarchies. Experimental results on two public remote sensing datasets, SIRST-Aug and IRSTD-1k, demonstrate that MFAFNet achieves excellent performance, with mean IoU values of 0.7465 and 0.6701, respectively, confirming its effectiveness and generalizability in infrared remote sensing image analysis.",
+          "cited_by_count": 6,
+          "counts_by_year": {
+            "2026": 4,
+            "2025": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/17/17/3070/pdf?version=1756904787"
+          },
+          "url": "https://doi.org/10.3390/rs17173070",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs17173070"
+        },
+        {
+          "id": "W7153214743",
+          "doi": "10.48550/arxiv.2604.07759",
+          "title": "WUTDet: A 100K-Scale Ship Detection Dataset and Benchmarks with Dense Small Objects",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Junxiong Liang",
+            "Mengwei Bao",
+            "Tianxiang Wang"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Ship detection for navigation is a fundamental perception task in intelligent waterway transportation systems. However, existing public ship detection datasets remain limited in terms of scale, the proportion of small-object instances, and scene diversity, which hinders the systematic evaluation and generalization study of detection algorithms in complex maritime environments. To this end, we construct WUTDet, a large-scale ship detection dataset. WUTDet contains 100,576 images and 381,378 annotated ship instances, covering diverse operational scenarios such as ports, anchorages, navigation, and berthing, as well as various imaging conditions including fog, glare, low-lightness, and rain, thereby exhibiting substantial diversity and challenge. Based on WUTDet, we systematically evaluate 20 baseline models from three mainstream detection architectures, namely CNN, Transformer, and Mamba. Experimental results show that the Transformer architecture achieves superior overall detection accuracy (AP) and small-object detection performance (APs), demonstrating stronger adaptability to complex maritime scenes; the CNN architecture maintains an advantage in inference efficiency, making it more suitable for real-time applications; and the Mamba architecture achieves a favorable balance between detection accuracy and computational efficiency. Furthermore, we construct a unified cross-dataset test set, Ship-GEN, to evaluate model generalization. Results on Ship-GEN show that models trained on WUTDet exhibit stronger generalization under different data distributions. These findings demonstrate that WUTDet provides effective data support for the research, evaluation, and generalization analysis of ship detection algorithms in complex maritime scenarios. The dataset is publicly available at: https://github.com/MAPGroup/WUTDet.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2604.07759"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2604.07759",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7153214743",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2604.07759"
+        },
+        {
+          "id": "W7208726934",
+          "doi": "10.2139/ssrn.7412499",
+          "title": "Beyond 2D Patches: A 3D Physically-Inspired Camouflage Framework for Maritime Infrared Object Detection via Ray-Tracing",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "SSRN Electronic Journal",
+            "issn": "1556-5068"
+          },
+          "authors": [
+            "Keyi Zhang",
+            "Hang Ruan",
+            "Jiahao Cui"
+          ],
+          "author_count": 8,
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://papers.ssrn.com/sol3/Delivery.cfm/8c4b22cb-0f28-44de-9c9b-ae07399cb8fe-MECA.pdf?abstractid=7412499&mirid=1"
+          },
+          "url": "https://doi.org/10.2139/ssrn.7412499",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7208726934",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.2139/ssrn.7412499"
+        },
+        {
+          "id": "W7221543716",
+          "doi": "10.48550/arxiv.2610.13220",
+          "title": "Multi-Modal Graph Neural Network-Inspired Vessel Identification and Tracking for UAV-Based Maritime Surveillance",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Chenjie Zhao",
+            "Jiangtian Nie",
+            "Jiawen Kang"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "The unmanned aerial vehicle (UAV)-based maritime surveillance is becoming an important part of maritime Internet of Things (IoT) and intelligent transportation systems. It provides a flexible and cost-effective way to large-scale maritime traffic monitoring. However, achieving robust situational awareness remains challenging in practical maritime environments. The main challenges arise from heterogeneous sensing modalities, adverse imaging conditions, and spatial misalignment caused by UAV motion. To address these problems, this paper proposes an airborne multi-modal graph learning-driven framework, termed AMGT, for vessel identification and tracking in UAV-assisted maritime IoT. Specifically, visible and infrared images are first aligned and fused through a multi-parameter perspective transformation model. This improves visual perception under low visibility and complex illumination conditions. Automatic identification system (AIS) messages are then temporally synchronized using interpolation and linear prediction. To detect small and oriented vessels, we develop a mixed-modality MAir-YOLOv8-OBB detector, followed by the MAir-SORT algorithm for stable vessel tracking. We further design a graph learning-driven association network to model temporal dynamics and spatial dependencies among vessels and between vessels and UAVs. A motion-aware coordinate unification (MCU) strategy is also introduced to reduce nonlinear misalignment caused by UAV motion. Experiments on the MAP-M2UAV50 dataset show that AMGT achieves high accuracy and efficiency. The results demonstrate its potential for UAV-assisted maritime IoT applications, including vessel monitoring, traffic situational awareness, and intelligent maritime transportation services. The dataset and code will be available at https://github.com/MAPGroup/AMGT.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2610.13220"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2610.13220",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7221543716",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2610.13220"
+        },
+        {
+          "id": "W7147636128",
+          "doi": "10.48550/arxiv.2603.28414",
+          "title": "Unified Restoration-Perception Learning: Maritime Infrared-Visible Image Fusion and Segmentation",
+          "year": 2026,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Weichao Cai",
+            "Weiliang Huang",
+            "Biao Xue"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Marine scene understanding and segmentation plays a vital role in maritime monitoring and navigation safety. However, prevalent factors like fog and strong reflections in maritime environments cause severe image degradation, significantly compromising the stability of semantic perception. Existing restoration and enhancement methods typically target specific degradations or focus solely on visual quality, lacking end-to-end collaborative mechanisms that simultaneously improve structural recovery and semantic effectiveness. Moreover, publicly available infrared-visible datasets are predominantly collected from urban scenes, failing to capture the authentic characteristics of coupled degradations in marine environments. To address these challenges, the Infrared-Visible Maritime Ship Dataset (IVMSD) is proposed to cover various maritime scenarios under diverse weather and illumination conditions. Building upon this dataset, a Multi-task Complementary Learning Framework (MCLF) is proposed to collaboratively perform image restoration, multimodal fusion, and semantic segmentation within a unified architecture. The framework includes a Frequency-Spatial Enhancement Complementary (FSEC) module for degradation suppression and structural enhancement, a Semantic-Visual Consistency Attention (SVCA) module for semantic-consistent guidance, and a cross-modality guided attention mechanism for selective fusion. Experimental results on IVMSD demonstrate that the proposed method achieves state-of-the-art segmentation performance, significantly enhancing robustness and perceptual quality under complex maritime conditions.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2603.28414"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2603.28414",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W7147636128",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2603.28414"
+        },
+        {
+          "id": "W4399657624",
+          "doi": "10.48550/arxiv.2406.08294",
+          "title": "Vessel Re-identification and Activity Detection in Thermal Domain for Maritime Surveillance",
+          "year": 2024,
+          "type": "preprint",
+          "venue": {
+            "name": "arXiv (Cornell University)",
+            "issn": "2331-8422"
+          },
+          "authors": [
+            "Yasod Ginige",
+            "Ransika Gunasekara",
+            "Darsha Hewavitharana"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Maritime surveillance is vital to mitigate illegal activities such as drug smuggling, illegal fishing, and human trafficking. Vision-based maritime surveillance is challenging mainly due to visibility issues at night, which results in failures in re-identifying vessels and detecting suspicious activities. In this paper, we introduce a thermal, vision-based approach for maritime surveillance with object tracking, vessel re-identification, and suspicious activity detection capabilities. For vessel re-identification, we propose a novel viewpoint-independent algorithm which compares features of the sides of the vessel separately (separate side-spaces) leveraging shape information in the absence of color features. We propose techniques to adapt tracking and activity detection algorithms for the thermal domain and train them using a thermal dataset we created. This dataset will be the first publicly available benchmark dataset for thermal maritime surveillance. Our system is capable of re-identifying vessels with an 81.8% Top1 score and identifying suspicious activities with a 72.4\\% frame mAP score; a new benchmark for each task in the thermal domain.",
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2025": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/2406.08294"
+          },
+          "url": "https://doi.org/10.48550/arxiv.2406.08294",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W4399657624",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.48550/arxiv.2406.08294"
+        }
+      ],
+      "source": "openalex",
+      "query_used": {
+        "openalex_lane": "maritime small vessel detection optical infrared benchmark domain generalization"
+      },
+      "note": "Counts are quick-search estimates. When presenting: hyperlink every title via its url, point out counts_by_year trajectories (the FastTrack Impact Forecasting read) that show a debate rising or fading, and frame results as leads for the researcher to open and read, not conclusions. When the researcher has a specific research question to test for originality, run run_duplication_test on it: that is the Nearest-Neighbour Match and Duplication Test. Search works best in the field's own vocabulary: phrase queries in it, and if results look off-field, harvest terms from the closest on-topic title and rerun. To find or check one specific paper (authors, year, title or journal named), use verify_reference, not search. For evidence questions (is X true, what does the literature say), stay with search, get_paper and get_citations, chasing a landmark paper forward to the current frontier.",
+      "zotero_all_url": "https://literature.researchfasttrack.com/zotero?ids=10.1016/j.apor.2024.104194,10.3390/jmse10030377,10.1109/tits.2025.3530678,10.1007/s11370-025-00689-9,10.1016/j.engappai.2023.107513,10.3390/rs17142471,10.3390/jmse11091638,10.36287/setsci.22.15.001,10.1038/s41598-026-67769-3,10.1049/ipr2.70085,10.1002/rob.70048,10.56028/aetr.17.1.363.2026,10.3390/app13031912,10.3390/s26072017,10.3390/rs17173070,10.48550/arxiv.2604.07759,10.2139/ssrn.7412499,10.48550/arxiv.2610.13220,10.48550/arxiv.2603.28414,10.48550/arxiv.2406.08294",
+      "zotero_note": "After each paper you list, add its cite_url as a short [Cite] link. It opens the reference in APA, Vancouver and Harvard, ready to copy, with a save-to-Zotero link. zotero_all_url imports all 20 papers in this result; end the list with this line, both parts linked to zotero_all_url: **[Import all 20 into Zotero](zotero_all_url)** \u00b7 or [download for EndNote](zotero_all_url). If you list only some of them or combine several calls, build the link from the papers you actually list instead (DOIs or OpenAlex IDs, comma-separated, after zotero?ids=) and use its true count. Keep a [Cite] link after every paper as well, including papers cited in annotated bullets or prose. If the researcher asks you to drop these links, leave them out for the rest of the conversation."
+    }
+  ]
+}

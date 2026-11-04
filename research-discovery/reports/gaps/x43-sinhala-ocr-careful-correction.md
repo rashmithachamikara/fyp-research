@@ -4,11 +4,13 @@
 
 **ID:** X43 · **Area:** Computer vision and NLP — Sinhala document reading
 
-**Status:** Provisional research opportunity; not qualified · **Checked:** 30 October 2026
+**Status:** Parked; current formulation needs redesign; not qualified · **Rechecked:** 30 October 2026
 
-**Score:** 76.7/100, provisional · **No model has been trained or timed.**
+**Score:** 73.5/100, provisional · **Novelty: 2/5** · **No model has been trained or timed.**
 
-**The idea:** Improve text read from a scanned Sinhala page, while avoiding unnecessary changes to correct words and numbers.
+**Current verdict:** The practical problem is real, but X43 does not yet identify a defensible new gap. OCR correction, error detection before correction, and copying correct characters already exist. The earlier recommendation to prioritise X43 is withdrawn.
+
+[Earlier two-page PDF explanation](../../../output/pdf/x43-sinhala-document-reading.pdf) — written before this novelty recheck. Its 76.7 score and recommendation are superseded by this brief.
 
 ## 1. Problem
 
@@ -18,13 +20,13 @@ Libraries, publishers and public offices may need searchable copies of printed S
 
 ## 2. Research gap and question
 
-**Question:** Can a small correction model fix remaining Sinhala OCR errors while making fewer unnecessary edits, especially to numbers?
+**Earlier question, withdrawn as a novelty claim:** Can a small correction model fix remaining Sinhala OCR errors while making fewer unnecessary edits, especially to numbers?
 
-**Already done:** Recent Sinhala page-level OCR already performs strongly on legislative documents. Simply fine-tuning another OCR model, or adding a language-model corrector, is not a new contribution.
+**Already done:** Sinhala OCR post-processing exists. Low-resource OCR research already learns common recognition errors and uses copying to retain correct characters. Other work separates error detection from correction. Recent Sinhala page-level OCR also performs strongly on legislative documents. These are necessary comparisons, not new contributions we can claim.
 
-**What to investigate:** Investigate the trade-off between fixing errors and damaging correct text. Train a model to propose corrections, and a separate small model to estimate whether a proposed change helps. Compare this with simple rules and existing constrained editing. Whether this is a new Sinhala OCR contribution remains unverified.
+**Why the current gap is weak:** “Correct mistakes without damaging correct text” is already an established aim. Using Sinhala, adding a confidence score, protecting numbers or making a model smaller does not by itself establish a new contribution. We have not shown a specific failure that remains after applying existing methods.
 
-**Prediction to test:** A correction rule trained on actual OCR mistakes will make fewer harmful changes than unrestricted text rewriting. It may instead turn out that leaving the strong OCR output unchanged is best.
+**What would justify reopening it:** First show a repeatable, important error on the existing Sinhala data that strong correction methods and simple rules do not adequately handle. Then define a method that addresses that failure. Damage to correctly read numbers is one possible test, not an observed finding or a verified remaining gap.
 
 ## 3. Evidence from closest work
 
@@ -34,12 +36,14 @@ Libraries, publishers and public offices may need searchable copies of printed S
 | [Cross-Temporal Sinhala OCR](https://arxiv.org/html/2606.29378) | The paper already adapts page-level OCR and limits its claims to legislative documents. Another generic Sinhala OCR fine-tune would overlap. | Dataset, experiments and limitations sections inspected; no reproduction. |
 | [Confident but Wrong](https://arxiv.org/html/2609.29680) | This studies translation post-editing, not OCR. It already diagnoses harmful edits and unreliable confidence, so confidence-based editing itself is not new. | Abstract and methods outline inspected; adjacent-task comparison. |
 | [Existing Sinhala OCR post-processing](https://www.theekshana.lk/project/optical-character-recognition-for-sinhala/) | UCSC/Theekshana already describes a Sinhala OCR post-processing engine. Do not claim to introduce Sinhala post-processing. | Original project description checked. |
+| [OCR Post Correction for Endangered Language Texts (2020)](https://aclanthology.org/2020.emnlp-main.478.pdf) | Already learns OCR error patterns and uses a choice between copying existing characters and generating replacements. This overlaps the proposed careful-copying approach. | ACL record and indexed primary-text excerpts from sections 5.2–5.3 checked; no reproduction. |
+| [Post-OCR text correction for Bulgarian historical documents (2025)](https://strathprints.strath.ac.uk/92317/1/Beshirov-etal-IJDL-2025-Post-OCR-text-correction-for-Bulgarian-historical-documents.pdf) | The published pipeline detects errors before correction and includes a character-copying mechanism. Detecting, correcting and retaining correct text is therefore not a new overall workflow. | Indexed primary-text excerpts including Figure 1 and methods checked; full PDF retrieval timed out. |
 
-The problem evidence and the proposed solution are different things. No baseline failure or improvement has been demonstrated by this project. The searches do not prove novelty. [Search and data-check record](../../metadata/sri-lanka-practical-checks.json).
+These studies do not establish that all Sinhala OCR problems are solved. They do establish substantial overlap with X43's current formulation. No remaining Sinhala-specific failure or new solution has been demonstrated by this project. [Search and data-check record](../../metadata/sri-lanka-practical-checks.json).
 
 ## 4. Proposed approach
 
-Choose one fixed OCR engine first. On training pages only, align its output with the released correct text to create correction examples. Train a small corrector and an edit-selection head. Keep the original output available so that a proposed edit can be rejected. Do not assume the model’s confidence is reliable.
+**Baseline audit only, if the team considers reopening X43:** choose one fixed OCR engine and compare unchanged output, simple correction rules, an existing copy-based corrector and a detect-then-correct method. Check harmful edits and number errors against the released reference text. Inspect full methods, code and licences before implementing the comparisons. Do not treat a newly assembled correction pipeline as a new research contribution.
 
 **Simple prototype:** show a held-out example, the baseline answer, the proposed answer and any uncertainty. Building the screen is supporting work, not a member’s research contribution.
 
@@ -49,13 +53,13 @@ Choose one fixed OCR engine first. On training pages only, align its output with
 
 **What the team needs:** Estimate: cached OCR output, small correction models and an occasional modest GPU. Start with 100 training pages to measure time and memory. A larger OCR model is a comparison, not a requirement for every experiment.
 
-**Fallback:** Keep the OCR engine frozen and train only the correction/selection models. If the starting engine makes too few useful errors, report that correction is unnecessary on this dataset instead of manufacturing an improvement.
+**Fallback:** Keep the topic parked if established correction methods are sufficient, or if too few meaningful errors remain. A useful reproduction or benchmark finding does not automatically meet the module's novelty requirement.
 
 Costs and training times are estimates until measured. No paid services, new participants or guaranteed university GPU are assumed.
 
 ## 6. Three-member contributions
 
-One shared problem, three testable contributions. Each can start from the same unchanged baseline; another member’s proposed method does not have to succeed first.
+The earlier three-member split is retained below for reference. It gives separately measurable experiments, but it does not repair the missing shared research gap. It is not a recommendation to proceed with the current project. Each investigation could start from the same unchanged baseline if a distinct failure is later established.
 
 | Member | Question and prediction | Method, baseline and removal test | Separate result |
 |---|---|---|---|
@@ -69,14 +73,14 @@ All members share data and evaluation code. Papers are optional. “Removal test
 
 - **Main measures:** Character error rate: the share of characters that are inserted, deleted or read wrongly. Also count harmful edits that turn correct text into wrong text, and exact matches for digit-containing tokens. Do not claim to protect all personal names without name labels.
 - **Fair data split:** Keep pages from the same legislative document together using doc_id. Publish a document-grouped split and report the released split separately for comparison. Keep test documents out of the error examples and tuning process.
-- **Comparisons:** Unchanged Tesseract/Surya output, simple dictionary or edit-distance correction, a small ordinary text corrector, and a strong Sinhala-adapted OCR model such as the published LightOnOCR baseline. Check exact checkpoint/code licences before reuse.
+- **Comparisons:** Unchanged Tesseract/Surya output, simple dictionary or edit-distance correction, an existing copy-based OCR corrector, a detect-then-correct approach, and a strong Sinhala-adapted OCR model such as the published LightOnOCR baseline. Check exact checkpoint/code licences before reuse.
 - **Removal tests:** use the member-specific comparisons above and keep training/tuning budgets matched.
 - **Uncertainty and useful failures:** Repeat trainable methods with three seeds. Use document-level confidence intervals, not independent characters. Analyse old/new pages, numbers and initially correct words. A useful result is that a simple edit limit or no correction performs best.
 - **What the results cannot prove:** The verified dataset contains legislative pages. It cannot establish reliable handwriting recognition, arbitrary phone-photo reading or automatic form processing.
 
 ## 8. Score and next decision
 
-**Provisional score: 76.7/100; not qualified.** This is a promising practical direction, not a verified new gap. The score describes the plan; unknown gates still prevent selection.
+**Provisional score: 73.5/100; not qualified; park pending redesign.** Novelty falls from 3/5 to 2/5 after locating closer OCR-correction studies. Gate 6 fails for the current formulation. The earlier 76.7 score and first-choice recommendation are withdrawn. This does not rule out every future Sinhala OCR question.
 
 ### Weighted rubric
 
@@ -84,7 +88,7 @@ The existing nine weights total 98 and are normalised to 100. Ratings use the pr
 
 | Category | Weight | Rating / 5 | Weighted points | Confidence and reason |
 |---|---|---|---|---|
-| Research gap and defensible novelty | 16 | 3 | 9.6 | Low-medium: careful editing is established generally; the added Sinhala OCR question needs a deeper comparison. |
+| Research gap and defensible novelty | 16 | 2 | 6.4 | Medium-high confidence in overlap: existing OCR work learns error patterns, copies correct characters and detects errors before correction; no distinct remaining failure is demonstrated. |
 | Public dataset quality/accessibility | 15 | 4 | 12.0 | Medium: real Sinhala images, references and document identifiers have a verified public route; full quality audit remains. |
 | Feasibility and learning curve | 14 | 4 | 11.2 | Medium: frozen OCR and small correctors offer a bounded 6–8 month plan; no timing measured. |
 | Technical AI/ML depth | 12 | 4 | 9.6 | Medium: correction, edit selection and compact-model training are empirical ML work. |
@@ -93,7 +97,7 @@ The existing nine weights total 98 and are normalised to 100. Ratings use the pr
 | Real-world significance | 9 | 4 | 7.2 | Medium: searchable Sinhala documents are a direct local use; savings have not been measured. |
 | Compute/storage | 5 | 4 | 4.0 | Medium: cached outputs reduce repeated GPU work; resource figures are estimates. |
 | Prototype | 3 | 4 | 2.4 | Medium: a page, original text and highlighted edits make a simple prototype. |
-| **Normalised total / 100** | **98** | | **76.7** | **Not qualified.** |
+| **Normalised total / 100** | **98** | | **73.5** | **Park pending redesign; not qualified.** |
 
 ### Mandatory gates
 
@@ -106,7 +110,7 @@ Pass describes the bounded plan. Unknown means evidence is still needed.
 | 3. Train/adapt models | Pass | All three investigations train or systematically adapt models. |
 | 4. Existing data accessible | Pass | The official release and a bounded preview expose images, reference text and document-group fields. |
 | 5. No unavailable human evaluation | Pass | Evaluation uses existing reference labels or aggregate counts; no new raters or recordings. |
-| 6. Precise research gap | Unknown | OCR post-processing and confidence-constrained editing already exist; the specific added contribution is not established. |
+| 6. Precise research gap | Fail | The current formulation repeats established correction, error detection and copying approaches without a demonstrated unanswered failure. This rejects the current wording, not all Sinhala OCR research. |
 | 7. Beyond application assembly | Pass | The research is tested through comparisons and removal tests; the interface is supporting work. |
 | 8. Objective evaluation | Pass | Existing reference text and document IDs support the specified objective comparisons. |
 | 9. 6–8 month feasibility | Unknown | A small OCR/correction run must establish workload and whether useful errors remain. |
@@ -115,6 +119,6 @@ Pass describes the bounded plan. Unknown means evidence is still needed.
 | 12. Manageable data reuse | Unknown | Dataset CC BY 4.0 is documented; exact baseline checkpoint and code reuse terms still need checking. |
 | 13. Useful negative findings | Pass | Simple baselines winning or a proposed method failing still answers the stated questions. |
 
-**Next decision:** Run one fixed OCR baseline on a small document-grouped subset. Check that enough correctable errors remain, then review the precise editing contribution with the supervisor.
+**Next decision:** Keep X43 parked. Reopen it with the supervisor only after a baseline comparison identifies a specific unresolved failure and a defensible contribution beyond existing correction methods.
 
 [Scoring criteria](../../../research-module-and-team-criteria.md#8-evaluation-rubric) · [Source checks](../../metadata/sri-lanka-practical-checks.json)

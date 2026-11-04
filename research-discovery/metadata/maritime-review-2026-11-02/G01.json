@@ -1,0 +1,169 @@
+{
+  "request": {
+    "id": "G01",
+    "tool": "check_gap_saturation",
+    "arguments": {
+      "gap_statement": "small vessel detection maritime surveillance",
+      "window_years": 7
+    }
+  },
+  "result": [
+    {
+      "counts_by_year": {
+        "2019": 1,
+        "2021": 2,
+        "2023": 4,
+        "2024": 7,
+        "2025": 18,
+        "2026": 25
+      },
+      "total_estimate": 57,
+      "closest_recent": [
+        {
+          "id": "W7224749438",
+          "doi": "10.3390/s26216892",
+          "title": "EDCS-YOLOv8: A Lightweight YOLOv8n Variant for Ship Detection in Optical Imagery",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Junxi Qiang",
+            "Yueping Peng",
+            "Yongjia Li"
+          ],
+          "author_count": 7,
+          "abstract_snippet": "Ship detection in shore-based optical imagery must handle both strongly elongated vessel geometry and a severe size-dependent accuracy gap: on the SeaShips benchmark, the median annotation aspect ratio is 4.7, and a YOLOv8n baseline shows a 58-point mAP@50\u201395 gap between small and large ships, while, in our experiments, common small-object architectural modifications that improve small ships degrade large-ship accuracy. Motivated by these observations, in this paper, we propose EDCS-YOLOv8, a lightweight YOLOv8n variant for ship detection in optical imagery. EIoU replaces CIoU to decouple width and height in the regression of elongated boxes; a dynamic snake convolution lets the P5 backbone sample along elongated hulls instead of a rigid grid; a context anchor attention gates the SPPF output with long-range horizontal context; and a strip-gated block encodes an axis-aligned strip prior in the P3 neck to refine small-ship features. All added modules are near-identity-initialized and warm-started from COCO-pretrained weights, so training starts from the baseline mapping. Experimental results show that, on the SeaShips test set, EDCS-YOLOv8 improves overall mAP@50\u201395 by 0.66 points (0.48 on average across three random seeds) and medium-ship mAP by 2.00 points, with the gain positive in all three seeds and statistically significant under image-level paired bootstrap over test-set resampling (95% CI [+0.16,+0.77]); a shape-stratified analysis further shows that the improvements concentrate on the more elongated half of instances within every ship category. With 3.46M parameters and 9.0 GFLOPs\u2014an order of magnitude lighter than ship-specific detectors in the literature\u2014the model is suited to cost-sensitive, real-time maritime surveillance.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.3390/s26216892",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s26216892"
+        },
+        {
+          "id": "W7221653286",
+          "doi": "10.3390/rs18203506",
+          "title": "Dual-Domain Fusion for Small-Object SAR Ship Detection in Complex Scenes",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Zijing Song",
+            "Panlong Tan",
+            "Xiaoyu Zhang"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Synthetic aperture radar (SAR) ship detection is essential for maritime surveillance, yet coherent speckle can obscure tiny offshore vessels, while high-response coastal structures can produce target-like responses. Repeated downsampling further weakens sparse vessel signatures, whereas a separate high-resolution prediction head increases dense prediction costs. We propose a dual-domain detector that embeds spatial\u2013frequency encoding, multiscale refinement, and high-resolution feature transfer within the backbone\u2013neck\u2013pyramid representation. Scharr-derived boundary cues are coupled with learned frequency context and remain discriminative as features are fused across scales, while sample-preserving space-to-depth transformation and global\u2013local receptive-field modeling integrate shallow detail into semantically stronger P3 features without introducing a separate P2 prediction head. Coordinated FSEM, MSFE, and SOEP modules preserve fine vessel structure and reduce clutter-induced ambiguity throughout the detection hierarchy. Experiments on SSDD, HRSID, and RSDD-SAR evaluate detection accuracy, cross-dataset transfer, limited-data behavior, sensitivity to controlled perturbations, and edge deployment. Across 30 seed-matched SSDD runs, the method improves mAP50:95 over the baseline by 2.70\u00b10.34 percentage points. It achieves 69.3% and 71.5% mAP50:95 on HRSID and RSDD. On the Atlas 200I platform, the compiled FP16 model retains 69.3% mAP50:95 while running at 101.8 frames/s.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.3390/rs18203506",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs18203506"
+        },
+        {
+          "id": "W7221554602",
+          "doi": "10.3390/jmse14201893",
+          "title": "Infrared Small Ship Target Segmentation Based on Semantic Distance Alignment and Local Evidence Selection",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Quan Gan",
+            "Qidan Zhu",
+            "Yang Tian"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Infrared detection of small ship targets is crucial for maritime surveillance and early warning. However, low-brightness, low-pixel-count vessels are easily confused with sea clutter and sensor noise. Existing multi-scale networks can enhance local responses and aggregate contextual features, but dense cross-scale interactions propagate these clutter responses, and mask-level supervision cannot clearly distinguish the vessel from the target-like background. To address this issue, we propose a novel infrared small-ship semantic segmentation method called TALES-Net based on semantic distance alignment and local evidence selection, which consists of a Local Evidence Selection Module (LESM) and a Semantic Distance Alignment Loss (SDAL). LESM enhances center-to-surround contrast and selectively propagates reliable evidence through sparse cross-scale channel interactions and spatially gated decoding. SDAL attracts vessel features to a learnable target prototype while rejecting target-like background features. Our proposed TALES-Net method effectively enhances the ability to distinguish weak target vessels from clutter backgrounds, thereby improving its internal representation capabilities in infrared small target detection. In experiments on the IRS-Ship dataset and controlled ablation, TALES-Net effectively improves target segmentation probability while maintaining a low false alarm rate. Extensive experiments on the IRS-Ship dataset show that TALES-Net achieves pixel accuracy (pixAcc), foreground intersection over union (IoU), target detection probability (PD), and false alarm rate (FA) of 95.84%, 91.70%, 87.70%, and 0.42%, respectively. These results demonstrate that LESM and SDAL can effectively improve the sensitivity of weak target ships and suppress false alarms under complex sea clutter conditions.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.3390/jmse14201893",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse14201893"
+        },
+        {
+          "id": "W7223005287",
+          "doi": "10.30871/jaic.v10i5.13947",
+          "title": "A Fast and Efficient Ship Detector Via HDR-CoT Module",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Applied Informatics and Computing",
+            "issn": "2548-6861"
+          },
+          "authors": [
+            "Jane Ivonne Litouw",
+            "Marsel Marhaen Wungow",
+            "Dayen Manoppo"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "Reliable vessel surveillance requires robust computer vision for accurate ship detection. Although YOLO-FAST is computationally efficient, its lightweight architecture has limited capability to extract discriminative features from small objects. To address this limitation, this study proposes an enhanced ship detection framework by integrating a novel Hadamard-Dilated Residual Contextual Transformer (HDR-CoT) module into the YOLO-FAST architecture. The proposed HDR-CoT module integrates Hadamard multiplication with parallel dilated depthwise convolutions. In addition, residual connections enhance feature representation while maintaining low computational overhead. Experimental results demonstrate the effectiveness of the proposed model. It achieves an mAP50 of 0.952 and an mAP50:95 of 0.689 while requiring only 1.73 million parameters and 6.3 GFLOPs. The proposed network achieves a favorable balance between detection performance and efficiency, improving mAP50:95 by 2.99% while reducing the parameters by 24.93%. It also achieves competitive performance compared with other lightweight architectures. CPU-based evaluation further shows that the model operates at 20.54 FPS. This configuration achieves an optimal trade-off between near-real-time inference speed and detection reliability compared with YOLO-FAST for resource-constrained maritime applications.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://jurnal.polibatam.ac.id/index.php/JAIC/article/download/13947/3938"
+          },
+          "url": "https://doi.org/10.30871/jaic.v10i5.13947",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.30871/jaic.v10i5.13947"
+        },
+        {
+          "id": "W7222901677",
+          "doi": "10.21181/kjpc.2026.35.3.527",
+          "title": "A Case Study on Maritime Illegal Entry : Focusing on the Case of Using Small Ships",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Korean Association of Public Safety and Criminal Justice",
+            "issn": "1229-9952"
+          },
+          "authors": [
+            "Hyun Sik Cho",
+            "Myung Suk Ko"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "Maritime illegal entry refers to entering the Republic of Korea by sea without undergoing lawful immigration procedures and constitutes a transnational crime directly related to national maritime border management. In recent years, repeated cases have been identified in which small vessels were used to travel directly from the Chinese coast to the Korean shoreline. Such vessels may be relatively difficult to detect and identify and can approach various locations, including beaches, tidal flats, and small ports, creating challenges for existing maritime and coastal surveillance systems. Accordingly, in order to make efficient use of limited personnel and equipment, it is necessary to analyze the spatial and environmental characteristics of past illegal-entry cases and to consider a response system focused on higher-risk areas. This study applied crime pattern theory to identified cases of maritime illegal entry and attempted illegal entry, including unsuccessful attempts, from 2019 to 2025, and analyzed their temporal, spatial, and environmental characteristics. The results showed that seven cases occurred in Taean County, accounting for half of the total, while nine cases occurred on days when the daily maximum significant wave height was 1 meter or less. Eight cases were detected on beaches and six at sea. Initial detection occurred through various channels, including reports from residents and vessels, military surveillance equipment, and investigative and intelligence activities. Based on these findings, future policy should focus on establishing a risk-based surveillance system in waters where repeated cases have been identified and on developing a multi-layered integrated maritime and coastal surveillance system incorporating advanced technologies such as drones, artificial intelligence, and Maritime Domain Awareness (MDA). In addition, during the future transfer of coastal surveillance responsibilities to the Korea Coast Guard, the findings of this study should be used to design a more efficient maritime surveillance system focused on vulnerable coastal areas.",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.21181/kjpc.2026.35.3.527",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.21181/kjpc.2026.35.3.527"
+        }
+      ],
+      "window": "2019-2026",
+      "query_used": "small vessel detection maritime surveillance",
+      "note": "Counts are estimates. When presenting: show the per-year curve plainly and hyperlink closest_recent titles; the worksheet feasibility thresholds are applied by the researcher, not this tool. A thin count can be a vocabulary artefact rather than an open gap: before reading it as originality, rerun using the vocabulary the nearest-neighbour papers themselves use. This curve is part of the FastTrack Feasibility Test: enough recent original studies to review, in a field still moving.",
+      "zotero_all_url": "https://literature.researchfasttrack.com/zotero?ids=10.3390/s26216892,10.3390/rs18203506,10.3390/jmse14201893,10.30871/jaic.v10i5.13947,10.21181/kjpc.2026.35.3.527",
+      "zotero_note": "After each paper you list, add its cite_url as a short [Cite] link. It opens the reference in APA, Vancouver and Harvard, ready to copy, with a save-to-Zotero link. zotero_all_url imports all 5 papers in this result; end the list with this line, both parts linked to zotero_all_url: **[Import all 5 into Zotero](zotero_all_url)** \u00b7 or [download for EndNote](zotero_all_url). If you list only some of them or combine several calls, build the link from the papers you actually list instead (DOIs or OpenAlex IDs, comma-separated, after zotero?ids=) and use its true count. Keep a [Cite] link after every paper as well, including papers cited in annotated bullets or prose. If the researcher asks you to drop these links, leave them out for the rest of the conversation."
+    }
+  ]
+}

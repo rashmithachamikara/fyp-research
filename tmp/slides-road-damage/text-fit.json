@@ -1,0 +1,178 @@
+[
+  {
+    "Slide": 1,
+    "Text": "A",
+    "BoxHeight": 18.0,
+    "BoundHeight": 24.0,
+    "BoxWidth": 46.8,
+    "BoundWidth": 20.0
+  },
+  {
+    "Slide": 1,
+    "Text": "B",
+    "BoxHeight": 18.0,
+    "BoundHeight": 24.0,
+    "BoxWidth": 46.8,
+    "BoundWidth": 20.0
+  },
+  {
+    "Slide": 1,
+    "Text": "C",
+    "BoxHeight": 18.0,
+    "BoundHeight": 24.0,
+    "BoxWidth": 46.8,
+    "BoundWidth": 20.0
+  },
+  {
+    "Slide": 3,
+    "Text": "Source-only road-damage transfer already exists: MAMDG (Chen et al., 2026).",
+    "BoxHeight": 18.0,
+    "BoundHeight": 22.8,
+    "BoxWidth": 828.0,
+    "BoundWidth": 705.87506
+  },
+  {
+    "Slide": 3,
+    "Text": "Does short-side scaling beat equally tuned plain NWD?",
+    "BoxHeight": 43.92,
+    "BoundHeight": 48.0,
+    "BoxWidth": 410.4,
+    "BoundWidth": 382.25
+  },
+  {
+    "Slide": 3,
+    "Text": "Does choosing small / thin boxes beat generic consistency?",
+    "BoxHeight": 43.92,
+    "BoundHeight": 48.0,
+    "BoxWidth": 410.4,
+    "BoundWidth": 413.25
+  },
+  {
+    "Slide": 3,
+    "Text": "Do features add value beyond learned weak detections?",
+    "BoxHeight": 43.92,
+    "BoundHeight": 48.0,
+    "BoxWidth": 410.4,
+    "BoundWidth": 396.62503
+  },
+  {
+    "Slide": 6,
+    "Text": "Stricter on thin boxes. Changes both positive assignment and target-score weighting.",
+    "BoxHeight": 38.16,
+    "BoundHeight": 50.4,
+    "BoxWidth": 849.6,
+    "BoundWidth": 751.75
+  },
+  {
+    "Slide": 8,
+    "Text": "EMA teacher · 640 px",
+    "BoxHeight": 26.64,
+    "BoundHeight": 55.2,
+    "BoxWidth": 226.8,
+    "BoundWidth": 203.27
+  },
+  {
+    "Slide": 8,
+    "Text": "Agreement on matched\rsmall / thin boxes",
+    "BoxHeight": 48.96,
+    "BoundHeight": 55.2,
+    "BoxWidth": 300.96,
+    "BoundWidth": 261.5
+  },
+  {
+    "Slide": 9,
+    "Text": "H2 requires higher recall AND false positives per image ≤ 1.10 × generic consistency.",
+    "BoxHeight": 19.44,
+    "BoundHeight": 22.8,
+    "BoxWidth": 826.56,
+    "BoundWidth": 772.635
+  },
+  {
+    "Slide": 10,
+    "Text": "P3 + P4 features",
+    "BoxHeight": 21.6,
+    "BoundHeight": 27.6,
+    "BoxWidth": 213.12,
+    "BoundWidth": 184.37505
+  },
+  {
+    "Slide": 10,
+    "Text": "Weak-detection map",
+    "BoxHeight": 21.6,
+    "BoundHeight": 52.8,
+    "BoxWidth": 213.12,
+    "BoundWidth": 168.73
+  },
+  {
+    "Slide": 10,
+    "Text": "Small\rCNN head",
+    "BoxHeight": 44.64,
+    "BoundHeight": 68.4,
+    "BoxWidth": 82.8,
+    "BoundWidth": 55.87504
+  },
+  {
+    "Slide": 12,
+    "Text": "A",
+    "BoxHeight": 21.6,
+    "BoundHeight": 27.6,
+    "BoxWidth": 79.2,
+    "BoundWidth": 23.0
+  },
+  {
+    "Slide": 12,
+    "Text": "B",
+    "BoxHeight": 21.6,
+    "BoundHeight": 27.6,
+    "BoxWidth": 79.2,
+    "BoundWidth": 23.0
+  },
+  {
+    "Slide": 12,
+    "Text": "C",
+    "BoxHeight": 21.6,
+    "BoundHeight": 27.6,
+    "BoxWidth": 79.2,
+    "BoundWidth": 23.0
+  },
+  {
+    "Slide": 14,
+    "Text": "72",
+    "BoxHeight": 72.0,
+    "BoundHeight": 78.0,
+    "BoxWidth": 244.8,
+    "BoundWidth": 90.25
+  },
+  {
+    "Slide": 14,
+    "Text": "Without AB or the noise extension;\rplus 20-30 development runs.",
+    "BoxHeight": 60.48,
+    "BoundHeight": 68.4,
+    "BoxWidth": 255.6,
+    "BoundWidth": 256.5
+  },
+  {
+    "Slide": 15,
+    "Text": " Short-side-relative assignment",
+    "BoxHeight": 24.48,
+    "BoundHeight": 28.8,
+    "BoxWidth": 784.8,
+    "BoundWidth": 364.0
+  },
+  {
+    "Slide": 15,
+    "Text": " Small / thin consistency",
+    "BoxHeight": 24.48,
+    "BoundHeight": 28.8,
+    "BoxWidth": 784.8,
+    "BoundWidth": 286.37503
+  },
+  {
+    "Slide": 15,
+    "Text": " Miss-location prediction",
+    "BoxHeight": 24.48,
+    "BoundHeight": 28.8,
+    "BoxWidth": 784.8,
+    "BoundWidth": 289.0
+  }
+]

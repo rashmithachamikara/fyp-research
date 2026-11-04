@@ -1,0 +1,1126 @@
+{
+  "request": {
+    "id": "D02",
+    "tool": "run_duplication_test",
+    "arguments": {
+      "question": "Systematic review of external validation false alarm rates and operational reliability of small vessel detection for maritime surveillance",
+      "mode": "sr",
+      "limit": 15
+    }
+  },
+  "result": [
+    {
+      "nearest_neighbours": [
+        {
+          "id": "W4403491489",
+          "doi": "10.3390/app14209439",
+          "title": "AI-Driven Predictive Maintenance in Modern Maritime Transport\u2014Enhancing Operational Efficiency and Reliability",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Applied Sciences",
+            "issn": "2076-3417"
+          },
+          "authors": [
+            "Drago\u0219 Simion",
+            "Florin Postolache",
+            "Bogdan Fleac\u0103"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "Maritime transport has adapted to recent political and economic shifts by addressing stringent pollution reduction requirements, redrawing transport routes for safety, reducing onboard technical incidents, managing data security risks and transitioning to autonomous vessels. The integration of AI-based technologies for fault diagnosis and decision-making, coupled with proper personnel training, has become essential for optimal ship operation, with AI-assisted predictive maintenance emerging as the key strategy to ensure onboard systems function within desired parameters and enhance equipment availability. This study proposes a machine-learning algorithm for evaluating onboard systems performance by analyzing sensor data and mapping it to fault patterns to estimate functional states, validated through tests on a seawater cooling system from an oil tanker, demonstrating operational efficiency and reliability. The immediate advantage is reduced time for fault diagnosis by rapidly assessing the system using operational data, the algorithm enabling real-time monitoring and fault data management to minimize efforts as part of predictive maintenance assisted by machine learning tools.",
+          "cited_by_count": 58,
+          "counts_by_year": {
+            "2026": 23,
+            "2025": 34,
+            "2024": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2076-3417/14/20/9439/pdf"
+          },
+          "url": "https://doi.org/10.3390/app14209439",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/app14209439"
+        },
+        {
+          "id": "W4205214170",
+          "doi": "10.3390/jmse10010112",
+          "title": "Anomaly Detection in Maritime AIS Tracks: A Review of Recent Approaches",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Konrad Wolsing",
+            "Linus Roepert",
+            "Jan Bauer"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "The automatic identification system (AIS) was introduced in the maritime domain to increase the safety of sea traffic. AIS messages are transmitted as broadcasts to nearby ships and contain, among others, information about the identification, position, speed, and course of the sending vessels. AIS can thus serve as a tool to avoid collisions and increase onboard situational awareness. In recent years, AIS has been utilized in more and more applications since it enables worldwide surveillance of virtually any larger vessel and has the potential to greatly support vessel traffic services and collision risk assessment. Anomalies in AIS tracks can indicate events that are relevant in terms of safety and also security. With a plethora of accessible AIS data nowadays, there is a growing need for the automatic detection of anomalous AIS data. In this paper, we survey 44 research articles on anomaly detection of maritime AIS tracks. We identify the tackled AIS anomaly types, assess their potential use cases, and closely examine the landscape of recent AIS anomaly research as well as their limitations.",
+          "cited_by_count": 182,
+          "counts_by_year": {
+            "2026": 52,
+            "2025": 55,
+            "2024": 39,
+            "2023": 26,
+            "2022": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2077-1312/10/1/112/pdf?version=1642404728"
+          },
+          "url": "https://doi.org/10.3390/jmse10010112",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse10010112"
+        },
+        {
+          "id": "W4220904600",
+          "doi": "10.3390/network2010009",
+          "title": "Cybersecurity Challenges in the Maritime Sector",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Network",
+            "issn": "2673-8732"
+          },
+          "authors": [
+            "Frank Emmanuel Akpan",
+            "Gueltoum Bendiab",
+            "Stavros N. Shiaeles"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Cyberattacks have been rapidly increasing over the years, resulting to big financial losses to businesses for recovery, regulatory sanctions, as well as collateral damages, such as reputation and trust. In this respect, the maritime sector, which until now was considered safe due to the lack of Internet connectivity and the isolated nature of ships in the sea, is showing a 900% increase in cybersecurity breaches on operational technology as it enters the digital era. Although some research is being conducted in this area, maritime cybersecurity has not been deeply investigated. Hence, this paper provides a close investigation of the landscape of cybersecurity in the maritime sector with the aim of highlighting security problems and challenges. First, it explores the systems available on ships that could be targeted by attackers, their possible vulnerabilities that an attacker could exploit, the consequences if the system is accessed, and actual incidents. Then, it describes and analyses possible mitigation actions that can be utilised in advance to prevent such attacks. Finally, several challenges and open problems are discussed for future research.",
+          "cited_by_count": 142,
+          "counts_by_year": {
+            "2026": 21,
+            "2025": 46,
+            "2024": 42,
+            "2023": 27,
+            "2022": 6
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2673-8732/2/1/9/pdf?version=1646653034"
+          },
+          "url": "https://doi.org/10.3390/network2010009",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/network2010009"
+        },
+        {
+          "id": "W4293680947",
+          "doi": "10.3390/s22165946",
+          "title": "Application of Laser Systems for Detection and Ranging in the Modern Road Transportation and Maritime Sector",
+          "year": 2022,
+          "type": "review",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Nikola Lopac",
+            "Irena Jurdana",
+            "Adrian Brneli\u0107"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "The development of light detection and ranging (lidar) technology began in the 1960s, following the invention of the laser, which represents the central component of this system, integrating laser scanning with an inertial measurement unit (IMU) and Global Positioning System (GPS). Lidar technology is spreading to many different areas of application, from those in autonomous vehicles for road detection and object recognition, to those in the maritime sector, including object detection for autonomous navigation, monitoring ocean ecosystems, mapping coastal areas, and other diverse applications. This paper presents lidar system technology and reviews its application in the modern road transportation and maritime sector. Some of the better-known lidar systems for practical applications, on which current commercial models are based, are presented, and their advantages and disadvantages are described and analyzed. Moreover, current challenges and future trends of application are discussed. This paper also provides a systematic review of recent scientific research on the application of lidar system technology and the corresponding computational algorithms for data analysis, mainly focusing on deep learning algorithms, in the modern road transportation and maritime sector, based on an extensive analysis of the available scientific literature.",
+          "cited_by_count": 76,
+          "counts_by_year": {
+            "2026": 10,
+            "2025": 23,
+            "2024": 24,
+            "2023": 17,
+            "2022": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/22/16/5946/pdf?version=1660115360"
+          },
+          "url": "https://doi.org/10.3390/s22165946",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s22165946"
+        },
+        {
+          "id": "W4399053898",
+          "doi": "10.3390/s24113458",
+          "title": "Enhancing Maritime Cybersecurity through Operational Technology Sensor Data Fusion: A Comprehensive Survey and Analysis",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Georgios Potamos",
+            "Eliana Stavrou",
+            "Stavros Stavrou"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Cybersecurity is becoming an increasingly important aspect in ensuring maritime data protection and operational continuity. Ships, ports, surveillance and navigation systems, industrial technology, cargo, and logistics systems all contribute to a complex maritime environment with a significant cyberattack surface. To that aim, a wide range of cyberattacks in the maritime domain are possible, with the potential to infect vulnerable information and communication systems, compromising safety and security. The use of navigation and surveillance systems, which are considered as part of the maritime OT sensors, can improve maritime cyber situational awareness. This survey critically investigates whether the fusion of OT data, which are used to provide maritime situational awareness, may also improve the ability to detect cyberincidents in real time or near-real time. It includes a thorough analysis of the relevant literature, emphasizing RF but also other sensors, and data fusion approaches that can help improve maritime cybersecurity.",
+          "cited_by_count": 31,
+          "counts_by_year": {
+            "2026": 18,
+            "2025": 11,
+            "2024": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/24/11/3458/pdf?version=1716816829"
+          },
+          "url": "https://doi.org/10.3390/s24113458",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s24113458"
+        },
+        {
+          "id": "W4410004931",
+          "doi": "10.3390/electronics14091844",
+          "title": "Artificial Intelligence in Maritime Cybersecurity: A Systematic Review of AI-Driven Threat Detection and Risk Mitigation Strategies",
+          "year": 2025,
+          "type": "review",
+          "venue": {
+            "name": "Electronics",
+            "issn": "2079-9292"
+          },
+          "authors": [
+            "Tymoteusz I. Miller",
+            "Irmina Durlik",
+            "Ewelina Kostecka"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "The maritime industry is undergoing a digital transformation, integrating automation, artificial intelligence (AI), and the Internet of Things (IoT) to enhance operational efficiency and safety. However, this technological evolution has also increased cybersecurity vulnerabilities, exposing vessels, ports, and maritime communication networks to sophisticated cyber threats. This systematic review, conducted following the PRISMA guidelines, examines the current landscape of AI-driven cybersecurity solutions in maritime environments. By analyzing peer-reviewed studies and industry reports, this review identifies key AI methodologies, including machine-learning-based intrusion detection systems, anomaly detection mechanisms, predictive threat modeling, and AI-enhanced zero-trust architectures. This study assesses the effectiveness of these techniques in mitigating cyber risks, explores their implementation challenges, and highlights existing research gaps. The findings indicate that AI-powered solutions significantly enhance real-time threat detection and response capabilities in maritime networks, yet issues such as data scarcity, regulatory constraints, and adversarial attacks on AI models remain unresolved. Future research directions should focus on integrating AI with blockchain, federated learning, and quantum cryptographic techniques to strengthen maritime cybersecurity frameworks.",
+          "cited_by_count": 32,
+          "counts_by_year": {
+            "2026": 22,
+            "2025": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2079-9292/14/9/1844/pdf?version=1746020763"
+          },
+          "url": "https://doi.org/10.3390/electronics14091844",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/electronics14091844"
+        },
+        {
+          "id": "W4220685260",
+          "doi": "10.1016/j.oceaneng.2022.110920",
+          "title": "Collaborative collision avoidance for Maritime Autonomous Surface Ships: A review",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Ocean Engineering",
+            "issn": "0029-8018"
+          },
+          "authors": [
+            "Melih Akda\u011f",
+            "Petter Soln\u00f8r",
+            "Tor Arne Johansen"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Collision avoidance algorithms for autonomous ships are frequently proposed, but very few studies consider the interaction and information exchange between ships, and if they do, this is usually limited to only between autonomous ships with the use of the Automatic Identification System. However, through projects addressing the International Maritime Organization\u2019s e-navigation concept, new communication technologies are being proposed and developed for conventional vessels in the maritime domain. Importantly, vessel-to-vessel route exchange has been explored for conventional ships with seafarers on board. Consequently, it is reasonable to assume that these tools can help facilitate collaborative collision avoidance algorithms that leverage communication and information exchange to a greater extent than current collision avoidance algorithms. This paper distinguishes itself from previous reviews on maritime collision avoidance algorithms by considering and highlighting the importance of collaboration between the involved vessels. We identified gaps ranging from assumptions on communication capabilities and considerations related to non-cooperative actors to cybersecurity concerns. Drawing upon lessons learned from previous studies, we then suggested how to address these gaps by taking advantage of e-navigation concepts and technologies. Finally, we provided a high-level outline of a collaborative collision avoidance protocol. As such, this is the first comprehensive review on this important, emerging topic.",
+          "cited_by_count": 135,
+          "counts_by_year": {
+            "2026": 27,
+            "2025": 42,
+            "2024": 23,
+            "2023": 33,
+            "2022": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0029801822003444/pdf"
+          },
+          "url": "https://doi.org/10.1016/j.oceaneng.2022.110920",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.oceaneng.2022.110920"
+        },
+        {
+          "id": "W4205557186",
+          "doi": "10.3390/info13010022",
+          "title": "Cyber Security in the Maritime Industry: A Systematic Survey of Recent Advances and Future Trends",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "Information",
+            "issn": "2078-2489"
+          },
+          "authors": [
+            "Mohamed Amine Ben Farah",
+            "Elochukwu Ukwandu",
+            "Hanan Hindy"
+          ],
+          "author_count": 7,
+          "abstract_snippet": "The paper presents a classification of cyber attacks within the context of the state of the art in the maritime industry. A systematic categorization of vessel components has been conducted, complemented by an analysis of key services delivered within ports. The vulnerabilities of the Global Navigation Satellite System (GNSS) have been given particular consideration since it is a critical subcategory of many maritime infrastructures and, consequently, a target for cyber attacks. Recent research confirms that the dramatic proliferation of cyber crimes is fueled by increased levels of integration of new enabling technologies, such as IoT and Big Data. The trend to greater systems integration is, however, compelling, yielding significant business value by facilitating the operation of autonomous vessels, greater exploitation of smart ports, a reduction in the level of manpower and a marked improvement in fuel consumption and efficiency of services. Finally, practical challenges and future research trends have been highlighted.",
+          "cited_by_count": 143,
+          "counts_by_year": {
+            "2026": 24,
+            "2025": 43,
+            "2024": 37,
+            "2023": 30,
+            "2022": 8,
+            "2021": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2078-2489/13/1/22/pdf?version=1641468562"
+          },
+          "url": "https://doi.org/10.3390/info13010022",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/info13010022"
+        },
+        {
+          "id": "W7117463245",
+          "doi": "10.3390/drones10010013",
+          "title": "MCB-RT-DETR: A Real-Time Vessel Detection Method for UAV Maritime Operations",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Drones",
+            "issn": "2504-446X"
+          },
+          "authors": [
+            "Fang Liu",
+            "Yongpeng Wei",
+            "An Yan"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Maritime UAV operations face challenges in real-time ship detection. Complex ocean backgrounds, drastic scale variations, and prevalent distant small targets create difficulties. We propose MCB-RT-DETR, a real-time detection transformer enhanced by multi-component boosting. This method builds upon the RT-DETR architecture. It significantly improves detection under wave interference, lighting changes, and scale differences. Key innovations address these challenges. An Orthogonal Channel Attention (Ortho) mechanism preserves high-frequency edge details in the backbone network. Receptive Field Attention Convolution (RFAConv) enhances robustness against background clutter. A Small Object Detail Enhancement Pyramid (SOD-EPN) strengthens small-target representation. SOD-EPN combines SPDConv with multi-scale CSP-OmniKernel transformations. The neck network integrates ultra-lightweight DySample upsampling. This enables content-aware sampling for precise multi-scale localization. The method maintains high computational efficiency. Experiments on the SeaDronesSee dataset show significant improvements. MCB-RT-DETR achieves 82.9% mAP@0.5 and 49.7% mAP@0.5:0.95. These correspond to improvements of 4.5% and 3.4% relative to the baseline model. Inference speed maintains 50 FPS for real-time processing. The outstanding performance in cross-dataset tests further validates the algorithm\u2019s strong generalization capability on DIOR remote sensing images and VisDrone2019 aerial scenes. The method provides a reliable visual perception solution for autonomous maritime UAV operations.",
+          "cited_by_count": 1,
+          "counts_by_year": {
+            "2026": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2504-446X/10/1/13/pdf"
+          },
+          "url": "https://doi.org/10.3390/drones10010013",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/drones10010013"
+        },
+        {
+          "id": "W7140178087",
+          "doi": "10.3390/s26072017",
+          "title": "SeaLSOD-YOLO: A Lightweight Framework for Maritime Small Object Detection Using YOLOv11",
+          "year": 2026,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Jinjia Ruan",
+            "Jin He",
+            "Yao Tong"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Maritime small object detection is critical for UAV-based sea surveillance but remains challenging due to the small size of targets and interference from sea reflections and waves. This paper proposes SeaLSOD-YOLO, a lightweight detection algorithm based on YOLOv11, designed to improve small object detection accuracy while maintaining real-time performance. The method incorporates four key modules: Shallow Multi-scale Output Reconstruction, which fuses shallow and mid-level features to preserve fine-grained details; SPPF-FD, which combines spatial pyramid pooling with frequency-domain adaptive convolution to enhance sensitivity to high-frequency textures and suppress sea-surface interference; attention-based feature fusion, which emphasizes small object features through channel and spatial attention; and dynamic multi-scale sampling, which optimizes feature representation across different scales. Experiments on the SeaDroneSee dataset demonstrate that, compared with YOLOv11s, the proposed method improves precision from 75.6% to 81.9%, recall from 62.6% to 73.5%, and mAP@0.5 from 67.9% to 77.0%. The mAP@0.5:0.95 also increases from 41.1% to 44.9%. The model achieves an inference speed of 256 FPS. Although the parameter size increases from 18.2 MB to 30.8 MB, the method maintains a favorable balance between detection accuracy and computational efficiency. Comparative evaluation further shows superior performance in detecting small maritime objects such as buoys and lifeboats. These results indicate that SeaLSOD-YOLO effectively balances accuracy, efficiency, and real-time capability in complex maritime environments. Future work will focus on further optimization of attention mechanisms and upsampling strategies to enhance the detection of extremely small targets.",
+          "cited_by_count": 4,
+          "counts_by_year": {
+            "2026": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/26/7/2017/pdf?version=1774345657"
+          },
+          "url": "https://doi.org/10.3390/s26072017",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s26072017"
+        },
+        {
+          "id": "W4392110438",
+          "doi": "10.3390/jmse12030379",
+          "title": "Detection Technique Tailored for Small Targets on Water Surfaces in Unmanned Vessel Scenarios",
+          "year": 2024,
+          "type": "article",
+          "venue": {
+            "name": "Journal of Marine Science and Engineering",
+            "issn": "2077-1312"
+          },
+          "authors": [
+            "Jian Zhang",
+            "Wenbin Huang",
+            "Jiayuan Zhuang"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Lightweight detection methods are frequently utilized for unmanned system sensing; however, to tackle the challenge of low precision in detecting small targets on the water\u2019s surface by unmanned surface vessels, we present an enhanced method for ship target detection tailored specifically to this context. Building upon the mainstream single-stage Yolov8 object detection model, our approach involves the integration of the Reparameterized Convolutional Spatial Oversampling Attention (RCSOSA) module, replacing the traditional Classic 2D Convolutional (C2f) module to bolster the network\u2019s feature extraction capabilities. Additionally, we introduce a downsampling module, Spatial to Depth Convolution (SPDConv), to amplify the extraction of features relevant to small targets, thereby enhancing detection accuracy. Finally, the Focal Modulation module, based on focal modulation, replaces the SPPF (Spatial Pyramid Pooling with FPN) module, leading to a reduction in channel count, parameter volume, and an augmentation of the network\u2019s feature representation. Experimental results demonstrate that the proposed model achieves a 3.6% increase in mAP@0.5 and a 2.1% improvement in mAP@0.5:0.95 compared to the original Yolov8 model, while maintaining real-time processing capabilities. The research validates the higher accuracy and stronger generalization capabilities of the proposed improved ship target detection method in various complex water surface environments.",
+          "cited_by_count": 21,
+          "counts_by_year": {
+            "2026": 10,
+            "2025": 9,
+            "2024": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2077-1312/12/3/379/pdf?version=1708667335"
+          },
+          "url": "https://doi.org/10.3390/jmse12030379",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/jmse12030379"
+        },
+        {
+          "id": "W4390270225",
+          "doi": "10.3390/s24010146",
+          "title": "Bridging the Gap: Enhancing Maritime Vessel Cyber Resilience through Security Operation Centers",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Allan Nganga",
+            "George Nganya",
+            "Margareta L\u00fctzh\u00f6ft"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Increasingly disruptive cyber-attacks in the maritime domain have led to more efforts being focused on enhancing cyber resilience. From a regulatory perspective, there is a requirement that maritime stakeholders implement measures that would enable the timely detection of cyber events, leading to the adoption of Maritime Security Operation Centers (M-SOCs). At the same time, Remote Operation Centers (ROCs) are also being discussed to enable increased adoption of highly automated and autonomous technologies, which could further impact the attack surface of vessels. The main objective of this research was therefore to better understand both enabling factors and challenges impacting the effectiveness of M-SOC operations. Semi-structured interviews were conducted with nine M-SOC experts. Informed by grounded theory, incident management emerged as the core category. By focusing on the factors that make M-SOC operations a unique undertaking, the main contribution of this study is that it highlights how maritime connectivity challenges and domain knowledge impact the M-SOC incident management process. Additionally, we have related the findings to a future where M-SOC and ROC operations could be converged.",
+          "cited_by_count": 12,
+          "counts_by_year": {
+            "2026": 3,
+            "2025": 5,
+            "2024": 4
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/24/1/146/pdf?version=1703656866"
+          },
+          "url": "https://doi.org/10.3390/s24010146",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s24010146"
+        },
+        {
+          "id": "W3194722126",
+          "doi": "10.3390/s21165658",
+          "title": "A Deep Learning-Based Fault Detection Model for Optimization of Shipping Operations and Enhancement of Maritime Safety",
+          "year": 2021,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Panayiotis Theodoropoulos",
+            "Christos C. Spandonidis",
+            "Fotis Giannopoulos"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "The ability to exploit data for obtaining useful and actionable information and for providing insights is an essential element for continuous process improvements. Recognizing the value of data as an asset, marine engineering puts data considerations at the core of system design. Used wisely, data can help the shipping sector to achieve operating cost savings and efficiency increase, higher safety, wellness of crew rates, and enhanced environmental protection and security of assets. The main goal of this study is to develop a methodology able to harmonize data collected from various sensors onboard and to implement a scalable and responsible artificial intelligence framework, to recognize patterns that indicate early signs of defective behavior in the operational state of the vessel. Specifically, the methodology examined in the present study is based on a 1D Convolutional Neural Network (CNN) being fed time series directly from the available dataset. For this endeavor, the dataset undergoes a preprocessing procedure. Aspiring to determine the effect of the parameters composing the networks and the values that ensure the best performance, a parametric inquiry is presented, determining the impact of the input period and the degree of degradation that our models identify adequately. The results provide an insightful picture of the applicability of 1D-CNN models in performing condition monitoring in ships, which is not thoroughly examined in the maritime sector for condition monitoring. The data modeling along with the development of the neural networks was undertaken with the Python programming language.",
+          "cited_by_count": 47,
+          "counts_by_year": {
+            "2026": 4,
+            "2025": 11,
+            "2024": 9,
+            "2023": 9,
+            "2022": 12,
+            "2021": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/21/16/5658/pdf?version=1629697721"
+          },
+          "url": "https://doi.org/10.3390/s21165658",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s21165658"
+        },
+        {
+          "id": "W4416774674",
+          "doi": "10.54660/ijaiet.2022.3.1.19-37",
+          "title": "Conceptual Framework for Process Safety and Operational Reliability in FPSO-based Energy Systems",
+          "year": 2022,
+          "type": "article",
+          "venue": {
+            "name": "International Journal of Artificial Intelligence Engineering and Transformation",
+            "issn": "3051-3383"
+          },
+          "authors": [
+            "Augustine Tochukwu Ekechi",
+            "Semiu Temidayo Fasasi"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "This paper proposes a conceptual framework for process safety and operational reliability in floating production, storage, and offloading (FPSO) energy systems operating under harsh, data-sparse, and cost-constrained conditions. The framework integrates barrier-based safety thinking with reliability-centered maintenance and digital assurance to prevent loss of containment, mitigate escalation, and assure uptime across the asset lifecycle. A systems layer maps hydrocarbon, power, and utility networks, interfaces, and safety-critical elements to expose bow-tie hazards, safety functions, and dependencies. An observability layer fuses condition monitoring, process historians, and marine instrumentation with physics-informed digital twins to estimate unobserved states, detect weak signals, and quantify risk in real time. A decision layer combines risk-based inspection, reliability block diagrams, and Bayesian updating to prioritize interventions by consequence, likelihood, and uncertainty, enabling defensible ALARP demonstrations. An optimization-and-control layer orchestrates start-up, steady-state, and upset responses using model predictive control with constraint handling, supported by flare minimization, gas compression anti-surge, and power management strategies. A human-and-organization layer embeds just culture, competence management, and procedural discipline, aligning control room practices with safety cases and permit-to-work governance. Cyber-physical assurance closes the loop through verification and validation of models, safety instrumented system proof testing, cybersecurity hardening, and anomaly triage workflows. Implementation proceeds through four phases: (1) baseline risk and reliability modeling and data readiness; (2) pilot twin deployment on topsides subsystems (e.g., separators, compressors, cargo handling); (3) integrated optimization with alarm rationalization and barrier health dashboards; and (4) fleet scaling with continuous learning. Key performance indicators include barrier health, loss of containment frequency, safety system demand failure probability, mean time between failures, deferment, flare intensity, and recovery time from upsets. Illustrative use cases show earlier detection of incipient compressor surge, tighter flare compliance during turndown, and reduced SIMOPS conflict via dynamic risk visualization. The framework is standards-aware (ISO 31000, IEC 61511, ISO 14224, and IMO), technology-agnostic, and adaptable to brownfield retrofits, remote operations centers, and hybrid power integrations. By linking hazards, data, decisions, and controls within a governed, human-in-the-loop loop, the framework provides a practical pathway to demonstrably safer operations, higher reliability, and lower environmental footprint for FPSO-based energy systems at industrial scale.",
+          "cited_by_count": 19,
+          "counts_by_year": {
+            "2025": 4,
+            "2024": 4,
+            "2023": 5,
+            "2022": 6
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.artificialinteljournal.com/uploads/archives/20251128110247_AIE-A-22-001.1.pdf"
+          },
+          "url": "https://doi.org/10.54660/ijaiet.2022.3.1.19-37",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.54660/ijaiet.2022.3.1.19-37"
+        },
+        {
+          "id": "W4411241575",
+          "doi": "10.3390/rs17122026",
+          "title": "SR-DETR: Target Detection in Maritime Rescue from UAV Imagery",
+          "year": 2025,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Yuling Liu",
+            "Yan Wei"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "The growth of maritime transportation has been accompanied by a gradual increase in accident rates, drawing greater attention to the critical issue of man-overboard incidents and drowning. Traditional maritime search-and-rescue (SAR) methods are often constrained by limited efficiency and high operational costs. Over the past few years, drones have demonstrated significant promise in improving the effectiveness of search-and-rescue operations. This is largely due to their exceptional ability to move freely and their capacity for wide-area monitoring. This study proposes an enhanced SR-DETR algorithm aimed at improving the detection of individuals who have fallen overboard. Specifically, the conventional multi-head self-attention (MHSA) mechanism is replaced with Efficient Additive Attention (EAA), which facilitates more efficient feature interaction while substantially reducing computational complexity. Moreover, we introduce a new feature aggregation module called the Cross-Stage Partial Parallel Atrous Feature Pyramid Network (CPAFPN). By refining spatial attention mechanisms, the module significantly boosts cross-scale target recognition capabilities in the model, especially offering advantages for detecting smaller objects. To improve localization precision, we develop a novel loss function for bounding box regression, named Focaler-GIoU, which performs particularly well when handling densely packed and small-scale objects. The proposed approach is validated through experiments and achieves an mAP of 86.5%, which surpasses the baseline RT-DETR model\u2019s performance of 83.2%. These outcomes highlight the practicality and reliability of our method in detecting individuals overboard, contributing to more precise and resource-efficient solutions for real-time maritime rescue efforts.",
+          "cited_by_count": 7,
+          "counts_by_year": {
+            "2026": 6,
+            "2025": 1
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/17/12/2026/pdf?version=1749725048"
+          },
+          "url": "https://doi.org/10.3390/rs17122026",
+          "sources": [
+            "openalex"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs17122026"
+        },
+        {
+          "id": "W2900741051",
+          "doi": "10.1109/lgrs.2019.2894385",
+          "title": "SVM-Based Sea-Surface Small Target Detection: A False-Alarm-Rate-Controllable Approach",
+          "year": 2019,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Geoscience and Remote Sensing Letters",
+            "issn": "1545-598X"
+          },
+          "authors": [
+            "Yuzhou Li",
+            "Xie Pengcheng",
+            "Zeshen Tang"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "In this letter, we consider the varying detection environments to address the problem of detecting small targets within sea clutter. We first extract three simple yet practically discriminative features from the returned signals in the time and frequency domains and then fuse them into a 3-D feature space. Based on the constructed space, we then adopt and elegantly modify the support vector machine to design a learning-based detector that enfolds the false alarm rate (FAR). Most importantly, our proposed detector can flexibly control the FAR by simply adjusting two introduced parameters, which facilitates to regulate detector's sensitivity to the outliers incurred by the sea spikes and to fairly evaluate the performance of different detection algorithms. Experimental results demonstrate that our proposed detector significantly improves the detection probability over several existing classical detectors in both low signal to clutter ratio (up to 58%) and low FAR (up to 40%) cases.",
+          "cited_by_count": 138,
+          "counts_by_year": {
+            "2026": 19,
+            "2025": 23,
+            "2024": 25,
+            "2023": 20,
+            "2022": 25,
+            "2021": 16,
+            "2020": 8,
+            "2019": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://arxiv.org/pdf/1811.05251"
+          },
+          "url": "https://doi.org/10.1109/lgrs.2019.2894385",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/lgrs.2019.2894385"
+        },
+        {
+          "id": "W2165090887",
+          "doi": "10.3390/s8052959",
+          "title": "Using SPOT-5 HRG Data in Panchromatic Mode for Operational Detection of Small Ships in Tropical Area",
+          "year": 2008,
+          "type": "article",
+          "venue": {
+            "name": "Sensors",
+            "issn": "1424-8220"
+          },
+          "authors": [
+            "Christina Corbane",
+            "Fabrice Marre",
+            "Michel Petit"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Nowadays, there is a growing interest in applications of space remote sensing systems for maritime surveillance which includes among others traffic surveillance, maritime security, illegal fisheries survey, oil discharge and sea pollution monitoring. Within the framework of several French and European projects, an algorithm for automatic ship detection from SPOT-5 HRG data was developed to complement existing fishery control measures, in particular the Vessel Monitoring System. The algorithm focused on feature-based analysis of satellite imagery. Genetic algorithms and Neural Networks were used to deal with the feature-borne information. Based on the described approach, a first prototype was designed to classify small targets such as shrimp boats and tested on panchromatic SPOT-5, 5-m resolution product taking into account the environmental and fishing context. The ability to detect shrimp boats with satisfactory detection rates is an indicator of the robustness of the algorithm. Still, the benchmark revealed problems related to increased false alarm rates on particular types of images with a high percentage of cloud cover and a sea cluttered background.",
+          "cited_by_count": 76,
+          "counts_by_year": {
+            "2026": 1,
+            "2025": 4,
+            "2024": 1,
+            "2023": 2,
+            "2022": 3,
+            "2021": 4,
+            "2020": 4,
+            "2019": 4,
+            "2018": 9,
+            "2017": 4,
+            "2016": 9,
+            "2015": 8,
+            "2014": 4,
+            "2013": 5,
+            "2012": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/1424-8220/8/5/2959/pdf?version=1403308559"
+          },
+          "url": "https://doi.org/10.3390/s8052959",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/s8052959"
+        },
+        {
+          "id": "W2792108380",
+          "doi": "10.1016/j.infrared.2018.01.032",
+          "title": "A false-alarm aware methodology to develop robust and efficient multi-scale infrared small target detection algorithm",
+          "year": 2018,
+          "type": "article",
+          "venue": {
+            "name": "Infrared Physics & Technology",
+            "issn": "1350-4495"
+          },
+          "authors": [
+            "Saed Moradi",
+            "Payman Moallem",
+            "Mohamad Farzan Sabahi"
+          ],
+          "author_count": 3,
+          "cited_by_count": 94,
+          "counts_by_year": {
+            "2026": 13,
+            "2025": 19,
+            "2024": 17,
+            "2023": 13,
+            "2022": 9,
+            "2021": 10,
+            "2020": 3,
+            "2019": 6,
+            "2018": 4
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1016/j.infrared.2018.01.032",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1016/j.infrared.2018.01.032"
+        },
+        {
+          "id": "W2018499866",
+          "doi": "10.1080/07038992.2000.10874770",
+          "title": "Validation of Ship Detection by the RADARSAT Synthetic Aperture Radar and the Ocean Monitoring Workstation",
+          "year": 2000,
+          "type": "article",
+          "venue": {
+            "name": "Canadian Journal of Remote Sensing",
+            "issn": "0703-8992"
+          },
+          "authors": [
+            "P.W. Vachon",
+            "S.J. Thomas",
+            "J. Cranton"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "La capacit\u00e9 combin\u00e9e du radar \u00e0 synth\u00e8se d'ouverture (RSO) de RADARSAT et de la station de travail de surveillance des oc\u00e9ans (OMW de l'anglais Ocean Monitoring Workstation) pour la d\u00e9tection automatique des navires a \u00e9t\u00e9 \u00e9valu\u00e9e par une validation in situ lors des campagnes de terrain de 1996 et 1997. Notre analyse des donn\u00e9es de validation disponibles montre un taux de d\u00e9tection de 97% pour les donn\u00e9es \u00e0 faisceau simple qui sont le plus utile pour la d\u00e9tection des navires (les faisceaux ayant un grand angle d'incidence) et un taux de d\u00e9tection global de 84%. Le taux d\u00e9fausses d\u00e9tections est toutefois difficile \u00e0 expliquer \u00e0 cause des limites des donn\u00e9es de validation. On ne peut non plus \u00e9valuer la d\u00e9pendance du taux de d\u00e9tection avec la vitesse du vent. Les navires d\u00e9tect\u00e9s ont tendance \u00e0 \u00eatre de grande dimension (120 m de longueur en moyenne). Nos r\u00e9sultats indiquent que la performance du syst\u00e8me de d\u00e9tection automatique utilisant la combinaison RADARSAT et OMW est fiable.",
+          "cited_by_count": 69,
+          "counts_by_year": {
+            "2025": 2,
+            "2023": 5,
+            "2022": 3,
+            "2021": 2,
+            "2020": 4,
+            "2019": 8,
+            "2018": 2,
+            "2017": 1,
+            "2016": 1,
+            "2015": 1,
+            "2014": 5,
+            "2013": 3,
+            "2012": 3
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1080/07038992.2000.10874770",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1080/07038992.2000.10874770"
+        },
+        {
+          "id": "W2993693427",
+          "doi": "10.3390/rs11242938",
+          "title": "A Small Ship Target Detection Method Based on Polarimetric SAR",
+          "year": 2019,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Genwang Liu",
+            "Xi Zhang",
+            "Junmin Meng"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "The detection of small fishing ships is very important for maritime fishery supervision. However, it is difficult to detect small ships using synthetic aperture radar (SAR), due to the weak target scattering and very small number of pixels. Polarimetric synthetic aperture radar (PolSAR) has been widely used in maritime ship detection due to its abundant target scattering information. In the present paper, a new ship detector, named \u039bM, is developed based on the analysis of polarization scattering differences between ship and sea, then combined with the two-parameter constant false alarm rate method (TP-CFAR) algorithm to conduct ship detection. The goals of the detector construction are to fully consider the ship\u2019s depolarization effect, and further amplify it through sliding window processing. First, the signal-to-clutter ratio (SCR) enhancement performance of \u039bM for ships with different lengths ranging from 8 to 230 m under 90 different combinations of windows are analyzed in detail using three set of RADARSAT-2 quad-polarization data, then the appropriate window size is determined. In addition, the SCR enlargement between \u039bM and some typical polarization features is compared. Among these, for ships of length greater than 35 m, the average contrast of \u039bM is 33.7 dB, which is 20 dB greater than that of the HV channel. For small vessels of length less than 16 m, the average contrast of \u039bM is 16 dB higher than that of HV channel on average. Finally, the RADARSAT-2 data including nonmetallic small vessels are used to perform ship detection tests, and the detection ability for conventional and small ships of some classic algorithms are compared and analyzed. For large vessels of length greater than 35 m, the method proposed in this paper is able to obtain a superior detection result, maintain the ship contour well, and suppress false alarms caused by the cross side lobe in the SAR image. For small vessels of length less than 16 m, the method proposed in this paper can reduce the number of missed targets, while also obtaining superior detection results, especially for small nonmetallic vessels.",
+          "cited_by_count": 44,
+          "counts_by_year": {
+            "2026": 4,
+            "2025": 4,
+            "2024": 6,
+            "2023": 6,
+            "2022": 11,
+            "2021": 8,
+            "2020": 5
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/11/24/2938/pdf?version=1575786871"
+          },
+          "url": "https://doi.org/10.3390/rs11242938",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs11242938"
+        },
+        {
+          "id": "W2113534763",
+          "doi": "10.1109/igarss.2001.977077",
+          "title": "Validation of a CFAR vessel detection algorithm using known vessel locations",
+          "year": 2002,
+          "type": "conference-paper",
+          "venue": {
+            "name": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+            "issn": null
+          },
+          "authors": [
+            "Karen S. Friedman",
+            "C.C. Wackerman",
+            "F. Funk"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "The National Oeanic and Atmospheric Administration (NOAA)/National Environmental Satellite, Data, And Information Service (NESDIS) is in the second year of a two-year demonstration of Synthetic Aperture Radar (SAR) derived products called the Alaska SAR Demonstration (AKDEMO). This demonstration provides near real-time SAR data and derived products, including wind images and vectors, hard target locations, along with ancillary data, to specific users in the government community. One of the derived products are vessel positions obtained from a constant false alarm rate (CFAR) vessel detection algorithm developed by Veridian ERIM. This algorithm has been tested and validated to maximize the number of ships found while minimizing the number or false alarms on one SAR image of the Red King Crab fishery in Bristol Bay on October 18, 1999. This resulted in using a detection statistic threshold of about 5.5, depending on image resolution used. Until now, this validation has been done with only general knowledge of fishing fleet size and location, but no in situ vessel information. This paper presents the results of a validation of the SAR vessel detection algorithm using observer reported vessel positions along with information on vessel size and local wind speed.",
+          "cited_by_count": 19,
+          "counts_by_year": {
+            "2024": 1,
+            "2023": 1,
+            "2022": 1,
+            "2021": 2,
+            "2020": 2,
+            "2018": 1,
+            "2017": 1,
+            "2016": 1,
+            "2015": 3,
+            "2014": 1,
+            "2013": 1
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/igarss.2001.977077",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/igarss.2001.977077"
+        },
+        {
+          "id": "W2063902998",
+          "doi": "10.1117/12.328668",
+          "title": "Comparison of probability statistics for automated ship detection in SAR imagery",
+          "year": 1998,
+          "type": "conference-paper",
+          "venue": {
+            "name": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+            "issn": "0277-786X"
+          },
+          "authors": [
+            "Michael D. Henschel",
+            "Mar\u00eda Teresa de Tena Rey",
+            "J. W. M. Campbell"
+          ],
+          "author_count": 4,
+          "abstract_snippet": "This paper discuses the initial results of a recent operational trial of the Ocean Monitoring Workstation's (OMW) ship detection algorithm which is essentially a Constant False Alarm Rate filter applied to Synthetic Aperture Radar data. The choice of probability distribution and methodologies for calculating scene specific statistics are discussed in some detail. An empirical basis for the choice of probability distribution used is discussed. We compare the results using a l-look, k-distribution function with various parameter choices and methods of estimation. As a special case of sea clutter statistics the application of a (chi) 2-distribution is also discussed. Comparisons are made with reference to RADARSAT data collected during the Maritime Command Operation Training exercise conducted in Atlantic Canadian Waters in June 1998. Reference is also made to previously collected statistics. The OMW is a commercial software suite that provides modules for automated vessel detection, oil spill monitoring, and environmental monitoring. This work has been undertaken to fine tune the OMW algorithm's, with special emphasis on the false alarm rate of each algorithm.",
+          "cited_by_count": 20,
+          "counts_by_year": {
+            "2025": 1,
+            "2024": 2,
+            "2023": 2,
+            "2022": 2,
+            "2021": 1,
+            "2020": 1,
+            "2019": 2,
+            "2018": 2,
+            "2015": 1
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1117/12.328668",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1117/12.328668"
+        },
+        {
+          "id": "W4383818607",
+          "doi": "10.3390/rs15133441",
+          "title": "Marine Environmental Impact on CFAR Ship Detection as Measured by Wave Age in SAR Images",
+          "year": 2023,
+          "type": "article",
+          "venue": {
+            "name": "Remote Sensing",
+            "issn": "2072-4292"
+          },
+          "authors": [
+            "Diego Xavier Bezerra",
+            "Jo\u00e3o Antonio Lorenzzetti",
+            "Rafael Lemos Paes"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "Satellite synthetic aperture radar (SAR) images are recognized as one of the most efficient tools for day/night, all weather and large area monitoring of ships at sea. However, false alarms discrimination is still one key problem on SAR ship detection. While many discrimination techniques have been proposed for the treatment of false alarms, not enough emphasis has been targeted to explore how obtained false alarms are related to the changing ocean environmental conditions. To this end, we combined a large set of Sentinel-1 SAR images with ocean surface wind and wave data into one dataset. SAR images were separated into three distinct groups according to wave age (WA) conditions present during image acquisition: young wind sea, old wind sea, and swell. A constant false alarm rate (CFAR) ship detection algorithm was implemented based on the generalized gamma distribution (G\u0393D). Kolmogorov\u2013Smirnov distance was used to analyze the distribution goodness-of-fit among distinct ocean environments. A backscattering analysis of different sizes of ship targets and sea clutter was further performed using the OpenSARShip and automatic identification system (AIS) datasets to assess its separability. We derived a discrimination threshold adjustment based on WA conditions and showed its efficacy to drastically reduce false alarms. To our present knowledge, the use of WA as part of the CFAR and for the adjustment of the threshold of detection is a novelty which could be tested and evaluated for different SAR sensors.",
+          "cited_by_count": 20,
+          "counts_by_year": {
+            "2026": 4,
+            "2025": 8,
+            "2024": 6,
+            "2023": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2072-4292/15/13/3441/pdf?version=1688716362"
+          },
+          "url": "https://doi.org/10.3390/rs15133441",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/rs15133441"
+        },
+        {
+          "id": "W3133879474",
+          "doi": "10.1109/jstars.2021.3062858",
+          "title": "Detecting Ships in the New Zealand Exclusive Economic Zone: Requirements for a Dedicated SmallSat SAR Mission",
+          "year": 2021,
+          "type": "article",
+          "venue": {
+            "name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+            "issn": "1939-1404"
+          },
+          "authors": [
+            "Jan Krecke",
+            "Michelangelo Villano",
+            "Nertjana Ustalli"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "The performance tradeoffs of a smallsat synthetic aperture radar (SAR) system for maritime surveillance in the coastal waters of New Zealand are investigated. The lower costs of smallsat platforms allow for a constellation of SAR satellites that can be launched from New Zealand using an existing local launch service provider. The minimum SAR image quality necessary for a smallsat system to achieve a desired detection performance is determined using existing X-band satellite data. The image quality is specified in terms of noise-equivalent sigma zero (NESZ) and resolution. It was found that for a resolution cell of 4 m2a system NESZ of -1.7 dB is sufficient to detect small fishing vessels with a probability of detection of 0.5, while maintaining the probability of false alarm below 10-10. These requirements are translated into a preliminary SAR system design.",
+          "cited_by_count": 21,
+          "counts_by_year": {
+            "2025": 4,
+            "2024": 6,
+            "2023": 5,
+            "2022": 4,
+            "2021": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://ieeexplore.ieee.org/ielx7/4609443/9314330/09366989.pdf"
+          },
+          "url": "https://doi.org/10.1109/jstars.2021.3062858",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/jstars.2021.3062858"
+        },
+        {
+          "id": "W2654467866",
+          "doi": "10.1080/07038992.2017.1342204",
+          "title": "Validating Targets Detected by SAR Ship Detection Engines",
+          "year": 2017,
+          "type": "article",
+          "venue": {
+            "name": "Canadian Journal of Remote Sensing",
+            "issn": "0703-8992"
+          },
+          "authors": [
+            "Nicholas Sandirasegaram",
+            "P.W. Vachon"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "Validating detected targets by ship detection engines without ground-truth data is a very challenging task and this is addressed in this article. Targets detected in synthetic aperture radar (SAR) imagery are validated against automatic identification system (AIS) messages and using visual assessment procedures. Targets detected by the OceanSuite ship detection engine were used as the baseline for validation purposes. OceanSuite has been tuned to minimize the false alarm rate while providing a good overall detection rate. RADARSAT-2 images are often used for ship detection; maritime satellite surveillance radar mode images are considered in this article. An appropriate (spatial and temporal) AIS message is first selected, then the SAR ship signature location is predicted; the predicted ship signature location may be automatically associated with the OceanSuite detections based on proximity. Finally, all detections are validated through visual assessment. Key outcomes of this work are the assessment criteria for declaration as a ship target, tools for automatic validation of SAR detections against AIS-reported targets, and visual assessment results. The RADARSAT-2 images used in this work were collected near Vancouver Island and the Canary Islands. OceanSuite demonstrated a 78% accuracy for AIS-reported targets and over 80% of the validated targets were declared by OceanSuite. Visual assessment showed that a few false targets were declared by the OceanSuite ship detection engine.",
+          "cited_by_count": 10,
+          "counts_by_year": {
+            "2026": 3,
+            "2025": 2,
+            "2023": 1,
+            "2022": 1,
+            "2021": 1,
+            "2020": 1,
+            "2019": 1
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1080/07038992.2017.1342204",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1080/07038992.2017.1342204"
+        },
+        {
+          "id": "W1997330496",
+          "doi": "10.1109/igarss.2014.6947284",
+          "title": "Ship detection in SAR medium resolution imagery for maritime surveillance: Algorithm validation using AIS data",
+          "year": 2014,
+          "type": "conference-paper",
+          "venue": {
+            "name": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+            "issn": null
+          },
+          "authors": [
+            "Ramona Pelich",
+            "Nicolas Long\u00e9p\u00e9",
+            "Gr\u00e9goire Mercier"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "In this paper paper we address performances of ship detection algorithms in medium resolution SAR imagery. An automatic validation approach based on coastal AIS data allows to evaluate detectors efficiency. Detection capabilities remain sensitive to dataset features such as SAR imaging characteristics, meteorological conditions or vessel size. The influence of this different key parameters is fully assessed in this study. This analysis is valuable for operational services, allowing to select the most appropriate type of data for different applications in maritime surveillance.",
+          "cited_by_count": 7,
+          "counts_by_year": {
+            "2024": 1,
+            "2022": 1,
+            "2021": 1,
+            "2019": 1,
+            "2017": 2,
+            "2016": 1
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/igarss.2014.6947284",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/igarss.2014.6947284"
+        },
+        {
+          "id": "W2009638627",
+          "doi": "10.1109/igarss.2014.6947654",
+          "title": "Analysis of ship size detectability over different TerraSAR-X modes",
+          "year": 2014,
+          "type": "conference-paper",
+          "venue": {
+            "name": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+            "issn": null
+          },
+          "authors": [
+            "Carlos Bentes",
+            "Domenico Velotto",
+            "Susanne Lehner"
+          ],
+          "author_count": 3,
+          "abstract_snippet": "A growing interest in global maritime surveillance has motivated the development of new methods and sensors to overcome the limitations of coastal-based systems coverage. Among the available state of the art tools, the Synthetic Aperture Radar (SAR) stands out as a powerful sensor for oceanographic observation and maritime surveillance, due to its capability of wide swath coverage and the ability to operate in all weather conditions. This paper examines the minimum ship size detectable by the Constant False Alarm Rate (CFAR) algorithm over different TerraSAR-X product modes, using simulation-based analyses. These analyses allow a comparison of the expected CFAR ship detection performance for different TerraSAR-X products, over different sea state conditions.",
+          "cited_by_count": 12,
+          "counts_by_year": {
+            "2023": 1,
+            "2022": 1,
+            "2021": 1,
+            "2020": 2,
+            "2018": 2,
+            "2017": 3,
+            "2016": 2
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.1109/igarss.2014.6947654",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.1109/igarss.2014.6947654"
+        },
+        {
+          "id": "W4405928703",
+          "doi": "10.12000/jr20055",
+          "title": "Sea-surface Small Target Detection Based on K-NN with Controlled False Alarm Rate in Sea Clutter",
+          "year": 2020,
+          "type": "article",
+          "venue": {
+            "name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "issn": null
+          },
+          "authors": [
+            "Zixun Guo",
+            "Peng\u2010Lang Shui",
+            "Xiaohui BAI"
+          ],
+          "author_count": 5,
+          "abstract_snippet": "Owing to the complicated characteristics of high-resolution sea clutter and the diversity of sea-surface small targets, there is no precise parameter model to describe sea clutter and returns with targets. As a result, target detection faces many obstacles. To distinguish sea clutter and target returns, it is effective to extract their features to transform the detection problem into a classification problem in feature space. Feature-based detection is a binary hypothesis test in the feature space that encounters two intrinsic difficulties: one difficulty is insufficient target returns versus sufficient sea clutter; the other difficulty is an uncontrolled false alarm rate in detection. To solve the first difficulty, a generator of typical targets returns that can generate sufficient simulated targets returns is used to balance the number of samples between two classes and assist to design the detector. K Nearest Neighbors (K-NN) is the type of classification method that is simple and effective; however, it cannot be used to detect small targets directly because of the uncontrolled false alarm rate. This paper proposes a modified K-NN method with a controlled false alarm rate for detecting small targets. Experimental results on the IPIX radar database indicate that the proposed detector attains 85.1% and 89.2% rates of target detection for the observation time of 0.512 s and 1.024 s, respectively, compared with other existing feature-based detectors, the proposed detector exhibits 7% and 5% improvement, respectively. Thus, the proposed detector exhibits more stable and effective detection performance than other existing feature-based detectors.",
+          "cited_by_count": 9,
+          "counts_by_year": {
+            "2024": 3,
+            "2023": 2,
+            "2022": 2,
+            "2021": 2
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": null
+          },
+          "url": "https://doi.org/10.12000/jr20055",
+          "sources": [
+            "openalex"
+          ],
+          "openalex_url": "https://openalex.org/W4405928703",
+          "doi_note": "This record is a repository/preprint copy. Its DOI may not resolve until the journal version is published; if the DOI link fails, use openalex_url, which opens now.",
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.12000/jr20055"
+        },
+        {
+          "id": "W2567764276",
+          "title": "A New Technique for the Improved Accuracy of Small Ship Detection by Synthetic Aperture Radar Imagery",
+          "year": 2009,
+          "type": "article",
+          "authors": [
+            "Seong-In Hwang",
+            "Kozo Ouchi"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "During the calibration and validation stage of ALOS-PALSAR (Advanced Land Observing Satellite - Phased Array L-band SAR) in 2006, we conducted an experiment of detecting small fishing boats whose sizes are comparable with the PALSAR resolution cells, with several algorithms including amplitude threshold, CFAR (Constant False Alarm Rate), and polarimetric analyses. In the analysis based on MLCC (Multi-Look Cross-Correlation) [1], it was pointed out that when multilook images contain correlated noises from sea surface, the detection probability decreases due to decreasing SNR and increasing FAR [2]. To improve the accuracy of MLCC, we propose, in this paper, a novel method of ship detection by applying CFAR to inter-look coherence images produced by MLCC. 2 Small Ship Detection Experiment in the Tosa Bay, 2006",
+          "cited_by_count": 2,
+          "counts_by_year": {
+            "2024": 1,
+            "2013": 1
+          },
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://openalex.org/W2567764276",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=W2567764276"
+        },
+        {
+          "id": "W2183942947",
+          "title": "Small Boat Detection Using TerraSAR-X and Radarsat2 Satellite Imagery",
+          "year": 2011,
+          "type": "article",
+          "authors": [
+            "V. Silva",
+            "Harm Greidanus"
+          ],
+          "author_count": 2,
+          "abstract_snippet": "in maritime security and safety. A significant part of the world\u2019s economy relies directly or indirectly on maritime areas. It is not just the shipping or fisheries industries and their related activities. It is also shipbuilding and ports, marine equipment and offshore energy, maritime and coastal tourism, aquaculture, submarine, telecommunications, blue biotech and the protection of the marine environment. A significant part of the world\u2019s maritime areas face several risks and threats posed by unlawful activities, such as drugs trafficking, smuggling, illegal immigration, organized crime, piracy and terrorism. Small boat detection capability is an essential asset for maritime surveillance, since a significant number of sea-based major threats involve small craft. Currently used maritime surveillance assets, such as coastal radars, vessel-based radars, manned and unmanned aircraft only allow small boat detection in limited areas for limited periods. In this poster we present the results of several maritime surveillance campaigns aimed at detection of small boats in SAR satellite imagery, carried out by the EC-JRC together with various local partners in 2009 and 2010 in Italy, Spain, Portugal and Slovenia. The experiments aimed to answer relevant questions, such as: \u2022 Is it possible to detect small boats using satellite spaceborne SAR imagery? \u2022 What are the main factors affecting the spaceborne detection of small craft on sea? \u2022 What is the likely performance of state-of-theart SAR satellite imagery for small boat detection? \u2022 What could be done to improve SAR satellites for maritime surveillance?",
+          "cited_by_count": 0,
+          "oa": {
+            "is_oa": false,
+            "pdf_url": null
+          },
+          "url": "https://openalex.org/W2183942947",
+          "sources": [
+            "openalex"
+          ],
+          "retrieved_by": "semantic",
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=W2183942947"
+        }
+      ],
+      "query_used": {
+        "openalex_lane": "external validation false alarm operational reliability small vessel detection maritime"
+      },
+      "semantic_additions": 15,
+      "semantic_note": "The nearest_neighbours list is today's ranked list followed by papers that only a meaning-based search of the full question found (marked retrieved_by: semantic). Read the whole list before judging duplication: a near-duplicate can sit anywhere in it.",
+      "existing_reviews": [
+        {
+          "id": "W4410004931",
+          "doi": "10.3390/electronics14091844",
+          "title": "Artificial Intelligence in Maritime Cybersecurity: A Systematic Review of AI-Driven Threat Detection and Risk Mitigation Strategies",
+          "year": 2025,
+          "type": "review",
+          "venue": {
+            "name": "Electronics",
+            "issn": "2079-9292"
+          },
+          "authors": [
+            "Tymoteusz I. Miller",
+            "Irmina Durlik",
+            "Ewelina Kostecka"
+          ],
+          "author_count": 6,
+          "abstract_snippet": "The maritime industry is undergoing a digital transformation, integrating automation, artificial intelligence (AI), and the Internet of Things (IoT) to enhance operational efficiency and safety. However, this technological evolution has also increased cybersecurity vulnerabilities, exposing vessels, ports, and maritime communication networks to sophisticated cyber threats. This systematic review, conducted following the PRISMA guidelines, examines the current landscape of AI-driven cybersecurity solutions in maritime environments. By analyzing peer-reviewed studies and industry reports, this review identifies key AI methodologies, including machine-learning-based intrusion detection systems, anomaly detection mechanisms, predictive threat modeling, and AI-enhanced zero-trust architectures. This study assesses the effectiveness of these techniques in mitigating cyber risks, explores their implementation challenges, and highlights existing research gaps. The findings indicate that AI-powered solutions significantly enhance real-time threat detection and response capabilities in maritime networks, yet issues such as data scarcity, regulatory constraints, and adversarial attacks on AI models remain unresolved. Future research directions should focus on integrating AI with blockchain, federated learning, and quantum cryptographic techniques to strengthen maritime cybersecurity frameworks.",
+          "cited_by_count": 32,
+          "counts_by_year": {
+            "2026": 22,
+            "2025": 10
+          },
+          "oa": {
+            "is_oa": true,
+            "pdf_url": "https://www.mdpi.com/2079-9292/14/9/1844/pdf?version=1746020763"
+          },
+          "url": "https://doi.org/10.3390/electronics14091844",
+          "sources": [
+            "openalex"
+          ],
+          "study_design": [
+            "Systematic Review"
+          ],
+          "cite_url": "https://literature.researchfasttrack.com/cite?id=10.3390/electronics14091844"
+        }
+      ],
+      "prospero_caveat": "Covers published work only. PROSPERO has no API, so registered but unpublished review protocols will not appear here. The manual PROSPERO check from the Week 1 worksheet still applies.",
+      "note": "Leads, not a verdict on originality: the Duplication Test judgement belongs to the researcher after opening the closest papers. When presenting: hyperlink titles via url and, in SR mode, put existing_protocols and existing_reviews before the neighbour list. The Duplication Test is a FastTrack method developed by Prof David Stuckler.",
+      "zotero_all_url": "https://literature.researchfasttrack.com/zotero?ids=10.3390/app14209439,10.3390/jmse10010112,10.3390/network2010009,10.3390/s22165946,10.3390/s24113458,10.3390/electronics14091844,10.1016/j.oceaneng.2022.110920,10.3390/info13010022,10.3390/drones10010013,10.3390/s26072017,10.3390/jmse12030379,10.3390/s24010146,10.3390/s21165658,10.54660/ijaiet.2022.3.1.19-37,10.3390/rs17122026,10.1109/lgrs.2019.2894385,10.3390/s8052959,10.1016/j.infrared.2018.01.032,10.1080/07038992.2000.10874770,10.3390/rs11242938,10.1109/igarss.2001.977077,10.1117/12.328668,10.3390/rs15133441,10.1109/jstars.2021.3062858,10.1080/07038992.2017.1342204,10.1109/igarss.2014.6947284,10.1109/igarss.2014.6947654,10.12000/jr20055,W2567764276,W2183942947",
+      "zotero_note": "After each paper you list, add its cite_url as a short [Cite] link. It opens the reference in APA, Vancouver and Harvard, ready to copy, with a save-to-Zotero link. zotero_all_url imports all 30 papers in this result; end the list with this line, both parts linked to zotero_all_url: **[Import all 30 into Zotero](zotero_all_url)** \u00b7 or [download for EndNote](zotero_all_url). If you list only some of them or combine several calls, build the link from the papers you actually list instead (DOIs or OpenAlex IDs, comma-separated, after zotero?ids=) and use its true count. Keep a [Cite] link after every paper as well, including papers cited in annotated bullets or prose. If the researcher asks you to drop these links, leave them out for the rest of the conversation."
+    }
+  ]
+}

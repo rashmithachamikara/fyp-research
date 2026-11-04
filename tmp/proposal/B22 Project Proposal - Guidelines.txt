@@ -1,0 +1,181 @@
+--- PAGE 1 ---
+Guidelines for Preparation of Project Proposal
+Batch 22
+IS4990 - Comprehensive Group Project
+Faculty of Information Technology
+University of Moratuwa
+2026
+--- PAGE 2 ---
+Page 1 of 8
+Guidelines for Preparation of Project Proposals
+Your project proposal must define the scope of the project and state the proposed
+methodology for addressing the requirements of the project. It must be prepared based on
+the General Guidelines listed below.
+1. General Guidelines
+Submission: One copy of the Project Proposal that is prepared as per the following
+instructions must be submitted to your supervisor.
+Length: 4 pages excluding the title page and table of contents.
+Paper: A4 – 80 GSM
+Lettering: Times New Roman
+Printing: A laser quality printing, single sided.
+Margins: Left, 20mm; top, bottom, and right, 10 mm.
+Sections/sub sections: The proposal to be structured with the sections listed under the Body
+of the Proposal given below. Arabic numbering system must be used for numbering of
+Sections/Subsections.
+Tables and Figures: All Tables and Figures must be named with captions and cited inside
+the text. See the sample for using tables and figures (Appendix A).
+Reference and citations: The list of Reference must be arranged in alphabetical order of
+the name of the first author and numbered in square brackets. The corresponding number
+of a reference must be used to cite the particular work inside the text. All items in list of
+reference must be cited inside the text. See the sample for reference and citations (Appendix
+B).
+Page numbering: All page numbers must be centered at the bottom of each page. Roman
+numbering must be used for the pages before the body of the text. No page numbering for
+the title page. Arabic numbering must be used for the page numbers of the body of the
+proposal.
+Assembling the Project Proposal: Assemble the following for composing the final
+documentation. Details of these topics are given below.
+• Cover Page
+• Title Page
+• Table of Contents
+• Introduction
+• Background & Motivation
+• Problem in Brief - Scope
+• Aim & Objectives
+--- PAGE 3 ---
+Page 2 of 8
+• Proposed Solution
+• Resource Requirements
+• Reference
+• Appendix
+Cover page: Using appropriate line spacing, print the following information.
+• Project Proposal (14pt, bold, centered)
+• Level 04 (12pt, bold, centered)
+• Title of the Project (14pt, bold, centered)
+• Group name (12pt, centered)
+• Faculty of Information Technology (12pt, centered)
+• University of Moratuwa (12pt, centered)
+• 2009 (12pt, centered)
+Title Page: Same as the Cover page. Include the following information with the given-on
+cover page:
+Index numbers and names of group members (in a centered table, no borders),
+and name of Supervisors
+Second Page: Client Details (if any)
+Company name and contact details
+Table of Contents: This is a list of Sections and Subsections with the page numbers.
+Although a project proposal has only few pages, it would be nice to include a table of
+contents for the proposal. See the sample for table of contents (Appendix C).
+2. Body of the Proposal
+The proposal must be structured with the headings listed below. Note that the names of
+the headings given below are only a guideline and you are to rename them to reflect
+your project. All headings must be numbered (12pt, bold), and body of the text in must
+be in 12pt.
+• Introduction
+• Background & Motivation
+• Problem in Brief
+• Aim & Objectives
+• Proposed Solution
+• Resource Requirements
+• Reference
+• Appendix
+--- PAGE 4 ---
+Page 3 of 8
+Introduction
+This must give a brief description of the problem area, the problem that you
+address, the importance of the problem, technology to solve the problem and the
+nature of the solution you propose.
+Background & Motivation
+This is one of the most important sections of a project proposal, and this section
+finally points out the problem that you address in the project. If the problem is not
+worth addressing, then there is no project! Here you should describe the background
+of the problem domain you selected. And also write why the problem is so important
+to solve. Whenever possible, support the importance of the problem with some
+reference key people/sources. Also explain why you are motivated, and your
+capability to address the problem. At the end of this section, you may have pointed
+out several issues but arguably identify exactly one problem to solve.
+Problem in Brief
+You may rename the heading to reflect the problem that you address. For example,
+the heading can be: Major issue – Communication gap. Since the previous section
+pointed out several problems, here briefly write the specific problem that you are
+going to address.
+Aim & Objectives
+Aim: Write a sentence similar to ‘The aim of this project is to develop a system for
+addressing <your problem> with the use of <selected technology>’.
+Objectives: The following can be the most general objectives of any project, but you
+can define more specific objectives to suit with your project
+• Study of the <problem domain>
+• Study of technologies that can solve the problem
+• Design and develop a system for solving the problem
+• Evaluation of the proposed solution
+• Preparation of final documentation
+Proposed Solution
+Here you may give a better heading to reflect on your project. For example,
+heading can be ‘Using Expert Systems for Student counseling’, instead of the
+generic title Proposed Solution. This is also one of the major sections of the
+proposal. The acceptance of the proposal is largely determined by the quality of
+this section. In this section, you should describe the solution as detailed as possible.
+As such you should write about technology adapted, nature of solution (input,
+output, process, users), feasibility of implementation of the solution, your
+capability to solve the problem, and availability of resources. If relevant, add a
+figure for this section.
+Resource Requirements
+This is only a list of resources such as Computer with 512MB RAM and 2GHz or more
+processing power, Linux OS, Internet connectivity, Oracle Database, etc. If you can
+find some resources on your own, it is a plus point, and you should clearly indicate it
+in this section.
+--- PAGE 5 ---
+Page 4 of 8
+Reference
+This is the list of references. A sample for the list of references is given below in
+this document. Note all what you listed under list of references must necessarily be
+cited inside the body of the text. In project proposals, references are generally cited
+in the sections of Introduction and Background & Motivation.
+Appendix - Plan of Action
+It is better to include a plan of actions as an appendix. This may be cited in the
+section on Proposed Solutions. This is a list of activities together with intended dates
+for their completion. In order to decide on the time scale, you must refer to the
+project duration prescribed by the Faculty. The list of activities must be defined as
+per the Objectives of the project.
+--- PAGE 6 ---
+Page 5 of 8
+Expert System KB
+Server
+Web client Inference
+Engine
+Appendix A - Sample for Using Tables and Figures
+Whenever there is a figure/table, you must cite it as follows.
+…................................The top-level architecture of the proposed system comprises of there
+modules, namely, Web client, Inference Engine, and Expert Systems KB sever. Figure 3
+shows the interaction among these modules.
+Figure 3: Top Level Architecture of the Proposed System
+Table 1: Web Client
+Client Name IP
+--- PAGE 7 ---
+Page 6 of 8
+Appendix B - Sample for Reference and Citations
+Your writing must be supported by some sources of information. That information are listed
+under a title called Reference at the end of the body of the proposal. The items in the list of
+references are referred inside the body of the text, and they are called citations. There are
+various reference and citation styles, and you must use the following style in the project
+proposal.
+Below is an example about citations.
+….........................State university system has been able to accommodate only a 15% of A/L
+qualified students under the free education system in Sri Lanka [2]. However, there will be
+a demand for 5,000 IT graduates annually by the year 2010 [1, 2].
+Below is how list of references is prepared in alphabetical order.
+Reference
+[1] Perera, A. B. (2003), Applications of ontological modeling, Journal of Ontology, 3(2), pp
+120-145
+[2] Silva, A (2004), University Statistics, University Grants Commission
+--- PAGE 8 ---
+Page 7 of 8
+Appendix C - Sample for Table of Contents
+Contents
+Page
+1. Introduction 1
+2. Background & Motivation ..
+3. Problem in Brief
+4. Aim & Objectives
+5. Proposed Solution
+6. Resource Requirements
+Reference

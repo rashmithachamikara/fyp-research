@@ -1,0 +1,8 @@
+[
+  {"id":"S09","tool":"search_papers","arguments":{"query":"small boat detection","limit":20}},
+  {"id":"S10","tool":"search_papers","arguments":{"query":"satellite ship detection validation","limit":20}},
+  {"id":"P18","tool":"get_paper","arguments":{"id":"10.3390/rs18030421"}},
+  {"id":"P19","tool":"get_paper","arguments":{"id":"10.3390/rs15071807"}},
+  {"id":"P20","tool":"get_paper","arguments":{"id":"10.3390/s8052959"}},
+  {"id":"D05","tool":"run_duplication_test","arguments":{"question":"small boat detection systematic review","mode":"sr","limit":15}}
+]

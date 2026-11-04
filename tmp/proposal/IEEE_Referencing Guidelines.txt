@@ -1,0 +1,110 @@
+--- PAGE 1 ---
+Tom Penick    tomzap@eden.com    www.teicontrols.com/notes    11/07/98
+SAMPLE REFERENCES, IEEE FORMAT
+From EE155 Course Notes Fall 1998 (Electrical Engineering Seminar),
+and EE333T Course Notes (Technical Communications)
+Book
+[1] P.M. Morse and H. Feshback, Methods of Theoretical Physics. New York: McGraw
+Hill, 1953.
+Journal Article
+[2] S.K. Kenue and J.F. Greenleaf, “Limited angle multifrequency diffiaction
+tomography,” IEEE Trans. Sonics Ultrason., vol. SU-29, no. 6, pp. 213-2 17, July
+1982.
+New edition of a book
+[3] C. Brusaw, C. Aired, and W. Oliu, Handbook of Technical Writing, 3rd ed. New
+York: St. Martin’s Press, 1987.
+Article in an Anthology
+[4] G.J. Broadhead, “Style in technical and scientific writing.” In M.G. Moran and D.
+Joumet, eds. Research in Technical Communication. A Bibliographic Sourcebook,
+pp. 379-401. Westport. CT: Greenwood Press, 1985.
+Translation
+[5] M.M. Botvinnik, Computers in Chess: Solving Inexact Search Problems. Translated
+by A. Brown, Berlin: Springer-Verlap, 1984.
+Personal Interview/Communication
+[6] Interview [or Personal Communication] with Prof. Elmer Hixon, BCE Department,
+The University of Texas at Austin, March 12, 1995. [Date omitted if unknown.]
+Handbook/date book, no author
+[7] Handbook for Writing Operation and Maintenance Manuals. Washington, D.C.:
+Packaging Machinery Manufacturers Institute, 1973.
+[8] Interface Circuits Data Book, Texas Instruments, Austin, Texas, 1993.
+[9] User’s Guide: Microsoft Word, Vers. 5.0, Microsoft, 1991.
+Encyclopedia Entry
+No author given:
+[10] “Sonar,” Encyclopaedia Brittanica, 1984 ed.
+Author(s) given:
+[11] A.D. Pearson, J.B. MacChesney, and W.G. French, “Fiber optics,” in Encyclopedia
+of Semiconductor Technology, M. Grayson, Ed., New York: John Wiley & Sons,
+1984.
+Online:
+[12] “Greyhound,” Brittanica Online, Beta Version 96.1, March 1996.
+--- PAGE 2 ---
+Tom Penick    tomzap@eden.com    www.teicontrols.com/notes    11/07/98
+Course Notes
+[13] J. K. Jones, Lab Notes for EE464K, Senior Projects, The University of Texas at
+Austin, fall semester, 1994.
+Dissertation or thesis
+[14] B. Tsikos, “Segmentation of 3-D scenes using multi-modal interaction between
+machine vision and programmable mechanical scene manipulation,” Ph.D.
+dissertation, Univ. of Pennsylvania, BCE Dept., Philadelphia, 1987. [Add if
+applicable: University Microfilms, Inc., University of Michigan, Ann Arbor,
+Michigan.]
+Proceedings paper
+[15] R. Finkel, R. Taylor, R. Bolles, R. Paul, and J. Feldman, “An overview of AL,
+programming system for automation,” in Proc. Fourth Int. Joint Conf Artif. Intell.,
+pp. 758-765, Sept. 3-7, 1975.
+Patent
+[16] L.O. Norman, U.S. Patent 4 379 752, 1983. [Title of patent may be included.]
+Newspaper article
+[17] “Technology threatens to shatter the world of college textbooks, The Wall Street
+Journal, vol 91, pp. Al, A8, June 1, 1993.
+Government publication
+[18] Basic Facts about Patents. Washington, D.C.: Government Printing Office, 1989.
+Technical Report
+[19] R. Cox and J. S. Turner, “Project Zeus: design of a broadband network and its
+application on a university campus,” Washington Univ., Dept. of Comp. Sci.,
+Technical Report WUCS-91-45, July 30, 1991.
+Letter/E-mail
+[20] Letter from J. M. Beck, Project Manager, TI, Bedford, Utah, Sept. 3, 1996.
+Software
+[21] M. Janzen, Instant Access Accounting. Computer software. Nexus Software, Inc
+IBM-PC, 1993.
+Electronic bulletin board
+[22] AIDS Info BBS. [San Francisco (CA): Ron Gardner]. Available from: 415-626-
+1246.
+Database/online
+[23] R. Duncan, “An HTML primer,” PC Magazine, June 13, 1995, v14, n11 p. 261(7)
+in Academic Index (database on UTCAT PLUS system).
+[24] R. Berdan and M. Garcia, Discourse-Sensitive Measurement of Language
+Development in Bilingual Children (Los Alamitos, CA: National Center for
+Bilingual Research, 1982) (ERIC ED 234 636).
+--- PAGE 3 ---
+Tom Penick    tomzap@eden.com    www.teicontrols.com/notes    11/07/98
+World Wide Web (give author and title if named)
+[25] Fuminao Okumura and Hajime Takagi, “Maglev Guideway On the Yamanashi Test
+Line,” http://www.rtri.or.jp/rd/maglev2/okumura.html, October 24, 1998.
+[26] “AT&T Supplies First CDMA Cellular System in Indonesia,”
+http://www.att.com/press/1095/951011.nsa.html, Feb 5, 1996.
+PROCEDURES
+1. In the body of your text refer to the source of your information by inserting consecutive
+numbers in brackets at the end of each segment of cited information—like this [1]. These
+reference numbers can also be inserted within a sentence [2], without changing the
+sentence’s punctuation. You may also cite your reference in your text as follows: “As
+Smithsky [3] points out,..
+2. Unless you are referring to a complete book or article, you will also need to identify the page
+number(s) of your source of information. Indicate exact page numbers of a source within
+your brackets after a comma [4, pp. 3-6], or by a simple rhetorical device in your text such as
+“However, on page 79 of [5] the author seems to contradict himself when he states. . .“ If you
+must refer to more than one separate page or source in the same reference, use semicolons for
+separation: [6, p. 46; 7, pp. 29-31; 9, pp. 8-12].
+3. Once you have numbered a source use the same number for all subsequent references to that
+source. References at the end of quotation marks “are punctuated with the period after the
+reference” [8, p. 23].
+REFERENCE PAGE FORMAT
+• Always use square brackets around reference numbers [10, pp. 78-85] to distinguish from
+equation numbers, which are given in parentheses (6).
+• Single space individual references, with no indentation for a second or third line. Double
+space between separate references.
+• Use a common abbreviation for a journal title if there is one, e.g. IEEE Electron Device Lett.
+Otherwise give the full name of the journal.
+• End each entry with a period.
+• List each source only once on your reference page.

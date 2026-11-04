@@ -1,0 +1,10 @@
+[
+  {"id":"S01","tool":"search_papers","arguments":{"query":"small boat vessel detection systematic review","limit":20}},
+  {"id":"S02","tool":"search_papers","arguments":{"query":"maritime small target detection radar sea clutter","year_from":2020,"limit":20}},
+  {"id":"S03","tool":"search_papers","arguments":{"query":"maritime small vessel detection optical infrared benchmark domain generalization","year_from":2020,"limit":20}},
+  {"id":"S04","tool":"search_papers","arguments":{"query":"small vessel SAR detection dark fishing xView3","year_from":2020,"limit":20}},
+  {"id":"S05","tool":"search_papers","arguments":{"query":"maritime illegal vessel detection AIS anomaly systematic review","year_from":2019,"limit":20}},
+  {"id":"D01","tool":"run_duplication_test","arguments":{"question":"Systematic review of small boat detection for maritime surveillance using optical infrared radar and satellite sensors","mode":"sr","limit":15}},
+  {"id":"D02","tool":"run_duplication_test","arguments":{"question":"Systematic review of external validation false alarm rates and operational reliability of small vessel detection for maritime surveillance","mode":"sr","limit":15}},
+  {"id":"G01","tool":"check_gap_saturation","arguments":{"gap_statement":"small vessel detection maritime surveillance","window_years":7}}
+]

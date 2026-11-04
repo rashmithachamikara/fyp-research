@@ -1,0 +1,319 @@
+{
+  "title": "Small and Thin Road-Damage Detection and Miss Prediction in Unseen Countries",
+  "pages": [
+    [
+      {
+        "text": "Project Proposal",
+        "kind": "cover14"
+      },
+      {
+        "text": "Level 04",
+        "kind": "cover12bold"
+      },
+      {
+        "text": "Small and Thin Road-Damage Detection and Miss Prediction in Unseen Countries",
+        "kind": "coverTitle"
+      },
+      {
+        "text": "Group: [Group name]",
+        "kind": "cover12"
+      },
+      {
+        "text": "IS4990 - Comprehensive Group Project",
+        "kind": "cover12"
+      },
+      {
+        "text": "Faculty of Information Technology",
+        "kind": "cover12"
+      },
+      {
+        "text": "University of Moratuwa",
+        "kind": "cover12"
+      },
+      {
+        "text": "2026",
+        "kind": "cover12"
+      }
+    ],
+    [
+      {
+        "text": "Project Proposal",
+        "kind": "cover14"
+      },
+      {
+        "text": "Level 04",
+        "kind": "cover12bold"
+      },
+      {
+        "text": "Small and Thin Road-Damage Detection and Miss Prediction in Unseen Countries",
+        "kind": "coverTitle"
+      },
+      {
+        "text": "Group: [Group name]",
+        "kind": "cover12"
+      },
+      {
+        "text": "",
+        "kind": "members"
+      },
+      {
+        "text": "Supervisor: [Supervisor name]",
+        "kind": "cover12"
+      },
+      {
+        "text": "IS4990 - Comprehensive Group Project",
+        "kind": "cover12"
+      },
+      {
+        "text": "Faculty of Information Technology",
+        "kind": "cover12"
+      },
+      {
+        "text": "University of Moratuwa",
+        "kind": "cover12"
+      },
+      {
+        "text": "2026",
+        "kind": "cover12"
+      }
+    ],
+    [
+      {
+        "text": "Table of Contents",
+        "kind": "tocTitle"
+      },
+      {
+        "text": "1. Introduction\t1",
+        "kind": "toc"
+      },
+      {
+        "text": "2. Background and Motivation\t1",
+        "kind": "toc"
+      },
+      {
+        "text": "3. Problem in Brief and Scope\t1",
+        "kind": "toc"
+      },
+      {
+        "text": "4. Aim and Objectives\t1",
+        "kind": "toc"
+      },
+      {
+        "text": "5. Proposed Solution\t2",
+        "kind": "toc"
+      },
+      {
+        "text": "5.1. Data and Experimental Protocol\t2",
+        "kind": "tocsub"
+      },
+      {
+        "text": "5.2. Member A: Assignment and Weighting\t2",
+        "kind": "tocsub"
+      },
+      {
+        "text": "5.3. Member B: Small-Damage Consistency\t2",
+        "kind": "tocsub"
+      },
+      {
+        "text": "5.4. Member C: Missed-Damage Prediction\t3",
+        "kind": "tocsub"
+      },
+      {
+        "text": "5.5. Evaluation and Prototype\t3",
+        "kind": "tocsub"
+      },
+      {
+        "text": "6. Resource Requirements and Feasibility\t3",
+        "kind": "toc"
+      },
+      {
+        "text": "7. References\t4",
+        "kind": "toc"
+      },
+      {
+        "text": "8. Appendix: Plan of Action\t4",
+        "kind": "toc"
+      }
+    ],
+    [
+      {
+        "text": "1. Introduction",
+        "kind": "h1"
+      },
+      {
+        "text": "Image-based road surveys offer a practical basis for automated pavement inspection. RDD2022 provides annotated examples of longitudinal cracks (D00), transverse cracks (D10), alligator cracks (D20), and potholes (D40) [1]. However, a detector trained on available countries may perform differently on roads from an unseen country. This project investigates source-only generalisation, with particular attention to small or thin damage and warnings about missed damage. The intended users of the prototype are road-inspection teams and developers of road-survey tools.",
+        "kind": "body"
+      },
+      {
+        "text": "2. Background and Motivation",
+        "kind": "h1"
+      },
+      {
+        "text": "Differences in road appearance and image capture create a country-transfer problem. MAMDG already investigates road-damage domain generalisation using multiple source domains [2]; therefore, this project does not claim the country-transfer setting as novel. Normalised Wasserstein Distance (NWD) addresses the sensitivity of tiny-object overlap to small position errors [4], while cross-view alignment is established for domain-generalised detection [3]. Feature-based failure prediction is also established, including KGFP [5].",
+        "kind": "body"
+      },
+      {
+        "text": "The bounded research gap is whether three specific choices help in unseen road-damage countries: short-side-relative similarity rather than constant-scale NWD; consistency applied to small or thin boxes rather than all boxes; and spatial detector features beyond a learned map of weak detections for predicting misses. These are testable distinctions from the cited work, not claims of first-ever methods. The team's Python and backend skills support implementation; detector training and a runtime pilot will establish practical feasibility.",
+        "kind": "body"
+      },
+      {
+        "text": "3. Problem in Brief and Scope",
+        "kind": "h1"
+      },
+      {
+        "text": "The problem is unreliable detection of small or thin road damage after country shift, together with limited information about where damage was missed. The study uses existing RDD2022 images from Japan, India, the United States, and the Czech Republic. No target-country images or labels are used to train or tune a model evaluated on that country. Primary data collection, physical crack-severity assessment, operational deployment, and demonstrated road-safety or cost benefits are outside scope.",
+        "kind": "body"
+      },
+      {
+        "text": "4. Aim and Objectives",
+        "kind": "h1"
+      },
+      {
+        "text": "Aim: To develop and evaluate a source-trained road-damage detection and miss-prediction system for countries excluded from its training data.",
+        "kind": "body"
+      },
+      {
+        "text": "Objectives: (1) establish a reproducible four-country benchmark; (2) evaluate Member A's assignment-and-weighting rule against equally tuned plain NWD; (3) evaluate Member B's geometry-anchored consistency against generic consistency; (4) evaluate Member C's feature-based miss predictor against a learned weak-detection-map predictor; and (5) document the findings and demonstrate boxes and miss warnings in a web prototype.",
+        "kind": "body"
+      }
+    ],
+    [
+      {
+        "text": "5. Proposed Solution",
+        "kind": "h1"
+      },
+      {
+        "text": "5.1. Data and Experimental Protocol",
+        "kind": "h2"
+      },
+      {
+        "text": "The four-country labelled training release contains 25,846 images: Japan 10,506; India 7,706; United States 4,805; and Czech Republic 2,829 [1]. VOC annotations will be converted to YOLO format, preserving valid empty annotations as negatives. Missing annotations will not be treated as clean roads. Exact duplicates, near-duplicates, and recoverable capture sequences will be grouped before splitting.",
+        "kind": "body"
+      },
+      {
+        "text": "Four leave-one-country-out folds will be used. During development, two source countries support training/selection and the third provides inner-country validation. Inner countries are fixed as US for Japan-out, Czech Republic for India-out, Japan for US-out, and India for Czech-Republic-out. Final source splits are approximately 70% detector fitting, 10% checkpoint/threshold selection, 10% miss-predictor fitting, and 10% miss-predictor selection, keeping groups whole. The outer country is scored only after all configurations and analyses are frozen. Global design changes will be logged; tuning stays within each fold's source data.",
+        "kind": "body"
+      },
+      {
+        "text": "The shared baseline is COCO-pretrained YOLO11s at 640-pixel input, with software, source code, and training settings archived. Candidate eligibility, including any built-in widening of thin boxes, will be identical across assignment methods. Country-balanced sampling and strong augmentation provide additional references. Small means box area below 32 × 32 pixels; thin means a shorter side below 16 pixels at the 640-pixel reference scale. Their union counts each box once. These definitions concern image boxes, not physical crack width.",
+        "kind": "body"
+      },
+      {
+        "text": "5.2. Member A: Assignment and Weighting",
+        "kind": "h2"
+      },
+      {
+        "text": "Member A will replace the assigner's overlap similarity with S = exp(-d/(k × s)), where d is the Gaussian Wasserstein box distance, s is the ground-truth shorter side, and k is tuned on source data. Plain NWD uses exp(-d/C) with one constant C [4]. Both receive equal tuning budgets and identical candidate rules. The modification affects positive assignment and supervision weights; positives per box, zero-positive frequency, and total target weight will be recorded by geometry. H1 predicts higher country-macro mAP50:95 than plain NWD on unchanged labels. The rule is stricter for thin boxes at equal pixel error; improvement is an empirical question.",
+        "kind": "body"
+      },
+      {
+        "text": "5.3. Member B: Small-Damage Consistency",
+        "kind": "h2"
+      },
+      {
+        "text": "Member B will train a full-size student with normal detection supervision, adding agreement between its half-size view and a full-size exponential-moving-average teacher. For each eligible labelled box, up to three top assigned predictions per view are aggregated. Bernoulli class-score divergence and normalised-box L1 loss are averaged over included boxes. The principal comparison applies this loss to small-or-thin boxes versus all eligible boxes, with identical views, supervision, and training budget. Boxes below an 8-pixel short side at full size are excluded; exclusions are reported. A count-matched random subset is a secondary control. H2 predicts higher small-or-thin recall with false positives per image no more than 10% above generic consistency.",
+        "kind": "body"
+      }
+    ],
+    [
+      {
+        "text": "5.4. Member C: Missed-Damage Prediction",
+        "kind": "h2"
+      },
+      {
+        "text": "A frozen detector will generate miss labels only on source slices excluded from detector fitting. A miss is a small-or-thin labelled box unmatched by same-class, score-ordered, one-to-one matching at IoU ≥ 0.5 and the frozen operating threshold. A 40 × 40 grid cell is positive when it contains a missed box centre. The target represents miss location, not damage extent or recovery.",
+        "kind": "body"
+      },
+      {
+        "text": "Member C will pool P3 features to 40 × 40, concatenate P4 and a weak-detection map, and train a compact convolutional head with weighted binary cross-entropy. The map retains maximum post-NMS scores between 0.05 and the operating threshold at detection centres. The detector remains frozen. H3 predicts higher held-out cell-level area under the precision-recall curve (AUPRC) than a matched learned weak-map-only head. Raw weak maps and feature-only heads are additional baselines. Positive-cell prevalence and overlapping miss centres will be reported. An unusable grid target at the week-8 source-only gate triggers a documented image-level miss-prediction fallback.",
+        "kind": "body"
+      },
+      {
+        "text": "5.5. Evaluation and Prototype",
+        "kind": "h2"
+      },
+      {
+        "text": "Principal contrasts use four outer countries and three training seeds. A uses mAP50:95; B uses small-or-thin recall alongside precision and false positives; C uses cell-level AUPRC alongside positive-cell prevalence. Each detector's threshold maximises source-selection recall at precision ≥ 0.70, breaking ties upwards; best F1 is the declared fallback. Geometry evaluation first matches all ground truth, then ignores matches outside the bin. Per-country, country-macro, worst-country, and seed-spread results will be reported. Paired 95% bootstrap intervals resample image groups, never grid cells; differences are computed per seed before averaging. No general population claim will rest on four countries.",
+        "kind": "body"
+      },
+      {
+        "text": "The FastAPI/React prototype will display baseline and improved boxes, optional source-fitted calibrated scores, and Member C's miss heat map on public images. Warnings will be labelled as estimates. Code, split manifests, configurations, and an individual analysis for each member are deliverables. The plan is detailed in Section 8.",
+        "kind": "body"
+      },
+      {
+        "text": "6. Resource Requirements and Feasibility",
+        "kind": "h1"
+      },
+      {
+        "text": "Required resources are a training GPU, reliable internet, Python/PyTorch, pinned Ultralytics, Git, and CPU inference via ONNX. The team has internet and approximately 1 TB storage; 100 GB will be reserved for data, checkpoints, and feature caches. GPU access and cloud budget remain unconfirmed. A week-6 pilot will measure ordinary and two-view runtimes before committing to approximately 72 final detector trainings plus bounded development and lightweight head fits.",
+        "kind": "body"
+      },
+      {
+        "text": "If measured hours exceed confirmed capacity, combined/noisy-label extensions and secondary fits are deferred, then YOLO11n and reduced exploratory runs are considered. Four outer countries, principal comparators, and three seeds remain. Data attribution and release terms will be preserved; the demo will avoid unnecessary display of identifiable people or plates. Results depend on annotation completeness and four-country coverage; improvements are hypotheses, not promised outcomes.",
+        "kind": "body"
+      }
+    ],
+    [
+      {
+        "text": "7. References",
+        "kind": "h1"
+      },
+      {
+        "text": "[1] D. Arya, H. Maeda, S. K. Ghosh, D. Toshniwal, and Y. Sekimoto, “RDD2022: A multi-national image dataset for automatic road damage detection,” Geoscience Data Journal, vol. 11, no. 4, pp. 846-862, 2024, doi: 10.1002/gdj3.260.",
+        "kind": "ref"
+      },
+      {
+        "text": "[2] Z. Chen, J. Zhang, Y. Lin, R. Wu, H. Zhou, and W. Wang, “Multi-Adversarial Metric-Constrained Domain Generalization for road damage detection,” Image and Vision Computing, Art. no. 106173, 2026, doi: 10.1016/j.imavis.2026.106173.",
+        "kind": "ref"
+      },
+      {
+        "text": "[3] M. S. Danish, M. H. Khan, M. A. Munir, M. S. Sarfraz, and M. Ali, “Improving single domain-generalized object detection: A focus on diversification and alignment,” in Proc. IEEE/CVF CVPR, 2024, pp. 17732-17742.",
+        "kind": "ref"
+      },
+      {
+        "text": "[4] J. Wang, C. Xu, W. Yang, and L. Yu, “A normalized Gaussian Wasserstein distance for tiny object detection,” arXiv:2110.13389, 2021, doi: 10.48550/arXiv.2110.13389.",
+        "kind": "ref"
+      },
+      {
+        "text": "[5] J. P. Zimmermann, G. Holzbach, and D. Lerch, “Knowledge-guided failure prediction: Detecting when object detectors miss safety-critical objects,” in Proc. IEEE/CVF CVPR Workshops, 2026. [Online]. Available: https://arxiv.org/abs/2603.25499.",
+        "kind": "ref"
+      },
+      {
+        "text": "8. Appendix: Plan of Action",
+        "kind": "h1"
+      },
+      {
+        "text": "Weeks count from the approved project start; official dates and supervisor approval remain to be confirmed. Member A owns assignment experiments and mechanism analysis; Member B owns consistency experiments and geometry analysis; Member C owns miss-target construction, prediction heads, and failure analysis. Data preparation, benchmark code, and prototype integration are shared.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 1-3: review the closest literature, finalise the scope, register hypotheses and split rules, and prepare grouped data manifests.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 4-6: reproduce the baseline, test assignment behaviour, time ordinary/two-view training, and approve a compute-feasible run grid.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 7-8: implement the member methods and check C's source miss-label prevalence; freeze any fallback before outer evaluation.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 9-22: complete source-only tuning and ablations; archive frozen configurations and start rolling final training.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 23-27: complete principal runs, open outer-country results once, estimate uncertainty, and interpret each member's findings.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 28-30: integrate and test the web demonstration using public images.",
+        "kind": "body"
+      },
+      {
+        "text": "Weeks 31-34: prepare individual and shared analyses, final documentation, and the presentation.",
+        "kind": "body"
+      }
+    ]
+  ]
+}
