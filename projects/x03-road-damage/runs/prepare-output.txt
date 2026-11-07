@@ -1,0 +1,1 @@
+Kernel log downloaded to projects/x03-road-damage/artifacts/prepare\x03-road-prepare.log 

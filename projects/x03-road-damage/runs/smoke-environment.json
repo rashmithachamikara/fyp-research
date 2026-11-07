@@ -1,0 +1,8 @@
+{
+  "ultralytics": "8.4.192",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu": "Tesla T4",
+  "vram_bytes": 15636037632
+}

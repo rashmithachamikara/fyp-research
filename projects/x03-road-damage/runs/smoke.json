@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "model": "yolo11s.pt",
+  "batch": 16,
+  "recovery": [
+    {
+      "start_epoch": 1,
+      "optimizer_state_entries": 255
+    }
+  ],
+  "attempts": []
+}

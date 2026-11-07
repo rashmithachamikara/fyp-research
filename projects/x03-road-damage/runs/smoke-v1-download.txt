@@ -1,0 +1,43 @@
+Downloading data-smoke.yaml to projects/x03-road-damage/artifacts/smoke-v1
+
+  0%|          | 0.00/147 [00:00<?, ?B/s]
+100%|██████████| 147/147 [00:00<00:00, 92.2kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\data-smoke.yaml
+Downloading data.yaml to projects/x03-road-damage/artifacts/smoke-v1
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 72.3kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\data.yaml
+Downloading environment.json to projects/x03-road-damage/artifacts/smoke-v1\results
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 85.7kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\results/environment.json
+Downloading smoke-training.csv to projects/x03-road-damage/artifacts/smoke-v1\results
+
+  0%|          | 0.00/428 [00:00<?, ?B/s]
+100%|██████████| 428/428 [00:00<00:00, 190kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\results/smoke-training.csv
+Downloading smoke.json to projects/x03-road-damage/artifacts/smoke-v1\results
+
+  0%|          | 0.00/176 [00:00<?, ?B/s]
+100%|██████████| 176/176 [00:00<00:00, 93.7kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\results/smoke.json
+Downloading args.yaml to projects/x03-road-damage/artifacts/smoke-v1\training/smoke
+
+  0%|          | 0.00/1.71k [00:00<?, ?B/s]
+100%|██████████| 1.71k/1.71k [00:00<00:00, 933kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\training/smoke/args.yaml
+Downloading results.csv to projects/x03-road-damage/artifacts/smoke-v1\training/smoke
+
+  0%|          | 0.00/428 [00:00<?, ?B/s]
+100%|██████████| 428/428 [00:00<00:00, 237kB/s]
+
+Output file downloaded to projects/x03-road-damage/artifacts/smoke-v1\training/smoke/results.csv
+Kernel log downloaded to projects/x03-road-damage/artifacts/smoke-v1\x03-road-smoke.log 

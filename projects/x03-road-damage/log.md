@@ -37,3 +37,89 @@ Earlier project documents remain at their existing locations. This initial entry
 
 - Store subsequent X03 project files beneath this directory and append activity entries to this log.
 - When authorised to begin the pilot, record the data/split manifests, package versions, training settings, runtime measurements, saved outputs and interpretation.
+
+## 2026-11-07 — Kaggle implementation started
+
+- Execution authorised, including private Kaggle jobs and suitable local Git commits; no remote push requested.
+- Verified Kaggle CLI 2.2.5 using `python -m kaggle`. PATH lacks a direct kaggle command. Restricted-network DNS failed previously; network-enabled CLI authenticated as rashmithachamikara.
+- Git started clean at 76850dd. Inspected dataset mirrors; selected author-hosted country ZIPs rather than converted mirrors. Source: sekilab/RoadDamageDetector README, country-specific RDD2022 S3 URLs.
+- Added CPU preparation and notebook builder: India/Czech/United States only; original XML conversion, checksums, quarantine, conservative duplicate grouping, frozen source splits and US holdout. Japan untouched.
+- Duplicate candidates are grouped conservatively (dHash distance <=3); this is not certified duplicate detection. No reliable sequence metadata is assumed. VOC coordinate convention is recorded explicitly.
+- Planned run order: CPU preparation, GPU smoke/recovery, full baseline, evaluation/diagnostics. No training result yet.
+
+## 2026-11-07 — Preparation v1 failure and official-source recovery
+
+- Preparation v1 ended with S3 HTTP 403. Its initial shell-style notebook cell did not propagate failure to Kaggle status; corrected all notebooks to checked subprocess calls. Inspected log rather than trusting COMPLETE alone.
+- Verified official Figshare article 21431547/file 38030910 is reachable with HTTP 206 byte ranges. Changed preparation to read only the India/Czech/United States nested country ZIPs from the official archive; no Japan extraction or image access.
+- Local validation: six focused metric/conversion unit tests passed with bundled Python; all Python modules compile. Added stock training, smoke interruption/recovery, matching/threshold/geometry evaluation, conservative group bootstrap, A/B/C diagnostics and README. GPU API compatibility remains to be checked by smoke.
+
+## 2026-11-07 — Official ZIP member layout verified
+
+- Local ranged ZIP inspection found nested members Czech.zip, India.zip and United_States.zip (without RDD2022_ prefixes). Corrected lookup and launched preparation v3 after v2 error. Neither failure used a GPU.
+- Local bundled Python lacks requests; used system Python for the independent archive-layout check. This is environment validation, not an experiment result.
+
+## 2026-11-07 — Figshare signature expiry corrected
+
+- Preparation v3 reached the correct India ZIP but Figshare signed redirects expired after ten seconds. Changed range reader to obtain a fresh redirect for every range; v4 launched. All failed preparation jobs were CPU-only.
+- Inspected pinned Ultralytics TaskAlignedAssigner source: forward accepts extra keyword tensors. Diagnostic wrapper now preserves them and explicitly moves the separate diagnostic model to CUDA.
+
+- **2026-11-07 15:19:54 Asia/Colombo** — rashmithachamikara/x03-road-prepare has status "KernelWorkerStatus.RUNNING"
+
+
+- **2026-11-07 15:21:05 Asia/Colombo** — Corrected hand-written implementation subsection headings to date-only: earlier clock times were inaccurate. Controller entries use actual system timestamps. Added source-learning-curve diagnostic to final report generation.
+
+- **2026-11-07 15:22:24 Asia/Colombo** — Finalised A diagnostic sampling at 128 deterministic source-training images per country (up to 256), preserving original GT geometry before assignment. Report generation includes late source-selection mAP improvement; local tests and notebook JSON checks passed. Preparation v4 remains CPU-only and running.
+
+- **2026-11-07 15:25:16 Asia/Colombo** — rashmithachamikara/x03-road-prepare has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-07 15:25:16 Asia/Colombo** — Command: `python -m kaggle kernels output rashmithachamikara/x03-road-prepare -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\prepare --file-pattern .*(json|jpg|log|csv|yaml)$`
+
+- **2026-11-07 15:25:24 Asia/Colombo** — Preparation audit: {"India": {"train": 5220, "selection": 653, "source_audit": 653, "excluded_overlap": 124}, "Czech": {"train": 2263, "source_audit": 283, "selection": 283}, "United_States": {"unseen": 4805}}
+
+- **2026-11-07 15:25:24 Asia/Colombo** — Command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\kaggle\smoke --accelerator NvidiaTeslaT4 -t 43200`
+
+- **2026-11-07 15:25:27 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-road-smoke
+
+- **2026-11-07 15:25:28 Asia/Colombo** — rashmithachamikara/x03-road-smoke has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-07 15:26:02 Asia/Colombo** — rashmithachamikara/x03-road-smoke has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-07 15:26:18 Asia/Colombo** — Inspected preparation v4 audit and India conversion overlay. Detected overly strict preprocessing: 1,056 Indian images containing out-of-scope D01/D11/D43/D44/D50 labels had been excluded. Corrected policy to retain images and their four target classes, treating genuine other classes as outside the task; malformed target-like spelling remains quarantined. Stopped only local pipeline controller to gate full training. Smoke v1 is execution-only and uses the earlier subset; it must not supply scientific results. Launching preparation v5.
+
+- **2026-11-07 15:28:34 Asia/Colombo** — Smoke v1 passed on Tesla T4 (~14.56 GiB reported VRAM), YOLO11s batch16, Ultralytics8.4.192, torch2.11.0+cu130/Python3.13.16. Deliberate epoch-zero interruption resumed at epoch1 with 255 optimizer-state entries restored. No OOM fallback. This was the earlier filtered-data execution test, not a scientific result. Inspected India/Czech conversion sheets; boxes appear aligned with road damage at preview scale. Windows CLI live-log encoding required PYTHONIOENCODING=utf-8; controller now sets it. Corrected preparation v5 pending before repeat smoke/main.
+
+- **2026-11-07 15:28:38 Asia/Colombo** — rashmithachamikara/x03-road-prepare has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-07 15:31:03 Asia/Colombo** — Added paired per-GT 640/320 detection transition counts for all, small/thin and B-eligible populations; C feature probe asserts expected P3/P4 spatial sizes. Controller remains gated on corrected preparation, with scientific training not yet launched.
+
+- **2026-11-07 15:35:27 Asia/Colombo** — Fixed all evaluation/prediction calls to square letterbox (rect=False), ensuring consistent 640/320 geometry and C grid coordinates across countries. Updated README with Figshare fallback and retained out-of-scope-label policy.
+
+- **2026-11-07 15:36:32 Asia/Colombo** — Added explicit per-class precision/recall/sparse-support fields and reran six local tests (all passed), compile and whitespace checks. Moved A diagnostics into evaluation so diagnostic API failures cannot change the status of a successfully completed training job or trigger retraining.
+
+- **2026-11-07 15:39:58 Asia/Colombo** — Preparation v5 log reports corrected counts: India train6001/selection751/audit750/excluded-overlap203; Czech train2263/selection283/audit283; US4805 unseen. Exactly one Indian image remains quarantined (unrecognised D0w0 spelling). Original archive hashes match v4; scientific pilot must use v5. Effective fit8264/selection1034/audit1033. No Japan image access.
+
+- **2026-11-07 15:40:39 Asia/Colombo** — rashmithachamikara/x03-road-prepare has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-07 15:40:39 Asia/Colombo** — Command: `python -m kaggle kernels output rashmithachamikara/x03-road-prepare -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\prepare --file-pattern .*(json|jpg|log|csv|yaml)$`
+
+- **2026-11-07 15:40:53 Asia/Colombo** — Preparation audit: {"India": {"source_audit": 750, "selection": 751, "train": 6001, "excluded_overlap": 203}, "Czech": {"selection": 283, "train": 2263, "source_audit": 283}, "United_States": {"unseen": 4805}}
+
+- **2026-11-07 15:40:53 Asia/Colombo** — Command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\kaggle\smoke --accelerator NvidiaTeslaT4 -t 43200`
+
+- **2026-11-07 15:40:59 Asia/Colombo** — Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-road-smoke
+
+- **2026-11-07 15:41:03 Asia/Colombo** — rashmithachamikara/x03-road-smoke has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-07 15:42:00 Asia/Colombo** — Independently validated v5 manifest locally: unique IDs, allowed countries/classes, normalized box bounds, group disjointness, split/country class and geometry counts; saved runs/manifest-validation.json with manifest SHA256. Repeat GPU smoke v2 running on corrected artifact.
+
+- **2026-11-07 15:42:39 Asia/Colombo** — Inventory finding: fixed small/thin union has392 training labels,43 selection labels,70 source-audit labels and528 US labels. All union labels meet B's >=8px reference short-side visibility mask. Source audit India D10 has only3 labels. US contains no empty four-class annotations, while source splits have many; raw source/US metrics are confounded by prevalence/difficulty. Added class composition of small/thin labels to inventory; no geometry thresholds changed.
+
+- **2026-11-07 15:43:50 Asia/Colombo** — Important support limitation:349/392 small/thin training boxes are potholes; only43 are cracks. Source-audit subgroup is63 potholes and7 longitudinal cracks, with no transverse/alligator instances. US subgroup has293 longitudinal/150 transverse/2 alligator/83 potholes. Added class-by-geometry recall/support to evaluation and explicit report caveat: aggregate small/thin performance cannot establish small-crack performance. No bins or training methods changed.
+
+- **2026-11-07 15:44:24 Asia/Colombo** — rashmithachamikara/x03-road-smoke has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-07 15:44:24 Asia/Colombo** — Command: `python -m kaggle kernels output rashmithachamikara/x03-road-smoke -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\smoke --file-pattern .*`
+
+- **2026-11-07 15:45:05 Asia/Colombo** — Checked pinned loss API: a reloaded detector can have dict model.args, while loss hyperparameters use attribute access. Diagnostic converts arguments with the pinned get_cfg helper before loss construction. No detector weights or scientific training settings changed.
+
+- **2026-11-07 15:48:59 Asia/Colombo** — Repeat smoke v2 completed successfully: YOLO11s batch16; optimizer recovery verified. Optional epoch0 optimizer checkpoint download stalled locally at zero bytes for several minutes after required JSON/CSV results downloaded. Stopped only controller/download processes; remote job unaffected. Restricted future smoke downloads to records, and full training downloads to records plus best/last checkpoints (periodic checkpoints remain on Kaggle). Independently inspected required smoke/manifest artifacts; preparing project-scoped implementation commit before starting full training.

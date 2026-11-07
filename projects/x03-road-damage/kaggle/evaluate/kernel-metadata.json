@@ -1,0 +1,15 @@
+{
+  "id": "rashmithachamikara/x03-road-evaluate",
+  "title": "X03 Road Evaluate",
+  "code_file": "run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": [
+    "rashmithachamikara/x03-road-prepare",
+    "rashmithachamikara/x03-road-train"
+  ]
+}

@@ -1,0 +1,9 @@
+__pycache__/
+artifacts/
+data/
+*.pt
+*.tar.gz
+*.zip
+*.npy
+*.npz
+*.cache

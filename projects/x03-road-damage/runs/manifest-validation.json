@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "manifest_sha256": "3e4eeb11397ec5cacbf7533b558bb80d50eb5f16dd670ce85dd5d19be1f47123",
+  "records": 15339,
+  "groups": 14799,
+  "statistics": {
+    "India/source_audit": {
+      "images": 750,
+      "negative_images": 417,
+      "classes": [
+        170,
+        3,
+        210,
+        331
+      ],
+      "small_or_thin": 62,
+      "small_or_thin_classes": [
+        4,
+        0,
+        0,
+        58
+      ],
+      "B_eligible": 62
+    },
+    "India/selection": {
+      "images": 751,
+      "negative_images": 444,
+      "classes": [
+        124,
+        12,
+        196,
+        278
+      ],
+      "small_or_thin": 38,
+      "small_or_thin_classes": [
+        5,
+        0,
+        0,
+        33
+      ],
+      "B_eligible": 38
+    },
+    "India/train": {
+      "images": 6001,
+      "negative_images": 3511,
+      "classes": [
+        1235,
+        53,
+        1549,
+        2541
+      ],
+      "small_or_thin": 346,
+      "small_or_thin_classes": [
+        26,
+        3,
+        0,
+        317
+      ],
+      "B_eligible": 346
+    },
+    "India/excluded_overlap": {
+      "images": 203,
+      "negative_images": 110,
+      "classes": [
+        26,
+        0,
+        66,
+        37
+      ],
+      "small_or_thin": 5,
+      "small_or_thin_classes": [
+        0,
+        0,
+        0,
+        5
+      ],
+      "B_eligible": 5
+    },
+    "Czech/selection": {
+      "images": 283,
+      "negative_images": 180,
+      "classes": [
+        98,
+        58,
+        16,
+        20
+      ],
+      "small_or_thin": 5,
+      "small_or_thin_classes": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "B_eligible": 5
+    },
+    "Czech/train": {
+      "images": 2263,
+      "negative_images": 1418,
+      "classes": [
+        772,
+        292,
+        124,
+        150
+      ],
+      "small_or_thin": 46,
+      "small_or_thin_classes": [
+        10,
+        4,
+        0,
+        32
+      ],
+      "B_eligible": 46
+    },
+    "Czech/source_audit": {
+      "images": 283,
+      "negative_images": 159,
+      "classes": [
+        118,
+        49,
+        21,
+        27
+      ],
+      "small_or_thin": 8,
+      "small_or_thin_classes": [
+        3,
+        0,
+        0,
+        5
+      ],
+      "B_eligible": 8
+    },
+    "United_States/unseen": {
+      "images": 4805,
+      "negative_images": 0,
+      "classes": [
+        6750,
+        3295,
+        834,
+        135
+      ],
+      "small_or_thin": 528,
+      "small_or_thin_classes": [
+        293,
+        150,
+        2,
+        83
+      ],
+      "B_eligible": 528
+    }
+  }
+}
