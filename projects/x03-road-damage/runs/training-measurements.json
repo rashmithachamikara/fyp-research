@@ -1,0 +1,11 @@
+{
+  "training_hours": 1.5281523407830133,
+  "actual_epochs": 50,
+  "peak_allocated_GiB": 3.7410635948181152,
+  "peak_reserved_GiB": 5.021484375,
+  "median_epoch_seconds": 109.12249433994293,
+  "best_source_selection_epoch": 48,
+  "best_source_selection_map50_95": 0.15964,
+  "last10_best_gain": 0.002260000000000012,
+  "checkpoint_hashes_verified": true
+}

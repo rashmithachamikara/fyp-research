@@ -1,0 +1,137 @@
+Downloading data.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\data.yaml
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/args.yaml
+Downloading best.pt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/best.pt
+Downloading checkpoint-sha256.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/checkpoint-sha256.json
+Downloading environment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/environment.json
+Downloading last.pt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/last.pt
+Downloading pip-freeze.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/pip-freeze.txt
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/results.csv
+Downloading timing.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/timing.json
+Downloading training-complete.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\results/training-complete.json
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/args.yaml
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/results.csv
+Downloading best.pt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/weights
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/weights/best.pt
+Downloading last.pt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/weights
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\training/baseline/weights/last.pt
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train\x03-road-train.log 
+
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 126kB/s]
+
+  0%|          | 0.00/1.63k [00:00<?, ?B/s]
+100%|██████████| 1.63k/1.63k [00:00<00:00, 2.12MB/s]
+
+  0%|          | 0.00/18.3M [00:00<?, ?B/s]
+  5%|▌         | 1.00M/18.3M [00:01<00:23, 760kB/s]
+ 11%|█         | 2.00M/18.3M [00:01<00:12, 1.35MB/s]
+ 16%|█▋        | 3.00M/18.3M [00:01<00:07, 2.08MB/s]
+ 22%|██▏       | 4.00M/18.3M [00:02<00:05, 2.90MB/s]
+ 27%|██▋       | 5.00M/18.3M [00:02<00:03, 3.88MB/s]
+ 33%|███▎      | 6.00M/18.3M [00:02<00:02, 4.76MB/s]
+ 44%|████▎     | 8.00M/18.3M [00:02<00:01, 6.74MB/s]
+ 49%|████▉     | 9.00M/18.3M [00:02<00:01, 6.89MB/s]
+ 60%|██████    | 11.0M/18.3M [00:02<00:00, 7.67MB/s]
+ 71%|███████   | 13.0M/18.3M [00:03<00:00, 8.14MB/s]
+ 82%|████████▏ | 15.0M/18.3M [00:03<00:00, 8.44MB/s]
+ 93%|█████████▎| 17.0M/18.3M [00:03<00:00, 8.62MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 8.48MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 5.18MB/s]
+
+  0%|          | 0.00/164 [00:00<?, ?B/s]
+100%|██████████| 164/164 [00:00<00:00, 97.4kB/s]
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 154kB/s]
+
+  0%|          | 0.00/18.3M [00:00<?, ?B/s]
+  5%|▌         | 1.00M/18.3M [00:01<00:18, 959kB/s]
+ 11%|█         | 2.00M/18.3M [00:01<00:10, 1.69MB/s]
+ 16%|█▋        | 3.00M/18.3M [00:01<00:06, 2.49MB/s]
+ 22%|██▏       | 4.00M/18.3M [00:01<00:04, 3.52MB/s]
+ 33%|███▎      | 6.00M/18.3M [00:01<00:02, 5.20MB/s]
+ 44%|████▎     | 8.00M/18.3M [00:02<00:01, 6.84MB/s]
+ 49%|████▉     | 9.00M/18.3M [00:02<00:01, 6.96MB/s]
+ 60%|██████    | 11.0M/18.3M [00:02<00:00, 7.65MB/s]
+ 71%|███████   | 13.0M/18.3M [00:02<00:00, 8.12MB/s]
+ 82%|████████▏ | 15.0M/18.3M [00:02<00:00, 8.40MB/s]
+ 93%|█████████▎| 17.0M/18.3M [00:03<00:00, 8.60MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 8.48MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 5.77MB/s]
+
+  0%|          | 0.00/17.8k [00:00<?, ?B/s]
+100%|██████████| 17.8k/17.8k [00:00<00:00, 365kB/s]
+
+  0%|          | 0.00/6.05k [00:00<?, ?B/s]
+100%|██████████| 6.05k/6.05k [00:00<00:00, 5.34MB/s]
+
+  0%|          | 0.00/6.46k [00:00<?, ?B/s]
+100%|██████████| 6.46k/6.46k [00:00<00:00, 6.04MB/s]
+
+  0%|          | 0.00/114 [00:00<?, ?B/s]
+100%|██████████| 114/114 [00:00<00:00, 143kB/s]
+
+  0%|          | 0.00/1.63k [00:00<?, ?B/s]
+100%|██████████| 1.63k/1.63k [00:00<00:00, 2.08MB/s]
+
+  0%|          | 0.00/6.05k [00:00<?, ?B/s]
+100%|██████████| 6.05k/6.05k [00:00<00:00, 4.13MB/s]
+
+  0%|          | 0.00/18.3M [00:00<?, ?B/s]
+  5%|▌         | 1.00M/18.3M [00:01<00:22, 806kB/s]
+ 11%|█         | 2.00M/18.3M [00:01<00:11, 1.45MB/s]
+ 16%|█▋        | 3.00M/18.3M [00:01<00:07, 2.12MB/s]
+ 22%|██▏       | 4.00M/18.3M [00:02<00:05, 2.85MB/s]
+ 27%|██▋       | 5.00M/18.3M [00:02<00:03, 3.86MB/s]
+ 33%|███▎      | 6.00M/18.3M [00:02<00:02, 4.67MB/s]
+ 44%|████▎     | 8.00M/18.3M [00:02<00:01, 6.65MB/s]
+ 49%|████▉     | 9.00M/18.3M [00:02<00:01, 6.79MB/s]
+ 60%|██████    | 11.0M/18.3M [00:02<00:01, 7.57MB/s]
+ 71%|███████   | 13.0M/18.3M [00:03<00:00, 8.05MB/s]
+ 82%|████████▏ | 15.0M/18.3M [00:03<00:00, 8.35MB/s]
+ 93%|█████████▎| 17.0M/18.3M [00:03<00:00, 8.53MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 8.42MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 5.21MB/s]
+
+  0%|          | 0.00/18.3M [00:00<?, ?B/s]
+  5%|▌         | 1.00M/18.3M [00:01<00:21, 830kB/s]
+ 11%|█         | 2.00M/18.3M [00:01<00:11, 1.54MB/s]
+ 16%|█▋        | 3.00M/18.3M [00:01<00:07, 2.23MB/s]
+ 22%|██▏       | 4.00M/18.3M [00:01<00:04, 3.08MB/s]
+ 27%|██▋       | 5.00M/18.3M [00:02<00:03, 3.98MB/s]
+ 33%|███▎      | 6.00M/18.3M [00:02<00:02, 4.84MB/s]
+ 44%|████▎     | 8.00M/18.3M [00:02<00:01, 6.10MB/s]
+ 55%|█████▍    | 10.0M/18.3M [00:02<00:01, 7.63MB/s]
+ 60%|██████    | 11.0M/18.3M [00:02<00:01, 7.35MB/s]
+ 71%|███████   | 13.0M/18.3M [00:02<00:00, 7.73MB/s]
+ 82%|████████▏ | 15.0M/18.3M [00:03<00:00, 7.94MB/s]
+ 93%|█████████▎| 17.0M/18.3M [00:03<00:00, 8.07MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 7.87MB/s]
+100%|██████████| 18.3M/18.3M [00:03<00:00, 5.21MB/s]

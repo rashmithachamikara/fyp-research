@@ -52,8 +52,11 @@ def operating(records,predictions,threshold):
                               target_gt=int(mm['small_or_thin'].sum()),target_tp=sum(bool(mm['small_or_thin'][j]) for j in hit)))
     for v in totals.values(): v['recall']=v['tp']/v['gt'] if v['gt'] else None; v['sparse']=v['gt']<30
     tp=totals['all']['tp']; fn=totals['all']['gt']-tp
+    target_fn=totals['small_or_thin']['gt']-totals['small_or_thin']['tp']
     return dict(threshold=threshold,geometry=totals,precision=tp/(tp+fps) if tp+fps else 0,
                 fp_per_image=fps/max(1,len(records)),misses_per_image=fn/max(1,len(records)),
+                small_or_thin_share_of_misses=target_fn/fn if fn else None,
+                small_or_thin_share_of_labels=totals['small_or_thin']['gt']/totals['all']['gt'] if totals['all']['gt'] else None,
                 damage_images_with_miss_fraction=images_with_miss/damage_images if damage_images else None,
                 images=len(records),per_image=per_image)
 

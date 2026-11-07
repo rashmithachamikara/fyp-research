@@ -33,4 +33,6 @@ If the local monitoring process stops while a remote job remains queued/running,
 
 All commands/results belong to this directory. `runs/` contains launch/status and concise records; `artifacts/` holds downloaded large outputs and is Git-ignored. Code, notebooks, manifests/audits (without large data) and the final pilot report can be committed. Raw images, archives, model weights and caches are ignored. No secrets or remote Git push.
 
+Full-country prediction JSON is gzip-compressed for transfer. `report.py` calls `verify_results.py`, which expands these files locally and verifies manifest/checkpoint hashes, source-only threshold IDs and complete prediction coverage before producing the report. A verification record is saved under `runs/` only after checks pass.
+
 Validation: run `python -m unittest discover -s . -p test_metrics.py` with numpy/Pillow installed. Run the actual Kaggle smoke test for GPU/library compatibility. Kaggle job failures propagate through checked subprocess calls.

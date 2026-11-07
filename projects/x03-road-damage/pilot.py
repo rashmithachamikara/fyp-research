@@ -2,6 +2,7 @@
 import argparse
 import collections
 import hashlib
+import gzip
 import json
 import os
 import platform
@@ -21,7 +22,12 @@ from metrics import xyxy,match,masks,operating,select_threshold,average_precisio
 
 ROOT=Path('/kaggle/working'); OUT=ROOT/'results'; OUT.mkdir(exist_ok=True)
 
-def save(name,obj): (OUT/name).write_text(json.dumps(obj,indent=2,default=str))
+def save(name,obj):
+    body=json.dumps(obj,indent=2,default=str)
+    if name.startswith('predictions-'):
+        # Low-threshold full-country predictions can be large; compress transfer artifacts.
+        with gzip.open(OUT/(name+'.gz'),'wt',encoding='utf-8',compresslevel=3) as f: f.write(body)
+    else: (OUT/name).write_text(body)
 
 def setup():
     assert __version__=='8.4.192', __version__
@@ -138,7 +144,10 @@ def train(records):
 
 def predict(model,records,size):
     data={}; paths=[str(ROOT/'prepared/images'/f"{r['id']}.jpg") for r in records]
-    for result in model.predict(source=paths,imgsz=size,rect=False,conf=.001,iou=.7,max_det=300,batch=8,device=0,stream=True,verbose=False):
+    # A Python list is interpreted as in-memory PIL/numpy input by Ultralytics,
+    # which can eagerly load all images and use one huge batch. A text source is lazy.
+    input_list=ROOT/'prediction-inputs.txt'; input_list.write_text('\n'.join(paths))
+    for result in model.predict(source=str(input_list),imgsz=size,rect=False,conf=.001,iou=.7,max_det=300,batch=8,device=0,stream=True,verbose=False):
         boxes=result.boxes
         data[Path(result.path).stem]=torch.cat([boxes.xyxy,boxes.conf[:,None],boxes.cls[:,None]],1).cpu().tolist()
     return data
@@ -228,12 +237,19 @@ def evaluate(records):
                 if b[4]>=threshold: draw.rectangle(b[:4].tolist(),outline='cyan',width=2)
             im.thumbnail((960,960)); im.save(OUT/f"example-{r['id']}.jpg")
     summary['source_macro_AP']={k:float(np.mean([summary[c]['AP'][k] for c in ['India','Czech']])) for k in ['map50','map50_95']}
+    save('summary.json',summary)
     # Verify feature extraction without caching the dataset.
-    hooks=[]; shapes={}
+    hooks=[]; shapes={}; probe=YOLO(checkpoint).model.to('cuda').float().eval()
     for idx in [16,19]:
-        hooks.append(model.model.model[idx].register_forward_hook(lambda m,i,o,idx=idx:shapes.__setitem__(str(idx),list(o.shape))))
-    model.predict(source=str(ROOT/'prepared/images'/f"{selected[0]['id']}.jpg"),imgsz=640,rect=False,device=0,verbose=False)
-    for h in hooks: h.remove()
+        hooks.append(probe.model[idx].register_forward_hook(lambda m,i,o,idx=idx:shapes.__setitem__(str(idx),list(o.shape))))
+    from ultralytics.data.augment import LetterBox
+    im=np.asarray(Image.open(ROOT/'prepared/images'/f"{selected[0]['id']}.jpg").convert('RGB'))
+    im=LetterBox(new_shape=(640,640),auto=False)(image=im)
+    tensor=torch.from_numpy(np.ascontiguousarray(im.transpose(2,0,1))).to('cuda').float()[None]/255
+    try:
+        with torch.no_grad(): probe(tensor)
+    finally:
+        for h in hooks: h.remove()
     assert shapes['16'][-2:]==[80,80] and shapes['19'][-2:]==[40,40],shapes
     summary['feature_shapes']=shapes
     save('summary.json',summary)
@@ -242,6 +258,8 @@ def evaluate(records):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('stage',choices=['smoke','train','evaluate']); args=parser.parse_args()
-    records=setup(); globals()[args.stage](records)
-    # Prepared input is already preserved upstream. Avoid duplicating it in every saved kernel output.
-    shutil.rmtree(ROOT/'prepared')
+    records=setup()
+    try: globals()[args.stage](records)
+    finally:
+        # Inputs remain in the immutable preparation artifact, including on diagnostic failures.
+        shutil.rmtree(ROOT/'prepared',ignore_errors=True)

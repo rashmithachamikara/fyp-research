@@ -1,1 +1,1 @@
-rashmithachamikara/x03-road-train has status "KernelWorkerStatus.RUNNING"
+rashmithachamikara/x03-road-train has status "KernelWorkerStatus.COMPLETE"

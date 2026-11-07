@@ -164,3 +164,59 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-07 16:27:27 Asia/Colombo** — Evaluation now retains source-selection predictions and selected image IDs alongside the threshold/grid, with an explicit India/Czech-only assertion. This makes threshold provenance independently reproducible; no thresholds are chosen from US or source-audit data.
 
 - **2026-11-07 16:28:47 Asia/Colombo** — Creating local project-scoped commit: Harden X03 monitoring and preserve evaluation provenance
+
+- **2026-11-07 16:42:30 Asia/Colombo** — Training progress monitor: original v1 remains RUNNING, roughly five batches/second with stable live memory ~5.02G. No OOM/model fallback, no source-audit/US scoring, and no training hyperparameter changes. Full live log retained under artifacts/train-live.txt; final timing/peak will come from saved JSON.
+
+- **2026-11-07 16:50:40 Asia/Colombo** — Added derived small/thin shares of labels and operational misses, before any held-out predictions, to distinguish targeted small-object difficulty from the dominant total-error population. No additional inference, threshold changes or training modifications. Seven metric tests pass.
+
+- **2026-11-07 16:53:56 Asia/Colombo** — Added measured peak allocated/reserved GPU memory and median post-warm-up epoch time to report generation, using saved timing JSON and deduplicated epoch callbacks. These will be T4 measurements, not assumed RTX4050 timings. Scientific training remains unchanged.
+
+- **2026-11-07 17:03:23 Asia/Colombo** — Added independent local result-artifact verification before report generation/automatic results commit: frozen manifest hash, completed configuration, downloaded checkpoint SHA256s, source-only threshold IDs, complete two-scale prediction coverage, finite outputs and nonempty A diagnostics. Checker has compiled; outcome is pending actual artifacts, not yet marked passed.
+
+- **2026-11-07 17:04:18 Asia/Colombo** — Corrected prediction input batching before evaluation: use a text file of image paths rather than an in-memory Python list, so Ultralytics streams batches of8 instead of potentially decoding the whole country into one memory batch. This is an execution/memory fix; model, scores, thresholds and data roles are unchanged.
+
+- **2026-11-07 17:07:56 Asia/Colombo** — Verified pinned prediction source code: check_source lists are autocast to PIL/numpy, whereas LoadImagesAndVideos accepts a text manifest and requested batch size. Streaming fix is grounded in the actual pinned API. Training continues on original v1 without changes.
+
+- **2026-11-07 17:27:40 Asia/Colombo** — Prediction outputs will be gzip-compressed for transfer (motivated by the earlier large optional-checkpoint download stall). Local verifier expands them to readable JSON before coverage/hash checks. No prediction content or metric definition changes; code compiles, end-to-end artifact verification remains pending.
+
+- **2026-11-07 17:36:09 Asia/Colombo** — Artifact verifier additionally requires the actual training CSV to contain50 epochs ending at epoch50, independently of the completion metadata. Source-only scientific settings remain fixed; final model evaluation is pending.
+
+- **2026-11-07 17:38:20 Asia/Colombo** — rashmithachamikara/x03-road-train has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-07 17:38:20 Asia/Colombo** — Command: `python -m kaggle kernels output rashmithachamikara/x03-road-train -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\train --file-pattern .*(json|csv|yaml|log|txt)$|(^|/)(best|last)[.]pt$`
+
+- **2026-11-07 17:39:00 Asia/Colombo** — Training outcome: {
+  "status": "complete",
+  "epochs": 50,
+  "model": "yolo11s.pt",
+  "batch": 16,
+  "seconds": 5501.348426818848
+}
+
+- **2026-11-07 17:39:00 Asia/Colombo** — Command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\kaggle\evaluate --accelerator NvidiaTeslaT4 -t 43200`
+
+- **2026-11-07 17:39:08 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-road-evaluate
+
+- **2026-11-07 17:39:09 Asia/Colombo** — rashmithachamikara/x03-road-evaluate has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-07 17:41:11 Asia/Colombo** — Independently checked completed training artifacts:50 actual CSV epochs;5501.35 seconds (1.528h); peak allocated3.741GiB/reserved5.021GiB; median post-warm-up epoch109.12s. Best source-selection mAP50:95=.15964 at epoch48; last10 best gain=.00226 (source-selection metrics, not independent evaluation). Downloaded best/last SHA256s match saved hashes. Saved runs/training-measurements.json. Evaluationv1 queued; independent source-audit/US metrics not yet available.
+
+- **2026-11-07 17:49:26 Asia/Colombo** — rashmithachamikara/x03-road-evaluate has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-07 17:57:20 Asia/Colombo** — Evaluationv1 computed country AP/predictions/diagnostics but failed at its final C feature-shape probe with KeyError16: hooks were attached to a different model object than the predictor backend executed after validation. Training/checkpoint validity unaffected. Fixed probe to use a separately loaded frozen float32 model and direct forward on a source-selection image. Added summary persistence before the probe. This is instrumentation-only recovery after outcomes became visible: no retraining, threshold-rule change, bin change or target tuning. Evaluationv2 will reuse the exact trained checkpoint and protocol.
+
+- **2026-11-07 17:57:38 Asia/Colombo** — rashmithachamikara/x03-road-evaluate has status "KernelWorkerStatus.ERROR"
+
+- **2026-11-07 17:57:38 Asia/Colombo** — Command: `python -m kaggle kernels output rashmithachamikara/x03-road-evaluate -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate --file-pattern .*log$`
+
+- **2026-11-07 18:39:44 Asia/Colombo** — Pipeline stopped: evaluate failed; inspect downloaded log before retrying
+
+- **2026-11-07 19:27:55 Asia/Colombo** — User requested continuation. Previous recovery launch was not executed: automatic approval review failed on account usage limit, with retry time19:24; not an unsafe-action determination. Current time is after that retry window. Original controller has stopped on evaluationv1 ERROR. Fixed direct feature probe/finally cleanup are present locally; rebuilt notebooks and compiled modules; seven tests passed. Resuming evaluation only, using unchanged trainingv1/preparationv5 and frozen protocol.
+
+- **2026-11-07 19:28:02 Asia/Colombo** — Command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\kaggle\evaluate --accelerator NvidiaTeslaT4 -t 43200`
+
+- **2026-11-07 19:28:08 Asia/Colombo** — Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-road-evaluate
+
+- **2026-11-07 19:28:12 Asia/Colombo** — rashmithachamikara/x03-road-evaluate has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-07 19:29:12 Asia/Colombo** — Creating local project-scoped commit: Fix X03 feature probe and verify downloaded pilot artifacts
