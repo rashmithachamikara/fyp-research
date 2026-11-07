@@ -4,6 +4,10 @@ Evidence reviewed: **27–30 October 2026**. The original three candidates retai
 
 [Explore research areas](areas.md).
 
+**Multi-vessel AIS behaviour, 6 November 2026.** [X51, predicting how a three-vessel encounter unfolds](gaps/x51-multi-vessel-encounter-understanding.md), tests whether seeing a third vessel improves closest-pair and motion forecasts beyond scoring each pair independently. Pilot the number of usable triplets and the strength of the constant-velocity baseline before scoring.
+
+**AIS foundation-model gaps checked 5 November 2026.** Two candidates await pilot checks before scoring. Start with [X49, vessel position forecasts after missed AIS reports](gaps/x49-ais-foundation-forecast-stale-tracks.md), where recorded positions supply evaluation targets. [X50, detecting the start of apparent fishing](gaps/x50-ais-foundation-fishing-onset.md), depends on timestamped annotations that bound event starts and establish how long vessels were observed outside events.
+
 Forty-nine candidate opportunities are evaluated below, including forty-six additional gaps. X34–X42 were imported from the supplied topic PDF on 30 October; their checks are provisional and are not a full novelty audit. X16–X20, X32–X33 and X46 depend on securing suitable Sri Lankan or Sinhala data. Select a topic for its gap brief, evidence, team contributions, evaluation and full score breakdown.
 
 **Scoring updated:** 30 October 2026 for X34–X46; earlier scores are unchanged. The remaining relative weights total 98; all scores are normalised to 100.
