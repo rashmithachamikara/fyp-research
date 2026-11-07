@@ -1,0 +1,412 @@
+Downloading metrics.cpython-313.pyc to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\__pycache__
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\__pycache__/metrics.cpython-313.pyc
+Downloading assignment.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\assignment.txt
+Downloading data-Czech.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\data-Czech.yaml
+Downloading data-India.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\data-India.yaml
+Downloading data-United_States.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\data-United_States.yaml
+Downloading metrics.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\metrics.py
+Downloading pilot.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\pilot.py
+Downloading prediction-inputs.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\prediction-inputs.txt
+Downloading A-assignment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/A-assignment.json
+Downloading environment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/environment.json
+Downloading example-Czech_000028.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_000028.jpg
+Downloading example-Czech_000893.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_000893.jpg
+Downloading example-Czech_001655.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_001655.jpg
+Downloading example-Czech_001770.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_001770.jpg
+Downloading example-Czech_002080.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_002080.jpg
+Downloading example-Czech_002262.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_002262.jpg
+Downloading example-Czech_002597.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_002597.jpg
+Downloading example-Czech_002732.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_002732.jpg
+Downloading example-Czech_003145.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_003145.jpg
+Downloading example-Czech_003160.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_003160.jpg
+Downloading example-Czech_003352.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_003352.jpg
+Downloading example-Czech_003515.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-Czech_003515.jpg
+Downloading example-India_000010.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_000010.jpg
+Downloading example-India_000447.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_000447.jpg
+Downloading example-India_002205.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_002205.jpg
+Downloading example-India_003838.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_003838.jpg
+Downloading example-India_004211.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_004211.jpg
+Downloading example-India_005345.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_005345.jpg
+Downloading example-India_006808.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_006808.jpg
+Downloading example-India_007263.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_007263.jpg
+Downloading example-India_008014.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_008014.jpg
+Downloading example-India_008773.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_008773.jpg
+Downloading example-India_008802.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_008802.jpg
+Downloading example-India_009251.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-India_009251.jpg
+Downloading example-United_States_000576.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_000576.jpg
+Downloading example-United_States_000877.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_000877.jpg
+Downloading example-United_States_001062.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_001062.jpg
+Downloading example-United_States_001377.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_001377.jpg
+Downloading example-United_States_001861.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_001861.jpg
+Downloading example-United_States_002170.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_002170.jpg
+Downloading example-United_States_002552.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_002552.jpg
+Downloading example-United_States_003343.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_003343.jpg
+Downloading example-United_States_003850.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_003850.jpg
+Downloading example-United_States_004477.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_004477.jpg
+Downloading example-United_States_004636.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_004636.jpg
+Downloading example-United_States_004747.jpg to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/example-United_States_004747.jpg
+Downloading initial-weight-provenance.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/initial-weight-provenance.json
+Downloading pip-freeze.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/pip-freeze.txt
+Downloading predictions-Czech-320.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-Czech-320.json.gz
+Downloading predictions-Czech-640.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-Czech-640.json.gz
+Downloading predictions-India-320.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-India-320.json.gz
+Downloading predictions-India-640.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-India-640.json.gz
+Downloading predictions-United_States-320.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-United_States-320.json.gz
+Downloading predictions-United_States-640.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-United_States-640.json.gz
+Downloading predictions-source-selection-640.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/predictions-source-selection-640.json.gz
+Downloading storage.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/storage.json
+Downloading summary.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/summary.json
+Downloading threshold.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\results/threshold.json
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\artifacts\evaluate\x03-road-evaluate.log 
+
+
+  0%|          | 0.00/12.1k [00:00<?, ?B/s]
+100%|██████████| 12.1k/12.1k [00:00<00:00, 4.75MB/s]
+
+  0%|          | 0.00/12.2k [00:00<?, ?B/s]
+100%|██████████| 12.2k/12.2k [00:00<00:00, 843kB/s]
+
+  0%|          | 0.00/144 [00:00<?, ?B/s]
+100%|██████████| 144/144 [00:00<00:00, 76.2kB/s]
+
+  0%|          | 0.00/144 [00:00<?, ?B/s]
+100%|██████████| 144/144 [00:00<00:00, 70.6kB/s]
+
+  0%|          | 0.00/152 [00:00<?, ?B/s]
+100%|██████████| 152/152 [00:00<00:00, 78.2kB/s]
+
+  0%|          | 0.00/5.22k [00:00<?, ?B/s]
+100%|██████████| 5.22k/5.22k [00:00<00:00, 2.39MB/s]
+
+  0%|          | 0.00/17.3k [00:00<?, ?B/s]
+100%|██████████| 17.3k/17.3k [00:00<00:00, 478kB/s]
+
+  0%|          | 0.00/267k [00:00<?, ?B/s]
+100%|██████████| 267k/267k [00:00<00:00, 353kB/s]
+100%|██████████| 267k/267k [00:00<00:00, 352kB/s]
+
+  0%|          | 0.00/29.4k [00:00<?, ?B/s]
+100%|██████████| 29.4k/29.4k [00:00<00:00, 304kB/s]
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 41.7kB/s]
+
+  0%|          | 0.00/76.0k [00:00<?, ?B/s]
+100%|██████████| 76.0k/76.0k [00:00<00:00, 205kB/s]
+100%|██████████| 76.0k/76.0k [00:00<00:00, 205kB/s]
+
+  0%|          | 0.00/57.5k [00:00<?, ?B/s]
+100%|██████████| 57.5k/57.5k [00:00<00:00, 229kB/s]
+100%|██████████| 57.5k/57.5k [00:00<00:00, 228kB/s]
+
+  0%|          | 0.00/59.9k [00:00<?, ?B/s]
+100%|██████████| 59.9k/59.9k [00:00<00:00, 235kB/s]
+100%|██████████| 59.9k/59.9k [00:00<00:00, 234kB/s]
+
+  0%|          | 0.00/61.3k [00:00<?, ?B/s]
+100%|██████████| 61.3k/61.3k [00:00<00:00, 665kB/s]
+
+  0%|          | 0.00/83.8k [00:00<?, ?B/s]
+100%|██████████| 83.8k/83.8k [00:00<00:00, 888kB/s]
+
+  0%|          | 0.00/60.4k [00:00<?, ?B/s]
+100%|██████████| 60.4k/60.4k [00:00<00:00, 227kB/s]
+100%|██████████| 60.4k/60.4k [00:00<00:00, 226kB/s]
+
+  0%|          | 0.00/85.3k [00:00<?, ?B/s]
+100%|██████████| 85.3k/85.3k [00:00<00:00, 203kB/s]
+100%|██████████| 85.3k/85.3k [00:00<00:00, 203kB/s]
+
+  0%|          | 0.00/67.0k [00:00<?, ?B/s]
+100%|██████████| 67.0k/67.0k [00:00<00:00, 250kB/s]
+100%|██████████| 67.0k/67.0k [00:00<00:00, 249kB/s]
+
+  0%|          | 0.00/104k [00:00<?, ?B/s]
+100%|██████████| 104k/104k [00:00<00:00, 257kB/s]
+100%|██████████| 104k/104k [00:00<00:00, 256kB/s]
+
+  0%|          | 0.00/65.9k [00:00<?, ?B/s]
+100%|██████████| 65.9k/65.9k [00:00<00:00, 227kB/s]
+100%|██████████| 65.9k/65.9k [00:00<00:00, 226kB/s]
+
+  0%|          | 0.00/87.4k [00:00<?, ?B/s]
+100%|██████████| 87.4k/87.4k [00:00<00:00, 220kB/s]
+100%|██████████| 87.4k/87.4k [00:00<00:00, 220kB/s]
+
+  0%|          | 0.00/66.0k [00:00<?, ?B/s]
+100%|██████████| 66.0k/66.0k [00:00<00:00, 227kB/s]
+100%|██████████| 66.0k/66.0k [00:00<00:00, 227kB/s]
+
+  0%|          | 0.00/58.5k [00:00<?, ?B/s]
+100%|██████████| 58.5k/58.5k [00:00<00:00, 211kB/s]
+100%|██████████| 58.5k/58.5k [00:00<00:00, 211kB/s]
+
+  0%|          | 0.00/48.6k [00:00<?, ?B/s]
+100%|██████████| 48.6k/48.6k [00:00<00:00, 248kB/s]
+100%|██████████| 48.6k/48.6k [00:00<00:00, 247kB/s]
+
+  0%|          | 0.00/57.9k [00:00<?, ?B/s]
+100%|██████████| 57.9k/57.9k [00:00<00:00, 227kB/s]
+100%|██████████| 57.9k/57.9k [00:00<00:00, 227kB/s]
+
+  0%|          | 0.00/71.9k [00:00<?, ?B/s]
+100%|██████████| 71.9k/71.9k [00:00<00:00, 254kB/s]
+100%|██████████| 71.9k/71.9k [00:00<00:00, 253kB/s]
+
+  0%|          | 0.00/42.3k [00:00<?, ?B/s]
+100%|██████████| 42.3k/42.3k [00:00<00:00, 250kB/s]
+100%|██████████| 42.3k/42.3k [00:00<00:00, 248kB/s]
+
+  0%|          | 0.00/36.4k [00:00<?, ?B/s]
+100%|██████████| 36.4k/36.4k [00:00<00:00, 590kB/s]
+
+  0%|          | 0.00/47.9k [00:00<?, ?B/s]
+100%|██████████| 47.9k/47.9k [00:00<00:00, 247kB/s]
+100%|██████████| 47.9k/47.9k [00:00<00:00, 245kB/s]
+
+  0%|          | 0.00/45.1k [00:00<?, ?B/s]
+100%|██████████| 45.1k/45.1k [00:00<00:00, 243kB/s]
+100%|██████████| 45.1k/45.1k [00:00<00:00, 243kB/s]
+
+  0%|          | 0.00/59.7k [00:00<?, ?B/s]
+100%|██████████| 59.7k/59.7k [00:00<00:00, 216kB/s]
+100%|██████████| 59.7k/59.7k [00:00<00:00, 215kB/s]
+
+  0%|          | 0.00/61.5k [00:00<?, ?B/s]
+100%|██████████| 61.5k/61.5k [00:00<00:00, 212kB/s]
+100%|██████████| 61.5k/61.5k [00:00<00:00, 211kB/s]
+
+  0%|          | 0.00/68.7k [00:00<?, ?B/s]
+100%|██████████| 68.7k/68.7k [00:00<00:00, 253kB/s]
+100%|██████████| 68.7k/68.7k [00:00<00:00, 253kB/s]
+
+  0%|          | 0.00/51.6k [00:00<?, ?B/s]
+100%|██████████| 51.6k/51.6k [00:00<00:00, 217kB/s]
+100%|██████████| 51.6k/51.6k [00:00<00:00, 216kB/s]
+
+  0%|          | 0.00/64.4k [00:00<?, ?B/s]
+100%|██████████| 64.4k/64.4k [00:00<00:00, 213kB/s]
+100%|██████████| 64.4k/64.4k [00:00<00:00, 212kB/s]
+
+  0%|          | 0.00/75.2k [00:00<?, ?B/s]
+100%|██████████| 75.2k/75.2k [00:00<00:00, 211kB/s]
+100%|██████████| 75.2k/75.2k [00:00<00:00, 210kB/s]
+
+  0%|          | 0.00/86.3k [00:00<?, ?B/s]
+100%|██████████| 86.3k/86.3k [00:00<00:00, 218kB/s]
+100%|██████████| 86.3k/86.3k [00:00<00:00, 218kB/s]
+
+  0%|          | 0.00/61.9k [00:00<?, ?B/s]
+100%|██████████| 61.9k/61.9k [00:00<00:00, 212kB/s]
+100%|██████████| 61.9k/61.9k [00:00<00:00, 211kB/s]
+
+  0%|          | 0.00/95.3k [00:00<?, ?B/s]
+100%|██████████| 95.3k/95.3k [00:00<00:00, 245kB/s]
+100%|██████████| 95.3k/95.3k [00:00<00:00, 244kB/s]
+
+  0%|          | 0.00/85.3k [00:00<?, ?B/s]
+100%|██████████| 85.3k/85.3k [00:00<00:00, 229kB/s]
+100%|██████████| 85.3k/85.3k [00:00<00:00, 229kB/s]
+
+  0%|          | 0.00/66.6k [00:00<?, ?B/s]
+100%|██████████| 66.6k/66.6k [00:00<00:00, 232kB/s]
+100%|██████████| 66.6k/66.6k [00:00<00:00, 231kB/s]
+
+  0%|          | 0.00/56.8k [00:00<?, ?B/s]
+100%|██████████| 56.8k/56.8k [00:00<00:00, 205kB/s]
+100%|██████████| 56.8k/56.8k [00:00<00:00, 204kB/s]
+
+  0%|          | 0.00/64.6k [00:00<?, ?B/s]
+100%|██████████| 64.6k/64.6k [00:00<00:00, 208kB/s]
+100%|██████████| 64.6k/64.6k [00:00<00:00, 208kB/s]
+
+  0%|          | 0.00/66.6k [00:00<?, ?B/s]
+100%|██████████| 66.6k/66.6k [00:00<00:00, 210kB/s]
+100%|██████████| 66.6k/66.6k [00:00<00:00, 209kB/s]
+
+  0%|          | 0.00/64.6k [00:00<?, ?B/s]
+100%|██████████| 64.6k/64.6k [00:00<00:00, 226kB/s]
+100%|██████████| 64.6k/64.6k [00:00<00:00, 225kB/s]
+
+  0%|          | 0.00/70.8k [00:00<?, ?B/s]
+100%|██████████| 70.8k/70.8k [00:00<00:00, 230kB/s]
+100%|██████████| 70.8k/70.8k [00:00<00:00, 229kB/s]
+
+  0%|          | 0.00/272 [00:00<?, ?B/s]
+100%|██████████| 272/272 [00:00<00:00, 131kB/s]
+
+  0%|          | 0.00/17.8k [00:00<?, ?B/s]
+100%|██████████| 17.8k/17.8k [00:00<00:00, 408kB/s]
+
+  0%|          | 0.00/262k [00:00<?, ?B/s]
+100%|██████████| 262k/262k [00:00<00:00, 364kB/s]
+100%|██████████| 262k/262k [00:00<00:00, 363kB/s]
+
+  0%|          | 0.00/431k [00:00<?, ?B/s]
+100%|██████████| 431k/431k [00:01<00:00, 439kB/s]
+100%|██████████| 431k/431k [00:01<00:00, 438kB/s]
+
+  0%|          | 0.00/1.01M [00:00<?, ?B/s]
+ 99%|█████████▊| 1.00M/1.01M [00:01<00:00, 762kB/s]
+100%|██████████| 1.01M/1.01M [00:01<00:00, 772kB/s]
+
+  0%|          | 0.00/1.34M [00:00<?, ?B/s]
+ 74%|███████▍  | 1.00M/1.34M [00:01<00:00, 670kB/s]
+100%|██████████| 1.34M/1.34M [00:01<00:00, 893kB/s]
+100%|██████████| 1.34M/1.34M [00:01<00:00, 831kB/s]
+
+  0%|          | 0.00/8.79M [00:00<?, ?B/s]
+ 11%|█▏        | 1.00M/8.79M [00:01<00:11, 721kB/s]
+ 23%|██▎       | 2.00M/8.79M [00:01<00:05, 1.33MB/s]
+ 34%|███▍      | 3.00M/8.79M [00:01<00:03, 1.99MB/s]
+ 46%|████▌     | 4.00M/8.79M [00:02<00:01, 2.84MB/s]
+ 57%|█████▋    | 5.00M/8.79M [00:02<00:01, 3.80MB/s]
+ 68%|██████▊   | 6.00M/8.79M [00:02<00:00, 4.53MB/s]
+ 91%|█████████ | 8.00M/8.79M [00:02<00:00, 6.40MB/s]
+100%|██████████| 8.79M/8.79M [00:02<00:00, 3.41MB/s]
+
+  0%|          | 0.00/17.0M [00:00<?, ?B/s]
+  6%|▌         | 1.00M/17.0M [00:01<00:19, 873kB/s]
+ 12%|█▏        | 2.00M/17.0M [00:01<00:09, 1.60MB/s]
+ 18%|█▊        | 3.00M/17.0M [00:01<00:07, 2.01MB/s]
+ 29%|██▉       | 5.00M/17.0M [00:02<00:03, 3.79MB/s]
+ 41%|████      | 7.00M/17.0M [00:02<00:01, 5.45MB/s]
+ 53%|█████▎    | 9.00M/17.0M [00:02<00:01, 6.90MB/s]
+ 65%|██████▍   | 11.0M/17.0M [00:02<00:00, 8.01MB/s]
+ 77%|███████▋  | 13.0M/17.0M [00:02<00:00, 8.53MB/s]
+ 88%|████████▊ | 15.0M/17.0M [00:02<00:00, 8.86MB/s]
+100%|██████████| 17.0M/17.0M [00:03<00:00, 9.08MB/s]
+100%|██████████| 17.0M/17.0M [00:03<00:00, 5.56MB/s]
+
+  0%|          | 0.00/1.69M [00:00<?, ?B/s]
+ 59%|█████▉    | 1.00M/1.69M [00:01<00:00, 808kB/s]
+100%|██████████| 1.69M/1.69M [00:01<00:00, 1.25MB/s]
+100%|██████████| 1.69M/1.69M [00:01<00:00, 1.14MB/s]
+
+  0%|          | 0.00/30.0 [00:00<?, ?B/s]
+100%|██████████| 30.0/30.0 [00:00<00:00, 11.3kB/s]
+
+  0%|          | 0.00/3.42M [00:00<?, ?B/s]
+ 29%|██▉       | 1.00M/3.42M [00:01<00:03, 775kB/s]
+ 59%|█████▊    | 2.00M/3.42M [00:01<00:01, 1.35MB/s]
+ 88%|████████▊ | 3.00M/3.42M [00:01<00:00, 2.09MB/s]
+100%|██████████| 3.42M/3.42M [00:01<00:00, 1.81MB/s]
+
+  0%|          | 0.00/41.5k [00:00<?, ?B/s]
+100%|██████████| 41.5k/41.5k [00:00<00:00, 275kB/s]
+100%|██████████| 41.5k/41.5k [00:00<00:00, 274kB/s]

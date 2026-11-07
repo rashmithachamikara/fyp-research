@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "manifest_sha256": "3e4eeb11397ec5cacbf7533b558bb80d50eb5f16dd670ce85dd5d19be1f47123",
+  "checkpoint_sha256": {
+    "best.pt": "37df158c432e365e85f9dc250cc86dd79e53d94527cb8d93aa3339bb27cf14e1",
+    "last.pt": "da5461fae769ebdf5cd5f996ead50e5ea57c61b5d397fcf48fc3f650a241bfd9"
+  },
+  "source_selection_images": 1034,
+  "evaluation_images": {
+    "India": 750,
+    "Czech": 283,
+    "United_States": 4805
+  },
+  "checks": [
+    "frozen manifest",
+    "completed model/configuration",
+    "downloaded checkpoint hashes",
+    "source-only threshold roles",
+    "complete prediction coverage at both scales",
+    "finite class/confidence/AP outputs",
+    "nonempty assignment diagnostic"
+  ]
+}
