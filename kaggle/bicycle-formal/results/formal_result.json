@@ -1,0 +1,18 @@
+{
+  "decision": "Hold mitigation project",
+  "mean_delta_pp": 0.06587615283267458,
+  "delta_ci95": [
+    -0.14763779527559054,
+    0.30014521937191396
+  ],
+  "delta_pp_by_seed": {
+    "11": 0.3458498023715415,
+    "23": -0.1482213438735178,
+    "37": 0.0
+  },
+  "threshold": 0.35,
+  "test_sources": 2000,
+  "test_bicycle_instances": 2024,
+  "manifest_sha256": "dfbf35a66d13e0b57447cb91b7f0e9dbc96879240ebe2a3d929f05b6bee851df",
+  "evaluation_seconds": 106.59786177800004
+}

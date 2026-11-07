@@ -1,0 +1,55 @@
+{
+  "sources_train": 60,
+  "sources_held_out": 40,
+  "views": 300,
+  "device": "CPU",
+  "checkpoint_revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "processor": "GroundingDinoImageProcessor",
+  "processor_size": {
+    "longest_edge": 1333,
+    "shortest_edge": 800
+  },
+  "pillow": "13.0.0",
+  "transformers": "4.57.1",
+  "scikit_learn": "1.6.1",
+  "scipy": "1.16.3",
+  "features": 279,
+  "criteria": "95% source-bootstrap lower bound > 0.5 and exact one-sided within-source swap p < 0.05; gate mild on strong",
+  "comparisons": {
+    "95_vs_30": {
+      "correct": 77,
+      "views": 80,
+      "accuracy": 0.9625,
+      "source_bootstrap_95": [
+        0.9125000000000001,
+        1.0
+      ],
+      "both_correct_sources": 37,
+      "neither_correct_sources": 0,
+      "swap_p": 7.275957614183426e-12,
+      "passes": true,
+      "correct_by_quality": {
+        "95": 37,
+        "30": 40
+      }
+    },
+    "95_vs_90": {
+      "correct": 62,
+      "views": 80,
+      "accuracy": 0.775,
+      "source_bootstrap_95": [
+        0.7,
+        0.85
+      ],
+      "both_correct_sources": 22,
+      "neither_correct_sources": 0,
+      "swap_p": 2.384185791015625e-07,
+      "passes": true,
+      "correct_by_quality": {
+        "95": 36,
+        "90": 26
+      }
+    }
+  },
+  "runtime_seconds": 156.461699157
+}

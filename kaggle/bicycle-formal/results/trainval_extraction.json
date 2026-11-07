@@ -1,0 +1,93 @@
+{
+  "gpu": "Tesla T4",
+  "total_seconds": 4420.226916915,
+  "extraction_seconds": 4353.508316783999,
+  "shards": [
+    {
+      "file": "trainval-shard-000.pt",
+      "bytes": 243686593,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-001.pt",
+      "bytes": 243686721,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-002.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-003.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-004.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-005.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-006.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-007.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-008.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-009.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-010.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-011.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-012.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-013.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-014.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-015.pt",
+      "bytes": 243687553,
+      "views": 500
+    },
+    {
+      "file": "trainval-shard-016.pt",
+      "bytes": 194949753,
+      "views": 400
+    }
+  ],
+  "peak_gpu_bytes": 2121702912
+}

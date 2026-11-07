@@ -1,0 +1,30 @@
+{
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.1",
+  "prompt": "bicycle.",
+  "qualities": [
+    95,
+    90
+  ],
+  "sources": 100,
+  "positive_sources": 50,
+  "annotation_split": "COCO val2017 development subset; exclude from future confirmatory testing",
+  "checkpoint": "IDEA-Research/grounding-dino-tiny@a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "setup_seconds": 61.28791989300001,
+  "warmup_seconds": 6.772617875000009,
+  "extraction_seconds": 107.94375558500002,
+  "views": 200,
+  "cache_bytes": 96443084,
+  "peak_allocated_gpu_bytes": 2121702912,
+  "projected_extraction_hours_14000_views": 2.0989063585972225,
+  "max_probability_cache_roundtrip_error": 0.0001372992992401123,
+  "head_smoke": {
+    "sources": 4,
+    "covered_query_targets": 82,
+    "loss_before": 4.204411506652832,
+    "loss_after": 4.1944899559021,
+    "max_logit_change": 0.01758742332458496
+  },
+  "total_seconds_from_first_cell": 176.28968425300002
+}

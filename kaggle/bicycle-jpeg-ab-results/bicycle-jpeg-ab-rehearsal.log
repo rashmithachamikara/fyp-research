@@ -1,0 +1,37 @@
+[{"stream_name":"stderr","time":8.426180876,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.426235909,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.426241353,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.426244094,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.211521451,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.211558189,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.211571812,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.211576036,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":40.525455825,"data":"Formal split frozen: dfbf35a66d13e0b57447cb91b7f0e9dbc96879240ebe2a3d929f05b6bee851df\n"}
+,{"stream_name":"stdout","time":41.272150974,"data":"Development splits: {'train': 60, 'validation': 20, 'test': 20}\n"}
+,{"stream_name":"stdout","time":70.086943282,"data":"Development threshold 0.25\n"}
+,{"stream_name":"stdout","time":72.557119524,"data":"{\n"}
+,{"stream_name":"stdout","time":72.55715866,"data":"  \"formal_sources\": 6200,\n"}
+,{"stream_name":"stdout","time":72.557165301,"data":"  \"formal_split_sha256\": \"dfbf35a66d13e0b57447cb91b7f0e9dbc96879240ebe2a3d929f05b6bee851df\",\n"}
+,{"stream_name":"stdout","time":72.557170711,"data":"  \"formal_split_seed\": 5182026,\n"}
+,{"stream_name":"stdout","time":72.557175977,"data":"  \"formal_test_evaluated\": false,\n"}
+,{"stream_name":"stdout","time":72.557180842,"data":"  \"dev_test_images\": 20,\n"}
+,{"stream_name":"stdout","time":72.557185665,"data":"  \"dev_test_bicycles\": 14,\n"}
+,{"stream_name":"stdout","time":72.557190089,"data":"  \"development_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":72.557194447,"data":"  \"delta_pp_by_seed\": {\n"}
+,{"stream_name":"stdout","time":72.557198865,"data":"    \"11\": 0.0,\n"}
+,{"stream_name":"stdout","time":72.557203113,"data":"    \"23\": 0.0,\n"}
+,{"stream_name":"stdout","time":72.55720732,"data":"    \"37\": 0.0\n"}
+,{"stream_name":"stdout","time":72.557211591,"data":"  },\n"}
+,{"stream_name":"stdout","time":72.557215861,"data":"  \"mean_delta_pp\": 0.0,\n"}
+,{"stream_name":"stdout","time":72.55722059,"data":"  \"decision_margin_draft_pp\": 3,\n"}
+,{"stream_name":"stdout","time":72.557226057,"data":"  \"runtime_seconds\": 52.11808009800001\n"}
+,{"stream_name":"stdout","time":72.557231117,"data":"}\n"}
+,{"stream_name":"stderr","time":76.772018944,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":76.772059383,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":76.97399217,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":76.974026968,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":77.898424276,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":77.989374459,"data":"[NbConvertApp] Writing 15744 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":81.15935096,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":81.819826931,"data":"[NbConvertApp] Writing 337056 bytes to __results__.html\n"}
+]

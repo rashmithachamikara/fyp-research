@@ -1,0 +1,41 @@
+[{"stream_name":"stderr","time":9.952718349,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":9.952768913,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":11.470925689,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.470965882,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.470971914,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.470976871,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.396181448,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.396217878,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.396224571,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.396229668,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.341008454,"data":"# Bicycle JPEG pilot - supervisor brief\n"}
+,{"stream_name":"stdout","time":17.341049439,"data":"\n"}
+,{"stream_name":"stdout","time":17.341055784,"data":"**Recommendation - hold mitigation project.** The extra bicycle miss-rate increase from correlating JPEG quality with bicycle presence was **+0.066 percentage points**, with a 95% paired source-bootstrap interval of **-0.148 to +0.300**. Its upper bound is below the prespecified 3-point decision margin under this training recipe.\n"}
+,{"stream_name":"stdout","time":17.341062337,"data":"\n"}
+,{"stream_name":"stdout","time":17.341066882,"data":"The frozen Grounding DINO-T scoring adapter was trained on 3,400 images, calibrated on 800, and evaluated once on 2,000 held-out sources containing 2,024 annotated bicycles. Head A used a 90/10 association between bicycle presence and Q95/Q90. Head B used 50/50 within each class. Both saw identical sources and total quality frequencies. Three paired seeds, four epochs, and the shared validation-selected threshold 0.35 were frozen before test extraction.\n"}
+,{"stream_name":"stdout","time":17.341074944,"data":"\n"}
+,{"stream_name":"stdout","time":17.341080101,"data":"| Model | Matched misses | Reversed misses | Original-JPEG misses | False alarms per negative, matched / reversed |\n"}
+,{"stream_name":"stdout","time":17.341084919,"data":"|---|---:|---:|---:|---:|\n"}
+,{"stream_name":"stdout","time":17.341089619,"data":"| untouched | 43.53% | 45.16% | 43.43% | 0.037 / 0.032 |\n"}
+,{"stream_name":"stdout","time":17.341094279,"data":"| A | 4.69% | 4.91% | 4.59% | 10.852 / 10.177 |\n"}
+,{"stream_name":"stdout","time":17.341098867,"data":"| B | 4.50% | 4.64% | 4.51% | 11.259 / 10.212 |\n"}
+,{"stream_name":"stdout","time":17.341103479,"data":"\n"}
+,{"stream_name":"stdout","time":17.341107869,"data":"A and B values average three seeds. The seed-specific extra miss increases were +0.346, -0.148, and 0.000 points. Intervals use 20,000 paired source resamples, conditional on these three trained seeds.\n"}
+,{"stream_name":"stdout","time":17.341113232,"data":"\n"}
+,{"stream_name":"stdout","time":17.341120437,"data":"**Interpretation limitation.** Both adapted heads generated approximately 10-11 false alarms per bicycle-free image at the shared threshold, versus approximately 0.03 for the untouched detector. Their lower miss rates therefore came with substantial deterioration in false alarms. The result supports holding the mitigation project under this recipe. It provides a limited test of shortcut reliance in a poorly calibrated operating regime. A revised training or calibration study would require a new protocol and fresh evaluation sources.\n"}
+,{"stream_name":"stdout","time":17.341142292,"data":"\n"}
+,{"stream_name":"stdout","time":17.34114884,"data":"The cue remained readable on validation data. Probe accuracies were 75.5% for backbone features, 70.6% for pooled decoder features, and 61.6% for matched bicycle queries. Feature readability and cue reliance answer different questions.\n"}
+,{"stream_name":"stdout","time":17.341155054,"data":"\n"}
+,{"stream_name":"stdout","time":17.341159606,"data":"**Resources and audit.** Extraction used 129.3 T4 minutes and 7.02 GB of saved feature shards. CPU probes and training took 4.3 minutes, and final evaluation took 1.8 minutes, excluding platform startup. Model weights, images, heads and caches remain on Kaggle. The companion figure reports absolute errors and the primary interval; `error_types.csv` reports every model/seed's new-miss categories. The manifest and head hashes are retained in the run outputs.\n"}
+,{"stream_name":"stdout","time":17.341166521,"data":"\n"}
+,{"stream_name":"stdout","time":17.341170675,"data":"[Train/validation extraction](https://www.kaggle.com/code/rashmithachamikara/bicycle-formal-trainval) Â· [Probes and training](https://www.kaggle.com/code/rashmithachamikara/bicycle-formal-training) Â· [Test extraction](https://www.kaggle.com/code/rashmithachamikara/bicycle-formal-test) Â· [Frozen evaluation](https://www.kaggle.com/code/rashmithachamikara/bicycle-formal-evaluation)\n"}
+,{"stream_name":"stdout","time":17.341177635,"data":"\n"}
+,{"stream_name":"stderr","time":20.91283671,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":20.912880665,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":21.177014716,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":21.177050429,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22.187500919,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":22.286473905,"data":"[NbConvertApp] Writing 9491 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":25.801687585,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":26.501380898,"data":"[NbConvertApp] Writing 290854 bytes to __results__.html\n"}
+]

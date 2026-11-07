@@ -1,0 +1,48 @@
+{
+  "gpu": "Tesla T4",
+  "total_seconds": 3489.946954561,
+  "extraction_seconds": 3405.452990591,
+  "shards": [
+    {
+      "file": "test-shard-000.pt",
+      "bytes": 365515685,
+      "views": 750
+    },
+    {
+      "file": "test-shard-001.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-002.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-003.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-004.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-005.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-006.pt",
+      "bytes": 365517029,
+      "views": 750
+    },
+    {
+      "file": "test-shard-007.pt",
+      "bytes": 365517029,
+      "views": 750
+    }
+  ],
+  "peak_gpu_bytes": 2121702912
+}

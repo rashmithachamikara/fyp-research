@@ -1,0 +1,13 @@
+{
+  "id": "rashmithachamikara/bicycle-jpeg-timing-prototype",
+  "title": "Bicycle JPEG Timing Prototype",
+  "code_file": "prototype.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset"
+  ]
+}

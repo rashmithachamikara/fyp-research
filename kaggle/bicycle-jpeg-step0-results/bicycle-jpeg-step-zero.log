@@ -1,0 +1,111 @@
+[{"stream_name":"stderr","time":9.80033719,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.800415258,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.800421568,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.80042514,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.719562329,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.719611798,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.719618242,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.719623197,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":35.149859328,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":35.149900238,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.149906814,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.149919845,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.149925227,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353087281,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":35.353160925,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353166927,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.3531714,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353175947,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353180485,"data":"\n"}
+,{"stream_name":"stderr","time":35.353184514,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":35.353188963,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353193494,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353198041,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":35.353202154,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":55.964717336,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":55.964770319,"data":"I0000 00:00:1793863794.698662      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":56.170178281,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":56.170214887,"data":"I0000 00:00:1793863794.698662      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":56.170220567,"data":"\n"}
+,{"stream_name":"stderr","time":56.170224682,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":56.170228665,"data":"I0000 00:00:1793863794.698662      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":71.700263927,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":71.700316211,"data":"I0000 00:00:1793863811.662039      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":71.9037664,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":71.90381021,"data":"I0000 00:00:1793863811.662039      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":71.903817752,"data":"\n"}
+,{"stream_name":"stderr","time":71.903823548,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":71.90382972,"data":"I0000 00:00:1793863811.662039      16 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":75.613463401,"data":"WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work\n"}
+,{"stream_name":"stderr","time":75.613523918,"data":"\n"}
+,{"stream_name":"stderr","time":75.61353134,"data":"WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work\n"}
+,{"stream_name":"stdout","time":78.389574397,"data":"GroundingDinoImageProcessor {'longest_edge': 1333, 'shortest_edge': 800}\n"}
+,{"stream_name":"stdout","time":96.969863589,"data":"Completed 20/100 sources\n"}
+,{"stream_name":"stdout","time":114.836768526,"data":"Completed 40/100 sources\n"}
+,{"stream_name":"stdout","time":132.983301968,"data":"Completed 60/100 sources\n"}
+,{"stream_name":"stdout","time":150.54784913700001,"data":"Completed 80/100 sources\n"}
+,{"stream_name":"stdout","time":168.565529919,"data":"Completed 100/100 sources\n"}
+,{"stream_name":"stdout","time":168.657995967,"data":"{\n"}
+,{"stream_name":"stdout","time":168.658047131,"data":"  \"sources_train\": 60,\n"}
+,{"stream_name":"stdout","time":168.65805476,"data":"  \"sources_held_out\": 40,\n"}
+,{"stream_name":"stdout","time":168.658061248,"data":"  \"views\": 300,\n"}
+,{"stream_name":"stdout","time":168.658066841,"data":"  \"device\": \"CPU\",\n"}
+,{"stream_name":"stdout","time":168.65807262,"data":"  \"checkpoint_revision\": \"a2bb814dd30d776dcf7e30523b00659f4f141c71\",\n"}
+,{"stream_name":"stdout","time":168.658079878,"data":"  \"processor\": \"GroundingDinoImageProcessor\",\n"}
+,{"stream_name":"stdout","time":168.658123145,"data":"  \"processor_size\": {\n"}
+,{"stream_name":"stdout","time":168.658130361,"data":"    \"longest_edge\": 1333,\n"}
+,{"stream_name":"stdout","time":168.658134863,"data":"    \"shortest_edge\": 800\n"}
+,{"stream_name":"stdout","time":168.658139423,"data":"  },\n"}
+,{"stream_name":"stdout","time":168.65814377,"data":"  \"pillow\": \"13.0.0\",\n"}
+,{"stream_name":"stdout","time":168.658148497,"data":"  \"transformers\": \"4.57.1\",\n"}
+,{"stream_name":"stdout","time":168.658152726,"data":"  \"scikit_learn\": \"1.6.1\",\n"}
+,{"stream_name":"stdout","time":168.658157545,"data":"  \"scipy\": \"1.16.3\",\n"}
+,{"stream_name":"stdout","time":168.658162034,"data":"  \"features\": 279,\n"}
+,{"stream_name":"stdout","time":168.658166728,"data":"  \"criteria\": \"95% source-bootstrap lower bound \u003e 0.5 and exact one-sided within-source swap p \u003c 0.05; gate mild on strong\",\n"}
+,{"stream_name":"stdout","time":168.658172613,"data":"  \"comparisons\": {\n"}
+,{"stream_name":"stdout","time":168.658177184,"data":"    \"95_vs_30\": {\n"}
+,{"stream_name":"stdout","time":168.658181683,"data":"      \"correct\": 77,\n"}
+,{"stream_name":"stdout","time":168.658186337,"data":"      \"views\": 80,\n"}
+,{"stream_name":"stdout","time":168.658190898,"data":"      \"accuracy\": 0.9625,\n"}
+,{"stream_name":"stdout","time":168.658195585,"data":"      \"source_bootstrap_95\": [\n"}
+,{"stream_name":"stdout","time":168.658200298,"data":"        0.9125000000000001,\n"}
+,{"stream_name":"stdout","time":168.65820455,"data":"        1.0\n"}
+,{"stream_name":"stdout","time":168.658209072,"data":"      ],\n"}
+,{"stream_name":"stdout","time":168.65821333,"data":"      \"both_correct_sources\": 37,\n"}
+,{"stream_name":"stdout","time":168.658217768,"data":"      \"neither_correct_sources\": 0,\n"}
+,{"stream_name":"stdout","time":168.658222249,"data":"      \"swap_p\": 7.275957614183426e-12,\n"}
+,{"stream_name":"stdout","time":168.658226978,"data":"      \"passes\": true,\n"}
+,{"stream_name":"stdout","time":168.65823153,"data":"      \"correct_by_quality\": {\n"}
+,{"stream_name":"stdout","time":168.658236115,"data":"        \"95\": 37,\n"}
+,{"stream_name":"stdout","time":168.658240545,"data":"        \"30\": 40\n"}
+,{"stream_name":"stdout","time":168.658244878,"data":"      }\n"}
+,{"stream_name":"stdout","time":168.658249245,"data":"    },\n"}
+,{"stream_name":"stdout","time":168.658253591,"data":"    \"95_vs_90\": {\n"}
+,{"stream_name":"stdout","time":168.658258036,"data":"      \"correct\": 62,\n"}
+,{"stream_name":"stdout","time":168.658262493,"data":"      \"views\": 80,\n"}
+,{"stream_name":"stdout","time":168.658266451,"data":"      \"accuracy\": 0.775,\n"}
+,{"stream_name":"stdout","time":168.65827109,"data":"      \"source_bootstrap_95\": [\n"}
+,{"stream_name":"stdout","time":168.658286083,"data":"        0.7,\n"}
+,{"stream_name":"stdout","time":168.658290548,"data":"        0.85\n"}
+,{"stream_name":"stdout","time":168.658294988,"data":"      ],\n"}
+,{"stream_name":"stdout","time":168.658299033,"data":"      \"both_correct_sources\": 22,\n"}
+,{"stream_name":"stdout","time":168.65830411,"data":"      \"neither_correct_sources\": 0,\n"}
+,{"stream_name":"stdout","time":168.65830879,"data":"      \"swap_p\": 2.384185791015625e-07,\n"}
+,{"stream_name":"stdout","time":168.65831342,"data":"      \"passes\": true,\n"}
+,{"stream_name":"stdout","time":168.658317878,"data":"      \"correct_by_quality\": {\n"}
+,{"stream_name":"stdout","time":168.658322591,"data":"        \"95\": 36,\n"}
+,{"stream_name":"stdout","time":168.658333471,"data":"        \"90\": 26\n"}
+,{"stream_name":"stdout","time":168.658338198,"data":"      }\n"}
+,{"stream_name":"stdout","time":168.65834238,"data":"    }\n"}
+,{"stream_name":"stdout","time":168.658346574,"data":"  },\n"}
+,{"stream_name":"stdout","time":168.658357317,"data":"  \"runtime_seconds\": 156.461699157\n"}
+,{"stream_name":"stdout","time":168.658362078,"data":"}\n"}
+,{"stream_name":"stderr","time":175.642739991,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":175.642808517,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":175.879552853,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":175.879595853,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":176.911479304,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":177.024018978,"data":"[NbConvertApp] Writing 28331 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":180.856587555,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":181.660990276,"data":"[NbConvertApp] Writing 341615 bytes to __results__.html\n"}
+]

@@ -1,0 +1,59 @@
+[{"stream_name":"stderr","time":5.396875961,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.396935792,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":6.142357124,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.142387067,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.142390681,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.142393157,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.685327525,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.685370851,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.685376551,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.685381001,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":39.814270189,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":39.814297361,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":39.814303878,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":39.814308834,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":39.814313587,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.01832387,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":40.018366147,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018372841,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018378069,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018383242,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018388195,"data":"\n"}
+,{"stream_name":"stderr","time":40.018392813,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":40.018397895,"data":"gradio-client 2.7.2 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018414531,"data":"gradio 6.30.0 requires huggingface-hub\u003c3.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.018418906,"data":"gradio 6.30.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\n"}
+,{"stream_name":"stderr","time":40.01842306,"data":"diffusers 0.42.0 requires huggingface-hub\u003c3.0,\u003e=1.32.0, but you have huggingface-hub 0.36.2 which is incompatible.\n"}
+,{"stream_name":"stderr","time":53.499753454,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":53.499783247,"data":"I0000 00:00:1793867285.653180      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":53.702923651,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":53.702945284,"data":"I0000 00:00:1793867285.653180      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":53.702949807,"data":"\n"}
+,{"stream_name":"stderr","time":53.702953094,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":53.702956631,"data":"I0000 00:00:1793867285.653180      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stdout","time":352.699307364,"data":"trainval 250 / 4200\n"}
+,{"stream_name":"stdout","time":614.050556645,"data":"trainval 500 / 4200\n"}
+,{"stream_name":"stdout","time":872.598040421,"data":"trainval 750 / 4200\n"}
+,{"stream_name":"stdout","time":1130.376462467,"data":"trainval 1000 / 4200\n"}
+,{"stream_name":"stdout","time":1388.18475197,"data":"trainval 1250 / 4200\n"}
+,{"stream_name":"stdout","time":1646.673651996,"data":"trainval 1500 / 4200\n"}
+,{"stream_name":"stdout","time":1903.023885756,"data":"trainval 1750 / 4200\n"}
+,{"stream_name":"stdout","time":2162.889845422,"data":"trainval 2000 / 4200\n"}
+,{"stream_name":"stdout","time":2422.534870703,"data":"trainval 2250 / 4200\n"}
+,{"stream_name":"stdout","time":2682.490165051,"data":"trainval 2500 / 4200\n"}
+,{"stream_name":"stdout","time":2943.607062671,"data":"trainval 2750 / 4200\n"}
+,{"stream_name":"stdout","time":3202.577905957,"data":"trainval 3000 / 4200\n"}
+,{"stream_name":"stdout","time":3462.24224023,"data":"trainval 3250 / 4200\n"}
+,{"stream_name":"stdout","time":3722.794679177,"data":"trainval 3500 / 4200\n"}
+,{"stream_name":"stdout","time":3982.214042519,"data":"trainval 3750 / 4200\n"}
+,{"stream_name":"stdout","time":4238.644136094,"data":"trainval 4000 / 4200\n"}
+,{"stream_name":"stdout","time":4445.664229757,"data":"trainval 4200 / 4200\n"}
+,{"stream_name":"stderr","time":4451.339446584,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4451.33948601,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4451.526896265,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4451.526928081,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4452.29698223,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4452.386585716,"data":"[NbConvertApp] Writing 107064 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4455.075447397,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4455.640743285,"data":"[NbConvertApp] Writing 409193 bytes to __results__.html\n"}
+]

@@ -1,0 +1,13 @@
+{
+  "id": "rashmithachamikara/bicycle-coco-eligibility-count",
+  "title": "Bicycle COCO Eligibility Count",
+  "code_file": "eligibility.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "formal_sources": 6200,
+  "formal_split_sha256": "dfbf35a66d13e0b57447cb91b7f0e9dbc96879240ebe2a3d929f05b6bee851df",
+  "formal_split_seed": 5182026,
+  "formal_test_evaluated": false,
+  "dev_test_images": 20,
+  "dev_test_bicycles": 14,
+  "development_threshold": 0.25,
+  "delta_pp_by_seed": {
+    "11": 0.0,
+    "23": 0.0,
+    "37": 0.0
+  },
+  "mean_delta_pp": 0.0,
+  "decision_margin_draft_pp": 3,
+  "runtime_seconds": 52.11808009800001
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "manifest_sha256": "dfbf35a66d13e0b57447cb91b7f0e9dbc96879240ebe2a3d929f05b6bee851df",
+  "threshold": 0.35,
+  "heads": {
+    "head-A-11.pt": "6dbfc65e2bd4bfa04bf8e2c94e3b867f66127552e6174bc2da1b5ba81fbc194c",
+    "head-B-11.pt": "b977938038efc9147c59ec4fa48d64be90695214ac07fa815eebe93c5463c040",
+    "head-A-23.pt": "97dd4b568b58ea0d54cd2242df04348dc4f9b4c6b4aee0e804d28d3fd08d22a6",
+    "head-B-23.pt": "459c9650088eee0bb43b8ac756b120b4e5fc28eb770405b42740427c792db273",
+    "head-A-37.pt": "1389f09f2a55338991a5c6c13d8e6881e0dddd7174c8cdd2a91f957b9a702d1f",
+    "head-B-37.pt": "bbc554eb7537764e17e29533ec24bb658833bab686554a74e8eec71fcc741484"
+  },
+  "evaluation_code_sha256": "b3b385dcdf26e99ce96a75a8c837afa87cda13169b1e17058e614607cfd0e3f7",
+  "total_seconds": 259.07314834999994
+}

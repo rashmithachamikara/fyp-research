@@ -1,0 +1,16 @@
+{
+  "id": "rashmithachamikara/bicycle-jpeg-ab-rehearsal",
+  "title": "Bicycle JPEG AB Rehearsal",
+  "code_file": "rehearsal.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset"
+  ],
+  "kernel_sources": [
+    "rashmithachamikara/bicycle-jpeg-timing-prototype"
+  ]
+}

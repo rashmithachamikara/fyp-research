@@ -1,0 +1,32 @@
+{
+  "backbone": {
+    "accuracy": 0.755,
+    "ci95": [
+      0.7375,
+      0.7725
+    ],
+    "train_views": 6800,
+    "validation_views": 1600,
+    "validation_sources": 800
+  },
+  "decoder": {
+    "accuracy": 0.705625,
+    "ci95": [
+      0.688125,
+      0.723125
+    ],
+    "train_views": 6800,
+    "validation_views": 1600,
+    "validation_sources": 800
+  },
+  "matched": {
+    "accuracy": 0.6162952646239555,
+    "ci95": [
+      0.5963171353271722,
+      0.6360719885929705
+    ],
+    "train_views": 6614,
+    "validation_views": 1436,
+    "validation_sources": 399
+  }
+}

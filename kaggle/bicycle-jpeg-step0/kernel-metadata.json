@@ -1,0 +1,13 @@
+{
+  "id": "rashmithachamikara/bicycle-jpeg-step-zero",
+  "title": "Bicycle JPEG Step Zero",
+  "code_file": "step0.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset"
+  ]
+}

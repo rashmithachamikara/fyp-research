@@ -1,0 +1,61 @@
+[{"stream_name":"stderr","time":7.374911206,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.375001776,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.375007067,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.375009727,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.987347467,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.987387827,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.987392587,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.987396198,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":24.189975896,"data":"train2017 Kaggle mounted image directory\n"}
+,{"stream_name":"stdout","time":24.2863368,"data":"train2017 {'sources_listed': 118287, 'unavailable_filenames': 0, 'bicycle_crowd_sources': 57, 'development_sources': 0, 'unique_excluded': 57, 'eligible_positive': 3195, 'eligible_negative': 115035, 'eligible_positive_bicycle_instances': 6354, 'eligible_total': 118230}\n"}
+,{"stream_name":"stdout","time":25.183822634,"data":"val2017 Kaggle mounted image directory\n"}
+,{"stream_name":"stdout","time":25.194210935,"data":"val2017 {'sources_listed': 5000, 'unavailable_filenames': 0, 'bicycle_crowd_sources': 2, 'development_sources': 100, 'unique_excluded': 102, 'eligible_positive': 97, 'eligible_negative': 4801, 'eligible_positive_bicycle_instances': 198, 'eligible_total': 4898}\n"}
+,{"stream_name":"stdout","time":25.196682566,"data":"{\n"}
+,{"stream_name":"stdout","time":25.196699166,"data":"  \"annotation_source\": \"/kaggle/input/datasets/awsaf49/coco-2017-dataset/coco2017\",\n"}
+,{"stream_name":"stdout","time":25.196703966,"data":"  \"splits\": {\n"}
+,{"stream_name":"stdout","time":25.196707616,"data":"    \"train2017\": {\n"}
+,{"stream_name":"stdout","time":25.196711066,"data":"      \"sources_listed\": 118287,\n"}
+,{"stream_name":"stdout","time":25.196714356,"data":"      \"unavailable_filenames\": 0,\n"}
+,{"stream_name":"stdout","time":25.196717286,"data":"      \"bicycle_crowd_sources\": 57,\n"}
+,{"stream_name":"stdout","time":25.196720316,"data":"      \"development_sources\": 0,\n"}
+,{"stream_name":"stdout","time":25.196723706,"data":"      \"unique_excluded\": 57,\n"}
+,{"stream_name":"stdout","time":25.196726906,"data":"      \"eligible_positive\": 3195,\n"}
+,{"stream_name":"stdout","time":25.196730346,"data":"      \"eligible_negative\": 115035,\n"}
+,{"stream_name":"stdout","time":25.196733636,"data":"      \"eligible_positive_bicycle_instances\": 6354,\n"}
+,{"stream_name":"stdout","time":25.196736826,"data":"      \"eligible_total\": 118230\n"}
+,{"stream_name":"stdout","time":25.196740056,"data":"    },\n"}
+,{"stream_name":"stdout","time":25.196743126,"data":"    \"val2017\": {\n"}
+,{"stream_name":"stdout","time":25.196746056,"data":"      \"sources_listed\": 5000,\n"}
+,{"stream_name":"stdout","time":25.196748916,"data":"      \"unavailable_filenames\": 0,\n"}
+,{"stream_name":"stdout","time":25.196751886,"data":"      \"bicycle_crowd_sources\": 2,\n"}
+,{"stream_name":"stdout","time":25.196754706,"data":"      \"development_sources\": 100,\n"}
+,{"stream_name":"stdout","time":25.196757846,"data":"      \"unique_excluded\": 102,\n"}
+,{"stream_name":"stdout","time":25.196776546,"data":"      \"eligible_positive\": 97,\n"}
+,{"stream_name":"stdout","time":25.196780406,"data":"      \"eligible_negative\": 4801,\n"}
+,{"stream_name":"stdout","time":25.196783566,"data":"      \"eligible_positive_bicycle_instances\": 198,\n"}
+,{"stream_name":"stdout","time":25.196787015,"data":"      \"eligible_total\": 4898\n"}
+,{"stream_name":"stdout","time":25.196790106,"data":"    }\n"}
+,{"stream_name":"stdout","time":25.196793046,"data":"  },\n"}
+,{"stream_name":"stdout","time":25.196796235,"data":"  \"totals\": {\n"}
+,{"stream_name":"stdout","time":25.196799515,"data":"    \"sources_listed\": 123287,\n"}
+,{"stream_name":"stdout","time":25.196802486,"data":"    \"bicycle_crowd_sources\": 59,\n"}
+,{"stream_name":"stdout","time":25.196805346,"data":"    \"unique_excluded\": 159,\n"}
+,{"stream_name":"stdout","time":25.196821746,"data":"    \"eligible_positive\": 3292,\n"}
+,{"stream_name":"stdout","time":25.196825116,"data":"    \"eligible_negative\": 119836,\n"}
+,{"stream_name":"stdout","time":25.196828176,"data":"    \"eligible_positive_bicycle_instances\": 6552,\n"}
+,{"stream_name":"stdout","time":25.196834266,"data":"    \"eligible_total\": 123128,\n"}
+,{"stream_name":"stdout","time":25.196837466,"data":"    \"development_sources\": 100\n"}
+,{"stream_name":"stdout","time":25.196840636,"data":"  },\n"}
+,{"stream_name":"stdout","time":25.196843676,"data":"  \"maximum_balanced_sources\": 6584,\n"}
+,{"stream_name":"stdout","time":25.196846656,"data":"  \"shortfall_for_3500_positives\": 208,\n"}
+,{"stream_name":"stdout","time":25.196849526,"data":"  \"runtime_seconds\": 16.047879025000015\n"}
+,{"stream_name":"stdout","time":25.196852566,"data":"}\n"}
+,{"stream_name":"stderr","time":28.029740247,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":28.029774227,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":28.211615854,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":28.211651054,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":28.983412318,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":29.053135279,"data":"[NbConvertApp] Writing 10808 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":31.716121575,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":32.209980208,"data":"[NbConvertApp] Writing 305921 bytes to __results__.html\n"}
+]

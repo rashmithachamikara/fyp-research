@@ -1,0 +1,17 @@
+{
+  "id": "rashmithachamikara/bicycle-formal-trainval",
+  "title": "Bicycle Formal Trainval",
+  "code_file": "run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "awsaf49/coco-2017-dataset"
+  ],
+  "kernel_sources": [
+    "rashmithachamikara/bicycle-jpeg-ab-rehearsal",
+    "rashmithachamikara/bicycle-jpeg-timing-prototype"
+  ]
+}

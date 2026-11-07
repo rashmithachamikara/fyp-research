@@ -1,0 +1,40 @@
+{
+  "annotation_source": "/kaggle/input/datasets/awsaf49/coco-2017-dataset/coco2017",
+  "splits": {
+    "train2017": {
+      "sources_listed": 118287,
+      "unavailable_filenames": 0,
+      "bicycle_crowd_sources": 57,
+      "development_sources": 0,
+      "unique_excluded": 57,
+      "eligible_positive": 3195,
+      "eligible_negative": 115035,
+      "eligible_positive_bicycle_instances": 6354,
+      "eligible_total": 118230
+    },
+    "val2017": {
+      "sources_listed": 5000,
+      "unavailable_filenames": 0,
+      "bicycle_crowd_sources": 2,
+      "development_sources": 100,
+      "unique_excluded": 102,
+      "eligible_positive": 97,
+      "eligible_negative": 4801,
+      "eligible_positive_bicycle_instances": 198,
+      "eligible_total": 4898
+    }
+  },
+  "totals": {
+    "sources_listed": 123287,
+    "bicycle_crowd_sources": 59,
+    "unique_excluded": 159,
+    "eligible_positive": 3292,
+    "eligible_negative": 119836,
+    "eligible_positive_bicycle_instances": 6552,
+    "eligible_total": 123128,
+    "development_sources": 100
+  },
+  "maximum_balanced_sources": 6584,
+  "shortfall_for_3500_positives": 208,
+  "runtime_seconds": 16.047879025000015
+}
