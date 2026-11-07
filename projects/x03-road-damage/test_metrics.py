@@ -21,6 +21,9 @@ class MetricsTest(unittest.TestCase):
         mm=masks(gt,640,640)
         self.assertEqual(int(mm['small_or_thin'].sum()),2)
         self.assertEqual(int(mm['B_eligible'].sum()),2)
+    def test_geometry_boundary_roundoff(self):
+        gt=np.array([[0,100,100,116-1e-12,200],[0,100,100,132-1e-12,132-1e-12]])
+        self.assertEqual(int(masks(gt,640,640)['small_or_thin'].sum()),0)
     def test_tied_ap(self):
         self.assertAlmostEqual(average_precision_binary([True,False],[0,0]),.5)
         self.assertIsNone(average_precision_binary([False],[1]))

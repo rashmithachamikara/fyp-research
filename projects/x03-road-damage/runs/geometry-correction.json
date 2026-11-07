@@ -1,0 +1,44 @@
+{
+  "India": {
+    "old_target_gt": 62,
+    "new_target_gt": 62,
+    "new_C": {
+      "positive_cells": 48,
+      "positive_images": 35,
+      "collisions": 0,
+      "prevalence": 4e-05,
+      "weak_map_average_precision": 0.014510231856300555,
+      "ap_over_prevalence": 362.75579640751386,
+      "weak_map_empty_by_threshold": false,
+      "grid": "40x40 square-letterbox coordinate system"
+    }
+  },
+  "Czech": {
+    "old_target_gt": 9,
+    "new_target_gt": 8,
+    "new_C": {
+      "positive_cells": 8,
+      "positive_images": 8,
+      "collisions": 0,
+      "prevalence": 1.76678445229682e-05,
+      "weak_map_average_precision": 0.007001173981774223,
+      "ap_over_prevalence": 396.266447368421,
+      "weak_map_empty_by_threshold": false,
+      "grid": "40x40 square-letterbox coordinate system"
+    }
+  },
+  "United_States": {
+    "old_target_gt": 549,
+    "new_target_gt": 528,
+    "new_C": {
+      "positive_cells": 502,
+      "positive_images": 447,
+      "collisions": 0,
+      "prevalence": 6.529656607700312e-05,
+      "weak_map_average_precision": 0.0014100674251174166,
+      "ap_over_prevalence": 21.594817458770315,
+      "weak_map_empty_by_threshold": false,
+      "grid": "40x40 square-letterbox coordinate system"
+    }
+  }
+}

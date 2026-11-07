@@ -232,3 +232,7 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-07 19:59:51 Asia/Colombo** — Evaluation complete; wrote pilot-report.md and runs/summary.json. Results are one-seed development evidence.
 
 - **2026-11-07 19:59:51 Asia/Colombo** — Creating local project-scoped commit: Record X03 Kaggle baseline pilot results and diagnostics
+
+- **2026-11-07 20:08:10 Asia/Colombo** — Evaluationv2 succeeded, including P3[1,128,80,80]/P4[1,256,40,40]. Full artifact checks passed. Final audit found float cancellation at exact geometry cutoffs: canonicalised sides to six decimal pixels and recomputed only diagnostic metrics from immutable saved predictions. Czech target count9->8; US549->528, matching frozen inventory. Original summary preserved in artifacts; recompute script/geometry-correction.json retained. AP, all-object P/R/FP, predictions and weights unchanged; added inventory-consistency assertion and boundary test (8 tests pass). Corrected C positive cells48 India/8 Czech/502 US. Compressed-file decoding, complete prediction coverage, checkpoint hashes and source-only threshold IDs verified. Reviewed two US overlays and one India overlay: boxes align; examples illustrate missed cracks and a matched longitudinal box, not error frequencies. Added evidence-bounded A/B/C decisions; condensed tracked summary while full per-image metrics remain in artifacts.
+
+- **2026-11-07 20:09:10 Asia/Colombo** — Creating local project-scoped commit: Correct geometry boundary accounting and interpret pilot results

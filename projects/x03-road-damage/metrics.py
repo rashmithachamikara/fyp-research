@@ -34,7 +34,9 @@ def match(gt,pred,threshold,overlap=.5):
     return pairs,fp,[j for j in range(len(gt)) if j not in used]
 
 def masks(gt,width,height):
-    sides=(gt[:,3:5]-gt[:,1:3])*640/max(width,height)
+    # Canonicalise sub-micropixel cancellation from xywh -> xyxy -> side lengths.
+    # Exact 16px/32px boundaries must not drift below strict cutoffs.
+    sides=np.round((gt[:,3:5]-gt[:,1:3])*640/max(width,height),6)
     small=sides.prod(1)<32**2; thin=sides.min(1)<16
     return dict(all=np.ones(len(gt),dtype=bool),small=small,thin=thin,small_or_thin=small|thin,
                 B_eligible=(small|thin)&(sides.min(1)>=8))

@@ -46,10 +46,13 @@ def verify():
     _,selection_predictions=read_artifact('evaluate','predictions-source-selection-640.json')
     assert set(selection_predictions)==selection
     _,summary=read_artifact('evaluate','summary.json')
+    inventory=json.loads((ROOT/'runs/manifest-validation.json').read_text())['statistics']
     coverage={}
     for country in ['India','Czech','United_States']:
         expected={r['id'] for r in rows if r['country']==country and r['split'] in ['source_audit','unseen']}
         assert summary[country]['images']==len(expected)
+        role='unseen' if country=='United_States' else 'source_audit'
+        assert summary[country]['geometry']['small_or_thin']['gt']==inventory[country+'/'+role]['small_or_thin'],'Geometry count differs from frozen inventory'
         for size in [640,320]:
             _,predictions=read_artifact('evaluate',f'predictions-{country}-{size}.json')
             assert set(predictions)==expected,(country,size,'prediction coverage mismatch')
