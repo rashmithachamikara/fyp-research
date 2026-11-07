@@ -19,6 +19,7 @@ def report():
     audit_small=sum(v['small_or_thin'] for k,v in inventory['statistics'].items() if k.endswith('/source_audit'))
     pothole_small=sum(v['small_or_thin_classes'][3] for k,v in inventory['statistics'].items() if k.endswith('/train'))
     hours=train['seconds']/3600
+    scaled_core=lambda multiplier:1.3*((44+28*1.7+15)*hours*multiplier+10)
     csv_path=next((ROOT/'artifacts/train').rglob('results.csv'))
     with open(csv_path,newline='') as f: history=[{k.strip():v for k,v in r.items()} for r in csv.DictReader(f)]
     metric='metrics/mAP50-95(B)'
@@ -29,6 +30,7 @@ def report():
            f"GPU: {env['gpu']}; VRAM {env['vram_bytes']/1024**3:.1f} GiB. Model: {train['model']}; batch {train['batch']}; 50 epochs; seed 42; Ultralytics 8.4.192.",
            f'Measured training wall time (including validation/checkpoint work): {hours:.2f} hours. Setup, preparation and evaluation are additional.', '',
            f"Operating confidence threshold: {threshold['value']:.4f}, selected only on source-selection data using {threshold['rule']}. AP/precision/recall below use 0–1 units; FP/image is a count rate.", '',
+           'An operational miss means no same-class prediction above that threshold matches the label at IoU>=0.5. This includes low-confidence detections, wrong classes and insufficient localisation, not only complete absence of a visible box.', '',
            f"Effective split counts: `{json.dumps(audit['counts'])}`. Quarantined records: {len(audit['quarantine'])}; see runs/audit.json for reasons and overlap exclusions. Out-of-scope classes are ignored within otherwise retained images.", '',
            f'The inventory found {training_small} small/thin training labels and {audit_small} source-audit labels under the frozen definitions. Of the training subgroup, {pothole_small} are potholes: aggregate small/thin performance does not establish small-crack performance. US has no empty-label images, whereas source splits contain many. Class/prevalence differences confound raw country gaps; sparse geometry results require caution. Inventory and class composition are recorded in runs/manifest-validation.json.', '',
            '| Country / role | mAP50 | mAP50:95 | Recall | Small/thin recall | Precision | FP/image |',
@@ -51,9 +53,10 @@ def report():
         m=summary[c]['C']; lines.append(f"| {c} | {m['positive_cells']} | {m['positive_images']} | {num(m['prevalence'])} | {num(m['weak_map_average_precision'])} | {m['collisions']} |")
     lines+=['','## Resource projection and limitations','',
             f'Source-selection best-mAP improvement in the last ten epochs versus all preceding epochs: {num(late_gain)}. Continued improvement can make the fixed-budget baseline inconclusive; this is a diagnostic, not a convergence proof.',
-            f'Using the earlier illustrative full-grid formula (44 ordinary +28 extra-view runs; B multiplier 1.7; development 15 ordinary equivalents; C 10 hours; contingency30%), substituting this pilot runtime gives approximately {1.3*((44+28*1.7+15)*hours+10):.0f} hours. This is a rough projection: final folds have different data sizes, B has not been benchmarked and convergence may require more epochs.',
+            f'Illustrative core-grid projection: 44 ordinary +28 extra-view runs; assumed B multiplier1.7; development15 ordinary equivalents; C10 hours; contingency30%. At this pilot data size this gives {scaled_core(1):.0f} hours. Scaling to the original-count average final-fold training size gives about {scaled_core(13569.15/train_images):.0f} hours, with an image-count range of about {scaled_core(10738/train_images):.0f}–{scaled_core(16112/train_images):.0f} hours. These are assumptions: B is unbenchmarked, final audit counts differ and convergence may require more epochs.',
             f'This pilot fits {train_images} images. Original-count final folds would fit about 10,738–16,112 images at a 70% source split, before auditing. Linear image-count scaling alone would multiply the measured ordinary-run time by {10738/train_images:.2f}–{16112/train_images:.2f}; this is an assumption, not a throughput measurement.',
             '', 'No deployment adequacy threshold was supplied. A high or low metric alone does not establish that all three interventions are necessary. Review learning curves, sparse subgroup support, annotation completeness and visual examples before choosing research directions.',
+            '', 'Example overlays are saved under artifacts/evaluate/results/: green ground-truth boxes were matched, red ground-truth boxes were missed, and cyan boxes are detector predictions above the frozen operating threshold. Examples use a fixed hash sample, so they do not estimate the frequency of individual error types.',
             '', 'Caution: one seed; one unseen development country; imperfect sequence metadata; conservative duplicate grouping; fixed 50-epoch budget. Bootstrap intervals describe image/group sampling, not country or training-seed uncertainty. Raw-map AP uses a stepwise tie-aware definition. Models and predictions are retained in ignored local artifacts; concise summary JSON is retained under runs.', '']
     (ROOT/'pilot-report.md').write_text('\n'.join(lines),encoding='utf-8')
     (ROOT/'runs/summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')

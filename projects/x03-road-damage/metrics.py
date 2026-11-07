@@ -1,6 +1,13 @@
 """Explicit operational matching/geometry; AP is computed by the pinned YOLO validator."""
 import numpy as np
 
+def grid_cell(x,y,width,height):
+    gain=640/max(width,height)
+    # Ultralytics LetterBox rounds resized dimensions then splits integer padding.
+    left=round((640-round(width*gain))/2-.1)
+    top=round((640-round(height*gain))/2-.1)
+    return min(39,max(0,int((y*gain+top)/16))),min(39,max(0,int((x*gain+left)/16)))
+
 def xyxy(boxes, width, height):
     out=[]
     for c,x,y,w,h in boxes:

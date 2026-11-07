@@ -26,10 +26,14 @@ def cli(args,name):
     return p.stdout
 
 def wait(stage):
-    last=None
+    last=None; failures=0
     while True:
         p=subprocess.run([sys.executable,'-m','kaggle','kernels','status',f'{OWNER}/x03-road-{stage}'],capture_output=True,text=True)
-        if p.returncode: raise RuntimeError(f'Cannot query {stage}: '+p.stderr[-500:])
+        if p.returncode:
+            failures+=1; log(f'Transient status-query failure {failures}/5 for {stage}; no job resubmission.')
+            if failures>=5: raise RuntimeError(f'Cannot query {stage}: '+p.stderr[-500:])
+            time.sleep(30); continue
+        failures=0
         state=p.stdout.strip()
         if state!=last: log(state); last=state
         (ROOT/'runs'/f'{stage}-status.txt').write_text(state)
@@ -49,10 +53,10 @@ def commit(message):
     subprocess.run(['git','commit','-m',message],check=True)
     print('Local commit: '+subprocess.check_output(['git','rev-parse','--short','HEAD'],text=True).strip()+' — '+message,flush=True)
 
-def run(start='prepare'):
+def run(start='prepare',monitor_existing=False):
     stages=['prepare','smoke','train','evaluate']
     for stage in stages[stages.index(start):]:
-        if stage!='prepare':
+        if stage!='prepare' and not (stage==start and monitor_existing):
             response=cli(['kernels','push','-p',str(ROOT/'kaggle'/stage),'--accelerator','NvidiaTeslaT4','-t','43200'],f'{stage}-launch.txt')
             log(response.strip())
         wait(stage)
@@ -79,5 +83,5 @@ def shutil_copy(a,b):
     shutil.copy2(a,b)
 
 if __name__=='__main__':
-    try: run(sys.argv[1] if len(sys.argv)>1 else 'prepare')
+    try: run(sys.argv[1] if len(sys.argv)>1 else 'prepare',monitor_existing='--monitor' in sys.argv[2:])
     except Exception as e: log('Pipeline stopped: '+str(e)); raise

@@ -123,3 +123,44 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-07 15:45:05 Asia/Colombo** — Checked pinned loss API: a reloaded detector can have dict model.args, while loss hyperparameters use attribute access. Diagnostic converts arguments with the pinned get_cfg helper before loss construction. No detector weights or scientific training settings changed.
 
 - **2026-11-07 15:48:59 Asia/Colombo** — Repeat smoke v2 completed successfully: YOLO11s batch16; optimizer recovery verified. Optional epoch0 optimizer checkpoint download stalled locally at zero bytes for several minutes after required JSON/CSV results downloaded. Stopped only controller/download processes; remote job unaffected. Restricted future smoke downloads to records, and full training downloads to records plus best/last checkpoints (periodic checkpoints remain on Kaggle). Independently inspected required smoke/manifest artifacts; preparing project-scoped implementation commit before starting full training.
+
+- **2026-11-07 15:49:19 Asia/Colombo** — Created local implementation commit9c5096f after six passing tests, compile/whitespace checks, corrected preparation audit and successful GPU recovery smoke. No remote Git push. Starting private full baseline from COCO (not smoke weights), YOLO11s640 batch16 seed42 50epochs, source-only selection, preparationv5/smokev2.
+
+- **2026-11-07 15:49:19 Asia/Colombo** — Command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\kaggle\train --accelerator NvidiaTeslaT4 -t 43200`
+
+- **2026-11-07 15:49:24 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-road-train
+
+- **2026-11-07 15:49:27 Asia/Colombo** — rashmithachamikara/x03-road-train has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-07 15:52:06 Asia/Colombo** — Full training v1 is queued. Live-log stream returned Kaggle HTTP500 before worker startup; status polling continues and no duplicate job was submitted. This is monitoring/backend availability, not a model-training failure.
+
+- **2026-11-07 15:54:07 Asia/Colombo** — Added controller --monitor attachment mode and bounded transient status retries for future restarts, preventing duplicate remote runs if local monitoring/network fails. Existing controller remains attached to trainingv1; no resubmission. Compile check passed.
+
+- **2026-11-07 15:57:51 Asia/Colombo** — Added exact integer LetterBox padding to C grid mapping (rather than fractional approximation) and a boundary/padding unit test. Seven tests pass. Trainingv1 is immutable and remains queued; this evaluation-only coordinate fix does not affect detector training or thresholds.
+
+- **2026-11-07 16:01:03 Asia/Colombo** — Detailed Kaggle session API confirms trainingv1 status QUEUED with failure_message=None. No quota/failure reason reported. Retaining the single submitted run and continuing monitoring; queue time is not measured training time.
+
+- **2026-11-07 16:04:31 Asia/Colombo** — Pipeline stopped: Cannot query train: HTTPSConnectionPool(host='api.kaggle.com', port=443): Max retries exceeded with url: /v1/kernels.KernelsApiService/GetKernelSessionStatus (Caused by NameResolutionError("HTTPSConnection(host='api.kaggle.com', port=443): Failed to resolve 'api.kaggle.com' ([Errno 11001] getaddrinfo failed)"))
+
+
+- **2026-11-07 16:05:14 Asia/Colombo** — rashmithachamikara/x03-road-train has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-07 16:05:35 Asia/Colombo** — Original controller stopped on transient DNS failure while trainingv1 remained remote. Reattached with run_pipeline.py train --monitor; session API now reports RUNNING. No new training version or duplicate run submitted.
+
+- **2026-11-07 16:10:14 Asia/Colombo** — Training log confirms pinned stock auto-optimizer resolved to AdamW(lr0.00125,momentum0.9); this is recorded rather than assuming SGD. No corrupt-image/duplicate-label removal warnings found; independent manifest check found zero exact duplicate annotation rows. First epoch completed and epoch2 started; live displayed GPU memory about5.02G, final peak measurement pending.
+
+- **2026-11-07 16:11:39 Asia/Colombo** — Renamed inspected mirror metadata to runs/unused-mirror-metadata.json to avoid confusing its claimed licence with the official Figshare data actually used. Retained the discovery record; no mirror images or annotations used.
+
+- **2026-11-07 16:14:30 Asia/Colombo** — Before any audit/US model outcomes, added positive-only and negative-only operational metric stratification using the same frozen predictions/threshold. Motivation is the inventory's source-vs-US negative-image imbalance; primary all-image results and AP remain unchanged. No extra training or threshold tuning.
+
+- **2026-11-07 16:17:52 Asia/Colombo** — Report generator now documents prediction-overlay colours and deterministic example sampling. Monitoring continues on the original trainingv1; no audit/US predictions have been generated or inspected.
+
+- **2026-11-07 16:20:02 Asia/Colombo** — Clarified A diagnostic as post-training frozen-best float32 supervision, not actual training-trajectory assignments. Evaluation will hash the initial COCO asset retained in the immutable training output and record the observed v8.4.0 asset URL. Trainingv1 configuration remains unchanged.
+
+- **2026-11-07 16:24:10 Asia/Colombo** — Report explicitly defines operational misses (same-class, source-thresholded, IoU>=0.5), including low-confidence/wrong-class/localisation failures rather than claiming every unmatched label is visually undetected. Detector training continues unchanged.
+
+- **2026-11-07 16:25:45 Asia/Colombo** — Refined report's full-grid estimate to separate measured pilot-size runtime from explicitly assumed linear scaling to final-fold image counts. B multiplier/development/C budgets remain unmeasured assumptions; no rental or additional model experiments launched.
+
+- **2026-11-07 16:27:27 Asia/Colombo** — Evaluation now retains source-selection predictions and selected image IDs alongside the threshold/grid, with an explicit India/Czech-only assertion. This makes threshold provenance independently reproducible; no thresholds are chosen from US or source-audit data.
+
+- **2026-11-07 16:28:47 Asia/Colombo** — Creating local project-scoped commit: Harden X03 monitoring and preserve evaluation provenance

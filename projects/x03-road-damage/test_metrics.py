@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from metrics import xyxy,match,masks,average_precision_binary,select_threshold
+from metrics import xyxy,match,masks,average_precision_binary,select_threshold,grid_cell
 from prepare import convert_box
 
 class MetricsTest(unittest.TestCase):
@@ -24,6 +24,11 @@ class MetricsTest(unittest.TestCase):
     def test_tied_ap(self):
         self.assertAlmostEqual(average_precision_binary([True,False],[0,0]),.5)
         self.assertIsNone(average_precision_binary([False],[1]))
+    def test_letterbox_grid_and_boundaries(self):
+        self.assertEqual(grid_cell(0,0,1280,720),(8,0))
+        self.assertEqual(grid_cell(1280,720,1280,720),(31,39))
+        self.assertEqual(grid_cell(640,640,640,640),(39,39))
+        self.assertEqual(grid_cell(16,16,640,640),(1,1))
     def test_threshold_uses_supplied_selection_only(self):
         records=[dict(id='selection',width=100,height=100,group='a',boxes=[[0,.5,.5,1,1]])]
         threshold,info=select_threshold(records,{'selection':[[0,0,100,100,.8,0]],'unseen':[[0,0,100,100,.1,0]]})

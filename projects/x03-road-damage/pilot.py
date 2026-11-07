@@ -17,7 +17,7 @@ import torch
 import yaml
 from PIL import Image, ImageDraw
 from ultralytics import YOLO, __version__
-from metrics import xyxy,match,masks,operating,select_threshold,average_precision_binary,bootstrap
+from metrics import xyxy,match,masks,operating,select_threshold,average_precision_binary,bootstrap,grid_cell
 
 ROOT=Path('/kaggle/working'); OUT=ROOT/'results'; OUT.mkdir(exist_ok=True)
 
@@ -118,7 +118,7 @@ def assignment_diagnostics(model,records):
             summaries[name]=dict(boxes=len(subset),zero_positive_fraction=sum(r['positives']==0 for r in subset)/len(subset) if subset else None,
                                   mean_positives=float(np.mean([r['positives'] for r in subset])) if subset else None,
                                   mean_score_mass=float(np.mean([r['score_mass'] for r in subset])) if subset else None)
-        save('A-assignment.json',dict(records=rows,summary=summaries,images=len(train),note='Evaluation mode, no gradients or optimizer steps; measured training-sample supervision only.'))
+        save('A-assignment.json',dict(records=rows,summary=summaries,images=len(train),note='Post-training frozen-best checkpoint, float32 evaluation mode, no gradients or optimizer steps; training-sample supervision diagnostic, not a log of actual training-time assignments.'))
     finally: TaskAlignedAssigner.forward=original
 
 def train(records):
@@ -150,8 +150,7 @@ def c_diagnostics(records,preds,threshold):
         _,_,miss=match(gt,pred,threshold); m=masks(gt,r['width'],r['height'])['small_or_thin']
         target=np.zeros((40,40),bool); weak=np.zeros((40,40))
         # Grid is on square letterboxed 640 view, not a stretched original image.
-        scale=640/max(r['width'],r['height']); px=(640-r['width']*scale)/2; py=(640-r['height']*scale)/2
-        def cell(x,y): return min(39,max(0,int((y*scale+py)/16))),min(39,max(0,int((x*scale+px)/16)))
+        def cell(x,y): return grid_cell(x,y,r['width'],r['height'])
         for j in miss:
             if not m[j]: continue
             y,x=cell((gt[j,1]+gt[j,3])/2,(gt[j,2]+gt[j,4])/2)
@@ -167,17 +166,25 @@ def c_diagnostics(records,preds,threshold):
 
 def evaluate(records):
     checkpoint=next(p for p in Path('/kaggle/input').rglob('best.pt') if p.parent.name=='results')
+    coco=list(Path('/kaggle/input').rglob('yolo11s.pt'))
+    save('initial-weight-provenance.json',dict(files={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in coco},
+         observed_training_download='https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo11s.pt'))
     model=YOLO(checkpoint); selected=[r for r in records if r['split']=='selection']
     # Keep diagnostics in the evaluation stage so library/API issues cannot spoil a completed training job.
     assignment_diagnostics(YOLO(checkpoint),records)
+    assert all(r['country'] in ['India','Czech'] for r in selected)
     selection_preds=predict(model,selected,640)
-    threshold,decision=select_threshold(selected,selection_preds); save('threshold.json',dict(value=threshold,**decision))
+    save('predictions-source-selection-640.json',selection_preds)
+    threshold,decision=select_threshold(selected,selection_preds); save('threshold.json',dict(value=threshold,selection_ids=[r['id'] for r in selected],**decision))
     summary={}; samples=[]
     for country in ['India','Czech','United_States']:
         subset=[r for r in records if r['country']==country and r['split'] in ['source_audit','unseen']]
         preds=predict(model,subset,640); half=predict(model,subset,320)
         save(f'predictions-{country}-640.json',preds); save(f'predictions-{country}-320.json',half)
         op=operating(subset,preds,threshold); op['bootstrap95']=bootstrap(subset,op['per_image']); op['C']=c_diagnostics(subset,preds,threshold)
+        positive=[r for r in subset if r['boxes']]; negative=[r for r in subset if not r['boxes']]
+        op['positive_images_operating']=operating(positive,preds,threshold) if positive else None
+        op['negative_images_operating']=operating(negative,preds,threshold) if negative else None
         op['scale320']=operating(subset,half,threshold)
         transitions={k:collections.Counter() for k in ['all','small_or_thin','B_eligible']}
         for r in subset:

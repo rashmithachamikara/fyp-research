@@ -27,6 +27,8 @@ Submit with `python -m kaggle kernels push -p kaggle/STAGE --accelerator NvidiaT
 
 The recovery smoke test must pass before main training. Unexpected training interruption requires inspecting last.pt epoch/optimizer, retaining the original 50-epoch schedule and resuming from the upstream checkpoint; never silently restart as a resume. One seed and finite epochs are pilot limitations. Examine source learning curves for unresolved convergence before attributing misses to the method.
 
+If the local monitoring process stops while a remote job remains queued/running, use `python run_pipeline.py train --monitor` (or `evaluate --monitor`) to attach to that existing job without submitting a duplicate. Status queries retry transient failures five times; an ERROR job requires inspecting artifacts and a deliberate recovery decision.
+
 ## Files and records
 
 All commands/results belong to this directory. `runs/` contains launch/status and concise records; `artifacts/` holds downloaded large outputs and is Git-ignored. Code, notebooks, manifests/audits (without large data) and the final pilot report can be committed. Raw images, archives, model weights and caches are ignored. No secrets or remote Git push.
