@@ -3,8 +3,11 @@
   "stderr": "C:\\Files\\Shared\\Online Class\\ITM\\Sem7\\FYP\\fyp-research\\projects\\x03-road-damage\\b-prototype\\artifacts\\controller-20261108-200415-err.log",
   "stdout": "C:\\Files\\Shared\\Online Class\\ITM\\Sem7\\FYP\\fyp-research\\projects\\x03-road-damage\\b-prototype\\artifacts\\controller-20261108-200415-out.log",
   "mode": "file-locked select-monitor executor now continuing evaluation",
-  "detached_launcher": "ended with shell; superseded",
-  "active_exec_session": 12231,
+  "detached_launcher": "Earlier absent-process diagnosis was incorrect; PID10532 was alive and then explicitly stopped at20:23",
+  "active_exec_session": null,
   "superseded_pid": 10532,
-  "executor_lock": true
+  "executor_lock": true,
+  "status": "completed",
+  "last_exec_session": 12231,
+  "executor_lock_released": true
 }

@@ -386,3 +386,7 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-08 21:25:37 Asia/Colombo** — B comparison/report completed; one-seed development evidence, not confirmation.
 
 - **2026-11-08 21:25:37 Asia/Colombo** — Creating local project-scoped commit: Record B prototype comparison and verified diagnostic results
+
+- **2026-11-08 21:27:04 Asia/Colombo** — Final review complete; verified report/metrics and executor lock released, all known Kaggle jobs COMPLETE. US findings: {"baseline": {"target_tp": 26, "target_gt": 528, "target_recall": 0.04924242424242424, "fp_per_image": 0.2853277835587929, "map50_95": 0.06304360067098233}, "generic": {"target_tp": 9, "target_gt": 528, "target_recall": 0.017045454545454544, "fp_per_image": 0.1529656607700312, "map50_95": 0.047741831567415245}, "small_thin": {"target_tp": 12, "target_gt": 528, "target_recall": 0.022727272727272728, "fp_per_image": 0.3267429760665973, "map50_95": 0.06151121604442702}}. B fails predefined FP guard: recall12/528 versus generic9/528, butFP/image0.3267 versus0.1530; baseline26/528 andFP/image0.2853. Classification=no improvement under this configuration; one-seed development evidence, not a general rejection of consistency. Three full trainings totaled6.4364T4h; accounted GPU-quota increase6.8554h. Reports and verified artifacts saved; stop now per user instruction. No further experiments or remote Git push.
+
+- **2026-11-08 21:27:04 Asia/Colombo** — Creating local project-scoped commit: Finalize B prototype findings and stopped executor state
