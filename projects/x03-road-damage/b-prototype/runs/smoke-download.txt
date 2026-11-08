@@ -1,0 +1,122 @@
+Downloading b-config.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\b-config.json
+Downloading data-b-smoke.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\data-b-smoke.yaml
+Downloading data.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\data.yaml
+Downloading experiment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\experiment.json
+Downloading budget-gate.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/budget-gate.json
+Downloading environment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/environment.json
+Downloading optimizer-effective.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/optimizer-effective.json
+Downloading pip-freeze.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/pip-freeze.txt
+Downloading resume-observed.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/resume-observed.json
+Downloading smoke-baseline.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/smoke-baseline.json
+Downloading smoke-generic.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/smoke-generic.json
+Downloading smoke-small_thin.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/smoke-small_thin.json
+Downloading smoke-subset.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/smoke-subset.json
+Downloading timing.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\results/timing.json
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/baseline
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/baseline/args.yaml
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/baseline
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/baseline/results.csv
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/generic/args.yaml
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/generic/results.csv
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/small_thin
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/small_thin/args.yaml
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/small_thin
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\training/small_thin/results.csv
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke\x03-b-smoke.log 
+
+
+  0%|          | 0.00/581 [00:00<?, ?B/s]
+100%|██████████| 581/581 [00:00<00:00, 249kB/s]
+
+  0%|          | 0.00/152 [00:00<?, ?B/s]
+100%|██████████| 152/152 [00:00<00:00, 85.3kB/s]
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 75.1kB/s]
+
+  0%|          | 0.00/566 [00:00<?, ?B/s]
+100%|██████████| 566/566 [00:00<00:00, 310kB/s]
+
+  0%|          | 0.00/5.58k [00:00<?, ?B/s]
+100%|██████████| 5.58k/5.58k [00:00<00:00, 128kB/s]
+
+  0%|          | 0.00/107 [00:00<?, ?B/s]
+100%|██████████| 107/107 [00:00<00:00, 10.3kB/s]
+
+  0%|          | 0.00/649 [00:00<?, ?B/s]
+100%|██████████| 649/649 [00:00<00:00, 246kB/s]
+
+  0%|          | 0.00/17.8k [00:00<?, ?B/s]
+100%|██████████| 17.8k/17.8k [00:00<00:00, 421kB/s]
+
+  0%|          | 0.00/93.0 [00:00<?, ?B/s]
+100%|██████████| 93.0/93.0 [00:00<00:00, 41.1kB/s]
+
+  0%|          | 0.00/762 [00:00<?, ?B/s]
+100%|██████████| 762/762 [00:00<00:00, 405kB/s]
+
+  0%|          | 0.00/1.82k [00:00<?, ?B/s]
+100%|██████████| 1.82k/1.82k [00:00<00:00, 1.30MB/s]
+
+  0%|          | 0.00/1.81k [00:00<?, ?B/s]
+100%|██████████| 1.81k/1.81k [00:00<00:00, 1.07MB/s]
+
+  0%|          | 0.00/6.30k [00:00<?, ?B/s]
+100%|██████████| 6.30k/6.30k [00:00<00:00, 2.41MB/s]
+
+  0%|          | 0.00/690 [00:00<?, ?B/s]
+100%|██████████| 690/690 [00:00<00:00, 376kB/s]
+
+  0%|          | 0.00/1.73k [00:00<?, ?B/s]
+100%|██████████| 1.73k/1.73k [00:00<00:00, 942kB/s]
+
+  0%|          | 0.00/428 [00:00<?, ?B/s]
+100%|██████████| 428/428 [00:00<00:00, 221kB/s]
+
+  0%|          | 0.00/1.72k [00:00<?, ?B/s]
+100%|██████████| 1.72k/1.72k [00:00<00:00, 911kB/s]
+
+  0%|          | 0.00/431 [00:00<?, ?B/s]
+100%|██████████| 431/431 [00:00<00:00, 286kB/s]
+
+  0%|          | 0.00/1.73k [00:00<?, ?B/s]
+100%|██████████| 1.73k/1.73k [00:00<00:00, 1.00MB/s]
+
+  0%|          | 0.00/427 [00:00<?, ?B/s]
+100%|██████████| 427/427 [00:00<00:00, 195kB/s]

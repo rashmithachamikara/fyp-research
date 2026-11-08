@@ -1,0 +1,26 @@
+{
+  "head.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/nn/modules/head.py",
+    "sha256": "4c9ec8aae4867755807aba07234f4cde9141979e5731bf0ddd88e5d5005eb1a2"
+  },
+  "loss.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/utils/loss.py",
+    "sha256": "15ed083763ab32d30ef282b981eb371a1072735a8b46ceec90fb04e0c7811357"
+  },
+  "tal.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/utils/tal.py",
+    "sha256": "ed76bbf799bc90905a8ce30fb650c4a656c8a87a4cdd2dc64c62b3c4340436d2"
+  },
+  "tasks.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/nn/tasks.py",
+    "sha256": "be310fedafa0bb3866c8871ac80afe7d964f9e487f6d7686968a5d310e246da1"
+  },
+  "train.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/models/yolo/detect/train.py",
+    "sha256": "30e665d304c3973e9822881e2fb4ea9047fcaaa66e4741013d958d6e13f27748"
+  },
+  "trainer.py": {
+    "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/922563eab42b778445e55a2edbabb6974eed8e4b/ultralytics/engine/trainer.py",
+    "sha256": "0b671a5c0721aa61bfe4a8c95500150f75d3e1d6634141d16fffb11ceeabcab1"
+  }
+}

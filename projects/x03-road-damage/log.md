@@ -236,3 +236,21 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-07 20:08:10 Asia/Colombo** — Evaluationv2 succeeded, including P3[1,128,80,80]/P4[1,256,40,40]. Full artifact checks passed. Final audit found float cancellation at exact geometry cutoffs: canonicalised sides to six decimal pixels and recomputed only diagnostic metrics from immutable saved predictions. Czech target count9->8; US549->528, matching frozen inventory. Original summary preserved in artifacts; recompute script/geometry-correction.json retained. AP, all-object P/R/FP, predictions and weights unchanged; added inventory-consistency assertion and boundary test (8 tests pass). Corrected C positive cells48 India/8 Czech/502 US. Compressed-file decoding, complete prediction coverage, checkpoint hashes and source-only threshold IDs verified. Reviewed two US overlays and one India overlay: boxes align; examples illustrate missed cracks and a matched longitudinal box, not error frequencies. Added evidence-bounded A/B/C decisions; condensed tracked summary while full per-image metrics remain in artifacts.
 
 - **2026-11-07 20:09:10 Asia/Colombo** — Creating local project-scoped commit: Correct geometry boundary accounting and interpret pilot results
+
+- **2026-11-08 12:50:23 Asia/Colombo** — B prototype implementation authorised: fresh baseline/generic/small-thin arms,50 epochs each,seed42,COCO initialization, unchanged preparation manifest and source-only tuning; Japan untouched. Creating all new B assets under b-prototype. Budget gate8–12T4 GPU-hours to be checked after smoke; no full runs launched yet.
+
+- **2026-11-08 13:07:27 Asia/Colombo** — Implemented B core: standard DetectionTrainer/EMA, differentiable half-view consistency, detached stock TAL/top3 weighting, Bernoulli KL+normalized L1, one scalar added once to stock3-component loss, augmented geometry masks and per-epoch telemetry. Added immutable experiment config and separate private Kaggle stages. Local isolated venv needed pip-bootstrap workaround and matching torchvision0.27 for existing CPU Torch2.12 (no global Torch change). Nine substantive CPU tests passed, including actual TAL/DFL gradients and empty batches; earlier missing/incompatible dependency checks were environment failures. CUDA smoke still pending. Added common-batch refusal of stock silent shrink, source-only subset/recovery checks, lazy prediction transfer, budget gate based on warm batch medians. Snapshot quota~1h47used/30, no reservation/paid scaling.
+
+- **2026-11-08 13:13:09 Asia/Colombo** — B smokev1 trained/resumed the baseline but failed telemetry assertion: the pinned trainer emits an additional final-validation callback at epochs+1. Actual recovery was correct; excluded this non-training callback from timing/epoch accounting and added a regression test. No full runs launched. GPU consistency/recovery/export/budget checks still pending; rerunning the same smoke protocol with instrumentation fix.
+
+- **2026-11-08 13:14:37 Asia/Colombo** — rashmithachamikara/x03-b-smoke has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 13:16:06 Asia/Colombo** — Ten local CPU tests now pass with compatible Torch2.12/TorchVision0.27. Added true TAL+DFL consistency-gradient test, teacher detach/empty-GT cases, scalar-loss scaling and final-validation callback regression. Implemented sequential budget-gated controller, all-model source-only threshold freeze, independent checkpoint/data-role/coverage checks, paired group-bootstrap reporting and fixed-hash overlay samples. Source references are retained locally (ignored) with URL/SHA manifest. Smokev2 monitoring active; full launches remain gated.
+
+- **2026-11-08 13:16:50 Asia/Colombo** — rashmithachamikara/x03-b-smoke has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 13:16:50 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-smoke -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\smoke --file-pattern .*(json|log|yaml|csv|txt)$`
+
+- **2026-11-08 13:17:27 Asia/Colombo** — B smoke/recovery passed; budget projection 9.256253278169455h, common batch16
+
+- **2026-11-08 13:17:27 Asia/Colombo** — Creating local project-scoped commit: Add validated B consistency prototype and budget-gated Kaggle runner

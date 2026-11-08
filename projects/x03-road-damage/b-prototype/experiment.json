@@ -1,0 +1,19 @@
+{
+  "arms": ["baseline", "generic", "small_thin"],
+  "seed": 42,
+  "epochs": 50,
+  "imgsz": 640,
+  "half_size": 320,
+  "batch_candidates": [16, 8],
+  "maximum_lambda": 1.0,
+  "ramp_epochs": 5,
+  "top_k": 3,
+  "budget_gpu_hours": 12,
+  "manifest_sha256": "3e4eeb11397ec5cacbf7533b558bb80d50eb5f16dd670ce85dd5d19be1f47123",
+  "coco_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+  "ultralytics": "8.4.192",
+  "source_train_images": 8264,
+  "source_selection_images": 1034,
+  "source_audit_images": 1033,
+  "us_development_images": 4805
+}

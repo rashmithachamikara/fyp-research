@@ -1,0 +1,211 @@
+{
+  "status": "passed",
+  "batch": 16,
+  "ratios": {
+    "baseline": 1.0,
+    "generic": 1.7559610582229086,
+    "small_thin": 1.7278822957665043
+  },
+  "projected_gpu_hours": 9.256253278169455,
+  "budget": 12,
+  "attempts": [],
+  "arms": [
+    {
+      "arm": "baseline",
+      "batch": 16,
+      "seconds": 54.831197719000016,
+      "timing": [
+        {
+          "epoch": 1,
+          "seconds": 8.502880667,
+          "allocated": 4016553472,
+          "reserved": 5364514816,
+          "batches": 0,
+          "teacher_updates": 8,
+          "steady_batch_median_seconds": 0.1802929714999948
+        },
+        {
+          "epoch": 2,
+          "seconds": 8.829287823000016,
+          "allocated": 4021080064,
+          "reserved": 5473566720,
+          "batches": 0,
+          "teacher_updates": 12,
+          "steady_batch_median_seconds": 0.1834674874999962
+        }
+      ],
+      "resume": {
+        "start_epoch": 1,
+        "optimizer_state_entries": 255,
+        "teacher_updates": 8,
+        "initial_ramp": 0.2
+      },
+      "export_sha256": "abeacc8aed38c4d307e614e33c28532df63b0ee951964c199a0de2670ef137cd"
+    },
+    {
+      "arm": "generic",
+      "batch": 16,
+      "seconds": 35.368097089,
+      "timing": [
+        {
+          "epoch": 1,
+          "seconds": 9.354804907000016,
+          "allocated": 5222300672,
+          "reserved": 6645874688,
+          "batches": 16,
+          "teacher_updates": 8,
+          "steady_batch_median_seconds": 0.3136009624999758,
+          "total": 1178,
+          "visible": 1158,
+          "target": 393,
+          "selected": 1158,
+          "usable": 1129,
+          "skip_no_positive": 29,
+          "skip_zero_weight": 0,
+          "aux_mean": 0.0409346460364759,
+          "kl_mean": 0.007307670819500345,
+          "box_l1_mean": 0.033626975724473596,
+          "weight_mean": 0.09375,
+          "empty_selection_batches": 0,
+          "selected_by_class": [
+            164,
+            18,
+            186,
+            790
+          ],
+          "usable_by_class": [
+            157,
+            18,
+            186,
+            768
+          ]
+        },
+        {
+          "epoch": 2,
+          "seconds": 10.913991488000022,
+          "allocated": 5231760384,
+          "reserved": 6712983552,
+          "batches": 16,
+          "teacher_updates": 12,
+          "steady_batch_median_seconds": 0.3221617634999916,
+          "total": 1178,
+          "visible": 1158,
+          "target": 393,
+          "selected": 1158,
+          "usable": 1119,
+          "skip_no_positive": 39,
+          "skip_zero_weight": 0,
+          "aux_mean": 0.1776285117957741,
+          "kl_mean": 0.13849651040072786,
+          "box_l1_mean": 0.03913199482485652,
+          "weight_mean": 0.29375,
+          "empty_selection_batches": 0,
+          "selected_by_class": [
+            164,
+            18,
+            186,
+            790
+          ],
+          "usable_by_class": [
+            157,
+            18,
+            184,
+            760
+          ]
+        }
+      ],
+      "resume": {
+        "start_epoch": 1,
+        "optimizer_state_entries": 255,
+        "teacher_updates": 8,
+        "initial_ramp": 0.2
+      },
+      "export_sha256": "6a21f7cd92103a9b280c1812f06339c9e6083f21be0262cf308f3ac717bec0db",
+      "usable": 2248,
+      "selected": 2316
+    },
+    {
+      "arm": "small_thin",
+      "batch": 16,
+      "seconds": 31.691023883000014,
+      "timing": [
+        {
+          "epoch": 1,
+          "seconds": 7.802153104000013,
+          "allocated": 5222300672,
+          "reserved": 6645874688,
+          "batches": 16,
+          "teacher_updates": 8,
+          "steady_batch_median_seconds": 0.31795348350001973,
+          "total": 1178,
+          "visible": 1158,
+          "target": 393,
+          "selected": 393,
+          "usable": 366,
+          "skip_no_positive": 27,
+          "skip_zero_weight": 0,
+          "aux_mean": 0.05024877248797566,
+          "kl_mean": 0.008063616742902013,
+          "box_l1_mean": 0.04218515462707728,
+          "weight_mean": 0.09375,
+          "empty_selection_batches": 0,
+          "selected_by_class": [
+            34,
+            4,
+            7,
+            348
+          ],
+          "usable_by_class": [
+            28,
+            4,
+            7,
+            327
+          ]
+        },
+        {
+          "epoch": 2,
+          "seconds": 11.105450487999974,
+          "allocated": 5231760384,
+          "reserved": 6712983552,
+          "batches": 16,
+          "teacher_updates": 12,
+          "steady_batch_median_seconds": 0.31701022350000585,
+          "total": 1178,
+          "visible": 1158,
+          "target": 393,
+          "selected": 393,
+          "usable": 358,
+          "skip_no_positive": 35,
+          "skip_zero_weight": 0,
+          "aux_mean": 0.2546946650836617,
+          "kl_mean": 0.20982590065250406,
+          "box_l1_mean": 0.04486875492148101,
+          "weight_mean": 0.29375,
+          "empty_selection_batches": 0,
+          "selected_by_class": [
+            34,
+            4,
+            7,
+            348
+          ],
+          "usable_by_class": [
+            27,
+            4,
+            5,
+            322
+          ]
+        }
+      ],
+      "resume": {
+        "start_epoch": 1,
+        "optimizer_state_entries": 255,
+        "teacher_updates": 8,
+        "initial_ramp": 0.2
+      },
+      "export_sha256": "80a9c97bfc055e480842488b31145986e5cc78d12f161bbd7801198ad12924f2",
+      "usable": 724,
+      "selected": 786
+    }
+  ],
+  "benchmark_note": "Median synchronized batch times after first2 batches of resumed smoke epoch; conservative20% contingency plus1h selection/evaluation. Baseline extrapolation1.528h. Verify full-run speed."
+}
