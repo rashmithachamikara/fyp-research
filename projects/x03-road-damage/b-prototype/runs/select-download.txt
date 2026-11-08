@@ -1,0 +1,131 @@
+Downloading b_core.cpython-313.pyc to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__/b_core.cpython-313.pyc
+Downloading metrics.cpython-313.pyc to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__/metrics.cpython-313.pyc
+Downloading pilot.cpython-313.pyc to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\__pycache__/pilot.cpython-313.pyc
+Downloading b_core.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\b_core.py
+Downloading b_run.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\b_run.py
+Downloading experiment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\experiment.json
+Downloading metrics.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\metrics.py
+Downloading pilot.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\pilot.py
+Downloading prediction-inputs.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\prediction-inputs.txt
+Downloading environment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/environment.json
+Downloading export-parity-baseline.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/export-parity-baseline.json
+Downloading export-parity-generic.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/export-parity-generic.json
+Downloading export-parity-small_thin.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/export-parity-small_thin.json
+Downloading frozen-models.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/frozen-models.json
+Downloading pip-freeze.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/pip-freeze.txt
+Downloading predictions-selection-baseline.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/predictions-selection-baseline.json.gz
+Downloading predictions-selection-generic.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/predictions-selection-generic.json.gz
+Downloading predictions-selection-small_thin.json.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/predictions-selection-small_thin.json.gz
+Downloading stage-resources.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\results/stage-resources.json
+Downloading test_b_core.py to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\test_b_core.py
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select\x03-b-select.log 
+
+
+  0%|          | 0.00/24.5k [00:00<?, ?B/s]
+100%|██████████| 24.5k/24.5k [00:00<00:00, 449kB/s]
+
+  0%|          | 0.00/12.2k [00:00<?, ?B/s]
+100%|██████████| 12.2k/12.2k [00:00<00:00, 842kB/s]
+
+  0%|          | 0.00/35.4k [00:00<?, ?B/s]
+100%|██████████| 35.4k/35.4k [00:00<00:00, 286kB/s]
+100%|██████████| 35.4k/35.4k [00:00<00:00, 284kB/s]
+
+  0%|          | 0.00/11.4k [00:00<?, ?B/s]
+100%|██████████| 11.4k/11.4k [00:00<00:00, 894kB/s]
+
+  0%|          | 0.00/15.3k [00:00<?, ?B/s]
+100%|██████████| 15.3k/15.3k [00:00<00:00, 452kB/s]
+
+  0%|          | 0.00/566 [00:00<?, ?B/s]
+100%|██████████| 566/566 [00:00<00:00, 53.3kB/s]
+
+  0%|          | 0.00/5.38k [00:00<?, ?B/s]
+100%|██████████| 5.38k/5.38k [00:00<00:00, 2.75MB/s]
+
+  0%|          | 0.00/17.3k [00:00<?, ?B/s]
+100%|██████████| 17.3k/17.3k [00:00<00:00, 425kB/s]
+
+  0%|          | 0.00/49.5k [00:00<?, ?B/s]
+100%|██████████| 49.5k/49.5k [00:00<00:00, 242kB/s]
+100%|██████████| 49.5k/49.5k [00:00<00:00, 241kB/s]
+
+  0%|          | 0.00/107 [00:00<?, ?B/s]
+100%|██████████| 107/107 [00:00<00:00, 71.5kB/s]
+
+  0%|          | 0.00/212 [00:00<?, ?B/s]
+100%|██████████| 212/212 [00:00<00:00, 120kB/s]
+
+  0%|          | 0.00/212 [00:00<?, ?B/s]
+100%|██████████| 212/212 [00:00<00:00, 116kB/s]
+
+  0%|          | 0.00/212 [00:00<?, ?B/s]
+100%|██████████| 212/212 [00:00<00:00, 146kB/s]
+
+  0%|          | 0.00/109k [00:00<?, ?B/s]
+100%|██████████| 109k/109k [00:00<00:00, 894kB/s]
+100%|██████████| 109k/109k [00:00<00:00, 889kB/s]
+
+  0%|          | 0.00/17.8k [00:00<?, ?B/s]
+100%|██████████| 17.8k/17.8k [00:00<00:00, 436kB/s]
+
+  0%|          | 0.00/1.69M [00:00<?, ?B/s]
+ 59%|█████▉    | 1.00M/1.69M [00:01<00:00, 809kB/s]
+100%|██████████| 1.69M/1.69M [00:01<00:00, 1.30MB/s]
+100%|██████████| 1.69M/1.69M [00:01<00:00, 1.17MB/s]
+
+  0%|          | 0.00/2.06M [00:00<?, ?B/s]
+ 48%|████▊     | 1.00M/2.06M [00:01<00:01, 875kB/s]
+ 97%|█████████▋| 2.00M/2.06M [00:01<00:00, 1.62MB/s]
+100%|██████████| 2.06M/2.06M [00:01<00:00, 1.47MB/s]
+
+  0%|          | 0.00/1.52M [00:00<?, ?B/s]
+ 66%|██████▌   | 1.00M/1.52M [00:01<00:00, 803kB/s]
+100%|██████████| 1.52M/1.52M [00:01<00:00, 1.19MB/s]
+100%|██████████| 1.52M/1.52M [00:01<00:00, 1.08MB/s]
+
+  0%|          | 0.00/186 [00:00<?, ?B/s]
+100%|██████████| 186/186 [00:00<00:00, 123kB/s]
+
+  0%|          | 0.00/5.81k [00:00<?, ?B/s]
+100%|██████████| 5.81k/5.81k [00:00<00:00, 2.21MB/s]

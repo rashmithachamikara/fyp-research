@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "hours": 2.452676812863055,
+  "source_selection_best_map95": 0.15346,
+  "peak_reserved_gib": 6.228515625,
+  "telemetry": {
+    "batches": 25850,
+    "ema_updates": 6828,
+    "counts": {
+      "total": 476690,
+      "visible": 472441,
+      "target": 74951,
+      "selected": 74951,
+      "usable": 74244,
+      "skip_no_positive": 698,
+      "skip_zero_weight": 9
+    }
+  },
+  "same_augmented_geometry_counts": true,
+  "checkpoint_sha256": "a92795d567260c4555ca8ed2a98081a9fd4562b4fe782b1d41cf67a8a35ecb3c"
+}

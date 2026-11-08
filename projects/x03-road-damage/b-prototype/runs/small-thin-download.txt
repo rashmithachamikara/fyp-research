@@ -1,0 +1,17 @@
+b-config.json: Skipping, found more recently modified local copy (use --force to force download)
+data.yaml: Skipping, found more recently modified local copy (use --force to force download)
+experiment.json: Skipping, found more recently modified local copy (use --force to force download)
+aux-batches.jsonl.gz: Skipping, found more recently modified local copy (use --force to force download)
+environment.json: Skipping, found more recently modified local copy (use --force to force download)
+optimizer-effective.json: Skipping, found more recently modified local copy (use --force to force download)
+pip-freeze.txt: Skipping, found more recently modified local copy (use --force to force download)
+resume-observed.json: Skipping, found more recently modified local copy (use --force to force download)
+small_thin-args.yaml: Skipping, found more recently modified local copy (use --force to force download)
+small_thin-best.pt: Skipping, found more recently modified local copy (use --force to force download)
+small_thin-history.csv: Skipping, found more recently modified local copy (use --force to force download)
+small_thin-record.json: Skipping, found more recently modified local copy (use --force to force download)
+timing.json: Skipping, found more recently modified local copy (use --force to force download)
+args.yaml: Skipping, found more recently modified local copy (use --force to force download)
+results.csv: Skipping, found more recently modified local copy (use --force to force download)
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\small-thin\x03-b-small-thin.log 
+

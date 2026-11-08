@@ -4,4 +4,4 @@ __pycache__/
 *.pt
 *.cache
 reference/
-artifacts-*-live.txt
+artifacts-*.txt

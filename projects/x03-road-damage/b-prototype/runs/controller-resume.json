@@ -1,0 +1,10 @@
+{
+  "launched": "2026-11-08T20:04:15.9718798+05:30",
+  "stderr": "C:\\Files\\Shared\\Online Class\\ITM\\Sem7\\FYP\\fyp-research\\projects\\x03-road-damage\\b-prototype\\artifacts\\controller-20261108-200415-err.log",
+  "stdout": "C:\\Files\\Shared\\Online Class\\ITM\\Sem7\\FYP\\fyp-research\\projects\\x03-road-damage\\b-prototype\\artifacts\\controller-20261108-200415-out.log",
+  "mode": "file-locked select-monitor executor now continuing evaluation",
+  "detached_launcher": "ended with shell; superseded",
+  "active_exec_session": 12231,
+  "superseded_pid": 10532,
+  "executor_lock": true
+}

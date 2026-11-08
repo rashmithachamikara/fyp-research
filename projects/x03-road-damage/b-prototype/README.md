@@ -16,6 +16,8 @@ The budget gate uses warmed synchronized batch medians from the resumed epoch (f
 
 Native resume checkpoints retain optimizer/EMA state on Kaggle and require b_core.py. Exported ARM-best.pt uses a stock DetectionModel, with unchanged EMA weights and verified prediction parity; evaluation does not need training hooks. Unpacked inputs are cleaned in finally; original preparation remains upstream. Predictions/logs compress for transfer. Local virtual environment and artifacts are ignored by Git. All substantive actions are logged in ../log.md; commits are local/project-scoped only.
 
+The local controller holds an OS byte lock under artifacts/executor.lock for its lifetime. A second controller fails before any submission; the OS releases the lock after process exit. Reattach to existing work with --monitor. Windows sandbox process visibility differs by permission context, so a failed non-escalated PID lookup must not be treated as proof that an executor has exited. Source selection was accidentally submitted twice before this lock was added; both frozen configurations matched exactly, and the redundant stage is included in the resource accounting. Detector training ran once per arm.
+
 ## Local checks
 
 Use .venv/Scripts/python.exe -m unittest discover -s . -p test_b_core.py. Local CPU environment reuses PyTorch2.12 and matching TorchVision0.27; actual Kaggle CUDA compatibility is tested again in smoke. Tests cover sigmoid KL, normalized boxes, top3 ties/empty matches, visibility/size boundaries, detached teacher/nonzero student gradients through TAL+DFL decode, auxiliary scaling and stock loss/gradient parity. This validates execution, not research efficacy.

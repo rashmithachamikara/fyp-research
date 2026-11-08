@@ -1,0 +1,9 @@
+{
+  "baseline_hours": 1.5905905644394445,
+  "best_epoch": "48",
+  "source_selection_map95": 0.15964,
+  "peak_allocated_gib": 3.7410635948181152,
+  "peak_reserved_gib": 5.021484375,
+  "updated_budget_projection_hours": 9.592209139394697,
+  "checkpoint_sha256": "d18a52a1f32ff23a4e3c5cb66a4f38c801f3f3daa41976503a68fc858a3ffd75"
+}

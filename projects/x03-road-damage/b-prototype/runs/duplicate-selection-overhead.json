@@ -1,0 +1,12 @@
+{
+  "stage": "select",
+  "arm": null,
+  "seconds_including_preparation": 149.614903983,
+  "allocated": 588805632,
+  "reserved": 1000341504,
+  "working_bytes_before_cleanup": 1100715652,
+  "version": 1,
+  "retained_version": 2,
+  "frozen_configuration_identical": true,
+  "reason": "Duplicate local executors before file-lock fix; no duplicate model training"
+}

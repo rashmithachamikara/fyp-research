@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "source_selection_ids": 1034,
+  "frozen_file_sha256": "441a33579432e3fd47c287708142aa43ad10a5d7e17958e17d00019f2588c79b",
+  "arms": {
+    "baseline": {
+      "threshold": 0.3871608040201005,
+      "rule": "precision>=0.70, maximum recall, ties higher threshold",
+      "source_image_parity_max_diff": 0
+    },
+    "generic": {
+      "threshold": 0.3871608040201005,
+      "rule": "precision>=0.70, maximum recall, ties higher threshold",
+      "source_image_parity_max_diff": 0
+    },
+    "small_thin": {
+      "threshold": 0.3721155778894472,
+      "rule": "precision>=0.70, maximum recall, ties higher threshold",
+      "source_image_parity_max_diff": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "922563eab42b778445e55a2edbabb6974eed8e4b",
+  "local_installed_ultralytics": "8.4.192",
+  "source_files_identical_after_newline_normalization": {
+    "loss.py": true,
+    "tal.py": true,
+    "tasks.py": true,
+    "head.py": true,
+    "trainer.py": true,
+    "train.py": true
+  },
+  "scope": "Downloaded official commit source versus pinned wheel; Windows newline translation changes byte hashes, not code. Kaggle records the same wheel version"
+}

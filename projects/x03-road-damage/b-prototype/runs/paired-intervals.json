@@ -1,0 +1,134 @@
+{
+  "India": {
+    "B_vs_generic": {
+      "overall_recall_difference": [
+        0.00711161996945507,
+        0.05212901541674343
+      ],
+      "target_recall_difference": [
+        0.0,
+        0.10606866537717602
+      ],
+      "fp_per_image_difference": [
+        -0.005355292136287081,
+        0.02793209160359845
+      ]
+    },
+    "B_vs_baseline": {
+      "overall_recall_difference": [
+        -0.05184707245510101,
+        -0.007787516665843669
+      ],
+      "target_recall_difference": [
+        -0.04763339070567986,
+        0.04616279069767441
+      ],
+      "fp_per_image_difference": [
+        -0.013654517370189863,
+        0.02124975464321144
+      ]
+    },
+    "generic_vs_baseline": {
+      "overall_recall_difference": [
+        -0.08046391966471639,
+        -0.03982858652852151
+      ],
+      "target_recall_difference": [
+        -0.10714285714285712,
+        0.0
+      ],
+      "fp_per_image_difference": [
+        -0.025641891891891897,
+        0.009447653687063184
+      ]
+    }
+  },
+  "Czech": {
+    "B_vs_generic": {
+      "overall_recall_difference": [
+        0.00490136298421806,
+        0.0865395021645022
+      ],
+      "target_recall_difference": [
+        0.0,
+        0.0
+      ],
+      "fp_per_image_difference": [
+        -0.017485595390524973,
+        0.043010752688172046
+      ]
+    },
+    "B_vs_baseline": {
+      "overall_recall_difference": [
+        -0.004027269793459546,
+        0.0787065544608648
+      ],
+      "target_recall_difference": [
+        0.0,
+        0.0
+      ],
+      "fp_per_image_difference": [
+        -0.0355903660396543,
+        0.03900709219858156
+      ]
+    },
+    "generic_vs_baseline": {
+      "overall_recall_difference": [
+        -0.04977008894919342,
+        0.035728164322723896
+      ],
+      "target_recall_difference": [
+        0.0,
+        0.0
+      ],
+      "fp_per_image_difference": [
+        -0.04594046813522793,
+        0.017857142857142856
+      ]
+    }
+  },
+  "United_States": {
+    "B_vs_generic": {
+      "overall_recall_difference": [
+        0.07856072342015474,
+        0.09013378182947585
+      ],
+      "target_recall_difference": [
+        -0.0037599314922466846,
+        0.015815019762845845
+      ],
+      "fp_per_image_difference": [
+        0.15806386320158852,
+        0.19005146236955733
+      ]
+    },
+    "B_vs_baseline": {
+      "overall_recall_difference": [
+        -0.009675788945606136,
+        0.0025898212921816994
+      ],
+      "target_recall_difference": [
+        -0.042471213311921274,
+        -0.011579150579150583
+      ],
+      "fp_per_image_difference": [
+        0.0250515389856779,
+        0.058132004544158795
+      ]
+    },
+    "generic_vs_baseline": {
+      "overall_recall_difference": [
+        -0.09443942553910366,
+        -0.08161626612317223
+      ],
+      "target_recall_difference": [
+        -0.048393372662231704,
+        -0.018175301401107853
+      ],
+      "fp_per_image_difference": [
+        -0.14861254535911286,
+        -0.11704167159039115
+      ]
+    }
+  }
+}

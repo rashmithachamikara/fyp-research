@@ -268,3 +268,121 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-08 13:25:03 Asia/Colombo** — Project-scoped reporting commit initially blocked by sandbox read-only .git/index permissions; retrying the same authorized local commit with filesystem escalation.
 
 - **2026-11-08 13:25:03 Asia/Colombo** — Creating local project-scoped commit: Strengthen B export parity and paired diagnostic reporting
+
+- **2026-11-08 13:35:04 Asia/Colombo** — User requested background status/handoff. Current measured progress: baseline epoch 9/50. Smokev2 passed at common batch16; projected total9.256T4h. Local controller control.py smoke --monitor remains running (exec session90126), sequencing baseline -> generic -> small-thin -> select -> evaluate, with report and project-only local commit on completion. Kaggle current job https://www.kaggle.com/code/rashmithachamikara/x03-b-baseline (v1). Stopped only the chat-side periodic progress polling cell; did not cancel Kaggle or the local controller. Next return: inspect runs/*-status.txt, main log and any report/verification.json; reattach monitor-only if necessary, avoid duplicate submissions. Laptop must stay awake and online for local controller to submit subsequent jobs/download results; a submitted Kaggle job runs in cloud independently.
+
+- **2026-11-08 15:22:38 Asia/Colombo** — B baseline status-query failure1/5
+
+- **2026-11-08 15:23:11 Asia/Colombo** — rashmithachamikara/x03-b-baseline has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 15:23:11 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-baseline -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\baseline --file-pattern .*(json|gz|csv|yaml|log|txt)$|.*-best[.]pt$`
+
+- **2026-11-08 15:23:43 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\generic --accelerator NvidiaTeslaT4 -t 21600`
+
+- **2026-11-08 15:23:46 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-generic
+
+- **2026-11-08 15:23:47 Asia/Colombo** — rashmithachamikara/x03-b-generic has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 15:31:24 Asia/Colombo** — Resumed active B task without duplicate submission. Fresh baseline v1 completed and downloaded; verified50 CSV/timing epochs and exported checkpoint SHA256. Measured baseline verification: {"baseline_hours": 1.5905905644394445, "best_epoch": "48", "source_selection_map95": 0.15964, "peak_allocated_gib": 3.7410635948181152, "peak_reserved_gib": 5.021484375, "updated_budget_projection_hours": 9.592209139394697, "checkpoint_sha256": "d18a52a1f32ff23a4e3c5cb66a4f38c801f3f3daa41976503a68fc858a3ffd75"}. Generic consistency v1 already running under original controller (session90126). No source-audit or US results opened; all thresholds remain to be selected jointly after all training.
+
+- **2026-11-08 15:37:33 Asia/Colombo** — Additional baseline reproducibility check against historical training CSV: {"epochs": [50, 50], "differing_epoch_counts": {"epoch": 0, "train/box_loss": 0, "train/cls_loss": 0, "train/dfl_loss": 0, "metrics/precision(B)": 0, "metrics/recall(B)": 0, "metrics/mAP50(B)": 0, "metrics/mAP50-95(B)": 0, "val/box_loss": 0, "val/cls_loss": 0, "val/dfl_loss": 0, "lr/pg0": 0, "lr/pg1": 0, "lr/pg2": 0}}. Comparison excludes runtime; this is a repeated seed/recipe, not independent research evidence.
+
+- **2026-11-08 15:44:19 Asia/Colombo** — Added post-run validation of every consistency telemetry row: finite supervised/auxiliary losses, exact five-epoch ramp, complete50-epoch batch coverage, EMA-update continuity, skip/class-count reconciliation, and comparison of augmented geometry populations. Also requires source-image export parity records and50 timing epochs per arm before final report verification passes. Syntax check passed; actual telemetry checks await completed consistency jobs.
+
+- **2026-11-08 16:08:21 Asia/Colombo** — User stopping rule: complete the authorized B prototype successfully, verify/save artifacts and report, commit locally, then stop. Further research experiments or follow-up interventions await the user. Current stage remains generic-consistency v1; no scope expansion.
+
+- **2026-11-08 16:10:26 Asia/Colombo** — User clarified: do not actively monitor long background jobs. Ended chat-side periodic polling (cell56) and optional generic live-log viewer only (PID24760). Left the submitted Kaggle generic job and original background executor control.py smoke --monitor running so the authorized remaining stages can proceed. Returning control now; on next user message inspect existing status/artifacts before any new submission. No new experiments authorized beyond the agreed comparison.
+
+- **2026-11-08 17:49:37 Asia/Colombo** — rashmithachamikara/x03-b-generic has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 17:49:37 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-generic -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic --file-pattern .*(json|gz|csv|yaml|log|txt)$|.*-best[.]pt$`
+
+- **2026-11-08 17:51:21 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\small-thin --accelerator NvidiaTeslaT4 -t 21600`
+
+- **2026-11-08 17:51:26 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-small-thin
+
+- **2026-11-08 17:51:33 Asia/Colombo** — rashmithachamikara/x03-b-small-thin has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 19:14:12 Asia/Colombo** — B small-thin status-query failure1/5
+
+- **2026-11-08 20:03:37 Asia/Colombo** — Single status check on user return: generic v1 complete; small-thin v1 still RUNNING on Kaggle. Previous local executor process/session no longer exists (no matching python control.py process); no job was resubmitted. Verified generic50-epoch history, checkpoint hash and all consistency telemetry. {"status": "passed", "hours": 2.393133352526667, "source_selection_best_map95": 0.15155, "peak_reserved_gib": 6.228515625, "telemetry": {"batches": 25850, "ema_updates": 6828, "counts": {"total": 476690, "visible": 472441, "target": 74951, "selected": 472441, "usable": 471037, "skip_no_positive": 1375, "skip_zero_weight": 29}}, "checkpoint_sha256": "3d37d005045c69f60a950473014c269f906a8bd6524f516cd7c6e76e0b1d567f"}. Source-audit/US outcomes remain unopened.
+
+- **2026-11-08 20:04:16 Asia/Colombo** — Restored the authorized background executor as a detached hidden Windows process: control.py small-thin --monitor. It reattaches the existing cloud job, then downloads, selects thresholds, evaluates and commits; no training job duplication. PID and stdout/stderr paths recorded in b-prototype/runs/controller-resume.json. Per user preference, ending active monitoring after launch verification.
+
+- **2026-11-08 20:04:25 Asia/Colombo** — rashmithachamikara/x03-b-small-thin has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 20:05:12 Asia/Colombo** — rashmithachamikara/x03-b-small-thin has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 20:05:32 Asia/Colombo** — Launch verification found that Windows/tool shell cleanup ended the detached PID10532 after its initial status query; it is not the active executor. Reattached the same existing small-thin Kaggle job via persistent exec session55449 instead (control.py small-thin --monitor). No job resubmission. Cloud training is independent; local sequencing depends on this execution session remaining alive and will require reattachment if the app/runtime closes. Stopping active checking now, as requested.
+
+- **2026-11-08 20:08:29 Asia/Colombo** — User requested current running stage; performed one snapshot (no follow/watch). Baseline and generic COMPLETE; focused B Kaggle job RUNNING, latest logged epoch unavailable. Source-selection and final evaluation not yet started.
+
+- **2026-11-08 20:14:20 Asia/Colombo** — User explicitly resumed active monitoring. Attached to existing executor session55449 and focused-B cloud job; continuing through the already authorized selection/evaluation/report verification, then stopping. No new training submission or scope expansion.
+
+- **2026-11-08 20:20:26 Asia/Colombo** — rashmithachamikara/x03-b-small-thin has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 20:20:26 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-small-thin -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\small-thin --file-pattern .*(json|gz|csv|yaml|log|txt)$|.*-best[.]pt$`
+
+- **2026-11-08 20:20:57 Asia/Colombo** — rashmithachamikara/x03-b-small-thin has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 20:20:57 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-small-thin -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\small-thin --file-pattern .*(json|gz|csv|yaml|log|txt)$|.*-best[.]pt$`
+
+- **2026-11-08 20:21:15 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\select --accelerator NvidiaTeslaT4 -t 7200`
+
+- **2026-11-08 20:21:23 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-select
+
+- **2026-11-08 20:21:27 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-08 20:21:31 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\select --accelerator NvidiaTeslaT4 -t 7200`
+
+- **2026-11-08 20:21:36 Asia/Colombo** — Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-select
+
+- **2026-11-08 20:21:39 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-08 20:21:52 Asia/Colombo** — Focused B v1 completed50epochs; downloaded checkpoint/config/history/telemetry. SHA256 and all25850 consistency rows passed post-run validation. {"status": "passed", "hours": 2.452676812863055, "source_selection_best_map95": 0.15346, "peak_reserved_gib": 6.228515625, "telemetry": {"batches": 25850, "ema_updates": 6828, "counts": {"total": 476690, "visible": 472441, "target": 74951, "selected": 74951, "usable": 74244, "skip_no_positive": 698, "skip_zero_weight": 9}}, "same_augmented_geometry_counts": true, "checkpoint_sha256": "a92795d567260c4555ca8ed2a98081a9fd4562b4fe782b1d41cf67a8a35ecb3c"}. All three arms remain freshCOCO, commonbatch16; source selection queued automatically. No audit/US results yet opened. Reporting wording now specifies geometry-count equality (not pixel-view equality); live/snapshot logs are excluded by project .gitignore.
+
+- **2026-11-08 20:22:46 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 20:23:07 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 20:23:18 Asia/Colombo** — Correction to20:05 process diagnosis: non-escalated Windows process inspection hid the detached executor; elevated CIM now confirmed PID10532 was alive alongside persistent executor23964. Both attempted identical source-selection submissions (v1/v2). Stopped both verified control.py processes before evaluation submission; cloud training completed once per arm and is unaffected. Adding a cross-process file lock before reattaching exactly one executor to selectionv2. Duplicate source-selection overhead will be recorded. Prior claim that detached PID had ended was incorrect; process visibility across sandbox contexts caused the error.
+
+- **2026-11-08 20:24:05 Asia/Colombo** — Added OS-held executor byte lock; verified concurrent second process is rejected and a later process can acquire after release. Reattaching one executor to existing source-selection job, no new push.
+
+- **2026-11-08 20:24:15 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 20:26:29 Asia/Colombo** — rashmithachamikara/x03-b-select has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 20:26:29 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-select -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\select --file-pattern .*`
+
+- **2026-11-08 20:27:10 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\evaluate --accelerator NvidiaTeslaT4 -t 7200`
+
+- **2026-11-08 20:27:14 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-evaluate
+
+- **2026-11-08 20:27:18 Asia/Colombo** — rashmithachamikara/x03-b-evaluate has status "KernelWorkerStatus.QUEUED"
+
+- **2026-11-08 20:27:35 Asia/Colombo** — Verified all three frozen checkpoint hashes and1034 exact source-only selection IDs; source-image export/native raw prediction differences are exactly0 on three images per arm. Frozen artifact SHA and confidence thresholds: {"status": "passed", "source_selection_ids": 1034, "frozen_file_sha256": "441a33579432e3fd47c287708142aa43ad10a5d7e17958e17d00019f2588c79b", "arms": {"baseline": {"threshold": 0.3871608040201005, "rule": "precision>=0.70, maximum recall, ties higher threshold", "source_image_parity_max_diff": 0}, "generic": {"threshold": 0.3871608040201005, "rule": "precision>=0.70, maximum recall, ties higher threshold", "source_image_parity_max_diff": 0}, "small_thin": {"threshold": 0.3721155778894472, "rule": "precision>=0.70, maximum recall, ties higher threshold", "source_image_parity_max_diff": 0}}}. Final audit/US evaluation has not yet produced outcomes.
+
+- **2026-11-08 20:28:06 Asia/Colombo** — Both source-selection versions completed. Redundant v1 frozen configuration is exactly identical to retained v2; measured redundant stage overhead 0.04155969555083334T4-session hours (excluding install/queue/upload). Recorded in runs/duplicate-selection-overhead.json and will include in resources/report. Exactly one locked executor submitted evaluationv1; no duplicate evaluation.
+
+- **2026-11-08 20:31:57 Asia/Colombo** — Strengthened final report verification while evaluation is queued: evaluation must retain the exact source-frozen configuration; report explicitly compares overall AP/recall and small/thin recall versus both comparators plus the common baseline threshold. Cross-permission-context lock rejection passed against the actual elevated executor. No new model or threshold tuning.
+
+- **2026-11-08 20:42:06 Asia/Colombo** — Active final-evaluation queue check: accelerator quota snapshot saved in b-prototype/runs/quota-during-evaluation-queue.json; no paid scaling enabled. {"_time_used": "8:28:48.770000", "_time_reserved": "0:00:00", "_total_time_allowed": "1 day, 6:00:00", "_minimum_time_allowed": "1 day, 6:00:00", "_is_pay_to_scale_enabled": "False", "_has_ever_run": "True", "_is_frozen": "True"}. Preparing final report checks includes original versus augmented subgroup supports,54 deterministic overlays, class-count reconciliation, fixed50-epoch convergence diagnostics and exact frozen-config equality. No method changes or new experiments.
+
+- **2026-11-08 20:54:07 Asia/Colombo** — Independent reconstruction of every production batch total loss from supervised items plus ramped auxiliary term passed for both arms, including final batch8: maximum relative errors generic1.1053e-7 andB1.0721e-7. Final verifier now enforces this batch-scaling identity. Evaluation still queued; quota available and no method changes.
+
+- **2026-11-08 21:03:56 Asia/Colombo** — rashmithachamikara/x03-b-evaluate has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 21:05:39 Asia/Colombo** — Final evaluationv1 began RUNNING at21:03:56 after approximately36min queue. Initial optional log-stream watcher received Kaggle HTTP500 while job was queued; reconnected watcher only, no evaluation resubmission. Exactly one file-locked executor active (session12231).
+
+- **2026-11-08 21:13:50 Asia/Colombo** — Verified complete saved training recipes are identical across arms except name/save_dir, and resolved optimizer JSON is exactly identical. Added this to final artifact verifier; no configuration changes. Evaluation continues running after queue delay.
+
+- **2026-11-08 21:23:21 Asia/Colombo** — rashmithachamikara/x03-b-evaluate has status "KernelWorkerStatus.COMPLETE"
+
+- **2026-11-08 21:23:21 Asia/Colombo** — B command: `python -m kaggle kernels output rashmithachamikara/x03-b-evaluate -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\evaluate --file-pattern .*`
+
+- **2026-11-08 21:24:44 Asia/Colombo** — Evaluationv1 completed; downloading and verifying final artifacts. Account GPU quota after job: {"_time_used": "8:38:21.470000", "_time_reserved": "0:00:00", "_total_time_allowed": "1 day, 6:00:00", "_minimum_time_allowed": "1 day, 6:00:00", "_is_pay_to_scale_enabled": "False", "_has_ever_run": "True", "_is_frozen": "True"}. Also verified six pinned wheel source files equal official commit922563e after normalizing Windows newline translation; initial byte-hash comparison differed only by line endings. Source verification saved in runs/pinned-source-verification.json.
+
+- **2026-11-08 21:25:37 Asia/Colombo** — B comparison/report completed; one-seed development evidence, not confirmation.
+
+- **2026-11-08 21:25:37 Asia/Colombo** — Creating local project-scoped commit: Record B prototype comparison and verified diagnostic results

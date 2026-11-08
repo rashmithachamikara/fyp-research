@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checkpoints": {
+    "baseline": "d18a52a1f32ff23a4e3c5cb66a4f38c801f3f3daa41976503a68fc858a3ffd75",
+    "generic": "3d37d005045c69f60a950473014c269f906a8bd6524f516cd7c6e76e0b1d567f",
+    "small_thin": "a92795d567260c4555ca8ed2a98081a9fd4562b4fe782b1d41cf67a8a35ecb3c"
+  },
+  "counts_verified": true,
+  "shared_batch": true,
+  "identical_resolved_recipe": true,
+  "source_only_selection": true,
+  "telemetry": {
+    "generic": {
+      "batches": 25850,
+      "ema_updates": 6828,
+      "counts": {
+        "total": 476690,
+        "visible": 472441,
+        "target": 74951,
+        "selected": 472441,
+        "usable": 471037,
+        "skip_no_positive": 1375,
+        "skip_zero_weight": 29
+      }
+    },
+    "small_thin": {
+      "batches": 25850,
+      "ema_updates": 6828,
+      "counts": {
+        "total": 476690,
+        "visible": 472441,
+        "target": 74951,
+        "selected": 74951,
+        "usable": 74244,
+        "skip_no_positive": 698,
+        "skip_zero_weight": 9
+      }
+    }
+  },
+  "same_augmented_geometry_counts": true,
+  "outcome": "no improvement under this configuration"
+}

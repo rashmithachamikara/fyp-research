@@ -13,6 +13,24 @@ from run_pipeline import log,commit
 os.environ['PYTHONIOENCODING']='utf-8'
 STAGES=['smoke','baseline','generic','small-thin','select','evaluate']
 
+
+def acquire_executor_lock():
+    """OS-held byte lock releases on process exit, including crashes/app shutdown."""
+    folder=ROOT/'artifacts'; folder.mkdir(exist_ok=True)
+    handle=open(folder/'executor.lock','a+b')
+    handle.seek(0); handle.write(b'0'); handle.flush(); handle.seek(0)
+    try:
+        if os.name=='nt':
+            import msvcrt
+            msvcrt.locking(handle.fileno(),msvcrt.LK_NBLCK,1)
+        else:
+            import fcntl
+            fcntl.flock(handle.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except OSError:
+        handle.close()
+        raise RuntimeError('Another B executor holds the lock; refusing duplicate submission')
+    return handle
+
 def cli(args,record):
     log('B command: `python -m kaggle '+' '.join(args)+'`')
     p=subprocess.run([sys.executable,'-m','kaggle',*args],capture_output=True,text=True,encoding='utf-8',errors='replace')
@@ -61,5 +79,6 @@ def run(start,monitor):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('start',choices=STAGES); parser.add_argument('--monitor',action='store_true'); args=parser.parse_args()
+    executor_lock=acquire_executor_lock()
     try: run(args.start,args.monitor)
     except Exception as e: log('B pipeline stopped: '+str(e)); raise

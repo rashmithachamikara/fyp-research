@@ -1,0 +1,115 @@
+Downloading b-config.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\b-config.json
+Downloading data.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\data.yaml
+Downloading experiment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\experiment.json
+Downloading aux-batches.jsonl.gz to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/aux-batches.jsonl.gz
+Downloading environment.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/environment.json
+Downloading generic-args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/generic-args.yaml
+Downloading generic-best.pt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/generic-best.pt
+Downloading generic-history.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/generic-history.csv
+Downloading generic-record.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/generic-record.json
+Downloading optimizer-effective.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/optimizer-effective.json
+Downloading pip-freeze.txt to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/pip-freeze.txt
+Downloading resume-observed.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/resume-observed.json
+Downloading timing.json to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\results/timing.json
+Downloading args.yaml to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\training/generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\training/generic/args.yaml
+Downloading results.csv to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\training/generic
+
+Output file downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\training/generic/results.csv
+Kernel log downloaded to C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\artifacts\generic\x03-b-generic.log 
+
+
+  0%|          | 0.00/579 [00:00<?, ?B/s]
+100%|██████████| 579/579 [00:00<00:00, 354kB/s]
+
+  0%|          | 0.00/148 [00:00<?, ?B/s]
+100%|██████████| 148/148 [00:00<00:00, 70.7kB/s]
+
+  0%|          | 0.00/566 [00:00<?, ?B/s]
+100%|██████████| 566/566 [00:00<00:00, 381kB/s]
+
+  0%|          | 0.00/2.82M [00:00<?, ?B/s]
+ 35%|███▌      | 1.00M/2.82M [00:03<00:06, 295kB/s]
+ 71%|███████   | 2.00M/2.82M [00:10<00:04, 192kB/s]
+100%|██████████| 2.82M/2.82M [00:16<00:00, 163kB/s]
+100%|██████████| 2.82M/2.82M [00:16<00:00, 176kB/s]
+
+  0%|          | 0.00/107 [00:00<?, ?B/s]
+100%|██████████| 107/107 [00:00<00:00, 9.35kB/s]
+
+  0%|          | 0.00/1.65k [00:00<?, ?B/s]
+100%|██████████| 1.65k/1.65k [00:00<00:00, 380kB/s]
+
+  0%|          | 0.00/18.3M [00:00<?, ?B/s]
+  5%|▌         | 1.00M/18.3M [00:08<02:20, 129kB/s]
+ 11%|█         | 2.00M/18.3M [00:14<01:53, 151kB/s]
+ 16%|█▋        | 3.00M/18.3M [00:21<01:46, 151kB/s]
+ 22%|██▏       | 4.00M/18.3M [00:24<01:17, 194kB/s]
+ 27%|██▋       | 5.00M/18.3M [00:34<01:35, 146kB/s]
+ 33%|███▎      | 6.00M/18.3M [00:36<01:06, 193kB/s]
+ 38%|███▊      | 7.00M/18.3M [00:37<00:43, 274kB/s]
+ 44%|████▎     | 8.00M/18.3M [00:37<00:28, 373kB/s]
+ 49%|████▉     | 9.00M/18.3M [00:38<00:20, 477kB/s]
+ 55%|█████▍    | 10.0M/18.3M [00:39<00:14, 583kB/s]
+ 60%|██████    | 11.0M/18.3M [00:40<00:11, 661kB/s]
+ 66%|██████▌   | 12.0M/18.3M [00:42<00:10, 637kB/s]
+ 71%|███████   | 13.0M/18.3M [00:44<00:09, 571kB/s]
+ 76%|███████▋  | 14.0M/18.3M [00:48<00:10, 412kB/s]
+ 82%|████████▏ | 15.0M/18.3M [00:50<00:07, 469kB/s]
+ 87%|████████▋ | 16.0M/18.3M [00:50<00:03, 641kB/s]
+ 93%|█████████▎| 17.0M/18.3M [00:51<00:01, 819kB/s]
+ 98%|█████████▊| 18.0M/18.3M [00:51<00:00, 1.08MB/s]
+100%|██████████| 18.3M/18.3M [00:51<00:00, 1.14MB/s]
+100%|██████████| 18.3M/18.3M [00:51<00:00, 373kB/s] 
+
+  0%|          | 0.00/6.05k [00:00<?, ?B/s]
+100%|██████████| 6.05k/6.05k [00:00<00:00, 2.51MB/s]
+
+  0%|          | 0.00/1.02k [00:00<?, ?B/s]
+100%|██████████| 1.02k/1.02k [00:00<00:00, 606kB/s]
+
+  0%|          | 0.00/637 [00:00<?, ?B/s]
+100%|██████████| 637/637 [00:00<00:00, 329kB/s]
+
+  0%|          | 0.00/17.8k [00:00<?, ?B/s]
+100%|██████████| 17.8k/17.8k [00:00<00:00, 328kB/s]
+
+  0%|          | 0.00/91.0 [00:00<?, ?B/s]
+100%|██████████| 91.0/91.0 [00:00<00:00, 53.6kB/s]
+
+  0%|          | 0.00/34.8k [00:00<?, ?B/s]
+100%|██████████| 34.8k/34.8k [00:00<00:00, 241kB/s]
+100%|██████████| 34.8k/34.8k [00:00<00:00, 239kB/s]
+
+  0%|          | 0.00/1.65k [00:00<?, ?B/s]
+100%|██████████| 1.65k/1.65k [00:00<00:00, 943kB/s]
+
+  0%|          | 0.00/6.05k [00:00<?, ?B/s]
+100%|██████████| 6.05k/6.05k [00:00<00:00, 2.97MB/s]
