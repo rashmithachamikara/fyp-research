@@ -185,7 +185,25 @@ def select(rows):
     for arm in ARMS:
         record=json.loads(find(f'{arm}-record.json').read_text()); assert record['status']=='complete'
         checkpoint=find(f'{arm}-best.pt'); assert sha(checkpoint)==record['best_sha256']
-        model=YOLO(checkpoint); predictions=pilot.predict(model,selection,640)
+        model=YOLO(checkpoint)
+        # Compare the exported detector to the native selected EMA on actual source images.
+        # Native weights remain upstream for recovery; no audit/US images enter this check.
+        from PIL import Image
+        from ultralytics.data.augment import LetterBox
+        candidates=[p for p in Path('/kaggle/input').rglob('best.pt') if p.parent.parent.name==arm]
+        assert len(candidates)==1,('Missing/ambiguous native checkpoint',arm,candidates)
+        native=YOLO(candidates[0]).model.to('cuda').float().eval()
+        exported=model.model.to('cuda').float().eval(); parity=[]
+        for r in sorted(selection,key=lambda r:r['id'])[:3]:
+            pixels=np.asarray(Image.open(ROOT/'prepared/images'/f"{r['id']}.jpg").convert('RGB'))
+            pixels=LetterBox((640,640),auto=False)(image=pixels)
+            x=torch.from_numpy(np.ascontiguousarray(pixels.transpose(2,0,1))).to('cuda').float()[None]/255
+            with torch.no_grad(): a=native(x)[0]; b=exported(x)[0]
+            assert torch.allclose(a,b,atol=1e-6,rtol=1e-6),('Source-image export mismatch',arm,r['id'])
+            parity.append(dict(id=r['id'],max_absolute_difference=float((a-b).abs().max())))
+        save(f'export-parity-{arm}.json',parity)
+        del native; gc.collect(); torch.cuda.empty_cache()
+        predictions=pilot.predict(model,selection,640)
         threshold,decision=select_threshold(selection,predictions)
         frozen[arm]=dict(threshold=threshold,decision=decision,checkpoint_sha256=sha(checkpoint),record=record)
         pilot.save(f'predictions-selection-{arm}.json',predictions)
@@ -232,8 +250,12 @@ def evaluate(rows):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(); parser.add_argument('stage',choices=['smoke','train','select','evaluate']); parser.add_argument('--arm',choices=ARMS)
-    args=parser.parse_args(); rows=setup()
+    args=parser.parse_args(); stage_started=time.perf_counter(); rows=setup()
     try:
         if args.stage=='train': train(rows,args.arm)
         else: globals()[args.stage](rows)
-    finally: shutil.rmtree(ROOT/'prepared',ignore_errors=True)
+    finally:
+        save('stage-resources.json',dict(stage=args.stage,arm=args.arm,seconds_including_preparation=time.perf_counter()-stage_started,
+             allocated=torch.cuda.max_memory_allocated(),reserved=torch.cuda.max_memory_reserved(),
+             working_bytes_before_cleanup=sum(p.stat().st_size for p in ROOT.rglob('*') if p.is_file())))
+        shutil.rmtree(ROOT/'prepared',ignore_errors=True)

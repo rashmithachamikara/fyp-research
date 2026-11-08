@@ -254,3 +254,17 @@ Earlier project documents remain at their existing locations. This initial entry
 - **2026-11-08 13:17:27 Asia/Colombo** — B smoke/recovery passed; budget projection 9.256253278169455h, common batch16
 
 - **2026-11-08 13:17:27 Asia/Colombo** — Creating local project-scoped commit: Add validated B consistency prototype and budget-gated Kaggle runner
+
+- **2026-11-08 13:17:28 Asia/Colombo** — B command: `python -m kaggle kernels push -p C:\Files\Shared\Online Class\ITM\Sem7\FYP\fyp-research\projects\x03-road-damage\b-prototype\kaggle\baseline --accelerator NvidiaTeslaT4 -t 21600`
+
+- **2026-11-08 13:17:32 Asia/Colombo** — Kernel version 1 successfully pushed.  Please check progress at https://www.kaggle.com/code/rashmithachamikara/x03-b-baseline
+
+- **2026-11-08 13:17:35 Asia/Colombo** — rashmithachamikara/x03-b-baseline has status "KernelWorkerStatus.RUNNING"
+
+- **2026-11-08 13:23:01 Asia/Colombo** — Strengthened post-training artifacts without changing any training recipe: select now verifies native-versus-export predictions on three source-selection images per arm; select/evaluate measure session time/memory/storage. Local report now includes common-threshold results, class supports, missed-damage frequency, paired matched-GT gains/losses, and usable/skip/resource details. Rebuilt select/evaluate notebooks only; syntax and a controlled paired-transition check passed. Full baseline continues unchanged.
+
+- **2026-11-08 13:24:50 Asia/Colombo** — Creating local project-scoped commit: Strengthen B export parity and paired diagnostic reporting
+
+- **2026-11-08 13:25:03 Asia/Colombo** — Project-scoped reporting commit initially blocked by sandbox read-only .git/index permissions; retrying the same authorized local commit with filesystem escalation.
+
+- **2026-11-08 13:25:03 Asia/Colombo** — Creating local project-scoped commit: Strengthen B export parity and paired diagnostic reporting
